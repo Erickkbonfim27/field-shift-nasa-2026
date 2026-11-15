@@ -1,4 +1,11 @@
-# Safra Segura
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/harvesty-logo-escuro.svg">
+    <img src="assets/harvesty-logo.svg" width="460" alt="Harvesty">
+  </picture>
+</p>
+
+# Harvesty
 
 App do time para o NASA Space Apps 2026 (desafio Field Shift). O agricultor familiar do Oeste de Santa Catarina desenha a fazenda no mapa, conta o que tem, e o app mostra os riscos daquele lugar, as possibilidades com trade-offs e responde perguntas. Tudo é calculado com dados da NASA: **NASA POWER** (clima diário de 1981 a 2025) e **SRTM** (relevo).
 
@@ -72,7 +79,7 @@ Embaixo do mapa: temperatura mínima diária do ano, chance de geada pela data d
 
 ### Estrutura
 ```
-safra-segura/
+harvesty/
 ├── src/app.html            o app inteiro (HTML, CSS e JS); os dados entram nas marcas /*__PACOTE__*/ e /*__RELEVO__*/
 ├── scripts/
 │   ├── build.sh            comando único de build
@@ -89,27 +96,27 @@ safra-segura/
 
 ### Rodar
 ```bash
-bash safra-segura/scripts/build.sh
+bash harvesty/scripts/build.sh
 ```
 Só remonta a página (segundos). Use depois de mexer em `src/app.html`.
 
 ```bash
-bash safra-segura/scripts/build.sh --dados
+bash harvesty/scripts/build.sh --dados
 ```
 Recalcula clima e relevo e remonta. Use depois de mexer em `gerar_clima.py` ou `gerar_relevo.py`.
 
 ```bash
-bash safra-segura/scripts/build.sh --baixar
+bash harvesty/scripts/build.sh --baixar
 ```
 Baixa os pontos do POWER que faltarem, recalcula e remonta.
 
-**Abrir localmente:** no Claude Code, peça "abre o safra-segura" (servidor `safra-segura` em `.claude/launch.json`, porta 8767) ou rode:
+**Abrir localmente:** no Claude Code, peça "abre o harvesty" (servidor `harvesty` em `.claude/launch.json`, porta 8767) ou rode:
 ```bash
-python3 -m http.server 8767 --directory safra-segura/dist
+python3 -m http.server 8767 --directory harvesty/dist
 ```
 e abra `http://localhost:8767`.
 
-**Publicar de novo no mesmo link:** peça ao Claude "publica o safra-segura". Ele roda o `montar.py` com o caminho do artifact e republica; quem tem o link vê a versão nova na hora.
+**Publicar de novo no mesmo link:** peça ao Claude "publica o harvesty". Ele roda o `montar.py` com o caminho do artifact e republica; quem tem o link vê a versão nova na hora.
 
 ### Onde mexer em `src/app.html`
 | Quero mudar… | Procure |

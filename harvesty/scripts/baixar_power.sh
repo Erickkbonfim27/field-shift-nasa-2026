@@ -1,6 +1,6 @@
 #!/bin/bash
 # Baixa o NASA POWER diário (1981–2025) para cada ponto da grade do Oeste de SC.
-# Uso: bash safra-segura/scripts/baixar_power.sh   (pula os pontos já baixados)
+# Uso: bash harvesty/scripts/baixar_power.sh   (pula os pontos já baixados)
 cd "$(dirname "$0")/../dados/bruto/power" || exit 1
 P="PRECTOTCORR,T2M,T2M_MIN,T2M_MAX,RH2M,WS2M,ALLSKY_SFC_SW_DWN"
 baixa() {

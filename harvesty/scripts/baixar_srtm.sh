@@ -1,6 +1,6 @@
 #!/bin/bash
 # Baixa as folhas SRTM 1" (tiles públicos "skadi", NASA/USGS) que cobrem o Oeste de SC.
-# Uso: bash safra-segura/scripts/baixar_srtm.sh   (pula as folhas já baixadas)
+# Uso: bash harvesty/scripts/baixar_srtm.sh   (pula as folhas já baixadas)
 cd "$(dirname "$0")/../dados/bruto" || exit 1
 mkdir -p srtm && cd srtm || exit 1
 for t in S27W054 S27W053 S27W052 S27W051 S28W054 S28W053 S28W052 S28W051; do

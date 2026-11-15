@@ -159,7 +159,7 @@ for c in celulas:
     c.pop("_tmin"); c.pop("_tmax")
 pacote = dict(ini=INI.isoformat(), ndias=NDIAS, celulas=celulas, malha=malha,
               meta=dict(power="NASA POWER diário, comunidade AG, T2M_MIN/T2M_MAX/PRECTOTCORR, 1981–2025 (radiação a partir de 1984), grade ~0,5° x 0,625°",
-                        gerado="safra-segura/scripts/gerar_clima.py"))
+                        gerado="harvesty/scripts/gerar_clima.py"))
 out = GERADO / "pacote.json"
 json.dump(pacote, open(out, "w"), separators=(",", ":"), ensure_ascii=False)
 print("pacote:", round(out.stat().st_size / 1e6, 2), "MB")

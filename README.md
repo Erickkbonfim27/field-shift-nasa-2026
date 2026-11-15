@@ -1,10 +1,17 @@
-# Field Shift · Safra Segura
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="harvesty/assets/harvesty-logo-escuro.svg">
+    <img src="harvesty/assets/harvesty-logo.svg" width="460" alt="Harvesty">
+  </picture>
+</p>
+
+# Field Shift · Harvesty
 
 **NASA Space Apps Challenge 2026 · desafio "Field Shift: Adapting Farms with NASA Data"**
 
 > *English summary:* A decision-support tool for family farmers in western Santa Catarina, Brazil. The farmer draws the farm on a map, describes what they grow, and gets the climate risks of that exact place (frost, dry years, soil loss), "what if" options with trade-offs, and answers by text or voice. Every number comes from NASA POWER and SRTM, carries an evidence level, and links back to the data and script that produced it. We tested 38 ideas with a pre-registered protocol; the README below (in Portuguese) explains what passed, what failed and what we do not claim.
 
-**App:** https://claude.ai/artifact/BGkMxtrbkzzJPTdhyXsfMD (ou abra `safra-segura/dist/index.html` localmente)
+**App:** https://claude.ai/artifact/BGkMxtrbkzzJPTdhyXsfMD (ou abra `harvesty/dist/index.html` localmente)
 
 ---
 
@@ -45,7 +52,7 @@ Ranking e fichas: `loop-validacao/RANKING.md` e `loop-validacao/fichas/`. Relat�
 ## Estrutura
 
 ```
-safra-segura/      o app (mapa, perfil, riscos, "e se", pergunta por voz) e seus scripts de dados
+harvesty/      o app (mapa, perfil, riscos, "e se", pergunta por voz) e seus scripts de dados
 solucao/           spec v2, motor em Python (com testes), interface WhatsApp + auditoria, validações V1–V7
 loop-validacao/    protocolo, 38 fichas, ranking, galeria e scripts das 10 frentes de teste
 prototipo/         primeiro protótipo (Semiárido, Quixadá)
@@ -58,10 +65,10 @@ Requisitos: Python 3 com numpy; `curl`.
 
 ```bash
 # app: monta a página a partir dos dados já gerados
-bash safra-segura/scripts/build.sh
-python3 -m http.server 8767 --directory safra-segura/dist
+bash harvesty/scripts/build.sh
+python3 -m http.server 8767 --directory harvesty/dist
 ```
-Abra `http://localhost:8767`. Para baixar de novo o NASA POWER e o SRTM e recalcular tudo: `bash safra-segura/scripts/build.sh --baixar`.
+Abra `http://localhost:8767`. Para baixar de novo o NASA POWER e o SRTM e recalcular tudo: `bash harvesty/scripts/build.sh --baixar`.
 
 ```bash
 # motor: gera e valida as saídas de São Miguel do Oeste, Ituporanga e Quixadá
@@ -69,7 +76,7 @@ python3 solucao/motor/gerar.py
 python3 -m unittest discover solucao/motor/tests
 ```
 
-A pergunta por voz e a leitura em áudio só funcionam dentro do claude.ai (artifact). Guia de uso completo: `safra-segura/README.md`.
+A pergunta por voz e a leitura em áudio só funcionam dentro do claude.ai (artifact). Guia de uso completo: `harvesty/README.md`.
 
 Dados brutos grandes (cópias do POWER das validações, imagens de satélite, PDFs e planilhas externas) **não estão no repositório**. Os scripts de cada validação mostram de onde baixar.
 

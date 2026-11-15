@@ -10,9 +10,11 @@ data/
 .claude/
 
 # ---- dados grandes ou re-baixáveis (os scripts baixam de novo) ----
-safra-segura/dados/bruto/power/*.json
-safra-segura/dados/bruto/srtm/
+harvesty/dados/bruto/power/*.json
+harvesty/dados/bruto/srtm/
 *.npz
+# o motor lê este (solo descoberto em Ituporanga, Sentinel-2 + SRTM da A3-1)
+!loop-validacao/sessoes/A3/a3_1_blocos.npz
 *.hgt
 *.hgt.gz
 *.tif

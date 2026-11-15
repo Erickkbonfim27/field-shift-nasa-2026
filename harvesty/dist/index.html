@@ -1,7 +1,7 @@
 <meta charset="utf-8">
-<title>Safra Segura</title>
+<title>Harvesty</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@900&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: barra de etapas; mapa grande à esquerda (desenhar a fazenda); à direita perfil, riscos e "e se"; abaixo os dados NASA do ponto e a pergunta livre */
 :root{
@@ -41,7 +41,16 @@ button,input,select,textarea{font:inherit;color:inherit}
 .top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-block:16px 12px;border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:11px}
 .mark{width:36px;height:36px;border-radius:10px;background:var(--pasto);display:grid;place-items:center;flex:none}
-.brand h1{font-size:22px}.brand p{margin:0;font-size:12.5px;color:var(--ink-2)}
+.brand{flex-direction:column;align-items:flex-start;gap:4px}
+.brand p{margin:0;font-size:12.5px;color:var(--ink-2)}
+/* logo Harvesty (opção E do canvas): nome em Archivo 900 com a órbita dourada e o satélite */
+.wordmark{position:relative;width:268px;height:63px;display:flex;align-items:center;justify-content:center}
+.wordmark svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.wm-txt{position:relative;font:900 46px/1 "Archivo","Arial Black",system-ui,sans-serif;letter-spacing:-.035em;color:var(--ink)}
+.orb-tras ellipse{fill:none;stroke:var(--milho);stroke-width:6;opacity:.55}
+.orb-frente .halo{fill:none;stroke:var(--bg);stroke-width:20;stroke-linecap:round}
+.orb-frente .arco{fill:none;stroke:var(--milho);stroke-width:9;stroke-linecap:round}
+.orb-frente .sat{fill:var(--milho);stroke:var(--bg);stroke-width:6}
 .steps{display:flex;gap:6px;flex-wrap:wrap}
 .step{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-2);text-decoration:none;padding:5px 10px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
 .step b{display:grid;place-items:center;width:19px;height:19px;border-radius:50%;background:var(--surface-2);color:var(--ink);font:600 11px var(--mono)}
@@ -114,15 +123,19 @@ textarea{width:100%;min-height:86px;border:1px solid var(--line);border-radius:1
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .msg{background:#244a2d;color:#e9f6e6}}
 .foot{font-size:12px;color:var(--ink-2);border-top:1px solid var(--line);padding-top:12px;display:grid;gap:6px}
 @media (max-width:1000px){.main{grid-template-columns:1fr}.mapcard{position:static}.nasa{grid-template-columns:1fr}.ask{grid-template-columns:1fr}}
-@media (max-width:520px){.form{grid-template-columns:1fr}.farmsum{grid-template-columns:1fr 1fr}#mapa{height:58vh}}
+@media (max-width:520px){.wordmark{width:214px;height:50px}.wm-txt{font-size:37px}.form{grid-template-columns:1fr}.farmsum{grid-template-columns:1fr 1fr}#mapa{height:58vh}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
 <div class="page">
   <header class="top">
     <div class="brand">
-      <div class="mark" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V10"/><path d="M12 14c-4 0-6-3-6-7 4 0 6 3 6 7z"/><path d="M12 11c0-4 2-7 6-7 0 4-2 7-6 7z"/></svg></div>
-      <div><h1>Safra Segura</h1><p>Oeste de Santa Catarina · dados NASA POWER (1981–2025) e SRTM</p></div>
+      <div class="wordmark" role="img" aria-label="Harvesty">
+        <svg class="orb-tras" viewBox="0 0 980 230" aria-hidden="true"><ellipse cx="490" cy="118" rx="470" ry="86" transform="rotate(-7 490 118)"></ellipse></svg>
+        <span class="wm-txt" aria-hidden="true">HARVESTY</span>
+        <svg class="orb-frente" viewBox="0 0 980 230" aria-hidden="true"><path class="halo" d="M 600 191 A 470 86 -7 0 0 958 70"></path><path class="arco" d="M 600 191 A 470 86 -7 0 0 958 70"></path><circle class="sat" cx="955" cy="72" r="16"></circle></svg>
+      </div>
+      <p>Oeste de Santa Catarina · dados NASA POWER (1981–2025) e SRTM</p>
     </div>
     <nav class="steps" aria-label="Etapas">
       <a class="step" href="#s1" id="st1"><b>1</b>Delimitar a fazenda</a>
@@ -271,7 +284,7 @@ const [Y0, M0, D0] = PK.ini.split("-").map(Number);
 const T0 = Date.UTC(Y0, M0 - 1, D0), ND = PK.ndias, ANO0 = Y0, ANO1 = 2025;
 const idx = (y, m, d) => Math.round((Date.UTC(y, m - 1, d) - T0) / 864e5);
 const ddmm = (doy) => { const dt = new Date(Date.UTC(2001, 0, doy)); return dt.getUTCDate() + " " + MESES[dt.getUTCMonth()]; };
-const STORE = "safra-segura-fazenda-v1";
+const STORE = "harvesty-fazenda-v1", STORE_ANTIGO = "safra-segura-fazenda-v1";
 const EXEMPLO = [[-53.5648,-26.6862],[-53.5592,-26.6851],[-53.5571,-26.6893],[-53.5603,-26.6931],[-53.5655,-26.6914]];
 
 // ---------- células NASA POWER ----------
@@ -365,7 +378,7 @@ function salvar() { if (S.exemplo) return; try { localStorage.setItem(STORE, JSO
 (function () { const sel = $("fData2"); sel.innerHTML = '<option value="0">não planto</option>'; for (let doy = 1; doy <= 81; doy += 5) { const o = document.createElement("option"); o.value = doy; o.textContent = ddmm(doy); if (doy === 31) o.selected = true; sel.appendChild(o); } })();
 (function () { const sel = $("fAno"); for (let y = ANO1; y >= 1985; y--) { const o = document.createElement("option"); o.value = y; o.textContent = y; if (y === S.ano) o.selected = true; sel.appendChild(o); } })();
 
-try { const st = JSON.parse(localStorage.getItem(STORE) || "null"); if (st && st.poly && st.poly.length >= 3) { S.poly = st.poly; S.exemplo = false; if (st.perfil) aplicaPerfil(st.perfil); } } catch (e) {}
+try { const st = JSON.parse(localStorage.getItem(STORE) || localStorage.getItem(STORE_ANTIGO) || "null"); if (st && st.poly && st.poly.length >= 3) { S.poly = st.poly; S.exemplo = false; if (st.perfil) aplicaPerfil(st.perfil); } } catch (e) {}
 
 // ---------- análise da fazenda ----------
 function analise() {
