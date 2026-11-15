@@ -35,7 +35,9 @@ A área fica **salva no seu navegador**: da próxima vez, ela já aparece. Para 
 | Geada no 2º milho | Última data para plantar o 2º milho com até 2 anos em 10 de geada antes da silagem | NASA POWER, por ponto da grade |
 | Chuva dez–fev | Chuva do verão escolhido em % do normal (2022 mostra a estiagem) | NASA POWER |
 
-Passe o mouse sobre um município para ver o nome e o valor da camada.
+As camadas se acumulam: ligue quantas quiser. O relevo fica por baixo e o declive por cima, semitransparente. Com geada e chuva ligadas juntas, o quadrado mostra a data-limite da geada e o círculo no centro mostra a chuva do verão escolhido. A escolha de camadas fica lembrada neste navegador.
+
+Passe o mouse sobre um município para ver o nome e os valores das camadas de clima ligadas.
 
 ### 2. O que tenho
 O app calcula sozinho a **área**, o **município** e o **% de morro** (declive acima de 20%). Você preenche:

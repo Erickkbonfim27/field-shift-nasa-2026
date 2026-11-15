@@ -156,11 +156,12 @@ textarea{width:100%;min-height:86px;border:1px solid var(--line);border-radius:1
         <button class="btn" id="bFarm">Ir para a fazenda</button>
         <button class="btn" id="bRegion">Ver o Oeste</button>
       </div>
-      <div class="layers" role="group" aria-label="Camada do mapa">
+      <div class="layers" role="group" aria-label="Camadas do mapa: ligue quantas quiser">
         <button data-layer="relevo" aria-pressed="true">Relevo (SRTM)</button>
         <button data-layer="declive" aria-pressed="false">Declive (SRTM)</button>
         <button data-layer="geada" aria-pressed="false">Geada no 2º milho (POWER)</button>
         <button data-layer="chuva" aria-pressed="false">Chuva dez–fev (POWER)</button>
+        <span class="small" style="align-self:center;margin-left:4px">ligue quantas quiser</span>
       </div>
       <div class="mapwrap">
         <svg id="mapa" role="img" aria-label="Mapa do Oeste de Santa Catarina com a fazenda e as camadas de dados NASA"></svg>
@@ -362,7 +363,9 @@ function relevoNaArea(poly) {
 }
 
 // ---------- estado ----------
-let S = { poly: EXEMPLO, exemplo: true, layer: "relevo", ano: 2022, scen: "milho2", data2: 32 };
+let S = { poly: EXEMPLO, exemplo: true, layers: new Set(["relevo"]), ano: 2022, scen: "milho2", data2: 32 };
+const STORE_CAMADAS = "harvesty-camadas";
+try { const cs = JSON.parse(localStorage.getItem(STORE_CAMADAS) || "null"); if (Array.isArray(cs)) S.layers = new Set(cs.filter((k) => ["relevo", "declive", "geada", "chuva"].includes(k))); } catch (e) {}
 function lerPerfil() {
   return { ativ: $("fAtiv").value, vacas: +$("fVacas").value || 0, cult: [...document.querySelectorAll("#fCult input:checked")].map((i) => i.value),
     mesV: +$("fMesV").value, data2: +$("fData2").value, gdd: +$("fGdd").value, solo: $("fSolo").value, pri: [...document.querySelectorAll("#fPri input:checked")].map((i) => i.value) };
@@ -595,7 +598,7 @@ function celPoly(c) { const a = 0.25, b = 0.3125; return { type: "Polygon", coor
 function ajustaEscala() {
   gMun.selectAll("path").attr("stroke-width", 0.8 / K); gCel.selectAll("path").attr("stroke-width", 1 / K);
   gLab.selectAll("text").attr("font-size", 11 / K).attr("display", (d) => K > 3.5 || ["São Miguel do Oeste", "Chapecó"].includes(d.properties.nome) ? null : "none");
-  gCel.selectAll("text").attr("font-size", 12 / K).attr("stroke-width", 2.6 / K);
+  gCel.selectAll("text").attr("font-size", 12 / K).attr("stroke-width", 2.6 / K); gCel.selectAll("circle.chuva").attr("stroke-width", 1.2 / K);
   gFarm.selectAll("path").attr("stroke-width", 2.5 / K); gFarm.selectAll("circle.pin").attr("r", 6 / K).attr("stroke-width", 1.5 / K).attr("display", K > 25 ? "none" : null); gDraw.selectAll("circle").attr("r", 4 / K); gDraw.selectAll("path").attr("stroke-width", 2 / K);
 }
 function desenhaMapaBase() {
@@ -609,20 +612,40 @@ function desenhaMapaBase() {
 }
 function imgRelevo(href, op, pix) { const [w, s, e, n] = RV.bbox, p0 = proj([w, n]), p1 = proj([e, s]); gImg.append("image").attr("href", href).attr("x", p0[0]).attr("y", p0[1]).attr("width", p1[0] - p0[0]).attr("height", p1[1] - p0[1]).attr("preserveAspectRatio", "none").attr("opacity", op).style("image-rendering", pix ? "pixelated" : "auto"); }
 let corCel = null;
+const tem = (k) => S.layers.has(k);
 function desenhaCamada() {
-  gImg.selectAll("*").remove(); gCel.selectAll("*").remove(); const lg = $("legend"); const A = S.A;
-  if (S.layer === "relevo" && imgSombra) { imgRelevo(imgSombra, 0.55); lg.innerHTML = `Relevo sombreado do SRTM (NASA), ${RV.folhas ? RV.folhas.length + " folhas" : ""} cobrindo longitude ${RV.bbox[0]} a ${RV.bbox[2]} e latitude ${RV.bbox[1]} a ${RV.bbox[3]}. Role para dar zoom; arraste para mover.`; }
-  if (S.layer === "declive" && imgDeclive) { imgRelevo(imgSombra, 0.35); imgRelevo(imgDeclive, 0.65, true); lg.innerHTML = RV.classes.slice(0, 5).map((t, i) => `<span><i style="background:${CORES_CL[i]}"></i>${t}</span>`).join("") + "<span>SRTM, ~90 m</span>"; }
-  if (S.layer === "geada" || S.layer === "chuva") {
-    const vals = CEL.map((c) => { if (S.layer === "geada") { const l = c.motor.limite_2m.por_ciclo[String(A ? A.gdd : 1250)]; return { c, v: l ? ddmmDoy(l) : 90, t: l ? ddmm(ddmmDoy(l)) : "sem data" }; }
-      const cl = clima(c), v = chuvaDezFev(c, S.ano) / cl.med; return { c, v, t: Math.round(100 * v) + "%" }; });
-    const col = S.layer === "geada" ? d3.scaleSequential([50, 15], d3.interpolatePuBu).clamp(true) : d3.scaleDiverging([0.4, 1, 1.6], d3.interpolateBrBG).clamp(true);
-    gCel.selectAll("path").data(vals).join("path").attr("d", (d) => path(celPoly(d.c))).attr("fill", (d) => col(d.v)).attr("fill-opacity", 0.62).attr("stroke", "var(--surface)");
-    gCel.selectAll("text").data(vals).join("text").attr("x", (d) => proj([d.c.lon, d.c.lat])[0]).attr("y", (d) => proj([d.c.lon, d.c.lat])[1]).attr("text-anchor", "middle").attr("dominant-baseline", "middle")
+  gImg.selectAll("*").remove(); gCel.selectAll("*").remove(); const A = S.A, lg = [];
+  const relevo = tem("relevo"), declive = tem("declive"), geada = tem("geada"), chuva = tem("chuva");
+  // relevo embaixo, declive por cima (semitransparente)
+  if (imgSombra && (relevo || declive)) imgRelevo(imgSombra, relevo ? (declive ? 0.45 : 0.55) : 0.3);
+  if (declive && imgDeclive) imgRelevo(imgDeclive, relevo ? 0.55 : 0.65, true);
+  if (relevo) lg.push(`<span><b>Relevo</b>: sombreado do SRTM (NASA), ${RV.folhas ? RV.folhas.length + " folhas" : ""}, longitude ${RV.bbox[0]} a ${RV.bbox[2]}, latitude ${RV.bbox[1]} a ${RV.bbox[3]}.</span>`);
+  if (declive) lg.push('<span><b>Declive</b> (SRTM, ~90 m):</span>' + RV.classes.slice(0, 5).map((t, i) => `<span><i style="background:${CORES_CL[i]}"></i>${t}</span>`).join(""));
+  if (geada || chuva) {
+    const gdd = String(A ? A.gdd : 1250);
+    const vals = CEL.map((c) => {
+      const l = c.motor.limite_2m.por_ciclo[gdd], o = { c, x: proj([c.lon, c.lat])[0], y: proj([c.lon, c.lat])[1], hy: Math.abs(proj([c.lon, c.lat + 0.25])[1] - proj([c.lon, c.lat - 0.25])[1]) };
+      o.g = l ? ddmmDoy(l) : 90; o.gt = l ? ddmm(ddmmDoy(l)) : "sem data";
+      if (chuva) { o.r = chuvaDezFev(c, S.ano) / clima(c).med; o.rt = Math.round(100 * o.r) + "%"; }
+      return o;
+    });
+    const colG = d3.scaleSequential([50, 15], d3.interpolatePuBu).clamp(true), colR = d3.scaleDiverging([0.4, 1, 1.6], d3.interpolateBrBG).clamp(true);
+    const ambas = geada && chuva;
+    // quadrado: geada quando ligada; senão a chuva
+    gCel.selectAll("path.cel").data(vals).join("path").attr("class", "cel").attr("d", (d) => path(celPoly(d.c))).attr("fill", (d) => geada ? colG(d.g) : colR(d.r)).attr("fill-opacity", relevo || declive ? 0.5 : 0.62).attr("stroke", "var(--surface)");
+    // com as duas ligadas, a chuva vira um círculo no centro do quadrado
+    if (ambas) gCel.selectAll("circle.chuva").data(vals).join("circle").attr("class", "chuva").attr("cx", (d) => d.x).attr("cy", (d) => d.y + d.hy * 0.1).attr("r", (d) => d.hy * 0.24).attr("fill", (d) => colR(d.r)).attr("stroke", "#13201a");
+    const rot = [];
+    vals.forEach((d) => {
+      if (ambas) { rot.push({ x: d.x, y: d.y - d.hy * 0.3, t: d.gt }); rot.push({ x: d.x, y: d.y + d.hy * 0.1, t: d.rt }); }
+      else rot.push({ x: d.x, y: d.y, t: geada ? d.gt : d.rt });
+    });
+    gCel.selectAll("text.lbl").data(rot).join("text").attr("class", "lbl").attr("x", (d) => d.x).attr("y", (d) => d.y).attr("text-anchor", "middle").attr("dominant-baseline", "middle")
       .attr("font-family", "var(--mono)").attr("font-weight", 600).attr("fill", "#ffffff").attr("stroke", "#13201a").attr("paint-order", "stroke").attr("pointer-events", "none").text((d) => d.t);
-    lg.innerHTML = S.layer === "geada" ? "Cada quadrado é um ponto da grade do NASA POWER. Número: data-limite do 2º milho (até 2 anos em 10 com geada antes do corte, média de 5 dias; motor da spec v2). Mais escuro: data mais cedo. Evidência N2."
-      : `Chuva de dezembro a fevereiro do verão de <b>${S.ano}</b> em % do normal (1985–2025), por ponto do NASA POWER. Marrom: seco. Verde: chuvoso. Troque o ano em “Dados da NASA neste ponto”.`;
+    if (geada) lg.push(`<span><b>Geada no 2º milho${ambas ? " (quadrado)" : ""}</b>: data-limite por ponto do NASA POWER (até 2 anos em 10 com geada antes do corte). Mais escuro: data mais cedo. N2.</span>`);
+    if (chuva) lg.push(`<span><b>Chuva dez–fev ${S.ano}${ambas ? " (círculo)" : ""}</b>: % do normal por ponto do NASA POWER. Marrom: seco. Verde: chuvoso. Troque o ano em “Dados da NASA neste ponto”.</span>`);
   }
+  $("legend").innerHTML = lg.length ? lg.join("") : '<span>Nenhuma camada ligada. Ligue uma ou mais acima.</span>';
   ajustaEscala();
 }
 function desenhaFazenda() {
@@ -635,8 +658,10 @@ function desenhaFazenda() {
 function mostraTip(e, d) {
   const t = $("tip"), [mx, my] = d3.pointer(e, $("mapa").parentNode); const lonlat = proj.invert(d3.zoomTransform(svg.node()).invert(d3.pointer(e, svg.node())));
   const c = celulaMaisProxima(lonlat[0], lonlat[1]); let extra = "";
-  if (S.layer === "geada") { const l = c.motor.limite_2m.por_ciclo[String(S.A ? S.A.gdd : 1250)]; extra = "2º milho até " + (l ? dataExt(l) : "sem data segura"); }
-  if (S.layer === "chuva") extra = "dez–fev " + S.ano + ": " + Math.round(100 * chuvaDezFev(c, S.ano) / clima(c).med) + "% do normal";
+  const linhas = [];
+  if (tem("geada")) { const l = c.motor.limite_2m.por_ciclo[String(S.A ? S.A.gdd : 1250)]; linhas.push("2º milho até " + (l ? dataExt(l) : "sem data segura")); }
+  if (tem("chuva")) linhas.push("dez–fev " + S.ano + ": " + Math.round(100 * chuvaDezFev(c, S.ano) / clima(c).med) + "% do normal");
+  extra = linhas.join("<br>");
   t.innerHTML = `<b>${d.properties.nome}</b>${extra ? "<br>" + extra : ""}`; t.style.left = Math.min(mx + 12, W0 - 230) + "px"; t.style.top = (my + 12) + "px"; t.hidden = false;
 }
 function vaiPara(poly, k) {
@@ -659,9 +684,17 @@ svg.on("dblclick", (e) => { if (desenhando) { e.preventDefault(); pontos.pop(); 
 $("bDraw").onclick = () => { modoDesenho(true); if (K < 20) vaiPara(S.poly, 60); };
 $("bDone").onclick = concluir; $("bUndo").onclick = () => { pontos.pop(); desenhaRascunho(); }; $("bCancel").onclick = () => modoDesenho(false);
 $("bFarm").onclick = () => vaiPara(S.poly); $("bRegion").onclick = () => svg.transition().duration(650).call(zoom.transform, d3.zoomIdentity);
-document.querySelectorAll(".layers button").forEach((b) => b.onclick = () => { S.layer = b.dataset.layer; document.querySelectorAll(".layers button").forEach((x) => x.setAttribute("aria-pressed", String(x === b))); desenhaCamada();
-  if ((S.layer === "geada" || S.layer === "chuva") && K > 3) svg.transition().duration(650).call(zoom.transform, d3.zoomIdentity);
-  if ((S.layer === "relevo" || S.layer === "declive") && K < 6) vaiPara(S.poly, 14); });
+document.querySelectorAll(".layers button").forEach((b) => {
+  b.setAttribute("aria-pressed", String(S.layers.has(b.dataset.layer)));
+  b.onclick = () => {
+    const k = b.dataset.layer, liga = !S.layers.has(k);
+    if (liga) S.layers.add(k); else S.layers.delete(k);
+    b.setAttribute("aria-pressed", String(liga)); desenhaCamada();
+    try { localStorage.setItem(STORE_CAMADAS, JSON.stringify([...S.layers])); } catch (e) {}
+    if (liga && (k === "geada" || k === "chuva") && K > 3) svg.transition().duration(650).call(zoom.transform, d3.zoomIdentity);
+    if (liga && (k === "relevo" || k === "declive") && K < 6) vaiPara(S.poly, 14);
+  };
+});
 
 // ---------- orquestração ----------
 function tudo() {
