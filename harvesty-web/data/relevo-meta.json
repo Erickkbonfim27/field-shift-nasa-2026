@@ -1,0 +1,36 @@
+{
+ "bbox": [
+  -54,
+  -28,
+  -50,
+  -26
+ ],
+ "classes": [
+  "plano (0–3%)",
+  "suave ondulado (3–8%)",
+  "ondulado (8–20%)",
+  "forte ondulado (20–45%)",
+  "montanhoso (45–75%)",
+  "escarpado (>75%)"
+ ],
+ "folhas": [
+  "S27W054",
+  "S27W053",
+  "S27W052",
+  "S27W051",
+  "S28W054",
+  "S28W053",
+  "S28W052",
+  "S28W051"
+ ],
+ "fonte": "SRTM 1\" (NASA/USGS), reamostrado; classes de relevo da Embrapa",
+ "classe": {
+  "w": 4800,
+  "h": 2400,
+  "res_m": 93
+ },
+ "sombra": {
+  "w": 1600,
+  "h": 800
+ }
+}

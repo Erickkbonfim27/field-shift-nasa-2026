@@ -6,6 +6,7 @@ reports/
 pesquisa-solucoes-atuais.md
 # base EcoCrop (FAO) adicionada por outra pessoa; licença a conferir
 data/
+!harvesty-web/data/
 # configuração local do Claude Code (caminhos da máquina)
 .claude/
 

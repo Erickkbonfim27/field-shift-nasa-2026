@@ -52,7 +52,8 @@ Ranking e fichas: `loop-validacao/RANKING.md` e `loop-validacao/fichas/`. Relat�
 ## Estrutura
 
 ```
-harvesty/      o app (mapa, perfil, riscos, "e se", pergunta por voz) e seus scripts de dados
+harvesty/          o app estático (artifact) e os scripts que geram os dados
+harvesty-web/      o app full-stack em Next.js (API, banco SQLite das fazendas, pergunta ao Claude)
 solucao/           spec v2, motor em Python (com testes), interface WhatsApp + auditoria, validações V1–V7
 loop-validacao/    protocolo, 38 fichas, ranking, galeria e scripts das 10 frentes de teste
 prototipo/         primeiro protótipo (Semiárido, Quixadá)
@@ -76,13 +77,19 @@ python3 solucao/motor/gerar.py
 python3 -m unittest discover solucao/motor/tests
 ```
 
-A pergunta por voz e a leitura em áudio só funcionam dentro do claude.ai (artifact). Guia de uso completo: `harvesty/README.md`.
+```bash
+# app full-stack (Next.js, Node 22.13 ou mais novo)
+cd harvesty-web && npm install && npm run dev
+```
+Abra `http://localhost:3000`. Detalhes em `harvesty-web/README.md`.
+
+No app estático, a pergunta por voz e a leitura em áudio só funcionam dentro do claude.ai (artifact); no app Next, usam o navegador e uma chave da API do Claude opcional. Guia de uso do app estático: `harvesty/README.md`.
 
 Dados brutos grandes (cópias do POWER das validações, imagens de satélite, PDFs e planilhas externas) **não estão no repositório**. Os scripts de cada validação mostram de onde baixar.
 
 ## Uso de IA
 
-A ideia, o problema e as decisões de escopo são do time. Usamos o Claude (Anthropic) para escrever código, rodar e documentar as validações, revisar afirmações e gerar textos. No app, o Claude só transcreve a pergunta e lê em voz alta números que o motor já calculou; ele não calcula nenhuma chance.
+A ideia, o problema e as decisões de escopo são do time. Usamos o Claude (Anthropic) para escrever código, rodar e documentar as validações, revisar afirmações e gerar textos. No app, o Claude só explica números que o motor já calculou (e, no artifact, transcreve a pergunta e lê a resposta em voz alta); ele não calcula nenhuma chance.
 
 ## Licença
 
