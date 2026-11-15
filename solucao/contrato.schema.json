@@ -1,0 +1,1779 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fieldshift.local/contrato/2.1.0/saida-motor.schema.json",
+  "title": "Saída do motor modular (contrato v2.1.0)",
+  "description": "Uma resposta do motor para um local e um talhão, numa data de referência. O motor escreve; o WhatsApp e o frontend de auditoria só leem. Todo número que chega ao agricultor está num campo com 'rastro'. Regras que o JSON Schema não expressa estão na seção 8 de spec-v2.md (R1 a R12).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "versao_contrato",
+    "gerado_em",
+    "modo",
+    "data_referencia",
+    "safra",
+    "motor",
+    "local",
+    "talhao",
+    "produtor",
+    "regiao",
+    "modulos",
+    "estrategias",
+    "alertas",
+    "cartoes",
+    "rastro",
+    "conferencias",
+    "limites",
+    "nao_sei"
+  ],
+  "properties": {
+    "versao_contrato": {
+      "const": "2.1.0"
+    },
+    "gerado_em": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "modo": {
+      "description": "operacao = dados até a data de referência; replay = reconstrução de uma safra passada para demo (a climatologia pode incluir anos posteriores, e isso vai em 'limites').",
+      "enum": [
+        "operacao",
+        "replay"
+      ]
+    },
+    "data_referencia": {
+      "$ref": "#/$defs/data"
+    },
+    "safra": {
+      "type": "string",
+      "pattern": "^[0-9]{4}/[0-9]{2}$"
+    },
+    "motor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "versao",
+        "commit"
+      ],
+      "properties": {
+        "versao": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "commit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "local": {
+      "$ref": "#/$defs/local"
+    },
+    "talhao": {
+      "$ref": "#/$defs/talhao"
+    },
+    "produtor": {
+      "$ref": "#/$defs/produtor"
+    },
+    "regiao": {
+      "$ref": "#/$defs/regiao"
+    },
+    "modulos": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/modulo"
+      }
+    },
+    "estrategias": {
+      "description": "Pelo menos 3 por caso (pedido do desafio), e exatamente uma com e_atual = true (regra R3).",
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "$ref": "#/$defs/estrategia"
+      }
+    },
+    "alertas": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/alerta"
+      }
+    },
+    "cartoes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/cartao"
+      }
+    },
+    "rastro": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/rastro_item"
+      }
+    },
+    "conferencias": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/conferencia"
+      }
+    },
+    "limites": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/limite"
+      }
+    },
+    "nao_sei": {
+      "$ref": "#/$defs/nao_sei"
+    }
+  },
+  "$defs": {
+    "data": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "decendio": {
+      "description": "Primeiro dia do decêndio, dd/mm (01, 11 ou 21). Mesma convenção do gabarito ZARC da V6.",
+      "type": "string",
+      "pattern": "^(01|11|21)/(0[1-9]|1[0-2])$"
+    },
+    "dia_mes": {
+      "type": "string",
+      "pattern": "^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])$"
+    },
+    "periodo": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{4}$"
+    },
+    "nivel": {
+      "description": "N3 validado; N2 com ressalva; N1 em teste (só auditoria); N0 fora. Definição na seção 2 de spec-v2.md.",
+      "enum": [
+        "N3",
+        "N2",
+        "N1",
+        "N0"
+      ]
+    },
+    "em10": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 10
+    },
+    "intervalo": {
+      "description": "[inferior, superior]. Regra R5: inferior <= superior.",
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "number"
+      }
+    },
+    "ref_rastro": {
+      "description": "Ids de itens de 'rastro'. Regra R1: todo id citado existe em /rastro.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^R-[A-Z0-9-]+$"
+      }
+    },
+    "id_modulo": {
+      "enum": [
+        "agua_isna",
+        "geada_janela_safra",
+        "geada_limite_2a_safra",
+        "ano_extremo_seco",
+        "ano_extremo_excesso",
+        "mistura_talhao",
+        "exposicao_solo",
+        "enso_tipo_risco",
+        "preco_cebola",
+        "sorgo_2a_safra",
+        "data_transplante_cebola"
+      ]
+    },
+    "id_regiao": {
+      "enum": [
+        "sc_extremo_oeste",
+        "sc_alto_vale",
+        "semiarido_ce_pe_pb"
+      ]
+    },
+    "id_template": {
+      "enum": [
+        "T01_COMPARA_ESTRATEGIAS",
+        "T02_GEADA_JANELA_SAFRA",
+        "T03_TANTO_FAZ_DATA",
+        "T04_GEADA_LIMITE_2A_SAFRA",
+        "T05_ANO_SECO_ATIVO",
+        "T06_ANO_SECO_SILENCIO",
+        "T07_MISTURA_TALHAO_RASO",
+        "T08_EM_TESTE",
+        "T09_CEBOLA_HISTORICO",
+        "T10_SOLO_EXPOSTO",
+        "T11_SEMIARIDO_JANELA_MILHO",
+        "T12_PRIORIDADE",
+        "T13_FOTO_REGISTRO",
+        "T14_NAO_SEI",
+        "T15_PEDE_SOLO"
+      ]
+    },
+    "local": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "municipio",
+        "uf",
+        "codigo_ibge",
+        "lat",
+        "lon",
+        "ponto_power",
+        "dentro_da_area_testada"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^L-[a-z0-9-]+$"
+        },
+        "municipio": {
+          "type": "string"
+        },
+        "uf": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "codigo_ibge": {
+          "type": "string",
+          "pattern": "^[0-9]{7}$"
+        },
+        "lat": {
+          "type": "number",
+          "minimum": -34,
+          "maximum": 6
+        },
+        "lon": {
+          "type": "number",
+          "minimum": -74,
+          "maximum": -34
+        },
+        "ponto_power": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "lat",
+            "lon",
+            "alt_grade_m",
+            "resolucao_km",
+            "mesma_celula_que"
+          ],
+          "properties": {
+            "lat": {
+              "type": "number"
+            },
+            "lon": {
+              "type": "number"
+            },
+            "alt_grade_m": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "resolucao_km": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "mesma_celula_que": {
+              "description": "Municípios cuja série do POWER é idêntica a esta (não contam como teste independente).",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "dentro_da_area_testada": {
+          "type": "boolean"
+        }
+      }
+    },
+    "talhao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "nome",
+        "solo_declarado",
+        "cad_mm",
+        "srtm",
+        "ciclo_gdd",
+        "colheita_verao",
+        "fotos_registro"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^T-[a-z0-9-]+$"
+        },
+        "nome": {
+          "type": "string",
+          "maxLength": 40
+        },
+        "area_ha": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "solo_declarado": {
+          "enum": [
+            "arenoso",
+            "medio",
+            "argiloso",
+            "raso_ou_pedregoso",
+            "nao_sei"
+          ]
+        },
+        "cad_mm": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "valor",
+            "fonte",
+            "rastro"
+          ],
+          "properties": {
+            "valor": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 300
+            },
+            "fonte": {
+              "enum": [
+                "pergunta+gaez",
+                "gaez",
+                "padrao_regiao"
+              ]
+            },
+            "nota": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "rastro": {
+              "$ref": "#/$defs/ref_rastro"
+            }
+          }
+        },
+        "srtm": {
+          "description": "Só alerta 'confirme o solo'. Nunca mede profundidade (V3).",
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "declive_pct",
+            "tpi_m",
+            "marca_confirme",
+            "nivel_evidencia",
+            "rastro"
+          ],
+          "properties": {
+            "declive_pct": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "tpi_m": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "marca_confirme": {
+              "type": "boolean"
+            },
+            "nivel_evidencia": {
+              "const": "N1"
+            },
+            "rastro": {
+              "$ref": "#/$defs/ref_rastro"
+            }
+          }
+        },
+        "ciclo_gdd": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "valor",
+            "fonte"
+          ],
+          "properties": {
+            "valor": {
+              "type": "number",
+              "minimum": 800,
+              "maximum": 2000
+            },
+            "fonte": {
+              "enum": [
+                "produtor",
+                "padrao"
+              ]
+            }
+          }
+        },
+        "colheita_verao": {
+          "description": "Data em que o produtor diz que colheu (ou vai colher) a lavoura de verão. Define a decisão da 2ª cultura.",
+          "oneOf": [
+            {
+              "$ref": "#/$defs/data"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "fotos_registro": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "recebida_em",
+              "uso"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "recebida_em": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "uso": {
+                "const": "registro"
+              }
+            }
+          }
+        }
+      }
+    },
+    "produtor": {
+      "description": "Sem nome, telefone ou documento. Id pseudônimo.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id_pseudonimo",
+        "prioridade",
+        "atividade"
+      ],
+      "properties": {
+        "id_pseudonimo": {
+          "type": "string",
+          "pattern": "^P-[a-f0-9]{8}$"
+        },
+        "prioridade": {
+          "description": "Reordena os cartões. Nunca muda o cálculo (regra R9).",
+          "enum": [
+            "silagem_garantida",
+            "renda",
+            "solo",
+            "nao_informado"
+          ]
+        },
+        "atividade": {
+          "enum": [
+            "leite_milho",
+            "cebola",
+            "milho_feijao_sequeiro"
+          ]
+        }
+      }
+    },
+    "regiao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "nome",
+        "papel",
+        "modulos_ativos"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id_regiao"
+        },
+        "nome": {
+          "type": "string"
+        },
+        "papel": {
+          "enum": [
+            "principal",
+            "segunda"
+          ]
+        },
+        "modulos_ativos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id_modulo"
+          }
+        }
+      }
+    },
+    "modulo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "nome",
+        "ativo",
+        "nivel_evidencia",
+        "papel",
+        "motivo",
+        "validacao",
+        "nao_ve"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id_modulo"
+        },
+        "nome": {
+          "type": "string"
+        },
+        "ativo": {
+          "type": "boolean"
+        },
+        "nivel_evidencia": {
+          "$ref": "#/$defs/nivel"
+        },
+        "papel": {
+          "enum": [
+            "guarda",
+            "principal",
+            "alerta",
+            "insumo",
+            "descritivo",
+            "em_teste"
+          ]
+        },
+        "motivo": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "validacao": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "ref",
+              "caminho",
+              "resultado"
+            ],
+            "properties": {
+              "ref": {
+                "type": "string",
+                "description": "Ficha ou frente: B1-1, V2, V6..."
+              },
+              "caminho": {
+                "type": "string"
+              },
+              "resultado": {
+                "type": "string",
+                "maxLength": 300
+              }
+            }
+          }
+        },
+        "nao_ve": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "etapa": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cultura",
+        "estacao",
+        "fracao_area",
+        "plantio"
+      ],
+      "properties": {
+        "cultura": {
+          "enum": [
+            "milho_silagem",
+            "milho_grao",
+            "sorgo_silagem",
+            "sorgo_forrageiro",
+            "pastagem_inverno",
+            "cebola",
+            "milho_palha",
+            "cobertura_verao",
+            "feijao_caupi",
+            "sorgo_grao",
+            "pousio"
+          ]
+        },
+        "estacao": {
+          "enum": [
+            "verao",
+            "segunda_safra",
+            "inverno",
+            "chuvas"
+          ]
+        },
+        "fracao_area": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 1
+        },
+        "plantio": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "de",
+            "ate"
+          ],
+          "properties": {
+            "de": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/decendio"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "ate": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/decendio"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "manejo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 80
+        }
+      }
+    },
+    "indicador": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "tipo",
+        "rotulo",
+        "valor",
+        "unidade",
+        "ic95",
+        "faixa_parametros",
+        "n_anos",
+        "periodo",
+        "nivel_evidencia",
+        "modulo_id",
+        "rastro"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^I-[A-Z0-9-]+$"
+        },
+        "tipo": {
+          "enum": [
+            "falha_em_10",
+            "geada_em_10",
+            "colhe_em_10",
+            "p10_relativo",
+            "media_relativa",
+            "casos_abaixo_60_em_10",
+            "ganho_p10_pct",
+            "var_media_pct",
+            "data_limite",
+            "sobrevivencia_grade_pct",
+            "fracao_dias_descoberto",
+            "anos_ruins_em_10"
+          ]
+        },
+        "rotulo": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "valor": {
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        "unidade": {
+          "enum": [
+            "anos_em_10",
+            "fracao",
+            "pct",
+            "dia_mes",
+            "indice"
+          ]
+        },
+        "ic95": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/intervalo"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "faixa_parametros": {
+          "description": "Faixa p10–p90 sobre a grade de parâmetros (erro de modelo), separada do IC de amostragem.",
+          "oneOf": [
+            {
+              "$ref": "#/$defs/intervalo"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "n_anos": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "periodo": {
+          "$ref": "#/$defs/periodo"
+        },
+        "nivel_evidencia": {
+          "$ref": "#/$defs/nivel"
+        },
+        "modulo_id": {
+          "$ref": "#/$defs/id_modulo"
+        },
+        "rastro": {
+          "$ref": "#/$defs/ref_rastro"
+        }
+      }
+    },
+    "linha_decendio": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decendio",
+        "em10",
+        "ic95",
+        "k",
+        "n",
+        "componentes",
+        "zarc"
+      ],
+      "properties": {
+        "decendio": {
+          "$ref": "#/$defs/decendio"
+        },
+        "em10": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/em10"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "ic95": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/intervalo"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "k": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "Anos com o evento."
+        },
+        "n": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Anos simulados."
+        },
+        "componentes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "agua",
+            "geada",
+            "ano_extremo"
+          ],
+          "properties": {
+            "agua": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/em10"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "geada": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/em10"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "ano_extremo": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/em10"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "metricas_extra": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number"
+          }
+        },
+        "zarc": {
+          "description": "Só conferência. Nunca entra no cálculo (regra R2).",
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "risco_pct",
+            "indicado",
+            "rastro"
+          ],
+          "properties": {
+            "risco_pct": {
+              "enum": [
+                20,
+                30,
+                40,
+                null
+              ]
+            },
+            "indicado": {
+              "type": "boolean"
+            },
+            "rastro": {
+              "$ref": "#/$defs/ref_rastro"
+            }
+          }
+        }
+      }
+    },
+    "estrategia": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "nome_curto",
+        "nome_falado",
+        "e_atual",
+        "nivel_evidencia",
+        "como_mostrar",
+        "ordem",
+        "sequencia",
+        "modulos",
+        "indicadores",
+        "risco_por_decendio",
+        "premissas",
+        "quebra_se",
+        "nao_calculado",
+        "solo_texto"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^E[0-9]+$"
+        },
+        "nome_curto": {
+          "type": "string",
+          "maxLength": 40
+        },
+        "nome_falado": {
+          "type": "string",
+          "maxLength": 90
+        },
+        "e_atual": {
+          "type": "boolean"
+        },
+        "nivel_evidencia": {
+          "$ref": "#/$defs/nivel"
+        },
+        "como_mostrar": {
+          "description": "com_numero (N3), com_faixa (N2), so_nome_em_teste (N1), oculto (N0). Regra R4.",
+          "enum": [
+            "com_numero",
+            "com_faixa",
+            "so_nome_em_teste",
+            "oculto"
+          ]
+        },
+        "ordem": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Posição no cartão, depois de aplicar a prioridade do produtor."
+        },
+        "sequencia": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/etapa"
+          }
+        },
+        "modulos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id_modulo"
+          }
+        },
+        "indicadores": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/indicador"
+          }
+        },
+        "risco_por_decendio": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "cultura_alvo",
+            "evento",
+            "modulo_id",
+            "linhas",
+            "rastro"
+          ],
+          "properties": {
+            "cultura_alvo": {
+              "type": "string"
+            },
+            "evento": {
+              "type": "string",
+              "maxLength": 160,
+              "description": "O que conta como 'deu errado' em em10."
+            },
+            "modulo_id": {
+              "$ref": "#/$defs/id_modulo"
+            },
+            "linhas": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/linha_decendio"
+              }
+            },
+            "rastro": {
+              "$ref": "#/$defs/ref_rastro"
+            }
+          }
+        },
+        "premissas": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 200
+          }
+        },
+        "quebra_se": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 200
+          }
+        },
+        "nao_calculado": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 200
+          }
+        },
+        "solo_texto": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "texto",
+            "fonte",
+            "a_validar"
+          ],
+          "properties": {
+            "texto": {
+              "type": "string",
+              "maxLength": 240
+            },
+            "fonte": {
+              "type": "string"
+            },
+            "a_validar": {
+              "const": true
+            }
+          }
+        }
+      }
+    },
+    "alerta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "modulo_id",
+        "estado",
+        "nivel_evidencia",
+        "janela",
+        "indice",
+        "percentil_local",
+        "frase_probabilidade",
+        "recall_pct",
+        "silencio_nao_e_seguranca",
+        "rastro"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^A-[A-Z0-9-]+$"
+        },
+        "modulo_id": {
+          "$ref": "#/$defs/id_modulo"
+        },
+        "estado": {
+          "enum": [
+            "ativo",
+            "inativo",
+            "sem_dado",
+            "fora_da_janela"
+          ]
+        },
+        "nivel_evidencia": {
+          "$ref": "#/$defs/nivel"
+        },
+        "janela": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "de",
+            "ate"
+          ],
+          "properties": {
+            "de": {
+              "$ref": "#/$defs/data"
+            },
+            "ate": {
+              "$ref": "#/$defs/data"
+            }
+          }
+        },
+        "indice": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "nome",
+            "valor",
+            "unidade"
+          ],
+          "properties": {
+            "nome": {
+              "type": "string"
+            },
+            "valor": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "unidade": {
+              "enum": [
+                "fracao",
+                "mm"
+              ]
+            }
+          }
+        },
+        "percentil_local": {
+          "description": "Posição do índice entre os anos PASSADOS da mesma célula do POWER (regra R6). Dispara se valor <= limiar (seco) ou >= 100 - limiar (excesso).",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "valor",
+            "limiar",
+            "n_anos_passados",
+            "periodo_passado"
+          ],
+          "properties": {
+            "valor": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0,
+              "maximum": 100
+            },
+            "limiar": {
+              "const": 10
+            },
+            "n_anos_passados": {
+              "type": "integer",
+              "minimum": 20
+            },
+            "periodo_passado": {
+              "$ref": "#/$defs/periodo"
+            }
+          }
+        },
+        "frase_probabilidade": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "anos_assim_ruins_em_10",
+            "ano_qualquer_ruim_em_10",
+            "definicao_ruim",
+            "eventos_testados",
+            "rastro"
+          ],
+          "properties": {
+            "anos_assim_ruins_em_10": {
+              "$ref": "#/$defs/em10"
+            },
+            "ano_qualquer_ruim_em_10": {
+              "$ref": "#/$defs/em10"
+            },
+            "definicao_ruim": {
+              "type": "string"
+            },
+            "eventos_testados": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "rastro": {
+              "$ref": "#/$defs/ref_rastro"
+            }
+          }
+        },
+        "recall_pct": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "silencio_nao_e_seguranca": {
+          "const": true
+        },
+        "rastro": {
+          "$ref": "#/$defs/ref_rastro"
+        }
+      }
+    },
+    "variavel_cartao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "texto",
+        "ponteiro"
+      ],
+      "properties": {
+        "texto": {
+          "type": "string",
+          "maxLength": 60,
+          "description": "Como aparece na mensagem, já arredondado (regra R7)."
+        },
+        "ponteiro": {
+          "type": "string",
+          "pattern": "^/",
+          "description": "JSON Pointer (RFC 6901) para o campo de origem neste documento."
+        }
+      }
+    },
+    "cartao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "template_id",
+        "destino",
+        "ordem",
+        "variaveis",
+        "texto",
+        "palavras",
+        "imagem",
+        "audio"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^C-[A-Z0-9-]+$"
+        },
+        "template_id": {
+          "$ref": "#/$defs/id_template"
+        },
+        "destino": {
+          "enum": [
+            "whatsapp",
+            "auditoria"
+          ]
+        },
+        "ordem": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "estrategia_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^E[0-9]+$"
+          }
+        },
+        "alerta_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^A-[A-Z0-9-]+$"
+          }
+        },
+        "variaveis": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/variavel_cartao"
+          }
+        },
+        "texto": {
+          "type": "string",
+          "maxLength": 520,
+          "description": "Template preenchido pelo código, não pelo LLM (regra R8)."
+        },
+        "palavras": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 75
+        },
+        "imagem": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "tipo"
+          ],
+          "properties": {
+            "tipo": {
+              "enum": [
+                "10_sacos",
+                "barras_relativas",
+                "janela_decendios",
+                "nenhuma"
+              ]
+            },
+            "linhas": {
+              "description": "Para 10_sacos: uma linha por estratégia. cheios + rasgados = 10, ou ambos null quando a estratégia é só nome.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "rotulo",
+                  "cheios",
+                  "rasgados",
+                  "selo"
+                ],
+                "properties": {
+                  "rotulo": {
+                    "type": "string",
+                    "maxLength": 28
+                  },
+                  "cheios": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 0,
+                    "maximum": 10
+                  },
+                  "rasgados": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 0,
+                    "maximum": 10
+                  },
+                  "selo": {
+                    "enum": [
+                      "validado",
+                      "com_ressalva",
+                      "em_teste",
+                      "atual"
+                    ]
+                  }
+                }
+              }
+            },
+            "barras": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "rotulo",
+                  "valor",
+                  "faixa"
+                ],
+                "properties": {
+                  "rotulo": {
+                    "type": "string",
+                    "maxLength": 28
+                  },
+                  "valor": {
+                    "type": "number"
+                  },
+                  "faixa": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/$defs/intervalo"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "legenda": {
+              "type": "string",
+              "maxLength": 80
+            }
+          }
+        },
+        "audio": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "roteiro",
+            "duracao_max_s"
+          ],
+          "properties": {
+            "roteiro": {
+              "type": "string",
+              "maxLength": 600,
+              "description": "Texto que o TTS lê, com números por extenso."
+            },
+            "duracao_max_s": {
+              "type": "integer",
+              "minimum": 5,
+              "maximum": 40
+            }
+          }
+        }
+      }
+    },
+    "rastro_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "tipo",
+        "descricao",
+        "fonte"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^R-[A-Z0-9-]+$"
+        },
+        "tipo": {
+          "enum": [
+            "dado",
+            "parametro",
+            "calculo",
+            "conferencia",
+            "pergunta"
+          ]
+        },
+        "descricao": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "fonte": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "nome",
+            "categoria"
+          ],
+          "properties": {
+            "nome": {
+              "enum": [
+                "NASA_POWER",
+                "GPM_IMERG",
+                "SMAP",
+                "SRTM",
+                "Sentinel-2",
+                "Landsat",
+                "MODIS",
+                "GAEZ",
+                "ERA5",
+                "GLDAS",
+                "ECOSTRESS",
+                "FAO-56",
+                "FAO-33",
+                "Embrapa",
+                "motor",
+                "ZARC",
+                "IBGE_PAM",
+                "Epagri",
+                "Garantia-Safra",
+                "INMET",
+                "UDESC",
+                "produtor"
+              ]
+            },
+            "categoria": {
+              "description": "resources = aba Resources do desafio; metodo_publicado = coeficiente fixo de método (FAO); externo_conferencia = só para conferir; produtor = resposta do produtor; motor = cálculo interno. literatura_externa = valor de parâmetro tirado de norma ou publicação fora da aba Resources; entra no cálculo só como exceção declarada, e só como tipo 'parametro'.",
+              "enum": [
+                "resources",
+                "metodo_publicado",
+                "literatura_externa",
+                "externo_conferencia",
+                "produtor",
+                "motor"
+              ]
+            },
+            "variavel": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "url": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "periodo": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "resolucao": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "arquivo": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "script": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "caminho",
+            "funcao"
+          ],
+          "properties": {
+            "caminho": {
+              "type": "string"
+            },
+            "funcao": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "parametros": {
+          "type": "object"
+        },
+        "entradas": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^R-[A-Z0-9-]+$"
+          }
+        },
+        "resultado": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "arquivo",
+            "chave"
+          ],
+          "properties": {
+            "arquivo": {
+              "type": "string"
+            },
+            "chave": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "description": "Fonte externa só pode ser conferência (regra de dados do desafio).",
+          "if": {
+            "properties": {
+              "fonte": {
+                "properties": {
+                  "categoria": {
+                    "const": "externo_conferencia"
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "tipo": {
+                "const": "conferencia"
+              }
+            }
+          }
+        },
+        {
+          "description": "Conferência só vem de fonte externa.",
+          "if": {
+            "properties": {
+              "tipo": {
+                "const": "conferencia"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "fonte": {
+                "properties": {
+                  "categoria": {
+                    "const": "externo_conferencia"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "description": "Todo cálculo aponta o script.",
+          "if": {
+            "properties": {
+              "tipo": {
+                "const": "calculo"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "script",
+              "entradas",
+              "resultado"
+            ]
+          }
+        },
+        {
+          "description": "Parâmetro de literatura externa só pode ser tipo 'parametro'.",
+          "if": {
+            "properties": {
+              "fonte": {
+                "properties": {
+                  "categoria": {
+                    "const": "literatura_externa"
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "tipo": {
+                "const": "parametro"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "conferencia": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "contra",
+        "o_que",
+        "resultado",
+        "detalhe",
+        "rastro"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^K-[A-Z0-9-]+$"
+        },
+        "contra": {
+          "enum": [
+            "ZARC_2026_27",
+            "IBGE_PAM",
+            "Garantia-Safra",
+            "Epagri",
+            "INMET",
+            "FUNCEME"
+          ]
+        },
+        "o_que": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "resultado": {
+          "enum": [
+            "bate",
+            "bate_em_parte",
+            "nao_bate",
+            "sem_dado"
+          ]
+        },
+        "detalhe": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "rastro": {
+          "$ref": "#/$defs/ref_rastro"
+        }
+      }
+    },
+    "limite": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "texto",
+        "gravidade",
+        "afeta",
+        "mostrar_ao_agricultor"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^X-[A-Z0-9-]+$"
+        },
+        "texto": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "gravidade": {
+          "enum": [
+            "alta",
+            "media",
+            "baixa"
+          ]
+        },
+        "afeta": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mostrar_ao_agricultor": {
+          "type": "boolean"
+        },
+        "trecho": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 160,
+          "description": "Frase curta do limite que aparece, igual, no texto de um cartão do WhatsApp. Obrigatória quando mostrar_ao_agricultor = true (regra R14)."
+        }
+      }
+    },
+    "nao_sei": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ativo",
+        "motivos",
+        "encaminhar_para"
+      ],
+      "properties": {
+        "ativo": {
+          "type": "boolean"
+        },
+        "motivos": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "fora_da_area",
+              "cultura_fora",
+              "pergunta_praga_doenca_adubo_preco",
+              "sem_dado_recente",
+              "modulo_em_teste",
+              "solo_desconhecido"
+            ]
+          }
+        },
+        "encaminhar_para": {
+          "enum": [
+            "tecnico_ater",
+            "cooperativa",
+            "nenhum"
+          ]
+        }
+      }
+    }
+  }
+}

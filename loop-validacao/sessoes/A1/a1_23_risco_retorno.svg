@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" font-family="Helvetica,Arial,sans-serif" font-size="11">
+<rect width="760" height="430" fill="white"/>
+<text x="70" y="20" font-size="14" font-weight="bold">Milho em São Miguel do Oeste: plantar numa data só (círculos) ou dividir (quadrados)</text>
+<text x="70" y="38" font-weight="bold">A1-2: só água (sem penalidade de potencial)</text>
+<rect x="70" y="50" width="300" height="300" fill="none" stroke="#bbb"/>
+<text x="130.0" y="364" text-anchor="middle" fill="#555">0.6</text>
+<text x="189.99999999999997" y="364" text-anchor="middle" fill="#555">0.7</text>
+<text x="250.00000000000003" y="364" text-anchor="middle" fill="#555">0.8</text>
+<text x="310.0" y="364" text-anchor="middle" fill="#555">0.9</text>
+<text x="370.0" y="364" text-anchor="middle" fill="#555">1.0</text>
+<text x="64" y="354.0" text-anchor="end" fill="#555">0.0</text>
+<text x="64" y="268.2857142857143" text-anchor="end" fill="#555">0.2</text>
+<text x="64" y="182.57142857142856" text-anchor="end" fill="#555">0.4</text>
+<text x="64" y="96.85714285714283" text-anchor="end" fill="#555">0.6</text>
+<circle cx="241.52266348995275" cy="267.0526604752365" r="4" fill="#8aa" />
+<circle cx="277.7988498072564" cy="237.3795281004867" r="4" fill="#8aa" />
+<text x="282.7988498072564" y="233.3795281004867" fill="#477" font-size="10">5/set</text>
+<circle cx="274.3775644117972" cy="273.5583252156382" r="4" fill="#8aa" />
+<text x="279.3775644117972" y="269.5583252156382" fill="#477" font-size="10">15/set</text>
+<circle cx="269.056173528794" cy="282.51678899693087" r="4" fill="#8aa" />
+<text x="274.056173528794" y="278.51678899693087" fill="#477" font-size="10">25/set</text>
+<circle cx="267.3368880731334" cy="259.12757209047277" r="4" fill="#8aa" />
+<circle cx="268.41618669104423" cy="264.84768742927866" r="4" fill="#8aa" />
+<circle cx="274.3248224692827" cy="234.76441227063953" r="4" fill="#8aa" />
+<circle cx="281.8903180545075" cy="226.6537839017042" r="4" fill="#8aa" />
+<circle cx="288.96498765360855" cy="221.27822153394973" r="4" fill="#8aa" />
+<circle cx="287.8566337368048" cy="207.20101866914516" r="4" fill="#8aa" />
+<circle cx="288.61287415751747" cy="195.86014327618523" r="4" fill="#8aa" />
+<circle cx="296.18638375064234" cy="189.57253176075218" r="4" fill="#8aa" />
+<text x="301.18638375064234" y="185.57253176075218" fill="#477" font-size="10">15/dez</text>
+<circle cx="305.822983431372" cy="204.33269637208107" r="4" fill="#8aa" />
+<circle cx="321.1948328103546" cy="187.13075007027265" r="4" fill="#8aa" />
+<text x="326.1948328103546" y="183.13075007027265" fill="#477" font-size="10">5/jan</text>
+<circle cx="336.7062017221389" cy="148.52574126195776" r="4" fill="#8aa" />
+<text x="341.7062017221389" y="144.52574126195776" fill="#477" font-size="10">15/jan</text>
+<circle cx="321.44516682113226" cy="221.71773920617642" r="4" fill="#8aa" />
+<rect x="266.39687555142075" y="244.55005694742715" width="10" height="10" fill="#d07a1a"/>
+<text x="263.39687555142075" y="265.55005694742715" fill="#a55a0a" font-size="10" text-anchor="end">set+out</text>
+<rect x="273.13394123315237" y="216.34752220508736" width="10" height="10" fill="#d07a1a"/>
+<text x="270.13394123315237" y="237.34752220508736" fill="#a55a0a" font-size="10" text-anchor="end">set+nov</text>
+<rect x="272.2529129188166" y="210.11256603499154" width="10" height="10" fill="#d07a1a"/>
+<text x="269.2529129188166" y="231.11256603499154" fill="#a55a0a" font-size="10" text-anchor="end">set+out+nov</text>
+<text x="450" y="38" font-weight="bold">A1-3: com penalidade de radiação</text>
+<rect x="450" y="50" width="300" height="300" fill="none" stroke="#bbb"/>
+<text x="510.0" y="364" text-anchor="middle" fill="#555">0.6</text>
+<text x="570.0" y="364" text-anchor="middle" fill="#555">0.7</text>
+<text x="630.0" y="364" text-anchor="middle" fill="#555">0.8</text>
+<text x="690.0" y="364" text-anchor="middle" fill="#555">0.9</text>
+<text x="750.0" y="364" text-anchor="middle" fill="#555">1.0</text>
+<text x="444" y="354.0" text-anchor="end" fill="#555">0.0</text>
+<text x="444" y="268.2857142857143" text-anchor="end" fill="#555">0.2</text>
+<text x="444" y="182.57142857142856" text-anchor="end" fill="#555">0.4</text>
+<text x="444" y="96.85714285714283" text-anchor="end" fill="#555">0.6</text>
+<circle cx="617.7146113394964" cy="267.7225493673505" r="4" fill="#8aa" />
+<circle cx="657.7988498072564" cy="237.3795281004867" r="4" fill="#8aa" />
+<text x="662.7988498072564" y="233.3795281004867" fill="#477" font-size="10">5/set</text>
+<circle cx="652.893153699434" cy="273.78329723843865" r="4" fill="#8aa" />
+<text x="657.893153699434" y="269.78329723843865" fill="#477" font-size="10">15/set</text>
+<circle cx="644.1198865652705" cy="283.1842819814895" r="4" fill="#8aa" />
+<text x="649.1198865652705" y="279.1842819814895" fill="#477" font-size="10">25/set</text>
+<circle cx="633.6104025235446" cy="261.63564880561233" r="4" fill="#8aa" />
+<circle cx="625.6077837971771" cy="268.74440728773993" r="4" fill="#8aa" />
+<circle cx="620.7787137311363" cy="242.4295228982426" r="4" fill="#8aa" />
+<circle cx="611.04542610642" cy="238.90548081513458" r="4" fill="#8aa" />
+<circle cx="601.4536390660548" cy="238.02343761513896" r="4" fill="#8aa" />
+<circle cx="580.389313747753" cy="231.32013461837627" r="4" fill="#8aa" />
+<circle cx="558.8318207369389" cy="228.4887892054374" r="4" fill="#8aa" />
+<circle cx="542.8025391425851" cy="230.239552336162" r="4" fill="#8aa" />
+<text x="547.8025391425851" y="226.239552336162" fill="#477" font-size="10">15/dez</text>
+<circle cx="527.2746975110107" cy="247.4351798768884" r="4" fill="#8aa" />
+<circle cx="506.82936285592643" cy="244.56263516671436" r="4" fill="#8aa" />
+<text x="511.82936285592643" y="240.56263516671436" fill="#477" font-size="10">5/jan</text>
+<circle cx="490.69151055544535" cy="228.8780335579293" r="4" fill="#8aa" />
+<text x="495.69151055544535" y="224.8780335579293" fill="#477" font-size="10">15/jan</text>
+<circle cx="458.741643021711" cy="278.17767141502316" r="4" fill="#8aa" />
+<rect x="592.8478464210095" y="151.06963836778013" width="10" height="10" fill="#d07a1a"/>
+<text x="589.8478464210095" y="172.06963836778013" fill="#a55a0a" font-size="10" text-anchor="end">set+dez</text>
+<rect x="574.8612582776802" y="168.16858674318988" width="10" height="10" fill="#d07a1a"/>
+<text x="571.8612582776802" y="189.16858674318988" fill="#a55a0a" font-size="10" text-anchor="end">set+jan</text>
+<text x="70" y="384" fill="#333">Eixo x: rendimento relativo médio (41 safras). Eixo y: rendimento no pior ano. Melhor = para cima e para a direita.</text>
+<text x="70" y="402" fill="#555">Dividir só ganha no pior ano quando mistura cedo e tarde, e aí perde ~10 pontos na média. Nenhum quadrado domina a melhor data única.</text>
+</svg>

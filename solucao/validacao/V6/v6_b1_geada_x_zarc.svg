@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" font-family="Helvetica,Arial,sans-serif" font-size="12">
+<rect width="100%" height="100%" fill="white"/>
+<text x="10" y="22" font-size="16" font-weight="bold">Geada medida (B1-0) x risco ZARC, milho 1ª safra, SMO</text>
+<text x="10" y="40" fill="#444">Barras cinza: anos com geada em cada 100 (T2M_MIN &lt; 2 °C, NASA POWER). Pontos: risco ZARC, grupo I.</text>
+<line x1="70" x2="740" y1="350" y2="350" stroke="#ddd"/><text x="64" y="354" text-anchor="end">0%</text>
+<line x1="70" x2="740" y1="260" y2="260" stroke="#ddd"/><text x="64" y="264" text-anchor="end">20%</text>
+<line x1="70" x2="740" y1="170" y2="170" stroke="#ddd"/><text x="64" y="174" text-anchor="end">40%</text>
+<line x1="70" x2="740" y1="80" y2="80" stroke="#ddd"/><text x="64" y="84" text-anchor="end">60%</text>
+<rect x="90" y="66.5" width="34" height="283.5" fill="#9aa5b1"><title>geada 6.3 em 10 anos</title></rect>
+<circle cx="98" cy="170.0" r="6" fill="#1f4e9c"><title>ZARC AD4: 40%</title></circle>
+<circle cx="116" cy="170.0" r="6" fill="#c2185b"><title>ZARC AD6: 40%</title></circle>
+<text x="107" y="366" text-anchor="middle">01/08</text>
+<rect x="170" y="143.0" width="34" height="207.0" fill="#9aa5b1"><title>geada 4.6 em 10 anos</title></rect>
+<circle cx="178" cy="170.0" r="6" fill="#1f4e9c"><title>ZARC AD4: 40%</title></circle>
+<circle cx="196" cy="170.0" r="6" fill="#c2185b"><title>ZARC AD6: 40%</title></circle>
+<text x="187" y="366" text-anchor="middle">11/08</text>
+<rect x="250" y="206.0" width="34" height="144.0" fill="#9aa5b1"><title>geada 3.2 em 10 anos</title></rect>
+<circle cx="258" cy="260.0" r="6" fill="#1f4e9c"><title>ZARC AD4: 20%</title></circle>
+<circle cx="276" cy="260.0" r="6" fill="#c2185b"><title>ZARC AD6: 20%</title></circle>
+<text x="267" y="366" text-anchor="middle">21/08</text>
+<rect x="330" y="273.5" width="34" height="76.5" fill="#9aa5b1"><title>geada 1.7 em 10 anos</title></rect>
+<circle cx="338" cy="260.0" r="6" fill="#1f4e9c"><title>ZARC AD4: 20%</title></circle>
+<circle cx="356" cy="260.0" r="6" fill="#c2185b"><title>ZARC AD6: 20%</title></circle>
+<text x="347" y="366" text-anchor="middle">01/09</text>
+<rect x="410" y="327.5" width="34" height="22.5" fill="#9aa5b1"><title>geada 0.5 em 10 anos</title></rect>
+<circle cx="418" cy="260.0" r="6" fill="#1f4e9c"><title>ZARC AD4: 20%</title></circle>
+<circle cx="436" cy="260.0" r="6" fill="#c2185b"><title>ZARC AD6: 20%</title></circle>
+<text x="427" y="366" text-anchor="middle">11/09</text>
+<rect x="490" y="350.0" width="34" height="0.0" fill="#9aa5b1"><title>geada 0.0 em 10 anos</title></rect>
+<circle cx="498" cy="215.0" r="6" fill="#1f4e9c"><title>ZARC AD4: 30%</title></circle>
+<circle cx="516" cy="260.0" r="6" fill="#c2185b"><title>ZARC AD6: 20%</title></circle>
+<text x="507" y="366" text-anchor="middle">21/09</text>
+<rect x="570" y="350.0" width="34" height="0.0" fill="#9aa5b1"><title>geada 0.0 em 10 anos</title></rect>
+<circle cx="578" cy="215.0" r="6" fill="#1f4e9c"><title>ZARC AD4: 30%</title></circle>
+<circle cx="596" cy="260.0" r="6" fill="#c2185b"><title>ZARC AD6: 20%</title></circle>
+<text x="587" y="366" text-anchor="middle">01/10</text>
+<rect x="650" y="350.0" width="34" height="0.0" fill="#9aa5b1"><title>geada 0.0 em 10 anos</title></rect>
+<circle cx="658" cy="215.0" r="6" fill="#1f4e9c"><title>ZARC AD4: 30%</title></circle>
+<circle cx="676" cy="260.0" r="6" fill="#c2185b"><title>ZARC AD6: 20%</title></circle>
+<text x="667" y="366" text-anchor="middle">11/10</text>
+<circle cx="80" cy="390" r="6" fill="#1f4e9c"/><text x="92" y="394">ZARC AD4 (54,6 mm)</text><circle cx="250" cy="390" r="6" fill="#c2185b"/><text x="262" y="394">ZARC AD6 (95,4 mm)</text><rect x="430" y="383" width="14" height="14" fill="#9aa5b1"/><text x="450" y="394">geada em % dos anos (B1-0)</text></svg>

@@ -1,0 +1,176 @@
+{
+ "celulas": {
+  "chapeco_xanxere": {
+   "n_nino": 9,
+   "p_seco_nino": 0.1111111111111111,
+   "p_seco_outros": 0.4,
+   "p_chuv_nino": 0.7777777777777778,
+   "p_chuv_outros": 0.22857142857142856,
+   "anos_secos_nino": [
+    1991
+   ],
+   "fisher_seco": 0.10494283876974862,
+   "fisher_chuv": 0.003955578111472669,
+   "spearman": [
+    0.38522799447282274,
+    0.009815492221751649
+   ],
+   "bss_seco": 0.03633130470737711,
+   "bss_chuvoso": 0.1780410201375403,
+   "passa_c1": true
+  },
+  "concordia": {
+   "n_nino": 9,
+   "p_seco_nino": 0.0,
+   "p_seco_outros": 0.42857142857142855,
+   "p_chuv_nino": 0.6666666666666666,
+   "p_chuv_outros": 0.2571428571428571,
+   "anos_secos_nino": [],
+   "fisher_seco": 0.01412692060362001,
+   "fisher_chuv": 0.029752563561561376,
+   "spearman": [
+    0.34970752077829237,
+    0.01996932175306853
+   ],
+   "bss_seco": 0.13268505298176791,
+   "bss_chuvoso": 0.07105379388985922,
+   "passa_c1": true
+  },
+  "itapiranga": {
+   "n_nino": 9,
+   "p_seco_nino": 0.1111111111111111,
+   "p_seco_outros": 0.4,
+   "p_chuv_nino": 0.6666666666666666,
+   "p_chuv_outros": 0.2571428571428571,
+   "anos_secos_nino": [
+    2004
+   ],
+   "fisher_seco": 0.10494283876974862,
+   "fisher_chuv": 0.029752563561561376,
+   "spearman": [
+    0.4547889221246112,
+    0.0019253550493384356
+   ],
+   "bss_seco": 0.03633130470737711,
+   "bss_chuvoso": 0.06776764450411721,
+   "passa_c1": true
+  },
+  "palmitos": {
+   "n_nino": 9,
+   "p_seco_nino": 0.1111111111111111,
+   "p_seco_outros": 0.4,
+   "p_chuv_nino": 0.6666666666666666,
+   "p_chuv_outros": 0.2571428571428571,
+   "anos_secos_nino": [
+    1991
+   ],
+   "fisher_seco": 0.10494283876974862,
+   "fisher_chuv": 0.029752563561561376,
+   "spearman": [
+    0.41856367712661807,
+    0.004689644271970344
+   ],
+   "bss_seco": 0.03633130470737711,
+   "bss_chuvoso": 0.06776764450411721,
+   "passa_c1": true
+  }
+ },
+ "referencia": {
+  "smo (já visto)": {
+   "n_nino": 9,
+   "p_seco_nino": 0.1111111111111111,
+   "p_seco_outros": 0.4,
+   "p_chuv_nino": 0.6666666666666666,
+   "p_chuv_outros": 0.2571428571428571,
+   "anos_secos_nino": [
+    1991
+   ],
+   "fisher_seco": 0.10494283876974862,
+   "fisher_chuv": 0.029752563561561376,
+   "spearman": [
+    0.411515964091989,
+    0.005516114705734665
+   ],
+   "bss_seco": 0.03633130470737711,
+   "bss_chuvoso": 0.07105379388985922,
+   "passa_c1": true
+  },
+  "ituporanga (já visto)": {
+   "n_nino": 9,
+   "p_seco_nino": 0.1111111111111111,
+   "p_seco_outros": 0.4,
+   "p_chuv_nino": 0.5555555555555556,
+   "p_chuv_outros": 0.2857142857142857,
+   "anos_secos_nino": [
+    2004
+   ],
+   "fisher_seco": 0.10494283876974862,
+   "fisher_chuv": 0.13036080681690734,
+   "spearman": [
+    0.218267672682461,
+    0.15462864486480488
+   ],
+   "bss_seco": 0.03633130470737711,
+   "bss_chuvoso": 0.00858144681557882,
+   "passa_c1": true
+  }
+ },
+ "c1_celulas_que_passam": 4,
+ "c2_bss_seco_medio": 0.06041974177597481,
+ "ibge": {
+  "42001 S. Miguel do Oeste": {
+   "n_nino": 7,
+   "n_outros": 27,
+   "quebra_nino": 0.14285714285714285,
+   "quebra_outros": 0.18518518518518517,
+   "media_nino": 0.9896063755891696,
+   "media_outros": 0.9691237013124998,
+   "anos_quebra_nino": [
+    2005
+   ]
+  },
+  "42002 Chapecó": {
+   "n_nino": 7,
+   "n_outros": 27,
+   "quebra_nino": 0.14285714285714285,
+   "quebra_outros": 0.14814814814814814,
+   "media_nino": 0.9453149459707934,
+   "media_outros": 0.9872675923388005,
+   "anos_quebra_nino": [
+    2005
+   ]
+  },
+  "42003 Xanxerê": {
+   "n_nino": 7,
+   "n_outros": 27,
+   "quebra_nino": 0.0,
+   "quebra_outros": 0.18518518518518517,
+   "media_nino": 1.0405917931733986,
+   "media_outros": 0.9691681405727354,
+   "anos_quebra_nino": []
+  },
+  "42005 Concórdia": {
+   "n_nino": 7,
+   "n_outros": 27,
+   "quebra_nino": 0.14285714285714285,
+   "quebra_outros": 0.18518518518518517,
+   "media_nino": 1.0036798745053794,
+   "media_outros": 0.9716857523729233,
+   "anos_quebra_nino": [
+    2005
+   ]
+  }
+ },
+ "c3_micros_que_passam": 4,
+ "anos_nino_jas": [
+  1982,
+  1987,
+  1991,
+  1997,
+  2002,
+  2004,
+  2009,
+  2015,
+  2023
+ ]
+}

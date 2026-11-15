@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="440" font-family="sans-serif" font-size="11">
+<rect width="640" height="440" fill="white"/>
+<text x="60" y="22" font-size="13">Replicação no Oeste (32 municípios fora da amostra): solo nu x convencional</text>
+<text x="60" y="38" fill="#555">Spearman ρ = 0.11 (p = 0.556, n = 32); método congelado da B2-3</text>
+<line x1="60" y1="380" x2="580" y2="380" stroke="#333"/><line x1="60" y1="60" x2="60" y2="380" stroke="#333"/>
+<text x="180.0" y="420">Censo 2017: fração de estabelecimentos com cultivo convencional</text>
+<text x="14" y="310.0" transform="rotate(-90 14 310.0)">Sentinel-2: fração das vezes sem planta em que o solo está nu</text>
+<text x="52" y="394">0.00</text>
+<text x="182" y="394">0.07</text>
+<text x="312" y="394">0.14</text>
+<text x="442" y="394">0.21</text>
+<text x="572" y="394">0.28</text>
+<text x="26" y="384">0.00</text>
+<text x="26" y="304">0.07</text>
+<text x="26" y="224">0.13</text>
+<text x="26" y="144">0.20</text>
+<text x="26" y="64">0.27</text>
+<circle cx="532.7" cy="306.8" r="5" fill="#d9822b"/>
+<text x="539.7" y="310.8" fill="#333">Belmonte</text>
+<circle cx="64.2" cy="334.7" r="5" fill="#d9822b"/>
+<text x="71.2" y="338.7" fill="#333">Bom Jesus do Oeste</text>
+<circle cx="286.7" cy="243.8" r="5" fill="#d9822b"/>
+<text x="293.7" y="247.8" fill="#333">Caibi</text>
+<circle cx="200.3" cy="344.3" r="5" fill="#d9822b"/>
+<text x="207.3" y="348.3" fill="#333">Campo Erê</text>
+<circle cx="174.5" cy="328.1" r="5" fill="#d9822b"/>
+<text x="181.5" y="332.1" fill="#333">Cunha Porã</text>
+<circle cx="99.6" cy="265.7" r="5" fill="#d9822b"/>
+<text x="106.6" y="269.7" fill="#333">Cunhataí</text>
+<circle cx="215.7" cy="329.1" r="5" fill="#d9822b"/>
+<text x="222.7" y="333.1" fill="#333">Dionísio Cerqueira</text>
+<circle cx="331.5" cy="296.7" r="5" fill="#d9822b"/>
+<text x="338.5" y="300.7" fill="#333">Flor do Sertão</text>
+<circle cx="437.1" cy="328.5" r="5" fill="#d9822b"/>
+<text x="444.1" y="332.5" fill="#333">Guarujá do Sul</text>
+<circle cx="172.9" cy="226.7" r="5" fill="#d9822b"/>
+<text x="179.9" y="230.7" fill="#333">Iporã do Oeste</text>
+<circle cx="246.0" cy="301.7" r="5" fill="#d9822b"/>
+<text x="253.0" y="305.7" fill="#333">Iraceminha</text>
+<circle cx="414.9" cy="270.1" r="5" fill="#d9822b"/>
+<text x="421.9" y="274.1" fill="#333">Itapiranga</text>
+<circle cx="323.5" cy="324.7" r="5" fill="#d9822b"/>
+<text x="330.5" y="328.7" fill="#333">Maravilha</text>
+<circle cx="284.1" cy="327.6" r="5" fill="#d9822b"/>
+<text x="291.1" y="331.6" fill="#333">Modelo</text>
+<circle cx="428.5" cy="162.7" r="5" fill="#d9822b"/>
+<text x="435.5" y="166.7" fill="#333">Mondaí</text>
+<circle cx="202.8" cy="339.9" r="5" fill="#d9822b"/>
+<text x="209.8" y="343.9" fill="#333">Palma Sola</text>
+<circle cx="207.7" cy="276.9" r="5" fill="#d9822b"/>
+<text x="214.7" y="280.9" fill="#333">Palmitos</text>
+<circle cx="105.2" cy="298.0" r="5" fill="#d9822b"/>
+<text x="112.2" y="302.0" fill="#333">Pinhalzinho</text>
+<circle cx="202.1" cy="275.9" r="5" fill="#d9822b"/>
+<text x="209.1" y="279.9" fill="#333">Princesa</text>
+<circle cx="371.6" cy="101.7" r="5" fill="#d9822b"/>
+<text x="378.6" y="105.7" fill="#333">Riqueza</text>
+<circle cx="349.8" cy="305.0" r="5" fill="#d9822b"/>
+<text x="356.8" y="309.0" fill="#333">Saltinho</text>
+<circle cx="143.7" cy="284.7" r="5" fill="#d9822b"/>
+<text x="150.7" y="288.7" fill="#333">Santa Helena</text>
+<circle cx="277.9" cy="286.0" r="5" fill="#d9822b"/>
+<text x="284.9" y="290.0" fill="#333">Santa Terezinha do Progresso</text>
+<circle cx="186.5" cy="299.8" r="5" fill="#d9822b"/>
+<text x="193.5" y="303.8" fill="#333">São Bernardino</text>
+<circle cx="226.1" cy="274.1" r="5" fill="#d9822b"/>
+<text x="233.1" y="278.1" fill="#333">São Carlos</text>
+<circle cx="183.1" cy="251.5" r="5" fill="#d9822b"/>
+<text x="190.1" y="255.5" fill="#333">São João do Oeste</text>
+<circle cx="383.7" cy="283.4" r="5" fill="#d9822b"/>
+<text x="390.7" y="287.4" fill="#333">São José do Cedro</text>
+<circle cx="69.3" cy="280.9" r="5" fill="#d9822b"/>
+<text x="76.3" y="284.9" fill="#333">São Miguel da Boa Vista</text>
+<circle cx="333.2" cy="290.0" r="5" fill="#d9822b"/>
+<text x="340.2" y="294.0" fill="#333">Saudades</text>
+<circle cx="126.1" cy="340.5" r="5" fill="#d9822b"/>
+<text x="133.1" y="344.5" fill="#333">Serra Alta</text>
+<circle cx="355.8" cy="304.9" r="5" fill="#d9822b"/>
+<text x="362.8" y="308.9" fill="#333">Tigrinhos</text>
+<circle cx="263.1" cy="278.3" r="5" fill="#d9822b"/>
+<text x="270.1" y="282.3" fill="#333">Tunápolis</text>
+</svg>

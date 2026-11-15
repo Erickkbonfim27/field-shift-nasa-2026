@@ -1,0 +1,326 @@
+[
+ {
+  "cultura": "milho",
+  "caso": "B3-3 como publicado (regra fixa, regiões vizinhas)",
+  "anos_regiao": 72,
+  "regioes": 2,
+  "alertas": 4,
+  "acertos": 3,
+  "taxa_base": 0.208,
+  "eventos": 3,
+  "eventos_acerto": 2,
+  "ic95_evento_wilson": [
+   0.21,
+   0.94
+  ],
+  "precisao": 0.75,
+  "ic95_precisao": [
+   0.0,
+   1.0
+  ],
+  "lift": 0.542,
+  "ic95_lift": [
+   -0.18,
+   0.86
+  ],
+  "p_lift_menor_ou_igual_0": 0.086,
+  "reamostras_sem_alerta": 227
+ },
+ {
+  "cultura": "milho",
+  "caso": "Extensão, células novas, regra fixa",
+  "anos_regiao": 288,
+  "regioes": 8,
+  "alertas": 5,
+  "acertos": 2,
+  "taxa_base": 0.135,
+  "eventos": 3,
+  "eventos_acerto": 1,
+  "ic95_evento_wilson": [
+   0.06,
+   0.79
+  ],
+  "precisao": 0.4,
+  "ic95_precisao": [
+   0.0,
+   1.0
+  ],
+  "lift": 0.265,
+  "ic95_lift": [
+   -0.12,
+   0.88
+  ],
+  "p_lift_menor_ou_igual_0": 0.082,
+  "reamostras_sem_alerta": 214
+ },
+ {
+  "cultura": "milho",
+  "caso": "Extensão, células novas, 10% extremos da célula",
+  "anos_regiao": 288,
+  "regioes": 8,
+  "alertas": 32,
+  "acertos": 14,
+  "taxa_base": 0.135,
+  "eventos": 11,
+  "eventos_acerto": 4,
+  "ic95_evento_wilson": [
+   0.15,
+   0.65
+  ],
+  "precisao": 0.438,
+  "ic95_precisao": [
+   0.22,
+   0.6
+  ],
+  "lift": 0.302,
+  "ic95_lift": [
+   0.11,
+   0.46
+  ],
+  "p_lift_menor_ou_igual_0": 0.0,
+  "reamostras_sem_alerta": 0
+ },
+ {
+  "cultura": "milho",
+  "caso": "SC inteira (amostra + B3-3 + novas), regra fixa",
+  "anos_regiao": 396,
+  "regioes": 11,
+  "alertas": 13,
+  "acertos": 7,
+  "taxa_base": 0.154,
+  "eventos": 6,
+  "eventos_acerto": 3,
+  "ic95_evento_wilson": [
+   0.19,
+   0.81
+  ],
+  "precisao": 0.538,
+  "ic95_precisao": [
+   0.0,
+   0.8
+  ],
+  "lift": 0.384,
+  "ic95_lift": [
+   -0.1,
+   0.65
+  ],
+  "p_lift_menor_ou_igual_0": 0.05,
+  "reamostras_sem_alerta": 8
+ },
+ {
+  "cultura": "milho",
+  "caso": "SC inteira, 10% extremos da célula",
+  "anos_regiao": 396,
+  "regioes": 11,
+  "alertas": 44,
+  "acertos": 21,
+  "taxa_base": 0.154,
+  "eventos": 12,
+  "eventos_acerto": 4,
+  "ic95_evento_wilson": [
+   0.14,
+   0.61
+  ],
+  "precisao": 0.477,
+  "ic95_precisao": [
+   0.22,
+   0.65
+  ],
+  "lift": 0.323,
+  "ic95_lift": [
+   0.11,
+   0.48
+  ],
+  "p_lift_menor_ou_igual_0": 0.002,
+  "reamostras_sem_alerta": 0
+ },
+ {
+  "cultura": "cebola",
+  "caso": "B3-3 como publicado (regra fixa, regiões vizinhas)",
+  "anos_regiao": 72,
+  "regioes": 2,
+  "alertas": 8,
+  "acertos": 4,
+  "taxa_base": 0.167,
+  "eventos": 4,
+  "eventos_acerto": 3,
+  "ic95_evento_wilson": [
+   0.3,
+   0.95
+  ],
+  "precisao": 0.5,
+  "ic95_precisao": [
+   0.0,
+   1.0
+  ],
+  "lift": 0.333,
+  "ic95_lift": [
+   -0.07,
+   0.79
+  ],
+  "p_lift_menor_ou_igual_0": 0.035,
+  "reamostras_sem_alerta": 74
+ },
+ {
+  "cultura": "cebola",
+  "caso": "Extensão, células novas, regra fixa",
+  "anos_regiao": 315,
+  "regioes": 9,
+  "alertas": 49,
+  "acertos": 11,
+  "taxa_base": 0.127,
+  "eventos": 14,
+  "eventos_acerto": 2,
+  "ic95_evento_wilson": [
+   0.04,
+   0.4
+  ],
+  "precisao": 0.224,
+  "ic95_precisao": [
+   0.08,
+   0.42
+  ],
+  "lift": 0.098,
+  "ic95_lift": [
+   -0.02,
+   0.27
+  ],
+  "p_lift_menor_ou_igual_0": 0.068,
+  "reamostras_sem_alerta": 0
+ },
+ {
+  "cultura": "cebola",
+  "caso": "Extensão, células novas, 10% extremos da célula",
+  "anos_regiao": 315,
+  "regioes": 9,
+  "alertas": 36,
+  "acertos": 9,
+  "taxa_base": 0.127,
+  "eventos": 9,
+  "eventos_acerto": 2,
+  "ic95_evento_wilson": [
+   0.06,
+   0.55
+  ],
+  "precisao": 0.25,
+  "ic95_precisao": [
+   0.09,
+   0.43
+  ],
+  "lift": 0.123,
+  "ic95_lift": [
+   -0.01,
+   0.29
+  ],
+  "p_lift_menor_ou_igual_0": 0.039,
+  "reamostras_sem_alerta": 1
+ },
+ {
+  "cultura": "cebola",
+  "caso": "Extensão cebola ≥ 100 ha, regra fixa",
+  "anos_regiao": 144,
+  "regioes": 4,
+  "alertas": 25,
+  "acertos": 8,
+  "taxa_base": 0.16,
+  "eventos": 10,
+  "eventos_acerto": 3,
+  "ic95_evento_wilson": [
+   0.11,
+   0.6
+  ],
+  "precisao": 0.32,
+  "ic95_precisao": [
+   0.06,
+   0.6
+  ],
+  "lift": 0.16,
+  "ic95_lift": [
+   -0.06,
+   0.4
+  ],
+  "p_lift_menor_ou_igual_0": 0.081,
+  "reamostras_sem_alerta": 0
+ },
+ {
+  "cultura": "cebola",
+  "caso": "Extensão cebola ≥ 100 ha, 10% extremos",
+  "anos_regiao": 144,
+  "regioes": 4,
+  "alertas": 16,
+  "acertos": 7,
+  "taxa_base": 0.16,
+  "eventos": 7,
+  "eventos_acerto": 4,
+  "ic95_evento_wilson": [
+   0.25,
+   0.84
+  ],
+  "precisao": 0.438,
+  "ic95_precisao": [
+   0.11,
+   0.8
+  ],
+  "lift": 0.278,
+  "ic95_lift": [
+   -0.01,
+   0.61
+  ],
+  "p_lift_menor_ou_igual_0": 0.029,
+  "reamostras_sem_alerta": 4
+ },
+ {
+  "cultura": "cebola",
+  "caso": "SC inteira (amostra + B3-3 + novas), regra fixa",
+  "anos_regiao": 423,
+  "regioes": 12,
+  "alertas": 61,
+  "acertos": 18,
+  "taxa_base": 0.135,
+  "eventos": 14,
+  "eventos_acerto": 2,
+  "ic95_evento_wilson": [
+   0.04,
+   0.4
+  ],
+  "precisao": 0.295,
+  "ic95_precisao": [
+   0.11,
+   0.52
+  ],
+  "lift": 0.16,
+  "ic95_lift": [
+   0.0,
+   0.36
+  ],
+  "p_lift_menor_ou_igual_0": 0.023,
+  "reamostras_sem_alerta": 0
+ },
+ {
+  "cultura": "cebola",
+  "caso": "SC inteira, 10% extremos da célula",
+  "anos_regiao": 423,
+  "regioes": 12,
+  "alertas": 48,
+  "acertos": 16,
+  "taxa_base": 0.135,
+  "eventos": 9,
+  "eventos_acerto": 2,
+  "ic95_evento_wilson": [
+   0.06,
+   0.55
+  ],
+  "precisao": 0.333,
+  "ic95_precisao": [
+   0.12,
+   0.56
+  ],
+  "lift": 0.199,
+  "ic95_lift": [
+   0.02,
+   0.41
+  ],
+  "p_lift_menor_ou_igual_0": 0.013,
+  "reamostras_sem_alerta": 1
+ }
+]

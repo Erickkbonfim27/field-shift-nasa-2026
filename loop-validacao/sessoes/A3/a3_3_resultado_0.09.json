@@ -1,0 +1,70 @@
+{
+ "limiar_ndti": 0.09,
+ "T1_frac_obs_baixo_ndvi_mai_ago_palhada": 0.55,
+ "ndti_obs_baixo_ndvi_lavoura_p10_p50_p90": [
+  0.045,
+  0.147,
+  0.223
+ ],
+ "ndti_obs_verde_lavoura_p50": 0.342,
+ "ndti_urbano_p50": 0.092,
+ "hist_ndti_baixo_ndvi_lavoura": [
+  65,
+  156,
+  322,
+  523,
+  1741,
+  23732,
+  80739,
+  97625,
+  104447,
+  82293,
+  83367,
+  131558,
+  174254,
+  177197,
+  139212,
+  87153,
+  51065,
+  31799,
+  20830,
+  14103
+ ],
+ "T2_frac_talhoes_ate_30_dias_exposto": 0.97,
+ "frac_talhoes_ate_60_dias_exposto": 0.99,
+ "baseline_ndvi_vizinho_frac_ate_30_dias": 0.39,
+ "baseline_ndvi_vizinho_frac_ate_60_dias": 0.62,
+ "dias_exposto_p10_p50_p90": [
+  4,
+  12,
+  22
+ ],
+ "dias_ndvi_baixo_p10_p50_p90": [
+  13,
+  44,
+  114
+ ],
+ "T4_ICC_dias_exposto": 0.07,
+ "dias_exposto_medio_por_ano": {
+  "2019": 25,
+  "2020": 3,
+  "2021": 4,
+  "2022": 8,
+  "2023": 14,
+  "2024": 27
+ },
+ "perfil_exposto_lavoura_por_mes": [
+  0.003,
+  0.004,
+  0.004,
+  0.006,
+  0.02,
+  0.124,
+  0.189,
+  0.052,
+  0.019,
+  0.007,
+  0.007,
+  0.006
+ ]
+}

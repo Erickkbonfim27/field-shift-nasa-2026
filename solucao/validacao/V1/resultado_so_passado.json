@@ -1,0 +1,555 @@
+{
+ "todos_os_anos_1990_2025 (anos sem historico nao alertam)": {
+  "anos_regiao": 288,
+  "ruins": 39,
+  "taxa_base": 0.135,
+  "alertas": 29,
+  "acertos": 13,
+  "precisao": 0.448,
+  "recall": 0.333,
+  "rel_medio_alerta": 0.884,
+  "eventos": 9,
+  "eventos_acerto": 4,
+  "acerto_evento": 0.444,
+  "ic95_evento": [
+   0.19,
+   0.73
+  ],
+  "lista_eventos": [
+   {
+    "ano": 2005,
+    "regioes": [
+     "Xanxerê 42003",
+     "Curitibanos 42009"
+    ],
+    "frac_ruim": 1.0,
+    "rel": [
+     0.83,
+     0.7
+    ],
+    "acerto": true
+   },
+   {
+    "ano": 2006,
+    "regioes": [
+     "Xanxerê 42003",
+     "Joaçaba 42004",
+     "Canoinhas 42006",
+     "Curitibanos 42009",
+     "Campos de Lages 42010",
+     "Tubarão 42018",
+     "Araranguá 42020"
+    ],
+    "frac_ruim": 0.71,
+    "rel": [
+     0.73,
+     0.62,
+     0.81,
+     0.61,
+     0.64,
+     0.97,
+     0.98
+    ],
+    "acerto": true
+   },
+   {
+    "ano": 2009,
+    "regioes": [
+     "Xanxerê 42003"
+    ],
+    "frac_ruim": 0.0,
+    "rel": [
+     0.88
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2012,
+    "regioes": [
+     "Xanxerê 42003"
+    ],
+    "frac_ruim": 1.0,
+    "rel": [
+     0.72
+    ],
+    "acerto": true
+   },
+   {
+    "ano": 2013,
+    "regioes": [
+     "Tubarão 42018",
+     "Criciúma 42019"
+    ],
+    "frac_ruim": 0.0,
+    "rel": [
+     1.18,
+     0.95
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2019,
+    "regioes": [
+     "Joaçaba 42004",
+     "Canoinhas 42006"
+    ],
+    "frac_ruim": 0.0,
+    "rel": [
+     1.05,
+     0.99
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2020,
+    "regioes": [
+     "Joaçaba 42004",
+     "Curitibanos 42009",
+     "Campos de Lages 42010",
+     "Tubarão 42018",
+     "Criciúma 42019",
+     "Araranguá 42020"
+    ],
+    "frac_ruim": 0.17,
+    "rel": [
+     1.02,
+     0.93,
+     0.64,
+     1.03,
+     0.88,
+     0.97
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2021,
+    "regioes": [
+     "Campos de Lages 42010"
+    ],
+    "frac_ruim": 0.0,
+    "rel": [
+     1.2
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2022,
+    "regioes": [
+     "Xanxerê 42003",
+     "Joaçaba 42004",
+     "Canoinhas 42006",
+     "Curitibanos 42009",
+     "Campos de Lages 42010",
+     "Criciúma 42019",
+     "Araranguá 42020"
+    ],
+    "frac_ruim": 0.57,
+    "rel": [
+     0.7,
+     0.85,
+     0.8,
+     1.01,
+     0.58,
+     1.16,
+     1.21
+    ],
+    "acerto": true
+   }
+  ],
+  "permutacao": {
+   "precisao_obs": 0.448,
+   "acerto_evento_obs": 0.444,
+   "p_precisao": 0.0013,
+   "p_evento": 0.0232,
+   "n": 10000
+  },
+  "eventos_novos": [
+   {
+    "ano": 2005,
+    "regioes": [
+     "Xanxerê 42003",
+     "Curitibanos 42009"
+    ],
+    "frac_ruim": 1.0,
+    "rel": [
+     0.83,
+     0.7
+    ],
+    "acerto": true
+   },
+   {
+    "ano": 2006,
+    "regioes": [
+     "Xanxerê 42003",
+     "Joaçaba 42004",
+     "Canoinhas 42006",
+     "Curitibanos 42009",
+     "Campos de Lages 42010",
+     "Tubarão 42018",
+     "Araranguá 42020"
+    ],
+    "frac_ruim": 0.71,
+    "rel": [
+     0.73,
+     0.62,
+     0.81,
+     0.61,
+     0.64,
+     0.97,
+     0.98
+    ],
+    "acerto": true
+   },
+   {
+    "ano": 2013,
+    "regioes": [
+     "Tubarão 42018",
+     "Criciúma 42019"
+    ],
+    "frac_ruim": 0.0,
+    "rel": [
+     1.18,
+     0.95
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2019,
+    "regioes": [
+     "Joaçaba 42004",
+     "Canoinhas 42006"
+    ],
+    "frac_ruim": 0.0,
+    "rel": [
+     1.05,
+     0.99
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2020,
+    "regioes": [
+     "Joaçaba 42004",
+     "Curitibanos 42009",
+     "Campos de Lages 42010",
+     "Tubarão 42018",
+     "Criciúma 42019",
+     "Araranguá 42020"
+    ],
+    "frac_ruim": 0.17,
+    "rel": [
+     1.02,
+     0.93,
+     0.64,
+     1.03,
+     0.88,
+     0.97
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2021,
+    "regioes": [
+     "Campos de Lages 42010"
+    ],
+    "frac_ruim": 0.0,
+    "rel": [
+     1.2
+    ],
+    "acerto": false
+   }
+  ],
+  "acerto_eventos_novos": "2/6",
+  "criterios": {
+   "C0": true,
+   "C1": false,
+   "C2": true,
+   "C3": false,
+   "veredito": "não sustenta"
+  }
+ },
+ "so_anos_com_historico": {
+  "anos_regiao": 168,
+  "ruins": 27,
+  "taxa_base": 0.161,
+  "alertas": 29,
+  "acertos": 13,
+  "precisao": 0.448,
+  "recall": 0.481,
+  "rel_medio_alerta": 0.884,
+  "eventos": 9,
+  "eventos_acerto": 4,
+  "acerto_evento": 0.444,
+  "ic95_evento": [
+   0.19,
+   0.73
+  ],
+  "lista_eventos": [
+   {
+    "ano": 2005,
+    "regioes": [
+     "Xanxerê 42003",
+     "Curitibanos 42009"
+    ],
+    "frac_ruim": 1.0,
+    "rel": [
+     0.83,
+     0.7
+    ],
+    "acerto": true
+   },
+   {
+    "ano": 2006,
+    "regioes": [
+     "Xanxerê 42003",
+     "Joaçaba 42004",
+     "Canoinhas 42006",
+     "Curitibanos 42009",
+     "Campos de Lages 42010",
+     "Tubarão 42018",
+     "Araranguá 42020"
+    ],
+    "frac_ruim": 0.71,
+    "rel": [
+     0.73,
+     0.62,
+     0.81,
+     0.61,
+     0.64,
+     0.97,
+     0.98
+    ],
+    "acerto": true
+   },
+   {
+    "ano": 2009,
+    "regioes": [
+     "Xanxerê 42003"
+    ],
+    "frac_ruim": 0.0,
+    "rel": [
+     0.88
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2012,
+    "regioes": [
+     "Xanxerê 42003"
+    ],
+    "frac_ruim": 1.0,
+    "rel": [
+     0.72
+    ],
+    "acerto": true
+   },
+   {
+    "ano": 2013,
+    "regioes": [
+     "Tubarão 42018",
+     "Criciúma 42019"
+    ],
+    "frac_ruim": 0.0,
+    "rel": [
+     1.18,
+     0.95
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2019,
+    "regioes": [
+     "Joaçaba 42004",
+     "Canoinhas 42006"
+    ],
+    "frac_ruim": 0.0,
+    "rel": [
+     1.05,
+     0.99
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2020,
+    "regioes": [
+     "Joaçaba 42004",
+     "Curitibanos 42009",
+     "Campos de Lages 42010",
+     "Tubarão 42018",
+     "Criciúma 42019",
+     "Araranguá 42020"
+    ],
+    "frac_ruim": 0.17,
+    "rel": [
+     1.02,
+     0.93,
+     0.64,
+     1.03,
+     0.88,
+     0.97
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2021,
+    "regioes": [
+     "Campos de Lages 42010"
+    ],
+    "frac_ruim": 0.0,
+    "rel": [
+     1.2
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2022,
+    "regioes": [
+     "Xanxerê 42003",
+     "Joaçaba 42004",
+     "Canoinhas 42006",
+     "Curitibanos 42009",
+     "Campos de Lages 42010",
+     "Criciúma 42019",
+     "Araranguá 42020"
+    ],
+    "frac_ruim": 0.57,
+    "rel": [
+     0.7,
+     0.85,
+     0.8,
+     1.01,
+     0.58,
+     1.16,
+     1.21
+    ],
+    "acerto": true
+   }
+  ],
+  "permutacao": {
+   "precisao_obs": 0.448,
+   "acerto_evento_obs": 0.444,
+   "p_precisao": 0.0276,
+   "p_evento": 0.0782,
+   "n": 10000
+  },
+  "eventos_novos": [
+   {
+    "ano": 2005,
+    "regioes": [
+     "Xanxerê 42003",
+     "Curitibanos 42009"
+    ],
+    "frac_ruim": 1.0,
+    "rel": [
+     0.83,
+     0.7
+    ],
+    "acerto": true
+   },
+   {
+    "ano": 2006,
+    "regioes": [
+     "Xanxerê 42003",
+     "Joaçaba 42004",
+     "Canoinhas 42006",
+     "Curitibanos 42009",
+     "Campos de Lages 42010",
+     "Tubarão 42018",
+     "Araranguá 42020"
+    ],
+    "frac_ruim": 0.71,
+    "rel": [
+     0.73,
+     0.62,
+     0.81,
+     0.61,
+     0.64,
+     0.97,
+     0.98
+    ],
+    "acerto": true
+   },
+   {
+    "ano": 2013,
+    "regioes": [
+     "Tubarão 42018",
+     "Criciúma 42019"
+    ],
+    "frac_ruim": 0.0,
+    "rel": [
+     1.18,
+     0.95
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2019,
+    "regioes": [
+     "Joaçaba 42004",
+     "Canoinhas 42006"
+    ],
+    "frac_ruim": 0.0,
+    "rel": [
+     1.05,
+     0.99
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2020,
+    "regioes": [
+     "Joaçaba 42004",
+     "Curitibanos 42009",
+     "Campos de Lages 42010",
+     "Tubarão 42018",
+     "Criciúma 42019",
+     "Araranguá 42020"
+    ],
+    "frac_ruim": 0.17,
+    "rel": [
+     1.02,
+     0.93,
+     0.64,
+     1.03,
+     0.88,
+     0.97
+    ],
+    "acerto": false
+   },
+   {
+    "ano": 2021,
+    "regioes": [
+     "Campos de Lages 42010"
+    ],
+    "frac_ruim": 0.0,
+    "rel": [
+     1.2
+    ],
+    "acerto": false
+   }
+  ],
+  "acerto_eventos_novos": "2/6",
+  "criterios": {
+   "C0": true,
+   "C1": false,
+   "C2": true,
+   "C3": false,
+   "veredito": "não sustenta"
+  }
+ },
+ "parametros": {
+  "min_passados": 15,
+  "regioes": [
+   "Araranguá 42020",
+   "Campos de Lages 42010",
+   "Canoinhas 42006",
+   "Criciúma 42019",
+   "Curitibanos 42009",
+   "Joaçaba 42004",
+   "Tubarão 42018",
+   "Xanxerê 42003"
+  ],
+  "corte_ano_ruim": 0.85,
+  "limiar_percentil": 10
+ }
+}

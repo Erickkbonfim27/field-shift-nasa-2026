@@ -1,0 +1,342 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 460">
+<style>
+svg{--sf:#fcfcfb;--t1:#0b0b0b;--t2:#52514e;--grid:#e4e3df;--s1:#2a78d6;--s2:#eb6834;--neu:#8a8984}
+@media (prefers-color-scheme: dark){svg{--sf:#1a1a19;--t1:#f0efec;--t2:#c3c2b7;--grid:#3a3a37;--s1:#3987e5;--s2:#d95926;--neu:#9a9990}}
+text{fill:var(--t1);font-family:system-ui,sans-serif;font-size:12px}.t2{fill:var(--t2)}.tt{font-size:15px;font-weight:600}
+</style>
+<rect width="820" height="460" fill="var(--sf)"/>
+<text x="60" y="24" class="tt">Células novas do POWER (cebola): indicador x rendimento relativo, 9 microrregiões</text>
+<text x="60" y="42" class="t2">Laranja = ano ruim (≤ 0,85). Linha vertical = limiar fixo de B3-3. Passe o mouse para ver região e ano.</text>
+<line x1="60" x2="760" y1="363.52941176470586" y2="363.52941176470586" stroke="var(--grid)" />
+<text x="54" y="367.52941176470586" text-anchor="end" class="t2">0.50</text>
+<line x1="60" x2="760" y1="299.70588235294116" y2="299.70588235294116" stroke="var(--grid)" stroke-dasharray="5,4"/>
+<text x="54" y="303.70588235294116" text-anchor="end" class="t2">0.85</text>
+<line x1="60" x2="760" y1="272.3529411764706" y2="272.3529411764706" stroke="var(--grid)" />
+<text x="54" y="276.3529411764706" text-anchor="end" class="t2">1.00</text>
+<line x1="60" x2="760" y1="181.17647058823528" y2="181.17647058823528" stroke="var(--grid)" />
+<text x="54" y="185.17647058823528" text-anchor="end" class="t2">1.50</text>
+<text x="60.0" y="416" text-anchor="middle" class="t2">0</text>
+<text x="200.0" y="416" text-anchor="middle" class="t2">149</text>
+<text x="340.0" y="416" text-anchor="middle" class="t2">298</text>
+<text x="480.0" y="416" text-anchor="middle" class="t2">448</text>
+<text x="620.0" y="416" text-anchor="middle" class="t2">597</text>
+<text x="760.0" y="416" text-anchor="middle" class="t2">746</text>
+<text x="410.0" y="442" text-anchor="middle" class="t2">Excedente hídrico de 1/set a 30/nov, mm (NASA POWER, balanço FAO-56)</text>
+<text x="16" y="230.0" text-anchor="middle" class="t2" transform="rotate(-90 16 230.0)">rendimento / mediana t±3 (IBGE PAM)</text>
+<line x1="397.7563329312424" x2="397.7563329312424" y1="60" y2="400" stroke="var(--t2)" stroke-width="2"/>
+<circle cx="178.6" cy="316.2" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 1991: indicador 126.4, rendimento relativo 0.76</title></circle>
+<circle cx="345.5" cy="306.1" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 1992: indicador 304.3, rendimento relativo 0.81</title></circle>
+<circle cx="407.2" cy="209.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 1993: indicador 370.1, rendimento relativo 1.35</title></circle>
+<circle cx="420.6" cy="222.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 1994: indicador 384.4, rendimento relativo 1.27</title></circle>
+<circle cx="328.5" cy="224.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 1995: indicador 286.2, rendimento relativo 1.26</title></circle>
+<circle cx="446.2" cy="303.5" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 1996: indicador 411.6, rendimento relativo 0.83</title></circle>
+<circle cx="717.3" cy="304.9" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 1997: indicador 700.6, rendimento relativo 0.82</title></circle>
+<circle cx="474.4" cy="291.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 1998: indicador 441.7, rendimento relativo 0.89</title></circle>
+<circle cx="202.1" cy="257.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 1999: indicador 151.5, rendimento relativo 1.08</title></circle>
+<circle cx="442.6" cy="280.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2000: indicador 407.8, rendimento relativo 0.96</title></circle>
+<circle cx="364.3" cy="287.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2001: indicador 324.3, rendimento relativo 0.92</title></circle>
+<circle cx="603.3" cy="258.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2002: indicador 579.1, rendimento relativo 1.07</title></circle>
+<circle cx="302.7" cy="268.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2003: indicador 258.7, rendimento relativo 1.02</title></circle>
+<circle cx="427.5" cy="214.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2004: indicador 391.7, rendimento relativo 1.32</title></circle>
+<circle cx="405.4" cy="255.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2005: indicador 368.2, rendimento relativo 1.09</title></circle>
+<circle cx="196.5" cy="272.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2006: indicador 145.5, rendimento relativo 1.00</title></circle>
+<circle cx="327.0" cy="284.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2007: indicador 284.6, rendimento relativo 0.94</title></circle>
+<circle cx="388.7" cy="271.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2008: indicador 350.3, rendimento relativo 1.00</title></circle>
+<circle cx="518.1" cy="299.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2009: indicador 488.3, rendimento relativo 0.85</title></circle>
+<circle cx="245.1" cy="283.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2010: indicador 197.3, rendimento relativo 0.94</title></circle>
+<circle cx="318.1" cy="270.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2011: indicador 275.1, rendimento relativo 1.01</title></circle>
+<circle cx="189.7" cy="253.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2012: indicador 138.2, rendimento relativo 1.10</title></circle>
+<circle cx="234.6" cy="252.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2013: indicador 186.1, rendimento relativo 1.11</title></circle>
+<circle cx="281.9" cy="277.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2014: indicador 236.5, rendimento relativo 0.97</title></circle>
+<circle cx="250.8" cy="296.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2015: indicador 203.4, rendimento relativo 0.87</title></circle>
+<circle cx="189.5" cy="281.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2016: indicador 138.0, rendimento relativo 0.95</title></circle>
+<circle cx="360.9" cy="225.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2017: indicador 320.7, rendimento relativo 1.26</title></circle>
+<circle cx="389.0" cy="239.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2018: indicador 350.7, rendimento relativo 1.18</title></circle>
+<circle cx="157.2" cy="279.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2019: indicador 103.6, rendimento relativo 0.96</title></circle>
+<circle cx="68.4" cy="270.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2020: indicador 9.0, rendimento relativo 1.01</title></circle>
+<circle cx="274.1" cy="279.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2021: indicador 228.2, rendimento relativo 0.96</title></circle>
+<circle cx="378.3" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2022: indicador 339.3, rendimento relativo 1.00</title></circle>
+<circle cx="674.0" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2023: indicador 654.4, rendimento relativo 1.00</title></circle>
+<circle cx="130.7" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2024: indicador 75.4, rendimento relativo 1.00</title></circle>
+<circle cx="151.6" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Xanxerê 42003 2025: indicador 97.6, rendimento relativo 1.00</title></circle>
+<circle cx="364.3" cy="284.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 1990: indicador 324.3, rendimento relativo 0.93</title></circle>
+<circle cx="179.9" cy="286.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 1991: indicador 127.8, rendimento relativo 0.92</title></circle>
+<circle cx="187.3" cy="260.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 1992: indicador 135.7, rendimento relativo 1.07</title></circle>
+<circle cx="349.3" cy="263.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 1993: indicador 308.4, rendimento relativo 1.05</title></circle>
+<circle cx="276.0" cy="264.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 1994: indicador 230.2, rendimento relativo 1.04</title></circle>
+<circle cx="290.6" cy="277.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 1995: indicador 245.8, rendimento relativo 0.97</title></circle>
+<circle cx="260.6" cy="311.7" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 1996: indicador 213.8, rendimento relativo 0.78</title></circle>
+<circle cx="591.0" cy="285.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 1997: indicador 566.0, rendimento relativo 0.93</title></circle>
+<circle cx="369.1" cy="267.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 1998: indicador 329.5, rendimento relativo 1.03</title></circle>
+<circle cx="232.5" cy="272.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 1999: indicador 183.9, rendimento relativo 1.00</title></circle>
+<circle cx="419.5" cy="273.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2000: indicador 383.2, rendimento relativo 0.99</title></circle>
+<circle cx="345.5" cy="273.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2001: indicador 304.3, rendimento relativo 0.99</title></circle>
+<circle cx="449.2" cy="281.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2002: indicador 414.8, rendimento relativo 0.95</title></circle>
+<circle cx="143.2" cy="320.8" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2003: indicador 88.7, rendimento relativo 0.73</title></circle>
+<circle cx="329.5" cy="220.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2004: indicador 287.3, rendimento relativo 1.28</title></circle>
+<circle cx="407.1" cy="266.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2005: indicador 370.0, rendimento relativo 1.03</title></circle>
+<circle cx="234.5" cy="270.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2006: indicador 186.0, rendimento relativo 1.01</title></circle>
+<circle cx="308.9" cy="270.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2007: indicador 265.3, rendimento relativo 1.01</title></circle>
+<circle cx="376.3" cy="283.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2008: indicador 337.1, rendimento relativo 0.94</title></circle>
+<circle cx="403.1" cy="276.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2009: indicador 365.7, rendimento relativo 0.98</title></circle>
+<circle cx="175.4" cy="245.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2010: indicador 123.0, rendimento relativo 1.15</title></circle>
+<circle cx="257.4" cy="279.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2011: indicador 210.4, rendimento relativo 0.96</title></circle>
+<circle cx="100.7" cy="284.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2012: indicador 43.4, rendimento relativo 0.93</title></circle>
+<circle cx="264.3" cy="243.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2013: indicador 217.8, rendimento relativo 1.16</title></circle>
+<circle cx="219.3" cy="223.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2014: indicador 169.8, rendimento relativo 1.27</title></circle>
+<circle cx="525.8" cy="335.6" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2015: indicador 496.5, rendimento relativo 0.65</title></circle>
+<circle cx="195.9" cy="278.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2016: indicador 144.9, rendimento relativo 0.97</title></circle>
+<circle cx="194.8" cy="253.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2017: indicador 143.7, rendimento relativo 1.10</title></circle>
+<circle cx="273.9" cy="250.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2018: indicador 228.0, rendimento relativo 1.12</title></circle>
+<circle cx="161.5" cy="308.3" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2019: indicador 108.2, rendimento relativo 0.80</title></circle>
+<circle cx="60.0" cy="276.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2020: indicador 0.0, rendimento relativo 0.98</title></circle>
+<circle cx="237.4" cy="268.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2021: indicador 189.1, rendimento relativo 1.02</title></circle>
+<circle cx="316.6" cy="268.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2022: indicador 273.5, rendimento relativo 1.02</title></circle>
+<circle cx="714.6" cy="279.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2023: indicador 697.7, rendimento relativo 0.96</title></circle>
+<circle cx="145.0" cy="275.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2024: indicador 90.6, rendimento relativo 0.98</title></circle>
+<circle cx="82.9" cy="254.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Joaçaba 42004 2025: indicador 24.4, rendimento relativo 1.10</title></circle>
+<circle cx="313.4" cy="289.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 1990: indicador 270.1, rendimento relativo 0.90</title></circle>
+<circle cx="196.5" cy="260.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 1991: indicador 145.5, rendimento relativo 1.07</title></circle>
+<circle cx="176.3" cy="273.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 1992: indicador 124.0, rendimento relativo 0.99</title></circle>
+<circle cx="384.9" cy="281.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 1993: indicador 346.3, rendimento relativo 0.95</title></circle>
+<circle cx="247.9" cy="271.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 1994: indicador 200.3, rendimento relativo 1.01</title></circle>
+<circle cx="315.2" cy="267.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 1995: indicador 272.0, rendimento relativo 1.03</title></circle>
+<circle cx="313.1" cy="281.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 1996: indicador 269.8, rendimento relativo 0.95</title></circle>
+<circle cx="598.1" cy="234.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 1997: indicador 573.5, rendimento relativo 1.21</title></circle>
+<circle cx="423.2" cy="307.0" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 1998: indicador 387.1, rendimento relativo 0.81</title></circle>
+<circle cx="275.3" cy="293.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 1999: indicador 229.5, rendimento relativo 0.89</title></circle>
+<circle cx="387.3" cy="242.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2000: indicador 348.9, rendimento relativo 1.16</title></circle>
+<circle cx="338.1" cy="249.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2001: indicador 296.4, rendimento relativo 1.12</title></circle>
+<circle cx="413.2" cy="290.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2002: indicador 376.5, rendimento relativo 0.90</title></circle>
+<circle cx="152.2" cy="306.3" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2003: indicador 98.3, rendimento relativo 0.81</title></circle>
+<circle cx="317.4" cy="270.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2004: indicador 274.3, rendimento relativo 1.01</title></circle>
+<circle cx="410.0" cy="297.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2005: indicador 373.0, rendimento relativo 0.86</title></circle>
+<circle cx="205.6" cy="250.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2006: indicador 155.2, rendimento relativo 1.12</title></circle>
+<circle cx="309.6" cy="266.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2007: indicador 266.0, rendimento relativo 1.03</title></circle>
+<circle cx="272.4" cy="257.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2008: indicador 226.4, rendimento relativo 1.08</title></circle>
+<circle cx="390.3" cy="268.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2009: indicador 352.0, rendimento relativo 1.02</title></circle>
+<circle cx="160.3" cy="286.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2010: indicador 106.9, rendimento relativo 0.92</title></circle>
+<circle cx="268.5" cy="281.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2011: indicador 222.2, rendimento relativo 0.95</title></circle>
+<circle cx="111.3" cy="218.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2012: indicador 54.7, rendimento relativo 1.29</title></circle>
+<circle cx="244.1" cy="264.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2013: indicador 196.2, rendimento relativo 1.04</title></circle>
+<circle cx="152.6" cy="263.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2014: indicador 98.7, rendimento relativo 1.05</title></circle>
+<circle cx="408.6" cy="360.2" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2015: indicador 371.6, rendimento relativo 0.52</title></circle>
+<circle cx="167.0" cy="272.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2016: indicador 114.0, rendimento relativo 1.00</title></circle>
+<circle cx="241.6" cy="272.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2017: indicador 193.6, rendimento relativo 1.00</title></circle>
+<circle cx="335.7" cy="279.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2018: indicador 293.9, rendimento relativo 0.96</title></circle>
+<circle cx="155.5" cy="246.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2019: indicador 101.8, rendimento relativo 1.14</title></circle>
+<circle cx="60.0" cy="277.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2020: indicador 0.0, rendimento relativo 0.97</title></circle>
+<circle cx="215.9" cy="269.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2021: indicador 166.2, rendimento relativo 1.01</title></circle>
+<circle cx="285.4" cy="259.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2022: indicador 240.2, rendimento relativo 1.07</title></circle>
+<circle cx="638.2" cy="356.4" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2023: indicador 616.3, rendimento relativo 0.54</title></circle>
+<circle cx="212.6" cy="266.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2024: indicador 162.6, rendimento relativo 1.03</title></circle>
+<circle cx="73.4" cy="254.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Canoinhas 42006 2025: indicador 14.3, rendimento relativo 1.10</title></circle>
+<circle cx="277.7" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 1990: indicador 232.0, rendimento relativo 1.00</title></circle>
+<circle cx="373.1" cy="242.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 1991: indicador 333.7, rendimento relativo 1.16</title></circle>
+<circle cx="180.2" cy="200.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 1992: indicador 128.1, rendimento relativo 1.39</title></circle>
+<circle cx="362.5" cy="304.9" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 1993: indicador 322.4, rendimento relativo 0.82</title></circle>
+<circle cx="222.7" cy="287.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 1994: indicador 173.4, rendimento relativo 0.92</title></circle>
+<circle cx="285.2" cy="318.2" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 1995: indicador 240.0, rendimento relativo 0.75</title></circle>
+<circle cx="321.3" cy="271.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 1996: indicador 278.5, rendimento relativo 1.01</title></circle>
+<circle cx="564.4" cy="269.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 1997: indicador 537.6, rendimento relativo 1.01</title></circle>
+<circle cx="481.5" cy="270.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 1998: indicador 449.3, rendimento relativo 1.01</title></circle>
+<circle cx="291.6" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 1999: indicador 246.9, rendimento relativo 1.00</title></circle>
+<circle cx="319.0" cy="271.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2000: indicador 276.1, rendimento relativo 1.01</title></circle>
+<circle cx="344.8" cy="275.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2001: indicador 303.6, rendimento relativo 0.98</title></circle>
+<circle cx="284.0" cy="269.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2002: indicador 238.7, rendimento relativo 1.01</title></circle>
+<circle cx="153.2" cy="252.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2003: indicador 99.3, rendimento relativo 1.11</title></circle>
+<circle cx="237.1" cy="287.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2004: indicador 188.8, rendimento relativo 0.92</title></circle>
+<circle cx="373.3" cy="271.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2005: indicador 333.9, rendimento relativo 1.00</title></circle>
+<circle cx="259.0" cy="273.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2006: indicador 212.1, rendimento relativo 1.00</title></circle>
+<circle cx="243.0" cy="271.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2007: indicador 195.0, rendimento relativo 1.00</title></circle>
+<circle cx="463.4" cy="263.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2008: indicador 430.0, rendimento relativo 1.05</title></circle>
+<circle cx="483.0" cy="281.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2009: indicador 450.9, rendimento relativo 0.95</title></circle>
+<circle cx="125.0" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2010: indicador 69.3, rendimento relativo 1.00</title></circle>
+<circle cx="204.1" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2011: indicador 153.6, rendimento relativo 1.00</title></circle>
+<circle cx="84.0" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2012: indicador 25.6, rendimento relativo 1.00</title></circle>
+<circle cx="179.2" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2013: indicador 127.0, rendimento relativo 1.00</title></circle>
+<circle cx="170.9" cy="270.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2014: indicador 118.2, rendimento relativo 1.01</title></circle>
+<circle cx="488.8" cy="314.4" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2015: indicador 457.0, rendimento relativo 0.77</title></circle>
+<circle cx="152.1" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2016: indicador 98.2, rendimento relativo 1.00</title></circle>
+<circle cx="301.1" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2018: indicador 257.0, rendimento relativo 1.00</title></circle>
+<circle cx="231.5" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2019: indicador 182.8, rendimento relativo 1.00</title></circle>
+<circle cx="77.8" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2020: indicador 19.0, rendimento relativo 1.00</title></circle>
+<circle cx="231.2" cy="90.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2021: indicador 182.5, rendimento relativo 2.00</title></circle>
+<circle cx="532.4" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>São Bento do Sul 42007 2023: indicador 503.5, rendimento relativo 1.00</title></circle>
+<circle cx="410.4" cy="271.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 1990: indicador 373.5, rendimento relativo 1.00</title></circle>
+<circle cx="178.5" cy="293.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 1991: indicador 126.3, rendimento relativo 0.88</title></circle>
+<circle cx="183.9" cy="272.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 1992: indicador 132.1, rendimento relativo 1.00</title></circle>
+<circle cx="282.6" cy="269.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 1993: indicador 237.3, rendimento relativo 1.02</title></circle>
+<circle cx="234.4" cy="269.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 1994: indicador 185.9, rendimento relativo 1.02</title></circle>
+<circle cx="246.2" cy="278.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 1995: indicador 198.5, rendimento relativo 0.97</title></circle>
+<circle cx="208.3" cy="295.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 1996: indicador 158.1, rendimento relativo 0.87</title></circle>
+<circle cx="569.9" cy="149.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 1997: indicador 543.5, rendimento relativo 1.67</title></circle>
+<circle cx="300.7" cy="328.7" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 1998: indicador 256.5, rendimento relativo 0.69</title></circle>
+<circle cx="192.4" cy="295.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 1999: indicador 141.1, rendimento relativo 0.87</title></circle>
+<circle cx="422.0" cy="260.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2000: indicador 385.8, rendimento relativo 1.07</title></circle>
+<circle cx="337.1" cy="252.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2001: indicador 295.4, rendimento relativo 1.11</title></circle>
+<circle cx="419.6" cy="196.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2002: indicador 383.3, rendimento relativo 1.42</title></circle>
+<circle cx="135.6" cy="319.2" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2003: indicador 80.6, rendimento relativo 0.74</title></circle>
+<circle cx="313.4" cy="313.0" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2004: indicador 270.1, rendimento relativo 0.78</title></circle>
+<circle cx="378.6" cy="278.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2005: indicador 339.6, rendimento relativo 0.96</title></circle>
+<circle cx="226.3" cy="289.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2006: indicador 177.2, rendimento relativo 0.90</title></circle>
+<circle cx="302.2" cy="255.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2007: indicador 258.2, rendimento relativo 1.10</title></circle>
+<circle cx="437.3" cy="253.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2008: indicador 402.2, rendimento relativo 1.10</title></circle>
+<circle cx="494.6" cy="307.6" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2009: indicador 463.2, rendimento relativo 0.81</title></circle>
+<circle cx="189.6" cy="263.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2010: indicador 138.1, rendimento relativo 1.05</title></circle>
+<circle cx="233.9" cy="264.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2011: indicador 185.3, rendimento relativo 1.04</title></circle>
+<circle cx="114.7" cy="262.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2012: indicador 58.3, rendimento relativo 1.05</title></circle>
+<circle cx="270.0" cy="265.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2013: indicador 223.8, rendimento relativo 1.04</title></circle>
+<circle cx="290.5" cy="251.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2014: indicador 245.7, rendimento relativo 1.11</title></circle>
+<circle cx="527.0" cy="381.0" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2015: indicador 497.8, rendimento relativo 0.40</title></circle>
+<circle cx="202.4" cy="318.0" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2016: indicador 151.8, rendimento relativo 0.75</title></circle>
+<circle cx="135.8" cy="244.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2017: indicador 80.8, rendimento relativo 1.15</title></circle>
+<circle cx="237.7" cy="254.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2018: indicador 189.4, rendimento relativo 1.10</title></circle>
+<circle cx="175.7" cy="296.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2019: indicador 123.3, rendimento relativo 0.87</title></circle>
+<circle cx="66.5" cy="289.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2020: indicador 6.9, rendimento relativo 0.91</title></circle>
+<circle cx="236.5" cy="253.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2021: indicador 188.1, rendimento relativo 1.10</title></circle>
+<circle cx="277.9" cy="248.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2022: indicador 232.2, rendimento relativo 1.13</title></circle>
+<circle cx="760.0" cy="312.4" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2023: indicador 746.1, rendimento relativo 0.78</title></circle>
+<circle cx="120.3" cy="265.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2024: indicador 64.3, rendimento relativo 1.04</title></circle>
+<circle cx="109.2" cy="262.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Curitibanos 42009 2025: indicador 52.4, rendimento relativo 1.06</title></circle>
+<circle cx="310.5" cy="268.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 1990: indicador 267.0, rendimento relativo 1.02</title></circle>
+<circle cx="237.1" cy="277.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 1991: indicador 188.8, rendimento relativo 0.97</title></circle>
+<circle cx="104.9" cy="267.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 1992: indicador 47.9, rendimento relativo 1.03</title></circle>
+<circle cx="213.6" cy="258.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 1993: indicador 163.7, rendimento relativo 1.08</title></circle>
+<circle cx="132.9" cy="301.5" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 1994: indicador 77.7, rendimento relativo 0.84</title></circle>
+<circle cx="187.8" cy="330.2" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 1995: indicador 136.2, rendimento relativo 0.68</title></circle>
+<circle cx="233.5" cy="290.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 1996: indicador 184.9, rendimento relativo 0.90</title></circle>
+<circle cx="457.7" cy="227.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 1997: indicador 423.9, rendimento relativo 1.25</title></circle>
+<circle cx="265.7" cy="285.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 1998: indicador 219.3, rendimento relativo 0.93</title></circle>
+<circle cx="176.1" cy="282.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 1999: indicador 123.7, rendimento relativo 0.95</title></circle>
+<circle cx="336.5" cy="303.3" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2000: indicador 294.7, rendimento relativo 0.83</title></circle>
+<circle cx="364.1" cy="222.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2001: indicador 324.1, rendimento relativo 1.27</title></circle>
+<circle cx="292.4" cy="253.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2002: indicador 247.7, rendimento relativo 1.11</title></circle>
+<circle cx="124.1" cy="265.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2003: indicador 68.3, rendimento relativo 1.04</title></circle>
+<circle cx="249.0" cy="307.9" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2004: indicador 201.5, rendimento relativo 0.81</title></circle>
+<circle cx="341.5" cy="259.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2005: indicador 300.0, rendimento relativo 1.07</title></circle>
+<circle cx="155.1" cy="313.1" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2006: indicador 101.4, rendimento relativo 0.78</title></circle>
+<circle cx="219.9" cy="258.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2007: indicador 170.4, rendimento relativo 1.08</title></circle>
+<circle cx="445.6" cy="271.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2008: indicador 411.0, rendimento relativo 1.00</title></circle>
+<circle cx="405.3" cy="281.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2009: indicador 368.0, rendimento relativo 0.95</title></circle>
+<circle cx="148.8" cy="270.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2010: indicador 94.7, rendimento relativo 1.01</title></circle>
+<circle cx="181.9" cy="257.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2011: indicador 129.9, rendimento relativo 1.08</title></circle>
+<circle cx="158.9" cy="251.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2012: indicador 105.4, rendimento relativo 1.11</title></circle>
+<circle cx="207.0" cy="284.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2013: indicador 156.7, rendimento relativo 0.93</title></circle>
+<circle cx="201.8" cy="218.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2014: indicador 151.1, rendimento relativo 1.30</title></circle>
+<circle cx="359.8" cy="306.7" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2015: indicador 319.5, rendimento relativo 0.81</title></circle>
+<circle cx="228.1" cy="245.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2016: indicador 179.2, rendimento relativo 1.15</title></circle>
+<circle cx="171.0" cy="314.7" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2017: indicador 118.3, rendimento relativo 0.77</title></circle>
+<circle cx="243.1" cy="248.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2018: indicador 195.2, rendimento relativo 1.13</title></circle>
+<circle cx="208.6" cy="256.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2019: indicador 158.4, rendimento relativo 1.09</title></circle>
+<circle cx="121.8" cy="278.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2020: indicador 65.9, rendimento relativo 0.97</title></circle>
+<circle cx="289.3" cy="298.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2021: indicador 244.4, rendimento relativo 0.86</title></circle>
+<circle cx="322.5" cy="244.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2022: indicador 279.8, rendimento relativo 1.15</title></circle>
+<circle cx="739.4" cy="349.5" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2023: indicador 724.1, rendimento relativo 0.58</title></circle>
+<circle cx="211.2" cy="227.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2024: indicador 161.2, rendimento relativo 1.25</title></circle>
+<circle cx="185.3" cy="254.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Campos de Lages 42010 2025: indicador 133.6, rendimento relativo 1.10</title></circle>
+<circle cx="297.5" cy="282.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 1990: indicador 253.1, rendimento relativo 0.94</title></circle>
+<circle cx="204.0" cy="308.0" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 1991: indicador 153.5, rendimento relativo 0.80</title></circle>
+<circle cx="108.9" cy="297.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 1992: indicador 52.1, rendimento relativo 0.86</title></circle>
+<circle cx="219.0" cy="228.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 1993: indicador 169.5, rendimento relativo 1.24</title></circle>
+<circle cx="107.7" cy="233.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 1994: indicador 50.8, rendimento relativo 1.21</title></circle>
+<circle cx="185.0" cy="247.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 1995: indicador 133.2, rendimento relativo 1.14</title></circle>
+<circle cx="191.0" cy="306.8" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 1996: indicador 139.6, rendimento relativo 0.81</title></circle>
+<circle cx="408.1" cy="260.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 1997: indicador 371.0, rendimento relativo 1.07</title></circle>
+<circle cx="290.6" cy="271.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 1998: indicador 245.8, rendimento relativo 1.00</title></circle>
+<circle cx="172.0" cy="271.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 1999: indicador 119.4, rendimento relativo 1.00</title></circle>
+<circle cx="279.2" cy="277.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2000: indicador 233.6, rendimento relativo 0.97</title></circle>
+<circle cx="322.0" cy="277.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2001: indicador 279.3, rendimento relativo 0.97</title></circle>
+<circle cx="274.4" cy="271.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2002: indicador 228.5, rendimento relativo 1.00</title></circle>
+<circle cx="103.3" cy="291.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2003: indicador 46.1, rendimento relativo 0.89</title></circle>
+<circle cx="236.9" cy="251.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2004: indicador 188.6, rendimento relativo 1.12</title></circle>
+<circle cx="363.1" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2005: indicador 323.1, rendimento relativo 1.00</title></circle>
+<circle cx="162.1" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2006: indicador 108.8, rendimento relativo 1.00</title></circle>
+<circle cx="220.4" cy="267.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2007: indicador 171.0, rendimento relativo 1.03</title></circle>
+<circle cx="506.1" cy="266.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2008: indicador 475.5, rendimento relativo 1.03</title></circle>
+<circle cx="340.5" cy="352.4" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2009: indicador 299.0, rendimento relativo 0.56</title></circle>
+<circle cx="142.5" cy="249.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2010: indicador 87.9, rendimento relativo 1.12</title></circle>
+<circle cx="219.2" cy="239.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2011: indicador 169.7, rendimento relativo 1.18</title></circle>
+<circle cx="121.5" cy="275.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2012: indicador 65.5, rendimento relativo 0.98</title></circle>
+<circle cx="212.7" cy="277.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2013: indicador 162.8, rendimento relativo 0.97</title></circle>
+<circle cx="177.8" cy="272.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2014: indicador 125.6, rendimento relativo 1.00</title></circle>
+<circle cx="328.1" cy="268.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2015: indicador 285.8, rendimento relativo 1.02</title></circle>
+<circle cx="134.9" cy="235.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2017: indicador 79.8, rendimento relativo 1.20</title></circle>
+<circle cx="187.7" cy="343.6" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2018: indicador 136.1, rendimento relativo 0.61</title></circle>
+<circle cx="142.6" cy="162.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2019: indicador 88.0, rendimento relativo 1.60</title></circle>
+<circle cx="70.7" cy="355.2" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2020: indicador 11.4, rendimento relativo 0.55</title></circle>
+<circle cx="213.5" cy="280.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2021: indicador 163.6, rendimento relativo 0.96</title></circle>
+<circle cx="241.5" cy="319.8" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2022: indicador 193.5, rendimento relativo 0.74</title></circle>
+<circle cx="624.0" cy="221.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2023: indicador 601.1, rendimento relativo 1.28</title></circle>
+<circle cx="144.8" cy="250.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2024: indicador 90.4, rendimento relativo 1.12</title></circle>
+<circle cx="102.6" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Florianópolis 42016 2025: indicador 45.4, rendimento relativo 1.00</title></circle>
+<circle cx="265.7" cy="282.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 1990: indicador 219.3, rendimento relativo 0.94</title></circle>
+<circle cx="226.3" cy="287.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 1991: indicador 177.2, rendimento relativo 0.92</title></circle>
+<circle cx="94.2" cy="287.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 1992: indicador 36.5, rendimento relativo 0.92</title></circle>
+<circle cx="192.2" cy="261.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 1993: indicador 140.9, rendimento relativo 1.06</title></circle>
+<circle cx="116.3" cy="269.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 1994: indicador 60.0, rendimento relativo 1.02</title></circle>
+<circle cx="155.9" cy="265.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 1995: indicador 102.2, rendimento relativo 1.04</title></circle>
+<circle cx="226.4" cy="262.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 1996: indicador 177.4, rendimento relativo 1.06</title></circle>
+<circle cx="405.9" cy="281.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 1997: indicador 368.7, rendimento relativo 0.95</title></circle>
+<circle cx="201.8" cy="285.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 1998: indicador 151.1, rendimento relativo 0.93</title></circle>
+<circle cx="135.7" cy="295.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 1999: indicador 80.7, rendimento relativo 0.87</title></circle>
+<circle cx="328.7" cy="275.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2000: indicador 286.4, rendimento relativo 0.99</title></circle>
+<circle cx="318.9" cy="246.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2001: indicador 275.9, rendimento relativo 1.14</title></circle>
+<circle cx="228.1" cy="278.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2002: indicador 179.2, rendimento relativo 0.97</title></circle>
+<circle cx="89.3" cy="269.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2003: indicador 31.2, rendimento relativo 1.02</title></circle>
+<circle cx="198.6" cy="274.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2004: indicador 147.7, rendimento relativo 0.99</title></circle>
+<circle cx="219.7" cy="274.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2005: indicador 170.2, rendimento relativo 0.99</title></circle>
+<circle cx="102.1" cy="271.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2006: indicador 44.9, rendimento relativo 1.01</title></circle>
+<circle cx="171.9" cy="272.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2007: indicador 119.3, rendimento relativo 1.00</title></circle>
+<circle cx="320.6" cy="283.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2008: indicador 277.8, rendimento relativo 0.94</title></circle>
+<circle cx="422.0" cy="280.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2009: indicador 385.8, rendimento relativo 0.96</title></circle>
+<circle cx="106.0" cy="250.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2010: indicador 49.0, rendimento relativo 1.12</title></circle>
+<circle cx="119.0" cy="265.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2011: indicador 62.9, rendimento relativo 1.04</title></circle>
+<circle cx="139.2" cy="273.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2012: indicador 84.4, rendimento relativo 0.99</title></circle>
+<circle cx="129.7" cy="274.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2013: indicador 74.3, rendimento relativo 0.99</title></circle>
+<circle cx="165.7" cy="267.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2014: indicador 112.7, rendimento relativo 1.03</title></circle>
+<circle cx="351.6" cy="276.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2015: indicador 310.8, rendimento relativo 0.98</title></circle>
+<circle cx="185.4" cy="278.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2016: indicador 133.7, rendimento relativo 0.97</title></circle>
+<circle cx="168.6" cy="290.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2017: indicador 115.7, rendimento relativo 0.90</title></circle>
+<circle cx="230.4" cy="236.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2018: indicador 181.6, rendimento relativo 1.19</title></circle>
+<circle cx="158.9" cy="270.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2019: indicador 105.4, rendimento relativo 1.01</title></circle>
+<circle cx="139.7" cy="260.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2020: indicador 84.9, rendimento relativo 1.06</title></circle>
+<circle cx="212.9" cy="275.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2021: indicador 163.0, rendimento relativo 0.98</title></circle>
+<circle cx="240.4" cy="265.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2022: indicador 192.3, rendimento relativo 1.04</title></circle>
+<circle cx="696.8" cy="292.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2023: indicador 678.7, rendimento relativo 0.89</title></circle>
+<circle cx="157.8" cy="291.2" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2024: indicador 104.2, rendimento relativo 0.90</title></circle>
+<circle cx="149.7" cy="260.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Tubarão 42018 2025: indicador 95.6, rendimento relativo 1.07</title></circle>
+<circle cx="235.3" cy="316.5" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 1990: indicador 186.8, rendimento relativo 0.76</title></circle>
+<circle cx="198.6" cy="260.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 1991: indicador 147.7, rendimento relativo 1.07</title></circle>
+<circle cx="116.4" cy="246.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 1992: indicador 60.1, rendimento relativo 1.14</title></circle>
+<circle cx="202.4" cy="244.1" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 1993: indicador 151.8, rendimento relativo 1.15</title></circle>
+<circle cx="158.6" cy="283.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 1994: indicador 105.1, rendimento relativo 0.94</title></circle>
+<circle cx="157.4" cy="272.9" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 1995: indicador 103.8, rendimento relativo 1.00</title></circle>
+<circle cx="214.3" cy="331.2" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 1996: indicador 164.5, rendimento relativo 0.68</title></circle>
+<circle cx="349.2" cy="273.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 1997: indicador 308.2, rendimento relativo 0.99</title></circle>
+<circle cx="162.7" cy="273.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 1998: indicador 109.5, rendimento relativo 0.99</title></circle>
+<circle cx="206.5" cy="322.3" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 1999: indicador 156.2, rendimento relativo 0.73</title></circle>
+<circle cx="366.2" cy="196.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2000: indicador 326.4, rendimento relativo 1.42</title></circle>
+<circle cx="284.1" cy="286.0" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2001: indicador 238.9, rendimento relativo 0.93</title></circle>
+<circle cx="214.1" cy="277.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2002: indicador 164.3, rendimento relativo 0.97</title></circle>
+<circle cx="91.9" cy="264.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2003: indicador 34.0, rendimento relativo 1.04</title></circle>
+<circle cx="159.9" cy="256.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2004: indicador 106.5, rendimento relativo 1.09</title></circle>
+<circle cx="252.1" cy="274.5" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2005: indicador 204.7, rendimento relativo 0.99</title></circle>
+<circle cx="102.9" cy="278.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2006: indicador 45.7, rendimento relativo 0.97</title></circle>
+<circle cx="248.8" cy="276.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2007: indicador 201.2, rendimento relativo 0.98</title></circle>
+<circle cx="231.1" cy="260.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2008: indicador 182.4, rendimento relativo 1.06</title></circle>
+<circle cx="469.4" cy="268.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2009: indicador 436.4, rendimento relativo 1.02</title></circle>
+<circle cx="144.4" cy="296.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2010: indicador 90.0, rendimento relativo 0.87</title></circle>
+<circle cx="95.4" cy="298.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2011: indicador 37.7, rendimento relativo 0.86</title></circle>
+<circle cx="121.5" cy="269.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2012: indicador 65.5, rendimento relativo 1.01</title></circle>
+<circle cx="140.0" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2013: indicador 85.3, rendimento relativo 1.00</title></circle>
+<circle cx="167.2" cy="274.8" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2014: indicador 114.3, rendimento relativo 0.99</title></circle>
+<circle cx="353.8" cy="255.7" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2015: indicador 313.2, rendimento relativo 1.09</title></circle>
+<circle cx="182.2" cy="285.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2016: indicador 130.2, rendimento relativo 0.93</title></circle>
+<circle cx="165.0" cy="267.3" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2017: indicador 111.9, rendimento relativo 1.03</title></circle>
+<circle cx="219.1" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2018: indicador 169.6, rendimento relativo 1.00</title></circle>
+<circle cx="161.6" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2019: indicador 108.3, rendimento relativo 1.00</title></circle>
+<circle cx="140.7" cy="272.4" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2020: indicador 86.0, rendimento relativo 1.00</title></circle>
+<circle cx="158.4" cy="231.6" r="3.5" fill="var(--neu)" fill-opacity="0.55" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2021: indicador 104.9, rendimento relativo 1.22</title></circle>
+<circle cx="147.3" cy="306.0" r="4.5" fill="var(--s2)" fill-opacity="1" stroke="var(--sf)" stroke-width="1.5"><title>Criciúma 42019 2022: indicador 93.0, rendimento relativo 0.82</title></circle>
+</svg>

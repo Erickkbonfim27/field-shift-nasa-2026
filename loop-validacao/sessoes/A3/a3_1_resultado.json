@@ -1,0 +1,99 @@
+{
+ "C2_frac_meses_com_cena_50pct_limpa": 0.85,
+ "C2_frac_pixel_mes_lavoura_com_obs": 0.77,
+ "C2_frac_pixel_mes_lavoura_gap_maior_30d": 0.06,
+ "C2_meses_sem_cena_boa": [
+  "2019-03",
+  "2021-06",
+  "2021-10",
+  "2022-04",
+  "2022-09",
+  "2023-05",
+  "2023-07",
+  "2023-10",
+  "2024-05",
+  "2024-11",
+  "2024-12"
+ ],
+ "linha_base_mes_pico": 1,
+ "linha_base_top3": [
+  1,
+  2,
+  12
+ ],
+ "n_talhoes_lavoura": 2302,
+ "n_blocos_mata": 1540,
+ "C3_frac_talhao_ano_pico_diferente_da_base": 0.94,
+ "C3_frac_talhao_ano_pico_fora_out_fev": 0.64,
+ "C3_frac_exposicao_nos_3_meses_mais_expostos_mediana": 0.93,
+ "C3_histograma_mes_pico": {
+  "1": 704,
+  "2": 696,
+  "3": 253,
+  "4": 341,
+  "5": 1009,
+  "6": 1562,
+  "7": 2594,
+  "8": 748,
+  "9": 566,
+  "10": 998,
+  "11": 1024,
+  "12": 569
+ },
+ "C4_p90_p10_lavoura": 9.0,
+ "C4_p10_p50_p90_lavoura": [
+  6.77,
+  20.36,
+  60.75
+ ],
+ "C4_mediana_lavoura_sobre_mata": 20.2,
+ "C4_mediana_mata": 1.009,
+ "declive_lavoura_p10_p50_p90": [
+  6.1,
+  15.4,
+  40.6
+ ],
+ "perfil_descoberto_lavoura_por_mes": [
+  0.06,
+  0.08,
+  0.07,
+  0.1,
+  0.13,
+  0.21,
+  0.29,
+  0.2,
+  0.15,
+  0.09,
+  0.1,
+  0.08
+ ],
+ "perfil_exposicao_lavoura_por_mes_rel": [
+  0.76,
+  0.57,
+  0.34,
+  0.46,
+  1.02,
+  1.36,
+  2.6,
+  0.59,
+  0.73,
+  1.49,
+  1.34,
+  0.73
+ ],
+ "R_clim_rel": [
+  2.06,
+  1.42,
+  0.91,
+  0.51,
+  0.79,
+  0.54,
+  0.95,
+  0.64,
+  1.07,
+  1.12,
+  0.87,
+  1.13
+ ],
+ "frac_talhoes_pico_muda_entre_anos": 1.0
+}

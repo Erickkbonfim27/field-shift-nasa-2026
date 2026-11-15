@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-label="Quem explica o rendimento do IBGE PAM? (Spearman ρ)">
+<style>
+svg{--bg:#fcfcfb;--t1:#0b0b0b;--t2:#52514e;--grid:#e4e3df;--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--band:#eef3fb}
+@media (prefers-color-scheme: dark){svg{--bg:#1a1a19;--t1:#f0efec;--t2:#c3c2b7;--grid:#3a3a37;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--band:#22303f}}
+text{font-family:system-ui,-apple-system,Segoe UI,sans-serif;fill:var(--t1)}
+.t2{fill:var(--t2)} .tit{font-size:15px;font-weight:600} .sm{font-size:11px}
+.grid{stroke:var(--grid);stroke-width:1} .axis{stroke:var(--t2);stroke-width:1}
+rect.mk:hover,circle.mk:hover{opacity:.75}
+</style>
+<rect width="900" height="470" fill="var(--bg)"/>
+<text x="60" y="26" class="tit">Quem explica o rendimento do IBGE PAM? (Spearman ρ)</text>
+<text x="60" y="46" class="t2 sm">Chuva, água e motor d1 sem nenhum ajuste; d2 = ridge em leave-one-out (*fora da região: treinado na microrregião de origem, sem reajuste)</text>
+<rect x="60" y="56" width="10" height="10" rx="2" fill="var(--s1)"/><text x="74" y="65" class="sm">(b) chuva bruta</text>
+<rect x="200.0" y="56" width="10" height="10" rx="2" fill="var(--s2)"/><text x="214.0" y="65" class="sm">(c) só água</text>
+<rect x="311.2" y="56" width="10" height="10" rx="2" fill="var(--s3)"/><text x="325.2" y="65" class="sm">(d1) motor fixo</text>
+<rect x="451.2" y="56" width="10" height="10" rx="2" fill="var(--s4)"/><text x="465.2" y="65" class="sm">(d2) motor ajustado</text>
+<line x1="60" x2="880" y1="378.0" y2="378.0" class="grid"/>
+<text x="54" y="382.0" text-anchor="end" class="t2 sm">-0.4</text>
+<line x1="60" x2="880" y1="318.0" y2="318.0" class="grid"/>
+<text x="54" y="322.0" text-anchor="end" class="t2 sm">-0.2</text>
+<line x1="60" x2="880" y1="258.0" y2="258.0" class="grid"/>
+<text x="54" y="262.0" text-anchor="end" class="t2 sm">0</text>
+<line x1="60" x2="880" y1="198.0" y2="198.0" class="grid"/>
+<text x="54" y="202.0" text-anchor="end" class="t2 sm">+0.2</text>
+<line x1="60" x2="880" y1="138.0" y2="138.0" class="grid"/>
+<text x="54" y="142.0" text-anchor="end" class="t2 sm">+0.4</text>
+<line x1="60" x2="880" y1="78.0" y2="78.0" class="grid"/>
+<text x="54" y="82.0" text-anchor="end" class="t2 sm">+0.6</text>
+<line x1="60" x2="880" y1="258.0" y2="258.0" class="axis"/>
+<line x1="60" x2="880" y1="138.0" y2="138.0" stroke="var(--t2)" stroke-dasharray="4,4"/>
+<text x="880" y="133.0" text-anchor="end" class="t2 sm">meta do milho (0,40)</text>
+<text x="16" y="228.0" transform="rotate(-90 16 228.0)" text-anchor="middle" class="t2 sm">ρ com o rendimento sem tendência</text>
+<rect class="mk" x="68.0" y="189.0" width="19.6" height="69.0" rx="2" fill="var(--s1)"><title>Milho SMO|município · (b) chuva bruta: +0.23</title></rect>
+<rect class="mk" x="89.6" y="173.1" width="19.6" height="84.9" rx="2" fill="var(--s2)"><title>Milho SMO|município · (c) só água: +0.28</title></rect>
+<rect class="mk" x="111.2" y="197.1" width="19.6" height="60.9" rx="2" fill="var(--s3)"><title>Milho SMO|município · (d1) motor fixo: +0.20</title></rect>
+<rect class="mk" x="132.9" y="234.6" width="19.6" height="23.4" rx="2" fill="var(--s4)"><title>Milho SMO|município · (d2) motor ajustado: +0.08</title></rect>
+<text x="111.2" y="396" text-anchor="middle" class="sm ">Milho SMO</text>
+<text x="111.2" y="410" text-anchor="middle" class="sm t2">município</text>
+<rect class="mk" x="170.5" y="144.9" width="19.6" height="113.1" rx="2" fill="var(--s1)"><title>Milho SMO|microrregião · (b) chuva bruta: +0.38</title></rect>
+<rect class="mk" x="192.1" y="136.5" width="19.6" height="121.5" rx="2" fill="var(--s2)"><title>Milho SMO|microrregião · (c) só água: +0.41</title></rect>
+<rect class="mk" x="213.8" y="149.7" width="19.6" height="108.3" rx="2" fill="var(--s3)"><title>Milho SMO|microrregião · (d1) motor fixo: +0.36</title></rect>
+<rect class="mk" x="235.4" y="225.9" width="19.6" height="32.1" rx="2" fill="var(--s4)"><title>Milho SMO|microrregião · (d2) motor ajustado: +0.11</title></rect>
+<text x="213.8" y="396" text-anchor="middle" class="sm ">Milho SMO</text>
+<text x="213.8" y="410" text-anchor="middle" class="sm t2">microrregião</text>
+<rect class="mk" x="273.0" y="193.5" width="19.6" height="64.5" rx="2" fill="var(--s1)"><title>Milho Chapecó|fora* · (b) chuva bruta: +0.21</title></rect>
+<rect class="mk" x="294.6" y="136.8" width="19.6" height="121.2" rx="2" fill="var(--s2)"><title>Milho Chapecó|fora* · (c) só água: +0.40</title></rect>
+<rect class="mk" x="316.2" y="133.8" width="19.6" height="124.2" rx="2" fill="var(--s3)"><title>Milho Chapecó|fora* · (d1) motor fixo: +0.41</title></rect>
+<rect class="mk" x="337.9" y="163.8" width="19.6" height="94.2" rx="2" fill="var(--s4)"><title>Milho Chapecó|fora* · (d2) motor ajustado: +0.31</title></rect>
+<text x="316.2" y="396" text-anchor="middle" class="sm ">Milho Chapecó</text>
+<text x="316.2" y="410" text-anchor="middle" class="sm t2">fora*</text>
+<rect class="mk" x="375.5" y="149.4" width="19.6" height="108.6" rx="2" fill="var(--s1)"><title>Milho Concórdia|fora* · (b) chuva bruta: +0.36</title></rect>
+<rect class="mk" x="397.1" y="129.0" width="19.6" height="129.0" rx="2" fill="var(--s2)"><title>Milho Concórdia|fora* · (c) só água: +0.43</title></rect>
+<rect class="mk" x="418.8" y="181.5" width="19.6" height="76.5" rx="2" fill="var(--s3)"><title>Milho Concórdia|fora* · (d1) motor fixo: +0.26</title></rect>
+<rect class="mk" x="440.4" y="139.2" width="19.6" height="118.8" rx="2" fill="var(--s4)"><title>Milho Concórdia|fora* · (d2) motor ajustado: +0.40</title></rect>
+<text x="418.8" y="396" text-anchor="middle" class="sm ">Milho Concórdia</text>
+<text x="418.8" y="410" text-anchor="middle" class="sm t2">fora*</text>
+<rect class="mk" x="478.0" y="258.0" width="19.6" height="24.3" rx="2" fill="var(--s1)"><title>Cebola Itu|município · (b) chuva bruta: -0.08</title></rect>
+<rect class="mk" x="499.6" y="220.5" width="19.6" height="37.5" rx="2" fill="var(--s2)"><title>Cebola Itu|município · (c) só água: +0.12</title></rect>
+<rect class="mk" x="521.2" y="220.5" width="19.6" height="37.5" rx="2" fill="var(--s3)"><title>Cebola Itu|município · (d1) motor fixo: +0.12</title></rect>
+<rect class="mk" x="542.9" y="216.6" width="19.6" height="41.4" rx="2" fill="var(--s4)"><title>Cebola Itu|município · (d2) motor ajustado: +0.14</title></rect>
+<text x="521.2" y="396" text-anchor="middle" class="sm ">Cebola Itu</text>
+<text x="521.2" y="410" text-anchor="middle" class="sm t2">município</text>
+<rect class="mk" x="580.5" y="258.0" width="19.6" height="16.5" rx="2" fill="var(--s1)"><title>Cebola Itu|microrregião · (b) chuva bruta: -0.06</title></rect>
+<rect class="mk" x="602.1" y="223.2" width="19.6" height="34.8" rx="2" fill="var(--s2)"><title>Cebola Itu|microrregião · (c) só água: +0.12</title></rect>
+<rect class="mk" x="623.8" y="188.1" width="19.6" height="69.9" rx="2" fill="var(--s3)"><title>Cebola Itu|microrregião · (d1) motor fixo: +0.23</title></rect>
+<rect class="mk" x="645.4" y="178.2" width="19.6" height="79.8" rx="2" fill="var(--s4)"><title>Cebola Itu|microrregião · (d2) motor ajustado: +0.27</title></rect>
+<text x="623.8" y="396" text-anchor="middle" class="sm ">Cebola Itu</text>
+<text x="623.8" y="410" text-anchor="middle" class="sm t2">microrregião</text>
+<rect class="mk" x="683.0" y="258.0" width="19.6" height="24.3" rx="2" fill="var(--s1)"><title>Cebola Rio do Sul|fora* · (b) chuva bruta: -0.08</title></rect>
+<rect class="mk" x="704.6" y="254.1" width="19.6" height="3.9" rx="2" fill="var(--s2)"><title>Cebola Rio do Sul|fora* · (c) só água: +0.01</title></rect>
+<rect class="mk" x="726.2" y="123.0" width="19.6" height="135.0" rx="2" fill="var(--s3)"><title>Cebola Rio do Sul|fora* · (d1) motor fixo: +0.45</title></rect>
+<rect class="mk" x="747.9" y="138.3" width="19.6" height="119.7" rx="2" fill="var(--s4)"><title>Cebola Rio do Sul|fora* · (d2) motor ajustado: +0.40</title></rect>
+<text x="726.2" y="396" text-anchor="middle" class="sm ">Cebola Rio do Sul</text>
+<text x="726.2" y="410" text-anchor="middle" class="sm t2">fora*</text>
+<rect class="mk" x="785.5" y="258.0" width="19.6" height="59.4" rx="2" fill="var(--s1)"><title>Cebola Tabuleiro|fora* · (b) chuva bruta: -0.20</title></rect>
+<rect class="mk" x="807.1" y="258.0" width="19.6" height="16.5" rx="2" fill="var(--s2)"><title>Cebola Tabuleiro|fora* · (c) só água: -0.06</title></rect>
+<rect class="mk" x="828.8" y="199.5" width="19.6" height="58.5" rx="2" fill="var(--s3)"><title>Cebola Tabuleiro|fora* · (d1) motor fixo: +0.20</title></rect>
+<rect class="mk" x="850.4" y="164.7" width="19.6" height="93.3" rx="2" fill="var(--s4)"><title>Cebola Tabuleiro|fora* · (d2) motor ajustado: +0.31</title></rect>
+<text x="828.8" y="396" text-anchor="middle" class="sm ">Cebola Tabuleiro</text>
+<text x="828.8" y="410" text-anchor="middle" class="sm t2">fora*</text>
+</svg>

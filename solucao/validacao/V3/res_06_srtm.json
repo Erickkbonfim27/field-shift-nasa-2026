@@ -1,0 +1,137 @@
+{
+ "entorno_smo_15km": {
+  "classes": {
+   "plano 0-3%": 0.03166057003505563,
+   "suave ondulado 3-8%": 0.1673601585124219,
+   "ondulado 8-20%": 0.39710028959000154,
+   "forte ondulado 20-45%": 0.3695663770766651,
+   "montanhoso >45%": 0.034312604785855814
+  },
+  "n_pixels": 262440,
+  "fracao_sinalizada": {
+   "8": 0.8009792714525225,
+   "12": 0.6524462734339278,
+   "15": 0.5494017680231672,
+   "20": 0.40387898186252097,
+   "30": 0.19189529035208047,
+   "45": 0.034312604785855814
+  },
+  "declive_mediano": 16.57770257371105
+ },
+ "udesc_caixa_latlon": {
+  "lat": [
+   -26.749646817415183,
+   -26.734855250221568
+  ],
+  "lon": [
+   -53.54590386687773,
+   -53.52549077314355
+  ]
+ },
+ "udesc_210ha": {
+  "classes": {
+   "plano 0-3%": 0.06986231514533402,
+   "suave ondulado 3-8%": 0.3306986231514533,
+   "ondulado 8-20%": 0.4928607853136155,
+   "forte ondulado 20-45%": 0.10657827638959715,
+   "montanhoso >45%": 0.0
+  },
+  "n_pixels": 3922,
+  "fracao_sinalizada": {
+   "8": 0.5994390617032126,
+   "12": 0.35823559408465067,
+   "15": 0.24069352371239164,
+   "20": 0.10657827638959715,
+   "30": 0.009178990311065782,
+   "45": 0.0
+  },
+  "referencia_mapa_UDESC": {
+   "LVdf_profundo": 0.618,
+   "RRd_neossolos_raso_ate_50cm": 0.382
+  },
+  "tpi90_percentis": {
+   "10": -3.5510204081632537,
+   "25": -2.040816326530603,
+   "50": -0.28571428571433444,
+   "75": 1.5714285714285552,
+   "90": 3.406122448979615
+  },
+  "fracao_declive_ge12_ou_tpi_gt_2": 0.4620091789903111
+ },
+ "perfis_udesc": {
+  "perfil5_Latossolo_terco_medio": {
+   "lat": -26.743805555555557,
+   "lon": -53.54475,
+   "campo_declive": 9,
+   "solo": "Latossolo Vermelho (profundo)",
+   "srtm_declive_pct": 10.51992219534115,
+   "srtm_elev_m": 644.0,
+   "tpi_300m_m": 6.614512471655303,
+   "tpi_90m_m": -0.14285714285711038
+  },
+  "perfil6_Neossolo_Regolitico_terco_inferior": {
+   "lat": -26.74363888888889,
+   "lon": -53.538888888888884,
+   "campo_declive": 38,
+   "solo": "Neossolo Regol\u00edtico (contato l\u00edtico fragment\u00e1rio < 50 cm)",
+   "srtm_declive_pct": 21.336155158645212,
+   "srtm_elev_m": 602.0,
+   "tpi_300m_m": -16.05442176870747,
+   "tpi_90m_m": -7.571428571428555
+  },
+  "perfil7_Neossolo_Litolico_topo": {
+   "lat": -26.741305555555556,
+   "lon": -53.53927777777778,
+   "campo_declive": 19,
+   "solo": "Neossolo Lit\u00f3lico (< 50 cm, muito pedregoso)",
+   "srtm_declive_pct": 9.633782884911193,
+   "srtm_elev_m": 636.0,
+   "tpi_300m_m": 4.3378684807256604,
+   "tpi_90m_m": 4.85714285714289
+  }
+ },
+ "regras": {
+  "declive>=20": {
+   "marca_perfil5_profundo": false,
+   "marca_perfil6_regolitico": true,
+   "marca_perfil7_litolico": false,
+   "frac_area_udesc": 0.10657827638959715,
+   "frac_entorno_smo": 0.40387898186252097
+  },
+  "declive>=12": {
+   "marca_perfil5_profundo": false,
+   "marca_perfil6_regolitico": true,
+   "marca_perfil7_litolico": false,
+   "frac_area_udesc": 0.35823559408465067,
+   "frac_entorno_smo": 0.6524462734339278
+  },
+  "declive>=15": {
+   "marca_perfil5_profundo": false,
+   "marca_perfil6_regolitico": true,
+   "marca_perfil7_litolico": false,
+   "frac_area_udesc": 0.24069352371239164,
+   "frac_entorno_smo": 0.5494017680231672
+  },
+  "TPI90>=2": {
+   "marca_perfil5_profundo": false,
+   "marca_perfil6_regolitico": false,
+   "marca_perfil7_litolico": true,
+   "frac_area_udesc": 0.20703722590515045,
+   "frac_entorno_smo": 0.31036427373875936
+  },
+  "declive>=15 ou TPI90>=2": {
+   "marca_perfil5_profundo": false,
+   "marca_perfil6_regolitico": true,
+   "marca_perfil7_litolico": true,
+   "frac_area_udesc": 0.3748087710351861,
+   "frac_entorno_smo": 0.6700312452370065
+  },
+  "declive>=20 ou TPI90>=2": {
+   "marca_perfil5_profundo": false,
+   "marca_perfil6_regolitico": true,
+   "marca_perfil7_litolico": true,
+   "frac_area_udesc": 0.27485976542580315,
+   "frac_entorno_smo": 0.572119341563786
+  }
+ }
+}

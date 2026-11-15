@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" width="760" height="300" role="img" aria-label="Critérios da V7 em porcentagem da meta">
+
+<style>
+  .bg{fill:#fcfcfb}.t1{fill:#0b0b0b}.t2{fill:#52514e}.grid{stroke:#e4e3df}
+  .v2{fill:#1c5cab}.v1{fill:#86b6ef}.v0{fill:#efeeea}.vq{fill:#ffffff;stroke:#c3c2b7;stroke-dasharray:3 2}
+  .lv2{fill:#ffffff}.lv1{fill:#0b0b0b}.lv0{fill:#8a8984}.lvq{fill:#8a8984}
+  .bar{fill:#2a78d6}.bar-off{fill:#86b6ef}.ref{stroke:#0b0b0b;stroke-width:1.5;stroke-dasharray:4 3}
+  .nossa{fill:none;stroke:#0b0b0b;stroke-width:1.5}
+  text{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+  @media (prefers-color-scheme: dark){
+    .bg{fill:#1a1a19}.t1{fill:#f0efec}.t2{fill:#c3c2b7}.grid{stroke:#33332f}
+    .v2{fill:#3987e5}.v1{fill:#1c5cab}.v0{fill:#2a2a28}.vq{fill:#1a1a19;stroke:#55554f}
+    .lv2{fill:#0b0b0b}.lv1{fill:#f0efec}.lv0{fill:#8a8984}
+    .bar{fill:#3987e5}.bar-off{fill:#1c5cab}.ref{stroke:#f0efec}.nossa{stroke:#f0efec}
+  }
+</style>
+<rect class="bg" width="760" height="300"/>
+<text class="t1" x="16" y="26" font-size="16" font-weight="600">V7: cada critério contra a meta definida antes</text>
+<text class="t2" x="16" y="46" font-size="12">Barra = valor medido ÷ meta. A linha tracejada é a meta (100%).</text>
+<line class="grid" x1="240.0" y1="70" x2="240.0" y2="250"/><text class="t2" x="240.0" y="266" font-size="11" text-anchor="middle">0%</text>
+<line class="grid" x1="340.0" y1="70" x2="340.0" y2="250"/><text class="t2" x="340.0" y="266" font-size="11" text-anchor="middle">50%</text>
+<line class="grid" x1="440.0" y1="70" x2="440.0" y2="250"/><text class="t2" x="440.0" y="266" font-size="11" text-anchor="middle">100%</text>
+<line class="grid" x1="540.0" y1="70" x2="540.0" y2="250"/><text class="t2" x="540.0" y="266" font-size="11" text-anchor="middle">150%</text>
+<g><title>4 de 7 'atende', 0 'não' (meta: 5 e nenhum 'não')</title><text class="t1" x="16" y="95" font-size="12">C1 Aderência (itens 'atende')</text><rect class="bar-off" x="240" y="82" width="160.0" height="18" rx="4"/><text class="t1" x="558" y="95" font-size="12">4 de 7 (meta 5) · não passa</text></g>
+<g><title>3 conjuntos (NASA POWER, SRTM, Sentinel-2); só da NASA: 2</title><text class="t1" x="16" y="137" font-size="12">C2 Conjuntos da aba usados</text><rect class="bar" x="240" y="124" width="200.0" height="18" rx="4"/><text class="t1" x="558" y="137" font-size="12">3 (meta 3) · passa</text></g>
+<g><title>4 funções que nenhum concorrente faz e nós fazemos; canal é diferencial: False</title><text class="t1" x="16" y="179" font-size="12">C3 Funções sem concorrente</text><rect class="bar" x="240" y="166" width="300.0" height="18" rx="4"/><text class="t1" x="558" y="179" font-size="12">4 (meta 2) · passa</text></g>
+<g><title>12 de 17 perguntas com número (71%)</title><text class="t1" x="16" y="221" font-size="12">C4 Perguntas com número</text><rect class="bar-off" x="240" y="208" width="176.5" height="18" rx="4"/><text class="t1" x="558" y="221" font-size="12">71% (meta 80%) · não passa</text></g>
+<line class="ref" x1="440.0" y1="70" x2="440.0" y2="250"/>
+<text class="t2" x="16" y="288" font-size="11">Barra forte = passa; barra apagada = não passa. Resultado: 2 de 4 → parcial.</text>
+</svg>

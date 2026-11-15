@@ -1,0 +1,9859 @@
+{
+ "quixada": {
+  "nome": "Quixadá (CE)",
+  "milho": {
+   "n_pam": 40,
+   "pct_repetido": 2.0,
+   "sem_plantio_chuva": 4,
+   "chuva": {
+    "principal": {
+     "n": 40,
+     "rho": 0.504,
+     "p": 0.0007,
+     "rho_chuva": 0.456,
+     "acerto8": 5,
+     "p_acerto": 0.0038,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1993,
+      2001,
+      2012,
+      2015,
+      2016,
+      2023,
+      2024,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1992,
+      1993,
+      2005,
+      2012,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 40,
+     "rho": 0.487,
+     "p": 0.0012,
+     "rho_chuva": 0.549,
+     "acerto8": 5,
+     "p_acerto": 0.0038,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1993,
+      2001,
+      2012,
+      2015,
+      2016,
+      2023,
+      2024,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1992,
+      1993,
+      2005,
+      2012,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 40,
+     "rho": 0.498,
+     "p": 0.0012,
+     "rho_chuva": 0.532,
+     "acerto8": 5,
+     "p_acerto": 0.0038,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1993,
+      2001,
+      2012,
+      2015,
+      2016,
+      2023,
+      2024,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1992,
+      1993,
+      2005,
+      2012,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2025
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 0.999,
+      "plantio": "1985-01-18",
+      "pam_rel": 1.048,
+      "pam_kgha": 393.0,
+      "chuva_estacao": 1324
+     },
+     {
+      "ano": 1986,
+      "y_mod": 1.0,
+      "plantio": "1986-01-30",
+      "pam_rel": 0.8,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 1077
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.306,
+      "plantio": "1987-03-04",
+      "pam_rel": 0.96,
+      "pam_kgha": 360.0,
+      "chuva_estacao": 481
+     },
+     {
+      "ano": 1988,
+      "y_mod": 0.92,
+      "plantio": "1988-01-25",
+      "pam_rel": 1.527,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 787
+     },
+     {
+      "ano": 1989,
+      "y_mod": 0.998,
+      "plantio": "1989-03-17",
+      "pam_rel": 1.0,
+      "pam_kgha": 375.0,
+      "chuva_estacao": 816
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.8,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 377
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.907,
+      "plantio": "1991-03-09",
+      "pam_rel": 1.0,
+      "pam_kgha": 450.0,
+      "chuva_estacao": 571
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.0,
+      "plantio": "1992-03-16",
+      "pam_rel": 1.0,
+      "pam_kgha": 500.0,
+      "chuva_estacao": 597
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.12,
+      "pam_kgha": 60.0,
+      "chuva_estacao": 228
+     },
+     {
+      "ano": 1994,
+      "y_mod": 1.0,
+      "plantio": "1994-02-06",
+      "pam_rel": 1.091,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 748
+     },
+     {
+      "ano": 1995,
+      "y_mod": 1.0,
+      "plantio": "1995-02-10",
+      "pam_rel": 1.0,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 721
+     },
+     {
+      "ano": 1996,
+      "y_mod": 1.0,
+      "plantio": "1996-02-19",
+      "pam_rel": 1.073,
+      "pam_kgha": 644.0,
+      "chuva_estacao": 794
+     },
+     {
+      "ano": 1997,
+      "y_mod": 1.0,
+      "plantio": "1997-02-08",
+      "pam_rel": 1.167,
+      "pam_kgha": 700.0,
+      "chuva_estacao": 561
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 327
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.945,
+      "plantio": "1999-02-23",
+      "pam_rel": 0.927,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 552
+     },
+     {
+      "ano": 2000,
+      "y_mod": 1.0,
+      "plantio": "2000-02-16",
+      "pam_rel": 0.992,
+      "pam_kgha": 650.0,
+      "chuva_estacao": 694
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.391,
+      "plantio": "2001-03-09",
+      "pam_rel": 0.294,
+      "pam_kgha": 200.0,
+      "chuva_estacao": 445
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.848,
+      "plantio": "2002-01-06",
+      "pam_rel": 1.752,
+      "pam_kgha": 1280.0,
+      "chuva_estacao": 842
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.966,
+      "plantio": "2003-01-20",
+      "pam_rel": 2.877,
+      "pam_kgha": 1902.0,
+      "chuva_estacao": 719
+     },
+     {
+      "ano": 2004,
+      "y_mod": 0.871,
+      "plantio": "2004-01-14",
+      "pam_rel": 0.826,
+      "pam_kgha": 661.0,
+      "chuva_estacao": 905
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.286,
+      "plantio": "2005-01-24",
+      "pam_rel": 1.0,
+      "pam_kgha": 800.0,
+      "chuva_estacao": 533
+     },
+     {
+      "ano": 2006,
+      "y_mod": 1.0,
+      "plantio": "2006-02-18",
+      "pam_rel": 1.375,
+      "pam_kgha": 1100.0,
+      "chuva_estacao": 1011
+     },
+     {
+      "ano": 2007,
+      "y_mod": 0.997,
+      "plantio": "2007-02-03",
+      "pam_rel": 0.794,
+      "pam_kgha": 635.0,
+      "chuva_estacao": 901
+     },
+     {
+      "ano": 2008,
+      "y_mod": 1.0,
+      "plantio": "2008-03-04",
+      "pam_rel": 2.723,
+      "pam_kgha": 1800.0,
+      "chuva_estacao": 741
+     },
+     {
+      "ano": 2009,
+      "y_mod": 0.97,
+      "plantio": "2009-01-21",
+      "pam_rel": 0.798,
+      "pam_kgha": 507.0,
+      "chuva_estacao": 883
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.524,
+      "plantio": "2010-03-21",
+      "pam_rel": 0.771,
+      "pam_kgha": 391.0,
+      "chuva_estacao": 430
+     },
+     {
+      "ano": 2011,
+      "y_mod": 1.0,
+      "plantio": "2011-01-09",
+      "pam_rel": 3.739,
+      "pam_kgha": 1806.0,
+      "chuva_estacao": 813
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.097,
+      "plantio": "2012-02-15",
+      "pam_rel": 0.187,
+      "pam_kgha": 84.0,
+      "chuva_estacao": 312
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.838,
+      "plantio": "2013-04-19",
+      "pam_rel": 1.0,
+      "pam_kgha": 450.0,
+      "chuva_estacao": 404
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.516,
+      "plantio": "2014-03-20",
+      "pam_rel": 1.073,
+      "pam_kgha": 483.0,
+      "chuva_estacao": 422
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.0,
+      "plantio": "2015-03-22",
+      "pam_rel": 0.493,
+      "pam_kgha": 238.0,
+      "chuva_estacao": 389
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.233,
+      "plantio": "2016-01-21",
+      "pam_rel": 0.124,
+      "pam_kgha": 60.0,
+      "chuva_estacao": 402
+     },
+     {
+      "ano": 2017,
+      "y_mod": 0.876,
+      "plantio": "2017-02-11",
+      "pam_rel": 2.07,
+      "pam_kgha": 1000.0,
+      "chuva_estacao": 527
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.929,
+      "plantio": "2018-01-27",
+      "pam_rel": 1.8,
+      "pam_kgha": 900.0,
+      "chuva_estacao": 698
+     },
+     {
+      "ano": 2019,
+      "y_mod": 0.982,
+      "plantio": "2019-01-09",
+      "pam_rel": 2.0,
+      "pam_kgha": 1000.0,
+      "chuva_estacao": 669
+     },
+     {
+      "ano": 2020,
+      "y_mod": 1.0,
+      "plantio": "2020-02-17",
+      "pam_rel": 1.72,
+      "pam_kgha": 860.0,
+      "chuva_estacao": 639
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.575,
+      "plantio": "2021-03-18",
+      "pam_rel": 0.8,
+      "pam_kgha": 400.0,
+      "chuva_estacao": 540
+     },
+     {
+      "ano": 2022,
+      "y_mod": 1.0,
+      "plantio": "2022-03-06",
+      "pam_rel": 1.111,
+      "pam_kgha": 500.0,
+      "chuva_estacao": 650
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.995,
+      "plantio": "2023-01-19",
+      "pam_rel": 0.45,
+      "pam_kgha": 180.0,
+      "chuva_estacao": 616
+     },
+     {
+      "ano": 2024,
+      "y_mod": 0.998,
+      "plantio": "2024-02-19",
+      "pam_rel": 0.726,
+      "pam_kgha": 228.0,
+      "chuva_estacao": 648
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.658,
+      "pam_kgha": 150.0,
+      "chuva_estacao": 405
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 37,
+     "rho": 0.342,
+     "p": 0.0192,
+     "rho_chuva": 0.342,
+     "acerto8": 4,
+     "p_acerto": 0.0487,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      2001,
+      2007,
+      2010,
+      2012,
+      2015,
+      2016,
+      2023,
+      2024
+     ],
+     "piores_modelo": [
+      1992,
+      2005,
+      2010,
+      2012,
+      2014,
+      2015,
+      2016,
+      2021
+     ],
+     "piores_chuva": [
+      1992,
+      2005,
+      2010,
+      2012,
+      2014,
+      2015,
+      2016,
+      2021
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 40,
+     "rho": 0.524,
+     "p": 0.0007,
+     "rho_chuva": 0.456,
+     "acerto8": 4,
+     "p_acerto": 0.0365,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1993,
+      2001,
+      2012,
+      2015,
+      2016,
+      2023,
+      2024,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1992,
+      1993,
+      2005,
+      2012,
+      2013,
+      2015,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 40,
+     "rho": 0.516,
+     "p": 0.0007,
+     "rho_chuva": 0.549,
+     "acerto8": 4,
+     "p_acerto": 0.0365,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1993,
+      2001,
+      2012,
+      2015,
+      2016,
+      2023,
+      2024,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1992,
+      1993,
+      2005,
+      2012,
+      2013,
+      2015,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 40,
+     "rho": 0.511,
+     "p": 0.0007,
+     "rho_chuva": 0.532,
+     "acerto8": 4,
+     "p_acerto": 0.0365,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1993,
+      2001,
+      2012,
+      2015,
+      2016,
+      2023,
+      2024,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1992,
+      1993,
+      2005,
+      2012,
+      2013,
+      2015,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2025
+     ]
+    }
+   }
+  },
+  "feijao": {
+   "n_pam": 41,
+   "pct_repetido": 4.0,
+   "sem_plantio_chuva": 4,
+   "chuva": {
+    "principal": {
+     "n": 41,
+     "rho": 0.296,
+     "p": 0.0275,
+     "rho_chuva": 0.335,
+     "acerto8": 5,
+     "p_acerto": 0.0034,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1993,
+      2001,
+      2004,
+      2007,
+      2012,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1992,
+      1993,
+      1998,
+      2012,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2015,
+      2016,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 41,
+     "rho": 0.217,
+     "p": 0.083,
+     "rho_chuva": 0.361,
+     "acerto8": 4,
+     "p_acerto": 0.0333,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1985,
+      1986,
+      1987,
+      1993,
+      2012,
+      2016,
+      2023,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1992,
+      1993,
+      1998,
+      2012,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2015,
+      2016,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 41,
+     "rho": 0.265,
+     "p": 0.0447,
+     "rho_chuva": 0.327,
+     "acerto8": 4,
+     "p_acerto": 0.0333,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1985,
+      1986,
+      1987,
+      1989,
+      1993,
+      2012,
+      2016,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1992,
+      1993,
+      1998,
+      2012,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2015,
+      2016,
+      2025
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 1.0,
+      "plantio": "1985-01-18",
+      "pam_rel": 0.833,
+      "pam_kgha": 100.0,
+      "chuva_estacao": 1324
+     },
+     {
+      "ano": 1986,
+      "y_mod": 1.0,
+      "plantio": "1986-01-30",
+      "pam_rel": 0.667,
+      "pam_kgha": 100.0,
+      "chuva_estacao": 1077
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.857,
+      "plantio": "1987-03-04",
+      "pam_rel": 0.687,
+      "pam_kgha": 103.0,
+      "chuva_estacao": 481
+     },
+     {
+      "ano": 1988,
+      "y_mod": 0.707,
+      "plantio": "1988-01-25",
+      "pam_rel": 1.244,
+      "pam_kgha": 250.0,
+      "chuva_estacao": 787
+     },
+     {
+      "ano": 1989,
+      "y_mod": 1.0,
+      "plantio": "1989-03-17",
+      "pam_rel": 1.0,
+      "pam_kgha": 150.0,
+      "chuva_estacao": 816
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.289,
+      "pam_kgha": 259.0,
+      "chuva_estacao": 377
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.997,
+      "plantio": "1991-03-09",
+      "pam_rel": 0.804,
+      "pam_kgha": 201.0,
+      "chuva_estacao": 571
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.208,
+      "plantio": "1992-03-16",
+      "pam_rel": 1.0,
+      "pam_kgha": 251.0,
+      "chuva_estacao": 597
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.351,
+      "pam_kgha": 91.0,
+      "chuva_estacao": 228
+     },
+     {
+      "ano": 1994,
+      "y_mod": 1.0,
+      "plantio": "1994-02-06",
+      "pam_rel": 1.162,
+      "pam_kgha": 301.0,
+      "chuva_estacao": 748
+     },
+     {
+      "ano": 1995,
+      "y_mod": 0.947,
+      "plantio": "1995-02-10",
+      "pam_rel": 1.951,
+      "pam_kgha": 554.0,
+      "chuva_estacao": 721
+     },
+     {
+      "ano": 1996,
+      "y_mod": 1.0,
+      "plantio": "1996-02-19",
+      "pam_rel": 0.979,
+      "pam_kgha": 284.0,
+      "chuva_estacao": 794
+     },
+     {
+      "ano": 1997,
+      "y_mod": 0.557,
+      "plantio": "1997-02-08",
+      "pam_rel": 1.0,
+      "pam_kgha": 290.0,
+      "chuva_estacao": 561
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.784,
+      "pam_kgha": 236.0,
+      "chuva_estacao": 327
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.672,
+      "plantio": "1999-02-23",
+      "pam_rel": 1.0,
+      "pam_kgha": 403.0,
+      "chuva_estacao": 552
+     },
+     {
+      "ano": 2000,
+      "y_mod": 0.945,
+      "plantio": "2000-02-16",
+      "pam_rel": 1.39,
+      "pam_kgha": 403.0,
+      "chuva_estacao": 694
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.898,
+      "plantio": "2001-03-09",
+      "pam_rel": 0.462,
+      "pam_kgha": 186.0,
+      "chuva_estacao": 445
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.557,
+      "plantio": "2002-01-06",
+      "pam_rel": 1.737,
+      "pam_kgha": 700.0,
+      "chuva_estacao": 842
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.994,
+      "plantio": "2003-01-20",
+      "pam_rel": 1.581,
+      "pam_kgha": 637.0,
+      "chuva_estacao": 719
+     },
+     {
+      "ano": 2004,
+      "y_mod": 1.0,
+      "plantio": "2004-01-14",
+      "pam_rel": 0.52,
+      "pam_kgha": 261.0,
+      "chuva_estacao": 905
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.266,
+      "plantio": "2005-01-24",
+      "pam_rel": 1.269,
+      "pam_kgha": 637.0,
+      "chuva_estacao": 533
+     },
+     {
+      "ano": 2006,
+      "y_mod": 1.0,
+      "plantio": "2006-02-18",
+      "pam_rel": 1.0,
+      "pam_kgha": 502.0,
+      "chuva_estacao": 1011
+     },
+     {
+      "ano": 2007,
+      "y_mod": 1.0,
+      "plantio": "2007-02-03",
+      "pam_rel": 0.602,
+      "pam_kgha": 302.0,
+      "chuva_estacao": 901
+     },
+     {
+      "ano": 2008,
+      "y_mod": 1.0,
+      "plantio": "2008-03-04",
+      "pam_rel": 2.026,
+      "pam_kgha": 618.0,
+      "chuva_estacao": 741
+     },
+     {
+      "ano": 2009,
+      "y_mod": 0.981,
+      "plantio": "2009-01-21",
+      "pam_rel": 0.981,
+      "pam_kgha": 305.0,
+      "chuva_estacao": 883
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.652,
+      "plantio": "2010-03-21",
+      "pam_rel": 0.666,
+      "pam_kgha": 207.0,
+      "chuva_estacao": 430
+     },
+     {
+      "ano": 2011,
+      "y_mod": 1.0,
+      "plantio": "2011-01-09",
+      "pam_rel": 2.148,
+      "pam_kgha": 655.0,
+      "chuva_estacao": 813
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.258,
+      "plantio": "2012-02-15",
+      "pam_rel": 0.148,
+      "pam_kgha": 45.0,
+      "chuva_estacao": 312
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.685,
+      "plantio": "2013-04-19",
+      "pam_rel": 1.02,
+      "pam_kgha": 311.0,
+      "chuva_estacao": 404
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.693,
+      "plantio": "2014-03-20",
+      "pam_rel": 1.158,
+      "pam_kgha": 360.0,
+      "chuva_estacao": 422
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.17,
+      "plantio": "2015-03-22",
+      "pam_rel": 0.453,
+      "pam_kgha": 163.0,
+      "chuva_estacao": 389
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.161,
+      "plantio": "2016-01-21",
+      "pam_rel": 0.333,
+      "pam_kgha": 120.0,
+      "chuva_estacao": 402
+     },
+     {
+      "ano": 2017,
+      "y_mod": 1.0,
+      "plantio": "2017-02-11",
+      "pam_rel": 1.667,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 527
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.69,
+      "plantio": "2018-01-27",
+      "pam_rel": 1.364,
+      "pam_kgha": 491.0,
+      "chuva_estacao": 698
+     },
+     {
+      "ano": 2019,
+      "y_mod": 1.0,
+      "plantio": "2019-01-09",
+      "pam_rel": 1.696,
+      "pam_kgha": 480.0,
+      "chuva_estacao": 669
+     },
+     {
+      "ano": 2020,
+      "y_mod": 1.0,
+      "plantio": "2020-02-17",
+      "pam_rel": 1.562,
+      "pam_kgha": 442.0,
+      "chuva_estacao": 639
+     },
+     {
+      "ano": 2021,
+      "y_mod": 1.0,
+      "plantio": "2021-03-18",
+      "pam_rel": 0.89,
+      "pam_kgha": 252.0,
+      "chuva_estacao": 540
+     },
+     {
+      "ano": 2022,
+      "y_mod": 1.0,
+      "plantio": "2022-03-06",
+      "pam_rel": 1.058,
+      "pam_kgha": 283.0,
+      "chuva_estacao": 650
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.934,
+      "plantio": "2023-01-19",
+      "pam_rel": 0.607,
+      "pam_kgha": 153.0,
+      "chuva_estacao": 616
+     },
+     {
+      "ano": 2024,
+      "y_mod": 1.0,
+      "plantio": "2024-02-19",
+      "pam_rel": 0.914,
+      "pam_kgha": 212.0,
+      "chuva_estacao": 648
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.476,
+      "pam_kgha": 101.0,
+      "chuva_estacao": 405
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 37,
+     "rho": 0.163,
+     "p": 0.1692,
+     "rho_chuva": 0.163,
+     "acerto8": 5,
+     "p_acerto": 0.0056,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      2001,
+      2004,
+      2007,
+      2010,
+      2012,
+      2015,
+      2016,
+      2023
+     ],
+     "piores_modelo": [
+      1992,
+      2001,
+      2005,
+      2010,
+      2012,
+      2014,
+      2015,
+      2016
+     ],
+     "piores_chuva": [
+      1992,
+      2001,
+      2005,
+      2010,
+      2012,
+      2014,
+      2015,
+      2016
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 41,
+     "rho": 0.406,
+     "p": 0.0042,
+     "rho_chuva": 0.335,
+     "acerto8": 3,
+     "p_acerto": 0.1724,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1993,
+      2001,
+      2004,
+      2007,
+      2012,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2005,
+      2010,
+      2012,
+      2013,
+      2016
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2015,
+      2016,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 41,
+     "rho": 0.287,
+     "p": 0.0325,
+     "rho_chuva": 0.361,
+     "acerto8": 3,
+     "p_acerto": 0.1724,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1985,
+      1986,
+      1987,
+      1993,
+      2012,
+      2016,
+      2023,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2005,
+      2010,
+      2012,
+      2013,
+      2016
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2015,
+      2016,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 41,
+     "rho": 0.27,
+     "p": 0.039,
+     "rho_chuva": 0.327,
+     "acerto8": 3,
+     "p_acerto": 0.1724,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1985,
+      1986,
+      1987,
+      1989,
+      1993,
+      2012,
+      2016,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2005,
+      2010,
+      2012,
+      2013,
+      2016
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2015,
+      2016,
+      2025
+     ]
+    }
+   }
+  }
+ },
+ "quixeramobim": {
+  "nome": "Quixeramobim (CE)",
+  "milho": {
+   "n_pam": 39,
+   "pct_repetido": 0.0,
+   "sem_plantio_chuva": 3,
+   "chuva": {
+    "principal": {
+     "n": 39,
+     "rho": 0.59,
+     "p": 0.0002,
+     "rho_chuva": 0.368,
+     "acerto8": 5,
+     "p_acerto": 0.0043,
+     "acerto8_chuva": 7,
+     "piores_pam": [
+      1987,
+      1993,
+      2001,
+      2007,
+      2010,
+      2013,
+      2015,
+      2016
+     ],
+     "piores_modelo": [
+      1987,
+      1990,
+      1993,
+      2001,
+      2014,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_chuva": [
+      1987,
+      1993,
+      2001,
+      2010,
+      2013,
+      2014,
+      2015,
+      2016
+     ]
+    },
+    "loglin": {
+     "n": 39,
+     "rho": 0.66,
+     "p": 0.0002,
+     "rho_chuva": 0.493,
+     "acerto8": 7,
+     "p_acerto": 0.0,
+     "acerto8_chuva": 6,
+     "piores_pam": [
+      1987,
+      1990,
+      1993,
+      2001,
+      2013,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_modelo": [
+      1987,
+      1990,
+      1993,
+      2001,
+      2014,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_chuva": [
+      1987,
+      1993,
+      2001,
+      2010,
+      2013,
+      2014,
+      2015,
+      2016
+     ]
+    },
+    "bruto": {
+     "n": 39,
+     "rho": 0.545,
+     "p": 0.0002,
+     "rho_chuva": 0.326,
+     "acerto8": 6,
+     "p_acerto": 0.0002,
+     "acerto8_chuva": 6,
+     "piores_pam": [
+      1987,
+      1989,
+      1990,
+      1993,
+      2001,
+      2013,
+      2015,
+      2016
+     ],
+     "piores_modelo": [
+      1987,
+      1990,
+      1993,
+      2001,
+      2014,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_chuva": [
+      1987,
+      1993,
+      2001,
+      2010,
+      2013,
+      2014,
+      2015,
+      2016
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 0.999,
+      "plantio": "1985-01-18",
+      "pam_rel": 1.572,
+      "pam_kgha": 393.0,
+      "chuva_estacao": 1216
+     },
+     {
+      "ano": 1986,
+      "y_mod": 1.0,
+      "plantio": "1986-01-30",
+      "pam_rel": 1.2,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 969
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.131,
+      "plantio": "1987-03-08",
+      "pam_rel": 0.533,
+      "pam_kgha": 160.0,
+      "chuva_estacao": 407
+     },
+     {
+      "ano": 1988,
+      "y_mod": 0.997,
+      "plantio": "1988-02-14",
+      "pam_rel": 1.145,
+      "pam_kgha": 450.0,
+      "chuva_estacao": 739
+     },
+     {
+      "ano": 1989,
+      "y_mod": 0.923,
+      "plantio": "1989-03-17",
+      "pam_rel": 0.833,
+      "pam_kgha": 250.0,
+      "chuva_estacao": 819
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.22,
+      "plantio": "1990-04-05",
+      "pam_rel": 0.667,
+      "pam_kgha": 200.0,
+      "chuva_estacao": 412
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.906,
+      "plantio": "1991-01-18",
+      "pam_rel": 1.0,
+      "pam_kgha": 440.0,
+      "chuva_estacao": 611
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.941,
+      "plantio": "1992-01-25",
+      "pam_rel": 1.111,
+      "pam_kgha": 500.0,
+      "chuva_estacao": 510
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.12,
+      "pam_kgha": 60.0,
+      "chuva_estacao": 239
+     },
+     {
+      "ano": 1994,
+      "y_mod": 0.973,
+      "plantio": "1994-01-06",
+      "pam_rel": 1.091,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 663
+     },
+     {
+      "ano": 1995,
+      "y_mod": 1.0,
+      "plantio": "1995-02-09",
+      "pam_rel": 1.333,
+      "pam_kgha": 800.0,
+      "chuva_estacao": 711
+     },
+     {
+      "ano": 1996,
+      "y_mod": 0.986,
+      "plantio": "1996-02-19",
+      "pam_rel": 1.238,
+      "pam_kgha": 805.0,
+      "chuva_estacao": 818
+     },
+     {
+      "ano": 1997,
+      "y_mod": 0.377,
+      "plantio": "1997-03-23",
+      "pam_rel": 1.077,
+      "pam_kgha": 700.0,
+      "chuva_estacao": 574
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 283
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.891,
+      "plantio": "1999-02-22",
+      "pam_rel": 0.8,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 543
+     },
+     {
+      "ano": 2000,
+      "y_mod": 1.0,
+      "plantio": "2000-02-15",
+      "pam_rel": 1.231,
+      "pam_kgha": 800.0,
+      "chuva_estacao": 654
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.039,
+      "plantio": "2001-04-03",
+      "pam_rel": 0.2,
+      "pam_kgha": 130.0,
+      "chuva_estacao": 403
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.671,
+      "plantio": "2002-01-06",
+      "pam_rel": 0.787,
+      "pam_kgha": 551.0,
+      "chuva_estacao": 714
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.922,
+      "plantio": "2003-01-20",
+      "pam_rel": 1.862,
+      "pam_kgha": 1117.0,
+      "chuva_estacao": 603
+     },
+     {
+      "ano": 2004,
+      "y_mod": 0.814,
+      "plantio": "2004-01-14",
+      "pam_rel": 0.55,
+      "pam_kgha": 440.0,
+      "chuva_estacao": 866
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.497,
+      "plantio": "2005-01-14",
+      "pam_rel": 1.352,
+      "pam_kgha": 1094.0,
+      "chuva_estacao": 652
+     },
+     {
+      "ano": 2006,
+      "y_mod": 1.0,
+      "plantio": "2006-02-11",
+      "pam_rel": 1.236,
+      "pam_kgha": 1000.0,
+      "chuva_estacao": 1021
+     },
+     {
+      "ano": 2007,
+      "y_mod": 0.999,
+      "plantio": "2007-02-02",
+      "pam_rel": 0.321,
+      "pam_kgha": 317.0,
+      "chuva_estacao": 855
+     },
+     {
+      "ano": 2008,
+      "y_mod": 1.0,
+      "plantio": "2008-02-28",
+      "pam_rel": 1.1,
+      "pam_kgha": 989.0,
+      "chuva_estacao": 770
+     },
+     {
+      "ano": 2009,
+      "y_mod": 1.0,
+      "plantio": "2009-02-22",
+      "pam_rel": 0.9,
+      "pam_kgha": 809.0,
+      "chuva_estacao": 820
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.405,
+      "plantio": "2010-03-21",
+      "pam_rel": 0.533,
+      "pam_kgha": 392.0,
+      "chuva_estacao": 384
+     },
+     {
+      "ano": 2011,
+      "y_mod": 1.0,
+      "plantio": "2011-01-09",
+      "pam_rel": 3.137,
+      "pam_kgha": 1655.0,
+      "chuva_estacao": 773
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.099,
+      "plantio": "2012-02-15",
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 275
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.703,
+      "plantio": "2013-03-19",
+      "pam_rel": 0.474,
+      "pam_kgha": 250.0,
+      "chuva_estacao": 355
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.355,
+      "plantio": "2014-03-30",
+      "pam_rel": 1.521,
+      "pam_kgha": 663.0,
+      "chuva_estacao": 386
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.135,
+      "pam_kgha": 77.0,
+      "chuva_estacao": 398
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.069,
+      "plantio": "2016-03-19",
+      "pam_rel": 0.472,
+      "pam_kgha": 270.0,
+      "chuva_estacao": 406
+     },
+     {
+      "ano": 2017,
+      "y_mod": 0.868,
+      "plantio": "2017-02-10",
+      "pam_rel": 2.33,
+      "pam_kgha": 1200.0,
+      "chuva_estacao": 472
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.87,
+      "plantio": "2018-01-26",
+      "pam_rel": 0.724,
+      "pam_kgha": 480.0,
+      "chuva_estacao": 721
+     },
+     {
+      "ano": 2019,
+      "y_mod": 0.993,
+      "plantio": "2019-01-10",
+      "pam_rel": 2.68,
+      "pam_kgha": 1380.0,
+      "chuva_estacao": 591
+     },
+     {
+      "ano": 2020,
+      "y_mod": 1.0,
+      "plantio": "2020-01-28",
+      "pam_rel": 1.903,
+      "pam_kgha": 1180.0,
+      "chuva_estacao": 685
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.801,
+      "plantio": "2021-02-16",
+      "pam_rel": 0.831,
+      "pam_kgha": 515.0,
+      "chuva_estacao": 474
+     },
+     {
+      "ano": 2022,
+      "y_mod": 0.708,
+      "plantio": "2022-03-11",
+      "pam_rel": 1.938,
+      "pam_kgha": 1100.0,
+      "chuva_estacao": 441
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.562,
+      "plantio": "2023-03-05",
+      "pam_rel": 0.79,
+      "pam_kgha": 490.0,
+      "chuva_estacao": 650
+     },
+     {
+      "ano": 2024,
+      "y_mod": 0.907,
+      "plantio": "2024-02-15",
+      "pam_rel": 1.093,
+      "pam_kgha": 620.0,
+      "chuva_estacao": 543
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.246,
+      "plantio": "2025-02-28",
+      "pam_rel": 0.583,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 446
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 37,
+     "rho": 0.282,
+     "p": 0.0432,
+     "rho_chuva": 0.282,
+     "acerto8": 6,
+     "p_acerto": 0.0003,
+     "acerto8_chuva": 6,
+     "piores_pam": [
+      1987,
+      2001,
+      2004,
+      2007,
+      2010,
+      2013,
+      2016,
+      2025
+     ],
+     "piores_modelo": [
+      1987,
+      1990,
+      2001,
+      2010,
+      2013,
+      2014,
+      2016,
+      2025
+     ],
+     "piores_chuva": [
+      1987,
+      1990,
+      2001,
+      2010,
+      2013,
+      2014,
+      2016,
+      2025
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 39,
+     "rho": 0.426,
+     "p": 0.005,
+     "rho_chuva": 0.368,
+     "acerto8": 4,
+     "p_acerto": 0.0401,
+     "acerto8_chuva": 7,
+     "piores_pam": [
+      1987,
+      1993,
+      2001,
+      2007,
+      2010,
+      2013,
+      2015,
+      2016
+     ],
+     "piores_modelo": [
+      1987,
+      1992,
+      1993,
+      2004,
+      2013,
+      2014,
+      2015,
+      2025
+     ],
+     "piores_chuva": [
+      1987,
+      1993,
+      2001,
+      2010,
+      2013,
+      2014,
+      2015,
+      2016
+     ]
+    },
+    "loglin": {
+     "n": 39,
+     "rho": 0.569,
+     "p": 0.0002,
+     "rho_chuva": 0.493,
+     "acerto8": 5,
+     "p_acerto": 0.0043,
+     "acerto8_chuva": 6,
+     "piores_pam": [
+      1987,
+      1990,
+      1993,
+      2001,
+      2013,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_modelo": [
+      1987,
+      1992,
+      1993,
+      2004,
+      2013,
+      2014,
+      2015,
+      2025
+     ],
+     "piores_chuva": [
+      1987,
+      1993,
+      2001,
+      2010,
+      2013,
+      2014,
+      2015,
+      2016
+     ]
+    },
+    "bruto": {
+     "n": 39,
+     "rho": 0.452,
+     "p": 0.0042,
+     "rho_chuva": 0.326,
+     "acerto8": 4,
+     "p_acerto": 0.0401,
+     "acerto8_chuva": 6,
+     "piores_pam": [
+      1987,
+      1989,
+      1990,
+      1993,
+      2001,
+      2013,
+      2015,
+      2016
+     ],
+     "piores_modelo": [
+      1987,
+      1992,
+      1993,
+      2004,
+      2013,
+      2014,
+      2015,
+      2025
+     ],
+     "piores_chuva": [
+      1987,
+      1993,
+      2001,
+      2010,
+      2013,
+      2014,
+      2015,
+      2016
+     ]
+    }
+   }
+  },
+  "feijao": {
+   "n_pam": 41,
+   "pct_repetido": 0.0,
+   "sem_plantio_chuva": 3,
+   "chuva": {
+    "principal": {
+     "n": 41,
+     "rho": 0.319,
+     "p": 0.0247,
+     "rho_chuva": 0.091,
+     "acerto8": 4,
+     "p_acerto": 0.0333,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1986,
+      1990,
+      1998,
+      2001,
+      2004,
+      2015,
+      2016,
+      2018
+     ],
+     "piores_modelo": [
+      1993,
+      1998,
+      2001,
+      2002,
+      2005,
+      2012,
+      2015,
+      2016
+     ],
+     "piores_chuva": [
+      1993,
+      1998,
+      2001,
+      2010,
+      2012,
+      2013,
+      2014,
+      2015
+     ]
+    },
+    "loglin": {
+     "n": 41,
+     "rho": 0.133,
+     "p": 0.2094,
+     "rho_chuva": 0.127,
+     "acerto8": 1,
+     "p_acerto": 0.8547,
+     "acerto8_chuva": 0,
+     "piores_pam": [
+      1985,
+      1986,
+      1987,
+      1990,
+      2016,
+      2023,
+      2024,
+      2025
+     ],
+     "piores_modelo": [
+      1993,
+      1998,
+      2001,
+      2002,
+      2005,
+      2012,
+      2015,
+      2016
+     ],
+     "piores_chuva": [
+      1993,
+      1998,
+      2001,
+      2010,
+      2012,
+      2013,
+      2014,
+      2015
+     ]
+    },
+    "bruto": {
+     "n": 41,
+     "rho": 0.161,
+     "p": 0.162,
+     "rho_chuva": 0.077,
+     "acerto8": 0,
+     "p_acerto": 1.0,
+     "acerto8_chuva": 0,
+     "piores_pam": [
+      1985,
+      1986,
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      2025
+     ],
+     "piores_modelo": [
+      1993,
+      1998,
+      2001,
+      2002,
+      2005,
+      2012,
+      2015,
+      2016
+     ],
+     "piores_chuva": [
+      1993,
+      1998,
+      2001,
+      2010,
+      2012,
+      2013,
+      2014,
+      2015
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 1.0,
+      "plantio": "1985-01-18",
+      "pam_rel": 0.816,
+      "pam_kgha": 80.0,
+      "chuva_estacao": 1216
+     },
+     {
+      "ano": 1986,
+      "y_mod": 1.0,
+      "plantio": "1986-01-30",
+      "pam_rel": 0.446,
+      "pam_kgha": 45.0,
+      "chuva_estacao": 969
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.452,
+      "plantio": "1987-03-08",
+      "pam_rel": 0.97,
+      "pam_kgha": 98.0,
+      "chuva_estacao": 407
+     },
+     {
+      "ano": 1988,
+      "y_mod": 1.0,
+      "plantio": "1988-02-14",
+      "pam_rel": 1.286,
+      "pam_kgha": 180.0,
+      "chuva_estacao": 739
+     },
+     {
+      "ano": 1989,
+      "y_mod": 1.0,
+      "plantio": "1989-03-17",
+      "pam_rel": 1.0,
+      "pam_kgha": 140.0,
+      "chuva_estacao": 819
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.517,
+      "plantio": "1990-04-05",
+      "pam_rel": 0.577,
+      "pam_kgha": 101.0,
+      "chuva_estacao": 412
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.608,
+      "plantio": "1991-01-18",
+      "pam_rel": 0.972,
+      "pam_kgha": 175.0,
+      "chuva_estacao": 611
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.846,
+      "plantio": "1992-01-25",
+      "pam_rel": 2.121,
+      "pam_kgha": 509.0,
+      "chuva_estacao": 510
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.822,
+      "pam_kgha": 240.0,
+      "chuva_estacao": 239
+     },
+     {
+      "ano": 1994,
+      "y_mod": 0.895,
+      "plantio": "1994-01-06",
+      "pam_rel": 1.236,
+      "pam_kgha": 361.0,
+      "chuva_estacao": 663
+     },
+     {
+      "ano": 1995,
+      "y_mod": 0.91,
+      "plantio": "1995-02-09",
+      "pam_rel": 1.548,
+      "pam_kgha": 559.0,
+      "chuva_estacao": 711
+     },
+     {
+      "ano": 1996,
+      "y_mod": 1.0,
+      "plantio": "1996-02-19",
+      "pam_rel": 1.041,
+      "pam_kgha": 429.0,
+      "chuva_estacao": 818
+     },
+     {
+      "ano": 1997,
+      "y_mod": 0.922,
+      "plantio": "1997-03-23",
+      "pam_rel": 0.809,
+      "pam_kgha": 292.0,
+      "chuva_estacao": 574
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.643,
+      "pam_kgha": 265.0,
+      "chuva_estacao": 283
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.687,
+      "plantio": "1999-02-22",
+      "pam_rel": 1.0,
+      "pam_kgha": 413.0,
+      "chuva_estacao": 543
+     },
+     {
+      "ano": 2000,
+      "y_mod": 0.997,
+      "plantio": "2000-02-15",
+      "pam_rel": 1.0,
+      "pam_kgha": 412.0,
+      "chuva_estacao": 654
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.22,
+      "plantio": "2001-04-03",
+      "pam_rel": 0.493,
+      "pam_kgha": 203.0,
+      "chuva_estacao": 403
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.418,
+      "plantio": "2002-01-06",
+      "pam_rel": 1.005,
+      "pam_kgha": 415.0,
+      "chuva_estacao": 714
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.983,
+      "plantio": "2003-01-20",
+      "pam_rel": 1.332,
+      "pam_kgha": 550.0,
+      "chuva_estacao": 603
+     },
+     {
+      "ano": 2004,
+      "y_mod": 0.999,
+      "plantio": "2004-01-14",
+      "pam_rel": 0.48,
+      "pam_kgha": 199.0,
+      "chuva_estacao": 866
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.241,
+      "plantio": "2005-01-14",
+      "pam_rel": 1.125,
+      "pam_kgha": 467.0,
+      "chuva_estacao": 652
+     },
+     {
+      "ano": 2006,
+      "y_mod": 1.0,
+      "plantio": "2006-02-11",
+      "pam_rel": 1.19,
+      "pam_kgha": 494.0,
+      "chuva_estacao": 1021
+     },
+     {
+      "ano": 2007,
+      "y_mod": 1.0,
+      "plantio": "2007-02-02",
+      "pam_rel": 0.67,
+      "pam_kgha": 313.0,
+      "chuva_estacao": 855
+     },
+     {
+      "ano": 2008,
+      "y_mod": 1.0,
+      "plantio": "2008-02-28",
+      "pam_rel": 1.863,
+      "pam_kgha": 583.0,
+      "chuva_estacao": 770
+     },
+     {
+      "ano": 2009,
+      "y_mod": 1.0,
+      "plantio": "2009-02-22",
+      "pam_rel": 0.747,
+      "pam_kgha": 284.0,
+      "chuva_estacao": 820
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.435,
+      "plantio": "2010-03-21",
+      "pam_rel": 0.749,
+      "pam_kgha": 280.0,
+      "chuva_estacao": 384
+     },
+     {
+      "ano": 2011,
+      "y_mod": 0.988,
+      "plantio": "2011-01-09",
+      "pam_rel": 1.668,
+      "pam_kgha": 522.0,
+      "chuva_estacao": 773
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.291,
+      "plantio": "2012-02-15",
+      "pam_rel": 0.739,
+      "pam_kgha": 210.0,
+      "chuva_estacao": 275
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.968,
+      "plantio": "2013-03-19",
+      "pam_rel": 1.338,
+      "pam_kgha": 380.0,
+      "chuva_estacao": 355
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.671,
+      "plantio": "2014-03-30",
+      "pam_rel": 1.336,
+      "pam_kgha": 374.0,
+      "chuva_estacao": 386
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.57,
+      "pam_kgha": 213.0,
+      "chuva_estacao": 398
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.304,
+      "plantio": "2016-03-19",
+      "pam_rel": 0.481,
+      "pam_kgha": 180.0,
+      "chuva_estacao": 406
+     },
+     {
+      "ano": 2017,
+      "y_mod": 1.0,
+      "plantio": "2017-02-10",
+      "pam_rel": 1.19,
+      "pam_kgha": 445.0,
+      "chuva_estacao": 472
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.674,
+      "plantio": "2018-01-26",
+      "pam_rel": 0.535,
+      "pam_kgha": 200.0,
+      "chuva_estacao": 721
+     },
+     {
+      "ano": 2019,
+      "y_mod": 1.0,
+      "plantio": "2019-01-10",
+      "pam_rel": 1.826,
+      "pam_kgha": 420.0,
+      "chuva_estacao": 591
+     },
+     {
+      "ano": 2020,
+      "y_mod": 1.0,
+      "plantio": "2020-01-28",
+      "pam_rel": 1.804,
+      "pam_kgha": 415.0,
+      "chuva_estacao": 685
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.836,
+      "plantio": "2021-02-16",
+      "pam_rel": 1.0,
+      "pam_kgha": 230.0,
+      "chuva_estacao": 474
+     },
+     {
+      "ano": 2022,
+      "y_mod": 0.892,
+      "plantio": "2022-03-11",
+      "pam_rel": 2.059,
+      "pam_kgha": 450.0,
+      "chuva_estacao": 441
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.995,
+      "plantio": "2023-03-05",
+      "pam_rel": 0.865,
+      "pam_kgha": 199.0,
+      "chuva_estacao": 650
+     },
+     {
+      "ano": 2024,
+      "y_mod": 1.0,
+      "plantio": "2024-02-15",
+      "pam_rel": 0.947,
+      "pam_kgha": 207.0,
+      "chuva_estacao": 543
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.478,
+      "plantio": "2025-02-28",
+      "pam_rel": 0.865,
+      "pam_kgha": 179.0,
+      "chuva_estacao": 446
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 38,
+     "rho": 0.033,
+     "p": 0.4161,
+     "rho_chuva": 0.033,
+     "acerto8": 4,
+     "p_acerto": 0.0441,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1986,
+      1990,
+      2001,
+      2004,
+      2007,
+      2012,
+      2016,
+      2018
+     ],
+     "piores_modelo": [
+      1990,
+      2001,
+      2010,
+      2012,
+      2014,
+      2016,
+      2022,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      2001,
+      2010,
+      2012,
+      2014,
+      2016,
+      2022,
+      2025
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 41,
+     "rho": 0.384,
+     "p": 0.0062,
+     "rho_chuva": 0.091,
+     "acerto8": 3,
+     "p_acerto": 0.1724,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1986,
+      1990,
+      1998,
+      2001,
+      2004,
+      2015,
+      2016,
+      2018
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2004,
+      2010,
+      2012,
+      2013,
+      2014
+     ],
+     "piores_chuva": [
+      1993,
+      1998,
+      2001,
+      2010,
+      2012,
+      2013,
+      2014,
+      2015
+     ]
+    },
+    "loglin": {
+     "n": 41,
+     "rho": 0.25,
+     "p": 0.0582,
+     "rho_chuva": 0.127,
+     "acerto8": 1,
+     "p_acerto": 0.8547,
+     "acerto8_chuva": 0,
+     "piores_pam": [
+      1985,
+      1986,
+      1987,
+      1990,
+      2016,
+      2023,
+      2024,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2004,
+      2010,
+      2012,
+      2013,
+      2014
+     ],
+     "piores_chuva": [
+      1993,
+      1998,
+      2001,
+      2010,
+      2012,
+      2013,
+      2014,
+      2015
+     ]
+    },
+    "bruto": {
+     "n": 41,
+     "rho": 0.279,
+     "p": 0.0392,
+     "rho_chuva": 0.077,
+     "acerto8": 1,
+     "p_acerto": 0.8547,
+     "acerto8_chuva": 0,
+     "piores_pam": [
+      1985,
+      1986,
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2004,
+      2010,
+      2012,
+      2013,
+      2014
+     ],
+     "piores_chuva": [
+      1993,
+      1998,
+      2001,
+      2010,
+      2012,
+      2013,
+      2014,
+      2015
+     ]
+    }
+   }
+  }
+ },
+ "crateus": {
+  "nome": "Crateús (CE)",
+  "milho": {
+   "n_pam": 40,
+   "pct_repetido": 0.0,
+   "sem_plantio_chuva": 2,
+   "chuva": {
+    "principal": {
+     "n": 40,
+     "rho": 0.639,
+     "p": 0.0002,
+     "rho_chuva": 0.496,
+     "acerto8": 4,
+     "p_acerto": 0.0365,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1992,
+      1993,
+      1997,
+      1998,
+      2007,
+      2010,
+      2013
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2013,
+      2014,
+      2015,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2013,
+      2014,
+      2022,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 40,
+     "rho": 0.577,
+     "p": 0.0005,
+     "rho_chuva": 0.519,
+     "acerto8": 4,
+     "p_acerto": 0.0365,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1992,
+      1993,
+      1997,
+      1998,
+      2007,
+      2010,
+      2013
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2013,
+      2014,
+      2015,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2013,
+      2014,
+      2022,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 40,
+     "rho": 0.411,
+     "p": 0.005,
+     "rho_chuva": 0.302,
+     "acerto8": 5,
+     "p_acerto": 0.0038,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1990,
+      1992,
+      1993,
+      1997,
+      1998,
+      2010,
+      2013
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2013,
+      2014,
+      2015,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2013,
+      2014,
+      2022,
+      2025
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 1.0,
+      "plantio": "1985-01-18",
+      "pam_rel": 1.0,
+      "pam_kgha": 246.0,
+      "chuva_estacao": 1348
+     },
+     {
+      "ano": 1986,
+      "y_mod": 1.0,
+      "plantio": "1986-01-30",
+      "pam_rel": 2.846,
+      "pam_kgha": 700.0,
+      "chuva_estacao": 936
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.492,
+      "plantio": "1987-02-13",
+      "pam_rel": 0.125,
+      "pam_kgha": 35.0,
+      "chuva_estacao": 456
+     },
+     {
+      "ano": 1988,
+      "y_mod": 1.0,
+      "plantio": "1988-02-14",
+      "pam_rel": 2.5,
+      "pam_kgha": 700.0,
+      "chuva_estacao": 808
+     },
+     {
+      "ano": 1989,
+      "y_mod": 1.0,
+      "plantio": "1989-01-24",
+      "pam_rel": 1.138,
+      "pam_kgha": 280.0,
+      "chuva_estacao": 889
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.018,
+      "plantio": "1990-04-04",
+      "pam_rel": 0.643,
+      "pam_kgha": 180.0,
+      "chuva_estacao": 410
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.865,
+      "plantio": "1991-01-08",
+      "pam_rel": 2.5,
+      "pam_kgha": 700.0,
+      "chuva_estacao": 675
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.834,
+      "plantio": "1992-01-25",
+      "pam_rel": 0.091,
+      "pam_kgha": 62.0,
+      "chuva_estacao": 450
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.161,
+      "pam_kgha": 45.0,
+      "chuva_estacao": 296
+     },
+     {
+      "ano": 1994,
+      "y_mod": 1.0,
+      "plantio": "1994-02-07",
+      "pam_rel": 4.167,
+      "pam_kgha": 750.0,
+      "chuva_estacao": 651
+     },
+     {
+      "ano": 1995,
+      "y_mod": 1.0,
+      "plantio": "1995-02-09",
+      "pam_rel": 1.176,
+      "pam_kgha": 800.0,
+      "chuva_estacao": 784
+     },
+     {
+      "ano": 1996,
+      "y_mod": 0.978,
+      "plantio": "1996-02-19",
+      "pam_rel": 1.0,
+      "pam_kgha": 680.0,
+      "chuva_estacao": 900
+     },
+     {
+      "ano": 1997,
+      "y_mod": 0.807,
+      "plantio": "1997-03-04",
+      "pam_rel": 0.214,
+      "pam_kgha": 150.0,
+      "chuva_estacao": 618
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.086,
+      "plantio": "1998-01-11",
+      "pam_rel": 0.08,
+      "pam_kgha": 60.0,
+      "chuva_estacao": 317
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.941,
+      "plantio": "1999-01-08",
+      "pam_rel": 0.875,
+      "pam_kgha": 700.0,
+      "chuva_estacao": 685
+     },
+     {
+      "ano": 2000,
+      "y_mod": 0.992,
+      "plantio": "2000-02-14",
+      "pam_rel": 1.167,
+      "pam_kgha": 1050.0,
+      "chuva_estacao": 717
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.907,
+      "plantio": "2001-02-13",
+      "pam_rel": 1.0,
+      "pam_kgha": 900.0,
+      "chuva_estacao": 498
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.664,
+      "plantio": "2002-01-03",
+      "pam_rel": 1.05,
+      "pam_kgha": 974.0,
+      "chuva_estacao": 710
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.981,
+      "plantio": "2003-01-19",
+      "pam_rel": 1.357,
+      "pam_kgha": 1259.0,
+      "chuva_estacao": 673
+     },
+     {
+      "ano": 2004,
+      "y_mod": 0.814,
+      "plantio": "2004-01-11",
+      "pam_rel": 0.953,
+      "pam_kgha": 928.0,
+      "chuva_estacao": 900
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.83,
+      "plantio": "2005-02-16",
+      "pam_rel": 0.418,
+      "pam_kgha": 388.0,
+      "chuva_estacao": 703
+     },
+     {
+      "ano": 2006,
+      "y_mod": 1.0,
+      "plantio": "2006-02-11",
+      "pam_rel": 2.06,
+      "pam_kgha": 1912.0,
+      "chuva_estacao": 1016
+     },
+     {
+      "ano": 2007,
+      "y_mod": 0.999,
+      "plantio": "2007-02-02",
+      "pam_rel": 0.298,
+      "pam_kgha": 277.0,
+      "chuva_estacao": 862
+     },
+     {
+      "ano": 2008,
+      "y_mod": 1.0,
+      "plantio": "2008-02-03",
+      "pam_rel": 1.295,
+      "pam_kgha": 1033.0,
+      "chuva_estacao": 915
+     },
+     {
+      "ano": 2009,
+      "y_mod": 0.99,
+      "plantio": "2009-01-22",
+      "pam_rel": 1.264,
+      "pam_kgha": 667.0,
+      "chuva_estacao": 1006
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.111,
+      "plantio": "2010-03-26",
+      "pam_rel": 0.034,
+      "pam_kgha": 29.0,
+      "chuva_estacao": 363
+     },
+     {
+      "ano": 2011,
+      "y_mod": 0.989,
+      "plantio": "2011-01-11",
+      "pam_rel": 3.036,
+      "pam_kgha": 1764.0,
+      "chuva_estacao": 858
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.13,
+      "plantio": "2012-02-17",
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 280
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.282,
+      "pam_kgha": 164.0,
+      "chuva_estacao": 342
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.227,
+      "plantio": "2014-03-30",
+      "pam_rel": 2.365,
+      "pam_kgha": 1562.0,
+      "chuva_estacao": 398
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.027,
+      "plantio": "2015-03-21",
+      "pam_rel": 0.537,
+      "pam_kgha": 495.0,
+      "chuva_estacao": 431
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.392,
+      "plantio": "2016-01-08",
+      "pam_rel": 0.39,
+      "pam_kgha": 360.0,
+      "chuva_estacao": 498
+     },
+     {
+      "ano": 2017,
+      "y_mod": 0.9,
+      "plantio": "2017-02-10",
+      "pam_rel": 1.232,
+      "pam_kgha": 1018.0,
+      "chuva_estacao": 467
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.991,
+      "plantio": "2018-02-11",
+      "pam_rel": 0.811,
+      "pam_kgha": 826.0,
+      "chuva_estacao": 681
+     },
+     {
+      "ano": 2019,
+      "y_mod": 1.0,
+      "plantio": "2019-01-26",
+      "pam_rel": 1.862,
+      "pam_kgha": 1538.0,
+      "chuva_estacao": 584
+     },
+     {
+      "ano": 2020,
+      "y_mod": 1.0,
+      "plantio": "2020-01-27",
+      "pam_rel": 1.319,
+      "pam_kgha": 1343.0,
+      "chuva_estacao": 767
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.705,
+      "plantio": "2021-02-16",
+      "pam_rel": 0.781,
+      "pam_kgha": 795.0,
+      "chuva_estacao": 483
+     },
+     {
+      "ano": 2022,
+      "y_mod": 0.529,
+      "plantio": "2022-03-06",
+      "pam_rel": 1.111,
+      "pam_kgha": 1032.0,
+      "chuva_estacao": 415
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.83,
+      "plantio": "2023-01-16",
+      "pam_rel": 0.677,
+      "pam_kgha": 699.0,
+      "chuva_estacao": 586
+     },
+     {
+      "ano": 2024,
+      "y_mod": 0.733,
+      "plantio": "2024-02-15",
+      "pam_rel": 1.188,
+      "pam_kgha": 1085.0,
+      "chuva_estacao": 488
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.166,
+      "plantio": "2025-02-28",
+      "pam_rel": 1.0,
+      "pam_kgha": 795.0,
+      "chuva_estacao": 427
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 38,
+     "rho": 0.388,
+     "p": 0.0062,
+     "rho_chuva": 0.388,
+     "acerto8": 2,
+     "p_acerto": 0.5473,
+     "acerto8_chuva": 2,
+     "piores_pam": [
+      1987,
+      1992,
+      1997,
+      1998,
+      2005,
+      2007,
+      2010,
+      2016
+     ],
+     "piores_modelo": [
+      1990,
+      1998,
+      2010,
+      2014,
+      2015,
+      2017,
+      2022,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1998,
+      2010,
+      2014,
+      2015,
+      2017,
+      2022,
+      2025
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 40,
+     "rho": 0.623,
+     "p": 0.0002,
+     "rho_chuva": 0.496,
+     "acerto8": 5,
+     "p_acerto": 0.0038,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1992,
+      1993,
+      1997,
+      1998,
+      2007,
+      2010,
+      2013
+     ],
+     "piores_modelo": [
+      1987,
+      1992,
+      1993,
+      1998,
+      2004,
+      2013,
+      2016,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2013,
+      2014,
+      2022,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 40,
+     "rho": 0.557,
+     "p": 0.0005,
+     "rho_chuva": 0.519,
+     "acerto8": 5,
+     "p_acerto": 0.0038,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1992,
+      1993,
+      1997,
+      1998,
+      2007,
+      2010,
+      2013
+     ],
+     "piores_modelo": [
+      1987,
+      1992,
+      1993,
+      1998,
+      2004,
+      2013,
+      2016,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2013,
+      2014,
+      2022,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 40,
+     "rho": 0.301,
+     "p": 0.0307,
+     "rho_chuva": 0.302,
+     "acerto8": 5,
+     "p_acerto": 0.0038,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1990,
+      1992,
+      1993,
+      1997,
+      1998,
+      2010,
+      2013
+     ],
+     "piores_modelo": [
+      1987,
+      1992,
+      1993,
+      1998,
+      2004,
+      2013,
+      2016,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2013,
+      2014,
+      2022,
+      2025
+     ]
+    }
+   }
+  },
+  "feijao": {
+   "n_pam": 41,
+   "pct_repetido": 0.0,
+   "sem_plantio_chuva": 2,
+   "chuva": {
+    "principal": {
+     "n": 41,
+     "rho": 0.426,
+     "p": 0.0022,
+     "rho_chuva": 0.252,
+     "acerto8": 5,
+     "p_acerto": 0.0034,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1987,
+      1992,
+      1993,
+      1998,
+      2002,
+      2009,
+      2010,
+      2016
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2002,
+      2010,
+      2013,
+      2015,
+      2016
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013,
+      2014,
+      2022
+     ]
+    },
+    "loglin": {
+     "n": 41,
+     "rho": 0.495,
+     "p": 0.001,
+     "rho_chuva": 0.316,
+     "acerto8": 4,
+     "p_acerto": 0.0333,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1992,
+      1993,
+      1998,
+      2009,
+      2010,
+      2012,
+      2016
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2002,
+      2010,
+      2013,
+      2015,
+      2016
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013,
+      2014,
+      2022
+     ]
+    },
+    "bruto": {
+     "n": 41,
+     "rho": 0.473,
+     "p": 0.0012,
+     "rho_chuva": 0.289,
+     "acerto8": 4,
+     "p_acerto": 0.0333,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1992,
+      1993,
+      1998,
+      2009,
+      2010,
+      2012,
+      2016
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2002,
+      2010,
+      2013,
+      2015,
+      2016
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013,
+      2014,
+      2022
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 1.0,
+      "plantio": "1985-01-18",
+      "pam_rel": 1.2,
+      "pam_kgha": 240.0,
+      "chuva_estacao": 1348
+     },
+     {
+      "ano": 1986,
+      "y_mod": 1.0,
+      "plantio": "1986-01-30",
+      "pam_rel": 0.889,
+      "pam_kgha": 200.0,
+      "chuva_estacao": 936
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.992,
+      "plantio": "1987-02-13",
+      "pam_rel": 0.4,
+      "pam_kgha": 90.0,
+      "chuva_estacao": 456
+     },
+     {
+      "ano": 1988,
+      "y_mod": 1.0,
+      "plantio": "1988-02-14",
+      "pam_rel": 1.778,
+      "pam_kgha": 400.0,
+      "chuva_estacao": 808
+     },
+     {
+      "ano": 1989,
+      "y_mod": 0.502,
+      "plantio": "1989-01-24",
+      "pam_rel": 0.9,
+      "pam_kgha": 180.0,
+      "chuva_estacao": 889
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.278,
+      "plantio": "1990-04-04",
+      "pam_rel": 1.125,
+      "pam_kgha": 225.0,
+      "chuva_estacao": 410
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.719,
+      "plantio": "1991-01-08",
+      "pam_rel": 1.707,
+      "pam_kgha": 384.0,
+      "chuva_estacao": 675
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.626,
+      "plantio": "1992-01-25",
+      "pam_rel": 0.5,
+      "pam_kgha": 117.0,
+      "chuva_estacao": 450
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.462,
+      "pam_kgha": 104.0,
+      "chuva_estacao": 296
+     },
+     {
+      "ano": 1994,
+      "y_mod": 1.0,
+      "plantio": "1994-02-07",
+      "pam_rel": 2.0,
+      "pam_kgha": 450.0,
+      "chuva_estacao": 651
+     },
+     {
+      "ano": 1995,
+      "y_mod": 1.0,
+      "plantio": "1995-02-09",
+      "pam_rel": 1.0,
+      "pam_kgha": 234.0,
+      "chuva_estacao": 784
+     },
+     {
+      "ano": 1996,
+      "y_mod": 1.0,
+      "plantio": "1996-02-19",
+      "pam_rel": 1.368,
+      "pam_kgha": 320.0,
+      "chuva_estacao": 900
+     },
+     {
+      "ano": 1997,
+      "y_mod": 1.0,
+      "plantio": "1997-03-04",
+      "pam_rel": 0.928,
+      "pam_kgha": 219.0,
+      "chuva_estacao": 618
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.112,
+      "plantio": "1998-01-11",
+      "pam_rel": 0.347,
+      "pam_kgha": 82.0,
+      "chuva_estacao": 317
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.677,
+      "plantio": "1999-01-08",
+      "pam_rel": 1.559,
+      "pam_kgha": 368.0,
+      "chuva_estacao": 685
+     },
+     {
+      "ano": 2000,
+      "y_mod": 1.0,
+      "plantio": "2000-02-14",
+      "pam_rel": 1.205,
+      "pam_kgha": 288.0,
+      "chuva_estacao": 717
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.998,
+      "plantio": "2001-02-13",
+      "pam_rel": 0.987,
+      "pam_kgha": 236.0,
+      "chuva_estacao": 498
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.32,
+      "plantio": "2002-01-03",
+      "pam_rel": 0.595,
+      "pam_kgha": 156.0,
+      "chuva_estacao": 710
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.997,
+      "plantio": "2003-01-19",
+      "pam_rel": 1.221,
+      "pam_kgha": 320.0,
+      "chuva_estacao": 673
+     },
+     {
+      "ano": 2004,
+      "y_mod": 0.995,
+      "plantio": "2004-01-11",
+      "pam_rel": 0.912,
+      "pam_kgha": 239.0,
+      "chuva_estacao": 900
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.818,
+      "plantio": "2005-02-16",
+      "pam_rel": 1.096,
+      "pam_kgha": 262.0,
+      "chuva_estacao": 703
+     },
+     {
+      "ano": 2006,
+      "y_mod": 1.0,
+      "plantio": "2006-02-11",
+      "pam_rel": 2.226,
+      "pam_kgha": 532.0,
+      "chuva_estacao": 1016
+     },
+     {
+      "ano": 2007,
+      "y_mod": 1.0,
+      "plantio": "2007-02-02",
+      "pam_rel": 0.615,
+      "pam_kgha": 161.0,
+      "chuva_estacao": 862
+     },
+     {
+      "ano": 2008,
+      "y_mod": 1.0,
+      "plantio": "2008-02-03",
+      "pam_rel": 1.205,
+      "pam_kgha": 288.0,
+      "chuva_estacao": 915
+     },
+     {
+      "ano": 2009,
+      "y_mod": 1.0,
+      "plantio": "2009-01-22",
+      "pam_rel": 0.553,
+      "pam_kgha": 89.0,
+      "chuva_estacao": 1006
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.211,
+      "plantio": "2010-03-26",
+      "pam_rel": 0.124,
+      "pam_kgha": 20.0,
+      "chuva_estacao": 363
+     },
+     {
+      "ano": 2011,
+      "y_mod": 0.995,
+      "plantio": "2011-01-11",
+      "pam_rel": 3.037,
+      "pam_kgha": 489.0,
+      "chuva_estacao": 858
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.379,
+      "plantio": "2012-02-17",
+      "pam_rel": 0.781,
+      "pam_kgha": 100.0,
+      "chuva_estacao": 280
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.0,
+      "pam_kgha": 128.0,
+      "chuva_estacao": 342
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.613,
+      "plantio": "2014-03-30",
+      "pam_rel": 2.627,
+      "pam_kgha": 570.0,
+      "chuva_estacao": 398
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.216,
+      "plantio": "2015-03-21",
+      "pam_rel": 0.952,
+      "pam_kgha": 217.0,
+      "chuva_estacao": 431
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.252,
+      "plantio": "2016-01-08",
+      "pam_rel": 0.373,
+      "pam_kgha": 85.0,
+      "chuva_estacao": 498
+     },
+     {
+      "ano": 2017,
+      "y_mod": 0.986,
+      "plantio": "2017-02-10",
+      "pam_rel": 1.888,
+      "pam_kgha": 438.0,
+      "chuva_estacao": 467
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.754,
+      "plantio": "2018-02-11",
+      "pam_rel": 0.789,
+      "pam_kgha": 228.0,
+      "chuva_estacao": 681
+     },
+     {
+      "ano": 2019,
+      "y_mod": 1.0,
+      "plantio": "2019-01-26",
+      "pam_rel": 1.599,
+      "pam_kgha": 371.0,
+      "chuva_estacao": 584
+     },
+     {
+      "ano": 2020,
+      "y_mod": 1.0,
+      "plantio": "2020-01-27",
+      "pam_rel": 0.803,
+      "pam_kgha": 232.0,
+      "chuva_estacao": 767
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.724,
+      "plantio": "2021-02-16",
+      "pam_rel": 1.0,
+      "pam_kgha": 289.0,
+      "chuva_estacao": 483
+     },
+     {
+      "ano": 2022,
+      "y_mod": 0.668,
+      "plantio": "2022-03-06",
+      "pam_rel": 1.267,
+      "pam_kgha": 330.0,
+      "chuva_estacao": 415
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.483,
+      "plantio": "2023-01-16",
+      "pam_rel": 0.609,
+      "pam_kgha": 176.0,
+      "chuva_estacao": 586
+     },
+     {
+      "ano": 2024,
+      "y_mod": 1.0,
+      "plantio": "2024-02-15",
+      "pam_rel": 1.259,
+      "pam_kgha": 328.0,
+      "chuva_estacao": 488
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.41,
+      "plantio": "2025-02-28",
+      "pam_rel": 0.792,
+      "pam_kgha": 229.0,
+      "chuva_estacao": 427
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 39,
+     "rho": 0.185,
+     "p": 0.1345,
+     "rho_chuva": 0.185,
+     "acerto8": 2,
+     "p_acerto": 0.5299,
+     "acerto8_chuva": 2,
+     "piores_pam": [
+      1987,
+      1992,
+      1998,
+      2002,
+      2009,
+      2010,
+      2016,
+      2023
+     ],
+     "piores_modelo": [
+      1990,
+      1998,
+      2010,
+      2012,
+      2014,
+      2015,
+      2022,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1998,
+      2010,
+      2012,
+      2014,
+      2015,
+      2022,
+      2025
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 41,
+     "rho": 0.338,
+     "p": 0.014,
+     "rho_chuva": 0.252,
+     "acerto8": 3,
+     "p_acerto": 0.1724,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1987,
+      1992,
+      1993,
+      1998,
+      2002,
+      2009,
+      2010,
+      2016
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2004,
+      2010,
+      2012,
+      2013,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013,
+      2014,
+      2022
+     ]
+    },
+    "loglin": {
+     "n": 41,
+     "rho": 0.377,
+     "p": 0.0057,
+     "rho_chuva": 0.316,
+     "acerto8": 4,
+     "p_acerto": 0.0333,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1992,
+      1993,
+      1998,
+      2009,
+      2010,
+      2012,
+      2016
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2004,
+      2010,
+      2012,
+      2013,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013,
+      2014,
+      2022
+     ]
+    },
+    "bruto": {
+     "n": 41,
+     "rho": 0.356,
+     "p": 0.0095,
+     "rho_chuva": 0.289,
+     "acerto8": 4,
+     "p_acerto": 0.0333,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1992,
+      1993,
+      1998,
+      2009,
+      2010,
+      2012,
+      2016
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2004,
+      2010,
+      2012,
+      2013,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013,
+      2014,
+      2022
+     ]
+    }
+   }
+  }
+ },
+ "taua": {
+  "nome": "Tauá (CE)",
+  "milho": {
+   "n_pam": 41,
+   "pct_repetido": 4.0,
+   "sem_plantio_chuva": 2,
+   "chuva": {
+    "principal": {
+     "n": 41,
+     "rho": 0.672,
+     "p": 0.0002,
+     "rho_chuva": 0.566,
+     "acerto8": 5,
+     "p_acerto": 0.0034,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1990,
+      1992,
+      1993,
+      1997,
+      1998,
+      2010,
+      2012
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2005,
+      2010,
+      2012,
+      2014,
+      2015
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2014,
+      2015,
+      2017
+     ]
+    },
+    "loglin": {
+     "n": 41,
+     "rho": 0.723,
+     "p": 0.0002,
+     "rho_chuva": 0.696,
+     "acerto8": 4,
+     "p_acerto": 0.0333,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1992,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013,
+      2016
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2005,
+      2010,
+      2012,
+      2014,
+      2015
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2014,
+      2015,
+      2017
+     ]
+    },
+    "bruto": {
+     "n": 41,
+     "rho": 0.631,
+     "p": 0.0002,
+     "rho_chuva": 0.641,
+     "acerto8": 5,
+     "p_acerto": 0.0034,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1990,
+      1992,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2005,
+      2010,
+      2012,
+      2014,
+      2015
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2014,
+      2015,
+      2017
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 1.0,
+      "plantio": "1985-01-18",
+      "pam_rel": 2.0,
+      "pam_kgha": 560.0,
+      "chuva_estacao": 1119
+     },
+     {
+      "ano": 1986,
+      "y_mod": 1.0,
+      "plantio": "1986-01-31",
+      "pam_rel": 2.5,
+      "pam_kgha": 700.0,
+      "chuva_estacao": 751
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.14,
+      "plantio": "1987-03-09",
+      "pam_rel": 0.119,
+      "pam_kgha": 50.0,
+      "chuva_estacao": 476
+     },
+     {
+      "ano": 1988,
+      "y_mod": 1.0,
+      "plantio": "1988-02-14",
+      "pam_rel": 1.667,
+      "pam_kgha": 700.0,
+      "chuva_estacao": 548
+     },
+     {
+      "ano": 1989,
+      "y_mod": 0.949,
+      "plantio": "1989-03-17",
+      "pam_rel": 1.0,
+      "pam_kgha": 280.0,
+      "chuva_estacao": 800
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.482,
+      "pam_kgha": 135.0,
+      "chuva_estacao": 380
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.992,
+      "plantio": "1991-02-17",
+      "pam_rel": 1.5,
+      "pam_kgha": 420.0,
+      "chuva_estacao": 544
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.944,
+      "plantio": "1992-01-25",
+      "pam_rel": 0.095,
+      "pam_kgha": 40.0,
+      "chuva_estacao": 509
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.071,
+      "pam_kgha": 20.0,
+      "chuva_estacao": 301
+     },
+     {
+      "ano": 1994,
+      "y_mod": 1.0,
+      "plantio": "1994-01-07",
+      "pam_rel": 3.704,
+      "pam_kgha": 700.0,
+      "chuva_estacao": 648
+     },
+     {
+      "ano": 1995,
+      "y_mod": 0.937,
+      "plantio": "1995-03-15",
+      "pam_rel": 1.905,
+      "pam_kgha": 800.0,
+      "chuva_estacao": 658
+     },
+     {
+      "ano": 1996,
+      "y_mod": 0.877,
+      "plantio": "1996-01-06",
+      "pam_rel": 1.379,
+      "pam_kgha": 800.0,
+      "chuva_estacao": 713
+     },
+     {
+      "ano": 1997,
+      "y_mod": 0.5,
+      "plantio": "1997-03-23",
+      "pam_rel": 0.326,
+      "pam_kgha": 189.0,
+      "chuva_estacao": 674
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.0,
+      "plantio": "1998-03-11",
+      "pam_rel": 0.068,
+      "pam_kgha": 44.0,
+      "chuva_estacao": 315
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.956,
+      "plantio": "1999-02-22",
+      "pam_rel": 0.892,
+      "pam_kgha": 580.0,
+      "chuva_estacao": 529
+     },
+     {
+      "ano": 2000,
+      "y_mod": 0.98,
+      "plantio": "2000-02-10",
+      "pam_rel": 1.121,
+      "pam_kgha": 650.0,
+      "chuva_estacao": 590
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.743,
+      "plantio": "2001-02-13",
+      "pam_rel": 0.868,
+      "pam_kgha": 488.0,
+      "chuva_estacao": 412
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.617,
+      "plantio": "2002-03-04",
+      "pam_rel": 1.262,
+      "pam_kgha": 732.0,
+      "chuva_estacao": 622
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.906,
+      "plantio": "2003-01-19",
+      "pam_rel": 1.774,
+      "pam_kgha": 1029.0,
+      "chuva_estacao": 624
+     },
+     {
+      "ano": 2004,
+      "y_mod": 0.86,
+      "plantio": "2004-01-11",
+      "pam_rel": 0.732,
+      "pam_kgha": 476.0,
+      "chuva_estacao": 864
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.045,
+      "plantio": "2005-05-02",
+      "pam_rel": 0.934,
+      "pam_kgha": 562.0,
+      "chuva_estacao": 563
+     },
+     {
+      "ano": 2006,
+      "y_mod": 1.0,
+      "plantio": "2006-02-05",
+      "pam_rel": 1.233,
+      "pam_kgha": 742.0,
+      "chuva_estacao": 1000
+     },
+     {
+      "ano": 2007,
+      "y_mod": 1.0,
+      "plantio": "2007-02-07",
+      "pam_rel": 0.671,
+      "pam_kgha": 404.0,
+      "chuva_estacao": 860
+     },
+     {
+      "ano": 2008,
+      "y_mod": 1.0,
+      "plantio": "2008-01-15",
+      "pam_rel": 2.658,
+      "pam_kgha": 1494.0,
+      "chuva_estacao": 833
+     },
+     {
+      "ano": 2009,
+      "y_mod": 0.854,
+      "plantio": "2009-01-21",
+      "pam_rel": 1.071,
+      "pam_kgha": 602.0,
+      "chuva_estacao": 727
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.0,
+      "plantio": "2010-01-03",
+      "pam_rel": 0.111,
+      "pam_kgha": 45.0,
+      "chuva_estacao": 429
+     },
+     {
+      "ano": 2011,
+      "y_mod": 0.982,
+      "plantio": "2011-01-04",
+      "pam_rel": 4.929,
+      "pam_kgha": 1114.0,
+      "chuva_estacao": 843
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.071,
+      "plantio": "2012-02-16",
+      "pam_rel": 0.281,
+      "pam_kgha": 52.0,
+      "chuva_estacao": 304
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.501,
+      "plantio": "2013-03-19",
+      "pam_rel": 0.649,
+      "pam_kgha": 120.0,
+      "chuva_estacao": 313
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.123,
+      "plantio": "2014-03-31",
+      "pam_rel": 1.222,
+      "pam_kgha": 226.0,
+      "chuva_estacao": 376
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.0,
+      "plantio": "2015-03-21",
+      "pam_rel": 0.819,
+      "pam_kgha": 185.0,
+      "chuva_estacao": 306
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.19,
+      "plantio": "2016-01-08",
+      "pam_rel": 0.796,
+      "pam_kgha": 180.0,
+      "chuva_estacao": 472
+     },
+     {
+      "ano": 2017,
+      "y_mod": 0.513,
+      "plantio": "2017-02-10",
+      "pam_rel": 1.0,
+      "pam_kgha": 248.0,
+      "chuva_estacao": 376
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.942,
+      "plantio": "2018-02-11",
+      "pam_rel": 1.0,
+      "pam_kgha": 418.0,
+      "chuva_estacao": 549
+     },
+     {
+      "ano": 2019,
+      "y_mod": 0.922,
+      "plantio": "2019-01-18",
+      "pam_rel": 1.002,
+      "pam_kgha": 462.0,
+      "chuva_estacao": 525
+     },
+     {
+      "ano": 2020,
+      "y_mod": 1.0,
+      "plantio": "2020-01-28",
+      "pam_rel": 2.656,
+      "pam_kgha": 1227.0,
+      "chuva_estacao": 696
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.365,
+      "plantio": "2021-03-22",
+      "pam_rel": 1.074,
+      "pam_kgha": 508.0,
+      "chuva_estacao": 593
+     },
+     {
+      "ano": 2022,
+      "y_mod": 1.0,
+      "plantio": "2022-01-03",
+      "pam_rel": 1.223,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 679
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.952,
+      "plantio": "2023-01-15",
+      "pam_rel": 0.907,
+      "pam_kgha": 461.0,
+      "chuva_estacao": 635
+     },
+     {
+      "ano": 2024,
+      "y_mod": 0.797,
+      "plantio": "2024-02-15",
+      "pam_rel": 1.841,
+      "pam_kgha": 1020.0,
+      "chuva_estacao": 448
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.455,
+      "plantio": "2025-02-24",
+      "pam_rel": 0.931,
+      "pam_kgha": 473.0,
+      "chuva_estacao": 494
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 39,
+     "rho": 0.415,
+     "p": 0.0032,
+     "rho_chuva": 0.415,
+     "acerto8": 4,
+     "p_acerto": 0.0401,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1992,
+      1997,
+      1998,
+      2007,
+      2010,
+      2012,
+      2013
+     ],
+     "piores_modelo": [
+      1998,
+      2005,
+      2010,
+      2012,
+      2013,
+      2014,
+      2015,
+      2021
+     ],
+     "piores_chuva": [
+      1998,
+      2005,
+      2010,
+      2012,
+      2013,
+      2014,
+      2015,
+      2021
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 41,
+     "rho": 0.658,
+     "p": 0.0002,
+     "rho_chuva": 0.566,
+     "acerto8": 4,
+     "p_acerto": 0.0333,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1990,
+      1992,
+      1993,
+      1997,
+      1998,
+      2010,
+      2012
+     ],
+     "piores_modelo": [
+      1992,
+      1993,
+      1998,
+      2012,
+      2013,
+      2015,
+      2016,
+      2017
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2014,
+      2015,
+      2017
+     ]
+    },
+    "loglin": {
+     "n": 41,
+     "rho": 0.723,
+     "p": 0.0002,
+     "rho_chuva": 0.696,
+     "acerto8": 6,
+     "p_acerto": 0.0002,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1992,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013,
+      2016
+     ],
+     "piores_modelo": [
+      1992,
+      1993,
+      1998,
+      2012,
+      2013,
+      2015,
+      2016,
+      2017
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2014,
+      2015,
+      2017
+     ]
+    },
+    "bruto": {
+     "n": 41,
+     "rho": 0.639,
+     "p": 0.0002,
+     "rho_chuva": 0.641,
+     "acerto8": 5,
+     "p_acerto": 0.0034,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1990,
+      1992,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013
+     ],
+     "piores_modelo": [
+      1992,
+      1993,
+      1998,
+      2012,
+      2013,
+      2015,
+      2016,
+      2017
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2014,
+      2015,
+      2017
+     ]
+    }
+   }
+  },
+  "feijao": {
+   "n_pam": 41,
+   "pct_repetido": 0.0,
+   "sem_plantio_chuva": 2,
+   "chuva": {
+    "principal": {
+     "n": 41,
+     "rho": 0.403,
+     "p": 0.0042,
+     "rho_chuva": 0.491,
+     "acerto8": 4,
+     "p_acerto": 0.0333,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1992,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013,
+      2023
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2005,
+      2010,
+      2012,
+      2015,
+      2016
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2014,
+      2015,
+      2017
+     ]
+    },
+    "loglin": {
+     "n": 41,
+     "rho": 0.515,
+     "p": 0.0005,
+     "rho_chuva": 0.616,
+     "acerto8": 6,
+     "p_acerto": 0.0002,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1992,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013,
+      2015,
+      2016
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2005,
+      2010,
+      2012,
+      2015,
+      2016
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2014,
+      2015,
+      2017
+     ]
+    },
+    "bruto": {
+     "n": 41,
+     "rho": 0.51,
+     "p": 0.0002,
+     "rho_chuva": 0.616,
+     "acerto8": 6,
+     "p_acerto": 0.0002,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1992,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013,
+      2015,
+      2016
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2005,
+      2010,
+      2012,
+      2015,
+      2016
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2014,
+      2015,
+      2017
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 1.0,
+      "plantio": "1985-01-18",
+      "pam_rel": 1.232,
+      "pam_kgha": 308.0,
+      "chuva_estacao": 1119
+     },
+     {
+      "ano": 1986,
+      "y_mod": 1.0,
+      "plantio": "1986-01-31",
+      "pam_rel": 1.337,
+      "pam_kgha": 250.0,
+      "chuva_estacao": 751
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.442,
+      "plantio": "1987-03-09",
+      "pam_rel": 0.543,
+      "pam_kgha": 120.0,
+      "chuva_estacao": 476
+     },
+     {
+      "ano": 1988,
+      "y_mod": 1.0,
+      "plantio": "1988-02-14",
+      "pam_rel": 1.81,
+      "pam_kgha": 400.0,
+      "chuva_estacao": 548
+     },
+     {
+      "ano": 1989,
+      "y_mod": 1.0,
+      "plantio": "1989-03-17",
+      "pam_rel": 0.642,
+      "pam_kgha": 120.0,
+      "chuva_estacao": 800
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.0,
+      "pam_kgha": 187.0,
+      "chuva_estacao": 380
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.996,
+      "plantio": "1991-02-17",
+      "pam_rel": 1.182,
+      "pam_kgha": 221.0,
+      "chuva_estacao": 544
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.892,
+      "plantio": "1992-01-25",
+      "pam_rel": 0.136,
+      "pam_kgha": 30.0,
+      "chuva_estacao": 509
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.125,
+      "pam_kgha": 25.0,
+      "chuva_estacao": 301
+     },
+     {
+      "ano": 1994,
+      "y_mod": 0.794,
+      "plantio": "1994-01-07",
+      "pam_rel": 1.9,
+      "pam_kgha": 380.0,
+      "chuva_estacao": 648
+     },
+     {
+      "ano": 1995,
+      "y_mod": 1.0,
+      "plantio": "1995-03-15",
+      "pam_rel": 1.041,
+      "pam_kgha": 230.0,
+      "chuva_estacao": 658
+     },
+     {
+      "ano": 1996,
+      "y_mod": 0.612,
+      "plantio": "1996-01-06",
+      "pam_rel": 1.638,
+      "pam_kgha": 344.0,
+      "chuva_estacao": 713
+     },
+     {
+      "ano": 1997,
+      "y_mod": 0.978,
+      "plantio": "1997-03-23",
+      "pam_rel": 0.952,
+      "pam_kgha": 200.0,
+      "chuva_estacao": 674
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.105,
+      "plantio": "1998-03-11",
+      "pam_rel": 0.357,
+      "pam_kgha": 75.0,
+      "chuva_estacao": 315
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.82,
+      "plantio": "1999-02-22",
+      "pam_rel": 1.19,
+      "pam_kgha": 250.0,
+      "chuva_estacao": 529
+     },
+     {
+      "ano": 2000,
+      "y_mod": 1.0,
+      "plantio": "2000-02-10",
+      "pam_rel": 1.05,
+      "pam_kgha": 210.0,
+      "chuva_estacao": 590
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.875,
+      "plantio": "2001-02-13",
+      "pam_rel": 0.839,
+      "pam_kgha": 146.0,
+      "chuva_estacao": 412
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.991,
+      "plantio": "2002-03-04",
+      "pam_rel": 0.914,
+      "pam_kgha": 159.0,
+      "chuva_estacao": 622
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.969,
+      "plantio": "2003-01-19",
+      "pam_rel": 1.443,
+      "pam_kgha": 251.0,
+      "chuva_estacao": 624
+     },
+     {
+      "ano": 2004,
+      "y_mod": 1.0,
+      "plantio": "2004-01-11",
+      "pam_rel": 0.644,
+      "pam_kgha": 112.0,
+      "chuva_estacao": 864
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.27,
+      "plantio": "2005-05-02",
+      "pam_rel": 1.094,
+      "pam_kgha": 174.0,
+      "chuva_estacao": 563
+     },
+     {
+      "ano": 2006,
+      "y_mod": 1.0,
+      "plantio": "2006-02-05",
+      "pam_rel": 3.145,
+      "pam_kgha": 500.0,
+      "chuva_estacao": 1000
+     },
+     {
+      "ano": 2007,
+      "y_mod": 0.975,
+      "plantio": "2007-02-07",
+      "pam_rel": 0.862,
+      "pam_kgha": 150.0,
+      "chuva_estacao": 860
+     },
+     {
+      "ano": 2008,
+      "y_mod": 0.772,
+      "plantio": "2008-01-15",
+      "pam_rel": 2.927,
+      "pam_kgha": 439.0,
+      "chuva_estacao": 833
+     },
+     {
+      "ano": 2009,
+      "y_mod": 0.935,
+      "plantio": "2009-01-21",
+      "pam_rel": 0.98,
+      "pam_kgha": 147.0,
+      "chuva_estacao": 727
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.141,
+      "plantio": "2010-01-03",
+      "pam_rel": 0.109,
+      "pam_kgha": 16.0,
+      "chuva_estacao": 429
+     },
+     {
+      "ano": 2011,
+      "y_mod": 1.0,
+      "plantio": "2011-01-04",
+      "pam_rel": 3.706,
+      "pam_kgha": 378.0,
+      "chuva_estacao": 843
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.234,
+      "plantio": "2012-02-16",
+      "pam_rel": 0.253,
+      "pam_kgha": 21.0,
+      "chuva_estacao": 304
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.813,
+      "plantio": "2013-03-19",
+      "pam_rel": 0.566,
+      "pam_kgha": 47.0,
+      "chuva_estacao": 313
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.296,
+      "plantio": "2014-03-31",
+      "pam_rel": 1.229,
+      "pam_kgha": 102.0,
+      "chuva_estacao": 376
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.111,
+      "plantio": "2015-03-21",
+      "pam_rel": 0.814,
+      "pam_kgha": 83.0,
+      "chuva_estacao": 306
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.14,
+      "plantio": "2016-01-08",
+      "pam_rel": 0.784,
+      "pam_kgha": 80.0,
+      "chuva_estacao": 472
+     },
+     {
+      "ano": 2017,
+      "y_mod": 0.832,
+      "plantio": "2017-02-10",
+      "pam_rel": 1.0,
+      "pam_kgha": 128.0,
+      "chuva_estacao": 376
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.619,
+      "plantio": "2018-02-11",
+      "pam_rel": 1.311,
+      "pam_kgha": 236.0,
+      "chuva_estacao": 549
+     },
+     {
+      "ano": 2019,
+      "y_mod": 0.437,
+      "plantio": "2019-01-18",
+      "pam_rel": 1.278,
+      "pam_kgha": 230.0,
+      "chuva_estacao": 525
+     },
+     {
+      "ano": 2020,
+      "y_mod": 1.0,
+      "plantio": "2020-01-28",
+      "pam_rel": 1.344,
+      "pam_kgha": 258.0,
+      "chuva_estacao": 696
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.936,
+      "plantio": "2021-03-22",
+      "pam_rel": 1.099,
+      "pam_kgha": 211.0,
+      "chuva_estacao": 593
+     },
+     {
+      "ano": 2022,
+      "y_mod": 0.699,
+      "plantio": "2022-01-03",
+      "pam_rel": 0.893,
+      "pam_kgha": 180.0,
+      "chuva_estacao": 679
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.623,
+      "plantio": "2023-01-15",
+      "pam_rel": 0.505,
+      "pam_kgha": 97.0,
+      "chuva_estacao": 635
+     },
+     {
+      "ano": 2024,
+      "y_mod": 0.918,
+      "plantio": "2024-02-15",
+      "pam_rel": 1.032,
+      "pam_kgha": 192.0,
+      "chuva_estacao": 448
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.926,
+      "plantio": "2025-02-24",
+      "pam_rel": 0.961,
+      "pam_kgha": 173.0,
+      "chuva_estacao": 494
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 39,
+     "rho": 0.289,
+     "p": 0.0347,
+     "rho_chuva": 0.289,
+     "acerto8": 4,
+     "p_acerto": 0.0401,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1989,
+      1992,
+      1998,
+      2010,
+      2012,
+      2013,
+      2023
+     ],
+     "piores_modelo": [
+      1998,
+      2005,
+      2010,
+      2012,
+      2013,
+      2014,
+      2015,
+      2019
+     ],
+     "piores_chuva": [
+      1998,
+      2005,
+      2010,
+      2012,
+      2013,
+      2014,
+      2015,
+      2019
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 41,
+     "rho": 0.452,
+     "p": 0.0022,
+     "rho_chuva": 0.491,
+     "acerto8": 5,
+     "p_acerto": 0.0034,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1992,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013,
+      2023
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2004,
+      2005,
+      2010,
+      2012,
+      2013
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2014,
+      2015,
+      2017
+     ]
+    },
+    "loglin": {
+     "n": 41,
+     "rho": 0.591,
+     "p": 0.0002,
+     "rho_chuva": 0.616,
+     "acerto8": 5,
+     "p_acerto": 0.0034,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1992,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013,
+      2015,
+      2016
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2004,
+      2005,
+      2010,
+      2012,
+      2013
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2014,
+      2015,
+      2017
+     ]
+    },
+    "bruto": {
+     "n": 41,
+     "rho": 0.593,
+     "p": 0.0002,
+     "rho_chuva": 0.616,
+     "acerto8": 5,
+     "p_acerto": 0.0034,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1992,
+      1993,
+      1998,
+      2010,
+      2012,
+      2013,
+      2015,
+      2016
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      2004,
+      2005,
+      2010,
+      2012,
+      2013
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2012,
+      2013,
+      2014,
+      2015,
+      2017
+     ]
+    }
+   }
+  }
+ },
+ "irece": {
+  "nome": "Irecê (BA)",
+  "milho": {
+   "n_pam": 38,
+   "pct_repetido": 4.0,
+   "sem_plantio_chuva": 16,
+   "chuva": {
+    "principal": {
+     "n": 38,
+     "rho": 0.297,
+     "p": 0.0335,
+     "rho_chuva": 0.383,
+     "acerto8": 2,
+     "p_acerto": 0.5473,
+     "acerto8_chuva": 2,
+     "piores_pam": [
+      1988,
+      1989,
+      1995,
+      1999,
+      2006,
+      2008,
+      2009,
+      2014
+     ],
+     "piores_modelo": [
+      1988,
+      1989,
+      1990,
+      1991,
+      1998,
+      2001,
+      2002,
+      2003
+     ],
+     "piores_chuva": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2008,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 38,
+     "rho": 0.353,
+     "p": 0.014,
+     "rho_chuva": 0.438,
+     "acerto8": 4,
+     "p_acerto": 0.0441,
+     "acerto8_chuva": 2,
+     "piores_pam": [
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1995,
+      2014,
+      2016
+     ],
+     "piores_modelo": [
+      1988,
+      1989,
+      1990,
+      1991,
+      1998,
+      2001,
+      2002,
+      2003
+     ],
+     "piores_chuva": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2008,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 38,
+     "rho": 0.238,
+     "p": 0.0692,
+     "rho_chuva": 0.327,
+     "acerto8": 4,
+     "p_acerto": 0.0441,
+     "acerto8_chuva": 2,
+     "piores_pam": [
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1995,
+      1999,
+      2014
+     ],
+     "piores_modelo": [
+      1988,
+      1989,
+      1990,
+      1991,
+      1998,
+      2001,
+      2002,
+      2003
+     ],
+     "piores_chuva": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2008,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 0.731,
+      "plantio": "1985-01-02",
+      "pam_rel": 8.329,
+      "pam_kgha": 1241.0,
+      "chuva_estacao": 629
+     },
+     {
+      "ano": 1986,
+      "y_mod": 0.26,
+      "plantio": "1985-11-28",
+      "pam_rel": 4.0,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 540
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.172,
+      "plantio": "1987-03-09",
+      "pam_rel": 1.0,
+      "pam_kgha": 149.0,
+      "chuva_estacao": 361
+     },
+     {
+      "ano": 1988,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.349,
+      "pam_kgha": 52.0,
+      "chuva_estacao": 541
+     },
+     {
+      "ano": 1989,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.467,
+      "pam_kgha": 70.0,
+      "chuva_estacao": 393
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.0,
+      "plantio": "1989-12-01",
+      "pam_rel": 1.0,
+      "pam_kgha": 150.0,
+      "chuva_estacao": 698
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.0,
+      "plantio": "1990-12-29",
+      "pam_rel": 0.805,
+      "pam_kgha": 120.0,
+      "chuva_estacao": 438
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.927,
+      "plantio": "1991-11-12",
+      "pam_rel": 6.667,
+      "pam_kgha": 900.0,
+      "chuva_estacao": 839
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.402,
+      "plantio": "1992-11-19",
+      "pam_rel": 1.333,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 396
+     },
+     {
+      "ano": 1994,
+      "y_mod": 0.114,
+      "plantio": "1994-02-22",
+      "pam_rel": 1.05,
+      "pam_kgha": 315.0,
+      "chuva_estacao": 379
+     },
+     {
+      "ano": 1995,
+      "y_mod": 0.228,
+      "plantio": "1995-01-24",
+      "pam_rel": 0.1,
+      "pam_kgha": 30.0,
+      "chuva_estacao": 345
+     },
+     {
+      "ano": 1996,
+      "y_mod": 0.13,
+      "plantio": "1995-11-18",
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 473
+     },
+     {
+      "ano": 1997,
+      "y_mod": 0.639,
+      "plantio": "1996-11-18",
+      "pam_rel": 4.228,
+      "pam_kgha": 1300.0,
+      "chuva_estacao": 865
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.736,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 267
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.383,
+      "plantio": "1998-11-05",
+      "pam_rel": 0.556,
+      "pam_kgha": 250.0,
+      "chuva_estacao": 578
+     },
+     {
+      "ano": 2000,
+      "y_mod": 0.688,
+      "plantio": "1999-11-15",
+      "pam_rel": 2.182,
+      "pam_kgha": 1200.0,
+      "chuva_estacao": 628
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.833,
+      "pam_kgha": 500.0,
+      "chuva_estacao": 680
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.2,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 518
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.667,
+      "pam_kgha": 400.0,
+      "chuva_estacao": 477
+     },
+     {
+      "ano": 2004,
+      "y_mod": 0.896,
+      "plantio": "2003-12-29",
+      "pam_rel": 1.667,
+      "pam_kgha": 1000.0,
+      "chuva_estacao": 712
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 2.0,
+      "pam_kgha": 1000.0,
+      "chuva_estacao": 570
+     },
+     {
+      "ano": 2006,
+      "y_mod": 0.914,
+      "plantio": "2006-02-07",
+      "pam_rel": 0.5,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 529
+     },
+     {
+      "ano": 2007,
+      "y_mod": 0.0,
+      "plantio": "2007-02-03",
+      "pam_rel": 1.0,
+      "pam_kgha": 750.0,
+      "chuva_estacao": 489
+     },
+     {
+      "ano": 2008,
+      "y_mod": 0.0,
+      "plantio": "2007-11-25",
+      "pam_rel": 0.559,
+      "pam_kgha": 433.0,
+      "chuva_estacao": 378
+     },
+     {
+      "ano": 2009,
+      "y_mod": 0.222,
+      "plantio": "2008-12-03",
+      "pam_rel": 0.4,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 449
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.848,
+      "pam_kgha": 800.0,
+      "chuva_estacao": 383
+     },
+     {
+      "ano": 2011,
+      "y_mod": 0.0,
+      "plantio": "2011-02-25",
+      "pam_rel": 1.6,
+      "pam_kgha": 800.0,
+      "chuva_estacao": 495
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 280
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 307
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.0,
+      "plantio": "2013-11-24",
+      "pam_rel": 0.312,
+      "pam_kgha": 150.0,
+      "chuva_estacao": 412
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.0,
+      "plantio": "2015-01-27",
+      "pam_rel": 1.042,
+      "pam_kgha": 500.0,
+      "chuva_estacao": 380
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.0,
+      "plantio": "2016-01-04",
+      "pam_rel": 0.625,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 390
+     },
+     {
+      "ano": 2017,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.633,
+      "pam_kgha": 310.0,
+      "chuva_estacao": 207
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.96,
+      "pam_kgha": 480.0,
+      "chuva_estacao": 478
+     },
+     {
+      "ano": 2019,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.0,
+      "pam_kgha": 571.0,
+      "chuva_estacao": 399
+     },
+     {
+      "ano": 2020,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.238,
+      "pam_kgha": 1319.0,
+      "chuva_estacao": 416
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.351,
+      "pam_kgha": 1439.0,
+      "chuva_estacao": 338
+     },
+     {
+      "ano": 2022,
+      "y_mod": 0.761,
+      "plantio": "2021-11-03",
+      "pam_rel": 0.993,
+      "pam_kgha": 1065.0,
+      "chuva_estacao": 705
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.498,
+      "plantio": "2022-11-03",
+      "pam_rel": 1.006,
+      "pam_kgha": 1086.0,
+      "chuva_estacao": 550
+     },
+     {
+      "ano": 2024,
+      "y_mod": 0.155,
+      "plantio": "2024-02-09",
+      "pam_rel": 0.997,
+      "pam_kgha": 1080.0,
+      "chuva_estacao": 432
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.8,
+      "pam_kgha": 864.0,
+      "chuva_estacao": 207
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 24,
+     "rho": 0.333,
+     "p": 0.0595,
+     "rho_chuva": 0.333,
+     "acerto8": 3,
+     "p_acerto": 0.5532,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1991,
+      1995,
+      1999,
+      2006,
+      2008,
+      2009,
+      2014,
+      2016
+     ],
+     "piores_modelo": [
+      1987,
+      1991,
+      1994,
+      1995,
+      2008,
+      2011,
+      2015,
+      2024
+     ],
+     "piores_chuva": [
+      1987,
+      1991,
+      1994,
+      1995,
+      2008,
+      2011,
+      2015,
+      2024
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 38,
+     "rho": 0.515,
+     "p": 0.0007,
+     "rho_chuva": 0.383,
+     "acerto8": 4,
+     "p_acerto": 0.0441,
+     "acerto8_chuva": 2,
+     "piores_pam": [
+      1988,
+      1989,
+      1995,
+      1999,
+      2006,
+      2008,
+      2009,
+      2014
+     ],
+     "piores_modelo": [
+      1987,
+      1988,
+      1989,
+      2001,
+      2008,
+      2010,
+      2014,
+      2017
+     ],
+     "piores_chuva": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2008,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 38,
+     "rho": 0.567,
+     "p": 0.0002,
+     "rho_chuva": 0.438,
+     "acerto8": 4,
+     "p_acerto": 0.0441,
+     "acerto8_chuva": 2,
+     "piores_pam": [
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1995,
+      2014,
+      2016
+     ],
+     "piores_modelo": [
+      1987,
+      1988,
+      1989,
+      2001,
+      2008,
+      2010,
+      2014,
+      2017
+     ],
+     "piores_chuva": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2008,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 38,
+     "rho": 0.504,
+     "p": 0.0007,
+     "rho_chuva": 0.327,
+     "acerto8": 4,
+     "p_acerto": 0.0441,
+     "acerto8_chuva": 2,
+     "piores_pam": [
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1995,
+      1999,
+      2014
+     ],
+     "piores_modelo": [
+      1987,
+      1988,
+      1989,
+      2001,
+      2008,
+      2010,
+      2014,
+      2017
+     ],
+     "piores_chuva": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2008,
+      2017,
+      2021,
+      2025
+     ]
+    }
+   }
+  },
+  "feijao": {
+   "n_pam": 39,
+   "pct_repetido": 0.0,
+   "sem_plantio_chuva": 16,
+   "chuva": {
+    "principal": {
+     "n": 39,
+     "rho": 0.131,
+     "p": 0.2147,
+     "rho_chuva": 0.564,
+     "acerto8": 1,
+     "p_acerto": 0.8718,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1994,
+      1995,
+      1996,
+      1998,
+      2006,
+      2008,
+      2009
+     ],
+     "piores_modelo": [
+      1988,
+      1989,
+      1998,
+      2001,
+      2002,
+      2003,
+      2005,
+      2010
+     ],
+     "piores_chuva": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2008,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 39,
+     "rho": 0.167,
+     "p": 0.1532,
+     "rho_chuva": 0.547,
+     "acerto8": 1,
+     "p_acerto": 0.8718,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2006,
+      2008,
+      2009,
+      2014
+     ],
+     "piores_modelo": [
+      1988,
+      1989,
+      1998,
+      2001,
+      2002,
+      2003,
+      2005,
+      2010
+     ],
+     "piores_chuva": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2008,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 39,
+     "rho": 0.13,
+     "p": 0.2177,
+     "rho_chuva": 0.491,
+     "acerto8": 1,
+     "p_acerto": 0.8718,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2006,
+      2008,
+      2009,
+      2014
+     ],
+     "piores_modelo": [
+      1988,
+      1989,
+      1998,
+      2001,
+      2002,
+      2003,
+      2005,
+      2010
+     ],
+     "piores_chuva": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2008,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 0.752,
+      "plantio": "1985-01-02",
+      "pam_rel": 2.5,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 629
+     },
+     {
+      "ano": 1986,
+      "y_mod": 0.411,
+      "plantio": "1985-11-28",
+      "pam_rel": 1.75,
+      "pam_kgha": 420.0,
+      "chuva_estacao": 540
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.376,
+      "plantio": "1987-03-09",
+      "pam_rel": 0.083,
+      "pam_kgha": 20.0,
+      "chuva_estacao": 361
+     },
+     {
+      "ano": 1988,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.889,
+      "pam_kgha": 240.0,
+      "chuva_estacao": 541
+     },
+     {
+      "ano": 1989,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.643,
+      "pam_kgha": 270.0,
+      "chuva_estacao": 393
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.134,
+      "plantio": "1989-12-01",
+      "pam_rel": 1.848,
+      "pam_kgha": 499.0,
+      "chuva_estacao": 698
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.172,
+      "plantio": "1990-12-29",
+      "pam_rel": 0.912,
+      "pam_kgha": 219.0,
+      "chuva_estacao": 438
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.555,
+      "plantio": "1991-11-12",
+      "pam_rel": 4.304,
+      "pam_kgha": 1033.0,
+      "chuva_estacao": 839
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.698,
+      "plantio": "1992-11-19",
+      "pam_rel": 1.996,
+      "pam_kgha": 539.0,
+      "chuva_estacao": 396
+     },
+     {
+      "ano": 1994,
+      "y_mod": 0.267,
+      "plantio": "1994-02-22",
+      "pam_rel": 0.475,
+      "pam_kgha": 104.0,
+      "chuva_estacao": 379
+     },
+     {
+      "ano": 1995,
+      "y_mod": 0.275,
+      "plantio": "1995-01-24",
+      "pam_rel": 0.137,
+      "pam_kgha": 30.0,
+      "chuva_estacao": 345
+     },
+     {
+      "ano": 1996,
+      "y_mod": 0.48,
+      "plantio": "1995-11-18",
+      "pam_rel": 0.361,
+      "pam_kgha": 180.0,
+      "chuva_estacao": 473
+     },
+     {
+      "ano": 1997,
+      "y_mod": 0.438,
+      "plantio": "1996-11-18",
+      "pam_rel": 2.98,
+      "pam_kgha": 900.0,
+      "chuva_estacao": 865
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.202,
+      "pam_kgha": 61.0,
+      "chuva_estacao": 267
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.612,
+      "plantio": "1998-11-05",
+      "pam_rel": 1.652,
+      "pam_kgha": 499.0,
+      "chuva_estacao": 578
+     },
+     {
+      "ano": 2000,
+      "y_mod": 0.591,
+      "plantio": "1999-11-15",
+      "pam_rel": 2.123,
+      "pam_kgha": 641.0,
+      "chuva_estacao": 628
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.99,
+      "pam_kgha": 302.0,
+      "chuva_estacao": 680
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.01,
+      "pam_kgha": 305.0,
+      "chuva_estacao": 518
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.859,
+      "pam_kgha": 262.0,
+      "chuva_estacao": 477
+     },
+     {
+      "ano": 2004,
+      "y_mod": 1.0,
+      "plantio": "2003-12-29",
+      "pam_rel": 0.675,
+      "pam_kgha": 204.0,
+      "chuva_estacao": 712
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.179,
+      "pam_kgha": 309.0,
+      "chuva_estacao": 570
+     },
+     {
+      "ano": 2006,
+      "y_mod": 0.987,
+      "plantio": "2006-02-07",
+      "pam_rel": 0.519,
+      "pam_kgha": 136.0,
+      "chuva_estacao": 529
+     },
+     {
+      "ano": 2007,
+      "y_mod": 0.122,
+      "plantio": "2007-02-03",
+      "pam_rel": 1.531,
+      "pam_kgha": 401.0,
+      "chuva_estacao": 489
+     },
+     {
+      "ano": 2008,
+      "y_mod": 0.081,
+      "plantio": "2007-11-25",
+      "pam_rel": 0.459,
+      "pam_kgha": 108.0,
+      "chuva_estacao": 378
+     },
+     {
+      "ano": 2009,
+      "y_mod": 0.607,
+      "plantio": "2008-12-03",
+      "pam_rel": 0.449,
+      "pam_kgha": 120.0,
+      "chuva_estacao": 449
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 3.136,
+      "pam_kgha": 483.0,
+      "chuva_estacao": 383
+     },
+     {
+      "ano": 2011,
+      "y_mod": 0.172,
+      "plantio": "2011-02-25",
+      "pam_rel": 1.214,
+      "pam_kgha": 267.0,
+      "chuva_estacao": 495
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 280
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 307
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.16,
+      "plantio": "2013-11-24",
+      "pam_rel": 0.577,
+      "pam_kgha": 154.0,
+      "chuva_estacao": 412
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.14,
+      "plantio": "2015-01-27",
+      "pam_rel": 0.824,
+      "pam_kgha": 220.0,
+      "chuva_estacao": 380
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.078,
+      "plantio": "2016-01-04",
+      "pam_rel": 0.749,
+      "pam_kgha": 200.0,
+      "chuva_estacao": 390
+     },
+     {
+      "ano": 2017,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.98,
+      "pam_kgha": 267.0,
+      "chuva_estacao": 207
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.079,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 478
+     },
+     {
+      "ano": 2019,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.927,
+      "pam_kgha": 278.0,
+      "chuva_estacao": 399
+     },
+     {
+      "ano": 2020,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.0,
+      "pam_kgha": 588.0,
+      "chuva_estacao": 416
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.048,
+      "pam_kgha": 616.0,
+      "chuva_estacao": 338
+     },
+     {
+      "ano": 2022,
+      "y_mod": 1.0,
+      "plantio": "2021-11-03",
+      "pam_rel": 1.081,
+      "pam_kgha": 651.0,
+      "chuva_estacao": 705
+     },
+     {
+      "ano": 2023,
+      "y_mod": 1.0,
+      "plantio": "2022-11-03",
+      "pam_rel": 1.162,
+      "pam_kgha": 716.0,
+      "chuva_estacao": 550
+     },
+     {
+      "ano": 2024,
+      "y_mod": 0.254,
+      "plantio": "2024-02-09",
+      "pam_rel": 1.053,
+      "pam_kgha": 667.0,
+      "chuva_estacao": 432
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.75,
+      "pam_kgha": 488.0,
+      "chuva_estacao": 207
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 25,
+     "rho": 0.442,
+     "p": 0.0175,
+     "rho_chuva": 0.442,
+     "acerto8": 4,
+     "p_acerto": 0.1929,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1994,
+      1995,
+      1996,
+      2006,
+      2008,
+      2009,
+      2014
+     ],
+     "piores_modelo": [
+      1987,
+      1991,
+      1994,
+      1995,
+      2008,
+      2011,
+      2015,
+      2024
+     ],
+     "piores_chuva": [
+      1987,
+      1991,
+      1994,
+      1995,
+      2008,
+      2011,
+      2015,
+      2024
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 39,
+     "rho": 0.383,
+     "p": 0.0107,
+     "rho_chuva": 0.564,
+     "acerto8": 3,
+     "p_acerto": 0.1948,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1994,
+      1995,
+      1996,
+      1998,
+      2006,
+      2008,
+      2009
+     ],
+     "piores_modelo": [
+      1987,
+      1990,
+      2001,
+      2006,
+      2008,
+      2014,
+      2017,
+      2019
+     ],
+     "piores_chuva": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2008,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 39,
+     "rho": 0.421,
+     "p": 0.0057,
+     "rho_chuva": 0.547,
+     "acerto8": 4,
+     "p_acerto": 0.0401,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2006,
+      2008,
+      2009,
+      2014
+     ],
+     "piores_modelo": [
+      1987,
+      1990,
+      2001,
+      2006,
+      2008,
+      2014,
+      2017,
+      2019
+     ],
+     "piores_chuva": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2008,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 39,
+     "rho": 0.392,
+     "p": 0.0095,
+     "rho_chuva": 0.491,
+     "acerto8": 4,
+     "p_acerto": 0.0401,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2006,
+      2008,
+      2009,
+      2014
+     ],
+     "piores_modelo": [
+      1987,
+      1990,
+      2001,
+      2006,
+      2008,
+      2014,
+      2017,
+      2019
+     ],
+     "piores_chuva": [
+      1987,
+      1994,
+      1995,
+      1998,
+      2008,
+      2017,
+      2021,
+      2025
+     ]
+    }
+   }
+  }
+ },
+ "serratalhada": {
+  "nome": "Serra Talhada (PE)",
+  "milho": {
+   "n_pam": 37,
+   "pct_repetido": 6.0,
+   "sem_plantio_chuva": 9,
+   "chuva": {
+    "principal": {
+     "n": 37,
+     "rho": 0.674,
+     "p": 0.0002,
+     "rho_chuva": 0.542,
+     "acerto8": 5,
+     "p_acerto": 0.0056,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1990,
+      1999,
+      2001,
+      2007,
+      2010,
+      2018,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1999,
+      2001,
+      2005,
+      2010,
+      2016,
+      2021,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1999,
+      2001,
+      2015,
+      2021,
+      2022,
+      2023,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 37,
+     "rho": 0.679,
+     "p": 0.0002,
+     "rho_chuva": 0.627,
+     "acerto8": 5,
+     "p_acerto": 0.0056,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1999,
+      2001,
+      2010,
+      2015,
+      2016,
+      2017,
+      2018,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1999,
+      2001,
+      2005,
+      2010,
+      2016,
+      2021,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1999,
+      2001,
+      2015,
+      2021,
+      2022,
+      2023,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 37,
+     "rho": 0.733,
+     "p": 0.0002,
+     "rho_chuva": 0.674,
+     "acerto8": 5,
+     "p_acerto": 0.0056,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1999,
+      2001,
+      2010,
+      2015,
+      2016,
+      2017,
+      2018,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1999,
+      2001,
+      2005,
+      2010,
+      2016,
+      2021,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1999,
+      2001,
+      2015,
+      2021,
+      2022,
+      2023,
+      2025
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 1.0,
+      "plantio": "1985-01-18",
+      "pam_rel": 1.243,
+      "pam_kgha": 814.0,
+      "chuva_estacao": 1050
+     },
+     {
+      "ano": 1986,
+      "y_mod": 0.897,
+      "plantio": "1986-02-26",
+      "pam_rel": 1.527,
+      "pam_kgha": 1000.0,
+      "chuva_estacao": 709
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.2,
+      "plantio": "1987-03-03",
+      "pam_rel": 0.382,
+      "pam_kgha": 250.0,
+      "chuva_estacao": 447
+     },
+     {
+      "ano": 1988,
+      "y_mod": 0.782,
+      "plantio": "1988-02-25",
+      "pam_rel": 1.0,
+      "pam_kgha": 655.0,
+      "chuva_estacao": 531
+     },
+     {
+      "ano": 1989,
+      "y_mod": 0.853,
+      "plantio": "1989-03-22",
+      "pam_rel": 1.269,
+      "pam_kgha": 720.0,
+      "chuva_estacao": 575
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.352,
+      "pam_kgha": 200.0,
+      "chuva_estacao": 272
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.435,
+      "plantio": "1991-01-25",
+      "pam_rel": 0.423,
+      "pam_kgha": 240.0,
+      "chuva_estacao": 414
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.628,
+      "plantio": "1992-01-24",
+      "pam_rel": 0.698,
+      "pam_kgha": 480.0,
+      "chuva_estacao": 510
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 139
+     },
+     {
+      "ano": 1994,
+      "y_mod": 0.886,
+      "plantio": "1994-02-14",
+      "pam_rel": 1.0,
+      "pam_kgha": 840.0,
+      "chuva_estacao": 619
+     },
+     {
+      "ano": 1995,
+      "y_mod": 0.788,
+      "plantio": "1995-03-22",
+      "pam_rel": 1.25,
+      "pam_kgha": 1050.0,
+      "chuva_estacao": 532
+     },
+     {
+      "ano": 1996,
+      "y_mod": 0.994,
+      "plantio": "1996-02-05",
+      "pam_rel": 1.167,
+      "pam_kgha": 980.0,
+      "chuva_estacao": 535
+     },
+     {
+      "ano": 1997,
+      "y_mod": 0.662,
+      "plantio": "1997-01-22",
+      "pam_rel": 1.19,
+      "pam_kgha": 1000.0,
+      "chuva_estacao": 497
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 174
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.197,
+      "pam_kgha": 120.0,
+      "chuva_estacao": 325
+     },
+     {
+      "ano": 2000,
+      "y_mod": 0.642,
+      "plantio": "2000-02-08",
+      "pam_rel": 1.0,
+      "pam_kgha": 500.0,
+      "chuva_estacao": 468
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.1,
+      "pam_kgha": 50.0,
+      "chuva_estacao": 248
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.283,
+      "plantio": "2002-01-03",
+      "pam_rel": 1.0,
+      "pam_kgha": 500.0,
+      "chuva_estacao": 478
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.541,
+      "plantio": "2003-01-18",
+      "pam_rel": 1.44,
+      "pam_kgha": 720.0,
+      "chuva_estacao": 419
+     },
+     {
+      "ano": 2004,
+      "y_mod": 0.286,
+      "plantio": "2004-01-12",
+      "pam_rel": 0.6,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 670
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.0,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 409
+     },
+     {
+      "ano": 2006,
+      "y_mod": 0.998,
+      "plantio": "2006-02-18",
+      "pam_rel": 1.4,
+      "pam_kgha": 840.0,
+      "chuva_estacao": 566
+     },
+     {
+      "ano": 2007,
+      "y_mod": 0.396,
+      "plantio": "2007-02-15",
+      "pam_rel": 0.35,
+      "pam_kgha": 210.0,
+      "chuva_estacao": 558
+     },
+     {
+      "ano": 2008,
+      "y_mod": 0.955,
+      "plantio": "2008-02-17",
+      "pam_rel": 1.176,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 812
+     },
+     {
+      "ano": 2009,
+      "y_mod": 0.602,
+      "plantio": "2009-01-16",
+      "pam_rel": 1.4,
+      "pam_kgha": 840.0,
+      "chuva_estacao": 894
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.0,
+      "plantio": "2010-01-03",
+      "pam_rel": 0.283,
+      "pam_kgha": 119.0,
+      "chuva_estacao": 405
+     },
+     {
+      "ano": 2011,
+      "y_mod": 0.683,
+      "plantio": "2011-01-10",
+      "pam_rel": 1.312,
+      "pam_kgha": 420.0,
+      "chuva_estacao": 668
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 176
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.105,
+      "plantio": "2013-03-20",
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 276
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.791,
+      "plantio": "2014-03-01",
+      "pam_rel": 3.556,
+      "pam_kgha": 320.0,
+      "chuva_estacao": 434
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.107,
+      "plantio": "2015-02-22",
+      "pam_rel": 0.656,
+      "pam_kgha": 59.0,
+      "chuva_estacao": 282
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.008,
+      "plantio": "2016-01-07",
+      "pam_rel": 0.667,
+      "pam_kgha": 60.0,
+      "chuva_estacao": 406
+     },
+     {
+      "ano": 2017,
+      "y_mod": 0.24,
+      "plantio": "2017-02-20",
+      "pam_rel": 0.529,
+      "pam_kgha": 90.0,
+      "chuva_estacao": 393
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.552,
+      "plantio": "2018-02-09",
+      "pam_rel": 0.28,
+      "pam_kgha": 70.0,
+      "chuva_estacao": 508
+     },
+     {
+      "ano": 2019,
+      "y_mod": 0.07,
+      "plantio": "2019-03-24",
+      "pam_rel": 1.2,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 410
+     },
+     {
+      "ano": 2020,
+      "y_mod": 0.967,
+      "plantio": "2020-01-23",
+      "pam_rel": 1.0,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 603
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.833,
+      "pam_kgha": 250.0,
+      "chuva_estacao": 271
+     },
+     {
+      "ano": 2022,
+      "y_mod": 0.15,
+      "plantio": "2022-03-23",
+      "pam_rel": 1.0,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 262
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.297,
+      "plantio": "2023-03-15",
+      "pam_rel": 1.1,
+      "pam_kgha": 330.0,
+      "chuva_estacao": 329
+     },
+     {
+      "ano": 2024,
+      "y_mod": 0.362,
+      "plantio": "2024-01-03",
+      "pam_rel": 1.0,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 435
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.2,
+      "pam_kgha": 60.0,
+      "chuva_estacao": 193
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 31,
+     "rho": 0.342,
+     "p": 0.037,
+     "rho_chuva": 0.342,
+     "acerto8": 4,
+     "p_acerto": 0.0921,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1991,
+      2004,
+      2007,
+      2010,
+      2015,
+      2017,
+      2018
+     ],
+     "piores_modelo": [
+      1991,
+      2010,
+      2015,
+      2017,
+      2019,
+      2022,
+      2023,
+      2024
+     ],
+     "piores_chuva": [
+      1991,
+      2010,
+      2015,
+      2017,
+      2019,
+      2022,
+      2023,
+      2024
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 37,
+     "rho": 0.679,
+     "p": 0.0002,
+     "rho_chuva": 0.542,
+     "acerto8": 3,
+     "p_acerto": 0.2209,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1990,
+      1999,
+      2001,
+      2007,
+      2010,
+      2018,
+      2025
+     ],
+     "piores_modelo": [
+      1999,
+      2001,
+      2002,
+      2004,
+      2015,
+      2016,
+      2022,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1999,
+      2001,
+      2015,
+      2021,
+      2022,
+      2023,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 37,
+     "rho": 0.686,
+     "p": 0.0002,
+     "rho_chuva": 0.627,
+     "acerto8": 5,
+     "p_acerto": 0.0056,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1999,
+      2001,
+      2010,
+      2015,
+      2016,
+      2017,
+      2018,
+      2025
+     ],
+     "piores_modelo": [
+      1999,
+      2001,
+      2002,
+      2004,
+      2015,
+      2016,
+      2022,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1999,
+      2001,
+      2015,
+      2021,
+      2022,
+      2023,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 37,
+     "rho": 0.708,
+     "p": 0.0002,
+     "rho_chuva": 0.674,
+     "acerto8": 5,
+     "p_acerto": 0.0056,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1999,
+      2001,
+      2010,
+      2015,
+      2016,
+      2017,
+      2018,
+      2025
+     ],
+     "piores_modelo": [
+      1999,
+      2001,
+      2002,
+      2004,
+      2015,
+      2016,
+      2022,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1999,
+      2001,
+      2015,
+      2021,
+      2022,
+      2023,
+      2025
+     ]
+    }
+   }
+  },
+  "feijao": {
+   "n_pam": 39,
+   "pct_repetido": 6.0,
+   "sem_plantio_chuva": 9,
+   "chuva": {
+    "principal": {
+     "n": 39,
+     "rho": 0.482,
+     "p": 0.0015,
+     "rho_chuva": 0.414,
+     "acerto8": 4,
+     "p_acerto": 0.0401,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1987,
+      1993,
+      1999,
+      2001,
+      2004,
+      2010,
+      2018,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      1999,
+      2001,
+      2005,
+      2021,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2001,
+      2015,
+      2021,
+      2022,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 39,
+     "rho": 0.367,
+     "p": 0.0107,
+     "rho_chuva": 0.456,
+     "acerto8": 5,
+     "p_acerto": 0.0043,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1990,
+      1991,
+      1993,
+      1999,
+      2001,
+      2015,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      1999,
+      2001,
+      2005,
+      2021,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2001,
+      2015,
+      2021,
+      2022,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 39,
+     "rho": 0.447,
+     "p": 0.002,
+     "rho_chuva": 0.525,
+     "acerto8": 4,
+     "p_acerto": 0.0401,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1993,
+      1999,
+      2001,
+      2015,
+      2016,
+      2017,
+      2018,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      1999,
+      2001,
+      2005,
+      2021,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2001,
+      2015,
+      2021,
+      2022,
+      2025
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 0.903,
+      "plantio": "1985-01-18",
+      "pam_rel": 2.454,
+      "pam_kgha": 400.0,
+      "chuva_estacao": 1050
+     },
+     {
+      "ano": 1986,
+      "y_mod": 1.0,
+      "plantio": "1986-02-26",
+      "pam_rel": 1.227,
+      "pam_kgha": 200.0,
+      "chuva_estacao": 709
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.573,
+      "plantio": "1987-03-03",
+      "pam_rel": 0.613,
+      "pam_kgha": 100.0,
+      "chuva_estacao": 447
+     },
+     {
+      "ano": 1988,
+      "y_mod": 0.996,
+      "plantio": "1988-02-25",
+      "pam_rel": 1.055,
+      "pam_kgha": 192.0,
+      "chuva_estacao": 531
+     },
+     {
+      "ano": 1989,
+      "y_mod": 1.0,
+      "plantio": "1989-03-22",
+      "pam_rel": 1.0,
+      "pam_kgha": 163.0,
+      "chuva_estacao": 575
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.613,
+      "pam_kgha": 100.0,
+      "chuva_estacao": 272
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.577,
+      "plantio": "1991-01-25",
+      "pam_rel": 0.748,
+      "pam_kgha": 122.0,
+      "chuva_estacao": 414
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.56,
+      "plantio": "1992-01-24",
+      "pam_rel": 1.0,
+      "pam_kgha": 182.0,
+      "chuva_estacao": 510
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.33,
+      "pam_kgha": 60.0,
+      "chuva_estacao": 139
+     },
+     {
+      "ano": 1994,
+      "y_mod": 1.0,
+      "plantio": "1994-02-14",
+      "pam_rel": 1.036,
+      "pam_kgha": 314.0,
+      "chuva_estacao": 619
+     },
+     {
+      "ano": 1995,
+      "y_mod": 0.476,
+      "plantio": "1995-03-22",
+      "pam_rel": 1.182,
+      "pam_kgha": 358.0,
+      "chuva_estacao": 532
+     },
+     {
+      "ano": 1996,
+      "y_mod": 0.739,
+      "plantio": "1996-02-05",
+      "pam_rel": 1.112,
+      "pam_kgha": 337.0,
+      "chuva_estacao": 535
+     },
+     {
+      "ano": 1997,
+      "y_mod": 0.213,
+      "plantio": "1997-01-22",
+      "pam_rel": 1.0,
+      "pam_kgha": 303.0,
+      "chuva_estacao": 497
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.98,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 174
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.267,
+      "pam_kgha": 80.0,
+      "chuva_estacao": 325
+     },
+     {
+      "ano": 2000,
+      "y_mod": 0.463,
+      "plantio": "2000-02-08",
+      "pam_rel": 1.172,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 468
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.235,
+      "pam_kgha": 60.0,
+      "chuva_estacao": 248
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.294,
+      "plantio": "2002-01-03",
+      "pam_rel": 1.0,
+      "pam_kgha": 255.0,
+      "chuva_estacao": 478
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.438,
+      "plantio": "2003-01-18",
+      "pam_rel": 1.506,
+      "pam_kgha": 256.0,
+      "chuva_estacao": 419
+     },
+     {
+      "ano": 2004,
+      "y_mod": 0.582,
+      "plantio": "2004-01-12",
+      "pam_rel": 0.475,
+      "pam_kgha": 121.0,
+      "chuva_estacao": 670
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.667,
+      "pam_kgha": 170.0,
+      "chuva_estacao": 409
+     },
+     {
+      "ano": 2006,
+      "y_mod": 1.0,
+      "plantio": "2006-02-18",
+      "pam_rel": 1.424,
+      "pam_kgha": 363.0,
+      "chuva_estacao": 566
+     },
+     {
+      "ano": 2007,
+      "y_mod": 0.319,
+      "plantio": "2007-02-15",
+      "pam_rel": 0.667,
+      "pam_kgha": 120.0,
+      "chuva_estacao": 558
+     },
+     {
+      "ano": 2008,
+      "y_mod": 1.0,
+      "plantio": "2008-02-17",
+      "pam_rel": 1.726,
+      "pam_kgha": 302.0,
+      "chuva_estacao": 812
+     },
+     {
+      "ano": 2009,
+      "y_mod": 0.749,
+      "plantio": "2009-01-16",
+      "pam_rel": 1.506,
+      "pam_kgha": 271.0,
+      "chuva_estacao": 894
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.201,
+      "plantio": "2010-01-03",
+      "pam_rel": 0.506,
+      "pam_kgha": 91.0,
+      "chuva_estacao": 405
+     },
+     {
+      "ano": 2011,
+      "y_mod": 0.933,
+      "plantio": "2011-01-10",
+      "pam_rel": 1.0,
+      "pam_kgha": 180.0,
+      "chuva_estacao": 668
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 176
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.356,
+      "plantio": "2013-03-20",
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 276
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.894,
+      "plantio": "2014-03-01",
+      "pam_rel": 2.0,
+      "pam_kgha": 180.0,
+      "chuva_estacao": 434
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.355,
+      "plantio": "2015-02-22",
+      "pam_rel": 0.667,
+      "pam_kgha": 60.0,
+      "chuva_estacao": 282
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.198,
+      "plantio": "2016-01-07",
+      "pam_rel": 1.0,
+      "pam_kgha": 90.0,
+      "chuva_estacao": 406
+     },
+     {
+      "ano": 2017,
+      "y_mod": 0.534,
+      "plantio": "2017-02-20",
+      "pam_rel": 0.75,
+      "pam_kgha": 90.0,
+      "chuva_estacao": 393
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.483,
+      "plantio": "2018-02-09",
+      "pam_rel": 0.533,
+      "pam_kgha": 80.0,
+      "chuva_estacao": 508
+     },
+     {
+      "ano": 2019,
+      "y_mod": 0.23,
+      "plantio": "2019-03-24",
+      "pam_rel": 1.0,
+      "pam_kgha": 150.0,
+      "chuva_estacao": 410
+     },
+     {
+      "ano": 2020,
+      "y_mod": 0.81,
+      "plantio": "2020-01-23",
+      "pam_rel": 1.281,
+      "pam_kgha": 205.0,
+      "chuva_estacao": 603
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.25,
+      "pam_kgha": 200.0,
+      "chuva_estacao": 271
+     },
+     {
+      "ano": 2022,
+      "y_mod": 0.168,
+      "plantio": "2022-03-23",
+      "pam_rel": 1.056,
+      "pam_kgha": 179.0,
+      "chuva_estacao": 262
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.519,
+      "plantio": "2023-03-15",
+      "pam_rel": 1.117,
+      "pam_kgha": 200.0,
+      "chuva_estacao": 329
+     },
+     {
+      "ano": 2024,
+      "y_mod": 0.352,
+      "plantio": "2024-01-03",
+      "pam_rel": 0.844,
+      "pam_kgha": 160.0,
+      "chuva_estacao": 435
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.285,
+      "pam_kgha": 51.0,
+      "chuva_estacao": 193
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 31,
+     "rho": 0.288,
+     "p": 0.0632,
+     "rho_chuva": 0.288,
+     "acerto8": 3,
+     "p_acerto": 0.3309,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1987,
+      1991,
+      2004,
+      2007,
+      2010,
+      2015,
+      2017,
+      2018
+     ],
+     "piores_modelo": [
+      2010,
+      2015,
+      2016,
+      2017,
+      2019,
+      2022,
+      2023,
+      2024
+     ],
+     "piores_chuva": [
+      2010,
+      2015,
+      2016,
+      2017,
+      2019,
+      2022,
+      2023,
+      2024
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 39,
+     "rho": 0.519,
+     "p": 0.0005,
+     "rho_chuva": 0.414,
+     "acerto8": 4,
+     "p_acerto": 0.0401,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1987,
+      1993,
+      1999,
+      2001,
+      2004,
+      2010,
+      2018,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      1999,
+      2004,
+      2021,
+      2022,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2001,
+      2015,
+      2021,
+      2022,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 39,
+     "rho": 0.49,
+     "p": 0.0012,
+     "rho_chuva": 0.456,
+     "acerto8": 4,
+     "p_acerto": 0.0401,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1990,
+      1991,
+      1993,
+      1999,
+      2001,
+      2015,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      1999,
+      2004,
+      2021,
+      2022,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2001,
+      2015,
+      2021,
+      2022,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 39,
+     "rho": 0.56,
+     "p": 0.0002,
+     "rho_chuva": 0.525,
+     "acerto8": 3,
+     "p_acerto": 0.1948,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1993,
+      1999,
+      2001,
+      2015,
+      2016,
+      2017,
+      2018,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1993,
+      1998,
+      1999,
+      2004,
+      2021,
+      2022,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1993,
+      1998,
+      2001,
+      2015,
+      2021,
+      2022,
+      2025
+     ]
+    }
+   }
+  }
+ },
+ "patos": {
+  "nome": "Patos (PB)",
+  "milho": {
+   "n_pam": 34,
+   "pct_repetido": 12.0,
+   "sem_plantio_chuva": 3,
+   "chuva": {
+    "principal": {
+     "n": 34,
+     "rho": 0.553,
+     "p": 0.0005,
+     "rho_chuva": 0.404,
+     "acerto8": 6,
+     "p_acerto": 0.0005,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1990,
+      1992,
+      2004,
+      2010,
+      2015,
+      2016,
+      2023,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1997,
+      2010,
+      2015,
+      2016,
+      2021,
+      2023,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      2010,
+      2015,
+      2016,
+      2017,
+      2021,
+      2024,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 34,
+     "rho": 0.422,
+     "p": 0.006,
+     "rho_chuva": 0.248,
+     "acerto8": 4,
+     "p_acerto": 0.0662,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1990,
+      1992,
+      2004,
+      2007,
+      2008,
+      2010,
+      2015,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1997,
+      2010,
+      2015,
+      2016,
+      2021,
+      2023,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      2010,
+      2015,
+      2016,
+      2017,
+      2021,
+      2024,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 34,
+     "rho": 0.481,
+     "p": 0.0015,
+     "rho_chuva": 0.297,
+     "acerto8": 5,
+     "p_acerto": 0.0085,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1990,
+      2004,
+      2007,
+      2008,
+      2010,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1997,
+      2010,
+      2015,
+      2016,
+      2021,
+      2023,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      2010,
+      2015,
+      2016,
+      2017,
+      2021,
+      2024,
+      2025
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 0.949,
+      "plantio": "1985-01-12",
+      "pam_rel": 1.0,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 1442
+     },
+     {
+      "ano": 1986,
+      "y_mod": 1.0,
+      "plantio": "1986-01-28",
+      "pam_rel": 1.111,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 915
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.762,
+      "plantio": "1987-02-06",
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 592
+     },
+     {
+      "ano": 1988,
+      "y_mod": 0.918,
+      "plantio": "1988-01-24",
+      "pam_rel": 0.889,
+      "pam_kgha": 240.0,
+      "chuva_estacao": 782
+     },
+     {
+      "ano": 1989,
+      "y_mod": 0.952,
+      "plantio": "1989-03-18",
+      "pam_rel": 1.0,
+      "pam_kgha": 240.0,
+      "chuva_estacao": 803
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.0,
+      "plantio": "1990-04-03",
+      "pam_rel": 0.079,
+      "pam_kgha": 19.0,
+      "chuva_estacao": 390
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.905,
+      "plantio": "1991-01-21",
+      "pam_rel": 2.083,
+      "pam_kgha": 500.0,
+      "chuva_estacao": 656
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.904,
+      "plantio": "1992-01-24",
+      "pam_rel": 0.327,
+      "pam_kgha": 120.0,
+      "chuva_estacao": 620
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 259
+     },
+     {
+      "ano": 1994,
+      "y_mod": 1.0,
+      "plantio": "1994-02-08",
+      "pam_rel": 1.212,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 715
+     },
+     {
+      "ano": 1995,
+      "y_mod": 0.96,
+      "plantio": "1995-02-10",
+      "pam_rel": 1.206,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 761
+     },
+     {
+      "ano": 1996,
+      "y_mod": 0.991,
+      "plantio": "1996-01-16",
+      "pam_rel": 0.902,
+      "pam_kgha": 494.0,
+      "chuva_estacao": 819
+     },
+     {
+      "ano": 1997,
+      "y_mod": 0.241,
+      "plantio": "1997-01-07",
+      "pam_rel": 0.825,
+      "pam_kgha": 495.0,
+      "chuva_estacao": 680
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 307
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.349,
+      "plantio": "1999-03-04",
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 514
+     },
+     {
+      "ano": 2000,
+      "y_mod": 1.0,
+      "plantio": "2000-01-04",
+      "pam_rel": 1.279,
+      "pam_kgha": 700.0,
+      "chuva_estacao": 815
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.167,
+      "plantio": "2001-03-02",
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 428
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.728,
+      "plantio": "2002-01-03",
+      "pam_rel": 0.923,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 814
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.962,
+      "plantio": "2003-01-19",
+      "pam_rel": 1.333,
+      "pam_kgha": 800.0,
+      "chuva_estacao": 654
+     },
+     {
+      "ano": 2004,
+      "y_mod": 0.674,
+      "plantio": "2004-01-13",
+      "pam_rel": 0.094,
+      "pam_kgha": 40.0,
+      "chuva_estacao": 889
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.71,
+      "plantio": "2005-03-18",
+      "pam_rel": 0.592,
+      "pam_kgha": 252.0,
+      "chuva_estacao": 576
+     },
+     {
+      "ano": 2006,
+      "y_mod": 1.0,
+      "plantio": "2006-02-18",
+      "pam_rel": 4.762,
+      "pam_kgha": 1200.0,
+      "chuva_estacao": 875
+     },
+     {
+      "ano": 2007,
+      "y_mod": 0.431,
+      "plantio": "2007-02-13",
+      "pam_rel": 0.397,
+      "pam_kgha": 100.0,
+      "chuva_estacao": 596
+     },
+     {
+      "ano": 2008,
+      "y_mod": 0.957,
+      "plantio": "2008-01-15",
+      "pam_rel": 0.568,
+      "pam_kgha": 100.0,
+      "chuva_estacao": 1073
+     },
+     {
+      "ano": 2009,
+      "y_mod": 0.835,
+      "plantio": "2009-01-16",
+      "pam_rel": 3.175,
+      "pam_kgha": 800.0,
+      "chuva_estacao": 947
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.0,
+      "plantio": "2010-01-03",
+      "pam_rel": 0.328,
+      "pam_kgha": 100.0,
+      "chuva_estacao": 464
+     },
+     {
+      "ano": 2011,
+      "y_mod": 0.83,
+      "plantio": "2011-01-21",
+      "pam_rel": 3.05,
+      "pam_kgha": 305.0,
+      "chuva_estacao": 965
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 287
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.363,
+      "plantio": "2013-03-19",
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 393
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.969,
+      "plantio": "2014-02-18",
+      "pam_rel": 2.649,
+      "pam_kgha": 400.0,
+      "chuva_estacao": 621
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.0,
+      "plantio": "2015-03-06",
+      "pam_rel": 0.066,
+      "pam_kgha": 20.0,
+      "chuva_estacao": 241
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.138,
+      "plantio": "2016-01-07",
+      "pam_rel": 0.25,
+      "pam_kgha": 100.0,
+      "chuva_estacao": 472
+     },
+     {
+      "ano": 2017,
+      "y_mod": 0.328,
+      "plantio": "2017-02-09",
+      "pam_rel": 0.378,
+      "pam_kgha": 151.0,
+      "chuva_estacao": 387
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.937,
+      "plantio": "2018-02-10",
+      "pam_rel": 1.5,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 583
+     },
+     {
+      "ano": 2019,
+      "y_mod": 0.721,
+      "plantio": "2019-01-30",
+      "pam_rel": 1.5,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 475
+     },
+     {
+      "ano": 2020,
+      "y_mod": 0.679,
+      "plantio": "2020-03-01",
+      "pam_rel": 1.0,
+      "pam_kgha": 400.0,
+      "chuva_estacao": 532
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.0,
+      "plantio": "2021-04-11",
+      "pam_rel": 1.75,
+      "pam_kgha": 700.0,
+      "chuva_estacao": 366
+     },
+     {
+      "ano": 2022,
+      "y_mod": 0.347,
+      "plantio": "2022-01-04",
+      "pam_rel": 2.0,
+      "pam_kgha": 1000.0,
+      "chuva_estacao": 600
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.279,
+      "plantio": "2023-03-15",
+      "pam_rel": 0.3,
+      "pam_kgha": 120.0,
+      "chuva_estacao": 481
+     },
+     {
+      "ano": 2024,
+      "y_mod": 0.484,
+      "plantio": "2024-02-20",
+      "pam_rel": 0.952,
+      "pam_kgha": 363.0,
+      "chuva_estacao": 468
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.0,
+      "plantio": "2025-01-13",
+      "pam_rel": 0.22,
+      "pam_kgha": 80.0,
+      "chuva_estacao": 265
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 34,
+     "rho": 0.334,
+     "p": 0.0237,
+     "rho_chuva": 0.334,
+     "acerto8": 5,
+     "p_acerto": 0.0085,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1990,
+      1992,
+      2004,
+      2010,
+      2015,
+      2016,
+      2023,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      2010,
+      2015,
+      2017,
+      2021,
+      2023,
+      2024,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      2010,
+      2015,
+      2017,
+      2021,
+      2023,
+      2024,
+      2025
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 34,
+     "rho": 0.574,
+     "p": 0.001,
+     "rho_chuva": 0.404,
+     "acerto8": 5,
+     "p_acerto": 0.0085,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1990,
+      1992,
+      2004,
+      2010,
+      2015,
+      2016,
+      2023,
+      2025
+     ],
+     "piores_modelo": [
+      1992,
+      2004,
+      2007,
+      2015,
+      2016,
+      2017,
+      2019,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      2010,
+      2015,
+      2016,
+      2017,
+      2021,
+      2024,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 34,
+     "rho": 0.422,
+     "p": 0.0085,
+     "rho_chuva": 0.248,
+     "acerto8": 5,
+     "p_acerto": 0.0085,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1990,
+      1992,
+      2004,
+      2007,
+      2008,
+      2010,
+      2015,
+      2025
+     ],
+     "piores_modelo": [
+      1992,
+      2004,
+      2007,
+      2015,
+      2016,
+      2017,
+      2019,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      2010,
+      2015,
+      2016,
+      2017,
+      2021,
+      2024,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 34,
+     "rho": 0.451,
+     "p": 0.0062,
+     "rho_chuva": 0.297,
+     "acerto8": 5,
+     "p_acerto": 0.0085,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1990,
+      2004,
+      2007,
+      2008,
+      2010,
+      2015,
+      2016,
+      2025
+     ],
+     "piores_modelo": [
+      1992,
+      2004,
+      2007,
+      2015,
+      2016,
+      2017,
+      2019,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      2010,
+      2015,
+      2016,
+      2017,
+      2021,
+      2024,
+      2025
+     ]
+    }
+   }
+  },
+  "feijao": {
+   "n_pam": 35,
+   "pct_repetido": 14.0,
+   "sem_plantio_chuva": 3,
+   "chuva": {
+    "principal": {
+     "n": 35,
+     "rho": 0.175,
+     "p": 0.1585,
+     "rho_chuva": 0.368,
+     "acerto8": 4,
+     "p_acerto": 0.0596,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1990,
+      2004,
+      2015,
+      2016,
+      2017,
+      2023,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1997,
+      2010,
+      2015,
+      2016,
+      2021,
+      2022,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      2010,
+      2015,
+      2016,
+      2017,
+      2021,
+      2024,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 35,
+     "rho": 0.144,
+     "p": 0.2027,
+     "rho_chuva": 0.25,
+     "acerto8": 4,
+     "p_acerto": 0.0596,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1990,
+      2004,
+      2015,
+      2016,
+      2017,
+      2023,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1997,
+      2010,
+      2015,
+      2016,
+      2021,
+      2022,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      2010,
+      2015,
+      2016,
+      2017,
+      2021,
+      2024,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 35,
+     "rho": 0.126,
+     "p": 0.2337,
+     "rho_chuva": 0.224,
+     "acerto8": 4,
+     "p_acerto": 0.0596,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1990,
+      1992,
+      2004,
+      2015,
+      2016,
+      2017,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1997,
+      2010,
+      2015,
+      2016,
+      2021,
+      2022,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      2010,
+      2015,
+      2016,
+      2017,
+      2021,
+      2024,
+      2025
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 0.993,
+      "plantio": "1985-01-12",
+      "pam_rel": 1.0,
+      "pam_kgha": 200.0,
+      "chuva_estacao": 1442
+     },
+     {
+      "ano": 1986,
+      "y_mod": 1.0,
+      "plantio": "1986-01-28",
+      "pam_rel": 1.0,
+      "pam_kgha": 200.0,
+      "chuva_estacao": 915
+     },
+     {
+      "ano": 1987,
+      "y_mod": 1.0,
+      "plantio": "1987-02-06",
+      "pam_rel": 0.1,
+      "pam_kgha": 20.0,
+      "chuva_estacao": 592
+     },
+     {
+      "ano": 1988,
+      "y_mod": 0.796,
+      "plantio": "1988-01-24",
+      "pam_rel": 1.0,
+      "pam_kgha": 200.0,
+      "chuva_estacao": 782
+     },
+     {
+      "ano": 1989,
+      "y_mod": 1.0,
+      "plantio": "1989-03-18",
+      "pam_rel": 0.571,
+      "pam_kgha": 80.0,
+      "chuva_estacao": 803
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.176,
+      "plantio": "1990-04-03",
+      "pam_rel": 0.143,
+      "pam_kgha": 20.0,
+      "chuva_estacao": 390
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.667,
+      "plantio": "1991-01-21",
+      "pam_rel": 2.143,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 656
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.878,
+      "plantio": "1992-01-24",
+      "pam_rel": 0.357,
+      "pam_kgha": 79.0,
+      "chuva_estacao": 620
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 259
+     },
+     {
+      "ano": 1994,
+      "y_mod": 1.0,
+      "plantio": "1994-02-08",
+      "pam_rel": 1.0,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 715
+     },
+     {
+      "ano": 1995,
+      "y_mod": 0.841,
+      "plantio": "1995-02-10",
+      "pam_rel": 1.333,
+      "pam_kgha": 400.0,
+      "chuva_estacao": 761
+     },
+     {
+      "ano": 1996,
+      "y_mod": 0.901,
+      "plantio": "1996-01-16",
+      "pam_rel": 0.748,
+      "pam_kgha": 243.0,
+      "chuva_estacao": 819
+     },
+     {
+      "ano": 1997,
+      "y_mod": 0.244,
+      "plantio": "1997-01-07",
+      "pam_rel": 1.0,
+      "pam_kgha": 350.0,
+      "chuva_estacao": 680
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 307
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.132,
+      "plantio": "1999-03-04",
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 514
+     },
+     {
+      "ano": 2000,
+      "y_mod": 0.906,
+      "plantio": "2000-01-04",
+      "pam_rel": 1.17,
+      "pam_kgha": 351.0,
+      "chuva_estacao": 815
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.473,
+      "plantio": "2001-03-02",
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 428
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.61,
+      "plantio": "2002-01-03",
+      "pam_rel": 1.0,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 814
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.886,
+      "plantio": "2003-01-19",
+      "pam_rel": 1.0,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 654
+     },
+     {
+      "ano": 2004,
+      "y_mod": 0.998,
+      "plantio": "2004-01-13",
+      "pam_rel": 0.255,
+      "pam_kgha": 51.0,
+      "chuva_estacao": 889
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.583,
+      "plantio": "2005-03-18",
+      "pam_rel": 0.99,
+      "pam_kgha": 99.0,
+      "chuva_estacao": 576
+     },
+     {
+      "ano": 2006,
+      "y_mod": 1.0,
+      "plantio": "2006-02-18",
+      "pam_rel": 5.0,
+      "pam_kgha": 500.0,
+      "chuva_estacao": 875
+     },
+     {
+      "ano": 2007,
+      "y_mod": 0.386,
+      "plantio": "2007-02-13",
+      "pam_rel": 1.0,
+      "pam_kgha": 100.0,
+      "chuva_estacao": 596
+     },
+     {
+      "ano": 2008,
+      "y_mod": 0.69,
+      "plantio": "2008-01-15",
+      "pam_rel": 1.0,
+      "pam_kgha": 100.0,
+      "chuva_estacao": 1073
+     },
+     {
+      "ano": 2009,
+      "y_mod": 0.986,
+      "plantio": "2009-01-16",
+      "pam_rel": 1.0,
+      "pam_kgha": 100.0,
+      "chuva_estacao": 947
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.133,
+      "plantio": "2010-01-03",
+      "pam_rel": 1.0,
+      "pam_kgha": 200.0,
+      "chuva_estacao": 464
+     },
+     {
+      "ano": 2011,
+      "y_mod": 0.782,
+      "plantio": "2011-01-21",
+      "pam_rel": 2.8,
+      "pam_kgha": 280.0,
+      "chuva_estacao": 965
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 287
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.604,
+      "plantio": "2013-03-19",
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 393
+     },
+     {
+      "ano": 2014,
+      "y_mod": 1.0,
+      "plantio": "2014-02-18",
+      "pam_rel": 1.5,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 621
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.135,
+      "plantio": "2015-03-06",
+      "pam_rel": 0.179,
+      "pam_kgha": 50.0,
+      "chuva_estacao": 241
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.238,
+      "plantio": "2016-01-07",
+      "pam_rel": 0.147,
+      "pam_kgha": 44.0,
+      "chuva_estacao": 472
+     },
+     {
+      "ano": 2017,
+      "y_mod": 0.512,
+      "plantio": "2017-02-09",
+      "pam_rel": 0.23,
+      "pam_kgha": 69.0,
+      "chuva_estacao": 387
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.54,
+      "plantio": "2018-02-10",
+      "pam_rel": 1.0,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 583
+     },
+     {
+      "ano": 2019,
+      "y_mod": 0.408,
+      "plantio": "2019-01-30",
+      "pam_rel": 1.333,
+      "pam_kgha": 400.0,
+      "chuva_estacao": 475
+     },
+     {
+      "ano": 2020,
+      "y_mod": 0.949,
+      "plantio": "2020-03-01",
+      "pam_rel": 1.333,
+      "pam_kgha": 400.0,
+      "chuva_estacao": 532
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.161,
+      "plantio": "2021-04-11",
+      "pam_rel": 1.333,
+      "pam_kgha": 400.0,
+      "chuva_estacao": 366
+     },
+     {
+      "ano": 2022,
+      "y_mod": 0.157,
+      "plantio": "2022-01-04",
+      "pam_rel": 1.714,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 600
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.509,
+      "plantio": "2023-03-15",
+      "pam_rel": 0.198,
+      "pam_kgha": 79.0,
+      "chuva_estacao": 481
+     },
+     {
+      "ano": 2024,
+      "y_mod": 0.727,
+      "plantio": "2024-02-20",
+      "pam_rel": 0.724,
+      "pam_kgha": 227.0,
+      "chuva_estacao": 468
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.073,
+      "plantio": "2025-01-13",
+      "pam_rel": 0.264,
+      "pam_kgha": 60.0,
+      "chuva_estacao": 265
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 35,
+     "rho": 0.207,
+     "p": 0.1187,
+     "rho_chuva": 0.207,
+     "acerto8": 4,
+     "p_acerto": 0.0596,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1990,
+      2004,
+      2015,
+      2016,
+      2017,
+      2023,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      1997,
+      2010,
+      2015,
+      2016,
+      2021,
+      2022,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      1997,
+      2010,
+      2015,
+      2016,
+      2021,
+      2022,
+      2025
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 35,
+     "rho": 0.308,
+     "p": 0.0332,
+     "rho_chuva": 0.368,
+     "acerto8": 5,
+     "p_acerto": 0.0074,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1990,
+      2004,
+      2015,
+      2016,
+      2017,
+      2023,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      2004,
+      2007,
+      2010,
+      2015,
+      2017,
+      2021,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      2010,
+      2015,
+      2016,
+      2017,
+      2021,
+      2024,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 35,
+     "rho": 0.325,
+     "p": 0.0307,
+     "rho_chuva": 0.25,
+     "acerto8": 5,
+     "p_acerto": 0.0074,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1990,
+      2004,
+      2015,
+      2016,
+      2017,
+      2023,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      2004,
+      2007,
+      2010,
+      2015,
+      2017,
+      2021,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      2010,
+      2015,
+      2016,
+      2017,
+      2021,
+      2024,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 35,
+     "rho": 0.307,
+     "p": 0.0392,
+     "rho_chuva": 0.224,
+     "acerto8": 5,
+     "p_acerto": 0.0074,
+     "acerto8_chuva": 5,
+     "piores_pam": [
+      1987,
+      1990,
+      1992,
+      2004,
+      2015,
+      2016,
+      2017,
+      2025
+     ],
+     "piores_modelo": [
+      1990,
+      2004,
+      2007,
+      2010,
+      2015,
+      2017,
+      2021,
+      2025
+     ],
+     "piores_chuva": [
+      1990,
+      2010,
+      2015,
+      2016,
+      2017,
+      2021,
+      2024,
+      2025
+     ]
+    }
+   }
+  }
+ },
+ "bonfim": {
+  "nome": "Senhor do Bonfim (BA)",
+  "milho": {
+   "n_pam": 39,
+   "pct_repetido": 6.0,
+   "sem_plantio_chuva": 24,
+   "chuva": {
+    "principal": {
+     "n": 39,
+     "rho": -0.082,
+     "p": 0.6958,
+     "rho_chuva": 0.166,
+     "acerto8": 2,
+     "p_acerto": 0.5299,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1989,
+      1993,
+      1998,
+      2002,
+      2011,
+      2013,
+      2017,
+      2023
+     ],
+     "piores_modelo": [
+      1988,
+      1990,
+      1991,
+      1993,
+      1995,
+      1996,
+      1998,
+      2000
+     ],
+     "piores_chuva": [
+      1993,
+      1995,
+      1996,
+      1998,
+      2013,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 39,
+     "rho": 0.179,
+     "p": 0.1367,
+     "rho_chuva": 0.224,
+     "acerto8": 2,
+     "p_acerto": 0.5299,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1993,
+      1998,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2023
+     ],
+     "piores_modelo": [
+      1988,
+      1990,
+      1991,
+      1993,
+      1995,
+      1996,
+      1998,
+      2000
+     ],
+     "piores_chuva": [
+      1993,
+      1995,
+      1996,
+      1998,
+      2013,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 39,
+     "rho": 0.251,
+     "p": 0.0615,
+     "rho_chuva": 0.28,
+     "acerto8": 1,
+     "p_acerto": 0.8718,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1993,
+      2017,
+      2018,
+      2019,
+      2020,
+      2023,
+      2024,
+      2025
+     ],
+     "piores_modelo": [
+      1988,
+      1990,
+      1991,
+      1993,
+      1995,
+      1996,
+      1998,
+      2000
+     ],
+     "piores_chuva": [
+      1993,
+      1995,
+      1996,
+      1998,
+      2013,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 0.385,
+      "plantio": "1985-01-03",
+      "pam_rel": 1.385,
+      "pam_kgha": 745.0,
+      "chuva_estacao": 384
+     },
+     {
+      "ano": 1986,
+      "y_mod": 0.0,
+      "plantio": "1985-11-29",
+      "pam_rel": 1.206,
+      "pam_kgha": 649.0,
+      "chuva_estacao": 446
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.469,
+      "plantio": "1987-03-09",
+      "pam_rel": 1.0,
+      "pam_kgha": 529.0,
+      "chuva_estacao": 324
+     },
+     {
+      "ano": 1988,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.119,
+      "pam_kgha": 538.0,
+      "chuva_estacao": 271
+     },
+     {
+      "ano": 1989,
+      "y_mod": 0.454,
+      "plantio": "1989-03-23",
+      "pam_rel": 0.723,
+      "pam_kgha": 348.0,
+      "chuva_estacao": 341
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.0,
+      "plantio": "1989-12-01",
+      "pam_rel": 0.803,
+      "pam_kgha": 334.0,
+      "chuva_estacao": 522
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.098,
+      "pam_kgha": 416.0,
+      "chuva_estacao": 313
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.241,
+      "plantio": "1991-11-11",
+      "pam_rel": 1.269,
+      "pam_kgha": 481.0,
+      "chuva_estacao": 575
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.145,
+      "pam_kgha": 55.0,
+      "chuva_estacao": 160
+     },
+     {
+      "ano": 1994,
+      "y_mod": 0.223,
+      "plantio": "1994-03-02",
+      "pam_rel": 1.0,
+      "pam_kgha": 379.0,
+      "chuva_estacao": 232
+     },
+     {
+      "ano": 1995,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.819,
+      "pam_kgha": 319.0,
+      "chuva_estacao": 193
+     },
+     {
+      "ano": 1996,
+      "y_mod": 0.0,
+      "plantio": "1995-11-28",
+      "pam_rel": 1.027,
+      "pam_kgha": 400.0,
+      "chuva_estacao": 203
+     },
+     {
+      "ano": 1997,
+      "y_mod": 0.918,
+      "plantio": "1997-01-25",
+      "pam_rel": 1.674,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 584
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.324,
+      "pam_kgha": 116.0,
+      "chuva_estacao": 226
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 272
+     },
+     {
+      "ano": 2000,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.843,
+      "pam_kgha": 680.0,
+      "chuva_estacao": 436
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.887,
+      "pam_kgha": 338.0,
+      "chuva_estacao": 366
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.208,
+      "plantio": "2001-12-29",
+      "pam_rel": 0.668,
+      "pam_kgha": 225.0,
+      "chuva_estacao": 504
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.712,
+      "pam_kgha": 612.0,
+      "chuva_estacao": 250
+     },
+     {
+      "ano": 2004,
+      "y_mod": 0.302,
+      "plantio": "2004-01-11",
+      "pam_rel": 0.843,
+      "pam_kgha": 300.0,
+      "chuva_estacao": 553
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.191,
+      "pam_kgha": 424.0,
+      "chuva_estacao": 391
+     },
+     {
+      "ano": 2006,
+      "y_mod": 0.626,
+      "plantio": "2006-03-07",
+      "pam_rel": 0.891,
+      "pam_kgha": 336.0,
+      "chuva_estacao": 393
+     },
+     {
+      "ano": 2007,
+      "y_mod": 0.236,
+      "plantio": "2007-02-04",
+      "pam_rel": 1.0,
+      "pam_kgha": 377.0,
+      "chuva_estacao": 424
+     },
+     {
+      "ano": 2008,
+      "y_mod": 0.385,
+      "plantio": "2008-03-19",
+      "pam_rel": 0.971,
+      "pam_kgha": 356.0,
+      "chuva_estacao": 306
+     },
+     {
+      "ano": 2009,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.473,
+      "pam_kgha": 540.0,
+      "chuva_estacao": 230
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.296,
+      "pam_kgha": 475.0,
+      "chuva_estacao": 234
+     },
+     {
+      "ano": 2011,
+      "y_mod": 0.489,
+      "plantio": "2011-02-25",
+      "pam_rel": 0.655,
+      "pam_kgha": 279.0,
+      "chuva_estacao": 366
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 178
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.422,
+      "pam_kgha": 159.0,
+      "chuva_estacao": 144
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 2.215,
+      "pam_kgha": 485.0,
+      "chuva_estacao": 251
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 4.587,
+      "pam_kgha": 617.0,
+      "chuva_estacao": 254
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.0,
+      "plantio": "2016-01-05",
+      "pam_rel": 1.152,
+      "pam_kgha": 110.0,
+      "chuva_estacao": 352
+     },
+     {
+      "ano": 2017,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.264,
+      "pam_kgha": 29.0,
+      "chuva_estacao": 92
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.736,
+      "pam_kgha": 81.0,
+      "chuva_estacao": 353
+     },
+     {
+      "ano": 2019,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.0,
+      "pam_kgha": 81.0,
+      "chuva_estacao": 245
+     },
+     {
+      "ano": 2020,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.0,
+      "pam_kgha": 81.0,
+      "chuva_estacao": 279
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 2.951,
+      "pam_kgha": 239.0,
+      "chuva_estacao": 163
+     },
+     {
+      "ano": 2022,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 2.235,
+      "pam_kgha": 181.0,
+      "chuva_estacao": 446
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.642,
+      "pam_kgha": 52.0,
+      "chuva_estacao": 355
+     },
+     {
+      "ano": 2024,
+      "y_mod": 0.144,
+      "plantio": "2024-01-24",
+      "pam_rel": 1.058,
+      "pam_kgha": 91.0,
+      "chuva_estacao": 319
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.89,
+      "pam_kgha": 81.0,
+      "chuva_estacao": 210
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 17,
+     "rho": 0.177,
+     "p": 0.2572,
+     "rho_chuva": 0.177,
+     "acerto8": 4,
+     "p_acerto": 0.6008,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1989,
+      1990,
+      2002,
+      2004,
+      2006,
+      2008,
+      2011
+     ],
+     "piores_modelo": [
+      1986,
+      1987,
+      1989,
+      1994,
+      1996,
+      2008,
+      2011,
+      2016
+     ],
+     "piores_chuva": [
+      1986,
+      1987,
+      1989,
+      1994,
+      1996,
+      2008,
+      2011,
+      2016
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 39,
+     "rho": 0.27,
+     "p": 0.0512,
+     "rho_chuva": 0.166,
+     "acerto8": 2,
+     "p_acerto": 0.5299,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1989,
+      1993,
+      1998,
+      2002,
+      2011,
+      2013,
+      2017,
+      2023
+     ],
+     "piores_modelo": [
+      1987,
+      1988,
+      1989,
+      1991,
+      1993,
+      1994,
+      1995,
+      1996
+     ],
+     "piores_chuva": [
+      1993,
+      1995,
+      1996,
+      1998,
+      2013,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 39,
+     "rho": 0.282,
+     "p": 0.041,
+     "rho_chuva": 0.224,
+     "acerto8": 1,
+     "p_acerto": 0.8718,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1993,
+      1998,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2023
+     ],
+     "piores_modelo": [
+      1987,
+      1988,
+      1989,
+      1991,
+      1993,
+      1994,
+      1995,
+      1996
+     ],
+     "piores_chuva": [
+      1993,
+      1995,
+      1996,
+      1998,
+      2013,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 39,
+     "rho": 0.246,
+     "p": 0.0732,
+     "rho_chuva": 0.28,
+     "acerto8": 1,
+     "p_acerto": 0.8718,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1993,
+      2017,
+      2018,
+      2019,
+      2020,
+      2023,
+      2024,
+      2025
+     ],
+     "piores_modelo": [
+      1987,
+      1988,
+      1989,
+      1991,
+      1993,
+      1994,
+      1995,
+      1996
+     ],
+     "piores_chuva": [
+      1993,
+      1995,
+      1996,
+      1998,
+      2013,
+      2017,
+      2021,
+      2025
+     ]
+    }
+   }
+  },
+  "feijao": {
+   "n_pam": 40,
+   "pct_repetido": 8.0,
+   "sem_plantio_chuva": 24,
+   "chuva": {
+    "principal": {
+     "n": 40,
+     "rho": 0.003,
+     "p": 0.4869,
+     "rho_chuva": 0.272,
+     "acerto8": 2,
+     "p_acerto": 0.5131,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1993,
+      1998,
+      2002,
+      2013,
+      2017,
+      2018,
+      2023
+     ],
+     "piores_modelo": [
+      1988,
+      1991,
+      1993,
+      1995,
+      1998,
+      1999,
+      2000,
+      2001
+     ],
+     "piores_chuva": [
+      1993,
+      1995,
+      1996,
+      1998,
+      2013,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 40,
+     "rho": 0.158,
+     "p": 0.167,
+     "rho_chuva": 0.219,
+     "acerto8": 1,
+     "p_acerto": 0.8632,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1987,
+      1993,
+      2017,
+      2018,
+      2019,
+      2020,
+      2023,
+      2025
+     ],
+     "piores_modelo": [
+      1988,
+      1991,
+      1993,
+      1995,
+      1998,
+      1999,
+      2000,
+      2001
+     ],
+     "piores_chuva": [
+      1993,
+      1995,
+      1996,
+      1998,
+      2013,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 40,
+     "rho": 0.242,
+     "p": 0.068,
+     "rho_chuva": 0.344,
+     "acerto8": 0,
+     "p_acerto": 1.0,
+     "acerto8_chuva": 2,
+     "piores_pam": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "piores_modelo": [
+      1988,
+      1991,
+      1993,
+      1995,
+      1998,
+      1999,
+      2000,
+      2001
+     ],
+     "piores_chuva": [
+      1993,
+      1995,
+      1996,
+      1998,
+      2013,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "anos": [
+     {
+      "ano": 1985,
+      "y_mod": 0.515,
+      "plantio": "1985-01-03",
+      "pam_rel": 1.23,
+      "pam_kgha": 600.0,
+      "chuva_estacao": 384
+     },
+     {
+      "ano": 1986,
+      "y_mod": 0.18,
+      "plantio": "1985-11-29",
+      "pam_rel": 1.178,
+      "pam_kgha": 570.0,
+      "chuva_estacao": 446
+     },
+     {
+      "ano": 1987,
+      "y_mod": 0.587,
+      "plantio": "1987-03-09",
+      "pam_rel": 0.393,
+      "pam_kgha": 190.0,
+      "chuva_estacao": 324
+     },
+     {
+      "ano": 1988,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.963,
+      "pam_kgha": 466.0,
+      "chuva_estacao": 271
+     },
+     {
+      "ano": 1989,
+      "y_mod": 0.259,
+      "plantio": "1989-03-23",
+      "pam_rel": 0.911,
+      "pam_kgha": 441.0,
+      "chuva_estacao": 341
+     },
+     {
+      "ano": 1990,
+      "y_mod": 0.153,
+      "plantio": "1989-12-01",
+      "pam_rel": 1.039,
+      "pam_kgha": 484.0,
+      "chuva_estacao": 522
+     },
+     {
+      "ano": 1991,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.111,
+      "pam_kgha": 490.0,
+      "chuva_estacao": 313
+     },
+     {
+      "ano": 1992,
+      "y_mod": 0.145,
+      "plantio": "1991-11-11",
+      "pam_rel": 1.168,
+      "pam_kgha": 515.0,
+      "chuva_estacao": 575
+     },
+     {
+      "ano": 1993,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.202,
+      "pam_kgha": 89.0,
+      "chuva_estacao": 160
+     },
+     {
+      "ano": 1994,
+      "y_mod": 0.253,
+      "plantio": "1994-03-02",
+      "pam_rel": 0.756,
+      "pam_kgha": 297.0,
+      "chuva_estacao": 232
+     },
+     {
+      "ano": 1995,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.865,
+      "pam_kgha": 340.0,
+      "chuva_estacao": 193
+     },
+     {
+      "ano": 1996,
+      "y_mod": 0.091,
+      "plantio": "1995-11-28",
+      "pam_rel": 1.04,
+      "pam_kgha": 393.0,
+      "chuva_estacao": 203
+     },
+     {
+      "ano": 1997,
+      "y_mod": 0.992,
+      "plantio": "1997-01-25",
+      "pam_rel": 1.27,
+      "pam_kgha": 480.0,
+      "chuva_estacao": 584
+     },
+     {
+      "ano": 1998,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.41,
+      "pam_kgha": 155.0,
+      "chuva_estacao": 226
+     },
+     {
+      "ano": 1999,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.015,
+      "pam_kgha": 399.0,
+      "chuva_estacao": 272
+     },
+     {
+      "ano": 2000,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.962,
+      "pam_kgha": 378.0,
+      "chuva_estacao": 436
+     },
+     {
+      "ano": 2001,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.393,
+      "pam_kgha": 556.0,
+      "chuva_estacao": 366
+     },
+     {
+      "ano": 2002,
+      "y_mod": 0.522,
+      "plantio": "2001-12-29",
+      "pam_rel": 0.627,
+      "pam_kgha": 250.0,
+      "chuva_estacao": 504
+     },
+     {
+      "ano": 2003,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.136,
+      "pam_kgha": 477.0,
+      "chuva_estacao": 250
+     },
+     {
+      "ano": 2004,
+      "y_mod": 0.667,
+      "plantio": "2004-01-11",
+      "pam_rel": 0.89,
+      "pam_kgha": 374.0,
+      "chuva_estacao": 553
+     },
+     {
+      "ano": 2005,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.215,
+      "pam_kgha": 519.0,
+      "chuva_estacao": 391
+     },
+     {
+      "ano": 2006,
+      "y_mod": 0.985,
+      "plantio": "2006-03-07",
+      "pam_rel": 0.984,
+      "pam_kgha": 420.0,
+      "chuva_estacao": 393
+     },
+     {
+      "ano": 2007,
+      "y_mod": 0.354,
+      "plantio": "2007-02-04",
+      "pam_rel": 0.895,
+      "pam_kgha": 427.0,
+      "chuva_estacao": 424
+     },
+     {
+      "ano": 2008,
+      "y_mod": 0.312,
+      "plantio": "2008-03-19",
+      "pam_rel": 0.885,
+      "pam_kgha": 416.0,
+      "chuva_estacao": 306
+     },
+     {
+      "ano": 2009,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.138,
+      "pam_kgha": 535.0,
+      "chuva_estacao": 230
+     },
+     {
+      "ano": 2010,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.273,
+      "pam_kgha": 539.0,
+      "chuva_estacao": 234
+     },
+     {
+      "ano": 2011,
+      "y_mod": 0.553,
+      "plantio": "2011-02-25",
+      "pam_rel": 1.148,
+      "pam_kgha": 513.0,
+      "chuva_estacao": 366
+     },
+     {
+      "ano": 2012,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": null,
+      "pam_kgha": null,
+      "chuva_estacao": 178
+     },
+     {
+      "ano": 2013,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.47,
+      "pam_kgha": 195.0,
+      "chuva_estacao": 144
+     },
+     {
+      "ano": 2014,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 1.301,
+      "pam_kgha": 363.0,
+      "chuva_estacao": 251
+     },
+     {
+      "ano": 2015,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 3.062,
+      "pam_kgha": 467.0,
+      "chuva_estacao": 254
+     },
+     {
+      "ano": 2016,
+      "y_mod": 0.153,
+      "plantio": "2016-01-05",
+      "pam_rel": 1.419,
+      "pam_kgha": 110.0,
+      "chuva_estacao": 352
+     },
+     {
+      "ano": 2017,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.634,
+      "pam_kgha": 45.0,
+      "chuva_estacao": 92
+     },
+     {
+      "ano": 2018,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.414,
+      "pam_kgha": 29.0,
+      "chuva_estacao": 353
+     },
+     {
+      "ano": 2019,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.644,
+      "pam_kgha": 29.0,
+      "chuva_estacao": 245
+     },
+     {
+      "ano": 2020,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.659,
+      "pam_kgha": 29.0,
+      "chuva_estacao": 279
+     },
+     {
+      "ano": 2021,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 2.029,
+      "pam_kgha": 71.0,
+      "chuva_estacao": 163
+     },
+     {
+      "ano": 2022,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 2.188,
+      "pam_kgha": 70.0,
+      "chuva_estacao": 446
+     },
+     {
+      "ano": 2023,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.486,
+      "pam_kgha": 17.0,
+      "chuva_estacao": 355
+     },
+     {
+      "ano": 2024,
+      "y_mod": 0.229,
+      "plantio": "2024-01-24",
+      "pam_rel": 1.114,
+      "pam_kgha": 44.0,
+      "chuva_estacao": 319
+     },
+     {
+      "ano": 2025,
+      "y_mod": 0.0,
+      "plantio": null,
+      "pam_rel": 0.795,
+      "pam_kgha": 35.0,
+      "chuva_estacao": 210
+     }
+    ],
+    "chuva_ciclo": {
+     "n": 17,
+     "rho": -0.093,
+     "p": 0.6321,
+     "rho_chuva": -0.093,
+     "acerto8": 3,
+     "p_acerto": 0.891,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1987,
+      1989,
+      1994,
+      2002,
+      2004,
+      2006,
+      2007,
+      2008
+     ],
+     "piores_modelo": [
+      1986,
+      1989,
+      1992,
+      1994,
+      1996,
+      2008,
+      2011,
+      2024
+     ],
+     "piores_chuva": [
+      1986,
+      1989,
+      1992,
+      1994,
+      1996,
+      2008,
+      2011,
+      2024
+     ]
+    }
+   },
+   "sem_plantio_fixo": 0,
+   "fixo": {
+    "principal": {
+     "n": 40,
+     "rho": 0.137,
+     "p": 0.1925,
+     "rho_chuva": 0.272,
+     "acerto8": 2,
+     "p_acerto": 0.5131,
+     "acerto8_chuva": 4,
+     "piores_pam": [
+      1987,
+      1993,
+      1998,
+      2002,
+      2013,
+      2017,
+      2018,
+      2023
+     ],
+     "piores_modelo": [
+      1987,
+      1994,
+      1996,
+      2006,
+      2014,
+      2017,
+      2019,
+      2021
+     ],
+     "piores_chuva": [
+      1993,
+      1995,
+      1996,
+      1998,
+      2013,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "loglin": {
+     "n": 40,
+     "rho": 0.075,
+     "p": 0.3144,
+     "rho_chuva": 0.219,
+     "acerto8": 3,
+     "p_acerto": 0.1832,
+     "acerto8_chuva": 3,
+     "piores_pam": [
+      1987,
+      1993,
+      2017,
+      2018,
+      2019,
+      2020,
+      2023,
+      2025
+     ],
+     "piores_modelo": [
+      1987,
+      1994,
+      1996,
+      2006,
+      2014,
+      2017,
+      2019,
+      2021
+     ],
+     "piores_chuva": [
+      1993,
+      1995,
+      1996,
+      1998,
+      2013,
+      2017,
+      2021,
+      2025
+     ]
+    },
+    "bruto": {
+     "n": 40,
+     "rho": 0.186,
+     "p": 0.1265,
+     "rho_chuva": 0.344,
+     "acerto8": 2,
+     "p_acerto": 0.5131,
+     "acerto8_chuva": 2,
+     "piores_pam": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2022,
+      2023,
+      2024,
+      2025
+     ],
+     "piores_modelo": [
+      1987,
+      1994,
+      1996,
+      2006,
+      2014,
+      2017,
+      2019,
+      2021
+     ],
+     "piores_chuva": [
+      1993,
+      1995,
+      1996,
+      1998,
+      2013,
+      2017,
+      2021,
+      2025
+     ]
+    }
+   }
+  }
+ },
+ "sintese": {
+  "n_pares": 16,
+  "mediana_rho": 0.414,
+  "media_rho": 0.38,
+  "mediana_acerto8": 4.0,
+  "pares_rho_ge_040": 9,
+  "mediana_rho_menos_chuva": 0.058,
+  "mediana_rho_chuva": 0.394,
+  "mediana_rho_fixo": 0.439,
+  "mediana_rho_loglin": 0.394,
+  "mediana_rho_bruto": 0.429,
+  "mediana_rho_ciclo": 0.288,
+  "por_cultura": {
+   "milho": {
+    "mediana_rho": 0.572,
+    "mediana_acerto8": 5.0,
+    "rho_ge_040": 6
+   },
+   "feijao": {
+    "mediana_rho": 0.307,
+    "mediana_acerto8": 4.0,
+    "rho_ge_040": 3
+   }
+  }
+ }
+}

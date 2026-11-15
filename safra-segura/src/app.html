@@ -1,0 +1,726 @@
+<title>Safra Segura</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: barra de etapas; mapa grande à esquerda (desenhar a fazenda); à direita perfil, riscos e "e se"; abaixo os dados NASA do ponto e a pergunta livre */
+:root{
+  --bg:#eef2ed; --surface:#ffffff; --surface-2:#e5ece4; --ink:#14201a; --ink-2:#4a5a50; --line:#cfdacd;
+  --pasto:#2c6a45; --pasto-soft:#d8eadc; --milho:#c08d14; --milho-soft:#f4e9cc; --geada:#2f6596; --geada-soft:#d9e6f2;
+  --alto:#b4432b; --alto-soft:#f5ddd6; --medio:#b07b0c; --medio-soft:#f6ebcf; --baixo:#2e7a4c; --baixo-soft:#d9ecdf;
+  --mapbg:#dfe6dc; --farm:#e0a526;
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --body:"Inter","Segoe UI",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1511; --surface:#17201a; --surface-2:#1f2a23; --ink:#e8eee8; --ink-2:#a3b2a7; --line:#2b3930;
+  --pasto:#6dbd8a; --pasto-soft:#1d3426; --milho:#e2b545; --milho-soft:#392f17; --geada:#82b3de; --geada-soft:#1b2b3a;
+  --alto:#ec8f74; --alto-soft:#3b211a; --medio:#e6bb52; --medio-soft:#382d14; --baixo:#6dbd8a; --baixo-soft:#1c3324;
+  --mapbg:#1a221d; --farm:#f2bd45; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1511; --surface:#17201a; --surface-2:#1f2a23; --ink:#e8eee8; --ink-2:#a3b2a7; --line:#2b3930;
+  --pasto:#6dbd8a; --pasto-soft:#1d3426; --milho:#e2b545; --milho-soft:#392f17; --geada:#82b3de; --geada-soft:#1b2b3a;
+  --alto:#ec8f74; --alto-soft:#3b211a; --medio:#e6bb52; --medio-soft:#382d14; --baixo:#6dbd8a; --baixo-soft:#1c3324;
+  --mapbg:#1a221d; --farm:#f2bd45; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font:14.5px/1.55 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 40px}
+.page{max-width:1320px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.01em;margin:0;text-wrap:balance}
+.eyebrow{font:500 10.5px/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.small{font-size:12.5px;color:var(--ink-2)}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--milho);outline-offset:2px}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:8px 13px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;font-weight:500}
+.btn:hover{border-color:var(--pasto)}
+.btn.pri{background:var(--pasto);border-color:var(--pasto);color:#fff}
+.btn.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn:disabled{opacity:.5;cursor:default}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-block:16px 12px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:11px}
+.mark{width:36px;height:36px;border-radius:10px;background:var(--pasto);display:grid;place-items:center;flex:none}
+.brand h1{font-size:22px}.brand p{margin:0;font-size:12.5px;color:var(--ink-2)}
+.steps{display:flex;gap:6px;flex-wrap:wrap}
+.step{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-2);text-decoration:none;padding:5px 10px;border-radius:999px;border:1px solid var(--line);background:var(--surface)}
+.step b{display:grid;place-items:center;width:19px;height:19px;border-radius:50%;background:var(--surface-2);color:var(--ink);font:600 11px var(--mono)}
+.step.done b{background:var(--pasto);color:#fff}
+
+.main{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:18px;align-items:start}
+.mapcard{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;position:sticky;top:calc(env(safe-area-inset-top,0px) + 10px)}
+.maptools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line)}
+.maptools .sep{flex:1}
+.layers{display:flex;gap:5px;flex-wrap:wrap;padding:8px 12px;border-bottom:1px solid var(--line);background:var(--surface-2)}
+.layers button{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 10px;font-size:12px;cursor:pointer}
+.layers button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+#mapa{display:block;width:100%;height:min(68vh,640px);background:var(--mapbg);cursor:grab;touch-action:none}
+#mapa.drawing{cursor:crosshair}
+.legend{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:8px 12px;font-size:11.5px;color:var(--ink-2);border-top:1px solid var(--line);min-height:38px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:4px;vertical-align:-2px}
+.hint{position:absolute;left:12px;right:12px;bottom:52px;background:var(--ink);color:var(--bg);padding:8px 12px;border-radius:10px;font-size:12.5px;pointer-events:none}
+.mapwrap{position:relative}
+.tip{position:absolute;pointer-events:none;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 9px;font-size:12px;box-shadow:0 4px 14px #0002;max-width:220px}
+
+.col{display:flex;flex-direction:column;gap:14px;min-width:0}
+.sec{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px 18px;display:flex;flex-direction:column;gap:12px}
+.sec h2{font-size:19px}
+.sechead{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+.farmsum{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.kpi{background:var(--surface-2);border-radius:12px;padding:10px 12px}
+.kpi b{display:block;font:700 20px/1.15 var(--display)}
+.form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 12px}
+.form label{display:flex;flex-direction:column;gap:4px;font-size:12.5px;font-weight:600}
+.form select,.form input[type=number]{border:1px solid var(--line);background:var(--surface);border-radius:9px;padding:7px 9px;font-weight:400}
+.full{grid-column:1/-1}
+.checks{display:flex;flex-wrap:wrap;gap:6px}
+.checks label{flex-direction:row;align-items:center;gap:6px;font-weight:400;border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer;font-size:12.5px}
+.checks input{accent-color:var(--pasto)}
+.risk{border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.risk summary{list-style:none;cursor:pointer;padding:12px 14px;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.risk summary h3{flex:1 1 160px;min-width:0}
+.risk summary::-webkit-details-marker{display:none}
+.lvl{font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.05em;padding:4px 8px;border-radius:7px;white-space:nowrap}
+.lvl.alto{background:var(--alto-soft);color:var(--alto)}.lvl.medio{background:var(--medio-soft);color:var(--medio)}.lvl.baixo{background:var(--baixo-soft);color:var(--baixo)}.lvl.info{background:var(--surface-2);color:var(--ink-2)}
+.risk h3{font-size:15.5px}
+.ev{font:600 10.5px var(--mono);letter-spacing:.03em;padding:4px 8px;border-radius:7px;white-space:nowrap;display:inline-block}
+.ev.n2{background:var(--medio-soft);color:var(--medio)}.ev.n1{background:var(--surface-2);color:var(--ink-2);border:1px dashed var(--line)}.ev.med{background:var(--geada-soft);color:var(--geada)}
+.rastro{font:400 11.5px/1.45 var(--mono);color:var(--ink-2);border-top:1px dashed var(--line);padding-top:8px}
+.risk .num{font:700 17px var(--display);margin-left:auto}
+.rbody{padding:0 14px 14px;display:grid;gap:10px;font-size:13.5px}
+.rbody p{margin:0}
+.rbody ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.conf{display:flex;flex-direction:column;gap:3px;background:var(--surface-2);border-radius:10px;padding:8px 10px;font-size:12.5px}
+.conf b{white-space:nowrap}
+.scen{display:flex;gap:6px;flex-wrap:wrap}
+.trade{width:100%;border-collapse:collapse;font-size:13px}
+.trade th,.trade td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+.trade th{font:500 10.5px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+.tradewrap{overflow-x:auto}
+.ctrl{display:flex;flex-direction:column;gap:6px;font-size:13px}
+.ctrl input[type=range]{width:100%;accent-color:var(--geada)}
+.bigline{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.bigline b{font:700 34px/1 var(--display)}
+
+.nasa{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.chart{width:100%;height:auto;display:block}
+.chartcard{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.chartcard h3{font-size:15.5px}
+.ask{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+textarea{width:100%;min-height:86px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--surface);resize:vertical}
+.answer{background:var(--surface-2);border-radius:12px;padding:12px 14px;min-height:120px;white-space:pre-wrap;font-size:14px}
+.msg{background:#dcf3d2;color:#13240f;border-radius:14px 14px 14px 4px;padding:10px 12px;font-size:14px;max-width:520px}
+:root[data-theme="dark"] .msg{background:#244a2d;color:#e9f6e6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .msg{background:#244a2d;color:#e9f6e6}}
+.foot{font-size:12px;color:var(--ink-2);border-top:1px solid var(--line);padding-top:12px;display:grid;gap:6px}
+@media (max-width:1000px){.main{grid-template-columns:1fr}.mapcard{position:static}.nasa{grid-template-columns:1fr}.ask{grid-template-columns:1fr}}
+@media (max-width:520px){.form{grid-template-columns:1fr}.farmsum{grid-template-columns:1fr 1fr}#mapa{height:58vh}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="page">
+  <header class="top">
+    <div class="brand">
+      <div class="mark" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V10"/><path d="M12 14c-4 0-6-3-6-7 4 0 6 3 6 7z"/><path d="M12 11c0-4 2-7 6-7 0 4-2 7-6 7z"/></svg></div>
+      <div><h1>Safra Segura</h1><p>Oeste de Santa Catarina · dados NASA POWER (1981–2025) e SRTM</p></div>
+    </div>
+    <nav class="steps" aria-label="Etapas">
+      <a class="step" href="#s1" id="st1"><b>1</b>Delimitar a fazenda</a>
+      <a class="step" href="#s2" id="st2"><b>2</b>O que tenho</a>
+      <a class="step" href="#s3" id="st3"><b>3</b>Riscos</a>
+      <a class="step" href="#s4" id="st4"><b>4</b>E se…?</a>
+      <a class="step" href="#s5" id="st5"><b>5</b>Pergunte</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <section class="mapcard" id="s1" aria-label="Mapa">
+      <div class="maptools">
+        <button class="btn pri" id="bDraw">Desenhar minha fazenda</button>
+        <button class="btn" id="bDone" hidden>Concluir área</button>
+        <button class="btn" id="bUndo" hidden>Desfazer ponto</button>
+        <button class="btn" id="bCancel" hidden>Cancelar</button>
+        <span class="sep"></span>
+        <button class="btn" id="bFarm">Ir para a fazenda</button>
+        <button class="btn" id="bRegion">Ver o Oeste</button>
+      </div>
+      <div class="layers" role="group" aria-label="Camada do mapa">
+        <button data-layer="relevo" aria-pressed="true">Relevo (SRTM)</button>
+        <button data-layer="declive" aria-pressed="false">Declive (SRTM)</button>
+        <button data-layer="geada" aria-pressed="false">Geada no 2º milho (POWER)</button>
+        <button data-layer="chuva" aria-pressed="false">Chuva dez–fev (POWER)</button>
+      </div>
+      <div class="mapwrap">
+        <svg id="mapa" role="img" aria-label="Mapa do Oeste de Santa Catarina com a fazenda e as camadas de dados NASA"></svg>
+        <div class="hint" id="hint" hidden>Clique para marcar os cantos da fazenda. Dois cliques ou “Concluir área” fecham o desenho.</div>
+        <div class="tip" id="tip" hidden></div>
+      </div>
+      <div class="legend" id="legend"></div>
+    </section>
+
+    <div class="col">
+      <section class="sec" id="s2">
+        <div class="sechead"><h2>Minha fazenda</h2><span class="small" id="exTag">Exemplo fictício em São Miguel do Oeste. Desenhe a sua no mapa.</span></div>
+        <div class="farmsum">
+          <div class="kpi"><span class="eyebrow">Área</span><b class="mono" id="kArea">–</b></div>
+          <div class="kpi"><span class="eyebrow">Município</span><b id="kMun" style="font-size:16px">–</b></div>
+          <div class="kpi"><span class="eyebrow">Morro (declive &gt;20%)</span><b class="mono" id="kMorro">–</b></div>
+        </div>
+        <form class="form" id="perfil" onsubmit="return false">
+          <label>Atividade principal<select id="fAtiv"><option value="leite">Leite</option><option value="graos">Grãos</option><option value="ambos">Leite e grãos</option></select></label>
+          <label>Vacas em lactação<input type="number" id="fVacas" min="0" max="2000" step="1" value="18"></label>
+          <div class="full"><span style="font-size:12.5px;font-weight:600">O que planta hoje</span>
+            <div class="checks" id="fCult">
+              <label><input type="checkbox" value="milhoV" checked>Milho silagem (verão)</label>
+              <label><input type="checkbox" value="milho2" checked>2º milho (safrinha)</label>
+              <label><input type="checkbox" value="soja">Soja</label>
+              <label><input type="checkbox" value="aveia">Aveia ou azevém (inverno)</label>
+              <label><input type="checkbox" value="sorgo">Sorgo</label>
+              <label><input type="checkbox" value="perene" checked>Pastagem perene</label>
+            </div></div>
+          <label>Planta o milho de verão em<select id="fMesV"><option value="8">agosto</option><option value="9" selected>setembro</option><option value="10">outubro</option><option value="11">novembro</option><option value="12">dezembro</option></select></label>
+          <label>Planta o 2º milho em<select id="fData2"></select></label>
+          <label>Ciclo do híbrido de milho<select id="fGdd"><option value="1100">precoce</option><option value="1250" selected>normal</option><option value="1400">tardio</option></select></label>
+          <label>Solo que você vê<select id="fSolo"><option value="auto">não sei</option><option value="raso">raso ou com pedra</option><option value="medio">médio</option><option value="fundo">fundo, terra boa</option></select></label>
+          <div class="full"><span style="font-size:12.5px;font-weight:600">O que é mais importante para você (até 2)</span>
+            <div class="checks" id="fPri">
+              <label><input type="checkbox" value="comida" checked>Não faltar comida para as vacas</label>
+              <label><input type="checkbox" value="custo">Gastar menos</label>
+              <label><input type="checkbox" value="solo" checked>Cuidar do solo</label>
+              <label><input type="checkbox" value="renda">Ganhar mais</label>
+            </div></div>
+        </form>
+      </section>
+
+      <section class="sec" id="s3">
+        <div class="sechead"><h2>Riscos deste lugar</h2><span class="small mono" id="celTag"></span></div>
+        <div id="risks" style="display:grid;gap:10px"></div>
+      </section>
+
+      <section class="sec" id="s4">
+        <div class="sechead"><h2>E se…?</h2><span class="small">Escolha uma possibilidade</span></div>
+        <div class="scen" role="group" aria-label="Possibilidades" id="scenBtns">
+          <button class="btn on" data-s="milho2">Plantar o 2º milho</button>
+          <button class="btn" data-s="sorgo">Pôr sorgo na silagem</button>
+          <button class="btn" data-s="dataV">Mudar a data do milho de verão</button>
+          <button class="btn" data-s="cobertura">Cobrir o solo no inverno</button>
+        </div>
+        <div id="scen" style="display:grid;gap:12px"></div>
+      </section>
+    </div>
+  </div>
+
+  <section style="display:grid;gap:12px">
+    <div class="sechead"><div><span class="eyebrow">Dados da NASA neste ponto</span><h2 style="font-size:21px;margin-top:4px">O que o satélite e a reanálise mostram aqui</h2></div>
+      <label class="small" style="display:flex;gap:8px;align-items:center">Ano<select id="fAno" style="border:1px solid var(--line);border-radius:8px;padding:5px 8px;background:var(--surface)"></select></label></div>
+    <div class="nasa">
+      <div class="chartcard"><h3>Temperatura mínima diária</h3><span class="small" id="capA"></span><div id="chA"></div></div>
+      <div class="chartcard"><h3>Chance de geada pela data de plantio do 2º milho</h3><span class="small" id="capB"></span><div id="chB"></div></div>
+      <div class="chartcard"><h3>Chuva por mês: o ano contra o normal</h3><span class="small" id="capC"></span><div id="chC"></div></div>
+    </div>
+    <p class="small" style="margin:0">Ponto da grade do NASA POWER usado: <span class="mono" id="celInfo"></span>. <a id="apiLink" href="#" target="_blank" rel="noopener" style="color:var(--pasto)">Abrir esta série na API da NASA</a></p>
+  </section>
+
+  <section class="sec" id="s5">
+    <div class="sechead"><h2>Pergunte</h2><span class="small">Por texto ou por voz. A resposta usa só os números calculados acima.</span></div>
+    <div class="ask">
+      <div style="display:grid;gap:8px">
+        <div class="scen" id="sugs">
+          <button class="btn" data-q="Vale a pena plantar o 2º milho este ano ou é melhor ir de aveia?">2º milho ou aveia?</button>
+          <button class="btn" data-q="Em que parte da fazenda faz sentido pôr sorgo, e o que eu perco com isso?">Onde ponho sorgo?</button>
+          <button class="btn" data-q="O que eu faço no inverno para não perder solo nos morros?">Como cuidar do solo?</button>
+        </div>
+        <label for="qText" class="small">Sua pergunta</label>
+        <textarea id="qText">Vale a pena plantar o 2º milho este ano ou é melhor ir de aveia?</textarea>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn pri" id="bAsk">Perguntar</button>
+          <button class="btn" id="bMic" hidden>Falar a pergunta</button>
+          <button class="btn" id="bStop" hidden>Parar</button>
+        </div>
+        <span class="small" id="askNote"></span>
+      </div>
+      <div style="display:grid;gap:8px">
+        <span class="eyebrow">Resposta</span>
+        <div class="answer" id="ans">A resposta aparece aqui. Ela compara as opções, diz os riscos e o que fazer, usando só os números da sua fazenda.</div>
+        <div><button class="btn" id="bSpeakAns" hidden>Ouvir a resposta</button></div>
+      </div>
+    </div>
+    <div style="display:grid;gap:8px;border-top:1px solid var(--line);padding-top:12px">
+      <span class="eyebrow">Resumo que o agricultor recebe por mensagem</span>
+      <div class="msg" id="msg"></div>
+      <div><button class="btn" id="bSpeakMsg" hidden>Ouvir em áudio</button></div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span><b>Dados da solução:</b> NASA POWER diário (temperatura, chuva, umidade, vento e radiação), comunidade AG, grade de ~0,5° × 0,625° (cerca de 55 × 60 km), 1981–2025; SRTM 1″ (NASA/USGS) reamostrado a ~90 m. Contorno dos municípios: IBGE, só para desenho. Três parâmetros vêm de literatura externa (R = 0,88; raiz de 0,6 m; limiar de 2 °C do ZARC).</span>
+    <span><b>Níveis de evidência (spec v2):</b> N2 · com ressalva = passou em parte e a direção bate com fonte externa; sai com faixa. N1 · em teste = sem número para o agricultor. Medido = fato do dado, sem previsão. Nenhum módulo é N3 (validado) hoje.</span>
+    <span><b>Como foi validado:</b> data-limite do 2º milho (V2: geadas de estação aparecem no dado; muda até 29 dias entre municípios); geada tirando agosto do milho de verão (V4: a forma bate com o ZARC, a força não); aviso de ano seco (V1: 13 de 29 avisos em ano de quebra, mas deixa passar cerca de metade); sorgo no raso (V3: ajuda em 7 de 10 cenários, abaixo do corte de 7 em 10 que pedimos); erosividade (A3-1, em Ituporanga). Nada foi testado com agricultor.</span>
+    <span><b>Limites:</b> a grade do clima é grossa e não vê o talhão; o solo vem do relevo e da sua resposta, não de análise; o relevo cobre todo o Oeste catarinense (SRTM a ~90 m). É chance, não garantia.</span>
+  </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+const PK = /*__PACOTE__*/null;
+const RV = /*__RELEVO__*/null;
+const $ = (id) => document.getElementById(id);
+const fmt = (x, d = 1) => Number(x).toLocaleString("pt-BR", { minimumFractionDigits: d, maximumFractionDigits: d });
+const MESES = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+const [Y0, M0, D0] = PK.ini.split("-").map(Number);
+const T0 = Date.UTC(Y0, M0 - 1, D0), ND = PK.ndias, ANO0 = Y0, ANO1 = 2025;
+const idx = (y, m, d) => Math.round((Date.UTC(y, m - 1, d) - T0) / 864e5);
+const ddmm = (doy) => { const dt = new Date(Date.UTC(2001, 0, doy)); return dt.getUTCDate() + " " + MESES[dt.getUTCMonth()]; };
+const STORE = "safra-segura-fazenda-v1";
+const EXEMPLO = [[-53.5648,-26.6862],[-53.5592,-26.6851],[-53.5571,-26.6893],[-53.5603,-26.6931],[-53.5655,-26.6914]];
+
+// ---------- células NASA POWER ----------
+function dec(b64) { const s = atob(b64), u = new Uint8Array(s.length); for (let i = 0; i < s.length; i++) u[i] = s.charCodeAt(i); return new Int16Array(u.buffer); }
+const CEL = PK.celulas.map((c) => ({ ...c, _d: null }));
+// os anéis do IBGE vêm no sentido anti-horário; o D3 (geometria esférica) espera horário: inverte quando a área passa de meia esfera
+PK.malha.features.forEach((f) => { if (d3.geoArea(f) > 2 * Math.PI) { const inv = (g) => g.map((ring) => ring.slice().reverse()); f.geometry.coordinates = f.geometry.type === "Polygon" ? inv(f.geometry.coordinates) : f.geometry.coordinates.map(inv); } });
+function dados(c) { if (!c._d) c._d = { tn: dec(c.tmin), tx: dec(c.tmax), pr: dec(c.chuva) }; return c._d; }
+function celulaMaisProxima(lon, lat) { let b = null, bd = 1e9; for (const c of CEL) { const d = (c.lat - lat) ** 2 + ((c.lon - lon) * 0.8) ** 2; if (d < bd) { bd = d; b = c; } } return b; }
+
+// modelo de geada (mesma regra da validação V2): geada = mínima <= L entre o plantio e o ponto de silagem (graus-dia base 10, teto 30)
+function safra(c, y, m, d, L, gdd) {
+  const D = dados(c); let i = idx(y, m, d); const fim = idx(y, 9, 30); let s = 0, g = false;  // corte em 30/set, como no motor
+  while (s < gdd) { if (i > fim || i >= ND) return null; const tn = D.tn[i] / 10, tx = D.tx[i] / 10; if (tn <= L) g = true; s += Math.max(0, (Math.min(tx, 30) + Math.max(tn, 10)) / 2 - 10); i++; }
+  return { g, dias: i - idx(y, m, d) };
+}
+function chance(c, m, d, L, gdd) { let k = 0, n = 0; for (let y = ANO0; y <= ANO1; y++) { const r = safra(c, y, m, d, L, gdd); if (r) { n++; if (r.g) k++; } } return n ? 10 * k / n : null; }
+function wilson10(k, n) { if (!n) return [null, null]; const z = 1.96, p = k / n, den = 1 + z * z / n, c = (p + z * z / (2 * n)) / den, h = z * Math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / den; return [Math.round(100 * Math.max(0, c - h)) / 10, Math.round(100 * Math.min(1, c + h)) / 10]; }
+function chanceIC(c, m, d, L, gdd) { let k = 0, n = 0; for (let y = ANO0; y <= ANO1; y++) { const r = safra(c, y, m, d, L, gdd); if (r) { n++; if (r.g) k++; } } return n ? { v: 10 * k / n, ic: wilson10(k, n), k, n } : null; }
+// regra R7 da spec: inteiro com meio para cima; entre 0 e 0,5 "menos de 1"; zero "quase nunca"
+const r7 = (x) => Math.floor(x + 0.5);
+function em10txt(v) { if (v === null || v === undefined) return "sem dado"; if (v === 0) return "quase nunca"; if (v < 0.5) return "menos de 1 de cada 10 anos"; return "cerca de " + r7(v) + " de cada 10 anos"; }
+function em10curto(v) { if (v === null || v === undefined) return "–"; if (v === 0) return "quase nunca"; if (v < 0.5) return "menos de 1 em 10"; return r7(v) + " em 10"; }
+function faixaTxt(ic) { return ic && ic[0] !== null && ic[0] !== undefined ? " (entre " + r7(ic[0]) + " e " + r7(ic[1]) + ")" : ""; }
+const MESES_EXT = ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
+const dataExt = (s) => { if (!s) return "sem data"; const [d, m] = s.split("/").map(Number); return (d === 1 ? "1º" : d) + " de " + MESES_EXT[m - 1]; };
+const ddmmDoy = (s) => { const [d, m] = s.split("/").map(Number); return Math.round((Date.UTC(2001, m - 1, d) - Date.UTC(2001, 0, 1)) / 864e5) + 1; };
+const cacheCurva = new Map();
+function curvaDiaria(c, L, gdd) {
+  const key = c.id + "|" + L + "|" + gdd; if (cacheCurva.has(key)) return cacheCurva.get(key);
+  const raw = []; for (let doy = 1; doy <= 90; doy++) { const dt = new Date(Date.UTC(2001, 0, doy)); raw.push(chance(c, dt.getUTCMonth() + 1, dt.getUTCDate(), L, gdd)); }
+  const sm = raw.map((_, i) => { const a = raw.slice(Math.max(0, i - 2), i + 3); return a.reduce((s, v) => s + v, 0) / a.length; });
+  let lim = null; for (let i = 0; i < sm.length; i++) if (sm[i] > 2) { lim = i; break; }
+  const out = { raw, sm, limite: lim === null ? null : Math.max(1, lim) }; cacheCurva.set(key, out); return out;
+}
+function chuvaPeriodo(c, y0, m0, d0, y1, m1, d1) { const D = dados(c); let s = 0; for (let i = idx(y0, m0, d0); i <= idx(y1, m1, d1); i++) s += D.pr[i] / 10; return s; }
+function chuvaDezFev(c, y) { return chuvaPeriodo(c, y - 1, 12, 1, y, 2, new Date(Date.UTC(y, 2, 0)).getUTCDate()); }
+function mediana(a) { const s = [...a].sort((x, y) => x - y), n = s.length; return n % 2 ? s[(n - 1) / 2] : (s[n / 2 - 1] + s[n / 2]) / 2; }
+function chuvaMensal(c, y) { const out = []; for (let m = 1; m <= 12; m++) out.push(chuvaPeriodo(c, y, m, 1, y, m, new Date(Date.UTC(y, m, 0)).getUTCDate())); return out; }
+const cacheClima = new Map();
+function clima(c) {
+  if (cacheClima.has(c.id)) return cacheClima.get(c.id);
+  const df = []; for (let y = ANO0 + 1; y <= ANO1; y++) df.push({ y, v: chuvaDezFev(c, y) });
+  const med = mediana(df.map((x) => x.v));
+  const meses = []; const anos = []; for (let y = ANO0; y <= ANO1; y++) { const cm = chuvaMensal(c, y); meses.push(cm); anos.push(cm.reduce((s, v) => s + v, 0)); }
+  const medMes = [...Array(12)].map((_, m) => mediana(meses.map((a) => a[m])));
+  const fournier = [...Array(12)].map((_, m) => meses.reduce((s, a, i) => s + a[m] ** 2 / anos[i], 0) / meses.length);
+  const r = { df, med, medMes, fournier }; cacheClima.set(c.id, r); return r;
+}
+
+// ---------- relevo SRTM ----------
+const CORES_CL = ["#cfe3c4", "#a8cf8d", "#e6cf6a", "#e0913f", "#c4553a", "#7a2a22"];
+let CL = null, imgDeclive = null, imgSombra = null;
+function carregaImg(b64) { return new Promise((ok) => { const im = new Image(); im.onload = () => ok(im); im.src = "data:image/png;base64," + b64; }); }
+async function preparaRelevo() {
+  const [a, b] = await Promise.all([carregaImg(RV.classe.png), carregaImg(RV.sombra.png)]);
+  const cv = document.createElement("canvas"); cv.width = RV.classe.w; cv.height = RV.classe.h; const cx = cv.getContext("2d"); cx.drawImage(a, 0, 0);
+  const id = cx.getImageData(0, 0, cv.width, cv.height); CL = new Uint8Array(cv.width * cv.height);
+  const cor = CORES_CL.map((h) => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)]);
+  for (let i = 0; i < CL.length; i++) { const v = id.data[i * 4]; if (v > 5) { CL[i] = 6; id.data[i * 4 + 3] = 0; continue; } CL[i] = v; const c = cor[v]; id.data[i * 4] = c[0]; id.data[i * 4 + 1] = c[1]; id.data[i * 4 + 2] = c[2]; id.data[i * 4 + 3] = 255; }
+  cx.putImageData(id, 0, 0); imgDeclive = cv.toDataURL("image/png"); imgSombra = b.src;
+}
+function relevoNaArea(poly) {
+  if (!CL) return null; const [w, s, e, n] = RV.bbox, W = RV.classe.w, H = RV.classe.h;
+  const xs = poly.map((p) => p[0]), ys = poly.map((p) => p[1]);
+  if (Math.min(...xs) < w || Math.max(...xs) > e || Math.min(...ys) < s || Math.max(...ys) > n) return null;
+  const c0 = Math.floor((Math.min(...xs) - w) / (e - w) * W), c1 = Math.ceil((Math.max(...xs) - w) / (e - w) * W);
+  const r0 = Math.floor((n - Math.max(...ys)) / (n - s) * H), r1 = Math.ceil((n - Math.min(...ys)) / (n - s) * H);
+  const cont = [0, 0, 0, 0, 0, 0, 0]; let tot = 0;
+  for (let r = r0; r <= r1; r++) for (let c = c0; c <= c1; c++) {
+    const lon = w + (c + 0.5) / W * (e - w), lat = n - (r + 0.5) / H * (n - s);
+    if (d3.polygonContains(poly, [lon, lat])) { const k = CL[r * W + c]; if (k < 6) { cont[k]++; tot++; } }
+  }
+  if (!tot) { const lon = d3.mean(xs), lat = d3.mean(ys); const c = Math.floor((lon - w) / (e - w) * W), r = Math.floor((n - lat) / (n - s) * H); const k = CL[r * W + c]; if (k === undefined || k > 5) return null; cont[k]++; tot = 1; }
+  return { pct: cont.map((v) => 100 * v / tot), px: tot, morro: 100 * (cont[3] + cont[4] + cont[5]) / tot };
+}
+
+// ---------- estado ----------
+let S = { poly: EXEMPLO, exemplo: true, layer: "relevo", ano: 2022, scen: "milho2", data2: 32 };
+function lerPerfil() {
+  return { ativ: $("fAtiv").value, vacas: +$("fVacas").value || 0, cult: [...document.querySelectorAll("#fCult input:checked")].map((i) => i.value),
+    mesV: +$("fMesV").value, data2: +$("fData2").value, gdd: +$("fGdd").value, solo: $("fSolo").value, pri: [...document.querySelectorAll("#fPri input:checked")].map((i) => i.value) };
+}
+function aplicaPerfil(p) {
+  { try { $("fAtiv").value = p.ativ; $("fVacas").value = p.vacas; $("fMesV").value = p.mesV; $("fGdd").value = p.gdd; $("fSolo").value = p.solo; if (p.data2) $("fData2").value = p.data2;
+    document.querySelectorAll("#fCult input").forEach((i) => i.checked = p.cult.includes(i.value)); document.querySelectorAll("#fPri input").forEach((i) => i.checked = p.pri.includes(i.value)); } catch (e) {} }
+}
+function salvar() { if (S.exemplo) return; try { localStorage.setItem(STORE, JSON.stringify({ poly: S.poly, perfil: lerPerfil() })); } catch (e) {} }
+
+// opções de data do 2º milho (dia do ano)
+(function () { const sel = $("fData2"); sel.innerHTML = '<option value="0">não planto</option>'; for (let doy = 1; doy <= 81; doy += 5) { const o = document.createElement("option"); o.value = doy; o.textContent = ddmm(doy); if (doy === 31) o.selected = true; sel.appendChild(o); } })();
+(function () { const sel = $("fAno"); for (let y = ANO1; y >= 1985; y--) { const o = document.createElement("option"); o.value = y; o.textContent = y; if (y === S.ano) o.selected = true; sel.appendChild(o); } })();
+
+try { const st = JSON.parse(localStorage.getItem(STORE) || "null"); if (st && st.poly && st.poly.length >= 3) { S.poly = st.poly; S.exemplo = false; if (st.perfil) aplicaPerfil(st.perfil); } } catch (e) {}
+
+// ---------- análise da fazenda ----------
+function analise() {
+  const P = lerPerfil(), poly = S.poly;
+  const centro = d3.polygonCentroid(poly), c = celulaMaisProxima(centro[0], centro[1]), M = c.motor;
+  let area = d3.geoArea({ type: "Polygon", coordinates: [[...poly, poly[0]].reverse()] }) * 6371008.8 ** 2 / 1e4;
+  if (area > 5e6) area = d3.geoArea({ type: "Polygon", coordinates: [[...poly, poly[0]]] }) * 6371008.8 ** 2 / 1e4;
+  const mun = PK.malha.features.find((f) => d3.geoContains(f, centro));
+  const rel = relevoNaArea(poly);
+  const L = 3, gdd = P.gdd;
+  const curva = curvaDiaria(c, L, gdd);
+  const limite = M.limite_2m.por_ciclo[String(gdd)] || null;
+  let riscoLim = null;
+  if (limite && gdd === 1250) riscoLim = M.limite_2m.risco_no_limite;
+  else if (limite) { const [d, m] = limite.split("/").map(Number); const r = chanceIC(c, m, d, L, gdd); riscoLim = r && { em10: r.v, ic95: r.ic }; }
+  const dt2 = P.data2 ? new Date(Date.UTC(2001, 0, P.data2)) : null;
+  const ch2 = dt2 ? chanceIC(c, dt2.getUTCMonth() + 1, dt2.getUTCDate(), L, gdd) : null;
+  const tarde = chanceIC(c, 2, 11, L, gdd);
+  const jan = M.janela_safra;
+  const linhaV = jan.linhas.find((l) => l.d === "01/" + String(P.mesV).padStart(2, "0"));
+  const ago = jan.linhas.find((l) => l.d === "01/08");
+  const seguro = jan.seguro ? jan.linhas.find((l) => l.d === jan.seguro) : null;
+  const cl = clima(c);
+  const topEros = cl.fournier.map((v, m) => ({ m, v })).sort((a, b) => b.v - a.v).slice(0, 3).map((x) => x.m);
+  return { P, c, M, area, mun: mun ? mun.properties.nome : "fora do Oeste", rel, curva, limite, riscoLim, ch2, tarde, jan, linhaV, ago, seguro,
+    cl, topEros, L, gdd, dt2, seco: M.seco, solo: P.solo };
+}
+
+// Mistura no talhão raso: números do motor (mistura_talhao, CAD 39 mm) e da validação V3 (spec v2, E3)
+const MIS = { s: 7, sobrevive: 67.4, p10: 46.9, ic: [31.1, 60.8], gradeMed: 15.4, gradeFaixa: [-7.4, 76.3], media: 8.0, mediaIc: [5.4, 11.3] };
+// Níveis de evidência da spec v2 (nenhum módulo é N3 hoje)
+const EV = { N2: ["n2", "N2 · com ressalva"], N1: ["n1", "N1 · em teste"], MED: ["med", "medido"], CONF: ["n1", "confirme"] };
+const evChip = (k) => `<span class="ev ${EV[k][0]}">${EV[k][1]}</span>`;
+const celTxt = (A) => `célula ${fmt(A.c.lat, 2)}; ${fmt(A.c.lon, 3)}`;
+
+function riscos(A) {
+  const R = [], P = A.P, M = A.M, lp = M.limite_2m.por_limiar, lc = M.limite_2m.por_ciclo;
+  if (P.cult.includes("milho2")) {
+    const rl = A.riscoLim, sua = A.ch2;
+    R.push({ id: "geada2", t: "Geada no 2º milho", ev: "N2", num: A.limite ? "até " + dataExt(A.limite) : "sem data segura",
+      dado: A.limite
+        ? `Plante até <b>${dataExt(A.limite)}</b>. Nesse dia, a geada chegou antes do corte da silagem em ${em10txt(rl && rl.em10)}${faixaTxt(rl && rl.ic95)}.` +
+          (sua ? ` Na sua data (${ddmm(P.data2)}): ${em10txt(sua.v)}${faixaTxt(sua.ic)}.` : "") +
+          ` Em 11 de fevereiro: ${em10txt(A.tarde && A.tarde.v)}${faixaTxt(A.tarde && A.tarde.ic)}.`
+        : "Aqui, com este ciclo, o 2º milho quase nunca chega ao corte da silagem antes da geada.",
+      fazer: [A.limite ? `Plantar até ${dataExt(A.limite)}.` : "Ir de aveia ou azevém no inverno.", "Se a colheita do verão atrasar, trocar por aveia ou azevém.", "Semente de ciclo longo (que demora mais): plantar antes."],
+      limite: `A data-limite muda com o limiar de geada (${lp["4"] || "–"} a ${lp["2"] || "–"}) e com o ciclo da semente (${lc["1400"] || "–"} a ${lc["1100"] || "–"}), e muda de um município para outro. É a chance de geada, não de perder a silagem. A falta de água do 2º milho não foi calculada.`,
+      rastro: `NASA POWER T2M_MIN e T2M_MAX, ${ANO0}–${ANO1}, ${celTxt(A)}. Geada = mínima ≤ 3 °C entre o plantio e ${A.gdd} °C·dia (validação V2; motor geada_limite_2a_safra).` });
+  }
+  if (P.cult.includes("milhoV") && A.linhaV && A.ago) {
+    const sg = A.seguro;
+    R.push({ id: "geadaV", t: "Geada no milho de verão", ev: "N2", num: em10curto(A.linhaV.em10),
+      dado: `Aqui, não plante em agosto. Plantando em 1º de agosto, a geada pegou a lavoura nova em ${em10txt(A.ago.em10)}${faixaTxt(A.ago.ic95)}.` +
+        (sg ? ` A partir de ${dataExt(sg.d)}, ${em10txt(sg.em10)}.` : "") +
+        ` Na sua data (1º de ${MESES_EXT[P.mesV - 1]}): ${em10txt(A.linhaV.em10)}${faixaTxt(A.linhaV.ic95)}. Do fim de setembro a dezembro, para o clima, a data quase não muda o risco.`,
+      fazer: P.mesV === 8 ? ["Esperar setembro para plantar.", "Do fim de setembro a dezembro, escolher a data pela mão de obra e pelo pasto."] : ["Manter a data: fora de agosto, a geada quase não muda com a data."],
+      limite: "A forma bate com o ZARC (40% de risco em agosto); a força não: o dado da NASA mostra mais geada que o ZARC. O limiar de 2 °C vem do ZARC e não foi calibrado.",
+      rastro: `NASA POWER T2M_MIN, plantios de ${A.jan.periodo}, ${celTxt(A)}. Geada = algum dia com mínima < 2 °C nos primeiros ${A.jan.dias} dias da lavoura (validação V4; motor geada_janela_safra).` });
+  }
+  if (P.cult.includes("milhoV") || P.ativ !== "graos") {
+    const al = A.seco.alertas.map((a) => a.ano), n = Object.keys(A.seco.serie).length;
+    R.push({ id: "seco", t: "Aviso de ano seco no milho", ev: "N2", num: al.length + " em " + n + " safras",
+      dado: `O aviso dispara quando a água para o milho, de 20 de setembro a 10 de janeiro, fica entre os 10% piores dos anos anteriores aqui. Ele teria disparado nas safras de <b>${al.join(", ") || "nenhum ano"}</b>. Não é certeza, e o aviso não pega todos os anos ruins.`,
+      fazer: ["Quando o aviso disparar: conferir o estoque de silagem e falar com o técnico.", P.solo === "raso" ? "No talhão raso, metade da silagem em sorgo (veja “E se…?”)." : "Confirmar o solo dos talhões de morro: se for raso, o sorgo pode ajudar.", "Manter pastagem perene para os meses críticos."],
+      limite: "Silêncio não quer dizer ano seguro: nos testes, o aviso deixou passar cerca de metade dos anos ruins. Só na auditoria (usa o IBGE PAM, não vai ao agricultor): 13 de 29 avisos caíram em ano de quebra (45%), contra 16% num ano qualquer.",
+      rastro: `NASA POWER (chuva, temperatura, umidade, vento, radiação) → evapotranspiração FAO-56 → balanço de água do milho, ${celTxt(A)}. Percentil só com os anos anteriores, desde 1990 (validação V1; motor ano_extremo_seco).` });
+  }
+  if (P.solo === "raso") R.push({ id: "mistura", t: "Talhão raso: sorgo na silagem", ev: "N2", num: MIS.s + " em 10 cenários",
+    dado: `Você disse que o talhão é raso. Plantar metade da silagem com sorgo ajudou o ano ruim (o pior de cada 10) em ${MIS.s} de cada 10 cenários testados. A conta não é firme. Em ano bom, a mistura pode render um pouco menos.`,
+    fazer: ["Testar numa faixa do talhão antes de mudar tudo.", "Fale com o técnico antes de decidir."],
+    limite: `Só na auditoria: pior ano em 10 com ${fmt(MIS.p10)}% a mais (entre ${fmt(MIS.ic[0])}% e ${fmt(MIS.ic[1])}%), ano normal com ${fmt(MIS.media)}% a mais (entre ${fmt(MIS.mediaIc[0])}% e ${fmt(MIS.mediaIc[1])}%). O ganho some se o sorgo sofrer com a falta de água 1,5 vez mais do que a FAO supõe. Não há dado de produtividade de sorgo na região.`,
+    rastro: "Balanço de água com o NASA POWER, solo raso de ~39 mm (água por textura do GAEZ), parâmetros FAO e Embrapa (R = 0,88). Validação V3; motor mistura_talhao." });
+  else if (P.solo === "medio") R.push({ id: "mistura", t: "Sorgo na silagem", ev: "N1", num: "sem número",
+    dado: "Neste solo médio, a conta do sorgo ainda está em teste. Por enquanto não temos um número confiável para o seu lugar.",
+    fazer: ["Fale com o técnico antes de decidir."], limite: "Solo de 55 a 90 mm de água: a mistura é N1 na spec v2.", rastro: "Validação V3; motor mistura_talhao (desligado fora do raso)." });
+  else if (P.solo === "auto" && A.rel && A.rel.morro >= 15) R.push({ id: "solo", t: "Confirme o solo dos morros", ev: "CONF", num: fmt(A.rel.morro, 0) + "% de morro",
+    dado: `Pelo relevo do satélite, ${fmt(A.rel.morro, 0)}% da área tem declive acima de 20%, onde o solo costuma ser raso. O satélite não mede a profundidade do solo. Como é a terra lá? Marque em “Solo que você vê”.`,
+    fazer: ["Andar no talhão e ver se há pedra ou rocha perto da superfície.", "Se for raso, marcar “raso ou com pedra” para ver a conta do sorgo."],
+    limite: "O SRTM só pede para confirmar: ele erra o solo raso de topo de morro.", rastro: "SRTM 1″ (NASA/USGS) reamostrado a ~90 m; classes de relevo da Embrapa." });
+  const semCobertura = !P.cult.includes("aveia");
+  R.push({ id: "erosao", t: "Chuva que arrasta solo", ev: "MED", num: A.topEros.map((m) => MESES[m]).join(", "),
+    dado: `Os meses de chuva mais erosiva aqui são ${A.topEros.map((m) => MESES_EXT[m]).join(", ")}. ${semCobertura ? "Sem planta no inverno, o solo chega descoberto a esses meses." : "A aveia ou o azevém no inverno cobrem o solo."}${A.rel ? " " + fmt(A.rel.morro, 0) + "% da área é morro." : ""}`,
+    fazer: ["Semear aveia ou azevém logo depois da colheita.", "Plantar direto sobre a palha.", "Terraço ou cordão em nível nos talhões com mais de 20% de declive."],
+    limite: "Quanto solo a cobertura salva, não medimos. A erosividade mensal do POWER bateu com o pluviômetro da ANA (correlação 0,85), mas o teste foi feito em Ituporanga.",
+    rastro: "NASA POWER PRECTOTCORR; índice de Fournier = chuva do mês² ÷ chuva do ano, média dos anos (validação A3-1)." });
+  return R;
+}
+
+function desenhaRiscos(A) {
+  const R = riscos(A); A.R = R;
+  $("celTag").textContent = "POWER " + fmt(A.c.lat, 2) + "; " + fmt(A.c.lon, 3);
+  $("risks").innerHTML = R.map((r, i) => `<details class="risk" ${i < 2 ? "open" : ""}><summary>${evChip(r.ev)}<h3>${r.t}</h3><span class="num mono">${r.num}</span></summary>
+    <div class="rbody"><p><b>O dado da NASA diz:</b> ${r.dado}</p><div><b>O que fazer</b><ul>${r.fazer.map((f) => "<li>" + f + "</li>").join("")}</ul></div>
+    <div class="conf"><b>O que não sabemos</b><span>${r.limite}</span></div><p class="rastro">${r.rastro}</p></div></details>`).join("") || '<p class="small">Marque o que você planta para ver os riscos.</p>';
+}
+
+const NAO_COMPARA = '<p class="small" style="margin:0">Os números das opções medem coisas diferentes (chance de geada, cenários que ajudam) e não formam um ranking.</p>';
+function desenhaCenario(A) {
+  const P = A.P, el = $("scen");
+  document.querySelectorAll("#scenBtns button").forEach((b) => b.classList.toggle("on", b.dataset.s === S.scen));
+  if (S.scen === "milho2") {
+    const doy = S.data2, dt = new Date(Date.UTC(2001, 0, doy)), r = chanceIC(A.c, dt.getUTCMonth() + 1, dt.getUTCDate(), A.L, A.gdd), rl = A.riscoLim;
+    const smo = A.mun === "São Miguel do Oeste";
+    el.innerHTML = `<div class="ctrl"><label for="r2">Plantar o 2º milho em <b class="mono" id="r2o">${ddmm(doy)}</b></label><input type="range" id="r2" min="1" max="85" step="1" value="${doy}"></div>
+      <div class="bigline">${evChip("N2")}<b class="mono" style="color:${r && r.v >= 3 ? "var(--alto)" : r && r.v >= 1 ? "var(--medio)" : "var(--baixo)"}">${r ? em10curto(r.v) : "–"}</b><span>com geada antes do corte da silagem${r ? faixaTxt(r.ic) : ""}. Data-limite aqui: <b>${A.limite ? dataExt(A.limite) : "sem data segura"}</b>.</span></div>
+      <div class="tradewrap"><table class="trade"><thead><tr><th>Caminho</th><th>Ganha</th><th>Arrisca</th><th>Número</th></tr></thead><tbody>
+      <tr><td><b>O de sempre</b><br><span class="small">milho de verão e pasto de inverno</span></td><td>Rotina conhecida.</td><td>—</td><td class="small">sem número (ponto de partida)</td></tr>
+      <tr><td><b>2º milho em ${ddmm(doy)}</b></td><td>Mais silagem no inverno.</td><td>Geada antes do corte; semente e adubo.</td><td class="mono">${r ? em10curto(r.v) + faixaTxt(r.ic) : "–"}</td></tr>
+      <tr><td><b>2º milho até ${A.limite ? dataExt(A.limite) : "–"}</b></td><td>Silagem com geada rara.</td><td>Depende de colher o verão a tempo.</td><td class="mono">${rl ? em10curto(rl.em10) + faixaTxt(rl.ic95) : "–"}</td></tr>
+      <tr><td><b>Aveia ou azevém</b> ${evChip("N1")}</td><td>Pasto no inverno, solo coberto.</td><td>Menos volume que o milho.</td><td class="small">não calculada</td></tr>
+      <tr><td><b>Sorgo depois do milho</b> ${evChip("N1")}</td><td>—</td><td>—</td><td class="small">em teste${smo ? "; o ZARC indica até 1º de março aqui" : ""}</td></tr></tbody></table></div>
+      <p class="small" style="margin:0">Chance de geada antes do corte (mínima ≤ 3 °C no NASA POWER, ${A.gdd} °C·dia, ${ANO0}–${ANO1}), não de perder a silagem. A falta de água do 2º milho não foi calculada.</p>${NAO_COMPARA}`;
+    $("r2").addEventListener("input", (e) => { S.data2 = +e.target.value; desenhaCenario(A); $("r2").focus(); });
+  } else if (S.scen === "sorgo") {
+    if (P.solo === "raso") el.innerHTML = `<div class="bigline">${evChip("N2")}<b class="mono" style="color:var(--baixo)">${MIS.s} em 10</b><span>cenários testados em que metade da silagem em sorgo ajudou o ano ruim, no talhão que você disse ser raso.</span></div>
+      <div class="tradewrap"><table class="trade"><thead><tr><th>Caminho</th><th>Ganha</th><th>Arrisca</th></tr></thead><tbody>
+      <tr><td><b>Só milho</b></td><td>Mais energia por tonelada.</td><td>No ano seco, quebra maior no solo raso.</td></tr>
+      <tr><td><b>Metade sorgo</b></td><td>Segura a comida no ano ruim.</td><td>Silagem de sorgo vale cerca de 85% a 90% da de milho (Embrapa). Em ano bom, pode render um pouco menos.</td></tr></tbody></table></div>
+      <div class="conf"><b>O que não sabemos</b><span>A conta não é firme: o ganho some se o sorgo sofrer mais com a falta de água do que a FAO supõe, e não há dado de produtividade de sorgo na região. Auditoria: pior ano em 10 com ${fmt(MIS.p10)}% a mais (entre ${fmt(MIS.ic[0])}% e ${fmt(MIS.ic[1])}%).</span></div>`;
+    else if (P.solo === "medio") el.innerHTML = `<p style="margin:0">${evChip("N1")} No solo médio, a conta do sorgo ainda está em teste. Por enquanto não temos um número confiável para o seu lugar.</p>`;
+    else if (P.solo === "fundo") el.innerHTML = `<p style="margin:0">No solo fundo, o milho rende mais e o sorgo não ajuda o ano ruim. O módulo fica desligado.</p>`;
+    else el.innerHTML = `<p style="margin:0">${evChip("CONF")} Para calcular, preciso saber como é a terra do talhão. Marque em “Solo que você vê”: raso ou com pedra, médio ou fundo.${A.rel ? " Pelo relevo, " + fmt(A.rel.morro, 0) + "% da área parece morro." : ""}</p>`;
+  } else if (S.scen === "dataV") {
+    const ls = A.jan.linhas, set = ls.filter((l) => ["21/09", "01/10", "11/10", "21/10", "01/11", "11/11", "21/11", "01/12", "11/12", "21/12"].includes(l.d));
+    const dif = set.length ? Math.max(...set.map((l) => l.em10)) - Math.min(...set.map((l) => l.em10)) : null;
+    el.innerHTML = `<div class="tradewrap"><table class="trade"><thead><tr><th>Plantar em</th><th>Geada na lavoura nova ${evChip("N2")}</th></tr></thead><tbody>${ls.map((l) => `<tr><td><b>${dataExt(l.d)}</b>${l.d === "01/" + String(P.mesV).padStart(2, "0") ? " (hoje)" : ""}</td><td class="mono">${em10curto(l.em10)}${faixaTxt(l.ic95)}</td></tr>`).join("")}</tbody></table></div>
+      <p style="margin:0">${dif !== null && dif < 1 ? "Entre o fim de setembro e dezembro, para o clima, a data de plantio quase não muda o risco: a diferença é menor que 1 ano em 10. Escolha pela mão de obra e pela máquina." : "Fora de agosto, a geada cai rápido."}</p>
+      <p class="small" style="margin:0">Geada = algum dia com mínima < 2 °C nos primeiros ${A.jan.dias} dias da lavoura (NASA POWER, plantios de ${A.jan.periodo}). A forma bate com o ZARC; a força é maior que a do ZARC.</p>`;
+  } else {
+    const f = A.cl.fournier, mx = Math.max(...f);
+    el.innerHTML = `<p style="margin:0">${evChip("MED")} Quanto a chuva de cada mês pode arrastar solo aqui (índice de Fournier com a chuva do NASA POWER, média ${ANO0}–${ANO1}):</p>
+      <div>${f.map((v, m) => `<div style="display:grid;grid-template-columns:36px minmax(0,1fr) 40px;gap:8px;align-items:center;font-size:12.5px"><span class="mono">${MESES[m]}</span><span style="height:10px;border-radius:4px;background:${A.topEros.includes(m) ? "var(--alto)" : "var(--line)"};width:${100 * v / mx}%"></span><span class="mono">${Math.round(v)}</span></div>`).join("")}</div>
+      <div class="tradewrap"><table class="trade"><thead><tr><th>Caminho</th><th>Ganha</th><th>Arrisca</th></tr></thead><tbody>
+      <tr><td><b>Solo nu no inverno</b></td><td>Não gasta com semente.</td><td>Chega descoberto a ${A.topEros.map((m) => MESES_EXT[m]).join(", ")}${A.rel ? ", com " + fmt(A.rel.morro, 0) + "% da área em morro" : ""}.</td></tr>
+      <tr><td><b>Aveia ou azevém</b> ${evChip("N1")}</td><td>Solo coberto, pasto no inverno, palha para o plantio direto.</td><td>Custo de semente.</td></tr></tbody></table></div>
+      <div class="conf"><b>O que não sabemos</b><span>Quanto solo a cobertura salva, não medimos. A erosividade do POWER bateu com o pluviômetro da ANA (testado em Ituporanga).</span></div>`;
+  }
+}
+
+// Mensagem do agricultor no formato do template T01 da spec v2 (até 70 palavras, sempre anos ruins)
+function mensagem(A) {
+  const P = A.P, caminhos = [];
+  caminhos.push("O de sempre, milho de verão e pasto de inverno: sem número");
+  if (A.limite) { const rl = A.riscoLim; caminhos.push(`Segundo milho: plantando até ${dataExt(A.limite)}, a geada chega antes do corte em ${em10txt(rl && rl.em10)}${faixaTxt(rl && rl.ic95)}; não calculamos a falta de água`); }
+  if (P.solo === "raso") caminhos.push(`Metade da silagem em sorgo no talhão raso: ajudou em ${MIS.s} de cada 10 cenários testados`);
+  const qt = ["", "Um", "Dois", "Três", "Quatro"][caminhos.length + 1] || String(caminhos.length + 1);
+  const palavras = (t) => t.split(/\s+/).length;
+  let txt = `${qt} caminhos para a sua fazenda em ${A.mun}. ${caminhos.join(". ")}. Em teste: sorgo depois do milho.`;
+  if (palavras(txt) > 70) {  // template T01: até 70 palavras; encurta nomes antes de cortar conteúdo
+    const curtos = caminhos.map((c) => c.replace("O de sempre, milho de verão e pasto de inverno: sem número", "O de sempre: sem número").replace("Metade da silagem em sorgo no talhão raso", "Metade em sorgo no talhão raso"));
+    txt = `${qt} caminhos para a sua fazenda. ${curtos.join(". ")}. Em teste: sorgo depois do milho.`;
+  }
+  const extra = [" Dados de satélite, área de 55 km.", " Fale com o técnico antes de decidir."];
+  for (const e of extra) if ((txt + e).split(/\s+/).length <= 70) txt += e;
+  if (P.solo === "auto" && A.rel && A.rel.morro >= 15) { const p = " Como é a terra dos morros: rasa, média ou funda?"; if ((txt + p).split(/\s+/).length <= 70) txt += p; }
+  return txt;
+}
+
+// ---------- gráficos dos dados NASA ----------
+function svgEl(w, h, label) { return d3.create("svg").attr("viewBox", `0 0 ${w} ${h}`).attr("class", "chart").attr("role", "img").attr("aria-label", label); }
+function eixoTxt(g) { g.selectAll("text").attr("fill", "var(--ink-2)").attr("font-family", "var(--mono)").attr("font-size", 10); g.selectAll("line,path").attr("stroke", "var(--line)"); }
+function grafA(A) {
+  const D = dados(A.c), y = S.ano, i0 = idx(y, 1, 1), i1 = idx(y, 9, 30), W = 420, H = 220, m = { l: 34, r: 8, t: 10, b: 24 };
+  const pts = []; for (let i = i0; i <= i1; i++) pts.push({ i: i - i0, v: D.tn[i] / 10 });
+  const x = d3.scaleLinear([0, pts.length - 1], [m.l, W - m.r]), yS = d3.scaleLinear([d3.min(pts, (p) => p.v) - 1, d3.max(pts, (p) => p.v) + 1], [H - m.b, m.t]);
+  const s = svgEl(W, H, "Temperatura mínima diária de " + y);
+  if (A.P.data2) { const dt = new Date(Date.UTC(2001, 0, A.P.data2)); const r = safra(A.c, y, dt.getUTCMonth() + 1, dt.getUTCDate(), A.L, A.gdd); const a = idx(y, dt.getUTCMonth() + 1, dt.getUTCDate()) - i0;
+    if (r) s.append("rect").attr("x", x(a)).attr("y", m.t).attr("width", Math.max(0, x(Math.min(a + r.dias, pts.length - 1)) - x(a))).attr("height", H - m.b - m.t).attr("fill", "var(--milho-soft)");
+    s.append("text").attr("x", x(a) + 4).attr("y", m.t + 12).attr("font-size", 10).attr("fill", "var(--ink-2)").text("2º milho até a silagem"); }
+  s.append("g").attr("transform", `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickValues([0, 31, 59, 90, 120, 151, 181, 212, 243]).tickFormat((d, k) => MESES[k])).call(eixoTxt);
+  s.append("g").attr("transform", `translate(${m.l},0)`).call(d3.axisLeft(yS).ticks(5).tickFormat((d) => d + "°")).call(eixoTxt);
+  s.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", yS(3)).attr("y2", yS(3)).attr("stroke", "var(--geada)").attr("stroke-dasharray", "4 3");
+  s.append("path").datum(pts).attr("fill", "none").attr("stroke", "var(--ink-2)").attr("stroke-width", 1.2).attr("d", d3.line().x((p) => x(p.i)).y((p) => yS(p.v)));
+  const g = pts.filter((p) => p.v <= 3); s.selectAll("circle.g").data(g).join("circle").attr("cx", (p) => x(p.i)).attr("cy", (p) => yS(p.v)).attr("r", 3).attr("fill", "var(--geada)");
+  $("capA").textContent = `${y}: ${g.length} dias com mínima ≤ 3 °C (linha azul tracejada). Série T2M_MIN do NASA POWER.`;
+  $("chA").replaceChildren(s.node());
+}
+function grafB(A) {
+  const c = A.curva, W = 420, H = 220, m = { l: 30, r: 10, t: 12, b: 24 };
+  const x = d3.scaleLinear([1, 90], [m.l, W - m.r]), y = d3.scaleLinear([0, 10], [H - m.b, m.t]); const s = svgEl(W, H, "Chance de geada por data de plantio");
+  s.append("g").attr("transform", `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickValues([1, 11, 21, 32, 42, 52, 60, 70, 80]).tickFormat((d) => ddmm(d))).call(eixoTxt);
+  s.append("g").attr("transform", `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5)).call(eixoTxt);
+  s.append("path").datum(c.raw).attr("fill", "none").attr("stroke", "var(--geada-soft)").attr("stroke-width", 1).attr("d", d3.line().x((v, i) => x(i + 1)).y((v) => y(v)));
+  s.append("path").datum(c.sm).attr("fill", "none").attr("stroke", "var(--geada)").attr("stroke-width", 2.5).attr("d", d3.line().x((v, i) => x(i + 1)).y((v) => y(v)));
+  s.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", y(2)).attr("y2", y(2)).attr("stroke", "var(--alto)").attr("stroke-dasharray", "4 3");
+  const lp = A.M.limite_2m.por_limiar; if (lp["4"] && lp["2"]) s.insert("rect", ":first-child").attr("x", x(ddmmDoy(lp["4"]))).attr("y", m.t).attr("width", Math.max(1, x(ddmmDoy(lp["2"])) - x(ddmmDoy(lp["4"])))).attr("height", H - m.b - m.t).attr("fill", "var(--alto-soft)");
+  if (A.limite) c.limite = ddmmDoy(A.limite);
+  if (c.limite) { s.append("line").attr("x1", x(c.limite)).attr("x2", x(c.limite)).attr("y1", m.t).attr("y2", H - m.b).attr("stroke", "var(--alto)"); s.append("text").attr("x", x(c.limite) - 4).attr("y", m.t + 10).attr("text-anchor", "end").attr("font-size", 10.5).attr("fill", "var(--alto)").text("limite " + ddmm(c.limite)); }
+  if (A.P.data2) s.append("circle").attr("cx", x(A.P.data2)).attr("cy", y(c.sm[A.P.data2 - 1])).attr("r", 5).attr("fill", "var(--milho)").attr("stroke", "var(--surface)");
+  $("capB").textContent = `Anos em 10 com geada antes do corte da silagem (${A.gdd} °C·dia), ${ANO0}–${ANO1}. Faixa vermelha: data-limite com limiar de 4 a 2 °C. Ponto amarelo: a sua data.`;
+  $("chB").replaceChildren(s.node());
+}
+function grafC(A) {
+  const cm = chuvaMensal(A.c, S.ano), med = A.cl.medMes, W = 420, H = 220, m = { l: 36, r: 8, t: 10, b: 24 };
+  const x = d3.scaleBand(d3.range(12), [m.l, W - m.r]).padding(0.25), y = d3.scaleLinear([0, Math.max(d3.max(cm), d3.max(med)) * 1.1], [H - m.b, m.t]);
+  const s = svgEl(W, H, "Chuva mensal do ano contra a mediana");
+  s.append("g").attr("transform", `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickFormat((d) => MESES[d])).call(eixoTxt);
+  s.append("g").attr("transform", `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5)).call(eixoTxt);
+  s.selectAll("rect").data(cm).join("rect").attr("x", (d, i) => x(i)).attr("y", (d) => y(d)).attr("width", x.bandwidth()).attr("height", (d) => y(0) - y(d)).attr("rx", 3).attr("fill", (d, i) => d < 0.6 * med[i] ? "var(--alto)" : "var(--pasto)");
+  s.append("path").datum(med).attr("fill", "none").attr("stroke", "var(--ink)").attr("stroke-width", 1.5).attr("stroke-dasharray", "3 3").attr("d", d3.line().x((d, i) => x(i) + x.bandwidth() / 2).y((d) => y(d)));
+  const df = chuvaDezFev(A.c, S.ano);
+  $("capC").textContent = `${S.ano}: dez–fev somou ${Math.round(df)} mm, ${Math.round(100 * df / A.cl.med)}% do normal. Barras vermelhas: mês abaixo de 60% do normal. Tracejado: mediana ${ANO0}–${ANO1}.`;
+  $("chC").replaceChildren(s.node());
+}
+
+// ---------- mapa ----------
+const svg = d3.select("#mapa"); const gZoom = svg.append("g");
+const proj = d3.geoMercator(); const path = d3.geoPath(proj);
+const gBase = gZoom.append("g"), gImg = gZoom.append("g"), gCel = gZoom.append("g"), gMun = gZoom.append("g"), gLab = gZoom.append("g"), gFarm = gZoom.append("g"), gDraw = gZoom.append("g");
+let W0 = 800, H0 = 600, K = 1;
+function tamanho() { const r = $("mapa").getBoundingClientRect(); W0 = Math.max(300, r.width); H0 = Math.max(300, r.height); svg.attr("viewBox", `0 0 ${W0} ${H0}`); proj.fitExtent([[10, 10], [W0 - 10, H0 - 10]], PK.malha); }
+const zoom = d3.zoom().scaleExtent([1, 400]).clickDistance(5).on("zoom", (e) => { gZoom.attr("transform", e.transform); K = e.transform.k; ajustaEscala(); });
+svg.call(zoom).on("dblclick.zoom", null);
+function celPoly(c) { const a = 0.25, b = 0.3125; return { type: "Polygon", coordinates: [[[c.lon - b, c.lat - a], [c.lon - b, c.lat + a], [c.lon + b, c.lat + a], [c.lon + b, c.lat - a], [c.lon - b, c.lat - a]]] }; }
+function ajustaEscala() {
+  gMun.selectAll("path").attr("stroke-width", 0.8 / K); gCel.selectAll("path").attr("stroke-width", 1 / K);
+  gLab.selectAll("text").attr("font-size", 11 / K).attr("display", (d) => K > 3.5 || ["São Miguel do Oeste", "Chapecó"].includes(d.properties.nome) ? null : "none");
+  gCel.selectAll("text").attr("font-size", 12 / K).attr("stroke-width", 2.6 / K);
+  gFarm.selectAll("path").attr("stroke-width", 2.5 / K); gFarm.selectAll("circle.pin").attr("r", 6 / K).attr("stroke-width", 1.5 / K).attr("display", K > 25 ? "none" : null); gDraw.selectAll("circle").attr("r", 4 / K); gDraw.selectAll("path").attr("stroke-width", 2 / K);
+}
+function desenhaMapaBase() {
+  gBase.selectAll("*").remove(); gImg.selectAll("*").remove(); gMun.selectAll("*").remove(); gLab.selectAll("*").remove();
+  gBase.append("path").datum(PK.malha).attr("d", path).attr("fill", "var(--surface)").attr("stroke", "none");
+  gMun.selectAll("path").data(PK.malha.features).join("path").attr("d", path).attr("fill", "transparent").attr("stroke", "var(--ink)").attr("stroke-opacity", 0.35)
+    .on("mousemove", (e, d) => mostraTip(e, d)).on("mouseleave", () => $("tip").hidden = true);
+  gLab.selectAll("text").data(PK.malha.features).join("text").attr("x", (d) => path.centroid(d)[0]).attr("y", (d) => path.centroid(d)[1]).attr("text-anchor", "middle")
+    .attr("fill", "var(--ink)").attr("pointer-events", "none").attr("font-family", "var(--body)").attr("paint-order", "stroke").attr("stroke", "var(--surface)").attr("stroke-width", 0.3).text((d) => d.properties.nome);
+  desenhaCamada(); desenhaFazenda(); ajustaEscala();
+}
+function imgRelevo(href, op, pix) { const [w, s, e, n] = RV.bbox, p0 = proj([w, n]), p1 = proj([e, s]); gImg.append("image").attr("href", href).attr("x", p0[0]).attr("y", p0[1]).attr("width", p1[0] - p0[0]).attr("height", p1[1] - p0[1]).attr("preserveAspectRatio", "none").attr("opacity", op).style("image-rendering", pix ? "pixelated" : "auto"); }
+let corCel = null;
+function desenhaCamada() {
+  gImg.selectAll("*").remove(); gCel.selectAll("*").remove(); const lg = $("legend"); const A = S.A;
+  if (S.layer === "relevo" && imgSombra) { imgRelevo(imgSombra, 0.55); lg.innerHTML = `Relevo sombreado do SRTM (NASA), ${RV.folhas ? RV.folhas.length + " folhas" : ""} cobrindo longitude ${RV.bbox[0]} a ${RV.bbox[2]} e latitude ${RV.bbox[1]} a ${RV.bbox[3]}. Role para dar zoom; arraste para mover.`; }
+  if (S.layer === "declive" && imgDeclive) { imgRelevo(imgSombra, 0.35); imgRelevo(imgDeclive, 0.65, true); lg.innerHTML = RV.classes.slice(0, 5).map((t, i) => `<span><i style="background:${CORES_CL[i]}"></i>${t}</span>`).join("") + "<span>SRTM, ~90 m</span>"; }
+  if (S.layer === "geada" || S.layer === "chuva") {
+    const vals = CEL.map((c) => { if (S.layer === "geada") { const l = c.motor.limite_2m.por_ciclo[String(A ? A.gdd : 1250)]; return { c, v: l ? ddmmDoy(l) : 90, t: l ? ddmm(ddmmDoy(l)) : "sem data" }; }
+      const cl = clima(c), v = chuvaDezFev(c, S.ano) / cl.med; return { c, v, t: Math.round(100 * v) + "%" }; });
+    const col = S.layer === "geada" ? d3.scaleSequential([50, 15], d3.interpolatePuBu).clamp(true) : d3.scaleDiverging([0.4, 1, 1.6], d3.interpolateBrBG).clamp(true);
+    gCel.selectAll("path").data(vals).join("path").attr("d", (d) => path(celPoly(d.c))).attr("fill", (d) => col(d.v)).attr("fill-opacity", 0.62).attr("stroke", "var(--surface)");
+    gCel.selectAll("text").data(vals).join("text").attr("x", (d) => proj([d.c.lon, d.c.lat])[0]).attr("y", (d) => proj([d.c.lon, d.c.lat])[1]).attr("text-anchor", "middle").attr("dominant-baseline", "middle")
+      .attr("font-family", "var(--mono)").attr("font-weight", 600).attr("fill", "#ffffff").attr("stroke", "#13201a").attr("paint-order", "stroke").attr("pointer-events", "none").text((d) => d.t);
+    lg.innerHTML = S.layer === "geada" ? "Cada quadrado é um ponto da grade do NASA POWER. Número: data-limite do 2º milho (até 2 anos em 10 com geada antes do corte, média de 5 dias; motor da spec v2). Mais escuro: data mais cedo. Evidência N2."
+      : `Chuva de dezembro a fevereiro do verão de <b>${S.ano}</b> em % do normal (1985–2025), por ponto do NASA POWER. Marrom: seco. Verde: chuvoso. Troque o ano em “Dados da NASA neste ponto”.`;
+  }
+  ajustaEscala();
+}
+function desenhaFazenda() {
+  gFarm.selectAll("*").remove(); if (!S.poly || S.poly.length < 3) return;
+  const ring = [...S.poly, S.poly[0]];
+  gFarm.append("path").attr("d", d3.line()(ring.map((p) => proj(p)))).attr("fill", "var(--farm)").attr("fill-opacity", 0.28).attr("stroke", "var(--farm)").attr("stroke-linejoin", "round");
+  const cc = proj(d3.polygonCentroid(S.poly)); gFarm.append("circle").attr("class", "pin").attr("cx", cc[0]).attr("cy", cc[1]).attr("fill", "var(--farm)").attr("stroke", "#13201a");
+  ajustaEscala();
+}
+function mostraTip(e, d) {
+  const t = $("tip"), [mx, my] = d3.pointer(e, $("mapa").parentNode); const lonlat = proj.invert(d3.zoomTransform(svg.node()).invert(d3.pointer(e, svg.node())));
+  const c = celulaMaisProxima(lonlat[0], lonlat[1]); let extra = "";
+  if (S.layer === "geada") { const l = c.motor.limite_2m.por_ciclo[String(S.A ? S.A.gdd : 1250)]; extra = "2º milho até " + (l ? dataExt(l) : "sem data segura"); }
+  if (S.layer === "chuva") extra = "dez–fev " + S.ano + ": " + Math.round(100 * chuvaDezFev(c, S.ano) / clima(c).med) + "% do normal";
+  t.innerHTML = `<b>${d.properties.nome}</b>${extra ? "<br>" + extra : ""}`; t.style.left = Math.min(mx + 12, W0 - 230) + "px"; t.style.top = (my + 12) + "px"; t.hidden = false;
+}
+function vaiPara(poly, k) {
+  const pts = poly.map((p) => proj(p)), x0 = d3.min(pts, (p) => p[0]), x1 = d3.max(pts, (p) => p[0]), y0 = d3.min(pts, (p) => p[1]), y1 = d3.max(pts, (p) => p[1]);
+  const kk = k || Math.min(300, 0.35 * Math.min(W0 / Math.max(1, x1 - x0), H0 / Math.max(1, y1 - y0)));
+  svg.transition().duration(650).call(zoom.transform, d3.zoomIdentity.translate(W0 / 2, H0 / 2).scale(kk).translate(-(x0 + x1) / 2, -(y0 + y1) / 2));
+}
+
+// desenho da fazenda
+let desenhando = false, pontos = [];
+function modoDesenho(on) { desenhando = on; pontos = []; $("mapa").classList.toggle("drawing", on); ["bDone", "bUndo", "bCancel"].forEach((id) => $(id).hidden = !on); $("bDraw").hidden = on; $("hint").hidden = !on; desenhaRascunho(); }
+function desenhaRascunho() {
+  gDraw.selectAll("*").remove(); if (!pontos.length) return; const pp = pontos.map((p) => proj(p));
+  gDraw.append("path").attr("d", d3.line()(pp)).attr("fill", "none").attr("stroke", "var(--farm)").attr("stroke-dasharray", "4 3");
+  gDraw.selectAll("circle").data(pp).join("circle").attr("cx", (p) => p[0]).attr("cy", (p) => p[1]).attr("fill", "var(--farm)").attr("stroke", "var(--surface)"); ajustaEscala();
+}
+function concluir() { if (pontos.length < 3) { $("hint").textContent = "Marque pelo menos 3 cantos."; $("hint").hidden = false; return; } S.poly = pontos.slice(); S.exemplo = false; modoDesenho(false); $("exTag").textContent = "Sua fazenda, salva neste navegador."; salvar(); tudo(); }
+svg.on("click", (e) => { if (!desenhando) return; const t = d3.zoomTransform(svg.node()); const p = proj.invert(t.invert(d3.pointer(e, svg.node()))); pontos.push([+p[0].toFixed(5), +p[1].toFixed(5)]); desenhaRascunho(); });
+svg.on("dblclick", (e) => { if (desenhando) { e.preventDefault(); pontos.pop(); concluir(); } });
+$("bDraw").onclick = () => { modoDesenho(true); if (K < 20) vaiPara(S.poly, 60); };
+$("bDone").onclick = concluir; $("bUndo").onclick = () => { pontos.pop(); desenhaRascunho(); }; $("bCancel").onclick = () => modoDesenho(false);
+$("bFarm").onclick = () => vaiPara(S.poly); $("bRegion").onclick = () => svg.transition().duration(650).call(zoom.transform, d3.zoomIdentity);
+document.querySelectorAll(".layers button").forEach((b) => b.onclick = () => { S.layer = b.dataset.layer; document.querySelectorAll(".layers button").forEach((x) => x.setAttribute("aria-pressed", String(x === b))); desenhaCamada();
+  if ((S.layer === "geada" || S.layer === "chuva") && K > 3) svg.transition().duration(650).call(zoom.transform, d3.zoomIdentity);
+  if ((S.layer === "relevo" || S.layer === "declive") && K < 6) vaiPara(S.poly, 14); });
+
+// ---------- orquestração ----------
+function tudo() {
+  const A = analise(); S.A = A;
+  $("kArea").textContent = fmt(A.area, A.area < 100 ? 1 : 0) + " ha"; $("kMun").textContent = A.mun; $("kMorro").textContent = A.rel ? fmt(A.rel.morro, 0) + "%" : "sem relevo";
+  $("celInfo").textContent = `lat ${fmt(A.c.lat, 2)}, lon ${fmt(A.c.lon, 3)}, altitude da grade ${A.c.elev} m`; $("apiLink").href = A.c.api;
+  desenhaRiscos(A); desenhaCenario(A); grafA(A); grafB(A); grafC(A); desenhaFazenda(); desenhaCamada();
+  $("msg").textContent = mensagem(A);
+  $("exTag").textContent = S.exemplo ? "Exemplo fictício em São Miguel do Oeste. Desenhe a sua no mapa." : "Sua fazenda, salva neste navegador.";
+  ["st1", "st2", "st3", "st4"].forEach((id) => $(id).classList.add("done"));
+}
+$("perfil").addEventListener("change", () => { salvar(); tudo(); });
+$("fAno").addEventListener("change", (e) => { S.ano = +e.target.value; tudo(); });
+document.querySelectorAll("#scenBtns button").forEach((b) => b.onclick = () => { S.scen = b.dataset.s; desenhaCenario(S.A); });
+window.addEventListener("resize", () => { const t = d3.zoomTransform(svg.node()); tamanho(); desenhaMapaBase(); svg.call(zoom.transform, t); });
+
+// ---------- Claude: perguntar, ditar, ouvir ----------
+let sample = null, tts = null, dict = null, ctl = null;
+function fatos(A) {
+  return { local: A.mun + ", SC", area_ha: Math.round(A.area * 10) / 10, perfil: A.P, morro_pct_pelo_relevo: A.rel ? Math.round(A.rel.morro) : null,
+    riscos: (A.R || []).map((r) => ({ risco: r.t, nivel_evidencia: r.ev, numero: r.num, dado: r.dado.replace(/<[^>]+>/g, ""), o_que_fazer: r.fazer, o_que_nao_sabemos: r.limite })),
+    segundo_milho: { data_limite: A.limite, risco_no_limite_em10: A.riscoLim, na_data_do_produtor: A.ch2 && { em10: A.ch2.v, ic95: A.ch2.ic }, em_11_fev: A.tarde && { em10: A.tarde.v, ic95: A.tarde.ic } },
+    milho_verao_geada_por_data: A.jan.linhas, aviso_ano_seco_safras: A.seco.alertas.map((a) => a.ano),
+    sorgo_no_raso: A.P.solo === "raso" ? { cenarios_que_ajudam_em10: MIS.s } : "só calculado se o produtor declarar solo raso",
+    meses_mais_erosivos: A.topEros.map((m) => MESES_EXT[m]),
+    fonte: "NASA POWER diário 1981–2025 (grade ~55 km) e SRTM ~90 m; regras e números do motor da spec v2" };
+}
+$("bAsk").onclick = async () => {
+  const q = $("qText").value.trim(); if (!q) { $("askNote").textContent = "Escreva ou fale uma pergunta primeiro."; return; }
+  if (!sample) { $("askNote").textContent = "A pergunta livre funciona quando esta página é aberta no Claude."; return; }
+  ctl = new AbortController(); $("bStop").hidden = false; $("bAsk").disabled = true; $("ans").textContent = "Pensando…"; $("askNote").textContent = "";
+  const prompt = `Você é um extensionista rural do Oeste de Santa Catarina falando com um agricultor familiar com pouca leitura técnica.
+Responda em português do Brasil, frases curtas, no máximo 150 palavras.
+Regras (spec v2 do projeto):
+- Use SOMENTE os números dos FATOS. Não invente número nem faça conta nova.
+- Comece pela resposta curta à pergunta. Depois: o que ganha e o que arrisca em cada opção; riscos e o que fazer; o que não sabemos.
+- Fale sempre de anos ruins: "em cerca de X de cada 10 anos (entre A e B)". Arredonde para inteiro. Sem porcentagem de modelo.
+- Item com nivel_evidencia N1 ou "em teste": diga só que está em teste, sem número.
+- Não diga: que é validado ou garantido; que o risco de geada é perder a silagem; que a ferramenta prevê o clima da safra; que se não houver aviso o ano é seguro; que o satélite mede o solo; ganho em dinheiro.
+- Praga, doença, adubo ou preço: diga que a ferramenta não calcula isso e indique o técnico.
+
+FATOS (JSON):
+${JSON.stringify(fatos(S.A))}
+
+PERGUNTA DO AGRICULTOR: ${q}`;
+  try { const r = await sample(prompt, { signal: ctl.signal, onText: ({ text }) => { $("ans").textContent = text; } }); $("ans").textContent = r.text; if (tts) $("bSpeakAns").hidden = false; }
+  catch (e) { $("ans").textContent = e.text || ""; if (e.code === "cancelled") $("askNote").textContent = "Pergunta interrompida."; else if (e.code === "not_granted") { $("askNote").textContent = "Sem permissão para consultar o Claude nesta visita."; } else if (e.code === "rate_limited") $("askNote").textContent = "Muitas perguntas seguidas. Espere um pouco."; else $("askNote").textContent = "Não deu para responder agora."; }
+  finally { $("bStop").hidden = true; $("bAsk").disabled = false; }
+};
+$("bStop").onclick = () => ctl && ctl.abort();
+document.querySelectorAll("#sugs button").forEach((b) => b.onclick = () => { $("qText").value = b.dataset.q; });
+function fala(texto) { if (!tts) return; tts.speak(texto, { language: "pt-BR" }).catch(() => {}); }
+$("bSpeakAns").onclick = () => fala($("ans").textContent); $("bSpeakMsg").onclick = () => fala($("msg").textContent);
+let ouvindo = false;
+$("bMic").onclick = () => {
+  if (!dict) return;
+  if (ouvindo) { dict.stop().catch(() => {}); return; }
+  const base = $("qText").value = ""; let fixo = "";
+  dict.start().catch((e) => { $("askNote").textContent = e && e.code === "not_granted" ? "Microfone não liberado. Escreva a pergunta." : "Não deu para ouvir agora."; if (e && e.code === "not_granted") $("bMic").hidden = true; });
+};
+(async () => {
+  if (!window.claude || !window.claude.use) return;
+  try { sample = await window.claude.use("sample"); } catch (e) {}
+  try { tts = await window.claude.use("tts"); if (tts) { $("bSpeakMsg").hidden = false; } } catch (e) {}
+  try { dict = await window.claude.use("dictation"); if (dict) { $("bMic").hidden = false; let fixo = "";
+    dict.onPartial(({ text }) => { $("qText").value = (fixo + " " + text).trim(); });
+    dict.onFinal(({ text }) => { fixo = (fixo + " " + text).trim(); $("qText").value = fixo; });
+    dict.onState(({ state }) => { ouvindo = state === "listening"; $("bMic").textContent = ouvindo ? "Parar de ouvir" : "Falar a pergunta"; if (ouvindo) fixo = ""; }); } } catch (e) {}
+})();
+
+// ---------- início ----------
+tamanho(); desenhaMapaBase(); tudo();
+preparaRelevo().then(() => { tudo(); desenhaCamada(); });
+setTimeout(() => vaiPara(S.poly, 14), 50);
+</script>

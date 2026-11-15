@@ -1,0 +1,598 @@
+{
+ "resultado": {
+  "microrregião 42014": {
+   "base": "microrregião 42014",
+   "n": 36,
+   "ruins": 5,
+   "anos_ruins": [
+    1998,
+    2008,
+    2015,
+    2017,
+    2023
+   ],
+   "exced": {
+    "spearman": -0.18,
+    "p": 0.2913,
+    "limiar_todos": 282.18,
+    "acertos": "3/5",
+    "falsos": 5,
+    "frac_falsos": 0.62,
+    "anos_alerta": [
+     1997,
+     2001,
+     2002,
+     2005,
+     2008,
+     2009,
+     2015,
+     2023
+    ]
+   },
+   "molhamento": {
+    "spearman": -0.26,
+    "p": 0.133,
+    "limiar_todos": 27,
+    "acertos": "3/5",
+    "falsos": 6,
+    "frac_falsos": 0.67,
+    "anos_alerta": [
+     1990,
+     1996,
+     1997,
+     2001,
+     2005,
+     2008,
+     2009,
+     2015,
+     2023
+    ]
+   },
+   "chuva": {
+    "spearman": -0.12,
+    "p": 0.4843,
+    "limiar_todos": 497.97,
+    "acertos": "3/5",
+    "falsos": 7,
+    "frac_falsos": 0.7,
+    "anos_alerta": [
+     1990,
+     1997,
+     2000,
+     2001,
+     2002,
+     2005,
+     2008,
+     2009,
+     2015,
+     2023
+    ]
+   },
+   "semanas_alerta": {
+    "spearman": -0.18,
+    "p": 0.2877,
+    "limiar_todos": 3,
+    "acertos": "4/5",
+    "falsos": 6,
+    "frac_falsos": 0.6,
+    "anos_alerta": [
+     1993,
+     1997,
+     1998,
+     2000,
+     2001,
+     2005,
+     2008,
+     2015,
+     2021,
+     2023
+    ]
+   },
+   "isna": {
+    "spearman": -0.09,
+    "p": 0.5945,
+    "limiar_todos": 0.75,
+    "acertos": "1/5",
+    "falsos": 1,
+    "frac_falsos": 0.5,
+    "anos_alerta": [
+     2017,
+     2020
+    ]
+   },
+   "linha_base_acaso": {
+    "acertos_esperados": 0.7,
+    "frac_falsos": 0.86
+   }
+  },
+  "município 4208500": {
+   "base": "município 4208500",
+   "n": 42,
+   "ruins": 7,
+   "anos_ruins": [
+    1989,
+    2008,
+    2011,
+    2012,
+    2015,
+    2017,
+    2023
+   ],
+   "exced": {
+    "spearman": -0.17,
+    "p": 0.3037,
+    "limiar_todos": 369.21,
+    "acertos": "2/7",
+    "falsos": 1,
+    "frac_falsos": 0.33,
+    "anos_alerta": [
+     1997,
+     2008,
+     2023
+    ]
+   },
+   "molhamento": {
+    "spearman": -0.12,
+    "p": 0.4355,
+    "limiar_todos": 28,
+    "acertos": "2/7",
+    "falsos": 4,
+    "frac_falsos": 0.67,
+    "anos_alerta": [
+     1997,
+     2001,
+     2005,
+     2008,
+     2009,
+     2015
+    ]
+   },
+   "chuva": {
+    "spearman": -0.11,
+    "p": 0.4927,
+    "limiar_todos": 603.74,
+    "acertos": "2/7",
+    "falsos": 1,
+    "frac_falsos": 0.33,
+    "anos_alerta": [
+     1997,
+     2008,
+     2023
+    ]
+   },
+   "semanas_alerta": {
+    "spearman": -0.12,
+    "p": 0.4375,
+    "limiar_todos": 3,
+    "acertos": "1/7",
+    "falsos": 7,
+    "frac_falsos": 0.88,
+    "anos_alerta": [
+     1993,
+     1997,
+     1998,
+     2000,
+     2001,
+     2005,
+     2015,
+     2021
+    ]
+   },
+   "isna": {
+    "spearman": 0.01,
+    "p": 0.9324,
+    "limiar_todos": 0.77,
+    "acertos": "1/7",
+    "falsos": 4,
+    "frac_falsos": 0.8,
+    "anos_alerta": [
+     1988,
+     1991,
+     1992,
+     2017,
+     2020
+    ]
+   },
+   "linha_base_acaso": {
+    "acertos_esperados": 1.2,
+    "frac_falsos": 0.83
+   }
+  },
+  "sensibilidade_janela_micro": {
+   "01/09–30/11": {
+    "exced": {
+     "spearman": -0.18,
+     "acertos": "3/5",
+     "falsos": 5
+    },
+    "molhamento": {
+     "spearman": -0.26,
+     "acertos": "3/5",
+     "falsos": 6
+    },
+    "chuva": {
+     "spearman": -0.12,
+     "acertos": "3/5",
+     "falsos": 7
+    }
+   },
+   "01/10–30/11": {
+    "exced": {
+     "spearman": -0.14,
+     "acertos": "2/5",
+     "falsos": 1
+    },
+    "molhamento": {
+     "spearman": -0.23,
+     "acertos": "3/5",
+     "falsos": 5
+    },
+    "chuva": {
+     "spearman": -0.05,
+     "acertos": "2/5",
+     "falsos": 2
+    }
+   },
+   "01/09–31/10": {
+    "exced": {
+     "spearman": -0.16,
+     "acertos": "3/5",
+     "falsos": 4
+    },
+    "molhamento": {
+     "spearman": -0.19,
+     "acertos": "2/5",
+     "falsos": 9
+    },
+    "chuva": {
+     "spearman": -0.18,
+     "acertos": "3/5",
+     "falsos": 3
+    }
+   },
+   "15/10–15/12": {
+    "exced": {
+     "spearman": -0.22,
+     "acertos": "3/5",
+     "falsos": 4
+    },
+    "molhamento": {
+     "spearman": -0.08,
+     "acertos": "2/5",
+     "falsos": 1
+    },
+    "chuva": {
+     "spearman": -0.19,
+     "acertos": "3/5",
+     "falsos": 6
+    }
+   }
+  }
+ },
+ "tabela": [
+  {
+   "ano": 1990,
+   "exced": 279.009,
+   "molhamento": 27,
+   "chuva": 524.24,
+   "isna": 0.984,
+   "semanas_alerta": 2,
+   "rel": 1.207
+  },
+  {
+   "ano": 1991,
+   "exced": 178.579,
+   "molhamento": 10,
+   "chuva": 385.67,
+   "isna": 0.756,
+   "semanas_alerta": 1,
+   "rel": 1.053
+  },
+  {
+   "ano": 1992,
+   "exced": 65.789,
+   "molhamento": 22,
+   "chuva": 278.9,
+   "isna": 0.76,
+   "semanas_alerta": 1,
+   "rel": 0.927
+  },
+  {
+   "ano": 1993,
+   "exced": 194.573,
+   "molhamento": 22,
+   "chuva": 410.65,
+   "isna": 0.771,
+   "semanas_alerta": 3,
+   "rel": 0.947
+  },
+  {
+   "ano": 1994,
+   "exced": 86.753,
+   "molhamento": 21,
+   "chuva": 314.93,
+   "isna": 0.83,
+   "semanas_alerta": 2,
+   "rel": 1.071
+  },
+  {
+   "ano": 1995,
+   "exced": 156.259,
+   "molhamento": 17,
+   "chuva": 377.31,
+   "isna": 0.83,
+   "semanas_alerta": 2,
+   "rel": 1.055
+  },
+  {
+   "ano": 1996,
+   "exced": 174.7,
+   "molhamento": 27,
+   "chuva": 375.07,
+   "isna": 0.857,
+   "semanas_alerta": 2,
+   "rel": 0.873
+  },
+  {
+   "ano": 1997,
+   "exced": 446.648,
+   "molhamento": 32,
+   "chuva": 669.26,
+   "isna": 0.953,
+   "semanas_alerta": 3,
+   "rel": 0.911
+  },
+  {
+   "ano": 1998,
+   "exced": 282.185,
+   "molhamento": 27,
+   "chuva": 497.97,
+   "isna": 0.878,
+   "semanas_alerta": 3,
+   "rel": 0.844
+  },
+  {
+   "ano": 1999,
+   "exced": 164.352,
+   "molhamento": 16,
+   "chuva": 399.52,
+   "isna": 0.931,
+   "semanas_alerta": 1,
+   "rel": 1.271
+  },
+  {
+   "ano": 2000,
+   "exced": 276.893,
+   "molhamento": 26,
+   "chuva": 520.11,
+   "isna": 0.952,
+   "semanas_alerta": 3,
+   "rel": 1.316
+  },
+  {
+   "ano": 2001,
+   "exced": 314.597,
+   "molhamento": 29,
+   "chuva": 535.81,
+   "isna": 0.817,
+   "semanas_alerta": 3,
+   "rel": 0.925
+  },
+  {
+   "ano": 2002,
+   "exced": 282.623,
+   "molhamento": 26,
+   "chuva": 539.49,
+   "isna": 0.965,
+   "semanas_alerta": 1,
+   "rel": 0.908
+  },
+  {
+   "ano": 2003,
+   "exced": 84.749,
+   "molhamento": 7,
+   "chuva": 334.55,
+   "isna": 0.889,
+   "semanas_alerta": 0,
+   "rel": 0.874
+  },
+  {
+   "ano": 2004,
+   "exced": 217.516,
+   "molhamento": 18,
+   "chuva": 459.28,
+   "isna": 0.887,
+   "semanas_alerta": 2,
+   "rel": 1.291
+  },
+  {
+   "ano": 2005,
+   "exced": 344.258,
+   "molhamento": 28,
+   "chuva": 560.38,
+   "isna": 0.957,
+   "semanas_alerta": 3,
+   "rel": 0.92
+  },
+  {
+   "ano": 2006,
+   "exced": 144.801,
+   "molhamento": 12,
+   "chuva": 376.78,
+   "isna": 0.851,
+   "semanas_alerta": 0,
+   "rel": 1.116
+  },
+  {
+   "ano": 2007,
+   "exced": 196.172,
+   "molhamento": 22,
+   "chuva": 406.44,
+   "isna": 0.872,
+   "semanas_alerta": 2,
+   "rel": 0.98
+  },
+  {
+   "ano": 2008,
+   "exced": 506.68,
+   "molhamento": 32,
+   "chuva": 740.06,
+   "isna": 0.989,
+   "semanas_alerta": 3,
+   "rel": 0.787
+  },
+  {
+   "ano": 2009,
+   "exced": 351.75,
+   "molhamento": 31,
+   "chuva": 584.35,
+   "isna": 0.873,
+   "semanas_alerta": 2,
+   "rel": 1.088
+  },
+  {
+   "ano": 2010,
+   "exced": 116.53,
+   "molhamento": 18,
+   "chuva": 367.16,
+   "isna": 0.854,
+   "semanas_alerta": 2,
+   "rel": 1.352
+  },
+  {
+   "ano": 2011,
+   "exced": 173.542,
+   "molhamento": 17,
+   "chuva": 396.69,
+   "isna": 0.854,
+   "semanas_alerta": 1,
+   "rel": 0.859
+  },
+  {
+   "ano": 2012,
+   "exced": 86.523,
+   "molhamento": 10,
+   "chuva": 314.37,
+   "isna": 0.854,
+   "semanas_alerta": 0,
+   "rel": 0.887
+  },
+  {
+   "ano": 2013,
+   "exced": 189.625,
+   "molhamento": 18,
+   "chuva": 417.64,
+   "isna": 0.852,
+   "semanas_alerta": 0,
+   "rel": 1.305
+  },
+  {
+   "ano": 2014,
+   "exced": 164.218,
+   "molhamento": 15,
+   "chuva": 380.92,
+   "isna": 0.822,
+   "semanas_alerta": 0,
+   "rel": 1.086
+  },
+  {
+   "ano": 2015,
+   "exced": 369.213,
+   "molhamento": 40,
+   "chuva": 603.74,
+   "isna": 0.998,
+   "semanas_alerta": 7,
+   "rel": 0.714
+  },
+  {
+   "ano": 2016,
+   "exced": 151.196,
+   "molhamento": 22,
+   "chuva": 359.82,
+   "isna": 0.774,
+   "semanas_alerta": 2,
+   "rel": 1.219
+  },
+  {
+   "ano": 2017,
+   "exced": 100.553,
+   "molhamento": 19,
+   "chuva": 309.11,
+   "isna": 0.753,
+   "semanas_alerta": 1,
+   "rel": 0.751
+  },
+  {
+   "ano": 2018,
+   "exced": 178.786,
+   "molhamento": 21,
+   "chuva": 409.85,
+   "isna": 0.902,
+   "semanas_alerta": 1,
+   "rel": 1.067
+  },
+  {
+   "ano": 2019,
+   "exced": 128.832,
+   "molhamento": 15,
+   "chuva": 344.36,
+   "isna": 0.85,
+   "semanas_alerta": 0,
+   "rel": 1.0
+  },
+  {
+   "ano": 2020,
+   "exced": 25.512,
+   "molhamento": 5,
+   "chuva": 255.08,
+   "isna": 0.747,
+   "semanas_alerta": 0,
+   "rel": 0.858
+  },
+  {
+   "ano": 2021,
+   "exced": 203.514,
+   "molhamento": 22,
+   "chuva": 429.25,
+   "isna": 0.935,
+   "semanas_alerta": 3,
+   "rel": 1.026
+  },
+  {
+   "ano": 2022,
+   "exced": 252.839,
+   "molhamento": 20,
+   "chuva": 472.0,
+   "isna": 0.771,
+   "semanas_alerta": 1,
+   "rel": 1.015
+  },
+  {
+   "ano": 2023,
+   "exced": 660.979,
+   "molhamento": 28,
+   "chuva": 886.04,
+   "isna": 0.96,
+   "semanas_alerta": 3,
+   "rel": 0.693
+  },
+  {
+   "ano": 2024,
+   "exced": 130.973,
+   "molhamento": 15,
+   "chuva": 354.3,
+   "isna": 0.849,
+   "semanas_alerta": 2,
+   "rel": 0.98
+  },
+  {
+   "ano": 2025,
+   "exced": 71.517,
+   "molhamento": 11,
+   "chuva": 275.79,
+   "isna": 0.873,
+   "semanas_alerta": 1,
+   "rel": 1.13
+  }
+ ]
+}

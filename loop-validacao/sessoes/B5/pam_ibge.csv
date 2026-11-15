@@ -1,0 +1,211 @@
+municipio,produto,ano,rend_kg_ha,area_colhida_ha,area_plantada_ha
+Ituporanga (SC),Cebola,1990,15000,6300,6500
+Ituporanga (SC),Cebola,1991,13500,6800,6800
+Ituporanga (SC),Cebola,1992,12000,7820,7820
+Ituporanga (SC),Cebola,1993,12000,6300,6300
+Ituporanga (SC),Cebola,1994,12000,7800,7800
+Ituporanga (SC),Cebola,1995,12000,7000,7000
+Ituporanga (SC),Cebola,1996,10524,6933,6933
+Ituporanga (SC),Cebola,1997,12000,5900,5900
+Ituporanga (SC),Cebola,1998,13000,6000,6000
+Ituporanga (SC),Cebola,1999,20000,6000,6000
+Ituporanga (SC),Cebola,2000,25000,6400,6400
+Ituporanga (SC),Cebola,2001,17000,6100,6400
+Ituporanga (SC),Cebola,2002,18000,6500,6500
+Ituporanga (SC),Cebola,2003,19000,6300,6300
+Ituporanga (SC),Cebola,2004,25000,4800,4800
+Ituporanga (SC),Cebola,2005,20000,4300,4300
+Ituporanga (SC),Cebola,2006,24000,4500,4500
+Ituporanga (SC),Cebola,2007,24000,4600,4600
+Ituporanga (SC),Cebola,2008,18000,4600,4600
+Ituporanga (SC),Cebola,2009,25000,4800,4800
+Ituporanga (SC),Cebola,2010,30000,5040,5040
+Ituporanga (SC),Cebola,2011,20000,4750,4750
+Ituporanga (SC),Cebola,2012,20000,4350,4350
+Ituporanga (SC),Cebola,2013,28000,4300,4300
+Ituporanga (SC),Cebola,2014,24000,4300,4300
+Ituporanga (SC),Cebola,2015,20000,4100,4500
+Ituporanga (SC),Cebola,2016,30000,4500,4500
+Ituporanga (SC),Cebola,2017,21000,4700,4700
+Ituporanga (SC),Cebola,2018,30000,3800,3800
+Ituporanga (SC),Cebola,2019,33000,4000,4000
+Ituporanga (SC),Cebola,2020,28000,3800,3800
+Ituporanga (SC),Cebola,2021,32000,4000,4000
+Ituporanga (SC),Cebola,2022,31000,4000,4000
+Ituporanga (SC),Cebola,2023,21400,4200,4200
+Ituporanga (SC),Cebola,2024,30000,4500,4500
+Ituporanga (SC),Milho (em grão),1990,1500,6000,7000
+Ituporanga (SC),Milho (em grão),1991,2400,7300,7300
+Ituporanga (SC),Milho (em grão),1992,3000,6800,6800
+Ituporanga (SC),Milho (em grão),1993,3300,6425,6425
+Ituporanga (SC),Milho (em grão),1994,3300,6500,6500
+Ituporanga (SC),Milho (em grão),1995,3600,7000,7000
+Ituporanga (SC),Milho (em grão),1996,3146,8740,8740
+Ituporanga (SC),Milho (em grão),1997,3600,6800,6800
+Ituporanga (SC),Milho (em grão),1998,3900,6600,6600
+Ituporanga (SC),Milho (em grão),1999,3900,6300,6300
+Ituporanga (SC),Milho (em grão),2000,4800,6300,6300
+Ituporanga (SC),Milho (em grão),2001,5100,6300,6300
+Ituporanga (SC),Milho (em grão),2002,5361,6200,6200
+Ituporanga (SC),Milho (em grão),2003,4697,7600,7600
+Ituporanga (SC),Milho (em grão),2004,5239,7100,7300
+Ituporanga (SC),Milho (em grão),2005,4753,6500,6700
+Ituporanga (SC),Milho (em grão),2006,4591,4600,5200
+Ituporanga (SC),Milho (em grão),2007,6264,5000,5000
+Ituporanga (SC),Milho (em grão),2008,5889,4900,4900
+Ituporanga (SC),Milho (em grão),2009,5569,2650,2650
+Ituporanga (SC),Milho (em grão),2010,6233,1800,1800
+Ituporanga (SC),Milho (em grão),2011,6835,2300,2300
+Ituporanga (SC),Milho (em grão),2012,7125,3200,3200
+Ituporanga (SC),Milho (em grão),2013,8068,2350,2400
+Ituporanga (SC),Milho (em grão),2014,6333,1800,2000
+Ituporanga (SC),Milho (em grão),2015,8242,1900,1900
+Ituporanga (SC),Milho (em grão),2016,7010,1900,1900
+Ituporanga (SC),Milho (em grão),2017,9060,2000,2200
+Ituporanga (SC),Milho (em grão),2018,8400,3800,3800
+Ituporanga (SC),Milho (em grão),2019,7800,3100,3100
+Ituporanga (SC),Milho (em grão),2020,7800,3300,3300
+Ituporanga (SC),Milho (em grão),2021,7620,3100,3100
+Ituporanga (SC),Milho (em grão),2022,7200,3100,3100
+Ituporanga (SC),Milho (em grão),2023,7740,3100,3100
+Ituporanga (SC),Milho (em grão),2024,4500,3100,3100
+Ituporanga (SC),Soja (em grão),1990,2407,76,76
+Ituporanga (SC),Soja (em grão),1991,-,-,-
+Ituporanga (SC),Soja (em grão),1992,-,-,-
+Ituporanga (SC),Soja (em grão),1993,2400,75,75
+Ituporanga (SC),Soja (em grão),1994,-,-,-
+Ituporanga (SC),Soja (em grão),1995,-,-,-
+Ituporanga (SC),Soja (em grão),1996,2357,14,14
+Ituporanga (SC),Soja (em grão),1997,2500,10,10
+Ituporanga (SC),Soja (em grão),1998,2520,75,75
+Ituporanga (SC),Soja (em grão),1999,-,-,-
+Ituporanga (SC),Soja (em grão),2000,-,-,-
+Ituporanga (SC),Soja (em grão),2001,1800,70,70
+Ituporanga (SC),Soja (em grão),2002,-,-,-
+Ituporanga (SC),Soja (em grão),2003,2100,10,10
+Ituporanga (SC),Soja (em grão),2004,2000,400,400
+Ituporanga (SC),Soja (em grão),2005,2000,250,250
+Ituporanga (SC),Soja (em grão),2006,2100,200,200
+Ituporanga (SC),Soja (em grão),2007,2400,400,400
+Ituporanga (SC),Soja (em grão),2008,2700,400,400
+Ituporanga (SC),Soja (em grão),2009,2700,1500,1500
+Ituporanga (SC),Soja (em grão),2010,2700,1960,2000
+Ituporanga (SC),Soja (em grão),2011,3300,1000,1000
+Ituporanga (SC),Soja (em grão),2012,3600,1000,1000
+Ituporanga (SC),Soja (em grão),2013,3300,2000,2000
+Ituporanga (SC),Soja (em grão),2014,2700,2800,2800
+Ituporanga (SC),Soja (em grão),2015,3000,2500,2500
+Ituporanga (SC),Soja (em grão),2016,3600,3000,3000
+Ituporanga (SC),Soja (em grão),2017,3600,3500,3500
+Ituporanga (SC),Soja (em grão),2018,4200,3200,3200
+Ituporanga (SC),Soja (em grão),2019,4200,3900,3900
+Ituporanga (SC),Soja (em grão),2020,3900,3650,3650
+Ituporanga (SC),Soja (em grão),2021,4020,3850,3850
+Ituporanga (SC),Soja (em grão),2022,3900,4000,4000
+Ituporanga (SC),Soja (em grão),2023,3900,4000,4000
+Ituporanga (SC),Soja (em grão),2024,3900,4000,4000
+São Miguel do Oeste (SC),Cebola,1990,-,-,-
+São Miguel do Oeste (SC),Cebola,1991,-,-,-
+São Miguel do Oeste (SC),Cebola,1992,-,-,-
+São Miguel do Oeste (SC),Cebola,1993,-,-,-
+São Miguel do Oeste (SC),Cebola,1994,-,-,-
+São Miguel do Oeste (SC),Cebola,1995,-,-,-
+São Miguel do Oeste (SC),Cebola,1996,-,-,-
+São Miguel do Oeste (SC),Cebola,1997,-,-,-
+São Miguel do Oeste (SC),Cebola,1998,-,-,-
+São Miguel do Oeste (SC),Cebola,1999,-,-,-
+São Miguel do Oeste (SC),Cebola,2000,-,-,-
+São Miguel do Oeste (SC),Cebola,2001,-,-,-
+São Miguel do Oeste (SC),Cebola,2002,-,-,-
+São Miguel do Oeste (SC),Cebola,2003,-,-,-
+São Miguel do Oeste (SC),Cebola,2004,-,-,-
+São Miguel do Oeste (SC),Cebola,2005,-,-,-
+São Miguel do Oeste (SC),Cebola,2006,-,-,-
+São Miguel do Oeste (SC),Cebola,2007,-,-,-
+São Miguel do Oeste (SC),Cebola,2008,-,-,-
+São Miguel do Oeste (SC),Cebola,2009,-,-,-
+São Miguel do Oeste (SC),Cebola,2010,-,-,-
+São Miguel do Oeste (SC),Cebola,2011,-,-,-
+São Miguel do Oeste (SC),Cebola,2012,-,-,-
+São Miguel do Oeste (SC),Cebola,2013,-,-,-
+São Miguel do Oeste (SC),Cebola,2014,-,-,-
+São Miguel do Oeste (SC),Cebola,2015,-,-,-
+São Miguel do Oeste (SC),Cebola,2016,-,-,-
+São Miguel do Oeste (SC),Cebola,2017,-,-,-
+São Miguel do Oeste (SC),Cebola,2018,-,-,-
+São Miguel do Oeste (SC),Cebola,2019,-,-,-
+São Miguel do Oeste (SC),Cebola,2020,-,-,-
+São Miguel do Oeste (SC),Cebola,2021,-,-,-
+São Miguel do Oeste (SC),Cebola,2022,-,-,-
+São Miguel do Oeste (SC),Cebola,2023,-,-,-
+São Miguel do Oeste (SC),Cebola,2024,-,-,-
+São Miguel do Oeste (SC),Milho (em grão),1990,2712,22000,22000
+São Miguel do Oeste (SC),Milho (em grão),1991,1200,16000,19000
+São Miguel do Oeste (SC),Milho (em grão),1992,3000,20000,20000
+São Miguel do Oeste (SC),Milho (em grão),1993,3000,13300,13300
+São Miguel do Oeste (SC),Milho (em grão),1994,3000,13500,13500
+São Miguel do Oeste (SC),Milho (em grão),1995,3600,13500,13500
+São Miguel do Oeste (SC),Milho (em grão),1996,2748,11033,11033
+São Miguel do Oeste (SC),Milho (em grão),1997,3060,5500,5500
+São Miguel do Oeste (SC),Milho (em grão),1998,2760,5500,5500
+São Miguel do Oeste (SC),Milho (em grão),1999,2836,5500,5500
+São Miguel do Oeste (SC),Milho (em grão),2000,3600,5500,5500
+São Miguel do Oeste (SC),Milho (em grão),2001,3960,6000,6000
+São Miguel do Oeste (SC),Milho (em grão),2002,2520,5800,6000
+São Miguel do Oeste (SC),Milho (em grão),2003,5400,6500,6500
+São Miguel do Oeste (SC),Milho (em grão),2004,3821,6202,6202
+São Miguel do Oeste (SC),Milho (em grão),2005,3789,6302,6852
+São Miguel do Oeste (SC),Milho (em grão),2006,5486,4500,5300
+São Miguel do Oeste (SC),Milho (em grão),2007,6339,3595,3595
+São Miguel do Oeste (SC),Milho (em grão),2008,6065,3245,3245
+São Miguel do Oeste (SC),Milho (em grão),2009,5640,2500,2500
+São Miguel do Oeste (SC),Milho (em grão),2010,7330,2300,2300
+São Miguel do Oeste (SC),Milho (em grão),2011,7200,3000,3000
+São Miguel do Oeste (SC),Milho (em grão),2012,2873,3000,3000
+São Miguel do Oeste (SC),Milho (em grão),2013,7613,3200,3200
+São Miguel do Oeste (SC),Milho (em grão),2014,7797,2910,2910
+São Miguel do Oeste (SC),Milho (em grão),2015,7936,3300,3300
+São Miguel do Oeste (SC),Milho (em grão),2016,6500,2300,2300
+São Miguel do Oeste (SC),Milho (em grão),2017,8700,2000,2000
+São Miguel do Oeste (SC),Milho (em grão),2018,6375,2000,2000
+São Miguel do Oeste (SC),Milho (em grão),2019,6675,2000,2000
+São Miguel do Oeste (SC),Milho (em grão),2020,9766,2020,2020
+São Miguel do Oeste (SC),Milho (em grão),2021,4757,674,674
+São Miguel do Oeste (SC),Milho (em grão),2022,2961,620,620
+São Miguel do Oeste (SC),Milho (em grão),2023,7672,1880,1880
+São Miguel do Oeste (SC),Milho (em grão),2024,5356,1080,1080
+São Miguel do Oeste (SC),Soja (em grão),1990,1020,12000,12000
+São Miguel do Oeste (SC),Soja (em grão),1991,720,6000,6000
+São Miguel do Oeste (SC),Soja (em grão),1992,1320,2000,2000
+São Miguel do Oeste (SC),Soja (em grão),1993,1200,1000,1000
+São Miguel do Oeste (SC),Soja (em grão),1994,1200,400,400
+São Miguel do Oeste (SC),Soja (em grão),1995,1500,100,100
+São Miguel do Oeste (SC),Soja (em grão),1996,1421,83,83
+São Miguel do Oeste (SC),Soja (em grão),1997,1400,50,50
+São Miguel do Oeste (SC),Soja (em grão),1998,2100,50,50
+São Miguel do Oeste (SC),Soja (em grão),1999,1800,80,80
+São Miguel do Oeste (SC),Soja (em grão),2000,2100,80,80
+São Miguel do Oeste (SC),Soja (em grão),2001,2400,40,40
+São Miguel do Oeste (SC),Soja (em grão),2002,-,-,-
+São Miguel do Oeste (SC),Soja (em grão),2003,2400,60,60
+São Miguel do Oeste (SC),Soja (em grão),2004,2062,80,80
+São Miguel do Oeste (SC),Soja (em grão),2005,1400,300,350
+São Miguel do Oeste (SC),Soja (em grão),2006,2400,200,200
+São Miguel do Oeste (SC),Soja (em grão),2007,2500,500,500
+São Miguel do Oeste (SC),Soja (em grão),2008,1920,800,800
+São Miguel do Oeste (SC),Soja (em grão),2009,2100,1100,1100
+São Miguel do Oeste (SC),Soja (em grão),2010,3000,1400,1400
+São Miguel do Oeste (SC),Soja (em grão),2011,3300,1300,1300
+São Miguel do Oeste (SC),Soja (em grão),2012,1080,950,950
+São Miguel do Oeste (SC),Soja (em grão),2013,3120,1050,1050
+São Miguel do Oeste (SC),Soja (em grão),2014,2268,1300,1300
+São Miguel do Oeste (SC),Soja (em grão),2015,3300,1300,1300
+São Miguel do Oeste (SC),Soja (em grão),2016,3300,2000,2000
+São Miguel do Oeste (SC),Soja (em grão),2017,3569,1540,1550
+São Miguel do Oeste (SC),Soja (em grão),2018,2723,975,975
+São Miguel do Oeste (SC),Soja (em grão),2019,2193,975,975
+São Miguel do Oeste (SC),Soja (em grão),2020,3302,880,880
+São Miguel do Oeste (SC),Soja (em grão),2021,2446,850,850
+São Miguel do Oeste (SC),Soja (em grão),2022,1000,1080,1180
+São Miguel do Oeste (SC),Soja (em grão),2023,4009,880,880
+São Miguel do Oeste (SC),Soja (em grão),2024,4238,1280,1280

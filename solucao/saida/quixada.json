@@ -1,0 +1,1851 @@
+{
+  "versao_contrato": "2.1.0",
+  "gerado_em": "2026-11-14T23:33:55-03:00",
+  "modo": "operacao",
+  "data_referencia": "2026-01-05",
+  "safra": "2025/26",
+  "motor": {
+    "versao": "0.2.0",
+    "commit": null
+  },
+  "local": {
+    "id": "L-quixada",
+    "municipio": "Quixadá",
+    "uf": "CE",
+    "codigo_ibge": "2311306",
+    "lat": -4.97,
+    "lon": -39.02,
+    "ponto_power": {
+      "lat": -4.97,
+      "lon": -39.02,
+      "alt_grade_m": 155.49,
+      "resolucao_km": 50,
+      "mesma_celula_que": []
+    },
+    "dentro_da_area_testada": true
+  },
+  "talhao": {
+    "id": "T-roca-do-baixio",
+    "nome": "Roça do baixio",
+    "area_ha": null,
+    "solo_declarado": "medio",
+    "cad_mm": {
+      "valor": 125.0,
+      "fonte": "pergunta+gaez",
+      "nota": null,
+      "rastro": [
+        "R-PROD-SOLO",
+        "R-GAEZ-CAD",
+        "R-CALC-CAD"
+      ]
+    },
+    "srtm": null,
+    "ciclo_gdd": {
+      "valor": 1250,
+      "fonte": "padrao"
+    },
+    "colheita_verao": null,
+    "fotos_registro": []
+  },
+  "produtor": {
+    "id_pseudonimo": "P-b41e9a07",
+    "prioridade": "nao_informado",
+    "atividade": "milho_feijao_sequeiro"
+  },
+  "regiao": {
+    "id": "semiarido_ce_pe_pb",
+    "nome": "Semiárido do CE, PE e PB (milho)",
+    "papel": "segunda",
+    "modulos_ativos": [
+      "agua_isna"
+    ]
+  },
+  "modulos": [
+    {
+      "id": "agua_isna",
+      "nome": "Água por fase (ISNA, FAO-56/FAO-33), milho no Semiárido",
+      "ativo": true,
+      "nivel_evidencia": "N2",
+      "papel": "principal",
+      "motivo": "No CE/PE/PB a água é o fator dominante e não há geada. Passou os 4 critérios da V5, por pouco (0,414 contra 0,40). Não supera a soma de chuva (+0,06).",
+      "validacao": [
+        {
+          "ref": "V5",
+          "caminho": "solucao/validacao/V5/relatorio.md",
+          "resultado": "Quixadá, milho: rho 0,504 (chuva bruta 0,456), 5 de 8 piores anos. Contra SMO: 0,28 (chuva 0,23). Critério pré-registrado, 16 pares: mediana 0,414. A mediana 0,615 do milho em 6 municípios é um recorte feito depois de ver a Bahia falhar"
+        },
+        {
+          "ref": "prototipo",
+          "caminho": "prototipo/README.md",
+          "resultado": "caupi (N1, em teste) contra o ZARC: 16 de 18 decêndios consistentes, mas a ordem dentro da janela não bate (Spearman -0,07) e um calendário ingênuo dá 12 de 18. Não é evidência do milho"
+        }
+      ],
+      "nao_ve": [
+        "feijão com a mesma qualidade (rho 0,31)",
+        "Bahia (rho 0,07)",
+        "praga, manejo, irrigação"
+      ]
+    }
+  ],
+  "estrategias": [
+    {
+      "id": "E1",
+      "nome_curto": "O de sempre",
+      "nome_falado": "milho plantado na primeira chuva firme",
+      "e_atual": true,
+      "nivel_evidencia": "N2",
+      "como_mostrar": "com_faixa",
+      "ordem": 1,
+      "sequencia": [
+        {
+          "cultura": "milho_grao",
+          "estacao": "chuvas",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": null,
+            "ate": null
+          },
+          "manejo": "planta na 1ª chuva firme (20 mm em 3 dias, sem 8 dias secos depois)"
+        }
+      ],
+      "modulos": [
+        "agua_isna"
+      ],
+      "indicadores": [
+        {
+          "id": "I-E1-COLHE",
+          "tipo": "colhe_em_10",
+          "rotulo": "Anos com boa colheita (rendimento simulado >= 60%), plantio na 1ª chuva firme",
+          "valor": 6.4,
+          "unidade": "anos_em_10",
+          "ic95": [
+            4.5,
+            8.0
+          ],
+          "faixa_parametros": null,
+          "n_anos": 25,
+          "periodo": "2001-2025",
+          "nivel_evidencia": "N2",
+          "modulo_id": "agua_isna",
+          "rastro": [
+            "R-CALC-E1"
+          ]
+        },
+        {
+          "id": "I-E1-FALHA",
+          "tipo": "falha_em_10",
+          "rotulo": "Anos com rendimento simulado abaixo de 60% (inclui ano sem plantio = 0)",
+          "valor": 3.6,
+          "unidade": "anos_em_10",
+          "ic95": [
+            2.0,
+            5.5
+          ],
+          "faixa_parametros": null,
+          "n_anos": 25,
+          "periodo": "2001-2025",
+          "nivel_evidencia": "N2",
+          "modulo_id": "agua_isna",
+          "rastro": [
+            "R-CALC-E1"
+          ]
+        }
+      ],
+      "risco_por_decendio": null,
+      "premissas": [
+        "solo médio, 125 mm/m, raiz 1 m",
+        "milho de 100 dias (20/30/30/20)",
+        "ano sem chuva firme até 30/abr = sem plantio (y = 0)"
+      ],
+      "quebra_se": [
+        "a regra de início de chuva não representar o plantio real (na Bahia ela falhou)"
+      ],
+      "nao_calculado": [
+        "praga e manejo"
+      ],
+      "solo_texto": null
+    },
+    {
+      "id": "E2",
+      "nome_curto": "Milho em meados de fevereiro",
+      "nome_falado": "milho plantado em data fixa, no decêndio de 11 de fevereiro",
+      "e_atual": false,
+      "nivel_evidencia": "N2",
+      "como_mostrar": "com_faixa",
+      "ordem": 2,
+      "sequencia": [
+        {
+          "cultura": "milho_grao",
+          "estacao": "chuvas",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": "11/02",
+            "ate": "11/02"
+          },
+          "manejo": null
+        }
+      ],
+      "modulos": [
+        "agua_isna"
+      ],
+      "indicadores": [
+        {
+          "id": "I-E2-COLHE",
+          "tipo": "colhe_em_10",
+          "rotulo": "Anos com boa colheita, plantio em 11 de fevereiro",
+          "valor": 8.0,
+          "unidade": "anos_em_10",
+          "ic95": [
+            6.1,
+            9.1
+          ],
+          "faixa_parametros": null,
+          "n_anos": 25,
+          "periodo": "2001-2025",
+          "nivel_evidencia": "N2",
+          "modulo_id": "agua_isna",
+          "rastro": [
+            "R-CALC-E2"
+          ]
+        },
+        {
+          "id": "I-E2-FALHA",
+          "tipo": "falha_em_10",
+          "rotulo": "Anos com rendimento simulado abaixo de 60% (inclui ano sem plantio = 0)",
+          "valor": 2.0,
+          "unidade": "anos_em_10",
+          "ic95": [
+            0.9,
+            3.9
+          ],
+          "faixa_parametros": null,
+          "n_anos": 25,
+          "periodo": "2001-2025",
+          "nivel_evidencia": "N2",
+          "modulo_id": "agua_isna",
+          "rastro": [
+            "R-CALC-E2"
+          ]
+        }
+      ],
+      "risco_por_decendio": {
+        "cultura_alvo": "milho_grao",
+        "evento": "rendimento simulado < 60% do potencial (FAO-33), plantio no decêndio",
+        "modulo_id": "agua_isna",
+        "rastro": [
+          "R-CALC-JANELAS-MILHO"
+        ],
+        "linhas": [
+          {
+            "decendio": "01/01",
+            "em10": 6.4,
+            "ic95": [
+              4.5,
+              8.0
+            ],
+            "k": 16,
+            "n": 25,
+            "componentes": {
+              "agua": 6.4,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "11/01",
+            "em10": 4.0,
+            "ic95": [
+              2.3,
+              5.9
+            ],
+            "k": 10,
+            "n": 25,
+            "componentes": {
+              "agua": 4.0,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "21/01",
+            "em10": 3.6,
+            "ic95": [
+              2.0,
+              5.5
+            ],
+            "k": 9,
+            "n": 25,
+            "componentes": {
+              "agua": 3.6,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "01/02",
+            "em10": 3.2,
+            "ic95": [
+              1.7,
+              5.2
+            ],
+            "k": 8,
+            "n": 25,
+            "componentes": {
+              "agua": 3.2,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "11/02",
+            "em10": 2.0,
+            "ic95": [
+              0.9,
+              3.9
+            ],
+            "k": 5,
+            "n": 25,
+            "componentes": {
+              "agua": 2.0,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "21/02",
+            "em10": 2.4,
+            "ic95": [
+              1.1,
+              4.3
+            ],
+            "k": 6,
+            "n": 25,
+            "componentes": {
+              "agua": 2.4,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "01/03",
+            "em10": 3.2,
+            "ic95": [
+              1.7,
+              5.2
+            ],
+            "k": 8,
+            "n": 25,
+            "componentes": {
+              "agua": 3.2,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "11/03",
+            "em10": 3.6,
+            "ic95": [
+              2.0,
+              5.5
+            ],
+            "k": 9,
+            "n": 25,
+            "componentes": {
+              "agua": 3.6,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "21/03",
+            "em10": 5.2,
+            "ic95": [
+              3.3,
+              7.0
+            ],
+            "k": 13,
+            "n": 25,
+            "componentes": {
+              "agua": 5.2,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "01/04",
+            "em10": 5.6,
+            "ic95": [
+              3.7,
+              7.3
+            ],
+            "k": 14,
+            "n": 25,
+            "componentes": {
+              "agua": 5.6,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "11/04",
+            "em10": 6.0,
+            "ic95": [
+              4.1,
+              7.7
+            ],
+            "k": 15,
+            "n": 25,
+            "componentes": {
+              "agua": 6.0,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "21/04",
+            "em10": 8.4,
+            "ic95": [
+              6.5,
+              9.4
+            ],
+            "k": 21,
+            "n": 25,
+            "componentes": {
+              "agua": 8.4,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "01/05",
+            "em10": 8.8,
+            "ic95": [
+              7.0,
+              9.6
+            ],
+            "k": 22,
+            "n": 25,
+            "componentes": {
+              "agua": 8.8,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "11/05",
+            "em10": 9.6,
+            "ic95": [
+              8.0,
+              9.9
+            ],
+            "k": 24,
+            "n": 25,
+            "componentes": {
+              "agua": 9.6,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "21/05",
+            "em10": 10.0,
+            "ic95": [
+              8.7,
+              10.0
+            ],
+            "k": 25,
+            "n": 25,
+            "componentes": {
+              "agua": 10.0,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "01/06",
+            "em10": 10.0,
+            "ic95": [
+              8.7,
+              10.0
+            ],
+            "k": 25,
+            "n": 25,
+            "componentes": {
+              "agua": 10.0,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "11/06",
+            "em10": 10.0,
+            "ic95": [
+              8.7,
+              10.0
+            ],
+            "k": 25,
+            "n": 25,
+            "componentes": {
+              "agua": 10.0,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          },
+          {
+            "decendio": "21/06",
+            "em10": 10.0,
+            "ic95": [
+              8.7,
+              10.0
+            ],
+            "k": 25,
+            "n": 25,
+            "componentes": {
+              "agua": 10.0,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": null
+          }
+        ]
+      },
+      "premissas": [
+        "mesmos parâmetros do E1",
+        "plantio no dia, com ou sem chuva"
+      ],
+      "quebra_se": [
+        "a diferença para o E1 (1,6 em 10) cabe no IC de 25 anos"
+      ],
+      "nao_calculado": [
+        "germinação em solo seco no dia do plantio"
+      ],
+      "solo_texto": null
+    },
+    {
+      "id": "E3",
+      "nome_curto": "Caupi na primeira chuva",
+      "nome_falado": "feijão-caupi de ciclo curto na primeira chuva firme",
+      "e_atual": false,
+      "nivel_evidencia": "N1",
+      "como_mostrar": "so_nome_em_teste",
+      "ordem": 3,
+      "sequencia": [
+        {
+          "cultura": "feijao_caupi",
+          "estacao": "chuvas",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": null,
+            "ate": null
+          },
+          "manejo": "70 dias"
+        }
+      ],
+      "modulos": [
+        "agua_isna"
+      ],
+      "indicadores": [
+        {
+          "id": "I-E3-COLHE",
+          "tipo": "colhe_em_10",
+          "rotulo": "Anos com boa colheita, caupi na 1ª chuva (em teste)",
+          "valor": 7.6,
+          "unidade": "anos_em_10",
+          "ic95": [
+            5.7,
+            8.9
+          ],
+          "faixa_parametros": null,
+          "n_anos": 25,
+          "periodo": "2001-2025",
+          "nivel_evidencia": "N1",
+          "modulo_id": "agua_isna",
+          "rastro": [
+            "R-CALC-E3"
+          ]
+        }
+      ],
+      "risco_por_decendio": {
+        "cultura_alvo": "feijao_caupi (data fixa, para conferir com o ZARC)",
+        "evento": "rendimento simulado < 60%, plantio no decêndio; o número principal do E3 usa a regra da chuva",
+        "modulo_id": "agua_isna",
+        "rastro": [
+          "R-CALC-JANELAS-CAUPI"
+        ],
+        "linhas": [
+          {
+            "decendio": "01/01",
+            "em10": 8.0,
+            "ic95": [
+              6.1,
+              9.1
+            ],
+            "k": 20,
+            "n": 25,
+            "componentes": {
+              "agua": 8.0,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "11/01",
+            "em10": 4.8,
+            "ic95": [
+              3.0,
+              6.7
+            ],
+            "k": 12,
+            "n": 25,
+            "componentes": {
+              "agua": 4.8,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "21/01",
+            "em10": 4.0,
+            "ic95": [
+              2.3,
+              5.9
+            ],
+            "k": 10,
+            "n": 25,
+            "componentes": {
+              "agua": 4.0,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 40,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "01/02",
+            "em10": 2.4,
+            "ic95": [
+              1.1,
+              4.3
+            ],
+            "k": 6,
+            "n": 25,
+            "componentes": {
+              "agua": 2.4,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 40,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "11/02",
+            "em10": 2.0,
+            "ic95": [
+              0.9,
+              3.9
+            ],
+            "k": 5,
+            "n": 25,
+            "componentes": {
+              "agua": 2.0,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 40,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "21/02",
+            "em10": 1.6,
+            "ic95": [
+              0.6,
+              3.5
+            ],
+            "k": 4,
+            "n": 25,
+            "componentes": {
+              "agua": 1.6,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 40,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "01/03",
+            "em10": 1.6,
+            "ic95": [
+              0.6,
+              3.5
+            ],
+            "k": 4,
+            "n": 25,
+            "componentes": {
+              "agua": 1.6,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "11/03",
+            "em10": 2.0,
+            "ic95": [
+              0.9,
+              3.9
+            ],
+            "k": 5,
+            "n": 25,
+            "componentes": {
+              "agua": 2.0,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 20,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "21/03",
+            "em10": 3.2,
+            "ic95": [
+              1.7,
+              5.2
+            ],
+            "k": 8,
+            "n": 25,
+            "componentes": {
+              "agua": 3.2,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 20,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "01/04",
+            "em10": 4.0,
+            "ic95": [
+              2.3,
+              5.9
+            ],
+            "k": 10,
+            "n": 25,
+            "componentes": {
+              "agua": 4.0,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "11/04",
+            "em10": 5.6,
+            "ic95": [
+              3.7,
+              7.3
+            ],
+            "k": 14,
+            "n": 25,
+            "componentes": {
+              "agua": 5.6,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "21/04",
+            "em10": 5.2,
+            "ic95": [
+              3.3,
+              7.0
+            ],
+            "k": 13,
+            "n": 25,
+            "componentes": {
+              "agua": 5.2,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "01/05",
+            "em10": 7.2,
+            "ic95": [
+              5.2,
+              8.6
+            ],
+            "k": 18,
+            "n": 25,
+            "componentes": {
+              "agua": 7.2,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "11/05",
+            "em10": 8.4,
+            "ic95": [
+              6.5,
+              9.4
+            ],
+            "k": 21,
+            "n": 25,
+            "componentes": {
+              "agua": 8.4,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "21/05",
+            "em10": 8.4,
+            "ic95": [
+              6.5,
+              9.4
+            ],
+            "k": 21,
+            "n": 25,
+            "componentes": {
+              "agua": 8.4,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "01/06",
+            "em10": 9.6,
+            "ic95": [
+              8.0,
+              9.9
+            ],
+            "k": 24,
+            "n": 25,
+            "componentes": {
+              "agua": 9.6,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "11/06",
+            "em10": 10.0,
+            "ic95": [
+              8.7,
+              10.0
+            ],
+            "k": 25,
+            "n": 25,
+            "componentes": {
+              "agua": 10.0,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          },
+          {
+            "decendio": "21/06",
+            "em10": 10.0,
+            "ic95": [
+              8.7,
+              10.0
+            ],
+            "k": 25,
+            "n": 25,
+            "componentes": {
+              "agua": 10.0,
+              "geada": null,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC-QXD"
+              ]
+            }
+          }
+        ]
+      },
+      "premissas": [
+        "Kc e Ky do feijão (FAO), não calibrados para o caupi"
+      ],
+      "quebra_se": [
+        "V5: feijão com rho 0,30 em Quixadá"
+      ],
+      "nao_calculado": [
+        "valor do caupi contra o milho"
+      ],
+      "solo_texto": null
+    },
+    {
+      "id": "E4",
+      "nome_curto": "Sorgo na primeira chuva",
+      "nome_falado": "sorgo na primeira chuva firme",
+      "e_atual": false,
+      "nivel_evidencia": "N1",
+      "como_mostrar": "so_nome_em_teste",
+      "ordem": 4,
+      "sequencia": [
+        {
+          "cultura": "sorgo_grao",
+          "estacao": "chuvas",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": null,
+            "ate": null
+          },
+          "manejo": null
+        }
+      ],
+      "modulos": [
+        "agua_isna"
+      ],
+      "indicadores": [
+        {
+          "id": "I-E4-COLHE",
+          "tipo": "colhe_em_10",
+          "rotulo": "Anos com boa colheita, sorgo na 1ª chuva (Ky genérico, em teste)",
+          "valor": 8.8,
+          "unidade": "anos_em_10",
+          "ic95": [
+            7.0,
+            9.6
+          ],
+          "faixa_parametros": null,
+          "n_anos": 25,
+          "periodo": "2001-2025",
+          "nivel_evidencia": "N1",
+          "modulo_id": "agua_isna",
+          "rastro": [
+            "R-CALC-E4"
+          ]
+        }
+      ],
+      "risco_por_decendio": null,
+      "premissas": [
+        "Ky genérico da FAO (baixo na floração)"
+      ],
+      "quebra_se": [
+        "o Ky real do sorgo for maior que o da FAO"
+      ],
+      "nao_calculado": [
+        "rendimento observado de sorgo"
+      ],
+      "solo_texto": null
+    }
+  ],
+  "alertas": [],
+  "cartoes": [
+    {
+      "id": "C-01",
+      "template_id": "T11_SEMIARIDO_JANELA_MILHO",
+      "destino": "whatsapp",
+      "ordem": 1,
+      "estrategia_ids": [
+        "E1",
+        "E2"
+      ],
+      "variaveis": {
+        "municipio": {
+          "texto": "Quixadá",
+          "ponteiro": "/local/municipio"
+        },
+        "q_atual": {
+          "texto": "4",
+          "ponteiro": "/estrategias/0/indicadores/1/valor"
+        },
+        "lo_a": {
+          "texto": "2",
+          "ponteiro": "/estrategias/0/indicadores/1/ic95/0"
+        },
+        "hi_a": {
+          "texto": "6",
+          "ponteiro": "/estrategias/0/indicadores/1/ic95/1"
+        },
+        "janela": {
+          "texto": "meados de fevereiro",
+          "ponteiro": "/estrategias/1/sequencia/0/plantio/de"
+        },
+        "q_janela": {
+          "texto": "2",
+          "ponteiro": "/estrategias/1/indicadores/1/valor"
+        },
+        "lo_j": {
+          "texto": "1",
+          "ponteiro": "/estrategias/1/indicadores/1/ic95/0"
+        },
+        "hi_j": {
+          "texto": "4",
+          "ponteiro": "/estrategias/1/indicadores/1/ic95/1"
+        },
+        "n": {
+          "texto": "25",
+          "ponteiro": "/estrategias/0/indicadores/1/n_anos"
+        }
+      },
+      "texto": "Milho em Quixadá. Na primeira chuva firme, deu quebra em cerca de 4 de cada 10 anos (entre 2 e 6). Plantando em meados de fevereiro, deu quebra em cerca de 2 de cada 10 anos (entre 1 e 4). Só 25 anos de dados: tende a ser melhor, mas não é certo. Se a chuva não firmar, espere. Quebra é colher menos de 6 sacos em cada 10 possíveis.",
+      "palavras": 70,
+      "imagem": {
+        "tipo": "10_sacos",
+        "linhas": [
+          {
+            "rotulo": "Milho na 1ª chuva",
+            "cheios": 6,
+            "rasgados": 4,
+            "selo": "atual"
+          },
+          {
+            "rotulo": "Milho em 11/fev",
+            "cheios": 8,
+            "rasgados": 2,
+            "selo": "com_ressalva"
+          }
+        ],
+        "legenda": "Saco rasgado = ano de quebra (colheita menor que 6 em cada 10 sacos)"
+      },
+      "audio": {
+        "roteiro": "Milho em Quixadá. Na primeira chuva firme, deu quebra em cerca de quatro de cada dez anos (entre dois e seis). Plantando em meados de fevereiro, deu quebra em cerca de dois de cada dez anos (entre um e quatro). Só vinte e cinco anos de dados: tende a ser melhor, mas não é certo. Se a chuva não firmar, espere. Quebra é colher menos de seis sacos em cada dez possíveis.",
+        "duracao_max_s": 30
+      }
+    },
+    {
+      "id": "C-02",
+      "template_id": "T01_COMPARA_ESTRATEGIAS",
+      "destino": "whatsapp",
+      "ordem": 2,
+      "estrategia_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "variaveis": {
+        "talhao": {
+          "texto": "Roça do baixio",
+          "ponteiro": "/talhao/nome"
+        },
+        "km": {
+          "texto": "50",
+          "ponteiro": "/local/ponto_power/resolucao_km"
+        },
+        "nome_1": {
+          "texto": "O de sempre",
+          "ponteiro": "/estrategias/0/nome_curto"
+        },
+        "q_1": {
+          "texto": "4",
+          "ponteiro": "/estrategias/0/indicadores/1/valor"
+        },
+        "lo_1": {
+          "texto": "2",
+          "ponteiro": "/estrategias/0/indicadores/1/ic95/0"
+        },
+        "hi_1": {
+          "texto": "6",
+          "ponteiro": "/estrategias/0/indicadores/1/ic95/1"
+        },
+        "falado_1": {
+          "texto": "milho plantado na primeira chuva firme",
+          "ponteiro": "/estrategias/0/nome_falado"
+        },
+        "nome_2": {
+          "texto": "Milho em meados de fevereiro",
+          "ponteiro": "/estrategias/1/nome_curto"
+        },
+        "q_2": {
+          "texto": "2",
+          "ponteiro": "/estrategias/1/indicadores/1/valor"
+        },
+        "lo_2": {
+          "texto": "1",
+          "ponteiro": "/estrategias/1/indicadores/1/ic95/0"
+        },
+        "hi_2": {
+          "texto": "4",
+          "ponteiro": "/estrategias/1/indicadores/1/ic95/1"
+        },
+        "nome_3": {
+          "texto": "Caupi na primeira chuva",
+          "ponteiro": "/estrategias/2/nome_curto"
+        },
+        "nome_4": {
+          "texto": "Sorgo na primeira chuva",
+          "ponteiro": "/estrategias/3/nome_curto"
+        }
+      },
+      "texto": "Quatro caminhos para a Roça do baixio. O de sempre (milho plantado na primeira chuva firme): quebra em cerca de 4 de cada 10 anos (entre 2 e 6). Milho em meados de fevereiro: quebra em cerca de 2 de cada 10 anos (entre 1 e 4). Em teste: caupi na primeira chuva e sorgo na primeira chuva. Dados de satélite, área de 50 km.",
+      "palavras": 65,
+      "imagem": {
+        "tipo": "10_sacos",
+        "linhas": [
+          {
+            "rotulo": "O de sempre",
+            "cheios": 6,
+            "rasgados": 4,
+            "selo": "atual"
+          },
+          {
+            "rotulo": "Milho em meados de fevereiro",
+            "cheios": 8,
+            "rasgados": 2,
+            "selo": "com_ressalva"
+          },
+          {
+            "rotulo": "Caupi na primeira chuva",
+            "cheios": null,
+            "rasgados": null,
+            "selo": "em_teste"
+          },
+          {
+            "rotulo": "Sorgo na primeira chuva",
+            "cheios": null,
+            "rasgados": null,
+            "selo": "em_teste"
+          }
+        ],
+        "legenda": "Saco rasgado = ano de quebra (colheita menor que 6 em cada 10 sacos)"
+      },
+      "audio": {
+        "roteiro": "Quatro caminhos para a Roça do baixio. O de sempre (milho plantado na primeira chuva firme): quebra em cerca de quatro de cada dez anos (entre dois e seis). Milho em meados de fevereiro: quebra em cerca de dois de cada dez anos (entre um e quatro). Em teste: caupi na primeira chuva e sorgo na primeira chuva. Dados de satélite, área de cinquenta quilômetros.",
+        "duracao_max_s": 30
+      }
+    }
+  ],
+  "rastro": [
+    {
+      "id": "R-POWER-QXD",
+      "tipo": "dado",
+      "descricao": "Série diária do NASA POWER em Quixadá, comunidade AG.",
+      "fonte": {
+        "nome": "NASA_POWER",
+        "categoria": "resources",
+        "variavel": "PRECTOTCORR, T2M, T2M_MAX, T2M_MIN, RH2M, WS2M, ALLSKY_SFC_SW_DWN",
+        "url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&longitude=-39.02&latitude=-4.97",
+        "periodo": "2001-2025",
+        "resolucao": "~50 km",
+        "arquivo": "prototipo/dados/power_quixada.json"
+      }
+    },
+    {
+      "id": "R-PROD-SOLO",
+      "tipo": "pergunta",
+      "descricao": "Resposta do produtor no WhatsApp (T15): solo 'medio'.",
+      "fonte": {
+        "nome": "produtor",
+        "categoria": "produtor",
+        "variavel": "solo_declarado",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      }
+    },
+    {
+      "id": "R-GAEZ-CAD",
+      "tipo": "parametro",
+      "descricao": "Água disponível por textura do GAEZ v5: areia 65, médio 125, argila 175 mm/m.",
+      "fonte": {
+        "nome": "GAEZ",
+        "categoria": "resources",
+        "variavel": "água disponível por textura",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": "prototipo/modelo/risco.py"
+      }
+    },
+    {
+      "id": "R-CALC-CAD",
+      "tipo": "calculo",
+      "descricao": "CAD = 125 mm/m (GAEZ) x 1,0 m de raiz do milho = 125,0 mm.",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/semiarido.py",
+        "funcao": "Local.simular"
+      },
+      "parametros": {
+        "mm_por_m": 125,
+        "raiz_m": 1.0
+      },
+      "entradas": [
+        "R-PROD-SOLO",
+        "R-GAEZ-CAD"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/quixada.json",
+        "chave": "cad"
+      }
+    },
+    {
+      "id": "R-FAO56",
+      "tipo": "parametro",
+      "descricao": "Kc por fase, fator p e ET0 Penman-Monteith (FAO-56), coeficientes fixos.",
+      "fonte": {
+        "nome": "FAO-56",
+        "categoria": "metodo_publicado",
+        "variavel": "Kc, p, ET0",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      }
+    },
+    {
+      "id": "R-FAO33",
+      "tipo": "parametro",
+      "descricao": "Ky por fase ou estágio (FAO-33), coeficientes fixos.",
+      "fonte": {
+        "nome": "FAO-33",
+        "categoria": "metodo_publicado",
+        "variavel": "Ky",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      }
+    },
+    {
+      "id": "R-CALC-E1",
+      "tipo": "calculo",
+      "descricao": "Rendimento relativo por ano (milho na 1ª chuva), 25 anos, 1 sem plantio. Cópia de prototipo/modelo/risco.py (estrategia).",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "2001-2025",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/semiarido.py",
+        "funcao": "Local.estrategia"
+      },
+      "parametros": {
+        "limiar_colhe": 0.6,
+        "p_depl": 0.5,
+        "et0": {
+          "alt_m": 190.0,
+          "lat": -4.97,
+          "piso_mm": 0.5
+        },
+        "regra_chuva": "20 mm em 3 dias e sem 8 dias secos (<= 2 mm) nos 30 seguintes, de 1/jan a 30/abr",
+        "cultura": "milho",
+        "nome": "Milho",
+        "fases": [
+          20,
+          30,
+          30,
+          20
+        ],
+        "kc": [
+          0.3,
+          1.2,
+          0.6
+        ],
+        "ky": [
+          0.4,
+          0.4,
+          1.5,
+          0.5
+        ],
+        "raiz": 1.0
+      },
+      "entradas": [
+        "R-POWER-QXD",
+        "R-FAO56",
+        "R-FAO33",
+        "R-CALC-CAD"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/quixada.json",
+        "chave": "Q1"
+      }
+    },
+    {
+      "id": "R-CALC-E2",
+      "tipo": "calculo",
+      "descricao": "Rendimento relativo por ano (milho em 11/02), 25 anos, 0 sem plantio. Cópia de prototipo/modelo/risco.py (estrategia).",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "2001-2025",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/semiarido.py",
+        "funcao": "Local.estrategia"
+      },
+      "parametros": {
+        "limiar_colhe": 0.6,
+        "p_depl": 0.5,
+        "et0": {
+          "alt_m": 190.0,
+          "lat": -4.97,
+          "piso_mm": 0.5
+        },
+        "regra_chuva": "20 mm em 3 dias e sem 8 dias secos (<= 2 mm) nos 30 seguintes, de 1/jan a 30/abr",
+        "cultura": "milho",
+        "nome": "Milho",
+        "fases": [
+          20,
+          30,
+          30,
+          20
+        ],
+        "kc": [
+          0.3,
+          1.2,
+          0.6
+        ],
+        "ky": [
+          0.4,
+          0.4,
+          1.5,
+          0.5
+        ],
+        "raiz": 1.0
+      },
+      "entradas": [
+        "R-POWER-QXD",
+        "R-FAO56",
+        "R-FAO33",
+        "R-CALC-CAD"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/quixada.json",
+        "chave": "Q2"
+      }
+    },
+    {
+      "id": "R-CALC-E3",
+      "tipo": "calculo",
+      "descricao": "Rendimento relativo por ano (caupi na 1ª chuva), 25 anos, 1 sem plantio. Cópia de prototipo/modelo/risco.py (estrategia).",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "2001-2025",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/semiarido.py",
+        "funcao": "Local.estrategia"
+      },
+      "parametros": {
+        "limiar_colhe": 0.6,
+        "p_depl": 0.5,
+        "et0": {
+          "alt_m": 190.0,
+          "lat": -4.97,
+          "piso_mm": 0.5
+        },
+        "regra_chuva": "20 mm em 3 dias e sem 8 dias secos (<= 2 mm) nos 30 seguintes, de 1/jan a 30/abr",
+        "cultura": "caupi",
+        "nome": "Feijão-caupi",
+        "fases": [
+          10,
+          20,
+          25,
+          15
+        ],
+        "kc": [
+          0.4,
+          1.05,
+          0.35
+        ],
+        "ky": [
+          0.2,
+          0.2,
+          1.1,
+          0.75
+        ],
+        "raiz": 0.6
+      },
+      "entradas": [
+        "R-POWER-QXD",
+        "R-FAO56",
+        "R-FAO33",
+        "R-CALC-CAD"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/quixada.json",
+        "chave": "Q3"
+      }
+    },
+    {
+      "id": "R-CALC-E4",
+      "tipo": "calculo",
+      "descricao": "Rendimento relativo por ano (sorgo na 1ª chuva), 25 anos, 1 sem plantio. Cópia de prototipo/modelo/risco.py (estrategia).",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "2001-2025",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/semiarido.py",
+        "funcao": "Local.estrategia"
+      },
+      "parametros": {
+        "limiar_colhe": 0.6,
+        "p_depl": 0.5,
+        "et0": {
+          "alt_m": 190.0,
+          "lat": -4.97,
+          "piso_mm": 0.5
+        },
+        "regra_chuva": "20 mm em 3 dias e sem 8 dias secos (<= 2 mm) nos 30 seguintes, de 1/jan a 30/abr",
+        "cultura": "sorgo",
+        "nome": "Sorgo",
+        "fases": [
+          20,
+          30,
+          30,
+          20
+        ],
+        "kc": [
+          0.3,
+          1.05,
+          0.55
+        ],
+        "ky": [
+          0.2,
+          0.2,
+          0.55,
+          0.45
+        ],
+        "raiz": 1.0
+      },
+      "entradas": [
+        "R-POWER-QXD",
+        "R-FAO56",
+        "R-FAO33",
+        "R-CALC-CAD"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/quixada.json",
+        "chave": "Q4"
+      }
+    },
+    {
+      "id": "R-CALC-JANELAS-MILHO",
+      "tipo": "calculo",
+      "descricao": "Falha (y < 0,6) por decêndio de plantio fixo, milho, 2001-2025. Cópia de risco.py (janelas).",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "2001-2025",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/semiarido.py",
+        "funcao": "Local.janelas"
+      },
+      "parametros": {
+        "limiar_colhe": 0.6,
+        "p_depl": 0.5,
+        "et0": {
+          "alt_m": 190.0,
+          "lat": -4.97,
+          "piso_mm": 0.5
+        },
+        "regra_chuva": "20 mm em 3 dias e sem 8 dias secos (<= 2 mm) nos 30 seguintes, de 1/jan a 30/abr",
+        "cultura": "milho"
+      },
+      "entradas": [
+        "R-POWER-QXD",
+        "R-FAO56",
+        "R-FAO33",
+        "R-CALC-CAD"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/quixada.json",
+        "chave": "janelas_milho"
+      }
+    },
+    {
+      "id": "R-CALC-JANELAS-CAUPI",
+      "tipo": "calculo",
+      "descricao": "Falha (y < 0,6) por decêndio de plantio fixo, caupi, 2001-2025. Cópia de risco.py (janelas).",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "2001-2025",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/semiarido.py",
+        "funcao": "Local.janelas"
+      },
+      "parametros": {
+        "limiar_colhe": 0.6,
+        "p_depl": 0.5,
+        "et0": {
+          "alt_m": 190.0,
+          "lat": -4.97,
+          "piso_mm": 0.5
+        },
+        "regra_chuva": "20 mm em 3 dias e sem 8 dias secos (<= 2 mm) nos 30 seguintes, de 1/jan a 30/abr",
+        "cultura": "caupi"
+      },
+      "entradas": [
+        "R-POWER-QXD",
+        "R-FAO56",
+        "R-FAO33",
+        "R-CALC-CAD"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/quixada.json",
+        "chave": "janelas_caupi"
+      }
+    },
+    {
+      "id": "R-ZARC-QXD",
+      "tipo": "conferencia",
+      "descricao": "ZARC 2026/27, caupi grupo I, sequeiro, solo tipo 2, Quixadá (lido do CSV do MAPA pela sessão do protótipo).",
+      "fonte": {
+        "nome": "ZARC",
+        "categoria": "externo_conferencia",
+        "variavel": "risco por decêndio",
+        "url": "https://dados.agricultura.gov.br",
+        "periodo": "safra 2026/27",
+        "resolucao": "município",
+        "arquivo": "prototipo/dados/resultado.json"
+      }
+    },
+    {
+      "id": "R-PAM-QXD",
+      "tipo": "conferencia",
+      "descricao": "IBGE PAM (SIDRA 5457), rendimento do milho em Quixadá, contra o modelo (V5).",
+      "fonte": {
+        "nome": "IBGE_PAM",
+        "categoria": "externo_conferencia",
+        "variavel": "rendimento (kg/ha)",
+        "url": null,
+        "periodo": "1985-2025",
+        "resolucao": "município",
+        "arquivo": "solucao/validacao/V5/resultado.json"
+      }
+    },
+    {
+      "id": "R-GARANTIA-SAFRA",
+      "tipo": "conferencia",
+      "descricao": "MDA/SPA, Garantia-Safra: parte dos municípios aderidos com perda comprovada, 2003-2018 (V5).",
+      "fonte": {
+        "nome": "Garantia-Safra",
+        "categoria": "externo_conferencia",
+        "variavel": null,
+        "url": null,
+        "periodo": "2003-2018",
+        "resolucao": "Semiárido (total)",
+        "arquivo": "solucao/validacao/V5/resultado_extra.json"
+      }
+    }
+  ],
+  "conferencias": [
+    {
+      "id": "K-ZARC-CAUPI",
+      "contra": "ZARC_2026_27",
+      "o_que": "Caupi (em teste): falha calculada por decêndio contra o nível do ZARC",
+      "resultado": "bate_em_parte",
+      "detalhe": "16 de 18 decêndios consistentes (falha <= nível do ZARC, ou > 40% fora). Linha de base ingênua (8 decêndios mais chuvosos do POWER): 12 de 18. Dentro da janela do ZARC a ordem não bate: Spearman -0,07 (a chuva média do decêndio dá 0,64). Discordam: 21/03, 01/04.",
+      "rastro": [
+        "R-ZARC-QXD",
+        "R-CALC-JANELAS-CAUPI"
+      ]
+    },
+    {
+      "id": "K-PAM-QXD",
+      "contra": "IBGE_PAM",
+      "o_que": "O rendimento simulado do milho acompanha a PAM de Quixadá?",
+      "resultado": "bate_em_parte",
+      "detalhe": "Spearman 0,504 (n = 40), 5 de 8 piores anos. A chuva bruta da estação dá 0,456: o balanço não supera a chuva (V5).",
+      "rastro": [
+        "R-PAM-QXD"
+      ]
+    },
+    {
+      "id": "K-GARANTIA-SAFRA",
+      "contra": "Garantia-Safra",
+      "o_que": "Anos de seca no Semiárido (6 municípios CE/PE/PB)",
+      "resultado": "bate_em_parte",
+      "detalhe": "Rendimento simulado contra a parte com perda: Spearman -0,788 (n = 16). A chuva bruta dá -0,735. Série nacional, não por município.",
+      "rastro": [
+        "R-GARANTIA-SAFRA"
+      ]
+    }
+  ],
+  "limites": [
+    {
+      "id": "X-N-ANOS",
+      "texto": "Só 25 anos de dados (2001-2025). A diferença entre E2 e E1 é 1,6 em 10 e os IC95 se sobrepõem: dizer 'tende a ser melhor', nunca 'é melhor'.",
+      "gravidade": "alta",
+      "afeta": [
+        "E1",
+        "E2"
+      ],
+      "mostrar_ao_agricultor": true,
+      "trecho": "tende a ser melhor, mas não é certo"
+    },
+    {
+      "id": "X-CHUVA-BRUTA",
+      "texto": "O balanço hídrico não supera a soma de chuva da estação (V5: +0,06; +0,016 com perda total). O ganho é traduzir o risco para o talhão, não prever melhor o ano.",
+      "gravidade": "media",
+      "afeta": [
+        "E1",
+        "E2"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-ZARC-CAUPI",
+      "texto": "O '16 de 18 decêndios do ZARC' é do caupi (em teste), não do milho. Dentro da janela a ordem não bate (Spearman -0,07) e o calendário ingênuo dá 12 de 18. Não use como prova do milho.",
+      "gravidade": "alta",
+      "afeta": [
+        "E3"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-RHO-RECORTE",
+      "texto": "O rho 0,615 do milho é a mediana de 6 municípios do CE, PE e PB, recorte feito depois de ver a Bahia falhar. Comparável com SC: Quixadá 0,50 (chuva 0,46) contra SMO 0,28 (chuva 0,23). Critério pré-registrado: 0,414.",
+      "gravidade": "media",
+      "afeta": [
+        "E1",
+        "E2"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-FEIJAO",
+      "texto": "Caupi e sorgo ficam em teste: feijão com rho 0,30 em Quixadá (V5) e Ky do sorgo genérico.",
+      "gravidade": "media",
+      "afeta": [
+        "E3",
+        "E4"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-BAHIA",
+      "texto": "Não vale para a Bahia (Irecê, Senhor do Bonfim): rho 0,07, a regra de início de chuva não planta em 16 e 24 de 41 anos (V5).",
+      "gravidade": "alta",
+      "afeta": [
+        "E1"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-ALTITUDE",
+      "texto": "A ET0 usa a altitude da sede (190 m, como risco.py), não a da grade do POWER (155,49 m).",
+      "gravidade": "baixa",
+      "afeta": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-CICLO-GDD",
+      "texto": "O campo ciclo_gdd não é usado no Semiárido: o ciclo do milho é fixo em 100 dias.",
+      "gravidade": "baixa",
+      "afeta": [
+        "E1",
+        "E2"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-GRADE",
+      "texto": "Chuva e temperatura vêm de uma grade de ~50 km.",
+      "gravidade": "alta",
+      "afeta": [
+        "E1",
+        "E2"
+      ],
+      "mostrar_ao_agricultor": true,
+      "trecho": "Dados de satélite, área de 50 km."
+    },
+    {
+      "id": "X-T12-SC",
+      "texto": "O T12 (prioridade) tem opções de SC. Não sai no Semiárido até existirem opções próprias; a prioridade fica 'não informada'.",
+      "gravidade": "baixa",
+      "afeta": [
+        "E1",
+        "E2"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-USUARIO",
+      "texto": "Mensagens e cartões não foram testados com produtores nem técnicos.",
+      "gravidade": "media",
+      "afeta": [
+        "C-01",
+        "C-02"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    }
+  ],
+  "nao_sei": {
+    "ativo": false,
+    "motivos": [],
+    "encaminhar_para": "tecnico_ater"
+  }
+}

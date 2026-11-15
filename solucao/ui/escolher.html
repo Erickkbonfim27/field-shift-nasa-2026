@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Field Shift · escolher local e pergunta</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="topo">
+  <span class="marca">Field Shift<small>Rotação com menos risco, com dados da NASA</small></span>
+  <button type="button" data-act="tema" id="btnTema" aria-label="Trocar entre tema claro e escuro">Tema</button>
+</header>
+
+<main class="centro">
+  <h1>Escolha o lugar e a pergunta</h1>
+  <p class="peq">A tela seguinte mostra a conversa do agricultor no WhatsApp e, ao lado, o painel de auditoria do técnico. Personagens fictícios.</p>
+
+  <div class="passo" id="p1">1. Onde fica a lavoura?</div>
+  <div class="opcoes" id="locais" role="group" aria-labelledby="p1"></div>
+
+  <div class="passo" id="p2">2. O que o agricultor pergunta?</div>
+  <div class="opcoes" id="perguntas" role="group" aria-labelledby="p2"></div>
+
+  <div class="acao"><a class="btn primario" id="abrir" href="index.html">Abrir a simulação</a></div>
+</main>
+
+<script src="comum.js"></script>
+<script src="escolher.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="Cebola em Ituporanga: o motor prefere setembro; o ZARC, não">
+<style>
+svg{--bg:#fcfcfb;--t1:#0b0b0b;--t2:#52514e;--grid:#e4e3df;--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--band:#eef3fb}
+@media (prefers-color-scheme: dark){svg{--bg:#1a1a19;--t1:#f0efec;--t2:#c3c2b7;--grid:#3a3a37;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--band:#22303f}}
+text{font-family:system-ui,-apple-system,Segoe UI,sans-serif;fill:var(--t1)}
+.t2{fill:var(--t2)} .tit{font-size:15px;font-weight:600} .sm{font-size:11px}
+.grid{stroke:var(--grid);stroke-width:1} .axis{stroke:var(--t2);stroke-width:1}
+rect.mk:hover,circle.mk:hover{opacity:.75}
+</style>
+<rect width="900" height="420" fill="var(--bg)"/>
+<text x="60" y="26" class="tit">Cebola em Ituporanga: o motor prefere setembro; o ZARC, não</text>
+<text x="60" y="46" class="t2 sm">NASA POWER 1984–2025. Faixa azul: decêndios com risco 20% em ao menos uma linha do ZARC cebola sequeiro de Ituporanga.</text>
+<rect x="60.0" y="78" width="699.5" height="282" fill="var(--band)"/>
+<text x="64.0" y="92" class="t2 sm">ZARC 20% em alguma linha</text>
+<rect x="60" y="56" width="14" height="3" rx="1" fill="var(--s1)"/><text x="78" y="62" class="sm">só água (controle)</text>
+<rect x="225.6" y="56" width="14" height="3" rx="1" fill="var(--s2)"/><text x="243.6" y="62" class="sm">motor composto (d1)</text>
+<line x1="60" x2="870" y1="360.0" y2="360.0" class="grid"/><text x="54" y="364.0" text-anchor="end" class="t2 sm">0</text>
+<line x1="60" x2="870" y1="266.0" y2="266.0" class="grid"/><text x="54" y="270.0" text-anchor="end" class="t2 sm">1</text>
+<line x1="60" x2="870" y1="172.0" y2="172.0" class="grid"/><text x="54" y="176.0" text-anchor="end" class="t2 sm">2</text>
+<line x1="60" x2="870" y1="78.0" y2="78.0" class="grid"/><text x="54" y="82.0" text-anchor="end" class="t2 sm">3</text>
+<text x="16" y="219.0" transform="rotate(-90 16 219.0)" text-anchor="middle" class="t2 sm">anos de falha em cada 10</text>
+<text x="60.0" y="378" text-anchor="middle" class="t2 sm">01/06</text>
+<text x="133.6" y="378" text-anchor="middle" class="t2 sm">11/06</text>
+<text x="207.3" y="378" text-anchor="middle" class="t2 sm">21/06</text>
+<text x="280.9" y="378" text-anchor="middle" class="t2 sm">01/07</text>
+<text x="354.5" y="378" text-anchor="middle" class="t2 sm">11/07</text>
+<text x="428.2" y="378" text-anchor="middle" class="t2 sm">21/07</text>
+<text x="501.8" y="378" text-anchor="middle" class="t2 sm">01/08</text>
+<text x="575.5" y="378" text-anchor="middle" class="t2 sm">11/08</text>
+<text x="649.1" y="378" text-anchor="middle" class="t2 sm">21/08</text>
+<text x="722.7" y="378" text-anchor="middle" class="t2 sm">01/09</text>
+<text x="796.4" y="378" text-anchor="middle" class="t2 sm">11/09</text>
+<text x="870.0" y="378" text-anchor="middle" class="t2 sm">21/09</text>
+<polyline points="60.0,360.0 133.6,360.0 207.3,360.0 280.9,360.0 354.5,341.2 428.2,341.2 501.8,341.2 575.5,360.0 649.1,341.2 722.7,360.0 796.4,360.0 870.0,360.0" fill="none" stroke="var(--s1)" stroke-width="2"/>
+<circle class="mk" cx="60.0" cy="360.0" r="4" fill="var(--s1)" stroke="var(--bg)" stroke-width="2"><title>01/06 · só água (controle): 0.0 em 10</title></circle>
+<circle class="mk" cx="133.6" cy="360.0" r="4" fill="var(--s1)" stroke="var(--bg)" stroke-width="2"><title>11/06 · só água (controle): 0.0 em 10</title></circle>
+<circle class="mk" cx="207.3" cy="360.0" r="4" fill="var(--s1)" stroke="var(--bg)" stroke-width="2"><title>21/06 · só água (controle): 0.0 em 10</title></circle>
+<circle class="mk" cx="280.9" cy="360.0" r="4" fill="var(--s1)" stroke="var(--bg)" stroke-width="2"><title>01/07 · só água (controle): 0.0 em 10</title></circle>
+<circle class="mk" cx="354.5" cy="341.2" r="4" fill="var(--s1)" stroke="var(--bg)" stroke-width="2"><title>11/07 · só água (controle): 0.2 em 10</title></circle>
+<circle class="mk" cx="428.2" cy="341.2" r="4" fill="var(--s1)" stroke="var(--bg)" stroke-width="2"><title>21/07 · só água (controle): 0.2 em 10</title></circle>
+<circle class="mk" cx="501.8" cy="341.2" r="4" fill="var(--s1)" stroke="var(--bg)" stroke-width="2"><title>01/08 · só água (controle): 0.2 em 10</title></circle>
+<circle class="mk" cx="575.5" cy="360.0" r="4" fill="var(--s1)" stroke="var(--bg)" stroke-width="2"><title>11/08 · só água (controle): 0.0 em 10</title></circle>
+<circle class="mk" cx="649.1" cy="341.2" r="4" fill="var(--s1)" stroke="var(--bg)" stroke-width="2"><title>21/08 · só água (controle): 0.2 em 10</title></circle>
+<circle class="mk" cx="722.7" cy="360.0" r="4" fill="var(--s1)" stroke="var(--bg)" stroke-width="2"><title>01/09 · só água (controle): 0.0 em 10</title></circle>
+<circle class="mk" cx="796.4" cy="360.0" r="4" fill="var(--s1)" stroke="var(--bg)" stroke-width="2"><title>11/09 · só água (controle): 0.0 em 10</title></circle>
+<circle class="mk" cx="870.0" cy="360.0" r="4" fill="var(--s1)" stroke="var(--bg)" stroke-width="2"><title>21/09 · só água (controle): 0.0 em 10</title></circle>
+<polyline points="60.0,228.4 133.6,181.4 207.3,134.4 280.9,181.4 354.5,228.4 428.2,247.2 501.8,247.2 575.5,294.2 649.1,266.0 722.7,294.2 796.4,313.0 870.0,313.0" fill="none" stroke="var(--s2)" stroke-width="2"/>
+<circle class="mk" cx="60.0" cy="228.4" r="4" fill="var(--s2)" stroke="var(--bg)" stroke-width="2"><title>01/06 · motor composto (d1): 1.4 em 10</title></circle>
+<circle class="mk" cx="133.6" cy="181.4" r="4" fill="var(--s2)" stroke="var(--bg)" stroke-width="2"><title>11/06 · motor composto (d1): 1.9 em 10</title></circle>
+<circle class="mk" cx="207.3" cy="134.4" r="4" fill="var(--s2)" stroke="var(--bg)" stroke-width="2"><title>21/06 · motor composto (d1): 2.4 em 10</title></circle>
+<circle class="mk" cx="280.9" cy="181.4" r="4" fill="var(--s2)" stroke="var(--bg)" stroke-width="2"><title>01/07 · motor composto (d1): 1.9 em 10</title></circle>
+<circle class="mk" cx="354.5" cy="228.4" r="4" fill="var(--s2)" stroke="var(--bg)" stroke-width="2"><title>11/07 · motor composto (d1): 1.4 em 10</title></circle>
+<circle class="mk" cx="428.2" cy="247.2" r="4" fill="var(--s2)" stroke="var(--bg)" stroke-width="2"><title>21/07 · motor composto (d1): 1.2 em 10</title></circle>
+<circle class="mk" cx="501.8" cy="247.2" r="4" fill="var(--s2)" stroke="var(--bg)" stroke-width="2"><title>01/08 · motor composto (d1): 1.2 em 10</title></circle>
+<circle class="mk" cx="575.5" cy="294.2" r="4" fill="var(--s2)" stroke="var(--bg)" stroke-width="2"><title>11/08 · motor composto (d1): 0.7 em 10</title></circle>
+<circle class="mk" cx="649.1" cy="266.0" r="4" fill="var(--s2)" stroke="var(--bg)" stroke-width="2"><title>21/08 · motor composto (d1): 1.0 em 10</title></circle>
+<circle class="mk" cx="722.7" cy="294.2" r="4" fill="var(--s2)" stroke="var(--bg)" stroke-width="2"><title>01/09 · motor composto (d1): 0.7 em 10</title></circle>
+<circle class="mk" cx="796.4" cy="313.0" r="4" fill="var(--s2)" stroke="var(--bg)" stroke-width="2"><title>11/09 · motor composto (d1): 0.5 em 10</title></circle>
+<circle class="mk" cx="870.0" cy="313.0" r="4" fill="var(--s2)" stroke="var(--bg)" stroke-width="2"><title>21/09 · motor composto (d1): 0.5 em 10</title></circle>
+<text x="60" y="406" class="t2 sm">Data de plantio (decêndio). Falha = rendimento do motor &lt; 0,6, flag de ano extremo ou geada no ciclo.</text>
+</svg>

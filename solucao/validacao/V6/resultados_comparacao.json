@@ -1,0 +1,552 @@
+{
+ "G2": {
+  "valores": 12996,
+  "fora_de_0_20_30_40": 0
+ },
+ "G1_culturas_por_municipio": {
+  "Sao Miguel do Oeste": [
+   "aveia",
+   "cebola",
+   "cebola_bulbinho",
+   "centeio",
+   "milho_1safra",
+   "sorgo_forrageiro_1safra",
+   "sorgo_forrageiro_2safra",
+   "sorgo_granifero_1safra",
+   "sorgo_granifero_2safra",
+   "triticale"
+  ],
+  "Ituporanga": [
+   "aveia",
+   "cebola",
+   "cebola_bulbinho",
+   "centeio",
+   "milho_1safra",
+   "sorgo_forrageiro_1safra",
+   "sorgo_forrageiro_2safra",
+   "sorgo_granifero_1safra",
+   "sorgo_granifero_2safra",
+   "triticale"
+  ]
+ },
+ "B1_0_milho_SMO_ago_out": {
+  "geada_B1_em_10_anos": {
+   "01/08": 6.3,
+   "11/08": 4.6,
+   "21/08": 3.2,
+   "01/09": 1.7,
+   "11/09": 0.5,
+   "21/09": 0.0,
+   "01/10": 0.0,
+   "11/10": 0.0
+  },
+  "zarc_risco": {
+   "grupo_I_AD2": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 20,
+    "01/09": 30,
+    "11/09": 40,
+    "21/09": 0,
+    "01/10": 0,
+    "11/10": 0
+   },
+   "grupo_II_AD2": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 30,
+    "01/09": 40,
+    "11/09": 40,
+    "21/09": 40,
+    "01/10": 40,
+    "11/10": 40
+   },
+   "grupo_III_AD2": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 0,
+    "01/09": 0,
+    "11/09": 0,
+    "21/09": 40,
+    "01/10": 40,
+    "11/10": 40
+   },
+   "grupo_I_AD3": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 20,
+    "01/09": 20,
+    "11/09": 30,
+    "21/09": 30,
+    "01/10": 30,
+    "11/10": 30
+   },
+   "grupo_II_AD3": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 20,
+    "01/09": 30,
+    "11/09": 30,
+    "21/09": 30,
+    "01/10": 30,
+    "11/10": 30
+   },
+   "grupo_III_AD3": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 40,
+    "01/09": 40,
+    "11/09": 30,
+    "21/09": 30,
+    "01/10": 30,
+    "11/10": 30
+   },
+   "grupo_I_AD4": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 20,
+    "01/09": 20,
+    "11/09": 20,
+    "21/09": 30,
+    "01/10": 30,
+    "11/10": 30
+   },
+   "grupo_II_AD4": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 20,
+    "01/09": 30,
+    "11/09": 30,
+    "21/09": 30,
+    "01/10": 30,
+    "11/10": 20
+   },
+   "grupo_III_AD4": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 30,
+    "01/09": 30,
+    "11/09": 30,
+    "21/09": 30,
+    "01/10": 20,
+    "11/10": 20
+   },
+   "grupo_I_AD5": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 20,
+    "01/09": 20,
+    "11/09": 20,
+    "21/09": 20,
+    "01/10": 20,
+    "11/10": 20
+   },
+   "grupo_II_AD5": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 20,
+    "01/09": 20,
+    "11/09": 20,
+    "21/09": 20,
+    "01/10": 20,
+    "11/10": 20
+   },
+   "grupo_III_AD5": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 20,
+    "01/09": 20,
+    "11/09": 20,
+    "21/09": 20,
+    "01/10": 20,
+    "11/10": 20
+   },
+   "grupo_I_AD6": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 20,
+    "01/09": 20,
+    "11/09": 20,
+    "21/09": 20,
+    "01/10": 20,
+    "11/10": 20
+   },
+   "grupo_II_AD6": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 20,
+    "01/09": 20,
+    "11/09": 20,
+    "21/09": 20,
+    "01/10": 20,
+    "11/10": 20
+   },
+   "grupo_III_AD6": {
+    "01/08": 40,
+    "11/08": 40,
+    "21/08": 20,
+    "01/09": 20,
+    "11/09": 20,
+    "21/09": 20,
+    "01/10": 20,
+    "11/10": 20
+   }
+  }
+ },
+ "B1_0_primeiro_dec_risco_le20": {
+  "grupo_I_AD2": "21/08",
+  "grupo_II_AD2": null,
+  "grupo_III_AD2": null,
+  "grupo_I_AD3": "21/08",
+  "grupo_II_AD3": "21/08",
+  "grupo_III_AD3": null,
+  "grupo_I_AD4": "21/08",
+  "grupo_II_AD4": "21/08",
+  "grupo_III_AD4": "01/10",
+  "grupo_I_AD5": "21/08",
+  "grupo_II_AD5": "21/08",
+  "grupo_III_AD5": "21/08",
+  "grupo_I_AD6": "21/08",
+  "grupo_II_AD6": "21/08",
+  "grupo_III_AD6": "21/08"
+ },
+ "B1_1_ultimo_plantio_zarc": {
+  "milho_grupo_I_AD4": [
+   "01/01",
+   "11/01",
+   "21/01"
+  ],
+  "milho_grupo_I_AD5": [
+   "01/01",
+   "11/01",
+   "21/01"
+  ],
+  "milho_grupo_I_AD6": [
+   "01/01",
+   "11/01",
+   "21/01"
+  ],
+  "milho_grupo_II_AD4": [
+   "01/01",
+   "11/01",
+   "21/01"
+  ],
+  "milho_grupo_II_AD5": [
+   "01/01",
+   "11/01",
+   "21/01"
+  ],
+  "milho_grupo_II_AD6": [
+   "01/01",
+   "11/01",
+   "21/01"
+  ],
+  "milho_grupo_III_AD4": [
+   "01/01",
+   "11/01",
+   "21/01"
+  ],
+  "milho_grupo_III_AD5": [
+   "01/01",
+   "11/01",
+   "21/01"
+  ],
+  "milho_grupo_III_AD6": [
+   "01/01",
+   "11/01",
+   "21/01"
+  ],
+  "sorgo2_grupo_I": [
+   "21/12",
+   "01/01",
+   "11/01",
+   "21/01",
+   "01/02",
+   "11/02",
+   "21/02",
+   "01/03"
+  ],
+  "sorgo2_grupo_II": [
+   "21/12",
+   "01/01",
+   "11/01",
+   "21/01",
+   "01/02",
+   "11/02"
+  ],
+  "sorgo2_grupo_III": [
+   "21/12",
+   "01/01",
+   "11/01",
+   "21/01"
+  ]
+ },
+ "A4_3_milho_x_sorgo_SMO_11set_21out": {
+  "milho_por_AD": {
+   "AD1": {
+    "grupo_I": {
+     "decendios_indicados": 0,
+     "risco_medio_se_indicado": null,
+     "valores": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    "grupo_II": {
+     "decendios_indicados": 0,
+     "risco_medio_se_indicado": null,
+     "valores": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    "grupo_III": {
+     "decendios_indicados": 0,
+     "risco_medio_se_indicado": null,
+     "valores": [
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    }
+   },
+   "AD2": {
+    "grupo_I": {
+     "decendios_indicados": 2,
+     "risco_medio_se_indicado": 40,
+     "valores": [
+      40,
+      null,
+      null,
+      null,
+      40
+     ]
+    },
+    "grupo_II": {
+     "decendios_indicados": 5,
+     "risco_medio_se_indicado": 40,
+     "valores": [
+      40,
+      40,
+      40,
+      40,
+      40
+     ]
+    },
+    "grupo_III": {
+     "decendios_indicados": 4,
+     "risco_medio_se_indicado": 40,
+     "valores": [
+      null,
+      40,
+      40,
+      40,
+      40
+     ]
+    }
+   },
+   "AD3": {
+    "grupo_I": {
+     "decendios_indicados": 5,
+     "risco_medio_se_indicado": 30,
+     "valores": [
+      30,
+      30,
+      30,
+      30,
+      30
+     ]
+    },
+    "grupo_II": {
+     "decendios_indicados": 5,
+     "risco_medio_se_indicado": 30,
+     "valores": [
+      30,
+      30,
+      30,
+      30,
+      30
+     ]
+    },
+    "grupo_III": {
+     "decendios_indicados": 5,
+     "risco_medio_se_indicado": 30,
+     "valores": [
+      30,
+      30,
+      30,
+      30,
+      30
+     ]
+    }
+   },
+   "AD4": {
+    "grupo_I": {
+     "decendios_indicados": 5,
+     "risco_medio_se_indicado": 28,
+     "valores": [
+      20,
+      30,
+      30,
+      30,
+      30
+     ]
+    },
+    "grupo_II": {
+     "decendios_indicados": 5,
+     "risco_medio_se_indicado": 26,
+     "valores": [
+      30,
+      30,
+      30,
+      20,
+      20
+     ]
+    },
+    "grupo_III": {
+     "decendios_indicados": 5,
+     "risco_medio_se_indicado": 24,
+     "valores": [
+      30,
+      30,
+      20,
+      20,
+      20
+     ]
+    }
+   },
+   "AD5": {
+    "grupo_I": {
+     "decendios_indicados": 5,
+     "risco_medio_se_indicado": 20,
+     "valores": [
+      20,
+      20,
+      20,
+      20,
+      20
+     ]
+    },
+    "grupo_II": {
+     "decendios_indicados": 5,
+     "risco_medio_se_indicado": 20,
+     "valores": [
+      20,
+      20,
+      20,
+      20,
+      20
+     ]
+    },
+    "grupo_III": {
+     "decendios_indicados": 5,
+     "risco_medio_se_indicado": 20,
+     "valores": [
+      20,
+      20,
+      20,
+      20,
+      20
+     ]
+    }
+   },
+   "AD6": {
+    "grupo_I": {
+     "decendios_indicados": 5,
+     "risco_medio_se_indicado": 20,
+     "valores": [
+      20,
+      20,
+      20,
+      20,
+      20
+     ]
+    },
+    "grupo_II": {
+     "decendios_indicados": 5,
+     "risco_medio_se_indicado": 20,
+     "valores": [
+      20,
+      20,
+      20,
+      20,
+      20
+     ]
+    },
+    "grupo_III": {
+     "decendios_indicados": 5,
+     "risco_medio_se_indicado": 20,
+     "valores": [
+      20,
+      20,
+      20,
+      20,
+      20
+     ]
+    }
+   }
+  },
+  "sorgo_forrageiro_solo1": {
+   "grupo_I": [
+    20,
+    20,
+    20,
+    20,
+    20
+   ],
+   "grupo_II": [
+    20,
+    20,
+    20,
+    20,
+    20
+   ],
+   "grupo_III": [
+    20,
+    20,
+    20,
+    20,
+    20
+   ]
+  },
+  "sorgo_igual_em_todos_os_solos": true
+ },
+ "cebola_resumo": {
+  "Sao Miguel do Oeste|Sequeiro": {
+   "combinacoes": 18,
+   "com_alguma_janela": 18,
+   "melhor_risco_mediano": 30.0,
+   "pct_decendios_20": 0.0,
+   "pct_decendios_40": 75.0
+  },
+  "Sao Miguel do Oeste|Irrigado": {
+   "combinacoes": 36,
+   "com_alguma_janela": 36,
+   "melhor_risco_mediano": 30.0,
+   "pct_decendios_20": 0.0,
+   "pct_decendios_40": 79.0
+  },
+  "Ituporanga|Sequeiro": {
+   "combinacoes": 35,
+   "com_alguma_janela": 35,
+   "melhor_risco_mediano": 20,
+   "pct_decendios_20": 31.4,
+   "pct_decendios_40": 40.4
+  },
+  "Ituporanga|Irrigado": {
+   "combinacoes": 36,
+   "com_alguma_janela": 36,
+   "melhor_risco_mediano": 20.0,
+   "pct_decendios_20": 43.0,
+   "pct_decendios_40": 30.4
+  }
+ }
+}

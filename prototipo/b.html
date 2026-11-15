@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abordagem B · Calendário</title>
+<link rel="stylesheet" href="comum.css">
+<style>
+  main { max-width: 980px; margin: 0 auto; padding: 16px; display: grid; gap: 16px; }
+  .resp { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; }
+  .resp .grande { font-size: 30px; font-weight: 800; line-height: 1.15; }
+  .chips { display: flex; gap: 8px; flex-wrap: wrap; }
+  .cal { display: grid; grid-template-columns: repeat(18, minmax(0, 1fr)); gap: 3px; align-items: end; height: 190px; padding-top: 22px; }
+  .cal .col { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; height: 100%; font-size: 11px; color: var(--texto2); position: relative; }
+  .cal .barra { width: 100%; border-radius: 4px 4px 0 0; min-height: 3px; }
+  .cal .val { font-weight: 700; color: var(--texto); font-size: 12px; }
+  .cal .zm { position: absolute; left: -1px; right: -1px; height: 0; border-top: 3px solid var(--texto); }
+  .meses { display: grid; grid-template-columns: repeat(6, 1fr); text-align: center; font-size: 12px; font-weight: 600; color: var(--texto2); margin-top: 4px; }
+  .legenda { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--texto2); margin-top: 8px; }
+  .legenda i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+  .opcao { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 10px 0; border-bottom: 1px solid var(--linha); align-items: center; }
+  .opcao:last-child { border: 0; }
+  .opcao .n { font-size: 22px; font-weight: 800; text-align: right; }
+  details { border: 1px solid var(--linha); border-radius: 12px; padding: 10px 14px; background: var(--cartao); }
+  summary { cursor: pointer; font-weight: 600; }
+  .zapcard { background: var(--zap); border-radius: 12px; padding: 12px; font-size: 14px; max-width: 360px; }
+  @media (max-width: 700px) { .resp { grid-template-columns: 1fr; } .cal { height: 150px; } .cal .val { font-size: 10px; } }
+</style>
+</head>
+<body>
+<div class="topo">
+  <h1>Abordagem B · Calendário primeiro</h1>
+  <nav><a href="a.html">A · Conversa</a><a href="b.html" aria-current="page">B · Calendário</a></nav>
+  <span class="selo" id="selo">carregando…</span>
+</div>
+<main id="raiz"></main>
+<script src="comum.js"></script>
+<script>
+let D, cultura = "caupi";
+carregar().then((d) => { D = d; document.getElementById("selo").textContent = `${d.municipio} · ${d.periodo} · solo ${d.solo_padrao === "medio" ? "médio" : d.solo_padrao}`; desenhar(); })
+  .catch((e) => { document.body.innerHTML = `<p style="padding:20px">Erro: ${e.message}. Abra por um servidor local (python3 -m http.server).</p>`; });
+
+function corBarra(v) { return v >= 8 ? "var(--ok)" : v >= 6 ? "var(--medio)" : v >= 4 ? "var(--ruim)" : "var(--pessimo)"; }
+
+function melhorJanela(jan) {
+  const mx = Math.max(...jan.map((j) => j.colhe_em_10));
+  const top = jan.filter((j) => j.colhe_em_10 >= mx - 0.4);
+  const ini = top[0], fim = top[top.length - 1];
+  const ultimo = (mes) => new Date(2023, mes, 0).getDate();
+  const f = (j, fimDec) => { const d = fimDec ? (j.dia === 21 ? ultimo(j.mes) : j.dia + 9) : j.dia; return `${d} de ${["jan","fev","mar","abr","mai","jun"][j.mes - 1]}`; };
+  return { mx, texto: `${f(ini, false)} a ${f(fim, true)}` };
+}
+
+function desenhar() {
+  const jan = cultura === "caupi" ? D.janelas_caupi : D.janelas_milho;
+  const bj = melhorJanela(jan);
+  const nomeC = cultura === "caupi" ? "caupi" : "milho";
+  const zarcOn = cultura === "caupi";
+  const m = mensagem(D);
+  const ord = m.ordenadas;
+  document.getElementById("raiz").innerHTML = `
+  <section class="cartao">
+    <div class="rotulo">Pergunta do agricultor</div>
+    <div class="chips" style="margin:6px 0 14px"><span class="peq" style="align-self:center">Quando planto o</span>
+      <button data-c="caupi" aria-pressed="${cultura === "caupi"}">caupi</button><button data-c="milho" aria-pressed="${cultura === "milho"}">milho</button><span class="peq" style="align-self:center">em Quixadá?</span></div>
+    <div class="resp">
+      <div><div class="grande">${bj.texto}</div>
+        <div class="peq">é quando o ${nomeC} dá boa colheita em ${Math.round(bj.mx)} de cada 10 anos, solo médio.</div></div>
+      <div>${sacos(bj.mx, 26)}</div>
+    </div>
+  </section>
+
+  <section class="cartao">
+    <h2>Chance de colher bem, por data de plantio</h2>
+    <div class="cal" role="img" aria-label="Chance de colher por decêndio">${jan.map((j) => {
+      const z = D.zarc_caupi_medio[j.dec];
+      return `<div class="col" title="${j.dia}/${mesNome(j.mes)}: ${j.colhe_em_10} em 10 anos${zarcOn ? " | ZARC " + (z ? "até " + z + "% de risco" : "não recomendado") : ""}">
+        <span class="val">${Math.round(j.colhe_em_10)}</span>
+        <div class="barra" style="height:${j.colhe_em_10 * 10}%;background:${corBarra(j.colhe_em_10)}"></div>
+        ${zarcOn && z ? `<div class="zm" style="bottom:${100 - z}%"></div>` : ""}
+        <span>${j.dia}</span></div>`; }).join("")}</div>
+    <div class="meses"><span>jan</span><span>fev</span><span>mar</span><span>abr</span><span>mai</span><span>jun</span></div>
+    <div class="legenda"><span><i style="background:var(--ok)"></i>8 a 10</span><span><i style="background:var(--medio)"></i>6 a 8</span><span><i style="background:var(--ruim)"></i>4 a 6</span><span><i style="background:var(--pessimo)"></i>menos de 4</span>
+      ${zarcOn ? '<span><b style="border-top:3px solid var(--texto);display:inline-block;width:14px;vertical-align:3px"></b> piso que o ZARC aceita (risco até 20/30/40%)</span>' : '<span>Sem ZARC para comparar aqui (só conferido o caupi).</span>'}</div>
+    ${zarcOn ? `<p class="aviso"><b>Atenção:</b> o ZARC, que vale para crédito e seguro, tem o menor risco (20%) em <b>11 a 31 de março</b> e aceita de 21/jan a 10/abr. Se a data sugerida por nós ficar fora do que o ZARC aceita, o agricultor pode perder a cobertura do seguro. O técnico precisa conferir antes de recomendar.</p>` : ""}
+    <p class="peq">Número = anos em 10 com boa colheita. Barra baixa no começo: a primeira chuva de janeiro costuma falhar (veranico). Barra baixa no fim: a chuva acaba antes da maturação.</p>
+  </section>
+
+  <section class="cartao">
+    <h2>E se eu mudar a cultura? (plantando na 1ª chuva firme, exceto onde dito)</h2>
+    ${ord.map((e) => `<div class="opcao"><div><b>${e.id}. ${e.nome}</b><div class="peq">${e.desc}</div></div><div class="n">${Math.round(e.colhe_em_10)}</div><div style="grid-column:1/-1">${sacos(e.colhe_em_10, 20)}</div></div>`).join("")}
+  </section>
+
+  <section class="cartao">
+    <h2>Mensagem que o WhatsApp mandaria</h2>
+    <div class="zapcard"><b>Para Dona Maria (fictícia):</b> ${m.texto}</div>
+    <p class="peq">Texto fixo, com números do modelo. O assistente só lê em voz alta.</p>
+  </section>
+
+  <details><summary>Auditoria · como chegamos nesses números</summary>
+    ${D.estrategias.map((e) => `<details style="margin:10px 0"><summary>${e.id}. ${e.nome} · ${e.colhe_em_10.toFixed(1)} em 10</summary>
+        ${graficoAnos(e)}${painelParametros(e, D)}
+        <details style="margin-top:8px"><summary>Os 25 anos, linha a linha</summary><div style="max-height:380px;overflow:auto">${tabelaAnos(e)}</div></details></details>`).join("")}
+    <h3>Validação contra o ZARC (caupi)</h3>${graficoZarc(D)}
+    <p><b>${compararZarc(D).filter((x) => x.consistente).length} de ${compararZarc(D).length}</b> decêndios consistentes.</p>
+    <div class="aviso">Limites: chuva em grade de ~50 km (POWER), solo vem da resposta do agricultor, Kc e Ky genéricos (FAO), rotação e solo no ano seguinte não calculados, sem teste com agricultores.</div>
+  </details>`;
+  document.querySelectorAll("[data-c]").forEach((b) => b.onclick = () => { cultura = b.dataset.c; desenhar(); });
+}
+</script>
+</body>
+</html>

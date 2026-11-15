@@ -1,0 +1,4 @@
+NDVI sem tendência, 2000-2025: rho=-0.06 p=0.75; terço mais baixo pega 3 de 6 quebras
+NDVI sem tendência, 2010-2025: rho=0.26 p=0.33; terço mais baixo pega 3 de 5 quebras
+NDVI bruto, 2010-2025: rho=0.25 p=0.36; terço mais baixo pega 3 de 5 quebras
+tendência do NDVI: 0.75% por ano

@@ -1,0 +1,401 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="480" font-family="Helvetica,Arial,sans-serif" font-size="12">
+<rect width="100%%" height="100%%" fill="white"/>
+<text x="10" y="22" font-size="16" font-weight="bold">Janelas de plantio do ZARC 2026/27 (risco por decêndio)</text>
+<text x="10" y="40" fill="#444">Verde 20%, amarelo 30%, vermelho 40%, cinza = não indicado. Eixo começa em 1/abr. Fonte: SISZARC.</text>
+<text x="10" y="70" font-weight="bold" font-size="14">São Miguel do Oeste</text>
+<text x="10" y="101">Milho 1ª safra (grupo I, AD5)</text>
+<rect x="230" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/04: não indicado</title></rect>
+<rect x="249" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/04: não indicado</title></rect>
+<rect x="268" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/04: não indicado</title></rect>
+<rect x="287" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/05: não indicado</title></rect>
+<rect x="306" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/05: não indicado</title></rect>
+<rect x="325" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/05: não indicado</title></rect>
+<rect x="344" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/06: não indicado</title></rect>
+<rect x="363" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/06: não indicado</title></rect>
+<rect x="382" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/06: não indicado</title></rect>
+<rect x="401" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/07: não indicado</title></rect>
+<rect x="420" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/07: não indicado</title></rect>
+<rect x="439" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/07: não indicado</title></rect>
+<rect x="458" y="84" width="19" height="20" fill="#d9534f" stroke="white"><title>01/08: 40%</title></rect>
+<rect x="477" y="84" width="19" height="20" fill="#d9534f" stroke="white"><title>11/08: 40%</title></rect>
+<rect x="496" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/08: 20%</title></rect>
+<rect x="515" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/09: 20%</title></rect>
+<rect x="534" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/09: 20%</title></rect>
+<rect x="553" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/09: 20%</title></rect>
+<rect x="572" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/10: 20%</title></rect>
+<rect x="591" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/10: 20%</title></rect>
+<rect x="610" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/10: 20%</title></rect>
+<rect x="629" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/11: 20%</title></rect>
+<rect x="648" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/11: 20%</title></rect>
+<rect x="667" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/11: 20%</title></rect>
+<rect x="686" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/12: 20%</title></rect>
+<rect x="705" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/12: 20%</title></rect>
+<rect x="724" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/12: 20%</title></rect>
+<rect x="743" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/01: 20%</title></rect>
+<rect x="762" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/01: 20%</title></rect>
+<rect x="781" y="84" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/01: 20%</title></rect>
+<rect x="800" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/02: não indicado</title></rect>
+<rect x="819" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/02: não indicado</title></rect>
+<rect x="838" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/02: não indicado</title></rect>
+<rect x="857" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/03: não indicado</title></rect>
+<rect x="876" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/03: não indicado</title></rect>
+<rect x="895" y="84" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/03: não indicado</title></rect>
+<text x="10" y="127">Sorgo forrageiro 1ª safra</text>
+<rect x="230" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/04: não indicado</title></rect>
+<rect x="249" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/04: não indicado</title></rect>
+<rect x="268" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/04: não indicado</title></rect>
+<rect x="287" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/05: não indicado</title></rect>
+<rect x="306" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/05: não indicado</title></rect>
+<rect x="325" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/05: não indicado</title></rect>
+<rect x="344" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/06: não indicado</title></rect>
+<rect x="363" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/06: não indicado</title></rect>
+<rect x="382" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/06: não indicado</title></rect>
+<rect x="401" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/07: não indicado</title></rect>
+<rect x="420" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/07: não indicado</title></rect>
+<rect x="439" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/07: não indicado</title></rect>
+<rect x="458" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/08: não indicado</title></rect>
+<rect x="477" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/08: não indicado</title></rect>
+<rect x="496" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/08: não indicado</title></rect>
+<rect x="515" y="110" width="19" height="20" fill="#d9534f" stroke="white"><title>01/09: 40%</title></rect>
+<rect x="534" y="110" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/09: 20%</title></rect>
+<rect x="553" y="110" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/09: 20%</title></rect>
+<rect x="572" y="110" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/10: 20%</title></rect>
+<rect x="591" y="110" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/10: 20%</title></rect>
+<rect x="610" y="110" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/10: 20%</title></rect>
+<rect x="629" y="110" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/11: 20%</title></rect>
+<rect x="648" y="110" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/11: 20%</title></rect>
+<rect x="667" y="110" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/11: 20%</title></rect>
+<rect x="686" y="110" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/12: 20%</title></rect>
+<rect x="705" y="110" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/12: 20%</title></rect>
+<rect x="724" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/12: não indicado</title></rect>
+<rect x="743" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/01: não indicado</title></rect>
+<rect x="762" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/01: não indicado</title></rect>
+<rect x="781" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/01: não indicado</title></rect>
+<rect x="800" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/02: não indicado</title></rect>
+<rect x="819" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/02: não indicado</title></rect>
+<rect x="838" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/02: não indicado</title></rect>
+<rect x="857" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/03: não indicado</title></rect>
+<rect x="876" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/03: não indicado</title></rect>
+<rect x="895" y="110" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/03: não indicado</title></rect>
+<text x="10" y="153">Sorgo forrageiro 2ª safra</text>
+<rect x="230" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/04: não indicado</title></rect>
+<rect x="249" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/04: não indicado</title></rect>
+<rect x="268" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/04: não indicado</title></rect>
+<rect x="287" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/05: não indicado</title></rect>
+<rect x="306" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/05: não indicado</title></rect>
+<rect x="325" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/05: não indicado</title></rect>
+<rect x="344" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/06: não indicado</title></rect>
+<rect x="363" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/06: não indicado</title></rect>
+<rect x="382" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/06: não indicado</title></rect>
+<rect x="401" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/07: não indicado</title></rect>
+<rect x="420" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/07: não indicado</title></rect>
+<rect x="439" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/07: não indicado</title></rect>
+<rect x="458" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/08: não indicado</title></rect>
+<rect x="477" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/08: não indicado</title></rect>
+<rect x="496" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/08: não indicado</title></rect>
+<rect x="515" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/09: não indicado</title></rect>
+<rect x="534" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/09: não indicado</title></rect>
+<rect x="553" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/09: não indicado</title></rect>
+<rect x="572" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/10: não indicado</title></rect>
+<rect x="591" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/10: não indicado</title></rect>
+<rect x="610" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/10: não indicado</title></rect>
+<rect x="629" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/11: não indicado</title></rect>
+<rect x="648" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/11: não indicado</title></rect>
+<rect x="667" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/11: não indicado</title></rect>
+<rect x="686" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/12: não indicado</title></rect>
+<rect x="705" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/12: não indicado</title></rect>
+<rect x="724" y="136" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/12: 20%</title></rect>
+<rect x="743" y="136" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/01: 20%</title></rect>
+<rect x="762" y="136" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/01: 20%</title></rect>
+<rect x="781" y="136" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/01: 20%</title></rect>
+<rect x="800" y="136" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/02: 20%</title></rect>
+<rect x="819" y="136" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/02: 20%</title></rect>
+<rect x="838" y="136" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/02: 20%</title></rect>
+<rect x="857" y="136" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/03: 20%</title></rect>
+<rect x="876" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/03: não indicado</title></rect>
+<rect x="895" y="136" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/03: não indicado</title></rect>
+<text x="10" y="179">Aveia (grupo I, AD5)</text>
+<rect x="230" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/04: não indicado</title></rect>
+<rect x="249" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/04: não indicado</title></rect>
+<rect x="268" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/04: não indicado</title></rect>
+<rect x="287" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/05: não indicado</title></rect>
+<rect x="306" y="162" width="19" height="20" fill="#d9534f" stroke="white"><title>11/05: 40%</title></rect>
+<rect x="325" y="162" width="19" height="20" fill="#d9534f" stroke="white"><title>21/05: 40%</title></rect>
+<rect x="344" y="162" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/06: 20%</title></rect>
+<rect x="363" y="162" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/06: 20%</title></rect>
+<rect x="382" y="162" width="19" height="20" fill="#e0b020" stroke="white"><title>21/06: 30%</title></rect>
+<rect x="401" y="162" width="19" height="20" fill="#e0b020" stroke="white"><title>01/07: 30%</title></rect>
+<rect x="420" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/07: não indicado</title></rect>
+<rect x="439" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/07: não indicado</title></rect>
+<rect x="458" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/08: não indicado</title></rect>
+<rect x="477" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/08: não indicado</title></rect>
+<rect x="496" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/08: não indicado</title></rect>
+<rect x="515" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/09: não indicado</title></rect>
+<rect x="534" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/09: não indicado</title></rect>
+<rect x="553" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/09: não indicado</title></rect>
+<rect x="572" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/10: não indicado</title></rect>
+<rect x="591" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/10: não indicado</title></rect>
+<rect x="610" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/10: não indicado</title></rect>
+<rect x="629" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/11: não indicado</title></rect>
+<rect x="648" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/11: não indicado</title></rect>
+<rect x="667" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/11: não indicado</title></rect>
+<rect x="686" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/12: não indicado</title></rect>
+<rect x="705" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/12: não indicado</title></rect>
+<rect x="724" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/12: não indicado</title></rect>
+<rect x="743" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/01: não indicado</title></rect>
+<rect x="762" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/01: não indicado</title></rect>
+<rect x="781" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/01: não indicado</title></rect>
+<rect x="800" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/02: não indicado</title></rect>
+<rect x="819" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/02: não indicado</title></rect>
+<rect x="838" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/02: não indicado</title></rect>
+<rect x="857" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/03: não indicado</title></rect>
+<rect x="876" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/03: não indicado</title></rect>
+<rect x="895" y="162" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/03: não indicado</title></rect>
+<text x="10" y="205">Cebola (melhor ciclo, AD5)</text>
+<rect x="230" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/04: não indicado</title></rect>
+<rect x="249" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/04: não indicado</title></rect>
+<rect x="268" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/04: não indicado</title></rect>
+<rect x="287" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/05: não indicado</title></rect>
+<rect x="306" y="188" width="19" height="20" fill="#d9534f" stroke="white"><title>11/05: 40%</title></rect>
+<rect x="325" y="188" width="19" height="20" fill="#e0b020" stroke="white"><title>21/05: 30%</title></rect>
+<rect x="344" y="188" width="19" height="20" fill="#e0b020" stroke="white"><title>01/06: 30%</title></rect>
+<rect x="363" y="188" width="19" height="20" fill="#e0b020" stroke="white"><title>11/06: 30%</title></rect>
+<rect x="382" y="188" width="19" height="20" fill="#e0b020" stroke="white"><title>21/06: 30%</title></rect>
+<rect x="401" y="188" width="19" height="20" fill="#e0b020" stroke="white"><title>01/07: 30%</title></rect>
+<rect x="420" y="188" width="19" height="20" fill="#e0b020" stroke="white"><title>11/07: 30%</title></rect>
+<rect x="439" y="188" width="19" height="20" fill="#e0b020" stroke="white"><title>21/07: 30%</title></rect>
+<rect x="458" y="188" width="19" height="20" fill="#e0b020" stroke="white"><title>01/08: 30%</title></rect>
+<rect x="477" y="188" width="19" height="20" fill="#e0b020" stroke="white"><title>11/08: 30%</title></rect>
+<rect x="496" y="188" width="19" height="20" fill="#e0b020" stroke="white"><title>21/08: 30%</title></rect>
+<rect x="515" y="188" width="19" height="20" fill="#e0b020" stroke="white"><title>01/09: 30%</title></rect>
+<rect x="534" y="188" width="19" height="20" fill="#d9534f" stroke="white"><title>11/09: 40%</title></rect>
+<rect x="553" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/09: não indicado</title></rect>
+<rect x="572" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/10: não indicado</title></rect>
+<rect x="591" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/10: não indicado</title></rect>
+<rect x="610" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/10: não indicado</title></rect>
+<rect x="629" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/11: não indicado</title></rect>
+<rect x="648" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/11: não indicado</title></rect>
+<rect x="667" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/11: não indicado</title></rect>
+<rect x="686" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/12: não indicado</title></rect>
+<rect x="705" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/12: não indicado</title></rect>
+<rect x="724" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/12: não indicado</title></rect>
+<rect x="743" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/01: não indicado</title></rect>
+<rect x="762" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/01: não indicado</title></rect>
+<rect x="781" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/01: não indicado</title></rect>
+<rect x="800" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/02: não indicado</title></rect>
+<rect x="819" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/02: não indicado</title></rect>
+<rect x="838" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/02: não indicado</title></rect>
+<rect x="857" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/03: não indicado</title></rect>
+<rect x="876" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/03: não indicado</title></rect>
+<rect x="895" y="188" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/03: não indicado</title></rect>
+<text x="230" y="224" font-size="10" fill="#333">01/04</text>
+<text x="287" y="224" font-size="10" fill="#333">01/05</text>
+<text x="344" y="224" font-size="10" fill="#333">01/06</text>
+<text x="401" y="224" font-size="10" fill="#333">01/07</text>
+<text x="458" y="224" font-size="10" fill="#333">01/08</text>
+<text x="515" y="224" font-size="10" fill="#333">01/09</text>
+<text x="572" y="224" font-size="10" fill="#333">01/10</text>
+<text x="629" y="224" font-size="10" fill="#333">01/11</text>
+<text x="686" y="224" font-size="10" fill="#333">01/12</text>
+<text x="743" y="224" font-size="10" fill="#333">01/01</text>
+<text x="800" y="224" font-size="10" fill="#333">01/02</text>
+<text x="857" y="224" font-size="10" fill="#333">01/03</text>
+<text x="10" y="254" font-weight="bold" font-size="14">Ituporanga</text>
+<text x="10" y="285">Milho 1ª safra (grupo I, AD5)</text>
+<rect x="230" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/04: não indicado</title></rect>
+<rect x="249" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/04: não indicado</title></rect>
+<rect x="268" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/04: não indicado</title></rect>
+<rect x="287" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/05: não indicado</title></rect>
+<rect x="306" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/05: não indicado</title></rect>
+<rect x="325" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/05: não indicado</title></rect>
+<rect x="344" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/06: não indicado</title></rect>
+<rect x="363" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/06: não indicado</title></rect>
+<rect x="382" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/06: não indicado</title></rect>
+<rect x="401" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/07: não indicado</title></rect>
+<rect x="420" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/07: não indicado</title></rect>
+<rect x="439" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/07: não indicado</title></rect>
+<rect x="458" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/08: não indicado</title></rect>
+<rect x="477" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/08: não indicado</title></rect>
+<rect x="496" y="268" width="19" height="20" fill="#e0b020" stroke="white"><title>21/08: 30%</title></rect>
+<rect x="515" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/09: 20%</title></rect>
+<rect x="534" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/09: 20%</title></rect>
+<rect x="553" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/09: 20%</title></rect>
+<rect x="572" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/10: 20%</title></rect>
+<rect x="591" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/10: 20%</title></rect>
+<rect x="610" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/10: 20%</title></rect>
+<rect x="629" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/11: 20%</title></rect>
+<rect x="648" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/11: 20%</title></rect>
+<rect x="667" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/11: 20%</title></rect>
+<rect x="686" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/12: 20%</title></rect>
+<rect x="705" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/12: 20%</title></rect>
+<rect x="724" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/12: 20%</title></rect>
+<rect x="743" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/01: 20%</title></rect>
+<rect x="762" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/01: 20%</title></rect>
+<rect x="781" y="268" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/01: 20%</title></rect>
+<rect x="800" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/02: não indicado</title></rect>
+<rect x="819" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/02: não indicado</title></rect>
+<rect x="838" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/02: não indicado</title></rect>
+<rect x="857" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/03: não indicado</title></rect>
+<rect x="876" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/03: não indicado</title></rect>
+<rect x="895" y="268" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/03: não indicado</title></rect>
+<text x="10" y="311">Sorgo forrageiro 1ª safra</text>
+<rect x="230" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/04: não indicado</title></rect>
+<rect x="249" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/04: não indicado</title></rect>
+<rect x="268" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/04: não indicado</title></rect>
+<rect x="287" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/05: não indicado</title></rect>
+<rect x="306" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/05: não indicado</title></rect>
+<rect x="325" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/05: não indicado</title></rect>
+<rect x="344" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/06: não indicado</title></rect>
+<rect x="363" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/06: não indicado</title></rect>
+<rect x="382" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/06: não indicado</title></rect>
+<rect x="401" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/07: não indicado</title></rect>
+<rect x="420" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/07: não indicado</title></rect>
+<rect x="439" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/07: não indicado</title></rect>
+<rect x="458" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/08: não indicado</title></rect>
+<rect x="477" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/08: não indicado</title></rect>
+<rect x="496" y="294" width="19" height="20" fill="#d9534f" stroke="white"><title>21/08: 40%</title></rect>
+<rect x="515" y="294" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/09: 20%</title></rect>
+<rect x="534" y="294" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/09: 20%</title></rect>
+<rect x="553" y="294" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/09: 20%</title></rect>
+<rect x="572" y="294" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/10: 20%</title></rect>
+<rect x="591" y="294" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/10: 20%</title></rect>
+<rect x="610" y="294" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/10: 20%</title></rect>
+<rect x="629" y="294" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/11: 20%</title></rect>
+<rect x="648" y="294" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/11: 20%</title></rect>
+<rect x="667" y="294" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/11: 20%</title></rect>
+<rect x="686" y="294" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/12: 20%</title></rect>
+<rect x="705" y="294" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/12: 20%</title></rect>
+<rect x="724" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/12: não indicado</title></rect>
+<rect x="743" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/01: não indicado</title></rect>
+<rect x="762" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/01: não indicado</title></rect>
+<rect x="781" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/01: não indicado</title></rect>
+<rect x="800" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/02: não indicado</title></rect>
+<rect x="819" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/02: não indicado</title></rect>
+<rect x="838" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/02: não indicado</title></rect>
+<rect x="857" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/03: não indicado</title></rect>
+<rect x="876" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/03: não indicado</title></rect>
+<rect x="895" y="294" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/03: não indicado</title></rect>
+<text x="10" y="337">Sorgo forrageiro 2ª safra</text>
+<rect x="230" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/04: não indicado</title></rect>
+<rect x="249" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/04: não indicado</title></rect>
+<rect x="268" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/04: não indicado</title></rect>
+<rect x="287" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/05: não indicado</title></rect>
+<rect x="306" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/05: não indicado</title></rect>
+<rect x="325" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/05: não indicado</title></rect>
+<rect x="344" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/06: não indicado</title></rect>
+<rect x="363" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/06: não indicado</title></rect>
+<rect x="382" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/06: não indicado</title></rect>
+<rect x="401" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/07: não indicado</title></rect>
+<rect x="420" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/07: não indicado</title></rect>
+<rect x="439" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/07: não indicado</title></rect>
+<rect x="458" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/08: não indicado</title></rect>
+<rect x="477" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/08: não indicado</title></rect>
+<rect x="496" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/08: não indicado</title></rect>
+<rect x="515" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/09: não indicado</title></rect>
+<rect x="534" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/09: não indicado</title></rect>
+<rect x="553" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/09: não indicado</title></rect>
+<rect x="572" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/10: não indicado</title></rect>
+<rect x="591" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/10: não indicado</title></rect>
+<rect x="610" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/10: não indicado</title></rect>
+<rect x="629" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/11: não indicado</title></rect>
+<rect x="648" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/11: não indicado</title></rect>
+<rect x="667" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/11: não indicado</title></rect>
+<rect x="686" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/12: não indicado</title></rect>
+<rect x="705" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/12: não indicado</title></rect>
+<rect x="724" y="320" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/12: 20%</title></rect>
+<rect x="743" y="320" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/01: 20%</title></rect>
+<rect x="762" y="320" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/01: 20%</title></rect>
+<rect x="781" y="320" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/01: 20%</title></rect>
+<rect x="800" y="320" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/02: 20%</title></rect>
+<rect x="819" y="320" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/02: 20%</title></rect>
+<rect x="838" y="320" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/02: 20%</title></rect>
+<rect x="857" y="320" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/03: 20%</title></rect>
+<rect x="876" y="320" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/03: 20%</title></rect>
+<rect x="895" y="320" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/03: não indicado</title></rect>
+<text x="10" y="363">Aveia (grupo I, AD5)</text>
+<rect x="230" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/04: não indicado</title></rect>
+<rect x="249" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/04: não indicado</title></rect>
+<rect x="268" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/04: não indicado</title></rect>
+<rect x="287" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/05: não indicado</title></rect>
+<rect x="306" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/05: não indicado</title></rect>
+<rect x="325" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/05: não indicado</title></rect>
+<rect x="344" y="346" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/06: 20%</title></rect>
+<rect x="363" y="346" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/06: 20%</title></rect>
+<rect x="382" y="346" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/06: 20%</title></rect>
+<rect x="401" y="346" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/07: 20%</title></rect>
+<rect x="420" y="346" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/07: 20%</title></rect>
+<rect x="439" y="346" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/07: 20%</title></rect>
+<rect x="458" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/08: não indicado</title></rect>
+<rect x="477" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/08: não indicado</title></rect>
+<rect x="496" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/08: não indicado</title></rect>
+<rect x="515" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/09: não indicado</title></rect>
+<rect x="534" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/09: não indicado</title></rect>
+<rect x="553" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/09: não indicado</title></rect>
+<rect x="572" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/10: não indicado</title></rect>
+<rect x="591" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/10: não indicado</title></rect>
+<rect x="610" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/10: não indicado</title></rect>
+<rect x="629" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/11: não indicado</title></rect>
+<rect x="648" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/11: não indicado</title></rect>
+<rect x="667" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/11: não indicado</title></rect>
+<rect x="686" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/12: não indicado</title></rect>
+<rect x="705" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/12: não indicado</title></rect>
+<rect x="724" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/12: não indicado</title></rect>
+<rect x="743" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/01: não indicado</title></rect>
+<rect x="762" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/01: não indicado</title></rect>
+<rect x="781" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/01: não indicado</title></rect>
+<rect x="800" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/02: não indicado</title></rect>
+<rect x="819" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/02: não indicado</title></rect>
+<rect x="838" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/02: não indicado</title></rect>
+<rect x="857" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/03: não indicado</title></rect>
+<rect x="876" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/03: não indicado</title></rect>
+<rect x="895" y="346" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/03: não indicado</title></rect>
+<text x="10" y="389">Cebola (melhor ciclo, AD5)</text>
+<rect x="230" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/04: não indicado</title></rect>
+<rect x="249" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/04: não indicado</title></rect>
+<rect x="268" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/04: não indicado</title></rect>
+<rect x="287" y="372" width="19" height="20" fill="#e0b020" stroke="white"><title>01/05: 30%</title></rect>
+<rect x="306" y="372" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/05: 20%</title></rect>
+<rect x="325" y="372" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/05: 20%</title></rect>
+<rect x="344" y="372" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/06: 20%</title></rect>
+<rect x="363" y="372" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/06: 20%</title></rect>
+<rect x="382" y="372" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/06: 20%</title></rect>
+<rect x="401" y="372" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/07: 20%</title></rect>
+<rect x="420" y="372" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/07: 20%</title></rect>
+<rect x="439" y="372" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/07: 20%</title></rect>
+<rect x="458" y="372" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/08: 20%</title></rect>
+<rect x="477" y="372" width="19" height="20" fill="#2e8b57" stroke="white"><title>11/08: 20%</title></rect>
+<rect x="496" y="372" width="19" height="20" fill="#2e8b57" stroke="white"><title>21/08: 20%</title></rect>
+<rect x="515" y="372" width="19" height="20" fill="#2e8b57" stroke="white"><title>01/09: 20%</title></rect>
+<rect x="534" y="372" width="19" height="20" fill="#e0b020" stroke="white"><title>11/09: 30%</title></rect>
+<rect x="553" y="372" width="19" height="20" fill="#e0b020" stroke="white"><title>21/09: 30%</title></rect>
+<rect x="572" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/10: não indicado</title></rect>
+<rect x="591" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/10: não indicado</title></rect>
+<rect x="610" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/10: não indicado</title></rect>
+<rect x="629" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/11: não indicado</title></rect>
+<rect x="648" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/11: não indicado</title></rect>
+<rect x="667" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/11: não indicado</title></rect>
+<rect x="686" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/12: não indicado</title></rect>
+<rect x="705" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/12: não indicado</title></rect>
+<rect x="724" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/12: não indicado</title></rect>
+<rect x="743" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/01: não indicado</title></rect>
+<rect x="762" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/01: não indicado</title></rect>
+<rect x="781" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/01: não indicado</title></rect>
+<rect x="800" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/02: não indicado</title></rect>
+<rect x="819" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/02: não indicado</title></rect>
+<rect x="838" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/02: não indicado</title></rect>
+<rect x="857" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>01/03: não indicado</title></rect>
+<rect x="876" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>11/03: não indicado</title></rect>
+<rect x="895" y="372" width="19" height="20" fill="#e6e6e6" stroke="white"><title>21/03: não indicado</title></rect>
+<text x="230" y="408" font-size="10" fill="#333">01/04</text>
+<text x="287" y="408" font-size="10" fill="#333">01/05</text>
+<text x="344" y="408" font-size="10" fill="#333">01/06</text>
+<text x="401" y="408" font-size="10" fill="#333">01/07</text>
+<text x="458" y="408" font-size="10" fill="#333">01/08</text>
+<text x="515" y="408" font-size="10" fill="#333">01/09</text>
+<text x="572" y="408" font-size="10" fill="#333">01/10</text>
+<text x="629" y="408" font-size="10" fill="#333">01/11</text>
+<text x="686" y="408" font-size="10" fill="#333">01/12</text>
+<text x="743" y="408" font-size="10" fill="#333">01/01</text>
+<text x="800" y="408" font-size="10" fill="#333">01/02</text>
+<text x="857" y="408" font-size="10" fill="#333">01/03</text>
+</svg>

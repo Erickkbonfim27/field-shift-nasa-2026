@@ -1,0 +1,139 @@
+2022-05-19 sem_nuvem_SCL=0.78 depois_do_filtro=0.66
+2022-05-24 sem_nuvem_SCL=0.99 depois_do_filtro=0.83
+2022-06-08 sem_nuvem_SCL=0.44 depois_do_filtro=0.32
+2022-06-13 sem_nuvem_SCL=1.00 depois_do_filtro=0.96
+2022-06-18 sem_nuvem_SCL=1.00 depois_do_filtro=0.96
+2022-07-03 sem_nuvem_SCL=0.71 depois_do_filtro=0.58
+2022-07-08 sem_nuvem_SCL=0.98 depois_do_filtro=0.93
+2022-07-23 sem_nuvem_SCL=0.61 depois_do_filtro=0.42
+2022-07-28 sem_nuvem_SCL=0.71 depois_do_filtro=0.00
+2022-08-02 sem_nuvem_SCL=0.98 depois_do_filtro=0.76
+2022-08-12 sem_nuvem_SCL=0.18 depois_do_filtro=0.00
+2022-08-17 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2022-08-22 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2022-08-27 sem_nuvem_SCL=0.51 depois_do_filtro=0.00
+2022-09-01 sem_nuvem_SCL=0.01 depois_do_filtro=0.00
+2022-09-16 sem_nuvem_SCL=0.09 depois_do_filtro=0.06
+2022-10-01 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2022-10-21 sem_nuvem_SCL=0.60 depois_do_filtro=0.55
+2022-11-10 sem_nuvem_SCL=0.96 depois_do_filtro=0.92
+2022-11-15 sem_nuvem_SCL=0.67 depois_do_filtro=0.65
+2022-11-20 sem_nuvem_SCL=0.52 depois_do_filtro=0.48
+2022-11-25 sem_nuvem_SCL=0.84 depois_do_filtro=0.81
+2022-11-30 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2022-12-10 sem_nuvem_SCL=0.23 depois_do_filtro=0.19
+2022-12-15 sem_nuvem_SCL=0.39 depois_do_filtro=0.34
+2022-12-30 sem_nuvem_SCL=0.71 depois_do_filtro=0.65
+2022 JUN cenas=7 cobertura_sem_nuvem=0.98
+2022 AGO cenas=4 cobertura_sem_nuvem=0.77
+2022 SET cenas=1 cobertura_sem_nuvem=0.06
+2022 OUT cenas=1 cobertura_sem_nuvem=0.55
+2022 NOV cenas=5 cobertura_sem_nuvem=0.98
+2022 DEZ cenas=3 cobertura_sem_nuvem=0.81
+2023-05-19 sem_nuvem_SCL=0.01 depois_do_filtro=0.00
+2023-05-24 sem_nuvem_SCL=0.61 depois_do_filtro=0.00
+2023-06-03 sem_nuvem_SCL=0.23 depois_do_filtro=0.14
+2023-06-08 sem_nuvem_SCL=0.93 depois_do_filtro=0.66
+2023-06-18 sem_nuvem_SCL=1.00 depois_do_filtro=0.96
+2023-06-28 sem_nuvem_SCL=0.92 depois_do_filtro=0.52
+2023-07-13 sem_nuvem_SCL=0.03 depois_do_filtro=0.00
+2023-07-23 sem_nuvem_SCL=0.09 depois_do_filtro=0.00
+2023-08-02 sem_nuvem_SCL=0.60 depois_do_filtro=0.00
+2023-08-07 sem_nuvem_SCL=1.00 depois_do_filtro=0.82
+2023-08-17 sem_nuvem_SCL=0.76 depois_do_filtro=0.00
+2023-08-22 sem_nuvem_SCL=0.51 depois_do_filtro=0.48
+2023-08-27 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2023-09-01 sem_nuvem_SCL=0.29 depois_do_filtro=0.26
+2023-09-06 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2023-09-11 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2023-09-16 sem_nuvem_SCL=0.17 depois_do_filtro=0.09
+2023-09-21 sem_nuvem_SCL=0.86 depois_do_filtro=0.71
+2023-10-01 sem_nuvem_SCL=0.14 depois_do_filtro=0.00
+2023-10-11 sem_nuvem_SCL=0.24 depois_do_filtro=0.00
+2023-10-21 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2023-10-26 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2023-11-05 sem_nuvem_SCL=1.00 depois_do_filtro=0.94
+2023-11-20 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2023-11-25 sem_nuvem_SCL=0.01 depois_do_filtro=0.01
+2023-11-30 sem_nuvem_SCL=0.82 depois_do_filtro=0.76
+2023-12-15 sem_nuvem_SCL=0.71 depois_do_filtro=0.66
+2023-12-20 sem_nuvem_SCL=0.40 depois_do_filtro=0.37
+2023-12-30 sem_nuvem_SCL=0.89 depois_do_filtro=0.87
+2023 JUN cenas=4 cobertura_sem_nuvem=0.97
+2023 AGO cenas=3 cobertura_sem_nuvem=0.92
+2023 SET cenas=5 cobertura_sem_nuvem=0.77
+2023 OUT cenas=2 cobertura_sem_nuvem=0.00
+2023 NOV cenas=4 cobertura_sem_nuvem=0.94
+2023 DEZ cenas=3 cobertura_sem_nuvem=0.96
+2024-05-23 sem_nuvem_SCL=0.17 depois_do_filtro=0.00
+2024-05-28 sem_nuvem_SCL=0.26 depois_do_filtro=0.24
+2024-06-02 sem_nuvem_SCL=0.79 depois_do_filtro=0.70
+2024-06-07 sem_nuvem_SCL=0.58 depois_do_filtro=0.00
+2024-06-12 sem_nuvem_SCL=0.98 depois_do_filtro=0.90
+2024-06-22 sem_nuvem_SCL=0.90 depois_do_filtro=0.50
+2024-06-27 sem_nuvem_SCL=0.99 depois_do_filtro=0.98
+2024-07-02 sem_nuvem_SCL=0.96 depois_do_filtro=0.66
+2024-07-17 sem_nuvem_SCL=0.03 depois_do_filtro=0.00
+2024-07-22 sem_nuvem_SCL=0.73 depois_do_filtro=0.00
+2024-07-27 sem_nuvem_SCL=0.91 depois_do_filtro=0.72
+2024-08-01 sem_nuvem_SCL=0.02 depois_do_filtro=0.00
+2024-08-06 sem_nuvem_SCL=0.99 depois_do_filtro=0.00
+2024-08-11 sem_nuvem_SCL=0.96 depois_do_filtro=0.78
+2024-08-16 sem_nuvem_SCL=0.74 depois_do_filtro=0.00
+2024-08-21 sem_nuvem_SCL=0.18 depois_do_filtro=0.00
+2024-08-26 sem_nuvem_SCL=1.00 depois_do_filtro=0.98
+2024-08-31 sem_nuvem_SCL=0.02 depois_do_filtro=0.00
+2024-09-10 sem_nuvem_SCL=0.93 depois_do_filtro=0.00
+2024-09-30 sem_nuvem_SCL=0.03 depois_do_filtro=0.00
+2024-10-05 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2024-10-20 sem_nuvem_SCL=0.14 depois_do_filtro=0.10
+2024-10-25 sem_nuvem_SCL=0.99 depois_do_filtro=0.97
+2024-10-30 sem_nuvem_SCL=0.33 depois_do_filtro=0.30
+2024-11-09 sem_nuvem_SCL=0.26 depois_do_filtro=0.16
+2024-11-14 sem_nuvem_SCL=0.11 depois_do_filtro=0.08
+2024-11-24 sem_nuvem_SCL=0.06 depois_do_filtro=0.06
+2024 JUN cenas=6 cobertura_sem_nuvem=0.99
+2024 AGO cenas=3 cobertura_sem_nuvem=0.99
+2024 SET cenas=0 cobertura_sem_nuvem=0.00
+2024 OUT cenas=3 cobertura_sem_nuvem=0.97
+2024 NOV cenas=3 cobertura_sem_nuvem=0.27
+2024 DEZ cenas=0 cobertura_sem_nuvem=0.00
+2025-05-18 sem_nuvem_SCL=0.84 depois_do_filtro=0.62
+2025-06-12 sem_nuvem_SCL=0.86 depois_do_filtro=0.66
+2025-07-02 sem_nuvem_SCL=0.88 depois_do_filtro=0.73
+2025-07-07 sem_nuvem_SCL=0.75 depois_do_filtro=0.00
+2025-07-17 sem_nuvem_SCL=0.86 depois_do_filtro=0.52
+2025-07-22 sem_nuvem_SCL=0.20 depois_do_filtro=0.00
+2025-08-01 sem_nuvem_SCL=0.43 depois_do_filtro=0.00
+2025-08-06 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2025-08-11 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2025-08-13 sem_nuvem_SCL=0.65 depois_do_filtro=0.00
+2025-08-21 sem_nuvem_SCL=1.00 depois_do_filtro=0.89
+2025-08-31 sem_nuvem_SCL=0.01 depois_do_filtro=0.00
+2025-09-10 sem_nuvem_SCL=0.99 depois_do_filtro=0.90
+2025-09-15 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2025-09-20 sem_nuvem_SCL=0.02 depois_do_filtro=0.00
+2025-09-25 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2025-10-05 sem_nuvem_SCL=0.24 depois_do_filtro=0.22
+2025-10-10 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2025-10-15 sem_nuvem_SCL=0.84 depois_do_filtro=0.77
+2025-10-20 sem_nuvem_SCL=0.37 depois_do_filtro=0.32
+2025-10-30 sem_nuvem_SCL=0.02 depois_do_filtro=0.00
+2025-11-01 sem_nuvem_SCL=0.20 depois_do_filtro=0.12
+2025-11-04 sem_nuvem_SCL=0.00 depois_do_filtro=0.00
+2025-11-09 sem_nuvem_SCL=0.02 depois_do_filtro=0.00
+2025-11-14 sem_nuvem_SCL=0.63 depois_do_filtro=0.61
+2025-11-19 sem_nuvem_SCL=0.88 depois_do_filtro=0.85
+2025-11-21 sem_nuvem_SCL=0.99 depois_do_filtro=0.97
+2025-11-29 sem_nuvem_SCL=1.00 depois_do_filtro=0.98
+2025-12-04 sem_nuvem_SCL=0.17 depois_do_filtro=0.13
+2025-12-11 sem_nuvem_SCL=0.68 depois_do_filtro=0.65
+2025-12-14 sem_nuvem_SCL=0.56 depois_do_filtro=0.42
+2025-12-19 sem_nuvem_SCL=1.00 depois_do_filtro=0.97
+2025-12-24 sem_nuvem_SCL=0.82 depois_do_filtro=0.72
+2025 JUN cenas=3 cobertura_sem_nuvem=0.93
+2025 AGO cenas=4 cobertura_sem_nuvem=0.91
+2025 SET cenas=3 cobertura_sem_nuvem=0.90
+2025 OUT cenas=4 cobertura_sem_nuvem=0.86
+2025 NOV cenas=5 cobertura_sem_nuvem=0.98
+2025 DEZ cenas=5 cobertura_sem_nuvem=0.98

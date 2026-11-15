@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 472" font-family="sans-serif" font-size="11">
+<rect width="900" height="472" fill="#fff"/>
+<text x="60" y="24" font-size="15" font-weight="bold">B5-3 · Cebola em Ituporanga: semanas úmidas (ago-nov) e anos de quebra</text>
+<text x="60" y="40" fill="#555">Barras: rendimento do IBGE/PAM em % da tendência 1990-2024</text>
+<line x1="60" x2="880" y1="221.875" y2="221.875" stroke="#ddd"/><text x="54" y="225.875" text-anchor="end">50%</text>
+<line x1="60" x2="880" y1="143.75" y2="143.75" stroke="#ddd"/><text x="54" y="147.75" text-anchor="end">100%</text>
+<line x1="60" x2="880" y1="65.625" y2="65.625" stroke="#ddd"/><text x="54" y="69.625" text-anchor="end">150%</text>
+<line x1="60" x2="880" y1="175.0" y2="175.0" stroke="#c00" stroke-dasharray="4 3"/><text x="64" y="58" fill="#c00">- - - corte de perda 80%</text>
+<rect x="61.0" y="104.375" width="21.428571428571427" height="195.625" fill="#95a5a6"/>
+<text x="71.71428571428571" y="314" text-anchor="middle">1990</text>
+<rect x="84.42857142857143" y="131.71875" width="21.428571428571427" height="168.28125" fill="#95a5a6"/>
+<rect x="107.85714285714286" y="156.71875" width="21.428571428571427" height="143.28125" fill="#95a5a6"/>
+<rect x="131.28571428571428" y="162.5" width="21.428571428571427" height="137.5" fill="#95a5a6"/>
+<rect x="154.71428571428572" y="167.8125" width="21.428571428571427" height="132.1875" fill="#95a5a6"/>
+<rect x="178.14285714285714" y="172.65625" width="21.428571428571427" height="127.34374999999999" fill="#95a5a6"/>
+<text x="188.85714285714286" y="314" text-anchor="middle">1995</text>
+<rect x="201.57142857142856" y="192.34375" width="21.428571428571427" height="107.65624999999999" fill="#c0392b"/>
+<rect x="225.0" y="181.40625" width="21.428571428571427" height="118.59375" fill="#c0392b"/>
+<rect x="248.42857142857142" y="175.9375" width="21.428571428571427" height="124.0625" fill="#c0392b"/>
+<rect x="271.85714285714283" y="115.3125" width="21.428571428571427" height="184.6875" fill="#95a5a6"/>
+<rect x="295.2857142857143" y="76.25" width="21.428571428571427" height="223.75" fill="#95a5a6"/>
+<text x="306.0" y="314" text-anchor="middle">2000</text>
+<rect x="318.7142857142857" y="152.5" width="21.428571428571427" height="147.5" fill="#95a5a6"/>
+<rect x="342.1428571428571" y="148.4375" width="21.428571428571427" height="151.5625" fill="#95a5a6"/>
+<rect x="365.57142857142856" y="144.6875" width="21.428571428571427" height="155.3125" fill="#95a5a6"/>
+<rect x="389.0" y="101.25" width="21.428571428571427" height="198.75" fill="#95a5a6"/>
+<rect x="412.4285714285714" y="145.3125" width="21.428571428571427" height="154.6875" fill="#95a5a6"/>
+<text x="423.1428571428571" y="314" text-anchor="middle">2005</text>
+<rect x="435.85714285714283" y="119.21875" width="21.428571428571427" height="180.78125" fill="#95a5a6"/>
+<rect x="459.2857142857143" y="123.90625" width="21.428571428571427" height="176.09375" fill="#95a5a6"/>
+<rect x="482.71428571428567" y="171.25" width="21.428571428571427" height="128.75" fill="#95a5a6"/>
+<rect x="506.1428571428571" y="125.62499999999997" width="21.428571428571427" height="174.37500000000003" fill="#95a5a6"/>
+<rect x="529.5714285714286" y="95.625" width="21.428571428571427" height="204.375" fill="#95a5a6"/>
+<text x="540.2857142857142" y="314" text-anchor="middle">2010</text>
+<rect x="553.0" y="167.03125" width="21.428571428571427" height="132.96875" fill="#95a5a6"/>
+<rect x="576.4285714285714" y="170.0" width="21.428571428571427" height="130.0" fill="#95a5a6"/>
+<rect x="599.8571428571428" y="122.03125" width="21.428571428571427" height="177.96875" fill="#95a5a6"/>
+<rect x="623.2857142857142" y="150.78125" width="21.428571428571427" height="149.21875" fill="#95a5a6"/>
+<rect x="646.7142857142857" y="178.28125" width="21.428571428571427" height="121.71875" fill="#c0392b"/>
+<text x="657.4285714285713" y="314" text-anchor="middle">2015</text>
+<rect x="670.1428571428571" y="121.25000000000003" width="21.428571428571427" height="178.74999999999997" fill="#95a5a6"/>
+<rect x="693.5714285714286" y="177.5" width="21.428571428571427" height="122.5" fill="#c0392b"/>
+<rect x="717.0" y="128.4375" width="21.428571428571427" height="171.5625" fill="#95a5a6"/>
+<rect x="740.4285714285713" y="115.0" width="21.428571428571427" height="185.0" fill="#95a5a6"/>
+<rect x="763.8571428571428" y="146.09375" width="21.428571428571427" height="153.90625" fill="#95a5a6"/>
+<text x="774.5714285714284" y="314" text-anchor="middle">2020</text>
+<rect x="787.2857142857142" y="127.34375" width="21.428571428571427" height="172.65625" fill="#95a5a6"/>
+<rect x="810.7142857142857" y="135.9375" width="21.428571428571427" height="164.0625" fill="#95a5a6"/>
+<rect x="834.1428571428571" y="188.75" width="21.428571428571427" height="111.25" fill="#c0392b"/>
+<rect x="857.5714285714286" y="146.875" width="21.428571428571427" height="153.125" fill="#95a5a6"/>
+<text x="60" y="334" fill="#333">Painel: semanas de risco no quartil de cima</text>
+<rect x="62.0" y="340" width="19.428571428571427" height="8" fill="#2c3e50"/>
+<rect x="202.57142857142856" y="340" width="19.428571428571427" height="8" fill="#c0392b"/>
+<rect x="226.0" y="340" width="19.428571428571427" height="8" fill="#c0392b"/>
+<rect x="249.42857142857142" y="340" width="19.428571428571427" height="8" fill="#c0392b"/>
+<rect x="319.7142857142857" y="340" width="19.428571428571427" height="8" fill="#2c3e50"/>
+<rect x="483.71428571428567" y="340" width="19.428571428571427" height="8" fill="#2c3e50"/>
+<rect x="507.1428571428571" y="340" width="19.428571428571427" height="8" fill="#2c3e50"/>
+<rect x="624.2857142857142" y="340" width="19.428571428571427" height="8" fill="#2c3e50"/>
+<rect x="647.7142857142857" y="340" width="19.428571428571427" height="8" fill="#c0392b"/>
+<rect x="788.2857142857142" y="340" width="19.428571428571427" height="8" fill="#2c3e50"/>
+<rect x="835.1428571428571" y="340" width="19.428571428571427" height="8" fill="#c0392b"/>
+<text x="60" y="360" fill="#333">Base: chuva ago-nov no quartil de cima</text>
+<rect x="62.0" y="366" width="19.428571428571427" height="8" fill="#2c3e50"/>
+<rect x="226.0" y="366" width="19.428571428571427" height="8" fill="#c0392b"/>
+<rect x="249.42857142857142" y="366" width="19.428571428571427" height="8" fill="#c0392b"/>
+<rect x="343.1428571428571" y="366" width="19.428571428571427" height="8" fill="#2c3e50"/>
+<rect x="413.4285714285714" y="366" width="19.428571428571427" height="8" fill="#2c3e50"/>
+<rect x="483.71428571428567" y="366" width="19.428571428571427" height="8" fill="#2c3e50"/>
+<rect x="507.1428571428571" y="366" width="19.428571428571427" height="8" fill="#2c3e50"/>
+<rect x="554.0" y="366" width="19.428571428571427" height="8" fill="#2c3e50"/>
+<rect x="835.1428571428571" y="366" width="19.428571428571427" height="8" fill="#c0392b"/>
+<text x="60" y="464" fill="#555">Marca vermelha = acertou um ano de perda; marca escura = alarme falso. Fonte: IBGE/PAM (conferência) e NASA POWER (indicadores).</text>
+</svg>

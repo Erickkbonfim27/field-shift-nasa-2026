@@ -1,0 +1,11 @@
+Oeste Catarinense (SC) · Milho (em grão) · 1990-2024 (35 safras) · tendência 2322 -> 8105 kg/ha
+Anos de perda (PAM < 70% da tendência): [1991, 2005, 2021] = 3 de 35 (taxa 9%)
+
+regra                                                marca acertos alarmes_falsos recall precisão
+laudo: y_mun < 0,70 (balanço hídrico POWER)              8       2              6    67%      25%   marcados=[1996, 2005, 2006, 2009, 2012, 2021, 2022, 2023]
+base: chuva out-fev < 1º quartil                         8       2              6    67%      25%   marcados=[2002, 2005, 2006, 2012, 2014, 2020, 2021, 2022]
+extra: GWETROOT dez-jan < 1º quartil                     8       1              7    33%      12%   marcados=[2000, 2006, 2007, 2009, 2012, 2020, 2021, 2022]
+alerta B5-2: modelo até o dia 80                         8       0              8     0%       0%   marcados=[1996, 1999, 2000, 2009, 2012, 2019, 2022, 2023]
+base B5-2: olho do agricultor (15 dias < 5 mm)          11       0             11     0%       0%   marcados=[1996, 1997, 1999, 2000, 2006, 2009, 2012, 2013, 2015, 2019, 2022]
+
+Spearman y_mun x rendimento relativo: 0.48 | chuva out-fev x rendimento relativo: 0.23

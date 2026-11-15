@@ -1,0 +1,757 @@
+{
+ "subconjuntos": {
+  "todos": [
+   0.414,
+   16
+  ],
+  "ce_pe_pb": [
+   0.493,
+   12
+  ],
+  "bahia": [
+   0.067,
+   4
+  ],
+  "milho_ce_pe_pb": [
+   0.615,
+   6
+  ],
+  "feijao_ce_pe_pb": [
+   0.361,
+   6
+  ],
+  "milho_bahia": [
+   0.107,
+   2
+  ],
+  "feijao_bahia": [
+   0.067,
+   2
+  ],
+  "ce_pe_pb_data_fixa": [
+   0.486,
+   12
+  ],
+  "bahia_data_fixa": [
+   0.327,
+   4
+  ],
+  "milho_data_fixa_todos": [
+   0.549,
+   8
+  ],
+  "feijao_data_fixa_todos": [
+   0.384,
+   8
+  ]
+ },
+ "sem_plantio": {
+  "por_par": {
+   "quixada/milho": {
+    "n": 37,
+    "rho_sem_anos_sem_plantio": 0.43,
+    "rho_so_plantou_ou_nao": 0.334,
+    "rho_com": 0.504
+   },
+   "quixada/feijao": {
+    "n": 37,
+    "rho_sem_anos_sem_plantio": 0.21,
+    "rho_so_plantou_ou_nao": 0.216,
+    "rho_com": 0.296
+   },
+   "quixeramobim/milho": {
+    "n": 37,
+    "rho_sem_anos_sem_plantio": 0.535,
+    "rho_so_plantou_ou_nao": 0.382,
+    "rho_com": 0.59
+   },
+   "quixeramobim/feijao": {
+    "n": 38,
+    "rho_sem_anos_sem_plantio": 0.227,
+    "rho_so_plantou_ou_nao": 0.269,
+    "rho_com": 0.319
+   },
+   "crateus/milho": {
+    "n": 38,
+    "rho_sem_anos_sem_plantio": 0.597,
+    "rho_so_plantou_ou_nao": 0.288,
+    "rho_com": 0.639
+   },
+   "crateus/feijao": {
+    "n": 39,
+    "rho_sem_anos_sem_plantio": 0.409,
+    "rho_so_plantou_ou_nao": 0.144,
+    "rho_com": 0.426
+   },
+   "taua/milho": {
+    "n": 39,
+    "rho_sem_anos_sem_plantio": 0.627,
+    "rho_so_plantou_ou_nao": 0.306,
+    "rho_com": 0.672
+   },
+   "taua/feijao": {
+    "n": 39,
+    "rho_sem_anos_sem_plantio": 0.371,
+    "rho_so_plantou_ou_nao": 0.187,
+    "rho_com": 0.403
+   },
+   "irece/milho": {
+    "n": 24,
+    "rho_sem_anos_sem_plantio": 0.373,
+    "rho_so_plantou_ou_nao": 0.102,
+    "rho_com": 0.297
+   },
+   "irece/feijao": {
+    "n": 25,
+    "rho_sem_anos_sem_plantio": 0.181,
+    "rho_so_plantou_ou_nao": 0.043,
+    "rho_com": 0.131
+   },
+   "serratalhada/milho": {
+    "n": 31,
+    "rho_sem_anos_sem_plantio": 0.574,
+    "rho_so_plantou_ou_nao": 0.459,
+    "rho_com": 0.674
+   },
+   "serratalhada/feijao": {
+    "n": 31,
+    "rho_sem_anos_sem_plantio": 0.428,
+    "rho_so_plantou_ou_nao": 0.354,
+    "rho_com": 0.482
+   },
+   "patos/milho": {
+    "n": 34,
+    "rho_sem_anos_sem_plantio": 0.557,
+    "rho_so_plantou_ou_nao": null,
+    "rho_com": 0.553
+   },
+   "patos/feijao": {
+    "n": 35,
+    "rho_sem_anos_sem_plantio": 0.16,
+    "rho_so_plantou_ou_nao": null,
+    "rho_com": 0.175
+   },
+   "bonfim/milho": {
+    "n": 17,
+    "rho_sem_anos_sem_plantio": -0.125,
+    "rho_so_plantou_ou_nao": -0.078,
+    "rho_com": -0.082
+   },
+   "bonfim/feijao": {
+    "n": 17,
+    "rho_sem_anos_sem_plantio": -0.262,
+    "rho_so_plantou_ou_nao": 0.055,
+    "rho_com": 0.003
+   }
+  },
+  "mediana_rho_sem_anos_sem_plantio": 0.391,
+  "mediana_rho_so_regra": 0.242
+ },
+ "bootstrap_anos": {
+  "mediana_rho": {
+   "p05": 0.284,
+   "p50": 0.418,
+   "p95": 0.546,
+   "prob_ge_040": 0.6
+  },
+  "mediana_rho_menos_chuva": {
+   "p05": -0.04,
+   "p50": 0.046,
+   "p95": 0.138,
+   "prob_ge_005": 0.47
+  }
+ },
+ "anos_ne": {
+  "1985": {
+   "n": 12,
+   "modelo_falha": 0,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.99,
+   "pam_rel_mediano": 1.12
+  },
+  "1986": {
+   "n": 12,
+   "modelo_falha": 0,
+   "pam_abaixo_06": 1,
+   "y_mod_medio": 0.99,
+   "pam_rel_mediano": 1.16
+  },
+  "1987": {
+   "n": 11,
+   "modelo_falha": 8,
+   "pam_abaixo_06": 7,
+   "y_mod_medio": 0.51,
+   "pam_rel_mediano": 0.53
+  },
+  "1988": {
+   "n": 12,
+   "modelo_falha": 0,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.93,
+   "pam_rel_mediano": 1.27
+  },
+  "1989": {
+   "n": 12,
+   "modelo_falha": 1,
+   "pam_abaixo_06": 1,
+   "y_mod_medio": 0.93,
+   "pam_rel_mediano": 1.0
+  },
+  "1990": {
+   "n": 12,
+   "modelo_falha": 12,
+   "pam_abaixo_06": 5,
+   "y_mod_medio": 0.1,
+   "pam_rel_mediano": 0.63
+  },
+  "1991": {
+   "n": 12,
+   "modelo_falha": 2,
+   "pam_abaixo_06": 1,
+   "y_mod_medio": 0.8,
+   "pam_rel_mediano": 1.09
+  },
+  "1992": {
+   "n": 12,
+   "modelo_falha": 3,
+   "pam_abaixo_06": 6,
+   "y_mod_medio": 0.69,
+   "pam_rel_mediano": 0.6
+  },
+  "1993": {
+   "n": 9,
+   "modelo_falha": 9,
+   "pam_abaixo_06": 8,
+   "y_mod_medio": 0.0,
+   "pam_rel_mediano": 0.16
+  },
+  "1994": {
+   "n": 12,
+   "modelo_falha": 0,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.96,
+   "pam_rel_mediano": 1.19
+  },
+  "1995": {
+   "n": 12,
+   "modelo_falha": 1,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.9,
+   "pam_rel_mediano": 1.23
+  },
+  "1996": {
+   "n": 12,
+   "modelo_falha": 0,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.92,
+   "pam_rel_mediano": 1.09
+  },
+  "1997": {
+   "n": 12,
+   "modelo_falha": 6,
+   "pam_abaixo_06": 2,
+   "y_mod_medio": 0.63,
+   "pam_rel_mediano": 0.98
+  },
+  "1998": {
+   "n": 7,
+   "modelo_falha": 7,
+   "pam_abaixo_06": 4,
+   "y_mod_medio": 0.04,
+   "pam_rel_mediano": 0.36
+  },
+  "1999": {
+   "n": 10,
+   "modelo_falha": 2,
+   "pam_abaixo_06": 2,
+   "y_mod_medio": 0.66,
+   "pam_rel_mediano": 0.91
+  },
+  "2000": {
+   "n": 12,
+   "modelo_falha": 1,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.91,
+   "pam_rel_mediano": 1.17
+  },
+  "2001": {
+   "n": 10,
+   "modelo_falha": 5,
+   "pam_abaixo_06": 6,
+   "y_mod_medio": 0.51,
+   "pam_rel_mediano": 0.48
+  },
+  "2002": {
+   "n": 12,
+   "modelo_falha": 5,
+   "pam_abaixo_06": 1,
+   "y_mod_medio": 0.58,
+   "pam_rel_mediano": 1.0
+  },
+  "2003": {
+   "n": 12,
+   "modelo_falha": 2,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.88,
+   "pam_rel_mediano": 1.44
+  },
+  "2004": {
+   "n": 12,
+   "modelo_falha": 2,
+   "pam_abaixo_06": 6,
+   "y_mod_medio": 0.82,
+   "pam_rel_mediano": 0.57
+  },
+  "2005": {
+   "n": 12,
+   "modelo_falha": 9,
+   "pam_abaixo_06": 2,
+   "y_mod_medio": 0.38,
+   "pam_rel_mediano": 1.0
+  },
+  "2006": {
+   "n": 12,
+   "modelo_falha": 0,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 1.0,
+   "pam_rel_mediano": 1.41
+  },
+  "2007": {
+   "n": 12,
+   "modelo_falha": 4,
+   "pam_abaixo_06": 4,
+   "y_mod_medio": 0.79,
+   "pam_rel_mediano": 0.64
+  },
+  "2008": {
+   "n": 12,
+   "modelo_falha": 0,
+   "pam_abaixo_06": 1,
+   "y_mod_medio": 0.95,
+   "pam_rel_mediano": 1.51
+  },
+  "2009": {
+   "n": 12,
+   "modelo_falha": 0,
+   "pam_abaixo_06": 1,
+   "y_mod_medio": 0.91,
+   "pam_rel_mediano": 0.99
+  },
+  "2010": {
+   "n": 12,
+   "modelo_falha": 11,
+   "pam_abaixo_06": 8,
+   "y_mod_medio": 0.23,
+   "pam_rel_mediano": 0.42
+  },
+  "2011": {
+   "n": 12,
+   "modelo_falha": 0,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.93,
+   "pam_rel_mediano": 3.04
+  },
+  "2012": {
+   "n": 6,
+   "modelo_falha": 6,
+   "pam_abaixo_06": 4,
+   "y_mod_medio": 0.22,
+   "pam_rel_mediano": 0.27
+  },
+  "2013": {
+   "n": 8,
+   "modelo_falha": 3,
+   "pam_abaixo_06": 3,
+   "y_mod_medio": 0.56,
+   "pam_rel_mediano": 0.82
+  },
+  "2014": {
+   "n": 12,
+   "modelo_falha": 5,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.6,
+   "pam_rel_mediano": 1.51
+  },
+  "2015": {
+   "n": 12,
+   "modelo_falha": 12,
+   "pam_abaixo_06": 7,
+   "y_mod_medio": 0.09,
+   "pam_rel_mediano": 0.55
+  },
+  "2016": {
+   "n": 12,
+   "modelo_falha": 12,
+   "pam_abaixo_06": 8,
+   "y_mod_medio": 0.19,
+   "pam_rel_mediano": 0.43
+  },
+  "2017": {
+   "n": 12,
+   "modelo_falha": 5,
+   "pam_abaixo_06": 3,
+   "y_mod_medio": 0.72,
+   "pam_rel_mediano": 1.09
+  },
+  "2018": {
+   "n": 12,
+   "modelo_falha": 3,
+   "pam_abaixo_06": 3,
+   "y_mod_medio": 0.75,
+   "pam_rel_mediano": 0.91
+  },
+  "2019": {
+   "n": 12,
+   "modelo_falha": 4,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.73,
+   "pam_rel_mediano": 1.55
+  },
+  "2020": {
+   "n": 12,
+   "modelo_falha": 0,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.95,
+   "pam_rel_mediano": 1.34
+  },
+  "2021": {
+   "n": 12,
+   "modelo_falha": 6,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.51,
+   "pam_rel_mediano": 1.0
+  },
+  "2022": {
+   "n": 12,
+   "modelo_falha": 5,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.61,
+   "pam_rel_mediano": 1.17
+  },
+  "2023": {
+   "n": 12,
+   "modelo_falha": 6,
+   "pam_abaixo_06": 4,
+   "y_mod_medio": 0.66,
+   "pam_rel_mediano": 0.64
+  },
+  "2024": {
+   "n": 12,
+   "modelo_falha": 3,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.77,
+   "pam_rel_mediano": 0.98
+  },
+  "2025": {
+   "n": 12,
+   "modelo_falha": 11,
+   "pam_abaixo_06": 6,
+   "y_mod_medio": 0.23,
+   "pam_rel_mediano": 0.62
+  }
+ },
+ "secas_conhecidas": {
+  "1993": {
+   "n": 9,
+   "modelo_falha": 9,
+   "pam_abaixo_06": 8,
+   "y_mod_medio": 0.0,
+   "pam_rel_mediano": 0.16
+  },
+  "1998": {
+   "n": 7,
+   "modelo_falha": 7,
+   "pam_abaixo_06": 4,
+   "y_mod_medio": 0.04,
+   "pam_rel_mediano": 0.36
+  },
+  "2001": {
+   "n": 10,
+   "modelo_falha": 5,
+   "pam_abaixo_06": 6,
+   "y_mod_medio": 0.51,
+   "pam_rel_mediano": 0.48
+  },
+  "2005": {
+   "n": 12,
+   "modelo_falha": 9,
+   "pam_abaixo_06": 2,
+   "y_mod_medio": 0.38,
+   "pam_rel_mediano": 1.0
+  },
+  "2010": {
+   "n": 12,
+   "modelo_falha": 11,
+   "pam_abaixo_06": 8,
+   "y_mod_medio": 0.23,
+   "pam_rel_mediano": 0.42
+  },
+  "2012": {
+   "n": 6,
+   "modelo_falha": 6,
+   "pam_abaixo_06": 4,
+   "y_mod_medio": 0.22,
+   "pam_rel_mediano": 0.27
+  },
+  "2013": {
+   "n": 8,
+   "modelo_falha": 3,
+   "pam_abaixo_06": 3,
+   "y_mod_medio": 0.56,
+   "pam_rel_mediano": 0.82
+  },
+  "2014": {
+   "n": 12,
+   "modelo_falha": 5,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.6,
+   "pam_rel_mediano": 1.51
+  },
+  "2015": {
+   "n": 12,
+   "modelo_falha": 12,
+   "pam_abaixo_06": 7,
+   "y_mod_medio": 0.09,
+   "pam_rel_mediano": 0.55
+  },
+  "2016": {
+   "n": 12,
+   "modelo_falha": 12,
+   "pam_abaixo_06": 8,
+   "y_mod_medio": 0.19,
+   "pam_rel_mediano": 0.43
+  },
+  "2017": {
+   "n": 12,
+   "modelo_falha": 5,
+   "pam_abaixo_06": 3,
+   "y_mod_medio": 0.72,
+   "pam_rel_mediano": 1.09
+  },
+  "2018": {
+   "n": 12,
+   "modelo_falha": 3,
+   "pam_abaixo_06": 3,
+   "y_mod_medio": 0.75,
+   "pam_rel_mediano": 0.91
+  },
+  "2019": {
+   "n": 12,
+   "modelo_falha": 4,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.73,
+   "pam_rel_mediano": 1.55
+  },
+  "2021": {
+   "n": 12,
+   "modelo_falha": 6,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.51,
+   "pam_rel_mediano": 1.0
+  },
+  "2023": {
+   "n": 12,
+   "modelo_falha": 6,
+   "pam_abaixo_06": 4,
+   "y_mod_medio": 0.66,
+   "pam_rel_mediano": 0.64
+  },
+  "2024": {
+   "n": 12,
+   "modelo_falha": 3,
+   "pam_abaixo_06": 0,
+   "y_mod_medio": 0.77,
+   "pam_rel_mediano": 0.98
+  },
+  "2025": {
+   "n": 12,
+   "modelo_falha": 11,
+   "pam_abaixo_06": 6,
+   "y_mod_medio": 0.23,
+   "pam_rel_mediano": 0.62
+  }
+ },
+ "quixada_pam_milho_kgha": {
+  "2008": 1800.0,
+  "2009": 507.0,
+  "2010": 391.0,
+  "2011": 1806.0,
+  "2012": 84.0,
+  "2013": 450.0,
+  "2014": 483.0,
+  "2015": 238.0,
+  "2016": 60.0,
+  "2017": 1000.0,
+  "2018": 900.0,
+  "2019": 1000.0,
+  "2020": 860.0,
+  "2021": 400.0,
+  "2022": 500.0,
+  "2023": 180.0,
+  "2024": 228.0,
+  "2025": 150.0
+ },
+ "quixada_pam_feijao_kgha": {
+  "2008": 618.0,
+  "2009": 305.0,
+  "2010": 207.0,
+  "2011": 655.0,
+  "2012": 45.0,
+  "2013": 311.0,
+  "2014": 360.0,
+  "2015": 163.0,
+  "2016": 120.0,
+  "2017": 600.0,
+  "2018": 491.0,
+  "2019": 480.0,
+  "2020": 442.0,
+  "2021": 252.0,
+  "2022": 283.0,
+  "2023": 153.0,
+  "2024": 212.0,
+  "2025": 101.0
+ },
+ "garantia_safra_fracao_municipios_com_perda": {
+  "2003": 0.444,
+  "2004": 0.373,
+  "2005": 0.669,
+  "2006": 0.32,
+  "2007": 0.828,
+  "2008": 0.299,
+  "2009": 0.713,
+  "2010": 0.931,
+  "2011": 0.264,
+  "2012": 0.981,
+  "2013": 0.877,
+  "2014": 0.708,
+  "2015": 0.809,
+  "2016": 0.848,
+  "2017": 0.642,
+  "2018": 0.461
+ },
+ "garantia_safra_vs_regiao": {
+  "anos": [
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018
+  ],
+  "n": 16,
+  "rho_modelo_vs_gs": -0.788,
+  "p_modelo": 0.0003,
+  "rho_pam_vs_gs": -0.781,
+  "p_pam": 0.0004,
+  "rho_chuva_vs_gs": -0.735,
+  "p_chuva": 0.0012,
+  "tabela": [
+   {
+    "ano": 2003,
+    "gs": 0.444,
+    "y_mod": 0.88,
+    "pam": 1.44
+   },
+   {
+    "ano": 2004,
+    "gs": 0.373,
+    "y_mod": 0.82,
+    "pam": 0.57
+   },
+   {
+    "ano": 2005,
+    "gs": 0.669,
+    "y_mod": 0.38,
+    "pam": 1.0
+   },
+   {
+    "ano": 2006,
+    "gs": 0.32,
+    "y_mod": 1.0,
+    "pam": 1.41
+   },
+   {
+    "ano": 2007,
+    "gs": 0.828,
+    "y_mod": 0.79,
+    "pam": 0.64
+   },
+   {
+    "ano": 2008,
+    "gs": 0.299,
+    "y_mod": 0.95,
+    "pam": 1.51
+   },
+   {
+    "ano": 2009,
+    "gs": 0.713,
+    "y_mod": 0.91,
+    "pam": 0.99
+   },
+   {
+    "ano": 2010,
+    "gs": 0.931,
+    "y_mod": 0.23,
+    "pam": 0.42
+   },
+   {
+    "ano": 2011,
+    "gs": 0.264,
+    "y_mod": 0.93,
+    "pam": 3.04
+   },
+   {
+    "ano": 2012,
+    "gs": 0.981,
+    "y_mod": 0.22,
+    "pam": 0.27
+   },
+   {
+    "ano": 2013,
+    "gs": 0.877,
+    "y_mod": 0.56,
+    "pam": 0.82
+   },
+   {
+    "ano": 2014,
+    "gs": 0.708,
+    "y_mod": 0.6,
+    "pam": 1.51
+   },
+   {
+    "ano": 2015,
+    "gs": 0.809,
+    "y_mod": 0.09,
+    "pam": 0.55
+   },
+   {
+    "ano": 2016,
+    "gs": 0.848,
+    "y_mod": 0.19,
+    "pam": 0.43
+   },
+   {
+    "ano": 2017,
+    "gs": 0.642,
+    "y_mod": 0.72,
+    "pam": 1.09
+   },
+   {
+    "ano": 2018,
+    "gs": 0.461,
+    "y_mod": 0.75,
+    "pam": 0.91
+   }
+  ]
+ }
+}

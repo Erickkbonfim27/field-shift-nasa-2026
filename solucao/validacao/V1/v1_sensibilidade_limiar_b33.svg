@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400">
+<style>
+svg{--sf:#fcfcfb;--t1:#0b0b0b;--t2:#52514e;--grid:#e4e3df;--s1:#2a78d6;--s2:#eb6834;--neu:#8a8984}
+@media (prefers-color-scheme: dark){svg{--sf:#1a1a19;--t1:#f0efec;--t2:#c3c2b7;--grid:#3a3a37;--s1:#3987e5;--s2:#d95926;--neu:#9a9990}}
+text{fill:var(--t1);font-family:system-ui,sans-serif;font-size:12px}.t2{fill:var(--t2)}.tt{font-size:15px;font-weight:600}
+</style>
+<rect width="860" height="400" fill="var(--sf)"/>
+<text x="56" y="24" class="tt">B3-3: fração dos alertas em ano ruim conforme o limiar (regiões vizinhas de B3-3)</text>
+<text x="56" y="42" class="t2">Linha azul = acerto dos alertas; tracejado cinza = taxa-base; laranja = limiar da ficha. Número = alertas.</text>
+<text x="402.0" y="70" text-anchor="end" class="tt">Milho</text>
+<line x1="56.0" x2="402.0" y1="344" y2="344" stroke="var(--grid)"/>
+<text x="50.0" y="348" text-anchor="end" class="t2">0%</text>
+<line x1="56.0" x2="402.0" y1="279.0" y2="279.0" stroke="var(--grid)"/>
+<text x="50.0" y="283.0" text-anchor="end" class="t2">25%</text>
+<line x1="56.0" x2="402.0" y1="214.0" y2="214.0" stroke="var(--grid)"/>
+<text x="50.0" y="218.0" text-anchor="end" class="t2">50%</text>
+<line x1="56.0" x2="402.0" y1="149.0" y2="149.0" stroke="var(--grid)"/>
+<text x="50.0" y="153.0" text-anchor="end" class="t2">75%</text>
+<line x1="56.0" x2="402.0" y1="84" y2="84" stroke="var(--grid)"/>
+<text x="50.0" y="88" text-anchor="end" class="t2">100%</text>
+<text x="56.0" y="360" text-anchor="middle" class="t2">0.7</text>
+<text x="125.2" y="360" text-anchor="middle" class="t2">0.72</text>
+<text x="194.4" y="360" text-anchor="middle" class="t2">0.74</text>
+<text x="263.6" y="360" text-anchor="middle" class="t2">0.76</text>
+<text x="332.8" y="360" text-anchor="middle" class="t2">0.78</text>
+<text x="402.0" y="360" text-anchor="middle" class="t2">0.8</text>
+<text x="229.0" y="378" text-anchor="middle" class="t2">Limiar do ISNA (alerta se ISNA &lt; limiar)</text>
+<line x1="56.0" x2="402.0" y1="289.92" y2="289.92" stroke="var(--neu)" stroke-dasharray="5,4" stroke-width="2"/>
+<text x="402.0" y="284.92" text-anchor="end" class="t2">taxa-base 21%</text>
+<line x1="229.0" x2="229.0" y1="84" y2="344" stroke="var(--s2)" stroke-width="2"/>
+<polyline points="56.0,84.0 90.6,84.0 125.2,84.0 159.8,84.0 194.4,84.0 229.0,149.0 263.6,136.0 298.2,127.4 332.8,127.4 367.4,149.0 402.0,149.0" fill="none" stroke="var(--s1)" stroke-width="2"/>
+<circle cx="56.0" cy="84.0" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 0.7: 2/2 alertas em ano ruim; 1 eventos; passa critério B3-3: False</title></circle>
+<text x="56.0" y="75.0" text-anchor="middle" class="t2" font-size="10">2</text>
+<circle cx="90.6" cy="84.0" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 0.71: 2/2 alertas em ano ruim; 1 eventos; passa critério B3-3: False</title></circle>
+<text x="90.6" y="75.0" text-anchor="middle" class="t2" font-size="10">2</text>
+<circle cx="125.2" cy="84.0" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 0.72: 2/2 alertas em ano ruim; 1 eventos; passa critério B3-3: False</title></circle>
+<text x="125.2" y="75.0" text-anchor="middle" class="t2" font-size="10">2</text>
+<circle cx="159.8" cy="84.0" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 0.73: 2/2 alertas em ano ruim; 1 eventos; passa critério B3-3: False</title></circle>
+<text x="159.8" y="75.0" text-anchor="middle" class="t2" font-size="10">2</text>
+<circle cx="194.4" cy="84.0" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 0.74: 2/2 alertas em ano ruim; 1 eventos; passa critério B3-3: False</title></circle>
+<text x="194.4" y="75.0" text-anchor="middle" class="t2" font-size="10">2</text>
+<circle cx="229.0" cy="149.0" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 0.75: 3/4 alertas em ano ruim; 3 eventos; passa critério B3-3: True</title></circle>
+<text x="229.0" y="140.0" text-anchor="middle" class="t2" font-size="10">4</text>
+<circle cx="263.6" cy="136.0" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 0.76: 4/5 alertas em ano ruim; 4 eventos; passa critério B3-3: True</title></circle>
+<text x="263.6" y="127.0" text-anchor="middle" class="t2" font-size="10">5</text>
+<circle cx="298.2" cy="127.4" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 0.77: 5/6 alertas em ano ruim; 5 eventos; passa critério B3-3: True</title></circle>
+<text x="298.2" y="118.4" text-anchor="middle" class="t2" font-size="10">6</text>
+<circle cx="332.8" cy="127.4" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 0.78: 5/6 alertas em ano ruim; 5 eventos; passa critério B3-3: True</title></circle>
+<text x="332.8" y="118.4" text-anchor="middle" class="t2" font-size="10">6</text>
+<circle cx="367.4" cy="149.0" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 0.79: 6/8 alertas em ano ruim; 6 eventos; passa critério B3-3: True</title></circle>
+<text x="367.4" y="140.0" text-anchor="middle" class="t2" font-size="10">8</text>
+<circle cx="402.0" cy="149.0" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 0.8: 6/8 alertas em ano ruim; 6 eventos; passa critério B3-3: True</title></circle>
+<text x="402.0" y="140.0" text-anchor="middle" class="t2" font-size="10">8</text>
+<text x="804.0" y="70" text-anchor="end" class="tt">Cebola</text>
+<line x1="458.0" x2="804.0" y1="344" y2="344" stroke="var(--grid)"/>
+<text x="452.0" y="348" text-anchor="end" class="t2">0%</text>
+<line x1="458.0" x2="804.0" y1="279.0" y2="279.0" stroke="var(--grid)"/>
+<text x="452.0" y="283.0" text-anchor="end" class="t2">25%</text>
+<line x1="458.0" x2="804.0" y1="214.0" y2="214.0" stroke="var(--grid)"/>
+<text x="452.0" y="218.0" text-anchor="end" class="t2">50%</text>
+<line x1="458.0" x2="804.0" y1="149.0" y2="149.0" stroke="var(--grid)"/>
+<text x="452.0" y="153.0" text-anchor="end" class="t2">75%</text>
+<line x1="458.0" x2="804.0" y1="84" y2="84" stroke="var(--grid)"/>
+<text x="452.0" y="88" text-anchor="end" class="t2">100%</text>
+<text x="458.0" y="360" text-anchor="middle" class="t2">300</text>
+<text x="515.6666666666666" y="360" text-anchor="middle" class="t2">320</text>
+<text x="573.3333333333334" y="360" text-anchor="middle" class="t2">340</text>
+<text x="631.0" y="360" text-anchor="middle" class="t2">360</text>
+<text x="688.6666666666666" y="360" text-anchor="middle" class="t2">380</text>
+<text x="746.3333333333334" y="360" text-anchor="middle" class="t2">400</text>
+<text x="804.0" y="360" text-anchor="middle" class="t2">420</text>
+<text x="631.0" y="378" text-anchor="middle" class="t2">Limiar do excedente set–nov, mm (alerta se ≥)</text>
+<line x1="458.0" x2="804.0" y1="300.58" y2="300.58" stroke="var(--neu)" stroke-dasharray="5,4" stroke-width="2"/>
+<text x="804.0" y="295.58" text-anchor="end" class="t2">taxa-base 17%</text>
+<line x1="631.0" x2="631.0" y1="84" y2="344" stroke="var(--s2)" stroke-width="2"/>
+<polyline points="458.0,251.2 486.8,251.2 515.7,243.9 544.5,235.6 573.3,235.6 602.2,228.6 631.0,214.0 659.8,232.5 688.7,232.5 717.5,232.5 746.3,232.5 775.2,232.5 804.0,232.5" fill="none" stroke="var(--s1)" stroke-width="2"/>
+<circle cx="458.0" cy="251.2" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 300: 5/14 alertas em ano ruim; 8 eventos; passa critério B3-3: False</title></circle>
+<text x="458.0" y="242.2" text-anchor="middle" class="t2" font-size="10">14</text>
+<circle cx="486.8" cy="251.2" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 310: 5/14 alertas em ano ruim; 8 eventos; passa critério B3-3: False</title></circle>
+<text x="486.8" y="242.2" text-anchor="middle" class="t2" font-size="10">14</text>
+<circle cx="515.7" cy="243.9" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 320: 5/13 alertas em ano ruim; 7 eventos; passa critério B3-3: False</title></circle>
+<text x="515.7" y="234.9" text-anchor="middle" class="t2" font-size="10">13</text>
+<circle cx="544.5" cy="235.6" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 330: 5/12 alertas em ano ruim; 7 eventos; passa critério B3-3: False</title></circle>
+<text x="544.5" y="226.6" text-anchor="middle" class="t2" font-size="10">12</text>
+<circle cx="573.3" cy="235.6" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 340: 5/12 alertas em ano ruim; 7 eventos; passa critério B3-3: False</title></circle>
+<text x="573.3" y="226.6" text-anchor="middle" class="t2" font-size="10">12</text>
+<circle cx="602.2" cy="228.6" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 350: 4/9 alertas em ano ruim; 5 eventos; passa critério B3-3: False</title></circle>
+<text x="602.2" y="219.6" text-anchor="middle" class="t2" font-size="10">9</text>
+<circle cx="631.0" cy="214.0" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 360: 4/8 alertas em ano ruim; 4 eventos; passa critério B3-3: True</title></circle>
+<text x="631.0" y="205.0" text-anchor="middle" class="t2" font-size="10">8</text>
+<circle cx="659.8" cy="232.5" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 370: 3/7 alertas em ano ruim; 4 eventos; passa critério B3-3: False</title></circle>
+<text x="659.8" y="223.5" text-anchor="middle" class="t2" font-size="10">7</text>
+<circle cx="688.7" cy="232.5" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 380: 3/7 alertas em ano ruim; 4 eventos; passa critério B3-3: False</title></circle>
+<text x="688.7" y="223.5" text-anchor="middle" class="t2" font-size="10">7</text>
+<circle cx="717.5" cy="232.5" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 390: 3/7 alertas em ano ruim; 4 eventos; passa critério B3-3: False</title></circle>
+<text x="717.5" y="223.5" text-anchor="middle" class="t2" font-size="10">7</text>
+<circle cx="746.3" cy="232.5" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 400: 3/7 alertas em ano ruim; 4 eventos; passa critério B3-3: False</title></circle>
+<text x="746.3" y="223.5" text-anchor="middle" class="t2" font-size="10">7</text>
+<circle cx="775.2" cy="232.5" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 410: 3/7 alertas em ano ruim; 4 eventos; passa critério B3-3: False</title></circle>
+<text x="775.2" y="223.5" text-anchor="middle" class="t2" font-size="10">7</text>
+<circle cx="804.0" cy="232.5" r="4.5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>limiar 420: 3/7 alertas em ano ruim; 4 eventos; passa critério B3-3: False</title></circle>
+<text x="804.0" y="223.5" text-anchor="middle" class="t2" font-size="10">7</text>
+</svg>

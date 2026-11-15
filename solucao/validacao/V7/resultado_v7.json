@@ -1,0 +1,570 @@
+{
+  "trechos_do_desafio_conferidos": {
+    "You may compare at least three rotation strategies, including the existing rotation": true,
+    "why it was suggested, what evidence supports it, what benefits it may offer, where information gaps exist": true,
+    "does not replace farmer judgment or local agricultural expertise": true,
+    "frost risk": true,
+    "times when fields are typically bare": true,
+    "input their own priorities or constraints": true,
+    "Explain how the model interprets uncertainty": true
+  },
+  "aderencia": [
+    {
+      "id": "R1",
+      "item": "Combina observação da Terra da NASA com solo, cultura e prioridades do agricultor",
+      "estado": "parcial",
+      "prova": "POWER 40 anos + solo raso/fundo + Kc/Ky FAO entram (B3-3, A4-3). Não há pergunta de prioridade (silagem garantida, renda, solo) no fluxo do WhatsApp nem na spec."
+    },
+    {
+      "id": "R2",
+      "item": "Compara 3 ou mais estratégias de rotação, incluindo a atual",
+      "estado": "parcial",
+      "prova": "SMO tem 3 com número: atual (milho silagem → aveia), 2º milho após silagem até a data-limite de geada (B1-1) e mistura milho+sorgo no talhão raso (A4-3). Ituporanga não tem 3 estratégias de rotação testadas: B4 é regra de venda, A3-1 é erosão."
+    },
+    {
+      "id": "R3",
+      "item": "Diz por que cada estratégia foi sugerida",
+      "estado": "atende",
+      "prova": "Cada módulo gera o motivo (ex.: 'solo raso e pior ano em 10', 'geada depois de 1/fev'). Spec seção 3."
+    },
+    {
+      "id": "R4",
+      "item": "Mostra a evidência que apoia",
+      "estado": "atende",
+      "prova": "Frase com o histórico do ponto ('em 36 anos, 4 anos com ISNA < 0,75', B3-3) e o frontend de auditoria com anos, parâmetros e fontes (spec Q9)."
+    },
+    {
+      "id": "R5",
+      "item": "Mostra os benefícios",
+      "estado": "parcial",
+      "prova": "Benefício de produção existe (pior ano em 10 +0 a +14% com sorgo, A4-3). Benefício de solo (N, matéria orgânica, ciclo de praga) não é calculado; a spec marca como 'a validar'."
+    },
+    {
+      "id": "R6",
+      "item": "Mostra as lacunas de informação",
+      "estado": "atende",
+      "prova": "Seção 'quando o sistema diz não sei' (spec 7) e limites por ficha (grade de 50 km, solo informado)."
+    },
+    {
+      "id": "R7",
+      "item": "Mostra os riscos que pedem revisão local",
+      "estado": "atende",
+      "prova": "O frontend do técnico é a revisão local. Aviso quando a data sai da janela do ZARC (README do protótipo)."
+    }
+  ],
+  "secundarios": [
+    {
+      "item": "Ferramenta apoia, não substitui",
+      "estado": "atende",
+      "prova": "Intermediário no circuito (spec Q2)."
+    },
+    {
+      "item": "Épocas de solo descoberto",
+      "estado": "parcial",
+      "prova": "A3-1 (erosão) passou com ajuste; B2-1 a B2-4 descartadas."
+    },
+    {
+      "item": "Risco de geada",
+      "estado": "atende",
+      "prova": "B1-1 aprovada; V2 replica em mais pontos."
+    },
+    {
+      "item": "Explicar a incerteza",
+      "estado": "atende",
+      "prova": "'x em 10 anos', faixa 0 a 14% (A4-3), n = 9 El Niños (A2-4)."
+    },
+    {
+      "item": "Prioridades e restrições como entrada",
+      "estado": "nao",
+      "prova": "Não desenhado."
+    },
+    {
+      "item": "Ciclo de nutrientes, praga, matéria orgânica",
+      "estado": "nao",
+      "prova": "Não calculado; só texto."
+    },
+    {
+      "item": "Mercado",
+      "estado": "parcial",
+      "prova": "B4-1/B4-3 (cebola), ajustar; preço é fonte externa."
+    }
+  ],
+  "dados_usados_em_modulos_aprovados": [
+    "NASA POWER",
+    "SRTM",
+    "Sentinel-2"
+  ],
+  "dados_nao_usados": {
+    "GPM IMERG": "pede login Earthdata; IMERG_PRECTOT do POWER veio vazio (PROTOCOLO.md)",
+    "SMAP": "pede login Earthdata (PROTOCOLO.md)",
+    "GLDAS": "pede login Earthdata",
+    "ECOSTRESS": "não testado",
+    "ERA5": "não usado; A2-4 pede ERA5 para trocar o ONI da NOAA",
+    "Landsat": "não usado nos módulos que passaram",
+    "MODIS": "usado em A5-3 e B5-1, ambos descartados",
+    "FAO GAEZ": "só valores de tabela (água por textura), sem baixar camada"
+  },
+  "funcoes": [
+    {
+      "funcao": "Risco por cultura e data (probabilidade histórica)",
+      "valores": {
+        "ZARC / Plantio Certo": 2,
+        "Epagri/Ciram (Agroconnect)": 1,
+        "INMET SISDAGRO": 1,
+        "Embrapa RAImundo": 0,
+        "CNA/Senar JoIA": 0,
+        "Plataformas privadas": 0,
+        "Apps de cooperativa": -1,
+        "Nossa solução": 2
+      },
+      "fonte": "ZARC: risco 20/30/40% por decêndio (CSV A1). Ciram e SISDAGRO: balanço hídrico atual por estação. RAImundo/JoIA: não citado (Agrolink; CNA). Nossa: B3-3, A1-1."
+    },
+    {
+      "funcao": "3+ estratégias lado a lado, com a atual",
+      "valores": {
+        "ZARC / Plantio Certo": 1,
+        "Epagri/Ciram (Agroconnect)": 0,
+        "INMET SISDAGRO": 0,
+        "Embrapa RAImundo": 0,
+        "CNA/Senar JoIA": 0,
+        "Plataformas privadas": 0,
+        "Apps de cooperativa": -1,
+        "Nossa solução": 2
+      },
+      "fonte": "ZARC: uma cultura por vez; dá para consultar várias, sem comparar. Privadas: Agworld/EOSDA só registram (pesquisa-solucoes-atuais.md, 1.3). Nossa: desenho da spec."
+    },
+    {
+      "funcao": "Mistura de culturas por talhão (pior ano em 10)",
+      "valores": {
+        "ZARC / Plantio Certo": 0,
+        "Epagri/Ciram (Agroconnect)": 0,
+        "INMET SISDAGRO": 0,
+        "Embrapa RAImundo": 0,
+        "CNA/Senar JoIA": 0,
+        "Plataformas privadas": 0,
+        "Apps de cooperativa": -1,
+        "Nossa solução": 1
+      },
+      "fonte": "Não achei em nenhum. Nossa: A4-3 (ajustar)."
+    },
+    {
+      "funcao": "Data-limite do 2º milho por geada (sequência)",
+      "valores": {
+        "ZARC / Plantio Certo": 1,
+        "Epagri/Ciram (Agroconnect)": 1,
+        "INMET SISDAGRO": 0,
+        "Embrapa RAImundo": 0,
+        "CNA/Senar JoIA": 0,
+        "Plataformas privadas": 0,
+        "Apps de cooperativa": -1,
+        "Nossa solução": 2
+      },
+      "fonte": "ZARC SC não tem 'Milho 2ª Safra' (CSV A1) e corta o milho 1ª safra no fim de jan. Ciram: previsão de geada de curto prazo e 'possíveis geadas' no Agroconnect. Nossa: B1-1 (aprovada)."
+    },
+    {
+      "funcao": "Alerta de ano extremo com histórico do ponto",
+      "valores": {
+        "ZARC / Plantio Certo": 0,
+        "Epagri/Ciram (Agroconnect)": 1,
+        "INMET SISDAGRO": 1,
+        "Embrapa RAImundo": 0,
+        "CNA/Senar JoIA": 0,
+        "Plataformas privadas": 0,
+        "Apps de cooperativa": -1,
+        "Nossa solução": 2
+      },
+      "fonte": "Agroconnect: ISNA, déficit, % da chuva normal por estação. SISDAGRO: perda estimada. Nenhum diz 'nesses anos quebrou x%'. Nossa: B3-3 (aprovada, fora da amostra)."
+    },
+    {
+      "funcao": "Filtro 'anos parecidos' (El Niño)",
+      "valores": {
+        "ZARC / Plantio Certo": 0,
+        "Epagri/Ciram (Agroconnect)": 1,
+        "INMET SISDAGRO": 0,
+        "Embrapa RAImundo": 0,
+        "CNA/Senar JoIA": 0,
+        "Plataformas privadas": 0,
+        "Apps de cooperativa": -1,
+        "Nossa solução": 1
+      },
+      "fonte": "Ciram publica nota de previsão climática trimestral (site, 28/10/2026). Nossa: A2-4 (ajustar)."
+    },
+    {
+      "funcao": "Alerta de doença (míldio da cebola)",
+      "valores": {
+        "ZARC / Plantio Certo": 0,
+        "Epagri/Ciram (Agroconnect)": 2,
+        "INMET SISDAGRO": 0,
+        "Embrapa RAImundo": 1,
+        "CNA/Senar JoIA": 1,
+        "Plataformas privadas": 1,
+        "Apps de cooperativa": -1,
+        "Nossa solução": 0
+      },
+      "fonte": "Agroconnect emite alerta de míldio (página baixada; B5-3). RAImundo/JoIA: dúvidas de praga e foto. Nossa: descartada (B5-3)."
+    },
+    {
+      "funcao": "Monitoramento por estação em tempo real",
+      "valores": {
+        "ZARC / Plantio Certo": 0,
+        "Epagri/Ciram (Agroconnect)": 2,
+        "INMET SISDAGRO": 2,
+        "Embrapa RAImundo": 0,
+        "CNA/Senar JoIA": 1,
+        "Plataformas privadas": 1,
+        "Apps de cooperativa": -1,
+        "Nossa solução": 0
+      },
+      "fonte": "Agroconnect (rede de estações) e SISDAGRO. JoIA: previsão de dias. Nossa: descartada (B5-2)."
+    },
+    {
+      "funcao": "Erosão / solo descoberto no talhão",
+      "valores": {
+        "ZARC / Plantio Certo": 0,
+        "Epagri/Ciram (Agroconnect)": 0,
+        "INMET SISDAGRO": 0,
+        "Embrapa RAImundo": 0,
+        "CNA/Senar JoIA": 0,
+        "Plataformas privadas": 1,
+        "Apps de cooperativa": -1,
+        "Nossa solução": 1
+      },
+      "fonte": "Privadas: NDVI Sentinel-2 (Aegro), sem índice de erosão. Nossa: A3-1 (ajustar)."
+    },
+    {
+      "funcao": "Preço da cebola ligado ao clima",
+      "valores": {
+        "ZARC / Plantio Certo": 0,
+        "Epagri/Ciram (Agroconnect)": 1,
+        "INMET SISDAGRO": 0,
+        "Embrapa RAImundo": 0,
+        "CNA/Senar JoIA": 1,
+        "Plataformas privadas": 0,
+        "Apps de cooperativa": -1,
+        "Nossa solução": 1
+      },
+      "fonte": "Cebola Net: preço diário. JoIA: cotações. Nenhum liga à chuva. Nossa: B4-1/B4-3 (ajustar)."
+    },
+    {
+      "funcao": "WhatsApp com áudio e foto",
+      "valores": {
+        "ZARC / Plantio Certo": 0,
+        "Epagri/Ciram (Agroconnect)": 1,
+        "INMET SISDAGRO": 0,
+        "Embrapa RAImundo": 2,
+        "CNA/Senar JoIA": 2,
+        "Plataformas privadas": 0,
+        "Apps de cooperativa": -1,
+        "Nossa solução": 2
+      },
+      "fonte": "RAImundo (Embrapa/MAPA/MDA, beta 2025) e JoIA (CNA, 25/08/2026, texto/áudio/foto, piloto com 10 mil). Ciram: grupo de WhatsApp no site."
+    },
+    {
+      "funcao": "Cada número ligado à fonte e aos anos (auditoria)",
+      "valores": {
+        "ZARC / Plantio Certo": 1,
+        "Epagri/Ciram (Agroconnect)": 0,
+        "INMET SISDAGRO": 0,
+        "Embrapa RAImundo": 0,
+        "CNA/Senar JoIA": 0,
+        "Plataformas privadas": 0,
+        "Apps de cooperativa": -1,
+        "Nossa solução": 2
+      },
+      "fonte": "ZARC: método e portarias públicos, CSV aberto, mas não por resposta. Bots de IA: não mostram a conta. Nossa: spec Q9 + frontend."
+    },
+    {
+      "funcao": "Ligado a crédito e seguro",
+      "valores": {
+        "ZARC / Plantio Certo": 2,
+        "Epagri/Ciram (Agroconnect)": 0,
+        "INMET SISDAGRO": 0,
+        "Embrapa RAImundo": 0,
+        "CNA/Senar JoIA": 0,
+        "Plataformas privadas": 0,
+        "Apps de cooperativa": -1,
+        "Nossa solução": 0
+      },
+      "fonte": "ZARC é exigido no crédito rural e no seguro (contexto.md, 7.2)."
+    }
+  ],
+  "diferenciais": [
+    {
+      "funcao": "3+ estratégias lado a lado, com a atual",
+      "nossa": 2,
+      "melhor_concorrente": 1
+    },
+    {
+      "funcao": "Mistura de culturas por talhão (pior ano em 10)",
+      "nossa": 1,
+      "melhor_concorrente": 0
+    },
+    {
+      "funcao": "Data-limite do 2º milho por geada (sequência)",
+      "nossa": 2,
+      "melhor_concorrente": 1
+    },
+    {
+      "funcao": "Alerta de ano extremo com histórico do ponto",
+      "nossa": 2,
+      "melhor_concorrente": 1
+    },
+    {
+      "funcao": "Filtro 'anos parecidos' (El Niño)",
+      "nossa": 1,
+      "melhor_concorrente": 1
+    },
+    {
+      "funcao": "Erosão / solo descoberto no talhão",
+      "nossa": 1,
+      "melhor_concorrente": 1
+    },
+    {
+      "funcao": "Preço da cebola ligado ao clima",
+      "nossa": 1,
+      "melhor_concorrente": 1
+    },
+    {
+      "funcao": "Cada número ligado à fonte e aos anos (auditoria)",
+      "nossa": 2,
+      "melhor_concorrente": 1
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "O ZARC já faz isso. Por que vocês?",
+      "tem_numero": true,
+      "resposta": "A1-1: motor reproduz o ZARC em 94%; ZARC SC não tem milho 2ª safra; nada de mistura (V7)."
+    },
+    {
+      "pergunta": "O modelo funciona em SC?",
+      "tem_numero": true,
+      "resposta": "B1-0: ρ = 0,28, igual à chuva bruta. Por isso só usamos extremos (B3-3)."
+    },
+    {
+      "pergunta": "O alerta de ano extremo funciona fora da amostra?",
+      "tem_numero": true,
+      "resposta": "B3-3: milho 4 anos em 36, 2 com quebra > 15%; cebola 3 de 4."
+    },
+    {
+      "pergunta": "Grade de 50 km para talhão pequeno?",
+      "tem_numero": true,
+      "resposta": "B5-2: alerta na safra a 50 km falhou; A2-4: células vizinhas com r de 0,76 a 0,97."
+    },
+    {
+      "pergunta": "Isso é rotação ou só previsão de seca?",
+      "tem_numero": true,
+      "resposta": "SMO: 3 estratégias com número (B1-1, A4-3). Ituporanga ainda não."
+    },
+    {
+      "pergunta": "Qual o tamanho do problema?",
+      "tem_numero": true,
+      "resposta": "Estiagem 2021/22: -43% do milho de SC (A1-1); cebola -55% em 2015 e -27,5% em 2023 (B3-2)."
+    },
+    {
+      "pergunta": "Qual a incerteza?",
+      "tem_numero": true,
+      "resposta": "Faixa 0 a 14% (A4-3); n = 9 El Niños (A2-4); ±2-3 semanas (A5-1)."
+    },
+    {
+      "pergunta": "Por que não alerta de míldio?",
+      "tem_numero": true,
+      "resposta": "B5-3: Agroconnect já faz; nosso índice ρ = 0,45 serve de contexto."
+    },
+    {
+      "pergunta": "RAImundo e JoIA já estão no WhatsApp. E aí?",
+      "tem_numero": true,
+      "resposta": "JoIA: piloto com 10 mil produtores (CNA). Canal não é diferencial; o motor é."
+    },
+    {
+      "pergunta": "Usaram dado de fora da NASA?",
+      "tem_numero": true,
+      "resposta": "IBGE, ZARC, Epagri só para conferir. Exceção a corrigir: ONI da NOAA em A2-4."
+    },
+    {
+      "pergunta": "Funciona em outra região?",
+      "tem_numero": true,
+      "resposta": "Quixadá: 16 de 18 decêndios iguais ao ZARC (spec 6)."
+    },
+    {
+      "pergunta": "O que muda no El Niño forte de 2026/27?",
+      "tem_numero": true,
+      "resposta": "A2-4: 9 El Niños, 1 out-jan seco e 6 chuvosos."
+    },
+    {
+      "pergunta": "Cadê IMERG e SMAP? Só usaram POWER?",
+      "tem_numero": false,
+      "resposta": "Não usados (login Earthdata). Sem número que mostre ganho."
+    },
+    {
+      "pergunta": "Testaram com agricultor ou técnico?",
+      "tem_numero": false,
+      "resposta": "Não. Só alcance: 50,5% dos estabelecimentos de SC com internet em 2017 (B5-2)."
+    },
+    {
+      "pergunta": "O LLM pode inventar número?",
+      "tem_numero": false,
+      "resposta": "Por desenho, não: só transcreve e lê template (spec Q9). Sem teste medido."
+    },
+    {
+      "pergunta": "Quanto o agricultor ganha em dinheiro?",
+      "tem_numero": false,
+      "resposta": "Só na cebola (B4-3: prejuízo de 6 para 2 anos). No leite não medido."
+    },
+    {
+      "pergunta": "Usaram SI (IA) para ter a ideia?",
+      "tem_numero": false,
+      "resposta": "Regra do Space Apps proíbe. Precisa declarar onde a IA entrou e marcar áudio e imagem."
+    }
+  ],
+  "zarc_cobertura": {
+    "São Miguel do Oeste": {
+      "n_culturas_total": 53,
+      "culturas": {
+        "Milho 1ª Safra": {
+          "celulas_indicadas": 274,
+          "pct_risco_20": 51.8,
+          "pct_risco_30": 21.2,
+          "pct_risco_40": 27.0
+        },
+        "Milho 2ª Safra": null,
+        "Sorgo Forrageiro": {
+          "celulas_indicadas": 99,
+          "pct_risco_20": 90.9,
+          "pct_risco_30": 0.0,
+          "pct_risco_40": 9.1
+        },
+        "Sorgo Forrageiro 2ª Safra": {
+          "celulas_indicadas": 54,
+          "pct_risco_20": 100.0,
+          "pct_risco_30": 0.0,
+          "pct_risco_40": 0.0
+        },
+        "Aveia": {
+          "celulas_indicadas": 108,
+          "pct_risco_20": 37.0,
+          "pct_risco_30": 50.0,
+          "pct_risco_40": 13.0
+        },
+        "Milheto": {
+          "celulas_indicadas": 105,
+          "pct_risco_20": 100.0,
+          "pct_risco_30": 0.0,
+          "pct_risco_40": 0.0
+        },
+        "Trigo": {
+          "celulas_indicadas": 114,
+          "pct_risco_20": 38.6,
+          "pct_risco_30": 49.1,
+          "pct_risco_40": 12.3
+        },
+        "Cebola": {
+          "celulas_indicadas": 112,
+          "pct_risco_20": 0.0,
+          "pct_risco_30": 25.0,
+          "pct_risco_40": 75.0
+        },
+        "Feijão": {
+          "celulas_indicadas": 93,
+          "pct_risco_20": 61.3,
+          "pct_risco_30": 24.7,
+          "pct_risco_40": 14.0
+        },
+        "Soja": {
+          "celulas_indicadas": 794,
+          "pct_risco_20": 53.8,
+          "pct_risco_30": 31.0,
+          "pct_risco_40": 15.2
+        }
+      }
+    },
+    "Ituporanga": {
+      "n_culturas_total": 58,
+      "culturas": {
+        "Milho 1ª Safra": {
+          "celulas_indicadas": 288,
+          "pct_risco_20": 78.8,
+          "pct_risco_30": 17.4,
+          "pct_risco_40": 3.8
+        },
+        "Milho 2ª Safra": null,
+        "Sorgo Forrageiro": {
+          "celulas_indicadas": 108,
+          "pct_risco_20": 91.7,
+          "pct_risco_30": 0.0,
+          "pct_risco_40": 8.3
+        },
+        "Sorgo Forrageiro 2ª Safra": {
+          "celulas_indicadas": 63,
+          "pct_risco_20": 100.0,
+          "pct_risco_30": 0.0,
+          "pct_risco_40": 0.0
+        },
+        "Aveia": {
+          "celulas_indicadas": 108,
+          "pct_risco_20": 100.0,
+          "pct_risco_30": 0.0,
+          "pct_risco_40": 0.0
+        },
+        "Milheto": {
+          "celulas_indicadas": 123,
+          "pct_risco_20": 100.0,
+          "pct_risco_30": 0.0,
+          "pct_risco_40": 0.0
+        },
+        "Trigo": {
+          "celulas_indicadas": 114,
+          "pct_risco_20": 100.0,
+          "pct_risco_30": 0.0,
+          "pct_risco_40": 0.0
+        },
+        "Cebola": {
+          "celulas_indicadas": 277,
+          "pct_risco_20": 31.4,
+          "pct_risco_30": 28.2,
+          "pct_risco_40": 40.4
+        },
+        "Feijão": {
+          "celulas_indicadas": 128,
+          "pct_risco_20": 65.6,
+          "pct_risco_30": 15.6,
+          "pct_risco_40": 18.8
+        },
+        "Soja": {
+          "celulas_indicadas": 932,
+          "pct_risco_20": 90.7,
+          "pct_risco_30": 7.0,
+          "pct_risco_40": 2.4
+        }
+      }
+    }
+  },
+  "criterios": {
+    "C1": {
+      "valor": 4,
+      "meta": 5,
+      "passa": false,
+      "texto": "4 de 7 'atende', 0 'não' (meta: 5 e nenhum 'não')"
+    },
+    "C2": {
+      "valor": 3,
+      "meta": 3,
+      "passa": true,
+      "texto": "3 conjuntos (NASA POWER, SRTM, Sentinel-2); só da NASA: 2"
+    },
+    "C3": {
+      "valor": 4,
+      "meta": 2,
+      "passa": true,
+      "texto": "4 funções que nenhum concorrente faz e nós fazemos; canal é diferencial: False"
+    },
+    "C4": {
+      "valor": 70.6,
+      "meta": 80.0,
+      "passa": false,
+      "texto": "12 de 17 perguntas com número (71%)"
+    }
+  },
+  "criterios_passaram": 2,
+  "veredito": "parcial"
+}

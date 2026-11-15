@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 500">
+<style>
+svg{--sf:#fcfcfb;--t1:#0b0b0b;--t2:#52514e;--grid:#e4e3df;--s1:#2a78d6;--s2:#eb6834;--neu:#8a8984}
+@media (prefers-color-scheme: dark){svg{--sf:#1a1a19;--t1:#f0efec;--t2:#c3c2b7;--grid:#3a3a37;--s1:#3987e5;--s2:#d95926;--neu:#9a9990}}
+text{fill:var(--t1);font-family:system-ui,sans-serif;font-size:12px}.t2{fill:var(--t2)}.tt{font-size:15px;font-weight:600}
+</style>
+<rect width="980" height="500" fill="var(--sf)"/>
+<text x="16" y="24" class="tt">Acerto dos alertas de ano extremo, com IC 95% por evento (bootstrap por ano de safra)</text>
+<text x="16" y="42" class="t2">Ponto azul = fração dos alertas em ano ruim; barra = IC 95%; traço laranja = taxa-base (alertar ao acaso).</text>
+<line x1="400" x2="400" y1="62" y2="430" stroke="var(--grid)"/>
+<text x="400" y="446" text-anchor="middle" class="t2">0%</text>
+<line x1="512.5" x2="512.5" y1="62" y2="430" stroke="var(--grid)"/>
+<text x="512.5" y="446" text-anchor="middle" class="t2">25%</text>
+<line x1="625.0" x2="625.0" y1="62" y2="430" stroke="var(--grid)"/>
+<text x="625.0" y="446" text-anchor="middle" class="t2">50%</text>
+<line x1="737.5" x2="737.5" y1="62" y2="430" stroke="var(--grid)"/>
+<text x="737.5" y="446" text-anchor="middle" class="t2">75%</text>
+<line x1="850" x2="850" y1="62" y2="430" stroke="var(--grid)"/>
+<text x="850" y="446" text-anchor="middle" class="t2">100%</text>
+<text x="16" y="89.0">milho: B3-3 como publicado (regra fixa, regiões vizinhas)</text>
+<line x1="400.0" x2="850.0" y1="85.0" y2="85.0" stroke="var(--s1)" stroke-width="2"/>
+<line x1="493.6" x2="493.6" y1="76.0" y2="94.0" stroke="var(--s2)" stroke-width="3"/>
+<circle cx="737.5" cy="85.0" r="5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>3/4 alertas em ano ruim; base 21%; IC 0%–100%; 3 eventos</title></circle>
+<text x="972" y="89.0" text-anchor="end" class="t2" font-size="11">3/4 · 3 ev.</text>
+<text x="16" y="119.0">milho: Extensão, células novas, regra fixa</text>
+<line x1="400.0" x2="850.0" y1="115.0" y2="115.0" stroke="var(--s1)" stroke-width="2"/>
+<line x1="460.75" x2="460.75" y1="106.0" y2="124.0" stroke="var(--s2)" stroke-width="3"/>
+<circle cx="580.0" cy="115.0" r="5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>2/5 alertas em ano ruim; base 14%; IC 0%–100%; 3 eventos</title></circle>
+<text x="972" y="119.0" text-anchor="end" class="t2" font-size="11">2/5 · 3 ev.</text>
+<text x="16" y="149.0">milho: Extensão, células novas, 10% extremos da célula</text>
+<line x1="499.0" x2="670.0" y1="145.0" y2="145.0" stroke="var(--s1)" stroke-width="2"/>
+<line x1="460.75" x2="460.75" y1="136.0" y2="154.0" stroke="var(--s2)" stroke-width="3"/>
+<circle cx="597.1" cy="145.0" r="5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>14/32 alertas em ano ruim; base 14%; IC 22%–60%; 11 eventos</title></circle>
+<text x="972" y="149.0" text-anchor="end" class="t2" font-size="11">14/32 · 11 ev.</text>
+<text x="16" y="179.0">milho: SC inteira (amostra + B3-3 + novas), regra fixa</text>
+<line x1="400.0" x2="760.0" y1="175.0" y2="175.0" stroke="var(--s1)" stroke-width="2"/>
+<line x1="469.3" x2="469.3" y1="166.0" y2="184.0" stroke="var(--s2)" stroke-width="3"/>
+<circle cx="642.1" cy="175.0" r="5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>7/13 alertas em ano ruim; base 15%; IC 0%–80%; 6 eventos</title></circle>
+<text x="972" y="179.0" text-anchor="end" class="t2" font-size="11">7/13 · 6 ev.</text>
+<text x="16" y="209.0">milho: SC inteira, 10% extremos da célula</text>
+<line x1="499.0" x2="692.5" y1="205.0" y2="205.0" stroke="var(--s1)" stroke-width="2"/>
+<line x1="469.3" x2="469.3" y1="196.0" y2="214.0" stroke="var(--s2)" stroke-width="3"/>
+<circle cx="614.65" cy="205.0" r="5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>21/44 alertas em ano ruim; base 15%; IC 22%–65%; 12 eventos</title></circle>
+<text x="972" y="209.0" text-anchor="end" class="t2" font-size="11">21/44 · 12 ev.</text>
+<text x="16" y="239.0">cebola: B3-3 como publicado (regra fixa, regiões vizinhas)</text>
+<line x1="400.0" x2="850.0" y1="235.0" y2="235.0" stroke="var(--s1)" stroke-width="2"/>
+<line x1="475.15" x2="475.15" y1="226.0" y2="244.0" stroke="var(--s2)" stroke-width="3"/>
+<circle cx="625.0" cy="235.0" r="5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>4/8 alertas em ano ruim; base 17%; IC 0%–100%; 4 eventos</title></circle>
+<text x="972" y="239.0" text-anchor="end" class="t2" font-size="11">4/8 · 4 ev.</text>
+<text x="16" y="269.0">cebola: Extensão, células novas, regra fixa</text>
+<line x1="436.0" x2="589.0" y1="265.0" y2="265.0" stroke="var(--s1)" stroke-width="2"/>
+<line x1="457.15" x2="457.15" y1="256.0" y2="274.0" stroke="var(--s2)" stroke-width="3"/>
+<circle cx="500.8" cy="265.0" r="5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>11/49 alertas em ano ruim; base 13%; IC 8%–42%; 14 eventos</title></circle>
+<text x="972" y="269.0" text-anchor="end" class="t2" font-size="11">11/49 · 14 ev.</text>
+<text x="16" y="299.0">cebola: Extensão, células novas, 10% extremos da célula</text>
+<line x1="440.5" x2="593.5" y1="295.0" y2="295.0" stroke="var(--s1)" stroke-width="2"/>
+<line x1="457.15" x2="457.15" y1="286.0" y2="304.0" stroke="var(--s2)" stroke-width="3"/>
+<circle cx="512.5" cy="295.0" r="5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>9/36 alertas em ano ruim; base 13%; IC 9%–43%; 9 eventos</title></circle>
+<text x="972" y="299.0" text-anchor="end" class="t2" font-size="11">9/36 · 9 ev.</text>
+<text x="16" y="329.0">cebola: Extensão cebola ≥ 100 ha, regra fixa</text>
+<line x1="427.0" x2="670.0" y1="325.0" y2="325.0" stroke="var(--s1)" stroke-width="2"/>
+<line x1="472.0" x2="472.0" y1="316.0" y2="334.0" stroke="var(--s2)" stroke-width="3"/>
+<circle cx="544.0" cy="325.0" r="5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>8/25 alertas em ano ruim; base 16%; IC 6%–60%; 10 eventos</title></circle>
+<text x="972" y="329.0" text-anchor="end" class="t2" font-size="11">8/25 · 10 ev.</text>
+<text x="16" y="359.0">cebola: Extensão cebola ≥ 100 ha, 10% extremos</text>
+<line x1="449.5" x2="760.0" y1="355.0" y2="355.0" stroke="var(--s1)" stroke-width="2"/>
+<line x1="472.0" x2="472.0" y1="346.0" y2="364.0" stroke="var(--s2)" stroke-width="3"/>
+<circle cx="597.1" cy="355.0" r="5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>7/16 alertas em ano ruim; base 16%; IC 11%–80%; 7 eventos</title></circle>
+<text x="972" y="359.0" text-anchor="end" class="t2" font-size="11">7/16 · 7 ev.</text>
+<text x="16" y="389.0">cebola: SC inteira (amostra + B3-3 + novas), regra fixa</text>
+<line x1="449.5" x2="634.0" y1="385.0" y2="385.0" stroke="var(--s1)" stroke-width="2"/>
+<line x1="460.75" x2="460.75" y1="376.0" y2="394.0" stroke="var(--s2)" stroke-width="3"/>
+<circle cx="532.75" cy="385.0" r="5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>18/61 alertas em ano ruim; base 14%; IC 11%–52%; 14 eventos</title></circle>
+<text x="972" y="389.0" text-anchor="end" class="t2" font-size="11">18/61 · 14 ev.</text>
+<text x="16" y="419.0">cebola: SC inteira, 10% extremos da célula</text>
+<line x1="454.0" x2="652.0" y1="415.0" y2="415.0" stroke="var(--s1)" stroke-width="2"/>
+<line x1="460.75" x2="460.75" y1="406.0" y2="424.0" stroke="var(--s2)" stroke-width="3"/>
+<circle cx="549.85" cy="415.0" r="5" fill="var(--s1)" stroke="var(--sf)" stroke-width="2"><title>16/48 alertas em ano ruim; base 14%; IC 12%–56%; 9 eventos</title></circle>
+<text x="972" y="419.0" text-anchor="end" class="t2" font-size="11">16/48 · 9 ev.</text>
+<text x="625.0" y="482" text-anchor="middle" class="t2">fração dos alertas que caíram em ano ruim (rendimento ≤ 85% da mediana, IBGE PAM)</text>
+</svg>

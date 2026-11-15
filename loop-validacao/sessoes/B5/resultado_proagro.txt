@@ -1,0 +1,13 @@
+Milho, São Miguel do Oeste · safras 2014 - 2025
+  razão deferidas/adesões: {2014: '6%', 2015: '0%', 2016: '1%', 2017: '0%', 2018: '1%', 2019: '2%', 2020: '0%', 2021: '50%', 2022: '48%', 2023: '15%', 2024: '29%', 2025: '5%'}
+  anos de indenização alta (>=10%): [2021, 2022, 2023, 2024]
+  laudo: y_mun < 0,70                              marca  4 acertos 3/4 falsos 1 precisão 75% [2021, 2022, 2023, 2025]
+  base: chuva out-fev < 1º quartil (1990-2024)     marca  5 acertos 2/4 falsos 3 precisão 40% [2014, 2020, 2021, 2022, 2025]
+  alerta B5-2 até o dia 80                         marca  3 acertos 2/4 falsos 1 precisão 67% [2019, 2022, 2023]
+  olho do agricultor                               marca  3 acertos 1/4 falsos 2 precisão 33% [2015, 2019, 2022]
+
+Cebola, Ituporanga · safras 2013 - 2024 (corte de indenização alta: 40%, porque a média já é alta)
+  razão deferidas/adesões: {2013: '15%', 2014: '16%', 2015: '82%', 2016: '7%', 2017: '43%', 2018: '40%', 2019: '22%', 2020: '65%', 2021: '55%', 2022: '13%', 2023: '73%', 2024: '82%'}
+  anos de indenização alta (>=40%): [2015, 2017, 2018, 2020, 2021, 2023, 2024]
+  painel: semanas de risco no quartil de cima      marca  4 acertos 3/7 falsos 1 precisão 75% [2014, 2015, 2021, 2023]
+  base: chuva ago-nov no quartil de cima           marca  1 acertos 1/7 falsos 0 precisão 100% [2023]

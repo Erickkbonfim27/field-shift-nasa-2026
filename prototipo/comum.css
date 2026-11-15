@@ -1,0 +1,37 @@
+:root {
+  --fundo: #f6f4ee; --cartao: #ffffff; --texto: #1d2a1f; --texto2: #5a665c; --linha: #d9d6ca;
+  --ok: #3f8f4f; --medio: #d9a21b; --ruim: #d46a2b; --pessimo: #b23a3a; --cinza: #9aa39b;
+  --saco: #e6c26a; --saco-borda: #8a6a1c; --destaque: #1f6b4a; --zap: #dcf8c6; --zap-fundo: #ece5dd;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --fundo: #141a15; --cartao: #1e2620; --texto: #eef1ea; --texto2: #a5b0a6; --linha: #36423a;
+    --ok: #62b873; --medio: #e0b13a; --ruim: #e58a52; --pessimo: #d36a6a; --cinza: #6f7a71;
+    --saco: #c9a24a; --saco-borda: #e6c26a; --destaque: #62b873; --zap: #25422c; --zap-fundo: #0f1512;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+.topo { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--linha); flex-wrap: wrap; }
+.topo h1 { font-size: 17px; margin: 0; }
+.topo nav a { color: var(--destaque); text-decoration: none; margin-right: 14px; font-weight: 600; }
+.topo nav a[aria-current] { text-decoration: underline; }
+.selo { font-size: 12px; background: var(--cartao); border: 1px solid var(--linha); border-radius: 99px; padding: 2px 10px; color: var(--texto2); }
+.cartao { background: var(--cartao); border: 1px solid var(--linha); border-radius: 14px; padding: 16px; }
+h2 { font-size: 15px; margin: 0 0 10px; }
+h3 { font-size: 14px; margin: 14px 0 6px; }
+.peq { font-size: 13px; color: var(--texto2); }
+.sacos { display: inline-flex; gap: 2px; align-items: flex-end; }
+.graf { width: 100%; height: auto; display: block; }
+.tab { width: 100%; border-collapse: collapse; font-size: 13px; }
+.tab th, .tab td { text-align: left; padding: 5px 6px; border-bottom: 1px solid var(--linha); }
+.tab th { color: var(--texto2); font-weight: 600; position: sticky; top: 0; background: var(--cartao); }
+.ponto { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; }
+.params { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; font-size: 13px; margin: 0; }
+.params dt { color: var(--texto2); } .params dd { margin: 0; }
+button, .btn { font: inherit; cursor: pointer; border: 1px solid var(--linha); background: var(--cartao); color: var(--texto); border-radius: 10px; padding: 8px 12px; }
+button[aria-pressed="true"], button.on { background: var(--destaque); color: #fff; border-color: var(--destaque); }
+button:focus-visible, a:focus-visible { outline: 3px solid var(--medio); outline-offset: 2px; }
+.aviso { border-left: 4px solid var(--medio); padding: 8px 12px; background: var(--cartao); border-radius: 0 10px 10px 0; font-size: 13px; }
+.rotulo { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--texto2); }
+@media (max-width: 760px) { .params { grid-template-columns: 1fr; } }

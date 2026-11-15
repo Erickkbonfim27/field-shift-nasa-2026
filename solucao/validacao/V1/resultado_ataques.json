@@ -1,0 +1,1509 @@
+{
+ "milho": {
+  "reproducao_B33": {
+   "anos_regiao": 72,
+   "ruins": 15,
+   "taxa_base": 0.208,
+   "alertas": 4,
+   "acertos": 3,
+   "precisao": 0.75,
+   "recall": 0.2,
+   "rel_medio_alerta": 0.746,
+   "eventos": 3,
+   "eventos_acerto": 2,
+   "acerto_evento": 0.667,
+   "ic95_evento": [
+    0.21,
+    0.94
+   ],
+   "lista_eventos": [
+    {
+     "ano": 2009,
+     "regioes": [
+      "Chapecó 42002"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.87
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2012,
+     "regioes": [
+      "Chapecó 42002"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.6
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2022,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.73,
+      0.78
+     ],
+     "acerto": true
+    }
+   ],
+   "passa_criterio_B33": true,
+   "permutacao": {
+    "precisao_obs": 0.75,
+    "acerto_evento_obs": 0.667,
+    "p_precisao": 0.0764,
+    "p_evento": 0.1241,
+    "n": 10000
+   }
+  },
+  "A1_limiar_objetivo": {
+   "anos_regiao": 72,
+   "ruins": 15,
+   "taxa_base": 0.208,
+   "alertas": 19,
+   "acertos": 9,
+   "precisao": 0.474,
+   "recall": 0.6,
+   "rel_medio_alerta": 0.907,
+   "eventos": 10,
+   "eventos_acerto": 5,
+   "acerto_evento": 0.5,
+   "ic95_evento": [
+    0.24,
+    0.76
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1996,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.84,
+      0.99
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2000,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.16,
+      1.1
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2005,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.67,
+      0.64
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2006,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.83,
+      0.65
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.87,
+      0.85
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2012,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.6,
+      0.81
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2013,
+     "regioes": [
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.89
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2020,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.18,
+      1.12
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2022,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.73,
+      0.78
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2023,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.33,
+      1.18
+     ],
+     "acerto": false
+    }
+   ],
+   "passa_criterio_B33": false
+  },
+  "A1_regra_neutra_10pct": {
+   "anos_regiao": 72,
+   "ruins": 15,
+   "taxa_base": 0.208,
+   "alertas": 8,
+   "acertos": 5,
+   "precisao": 0.625,
+   "recall": 0.333,
+   "rel_medio_alerta": 0.795,
+   "eventos": 6,
+   "eventos_acerto": 4,
+   "acerto_evento": 0.667,
+   "ic95_evento": [
+    0.3,
+    0.9
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1996,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.84,
+      0.99
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2006,
+     "regioes": [
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.65
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Chapecó 42002"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.87
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2012,
+     "regioes": [
+      "Chapecó 42002"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.6
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2013,
+     "regioes": [
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.89
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2022,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.73,
+      0.78
+     ],
+     "acerto": true
+    }
+   ],
+   "passa_criterio_B33": true,
+   "permutacao": {
+    "precisao_obs": 0.625,
+    "acerto_evento_obs": 0.667,
+    "p_precisao": 0.0244,
+    "p_evento": 0.0121,
+    "n": 10000
+   }
+  },
+  "A2_sensibilidade": [
+   {
+    "limiar": 0.7,
+    "alertas": 2,
+    "acertos": 2,
+    "precisao": 1.0,
+    "taxa_base": 0.208,
+    "eventos": 1,
+    "acerto_evento": 1.0,
+    "passa": false
+   },
+   {
+    "limiar": 0.71,
+    "alertas": 2,
+    "acertos": 2,
+    "precisao": 1.0,
+    "taxa_base": 0.208,
+    "eventos": 1,
+    "acerto_evento": 1.0,
+    "passa": false
+   },
+   {
+    "limiar": 0.72,
+    "alertas": 2,
+    "acertos": 2,
+    "precisao": 1.0,
+    "taxa_base": 0.208,
+    "eventos": 1,
+    "acerto_evento": 1.0,
+    "passa": false
+   },
+   {
+    "limiar": 0.73,
+    "alertas": 2,
+    "acertos": 2,
+    "precisao": 1.0,
+    "taxa_base": 0.208,
+    "eventos": 1,
+    "acerto_evento": 1.0,
+    "passa": false
+   },
+   {
+    "limiar": 0.74,
+    "alertas": 2,
+    "acertos": 2,
+    "precisao": 1.0,
+    "taxa_base": 0.208,
+    "eventos": 1,
+    "acerto_evento": 1.0,
+    "passa": false
+   },
+   {
+    "limiar": 0.75,
+    "alertas": 4,
+    "acertos": 3,
+    "precisao": 0.75,
+    "taxa_base": 0.208,
+    "eventos": 3,
+    "acerto_evento": 0.667,
+    "passa": true
+   },
+   {
+    "limiar": 0.76,
+    "alertas": 5,
+    "acertos": 4,
+    "precisao": 0.8,
+    "taxa_base": 0.208,
+    "eventos": 4,
+    "acerto_evento": 0.75,
+    "passa": true
+   },
+   {
+    "limiar": 0.77,
+    "alertas": 6,
+    "acertos": 5,
+    "precisao": 0.833,
+    "taxa_base": 0.208,
+    "eventos": 5,
+    "acerto_evento": 0.8,
+    "passa": true
+   },
+   {
+    "limiar": 0.78,
+    "alertas": 6,
+    "acertos": 5,
+    "precisao": 0.833,
+    "taxa_base": 0.208,
+    "eventos": 5,
+    "acerto_evento": 0.8,
+    "passa": true
+   },
+   {
+    "limiar": 0.79,
+    "alertas": 8,
+    "acertos": 6,
+    "precisao": 0.75,
+    "taxa_base": 0.208,
+    "eventos": 6,
+    "acerto_evento": 0.667,
+    "passa": true
+   },
+   {
+    "limiar": 0.8,
+    "alertas": 8,
+    "acertos": 6,
+    "precisao": 0.75,
+    "taxa_base": 0.208,
+    "eventos": 6,
+    "acerto_evento": 0.667,
+    "passa": true
+   }
+  ],
+  "A3_corte": {
+   "corte 0.8": {
+    "anos_regiao": 72,
+    "ruins": 11,
+    "taxa_base": 0.153,
+    "alertas": 4,
+    "acertos": 3,
+    "precisao": 0.75,
+    "recall": 0.273,
+    "rel_medio_alerta": 0.746,
+    "eventos": 3,
+    "eventos_acerto": 2,
+    "acerto_evento": 0.667,
+    "ic95_evento": [
+     0.21,
+     0.94
+    ],
+    "lista_eventos": [
+     {
+      "ano": 2009,
+      "regioes": [
+       "Chapecó 42002"
+      ],
+      "frac_ruim": 0.0,
+      "rel": [
+       0.87
+      ],
+      "acerto": false
+     },
+     {
+      "ano": 2012,
+      "regioes": [
+       "Chapecó 42002"
+      ],
+      "frac_ruim": 1.0,
+      "rel": [
+       0.6
+      ],
+      "acerto": true
+     },
+     {
+      "ano": 2022,
+      "regioes": [
+       "Chapecó 42002",
+       "Concórdia 42005"
+      ],
+      "frac_ruim": 1.0,
+      "rel": [
+       0.73,
+       0.78
+      ],
+      "acerto": true
+     }
+    ],
+    "passa_criterio_B33": true
+   },
+   "corte 0.9": {
+    "anos_regiao": 72,
+    "ruins": 22,
+    "taxa_base": 0.306,
+    "alertas": 4,
+    "acertos": 4,
+    "precisao": 1.0,
+    "recall": 0.182,
+    "rel_medio_alerta": 0.746,
+    "eventos": 3,
+    "eventos_acerto": 3,
+    "acerto_evento": 1.0,
+    "ic95_evento": [
+     0.44,
+     1
+    ],
+    "lista_eventos": [
+     {
+      "ano": 2009,
+      "regioes": [
+       "Chapecó 42002"
+      ],
+      "frac_ruim": 1.0,
+      "rel": [
+       0.87
+      ],
+      "acerto": true
+     },
+     {
+      "ano": 2012,
+      "regioes": [
+       "Chapecó 42002"
+      ],
+      "frac_ruim": 1.0,
+      "rel": [
+       0.6
+      ],
+      "acerto": true
+     },
+     {
+      "ano": 2022,
+      "regioes": [
+       "Chapecó 42002",
+       "Concórdia 42005"
+      ],
+      "frac_ruim": 1.0,
+      "rel": [
+       0.73,
+       0.78
+      ],
+      "acerto": true
+     }
+    ],
+    "passa_criterio_B33": true
+   },
+   "mediana t-5..t+5": {
+    "anos_regiao": 72,
+    "ruins": 18,
+    "taxa_base": 0.25,
+    "alertas": 4,
+    "acertos": 3,
+    "precisao": 0.75,
+    "recall": 0.167,
+    "rel_medio_alerta": 0.742,
+    "eventos": 3,
+    "eventos_acerto": 2,
+    "acerto_evento": 0.667,
+    "ic95_evento": [
+     0.21,
+     0.94
+    ],
+    "lista_eventos": [
+     {
+      "ano": 2009,
+      "regioes": [
+       "Chapecó 42002"
+      ],
+      "frac_ruim": 0.0,
+      "rel": [
+       0.87
+      ],
+      "acerto": false
+     },
+     {
+      "ano": 2012,
+      "regioes": [
+       "Chapecó 42002"
+      ],
+      "frac_ruim": 1.0,
+      "rel": [
+       0.6
+      ],
+      "acerto": true
+     },
+     {
+      "ano": 2022,
+      "regioes": [
+       "Chapecó 42002",
+       "Concórdia 42005"
+      ],
+      "frac_ruim": 1.0,
+      "rel": [
+       0.73,
+       0.77
+      ],
+      "acerto": true
+     }
+    ],
+    "passa_criterio_B33": true
+   }
+  },
+  "A6_chuva_bruta_neutra": {
+   "anos_regiao": 72,
+   "ruins": 15,
+   "taxa_base": 0.208,
+   "alertas": 8,
+   "acertos": 5,
+   "precisao": 0.625,
+   "recall": 0.333,
+   "rel_medio_alerta": 0.905,
+   "eventos": 5,
+   "eventos_acerto": 3,
+   "acerto_evento": 0.6,
+   "ic95_evento": [
+    0.23,
+    0.88
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1996,
+     "regioes": [
+      "Chapecó 42002"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.84
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2006,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.83,
+      0.65
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2013,
+     "regioes": [
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.89
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2022,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.73,
+      0.78
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2023,
+     "regioes": [
+      "Chapecó 42002",
+      "Concórdia 42005"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.33,
+      1.18
+     ],
+     "acerto": false
+    }
+   ],
+   "passa_criterio_B33": true,
+   "permutacao": {
+    "precisao_obs": 0.625,
+    "acerto_evento_obs": 0.6,
+    "p_precisao": 0.0345,
+    "p_evento": 0.0578,
+    "n": 10000
+   }
+  }
+ },
+ "cebola": {
+  "reproducao_B33": {
+   "anos_regiao": 72,
+   "ruins": 12,
+   "taxa_base": 0.167,
+   "alertas": 8,
+   "acertos": 4,
+   "precisao": 0.5,
+   "recall": 0.333,
+   "rel_medio_alerta": 0.825,
+   "eventos": 4,
+   "eventos_acerto": 3,
+   "acerto_evento": 0.75,
+   "ic95_evento": [
+    0.3,
+    0.95
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1997,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.0,
+      0.86
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2008,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.9,
+      0.84
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2015,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.56,
+      0.77
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2023,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.78,
+      0.9
+     ],
+     "acerto": true
+    }
+   ],
+   "passa_criterio_B33": true,
+   "permutacao": {
+    "precisao_obs": 0.5,
+    "acerto_evento_obs": 0.75,
+    "p_precisao": 0.0371,
+    "p_evento": 0.0537,
+    "n": 10000
+   }
+  },
+  "A1_limiar_objetivo": {
+   "anos_regiao": 72,
+   "ruins": 12,
+   "taxa_base": 0.167,
+   "alertas": 18,
+   "acertos": 5,
+   "precisao": 0.278,
+   "recall": 0.417,
+   "rel_medio_alerta": 0.91,
+   "eventos": 9,
+   "eventos_acerto": 4,
+   "acerto_evento": 0.444,
+   "ic95_evento": [
+    0.19,
+    0.73
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1997,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.0,
+      0.86
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1998,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.85,
+      0.86
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2001,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.21,
+      0.92
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2002,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.9,
+      0.86
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2005,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.93,
+      1.04
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2008,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.9,
+      0.84
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.94,
+      1.25
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2015,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.56,
+      0.77
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2023,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.78,
+      0.9
+     ],
+     "acerto": true
+    }
+   ],
+   "passa_criterio_B33": false
+  },
+  "A1_regra_neutra_10pct": {
+   "anos_regiao": 72,
+   "ruins": 12,
+   "taxa_base": 0.167,
+   "alertas": 8,
+   "acertos": 4,
+   "precisao": 0.5,
+   "recall": 0.333,
+   "rel_medio_alerta": 0.825,
+   "eventos": 4,
+   "eventos_acerto": 3,
+   "acerto_evento": 0.75,
+   "ic95_evento": [
+    0.3,
+    0.95
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1997,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.0,
+      0.86
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2008,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.9,
+      0.84
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2015,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.56,
+      0.77
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2023,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.78,
+      0.9
+     ],
+     "acerto": true
+    }
+   ],
+   "passa_criterio_B33": true,
+   "permutacao": {
+    "precisao_obs": 0.5,
+    "acerto_evento_obs": 0.75,
+    "p_precisao": 0.0371,
+    "p_evento": 0.0537,
+    "n": 10000
+   }
+  },
+  "A2_sensibilidade": [
+   {
+    "limiar": 300,
+    "alertas": 14,
+    "acertos": 5,
+    "precisao": 0.357,
+    "taxa_base": 0.167,
+    "eventos": 8,
+    "acerto_evento": 0.5,
+    "passa": false
+   },
+   {
+    "limiar": 310,
+    "alertas": 14,
+    "acertos": 5,
+    "precisao": 0.357,
+    "taxa_base": 0.167,
+    "eventos": 8,
+    "acerto_evento": 0.5,
+    "passa": false
+   },
+   {
+    "limiar": 320,
+    "alertas": 13,
+    "acertos": 5,
+    "precisao": 0.385,
+    "taxa_base": 0.167,
+    "eventos": 7,
+    "acerto_evento": 0.571,
+    "passa": false
+   },
+   {
+    "limiar": 330,
+    "alertas": 12,
+    "acertos": 5,
+    "precisao": 0.417,
+    "taxa_base": 0.167,
+    "eventos": 7,
+    "acerto_evento": 0.571,
+    "passa": false
+   },
+   {
+    "limiar": 340,
+    "alertas": 12,
+    "acertos": 5,
+    "precisao": 0.417,
+    "taxa_base": 0.167,
+    "eventos": 7,
+    "acerto_evento": 0.571,
+    "passa": false
+   },
+   {
+    "limiar": 350,
+    "alertas": 9,
+    "acertos": 4,
+    "precisao": 0.444,
+    "taxa_base": 0.167,
+    "eventos": 5,
+    "acerto_evento": 0.6,
+    "passa": false
+   },
+   {
+    "limiar": 360,
+    "alertas": 8,
+    "acertos": 4,
+    "precisao": 0.5,
+    "taxa_base": 0.167,
+    "eventos": 4,
+    "acerto_evento": 0.75,
+    "passa": true
+   },
+   {
+    "limiar": 370,
+    "alertas": 7,
+    "acertos": 3,
+    "precisao": 0.429,
+    "taxa_base": 0.167,
+    "eventos": 4,
+    "acerto_evento": 0.75,
+    "passa": false
+   },
+   {
+    "limiar": 380,
+    "alertas": 7,
+    "acertos": 3,
+    "precisao": 0.429,
+    "taxa_base": 0.167,
+    "eventos": 4,
+    "acerto_evento": 0.75,
+    "passa": false
+   },
+   {
+    "limiar": 390,
+    "alertas": 7,
+    "acertos": 3,
+    "precisao": 0.429,
+    "taxa_base": 0.167,
+    "eventos": 4,
+    "acerto_evento": 0.75,
+    "passa": false
+   },
+   {
+    "limiar": 400,
+    "alertas": 7,
+    "acertos": 3,
+    "precisao": 0.429,
+    "taxa_base": 0.167,
+    "eventos": 4,
+    "acerto_evento": 0.75,
+    "passa": false
+   },
+   {
+    "limiar": 410,
+    "alertas": 7,
+    "acertos": 3,
+    "precisao": 0.429,
+    "taxa_base": 0.167,
+    "eventos": 4,
+    "acerto_evento": 0.75,
+    "passa": false
+   },
+   {
+    "limiar": 420,
+    "alertas": 7,
+    "acertos": 3,
+    "precisao": 0.429,
+    "taxa_base": 0.167,
+    "eventos": 4,
+    "acerto_evento": 0.75,
+    "passa": false
+   }
+  ],
+  "A3_corte": {
+   "corte 0.8": {
+    "anos_regiao": 72,
+    "ruins": 9,
+    "taxa_base": 0.125,
+    "alertas": 8,
+    "acertos": 3,
+    "precisao": 0.375,
+    "recall": 0.333,
+    "rel_medio_alerta": 0.825,
+    "eventos": 4,
+    "eventos_acerto": 2,
+    "acerto_evento": 0.5,
+    "ic95_evento": [
+     0.15,
+     0.85
+    ],
+    "lista_eventos": [
+     {
+      "ano": 1997,
+      "regioes": [
+       "Rio do Sul 42011",
+       "Tabuleiro 42017"
+      ],
+      "frac_ruim": 0.0,
+      "rel": [
+       1.0,
+       0.86
+      ],
+      "acerto": false
+     },
+     {
+      "ano": 2008,
+      "regioes": [
+       "Rio do Sul 42011",
+       "Tabuleiro 42017"
+      ],
+      "frac_ruim": 0.0,
+      "rel": [
+       0.9,
+       0.84
+      ],
+      "acerto": false
+     },
+     {
+      "ano": 2015,
+      "regioes": [
+       "Rio do Sul 42011",
+       "Tabuleiro 42017"
+      ],
+      "frac_ruim": 1.0,
+      "rel": [
+       0.56,
+       0.77
+      ],
+      "acerto": true
+     },
+     {
+      "ano": 2023,
+      "regioes": [
+       "Rio do Sul 42011",
+       "Tabuleiro 42017"
+      ],
+      "frac_ruim": 0.5,
+      "rel": [
+       0.78,
+       0.9
+      ],
+      "acerto": true
+     }
+    ],
+    "passa_criterio_B33": false
+   },
+   "corte 0.9": {
+    "anos_regiao": 72,
+    "ruins": 19,
+    "taxa_base": 0.264,
+    "alertas": 8,
+    "acertos": 6,
+    "precisao": 0.75,
+    "recall": 0.316,
+    "rel_medio_alerta": 0.825,
+    "eventos": 4,
+    "eventos_acerto": 4,
+    "acerto_evento": 1.0,
+    "ic95_evento": [
+     0.51,
+     1
+    ],
+    "lista_eventos": [
+     {
+      "ano": 1997,
+      "regioes": [
+       "Rio do Sul 42011",
+       "Tabuleiro 42017"
+      ],
+      "frac_ruim": 0.5,
+      "rel": [
+       1.0,
+       0.86
+      ],
+      "acerto": true
+     },
+     {
+      "ano": 2008,
+      "regioes": [
+       "Rio do Sul 42011",
+       "Tabuleiro 42017"
+      ],
+      "frac_ruim": 1.0,
+      "rel": [
+       0.9,
+       0.84
+      ],
+      "acerto": true
+     },
+     {
+      "ano": 2015,
+      "regioes": [
+       "Rio do Sul 42011",
+       "Tabuleiro 42017"
+      ],
+      "frac_ruim": 1.0,
+      "rel": [
+       0.56,
+       0.77
+      ],
+      "acerto": true
+     },
+     {
+      "ano": 2023,
+      "regioes": [
+       "Rio do Sul 42011",
+       "Tabuleiro 42017"
+      ],
+      "frac_ruim": 0.5,
+      "rel": [
+       0.78,
+       0.9
+      ],
+      "acerto": true
+     }
+    ],
+    "passa_criterio_B33": true
+   },
+   "mediana t-5..t+5": {
+    "anos_regiao": 72,
+    "ruins": 11,
+    "taxa_base": 0.153,
+    "alertas": 8,
+    "acertos": 3,
+    "precisao": 0.375,
+    "recall": 0.273,
+    "rel_medio_alerta": 0.827,
+    "eventos": 4,
+    "eventos_acerto": 2,
+    "acerto_evento": 0.5,
+    "ic95_evento": [
+     0.15,
+     0.85
+    ],
+    "lista_eventos": [
+     {
+      "ano": 1997,
+      "regioes": [
+       "Rio do Sul 42011",
+       "Tabuleiro 42017"
+      ],
+      "frac_ruim": 0.0,
+      "rel": [
+       1.0,
+       0.86
+      ],
+      "acerto": false
+     },
+     {
+      "ano": 2008,
+      "regioes": [
+       "Rio do Sul 42011",
+       "Tabuleiro 42017"
+      ],
+      "frac_ruim": 0.0,
+      "rel": [
+       0.88,
+       0.88
+      ],
+      "acerto": false
+     },
+     {
+      "ano": 2015,
+      "regioes": [
+       "Rio do Sul 42011",
+       "Tabuleiro 42017"
+      ],
+      "frac_ruim": 1.0,
+      "rel": [
+       0.59,
+       0.73
+      ],
+      "acerto": true
+     },
+     {
+      "ano": 2023,
+      "regioes": [
+       "Rio do Sul 42011",
+       "Tabuleiro 42017"
+      ],
+      "frac_ruim": 0.5,
+      "rel": [
+       0.82,
+       0.87
+      ],
+      "acerto": true
+     }
+    ],
+    "passa_criterio_B33": false
+   }
+  },
+  "A6_chuva_bruta_neutra": {
+   "anos_regiao": 72,
+   "ruins": 12,
+   "taxa_base": 0.167,
+   "alertas": 8,
+   "acertos": 4,
+   "precisao": 0.5,
+   "recall": 0.333,
+   "rel_medio_alerta": 0.825,
+   "eventos": 4,
+   "eventos_acerto": 3,
+   "acerto_evento": 0.75,
+   "ic95_evento": [
+    0.3,
+    0.95
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1997,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.0,
+      0.86
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2008,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.9,
+      0.84
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2015,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.56,
+      0.77
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2023,
+     "regioes": [
+      "Rio do Sul 42011",
+      "Tabuleiro 42017"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.78,
+      0.9
+     ],
+     "acerto": true
+    }
+   ],
+   "passa_criterio_B33": true,
+   "permutacao": {
+    "precisao_obs": 0.5,
+    "acerto_evento_obs": 0.75,
+    "p_precisao": 0.0371,
+    "p_evento": 0.0537,
+    "n": 10000
+   }
+  }
+ },
+ "A4_dependencia": {
+  "SMO 42001 x Chapecó 42002 (ind)": 0.88,
+  "SMO 42001 x Chapecó 42002 (rel)": 0.92,
+  "SMO 42001 x Concórdia 42005 (ind)": 0.82,
+  "SMO 42001 x Concórdia 42005 (rel)": 0.89,
+  "Chapecó 42002 x Concórdia 42005 (ind)": 0.94,
+  "Chapecó 42002 x Concórdia 42005 (rel)": 0.91,
+  "Ituporanga 42014 x Rio do Sul 42011 (ind)": 0.98,
+  "Ituporanga 42014 x Rio do Sul 42011 (rel)": 0.67,
+  "Ituporanga 42014 x Tabuleiro 42017 (ind)": 1.0,
+  "Ituporanga 42014 x Tabuleiro 42017 (rel)": 0.73,
+  "Rio do Sul 42011 x Tabuleiro 42017 (ind)": 0.98,
+  "Rio do Sul 42011 x Tabuleiro 42017 (rel)": 0.51,
+  "anos_alerta_amostra": {
+   "milho": [
+    1996,
+    2009,
+    2012,
+    2022
+   ],
+   "cebola": [
+    1997,
+    2008,
+    2015,
+    2023
+   ]
+  },
+  "anos_alerta_B33": {
+   "milho": [
+    2009,
+    2012,
+    2022
+   ],
+   "cebola": [
+    1997,
+    2008,
+    2015,
+    2023
+   ]
+  },
+  "eventos_novos_B33": {
+   "milho": [],
+   "cebola": []
+  },
+  "amostra_milho": {
+   "anos_regiao": 36,
+   "ruins": 7,
+   "taxa_base": 0.194,
+   "alertas": 4,
+   "acertos": 2,
+   "precisao": 0.5,
+   "recall": 0.286,
+   "rel_medio_alerta": 0.751,
+   "eventos": 4,
+   "eventos_acerto": 2,
+   "acerto_evento": 0.5,
+   "ic95_evento": [
+    0.15,
+    0.85
+   ]
+  },
+  "amostra_cebola": {
+   "anos_regiao": 36,
+   "ruins": 5,
+   "taxa_base": 0.139,
+   "alertas": 4,
+   "acertos": 3,
+   "precisao": 0.75,
+   "recall": 0.6,
+   "rel_medio_alerta": 0.776,
+   "eventos": 4,
+   "eventos_acerto": 3,
+   "acerto_evento": 0.75,
+   "ic95_evento": [
+    0.3,
+    0.95
+   ]
+  }
+ },
+ "limiares_neutros": {
+  "milho sao_miguel_do_oeste": {
+   "ind": 0.758,
+   "chuva": 175.7
+  },
+  "milho chapeco": {
+   "ind": 0.775,
+   "chuva": 168.05
+  },
+  "milho concordia": {
+   "ind": 0.833,
+   "chuva": 179.7
+  },
+  "cebola ituporanga": {
+   "ind": 360.45,
+   "chuva": 594.05
+  },
+  "cebola rio_do_sul": {
+   "ind": 392.9,
+   "chuva": 629.45
+  },
+  "cebola alfredo_wagner": {
+   "ind": 360.6,
+   "chuva": 594.05
+  }
+ }
+}

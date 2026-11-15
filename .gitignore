@@ -1,0 +1,49 @@
+# ---- fora do repositório público (decisão do time) ----
+# pesquisa e contexto: têm nomes do time e o link do board do Miro
+contexto.md
+research_notes/
+reports/
+pesquisa-solucoes-atuais.md
+# base EcoCrop (FAO) adicionada por outra pessoa; licença a conferir
+data/
+# configuração local do Claude Code (caminhos da máquina)
+.claude/
+
+# ---- dados grandes ou re-baixáveis (os scripts baixam de novo) ----
+safra-segura/dados/bruto/power/*.json
+safra-segura/dados/bruto/srtm/
+*.npz
+*.hgt
+*.hgt.gz
+*.tif
+*.tiff
+loop-validacao/sessoes/*/raw/
+loop-validacao/sessoes/B2/dados/s2/
+loop-validacao/sessoes/A5/dados/s2/
+loop-validacao/sessoes/A5/dados/modis/
+loop-validacao/sessoes/B5/modis/
+# tentativas de download que falharam (nome com espaços)
+loop-validacao/dados/power_* *.json
+
+# ---- sistema ----
+.DS_Store
+__pycache__/
+*.pyc
+
+# ---- cópias do NASA POWER baixadas pelas validações (re-baixáveis; o motor não usa) ----
+solucao/validacao/V1/power/
+solucao/validacao/V5/dados/
+loop-validacao/sessoes/A2/dados_novos/
+loop-validacao/sessoes/B2/dados/
+loop-validacao/sessoes/A5/dados/
+# o motor usa só estes dois de power_extra
+loop-validacao/sessoes/B3/power_extra/*
+!loop-validacao/sessoes/B3/power_extra/power_rio_do_sul.json
+!loop-validacao/sessoes/B3/power_extra/power_alfredo_wagner.json
+
+# ---- arquivos externos de conferência (IBGE, Conab, Epagri, Proagro, ZARC brutos) ----
+**/externo/
+**/ext/
+*.pdf
+*.xlsx
+*.xls

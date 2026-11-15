@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Parte das janelas do ZARC com risco de 20%">
+
+<style>
+  .bg{fill:#fcfcfb}.t1{fill:#0b0b0b}.t2{fill:#52514e}.grid{stroke:#e4e3df}
+  .v2{fill:#1c5cab}.v1{fill:#86b6ef}.v0{fill:#efeeea}.vq{fill:#ffffff;stroke:#c3c2b7;stroke-dasharray:3 2}
+  .lv2{fill:#ffffff}.lv1{fill:#0b0b0b}.lv0{fill:#8a8984}.lvq{fill:#8a8984}
+  .bar{fill:#2a78d6}.bar-off{fill:#86b6ef}.ref{stroke:#0b0b0b;stroke-width:1.5;stroke-dasharray:4 3}
+  .nossa{fill:none;stroke:#0b0b0b;stroke-width:1.5}
+  text{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+  @media (prefers-color-scheme: dark){
+    .bg{fill:#1a1a19}.t1{fill:#f0efec}.t2{fill:#c3c2b7}.grid{stroke:#33332f}
+    .v2{fill:#3987e5}.v1{fill:#1c5cab}.v0{fill:#2a2a28}.vq{fill:#1a1a19;stroke:#55554f}
+    .lv2{fill:#0b0b0b}.lv1{fill:#f0efec}.lv0{fill:#8a8984}
+    .bar{fill:#3987e5}.bar-off{fill:#1c5cab}.ref{stroke:#f0efec}.nossa{stroke:#f0efec}
+  }
+</style>
+<rect class="bg" width="720" height="420"/>
+<text class="t1" x="16" y="26" font-size="16" font-weight="600">O ZARC já tem janela para quase toda a rotação, menos o 2º milho</text>
+<text class="t2" x="16" y="46" font-size="12">% das combinações decêndio × solo × ciclo indicadas (sequeiro, 2026/27) com risco de 20%, o menor do ZARC.</text>
+<line class="grid" x1="230.0" y1="74" x2="230.0" y2="360"/><text class="t2" x="230.0" y="376" font-size="11" text-anchor="middle">0%</text>
+<line class="grid" x1="332.5" y1="74" x2="332.5" y2="360"/><text class="t2" x="332.5" y="376" font-size="11" text-anchor="middle">25%</text>
+<line class="grid" x1="435.0" y1="74" x2="435.0" y2="360"/><text class="t2" x="435.0" y="376" font-size="11" text-anchor="middle">50%</text>
+<line class="grid" x1="537.5" y1="74" x2="537.5" y2="360"/><text class="t2" x="537.5" y="376" font-size="11" text-anchor="middle">75%</text>
+<line class="grid" x1="640.0" y1="74" x2="640.0" y2="360"/><text class="t2" x="640.0" y="376" font-size="11" text-anchor="middle">100%</text>
+<text class="t1" x="16" y="97" font-size="12">SMO · Milho 1ª Safra</text>
+<g><title>SMO · Milho 1ª Safra: 274 combinações indicadas; 20%: 51.8%, 30%: 21.2%, 40%: 27.0%</title><rect class="bar" x="230" y="85" width="212.38" height="16" rx="4"/><text class="t1" x="448.38" y="97" font-size="11">52%</text></g>
+<text class="t1" x="16" y="125" font-size="12">SMO · Milho 2ª Safra</text>
+<text class="t2" x="234" y="125" font-size="11">sem zoneamento em SC</text>
+<text class="t1" x="16" y="153" font-size="12">SMO · Sorgo Forrageiro</text>
+<g><title>SMO · Sorgo Forrageiro: 99 combinações indicadas; 20%: 90.9%, 30%: 0.0%, 40%: 9.1%</title><rect class="bar" x="230" y="141" width="372.69000000000005" height="16" rx="4"/><text class="t1" x="608.69" y="153" font-size="11">91%</text></g>
+<text class="t1" x="16" y="181" font-size="12">SMO · Aveia</text>
+<g><title>SMO · Aveia: 108 combinações indicadas; 20%: 37.0%, 30%: 50.0%, 40%: 13.0%</title><rect class="bar" x="230" y="169" width="151.7" height="16" rx="4"/><text class="t1" x="387.7" y="181" font-size="11">37%</text></g>
+<text class="t1" x="16" y="209" font-size="12">SMO · Cebola</text>
+<g><title>SMO · Cebola: 112 combinações indicadas; 20%: 0.0%, 30%: 25.0%, 40%: 75.0%</title><rect class="bar" x="230" y="197" width="2" height="16" rx="4"/><text class="t1" x="236.0" y="209" font-size="11">0%</text></g>
+<text class="t1" x="16" y="237" font-size="12">Itu · Milho 1ª Safra</text>
+<g><title>Itu · Milho 1ª Safra: 288 combinações indicadas; 20%: 78.8%, 30%: 17.4%, 40%: 3.8%</title><rect class="bar" x="230" y="225" width="323.0799999999999" height="16" rx="4"/><text class="t1" x="559.0799999999999" y="237" font-size="11">79%</text></g>
+<text class="t1" x="16" y="265" font-size="12">Itu · Milho 2ª Safra</text>
+<text class="t2" x="234" y="265" font-size="11">sem zoneamento em SC</text>
+<text class="t1" x="16" y="293" font-size="12">Itu · Sorgo Forrageiro</text>
+<g><title>Itu · Sorgo Forrageiro: 108 combinações indicadas; 20%: 91.7%, 30%: 0.0%, 40%: 8.3%</title><rect class="bar" x="230" y="281" width="375.97" height="16" rx="4"/><text class="t1" x="611.97" y="293" font-size="11">92%</text></g>
+<text class="t1" x="16" y="321" font-size="12">Itu · Aveia</text>
+<g><title>Itu · Aveia: 108 combinações indicadas; 20%: 100.0%, 30%: 0.0%, 40%: 0.0%</title><rect class="bar" x="230" y="309" width="410.0" height="16" rx="4"/><text class="t1" x="646.0" y="321" font-size="11">100%</text></g>
+<text class="t1" x="16" y="349" font-size="12">Itu · Cebola</text>
+<g><title>Itu · Cebola: 277 combinações indicadas; 20%: 31.4%, 30%: 28.2%, 40%: 40.4%</title><rect class="bar" x="230" y="337" width="128.74" height="16" rx="4"/><text class="t1" x="364.74" y="349" font-size="11">31%</text></g>
+<text class="t2" x="16" y="406" font-size="11">Fonte: tábua de risco ZARC 2026/27 (MAPA), recorte da A1 em loop-validacao/sessoes/A1/ext/. Só para conferir; não entra na solução.</text>
+</svg>

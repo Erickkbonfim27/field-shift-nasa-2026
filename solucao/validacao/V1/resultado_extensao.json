@@ -1,0 +1,3972 @@
+{
+ "milho (todas)": {
+  "regioes": [
+   "Araranguá 42020",
+   "Campos de Lages 42010",
+   "Canoinhas 42006",
+   "Criciúma 42019",
+   "Curitibanos 42009",
+   "Joaçaba 42004",
+   "Tubarão 42018",
+   "Xanxerê 42003"
+  ],
+  "regra_fixa_B33": {
+   "anos_regiao": 288,
+   "ruins": 39,
+   "taxa_base": 0.135,
+   "alertas": 5,
+   "acertos": 2,
+   "precisao": 0.4,
+   "recall": 0.051,
+   "rel_medio_alerta": 0.871,
+   "eventos": 3,
+   "eventos_acerto": 1,
+   "acerto_evento": 0.333,
+   "ic95_evento": [
+    0.06,
+    0.79
+   ],
+   "lista_eventos": [
+    {
+     "ano": 2006,
+     "regioes": [
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.61
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2020,
+     "regioes": [
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.88
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2022,
+     "regioes": [
+      "Xanxerê 42003",
+      "Curitibanos 42009",
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.33,
+     "rel": [
+      0.7,
+      1.01,
+      1.16
+     ],
+     "acerto": false
+    }
+   ],
+   "permutacao": {
+    "precisao_obs": 0.4,
+    "acerto_evento_obs": 0.333,
+    "p_precisao": 0.1188,
+    "p_evento": 0.2367,
+    "n": 10000
+   },
+   "criterios": {
+    "C0": true,
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "veredito": "não sustenta"
+   },
+   "eventos_novos": [
+    {
+     "ano": 2006,
+     "regioes": [
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.61
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2020,
+     "regioes": [
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.88
+     ],
+     "acerto": false
+    }
+   ],
+   "acerto_eventos_novos": "1/2",
+   "por_regiao": {
+    "Araranguá 42020": {
+     "anos": 36,
+     "ruins": 8,
+     "alertas": []
+    },
+    "Campos de Lages 42010": {
+     "anos": 36,
+     "ruins": 6,
+     "alertas": []
+    },
+    "Canoinhas 42006": {
+     "anos": 36,
+     "ruins": 5,
+     "alertas": []
+    },
+    "Criciúma 42019": {
+     "anos": 36,
+     "ruins": 2,
+     "alertas": [
+      [
+       2020,
+       0.65,
+       0.8819
+      ],
+      [
+       2022,
+       0.7247,
+       1.1582
+      ]
+     ]
+    },
+    "Curitibanos 42009": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       2006,
+       0.7411,
+       0.6103
+      ],
+      [
+       2022,
+       0.7291,
+       1.0108
+      ]
+     ]
+    },
+    "Joaçaba 42004": {
+     "anos": 36,
+     "ruins": 6,
+     "alertas": []
+    },
+    "Tubarão 42018": {
+     "anos": 36,
+     "ruins": 2,
+     "alertas": []
+    },
+    "Xanxerê 42003": {
+     "anos": 36,
+     "ruins": 6,
+     "alertas": [
+      [
+       2022,
+       0.6675,
+       0.6963
+      ]
+     ]
+    }
+   }
+  },
+  "regra_neutra_10pct": {
+   "anos_regiao": 288,
+   "ruins": 39,
+   "taxa_base": 0.135,
+   "alertas": 32,
+   "acertos": 14,
+   "precisao": 0.438,
+   "recall": 0.359,
+   "rel_medio_alerta": 0.882,
+   "eventos": 11,
+   "eventos_acerto": 4,
+   "acerto_evento": 0.364,
+   "ic95_evento": [
+    0.15,
+    0.65
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1990,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.33,
+     "rel": [
+      0.91,
+      0.88,
+      0.85
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1993,
+     "regioes": [
+      "Tubarão 42018",
+      "Criciúma 42019",
+      "Araranguá 42020"
+     ],
+     "frac_ruim": 0.33,
+     "rel": [
+      1.04,
+      0.94,
+      0.83
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2005,
+     "regioes": [
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.7
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2006,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Tubarão 42018",
+      "Araranguá 42020"
+     ],
+     "frac_ruim": 0.71,
+     "rel": [
+      0.73,
+      0.62,
+      0.81,
+      0.61,
+      0.64,
+      0.97,
+      0.98
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Xanxerê 42003"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.88
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2012,
+     "regioes": [
+      "Xanxerê 42003"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.72
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2013,
+     "regioes": [
+      "Tubarão 42018"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.18
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2019,
+     "regioes": [
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.99
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2020,
+     "regioes": [
+      "Joaçaba 42004",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Tubarão 42018",
+      "Criciúma 42019",
+      "Araranguá 42020"
+     ],
+     "frac_ruim": 0.17,
+     "rel": [
+      1.02,
+      0.93,
+      0.64,
+      1.03,
+      0.88,
+      0.97
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2021,
+     "regioes": [
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.2
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2022,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Criciúma 42019",
+      "Araranguá 42020"
+     ],
+     "frac_ruim": 0.57,
+     "rel": [
+      0.7,
+      0.85,
+      0.8,
+      1.01,
+      0.58,
+      1.16,
+      1.21
+     ],
+     "acerto": true
+    }
+   ],
+   "permutacao": {
+    "precisao_obs": 0.438,
+    "acerto_evento_obs": 0.364,
+    "p_precisao": 0.0011,
+    "p_evento": 0.0212,
+    "n": 10000
+   },
+   "criterios": {
+    "C0": true,
+    "C1": false,
+    "C2": true,
+    "C3": false,
+    "veredito": "não sustenta"
+   },
+   "eventos_novos": [
+    {
+     "ano": 1990,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.33,
+     "rel": [
+      0.91,
+      0.88,
+      0.85
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1993,
+     "regioes": [
+      "Tubarão 42018",
+      "Criciúma 42019",
+      "Araranguá 42020"
+     ],
+     "frac_ruim": 0.33,
+     "rel": [
+      1.04,
+      0.94,
+      0.83
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2005,
+     "regioes": [
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.7
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2006,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Tubarão 42018",
+      "Araranguá 42020"
+     ],
+     "frac_ruim": 0.71,
+     "rel": [
+      0.73,
+      0.62,
+      0.81,
+      0.61,
+      0.64,
+      0.97,
+      0.98
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2013,
+     "regioes": [
+      "Tubarão 42018"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.18
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2019,
+     "regioes": [
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.99
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2020,
+     "regioes": [
+      "Joaçaba 42004",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Tubarão 42018",
+      "Criciúma 42019",
+      "Araranguá 42020"
+     ],
+     "frac_ruim": 0.17,
+     "rel": [
+      1.02,
+      0.93,
+      0.64,
+      1.03,
+      0.88,
+      0.97
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2021,
+     "regioes": [
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.2
+     ],
+     "acerto": false
+    }
+   ],
+   "acerto_eventos_novos": "2/8",
+   "por_regiao": {
+    "Araranguá 42020": {
+     "anos": 36,
+     "ruins": 8,
+     "alertas": [
+      [
+       1993,
+       0.85,
+       0.8286
+      ],
+      [
+       2006,
+       0.8048,
+       0.9839
+      ],
+      [
+       2020,
+       0.7606,
+       0.9724
+      ],
+      [
+       2022,
+       0.8564,
+       1.2121
+      ]
+     ]
+    },
+    "Campos de Lages 42010": {
+     "anos": 36,
+     "ruins": 6,
+     "alertas": [
+      [
+       2006,
+       0.8187,
+       0.6419
+      ],
+      [
+       2020,
+       0.7761,
+       0.6383
+      ],
+      [
+       2021,
+       0.8807,
+       1.2008
+      ],
+      [
+       2022,
+       0.7612,
+       0.5772
+      ]
+     ]
+    },
+    "Canoinhas 42006": {
+     "anos": 36,
+     "ruins": 5,
+     "alertas": [
+      [
+       1990,
+       0.932,
+       0.8761
+      ],
+      [
+       2006,
+       0.8925,
+       0.8108
+      ],
+      [
+       2019,
+       0.9067,
+       0.9888
+      ],
+      [
+       2022,
+       0.8404,
+       0.8
+      ]
+     ]
+    },
+    "Criciúma 42019": {
+     "anos": 36,
+     "ruins": 2,
+     "alertas": [
+      [
+       1990,
+       0.7673,
+       0.8457
+      ],
+      [
+       1993,
+       0.7646,
+       0.9363
+      ],
+      [
+       2020,
+       0.65,
+       0.8819
+      ],
+      [
+       2022,
+       0.7247,
+       1.1582
+      ]
+     ]
+    },
+    "Curitibanos 42009": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       2005,
+       0.816,
+       0.7008
+      ],
+      [
+       2006,
+       0.7411,
+       0.6103
+      ],
+      [
+       2020,
+       0.8069,
+       0.928
+      ],
+      [
+       2022,
+       0.7291,
+       1.0108
+      ]
+     ]
+    },
+    "Joaçaba 42004": {
+     "anos": 36,
+     "ruins": 6,
+     "alertas": [
+      [
+       1990,
+       0.9058,
+       0.9069
+      ],
+      [
+       2006,
+       0.8533,
+       0.6169
+      ],
+      [
+       2020,
+       0.8933,
+       1.0185
+      ],
+      [
+       2022,
+       0.7905,
+       0.8482
+      ]
+     ]
+    },
+    "Tubarão 42018": {
+     "anos": 36,
+     "ruins": 2,
+     "alertas": [
+      [
+       1993,
+       0.7684,
+       1.0372
+      ],
+      [
+       2006,
+       0.8088,
+       0.9688
+      ],
+      [
+       2013,
+       0.8109,
+       1.1828
+      ],
+      [
+       2020,
+       0.7662,
+       1.0303
+      ]
+     ]
+    },
+    "Xanxerê 42003": {
+     "anos": 36,
+     "ruins": 6,
+     "alertas": [
+      [
+       2006,
+       0.8232,
+       0.7255
+      ],
+      [
+       2009,
+       0.768,
+       0.8784
+      ],
+      [
+       2012,
+       0.7501,
+       0.7182
+      ],
+      [
+       2022,
+       0.6675,
+       0.6963
+      ]
+     ]
+    }
+   }
+  },
+  "chuva_bruta_neutra": {
+   "anos_regiao": 288,
+   "ruins": 39,
+   "taxa_base": 0.135,
+   "alertas": 32,
+   "acertos": 11,
+   "precisao": 0.344,
+   "recall": 0.282,
+   "rel_medio_alerta": 0.89,
+   "eventos": 11,
+   "eventos_acerto": 2,
+   "acerto_evento": 0.182,
+   "ic95_evento": [
+    0.05,
+    0.48
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1990,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.91,
+      0.88,
+      0.86
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1993,
+     "regioes": [
+      "Tubarão 42018",
+      "Criciúma 42019",
+      "Araranguá 42020"
+     ],
+     "frac_ruim": 0.33,
+     "rel": [
+      1.04,
+      0.94,
+      0.83
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1996,
+     "regioes": [
+      "Xanxerê 42003"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.95
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1999,
+     "regioes": [
+      "Joaçaba 42004",
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.89,
+      0.96,
+      0.94
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2006,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Tubarão 42018"
+     ],
+     "frac_ruim": 0.83,
+     "rel": [
+      0.73,
+      0.62,
+      0.81,
+      0.61,
+      0.64,
+      0.97
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2012,
+     "regioes": [
+      "Curitibanos 42009",
+      "Criciúma 42019",
+      "Araranguá 42020"
+     ],
+     "frac_ruim": 0.33,
+     "rel": [
+      0.93,
+      1.02,
+      0.59
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2013,
+     "regioes": [
+      "Tubarão 42018"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.18
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2019,
+     "regioes": [
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.99
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2020,
+     "regioes": [
+      "Criciúma 42019",
+      "Araranguá 42020"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.88,
+      0.97
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2022,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Tubarão 42018",
+      "Criciúma 42019",
+      "Araranguá 42020"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.7,
+      0.85,
+      0.8,
+      1.01,
+      0.58,
+      1.02,
+      1.16,
+      1.21
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2023,
+     "regioes": [
+      "Xanxerê 42003"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.04
+     ],
+     "acerto": false
+    }
+   ],
+   "permutacao": {
+    "precisao_obs": 0.344,
+    "acerto_evento_obs": 0.182,
+    "p_precisao": 0.0152,
+    "p_evento": 0.424,
+    "n": 10000
+   },
+   "criterios": {
+    "C0": true,
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "veredito": "não sustenta"
+   },
+   "eventos_novos": [
+    {
+     "ano": 1990,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.91,
+      0.88,
+      0.86
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1993,
+     "regioes": [
+      "Tubarão 42018",
+      "Criciúma 42019",
+      "Araranguá 42020"
+     ],
+     "frac_ruim": 0.33,
+     "rel": [
+      1.04,
+      0.94,
+      0.83
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1999,
+     "regioes": [
+      "Joaçaba 42004",
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.89,
+      0.96,
+      0.94
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2006,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Tubarão 42018"
+     ],
+     "frac_ruim": 0.83,
+     "rel": [
+      0.73,
+      0.62,
+      0.81,
+      0.61,
+      0.64,
+      0.97
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2013,
+     "regioes": [
+      "Tubarão 42018"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.18
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2019,
+     "regioes": [
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.99
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2020,
+     "regioes": [
+      "Criciúma 42019",
+      "Araranguá 42020"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.88,
+      0.97
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2023,
+     "regioes": [
+      "Xanxerê 42003"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.04
+     ],
+     "acerto": false
+    }
+   ],
+   "acerto_eventos_novos": "1/8",
+   "por_regiao": {
+    "Araranguá 42020": {
+     "anos": 36,
+     "ruins": 8,
+     "alertas": [
+      [
+       1993,
+       0.85,
+       0.8286
+      ],
+      [
+       2012,
+       0.8809,
+       0.5876
+      ],
+      [
+       2020,
+       0.7606,
+       0.9724
+      ],
+      [
+       2022,
+       0.8564,
+       1.2121
+      ]
+     ]
+    },
+    "Campos de Lages 42010": {
+     "anos": 36,
+     "ruins": 6,
+     "alertas": [
+      [
+       1990,
+       0.9091,
+       0.8592
+      ],
+      [
+       1999,
+       0.9128,
+       0.9413
+      ],
+      [
+       2006,
+       0.8187,
+       0.6419
+      ],
+      [
+       2022,
+       0.7612,
+       0.5772
+      ]
+     ]
+    },
+    "Canoinhas 42006": {
+     "anos": 36,
+     "ruins": 5,
+     "alertas": [
+      [
+       1990,
+       0.932,
+       0.8761
+      ],
+      [
+       2006,
+       0.8925,
+       0.8108
+      ],
+      [
+       2019,
+       0.9067,
+       0.9888
+      ],
+      [
+       2022,
+       0.8404,
+       0.8
+      ]
+     ]
+    },
+    "Criciúma 42019": {
+     "anos": 36,
+     "ruins": 2,
+     "alertas": [
+      [
+       1993,
+       0.7646,
+       0.9363
+      ],
+      [
+       2012,
+       0.8102,
+       1.0212
+      ],
+      [
+       2020,
+       0.65,
+       0.8819
+      ],
+      [
+       2022,
+       0.7247,
+       1.1582
+      ]
+     ]
+    },
+    "Curitibanos 42009": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       1999,
+       0.8302,
+       0.9637
+      ],
+      [
+       2006,
+       0.7411,
+       0.6103
+      ],
+      [
+       2012,
+       0.8955,
+       0.9254
+      ],
+      [
+       2022,
+       0.7291,
+       1.0108
+      ]
+     ]
+    },
+    "Joaçaba 42004": {
+     "anos": 36,
+     "ruins": 6,
+     "alertas": [
+      [
+       1990,
+       0.9058,
+       0.9069
+      ],
+      [
+       1999,
+       0.9521,
+       0.8861
+      ],
+      [
+       2006,
+       0.8533,
+       0.6169
+      ],
+      [
+       2022,
+       0.7905,
+       0.8482
+      ]
+     ]
+    },
+    "Tubarão 42018": {
+     "anos": 36,
+     "ruins": 2,
+     "alertas": [
+      [
+       1993,
+       0.7684,
+       1.0372
+      ],
+      [
+       2006,
+       0.8088,
+       0.9688
+      ],
+      [
+       2013,
+       0.8109,
+       1.1828
+      ],
+      [
+       2022,
+       0.8298,
+       1.0202
+      ]
+     ]
+    },
+    "Xanxerê 42003": {
+     "anos": 36,
+     "ruins": 6,
+     "alertas": [
+      [
+       1996,
+       0.8234,
+       0.9464
+      ],
+      [
+       2006,
+       0.8232,
+       0.7255
+      ],
+      [
+       2022,
+       0.6675,
+       0.6963
+      ],
+      [
+       2023,
+       0.8643,
+       1.0411
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "cebola (todas)": {
+  "regioes": [
+   "Campos de Lages 42010",
+   "Canoinhas 42006",
+   "Criciúma 42019",
+   "Curitibanos 42009",
+   "Florianópolis 42016",
+   "Joaçaba 42004",
+   "São Bento do Sul 42007",
+   "Tubarão 42018",
+   "Xanxerê 42003"
+  ],
+  "regra_fixa_B33": {
+   "anos_regiao": 315,
+   "ruins": 40,
+   "taxa_base": 0.127,
+   "alertas": 49,
+   "acertos": 11,
+   "precisao": 0.224,
+   "recall": 0.275,
+   "rel_medio_alerta": 0.976,
+   "eventos": 14,
+   "eventos_acerto": 2,
+   "acerto_evento": 0.143,
+   "ic95_evento": [
+    0.04,
+    0.4
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1990,
+     "regioes": [
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.0
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1993,
+     "regioes": [
+      "Xanxerê 42003"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.35
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1994,
+     "regioes": [
+      "Xanxerê 42003"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.27
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1996,
+     "regioes": [
+      "Xanxerê 42003"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.83
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 1997,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Florianópolis 42016",
+      "Tubarão 42018"
+     ],
+     "frac_ruim": 0.12,
+     "rel": [
+      0.82,
+      0.93,
+      1.21,
+      1.01,
+      1.67,
+      1.25,
+      1.07,
+      0.95
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1998,
+     "regioes": [
+      "Xanxerê 42003",
+      "Canoinhas 42006",
+      "São Bento do Sul 42007"
+     ],
+     "frac_ruim": 0.33,
+     "rel": [
+      0.89,
+      0.81,
+      1.01
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2000,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.96,
+      0.99,
+      1.07
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2002,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.07,
+      0.95,
+      0.9,
+      1.42
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2004,
+     "regioes": [
+      "Xanxerê 42003"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.32
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2005,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.09,
+      1.03,
+      0.86
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2008,
+     "regioes": [
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Florianópolis 42016"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.05,
+      1.1,
+      1.0,
+      1.03
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Tubarão 42018",
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.14,
+     "rel": [
+      0.85,
+      0.98,
+      0.95,
+      0.81,
+      0.95,
+      0.96,
+      1.02
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2015,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.65,
+      0.52,
+      0.77,
+      0.4
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2023,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Florianópolis 42016",
+      "Tubarão 42018"
+     ],
+     "frac_ruim": 0.38,
+     "rel": [
+      1.0,
+      0.96,
+      0.54,
+      1.0,
+      0.78,
+      0.58,
+      1.28,
+      0.89
+     ],
+     "acerto": false
+    }
+   ],
+   "permutacao": {
+    "precisao_obs": 0.224,
+    "acerto_evento_obs": 0.143,
+    "p_precisao": 0.0461,
+    "p_evento": 0.3884,
+    "n": 10000
+   },
+   "criterios": {
+    "C0": true,
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "veredito": "não sustenta"
+   },
+   "eventos_novos": [
+    {
+     "ano": 1990,
+     "regioes": [
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.0
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1993,
+     "regioes": [
+      "Xanxerê 42003"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.35
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1994,
+     "regioes": [
+      "Xanxerê 42003"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.27
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1996,
+     "regioes": [
+      "Xanxerê 42003"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.83
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 1998,
+     "regioes": [
+      "Xanxerê 42003",
+      "Canoinhas 42006",
+      "São Bento do Sul 42007"
+     ],
+     "frac_ruim": 0.33,
+     "rel": [
+      0.89,
+      0.81,
+      1.01
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2000,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.96,
+      0.99,
+      1.07
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2002,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.07,
+      0.95,
+      0.9,
+      1.42
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2004,
+     "regioes": [
+      "Xanxerê 42003"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.32
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2005,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.09,
+      1.03,
+      0.86
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Tubarão 42018",
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.14,
+     "rel": [
+      0.85,
+      0.98,
+      0.95,
+      0.81,
+      0.95,
+      0.96,
+      1.02
+     ],
+     "acerto": false
+    }
+   ],
+   "acerto_eventos_novos": "1/10",
+   "por_regiao": {
+    "Campos de Lages 42010": {
+     "anos": 36,
+     "ruins": 8,
+     "alertas": [
+      [
+       1997,
+       423.9,
+       1.2484
+      ],
+      [
+       2008,
+       411.0,
+       1.0028
+      ],
+      [
+       2009,
+       368.0,
+       0.9484
+      ],
+      [
+       2023,
+       724.1,
+       0.5769
+      ]
+     ]
+    },
+    "Canoinhas 42006": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       573.5,
+       1.2101
+      ],
+      [
+       1998,
+       387.1,
+       0.8099
+      ],
+      [
+       2002,
+       376.5,
+       0.8981
+      ],
+      [
+       2005,
+       373.0,
+       0.8648
+      ],
+      [
+       2015,
+       371.6,
+       0.5185
+      ],
+      [
+       2023,
+       616.3,
+       0.539
+      ]
+     ]
+    },
+    "Criciúma 42019": {
+     "anos": 33,
+     "ruins": 4,
+     "alertas": [
+      [
+       2009,
+       436.4,
+       1.0219
+      ]
+     ]
+    },
+    "Curitibanos 42009": {
+     "anos": 36,
+     "ruins": 7,
+     "alertas": [
+      [
+       1990,
+       373.5,
+       1.0044
+      ],
+      [
+       1997,
+       543.5,
+       1.6733
+      ],
+      [
+       2000,
+       385.8,
+       1.0666
+      ],
+      [
+       2002,
+       383.3,
+       1.4183
+      ],
+      [
+       2008,
+       402.2,
+       1.1038
+      ],
+      [
+       2009,
+       463.2,
+       0.8068
+      ],
+      [
+       2015,
+       497.8,
+       0.404
+      ],
+      [
+       2023,
+       746.1,
+       0.7806
+      ]
+     ]
+    },
+    "Florianópolis 42016": {
+     "anos": 35,
+     "ruins": 6,
+     "alertas": [
+      [
+       1997,
+       371.0,
+       1.0665
+      ],
+      [
+       2008,
+       475.5,
+       1.0317
+      ],
+      [
+       2023,
+       601.1,
+       1.2787
+      ]
+     ]
+    },
+    "Joaçaba 42004": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       566.0,
+       0.9256
+      ],
+      [
+       2000,
+       383.2,
+       0.9925
+      ],
+      [
+       2002,
+       414.8,
+       0.949
+      ],
+      [
+       2005,
+       370.0,
+       1.0316
+      ],
+      [
+       2009,
+       365.7,
+       0.9776
+      ],
+      [
+       2015,
+       496.5,
+       0.6533
+      ],
+      [
+       2023,
+       697.7,
+       0.9612
+      ]
+     ]
+    },
+    "São Bento do Sul 42007": {
+     "anos": 32,
+     "ruins": 3,
+     "alertas": [
+      [
+       1997,
+       537.6,
+       1.0132
+      ],
+      [
+       1998,
+       449.3,
+       1.0082
+      ],
+      [
+       2008,
+       430.0,
+       1.0473
+      ],
+      [
+       2009,
+       450.9,
+       0.9489
+      ],
+      [
+       2015,
+       457.0,
+       0.7692
+      ],
+      [
+       2023,
+       503.5,
+       1.0
+      ]
+     ]
+    },
+    "Tubarão 42018": {
+     "anos": 36,
+     "ruins": 0,
+     "alertas": [
+      [
+       1997,
+       368.7,
+       0.9525
+      ],
+      [
+       2009,
+       385.8,
+       0.9553
+      ],
+      [
+       2023,
+       678.7,
+       0.8919
+      ]
+     ]
+    },
+    "Xanxerê 42003": {
+     "anos": 35,
+     "ruins": 4,
+     "alertas": [
+      [
+       1993,
+       370.1,
+       1.3466
+      ],
+      [
+       1994,
+       384.4,
+       1.2746
+      ],
+      [
+       1996,
+       411.6,
+       0.8292
+      ],
+      [
+       1997,
+       700.6,
+       0.8213
+      ],
+      [
+       1998,
+       441.7,
+       0.893
+      ],
+      [
+       2000,
+       407.8,
+       0.9574
+      ],
+      [
+       2002,
+       579.1,
+       1.0747
+      ],
+      [
+       2004,
+       391.7,
+       1.3182
+      ],
+      [
+       2005,
+       368.2,
+       1.094
+      ],
+      [
+       2009,
+       488.3,
+       0.8532
+      ],
+      [
+       2023,
+       654.4,
+       1.0
+      ]
+     ]
+    }
+   }
+  },
+  "regra_neutra_10pct": {
+   "anos_regiao": 315,
+   "ruins": 40,
+   "taxa_base": 0.127,
+   "alertas": 36,
+   "acertos": 9,
+   "precisao": 0.25,
+   "recall": 0.225,
+   "rel_medio_alerta": 0.96,
+   "eventos": 9,
+   "eventos_acerto": 2,
+   "acerto_evento": 0.222,
+   "ic95_evento": [
+    0.06,
+    0.55
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1997,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Florianópolis 42016",
+      "Tubarão 42018",
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.11,
+     "rel": [
+      0.82,
+      0.93,
+      1.21,
+      1.01,
+      1.67,
+      1.25,
+      1.07,
+      0.95,
+      0.99
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1998,
+     "regioes": [
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.81
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2000,
+     "regioes": [
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.42
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2002,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.07,
+      0.95,
+      0.9
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2005,
+     "regioes": [
+      "Florianópolis 42016"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.0
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2008,
+     "regioes": [
+      "Campos de Lages 42010",
+      "Florianópolis 42016"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.0,
+      1.03
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Xanxerê 42003",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Tubarão 42018",
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.17,
+     "rel": [
+      0.85,
+      0.95,
+      0.81,
+      0.95,
+      0.96,
+      1.02
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2015,
+     "regioes": [
+      "Joaçaba 42004",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Tubarão 42018",
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.6,
+     "rel": [
+      0.65,
+      0.77,
+      0.4,
+      0.98,
+      1.09
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2023,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Florianópolis 42016",
+      "Tubarão 42018"
+     ],
+     "frac_ruim": 0.38,
+     "rel": [
+      1.0,
+      0.96,
+      0.54,
+      1.0,
+      0.78,
+      0.58,
+      1.28,
+      0.89
+     ],
+     "acerto": false
+    }
+   ],
+   "permutacao": {
+    "precisao_obs": 0.25,
+    "acerto_evento_obs": 0.222,
+    "p_precisao": 0.0367,
+    "p_evento": 0.2421,
+    "n": 10000
+   },
+   "criterios": {
+    "C0": true,
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "veredito": "não sustenta"
+   },
+   "eventos_novos": [
+    {
+     "ano": 1998,
+     "regioes": [
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.81
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2000,
+     "regioes": [
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.42
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2002,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.07,
+      0.95,
+      0.9
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2005,
+     "regioes": [
+      "Florianópolis 42016"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.0
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Xanxerê 42003",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Tubarão 42018",
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.17,
+     "rel": [
+      0.85,
+      0.95,
+      0.81,
+      0.95,
+      0.96,
+      1.02
+     ],
+     "acerto": false
+    }
+   ],
+   "acerto_eventos_novos": "1/5",
+   "por_regiao": {
+    "Campos de Lages 42010": {
+     "anos": 36,
+     "ruins": 8,
+     "alertas": [
+      [
+       1997,
+       423.9,
+       1.2484
+      ],
+      [
+       2008,
+       411.0,
+       1.0028
+      ],
+      [
+       2009,
+       368.0,
+       0.9484
+      ],
+      [
+       2023,
+       724.1,
+       0.5769
+      ]
+     ]
+    },
+    "Canoinhas 42006": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       573.5,
+       1.2101
+      ],
+      [
+       1998,
+       387.1,
+       0.8099
+      ],
+      [
+       2002,
+       376.5,
+       0.8981
+      ],
+      [
+       2023,
+       616.3,
+       0.539
+      ]
+     ]
+    },
+    "Criciúma 42019": {
+     "anos": 33,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       308.2,
+       0.9947
+      ],
+      [
+       2000,
+       326.4,
+       1.4167
+      ],
+      [
+       2009,
+       436.4,
+       1.0219
+      ],
+      [
+       2015,
+       313.2,
+       1.0913
+      ]
+     ]
+    },
+    "Curitibanos 42009": {
+     "anos": 36,
+     "ruins": 7,
+     "alertas": [
+      [
+       1997,
+       543.5,
+       1.6733
+      ],
+      [
+       2009,
+       463.2,
+       0.8068
+      ],
+      [
+       2015,
+       497.8,
+       0.404
+      ],
+      [
+       2023,
+       746.1,
+       0.7806
+      ]
+     ]
+    },
+    "Florianópolis 42016": {
+     "anos": 35,
+     "ruins": 6,
+     "alertas": [
+      [
+       1997,
+       371.0,
+       1.0665
+      ],
+      [
+       2005,
+       323.1,
+       1.0
+      ],
+      [
+       2008,
+       475.5,
+       1.0317
+      ],
+      [
+       2023,
+       601.1,
+       1.2787
+      ]
+     ]
+    },
+    "Joaçaba 42004": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       566.0,
+       0.9256
+      ],
+      [
+       2002,
+       414.8,
+       0.949
+      ],
+      [
+       2015,
+       496.5,
+       0.6533
+      ],
+      [
+       2023,
+       697.7,
+       0.9612
+      ]
+     ]
+    },
+    "São Bento do Sul 42007": {
+     "anos": 32,
+     "ruins": 3,
+     "alertas": [
+      [
+       1997,
+       537.6,
+       1.0132
+      ],
+      [
+       2009,
+       450.9,
+       0.9489
+      ],
+      [
+       2015,
+       457.0,
+       0.7692
+      ],
+      [
+       2023,
+       503.5,
+       1.0
+      ]
+     ]
+    },
+    "Tubarão 42018": {
+     "anos": 36,
+     "ruins": 0,
+     "alertas": [
+      [
+       1997,
+       368.7,
+       0.9525
+      ],
+      [
+       2009,
+       385.8,
+       0.9553
+      ],
+      [
+       2015,
+       310.8,
+       0.977
+      ],
+      [
+       2023,
+       678.7,
+       0.8919
+      ]
+     ]
+    },
+    "Xanxerê 42003": {
+     "anos": 35,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       700.6,
+       0.8213
+      ],
+      [
+       2002,
+       579.1,
+       1.0747
+      ],
+      [
+       2009,
+       488.3,
+       0.8532
+      ],
+      [
+       2023,
+       654.4,
+       1.0
+      ]
+     ]
+    }
+   }
+  },
+  "chuva_bruta_neutra": {
+   "anos_regiao": 315,
+   "ruins": 40,
+   "taxa_base": 0.127,
+   "alertas": 36,
+   "acertos": 10,
+   "precisao": 0.278,
+   "recall": 0.25,
+   "rel_medio_alerta": 0.939,
+   "eventos": 7,
+   "eventos_acerto": 1,
+   "acerto_evento": 0.143,
+   "ic95_evento": [
+    0.03,
+    0.51
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1997,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Florianópolis 42016",
+      "Tubarão 42018",
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.11,
+     "rel": [
+      0.82,
+      0.93,
+      1.21,
+      1.01,
+      1.67,
+      1.25,
+      1.07,
+      0.95,
+      0.99
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2000,
+     "regioes": [
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.42
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2002,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.07,
+      0.95,
+      0.9
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2008,
+     "regioes": [
+      "Campos de Lages 42010",
+      "Florianópolis 42016"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.0,
+      1.03
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Xanxerê 42003",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Florianópolis 42016",
+      "Tubarão 42018",
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.29,
+     "rel": [
+      0.85,
+      0.95,
+      0.81,
+      0.95,
+      0.56,
+      0.96,
+      1.02
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2015,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Tubarão 42018",
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.67,
+     "rel": [
+      0.65,
+      0.52,
+      0.77,
+      0.4,
+      0.98,
+      1.09
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2023,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Florianópolis 42016",
+      "Tubarão 42018"
+     ],
+     "frac_ruim": 0.38,
+     "rel": [
+      1.0,
+      0.96,
+      0.54,
+      1.0,
+      0.78,
+      0.58,
+      1.28,
+      0.89
+     ],
+     "acerto": false
+    }
+   ],
+   "permutacao": {
+    "precisao_obs": 0.278,
+    "acerto_evento_obs": 0.143,
+    "p_precisao": 0.0168,
+    "p_evento": 0.5607,
+    "n": 10000
+   },
+   "criterios": {
+    "C0": true,
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "veredito": "não sustenta"
+   },
+   "eventos_novos": [
+    {
+     "ano": 2000,
+     "regioes": [
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.42
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2002,
+     "regioes": [
+      "Xanxerê 42003",
+      "Joaçaba 42004",
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.07,
+      0.95,
+      0.9
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Xanxerê 42003",
+      "São Bento do Sul 42007",
+      "Curitibanos 42009",
+      "Campos de Lages 42010",
+      "Florianópolis 42016",
+      "Tubarão 42018",
+      "Criciúma 42019"
+     ],
+     "frac_ruim": 0.29,
+     "rel": [
+      0.85,
+      0.95,
+      0.81,
+      0.95,
+      0.56,
+      0.96,
+      1.02
+     ],
+     "acerto": false
+    }
+   ],
+   "acerto_eventos_novos": "0/3",
+   "por_regiao": {
+    "Campos de Lages 42010": {
+     "anos": 36,
+     "ruins": 8,
+     "alertas": [
+      [
+       1997,
+       423.9,
+       1.2484
+      ],
+      [
+       2008,
+       411.0,
+       1.0028
+      ],
+      [
+       2009,
+       368.0,
+       0.9484
+      ],
+      [
+       2023,
+       724.1,
+       0.5769
+      ]
+     ]
+    },
+    "Canoinhas 42006": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       573.5,
+       1.2101
+      ],
+      [
+       2002,
+       376.5,
+       0.8981
+      ],
+      [
+       2015,
+       371.6,
+       0.5185
+      ],
+      [
+       2023,
+       616.3,
+       0.539
+      ]
+     ]
+    },
+    "Criciúma 42019": {
+     "anos": 33,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       308.2,
+       0.9947
+      ],
+      [
+       2000,
+       326.4,
+       1.4167
+      ],
+      [
+       2009,
+       436.4,
+       1.0219
+      ],
+      [
+       2015,
+       313.2,
+       1.0913
+      ]
+     ]
+    },
+    "Curitibanos 42009": {
+     "anos": 36,
+     "ruins": 7,
+     "alertas": [
+      [
+       1997,
+       543.5,
+       1.6733
+      ],
+      [
+       2009,
+       463.2,
+       0.8068
+      ],
+      [
+       2015,
+       497.8,
+       0.404
+      ],
+      [
+       2023,
+       746.1,
+       0.7806
+      ]
+     ]
+    },
+    "Florianópolis 42016": {
+     "anos": 35,
+     "ruins": 6,
+     "alertas": [
+      [
+       1997,
+       371.0,
+       1.0665
+      ],
+      [
+       2008,
+       475.5,
+       1.0317
+      ],
+      [
+       2009,
+       299.0,
+       0.5611
+      ],
+      [
+       2023,
+       601.1,
+       1.2787
+      ]
+     ]
+    },
+    "Joaçaba 42004": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       566.0,
+       0.9256
+      ],
+      [
+       2002,
+       414.8,
+       0.949
+      ],
+      [
+       2015,
+       496.5,
+       0.6533
+      ],
+      [
+       2023,
+       697.7,
+       0.9612
+      ]
+     ]
+    },
+    "São Bento do Sul 42007": {
+     "anos": 32,
+     "ruins": 3,
+     "alertas": [
+      [
+       1997,
+       537.6,
+       1.0132
+      ],
+      [
+       2009,
+       450.9,
+       0.9489
+      ],
+      [
+       2015,
+       457.0,
+       0.7692
+      ],
+      [
+       2023,
+       503.5,
+       1.0
+      ]
+     ]
+    },
+    "Tubarão 42018": {
+     "anos": 36,
+     "ruins": 0,
+     "alertas": [
+      [
+       1997,
+       368.7,
+       0.9525
+      ],
+      [
+       2009,
+       385.8,
+       0.9553
+      ],
+      [
+       2015,
+       310.8,
+       0.977
+      ],
+      [
+       2023,
+       678.7,
+       0.8919
+      ]
+     ]
+    },
+    "Xanxerê 42003": {
+     "anos": 35,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       700.6,
+       0.8213
+      ],
+      [
+       2002,
+       579.1,
+       1.0747
+      ],
+      [
+       2009,
+       488.3,
+       0.8532
+      ],
+      [
+       2023,
+       654.4,
+       1.0
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "cebola (area>=100ha)": {
+  "regioes": [
+   "Campos de Lages 42010",
+   "Canoinhas 42006",
+   "Curitibanos 42009",
+   "Joaçaba 42004"
+  ],
+  "regra_fixa_B33": {
+   "anos_regiao": 144,
+   "ruins": 23,
+   "taxa_base": 0.16,
+   "alertas": 25,
+   "acertos": 8,
+   "precisao": 0.32,
+   "recall": 0.348,
+   "rel_medio_alerta": 0.935,
+   "eventos": 10,
+   "eventos_acerto": 3,
+   "acerto_evento": 0.3,
+   "ic95_evento": [
+    0.11,
+    0.6
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1990,
+     "regioes": [
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.0
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1997,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.93,
+      1.21,
+      1.67,
+      1.25
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1998,
+     "regioes": [
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.81
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2000,
+     "regioes": [
+      "Joaçaba 42004",
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.99,
+      1.07
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2002,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.95,
+      0.9,
+      1.42
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2005,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.03,
+      0.86
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2008,
+     "regioes": [
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.1,
+      1.0
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Joaçaba 42004",
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.33,
+     "rel": [
+      0.98,
+      0.81,
+      0.95
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2015,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.65,
+      0.52,
+      0.4
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2023,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.75,
+     "rel": [
+      0.96,
+      0.54,
+      0.78,
+      0.58
+     ],
+     "acerto": true
+    }
+   ],
+   "permutacao": {
+    "precisao_obs": 0.32,
+    "acerto_evento_obs": 0.3,
+    "p_precisao": 0.0484,
+    "p_evento": 0.2085,
+    "n": 10000
+   },
+   "criterios": {
+    "C0": true,
+    "C1": false,
+    "C2": false,
+    "C3": false,
+    "veredito": "não sustenta"
+   },
+   "eventos_novos": [
+    {
+     "ano": 1990,
+     "regioes": [
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.0
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1998,
+     "regioes": [
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.81
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2000,
+     "regioes": [
+      "Joaçaba 42004",
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.99,
+      1.07
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2002,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.95,
+      0.9,
+      1.42
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2005,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.03,
+      0.86
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Joaçaba 42004",
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.33,
+     "rel": [
+      0.98,
+      0.81,
+      0.95
+     ],
+     "acerto": false
+    }
+   ],
+   "acerto_eventos_novos": "1/6",
+   "por_regiao": {
+    "Campos de Lages 42010": {
+     "anos": 36,
+     "ruins": 8,
+     "alertas": [
+      [
+       1997,
+       423.9,
+       1.2484
+      ],
+      [
+       2008,
+       411.0,
+       1.0028
+      ],
+      [
+       2009,
+       368.0,
+       0.9484
+      ],
+      [
+       2023,
+       724.1,
+       0.5769
+      ]
+     ]
+    },
+    "Canoinhas 42006": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       573.5,
+       1.2101
+      ],
+      [
+       1998,
+       387.1,
+       0.8099
+      ],
+      [
+       2002,
+       376.5,
+       0.8981
+      ],
+      [
+       2005,
+       373.0,
+       0.8648
+      ],
+      [
+       2015,
+       371.6,
+       0.5185
+      ],
+      [
+       2023,
+       616.3,
+       0.539
+      ]
+     ]
+    },
+    "Curitibanos 42009": {
+     "anos": 36,
+     "ruins": 7,
+     "alertas": [
+      [
+       1990,
+       373.5,
+       1.0044
+      ],
+      [
+       1997,
+       543.5,
+       1.6733
+      ],
+      [
+       2000,
+       385.8,
+       1.0666
+      ],
+      [
+       2002,
+       383.3,
+       1.4183
+      ],
+      [
+       2008,
+       402.2,
+       1.1038
+      ],
+      [
+       2009,
+       463.2,
+       0.8068
+      ],
+      [
+       2015,
+       497.8,
+       0.404
+      ],
+      [
+       2023,
+       746.1,
+       0.7806
+      ]
+     ]
+    },
+    "Joaçaba 42004": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       566.0,
+       0.9256
+      ],
+      [
+       2000,
+       383.2,
+       0.9925
+      ],
+      [
+       2002,
+       414.8,
+       0.949
+      ],
+      [
+       2005,
+       370.0,
+       1.0316
+      ],
+      [
+       2009,
+       365.7,
+       0.9776
+      ],
+      [
+       2015,
+       496.5,
+       0.6533
+      ],
+      [
+       2023,
+       697.7,
+       0.9612
+      ]
+     ]
+    }
+   }
+  },
+  "regra_neutra_10pct": {
+   "anos_regiao": 144,
+   "ruins": 23,
+   "taxa_base": 0.16,
+   "alertas": 16,
+   "acertos": 7,
+   "precisao": 0.438,
+   "recall": 0.304,
+   "rel_medio_alerta": 0.899,
+   "eventos": 7,
+   "eventos_acerto": 4,
+   "acerto_evento": 0.571,
+   "ic95_evento": [
+    0.25,
+    0.84
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1997,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.93,
+      1.21,
+      1.67,
+      1.25
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 1998,
+     "regioes": [
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.81
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2002,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.95,
+      0.9
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2008,
+     "regioes": [
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.0
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.81,
+      0.95
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2015,
+     "regioes": [
+      "Joaçaba 42004",
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.65,
+      0.4
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2023,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.75,
+     "rel": [
+      0.96,
+      0.54,
+      0.78,
+      0.58
+     ],
+     "acerto": true
+    }
+   ],
+   "permutacao": {
+    "precisao_obs": 0.438,
+    "acerto_evento_obs": 0.571,
+    "p_precisao": 0.0216,
+    "p_evento": 0.0195,
+    "n": 10000
+   },
+   "criterios": {
+    "C0": true,
+    "C1": true,
+    "C2": true,
+    "C3": false,
+    "veredito": "parcial"
+   },
+   "eventos_novos": [
+    {
+     "ano": 1998,
+     "regioes": [
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.81
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2002,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.95,
+      0.9
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.81,
+      0.95
+     ],
+     "acerto": true
+    }
+   ],
+   "acerto_eventos_novos": "2/3",
+   "por_regiao": {
+    "Campos de Lages 42010": {
+     "anos": 36,
+     "ruins": 8,
+     "alertas": [
+      [
+       1997,
+       423.9,
+       1.2484
+      ],
+      [
+       2008,
+       411.0,
+       1.0028
+      ],
+      [
+       2009,
+       368.0,
+       0.9484
+      ],
+      [
+       2023,
+       724.1,
+       0.5769
+      ]
+     ]
+    },
+    "Canoinhas 42006": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       573.5,
+       1.2101
+      ],
+      [
+       1998,
+       387.1,
+       0.8099
+      ],
+      [
+       2002,
+       376.5,
+       0.8981
+      ],
+      [
+       2023,
+       616.3,
+       0.539
+      ]
+     ]
+    },
+    "Curitibanos 42009": {
+     "anos": 36,
+     "ruins": 7,
+     "alertas": [
+      [
+       1997,
+       543.5,
+       1.6733
+      ],
+      [
+       2009,
+       463.2,
+       0.8068
+      ],
+      [
+       2015,
+       497.8,
+       0.404
+      ],
+      [
+       2023,
+       746.1,
+       0.7806
+      ]
+     ]
+    },
+    "Joaçaba 42004": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       566.0,
+       0.9256
+      ],
+      [
+       2002,
+       414.8,
+       0.949
+      ],
+      [
+       2015,
+       496.5,
+       0.6533
+      ],
+      [
+       2023,
+       697.7,
+       0.9612
+      ]
+     ]
+    }
+   }
+  },
+  "chuva_bruta_neutra": {
+   "anos_regiao": 144,
+   "ruins": 23,
+   "taxa_base": 0.16,
+   "alertas": 16,
+   "acertos": 7,
+   "precisao": 0.438,
+   "recall": 0.304,
+   "rel_medio_alerta": 0.881,
+   "eventos": 6,
+   "eventos_acerto": 3,
+   "acerto_evento": 0.5,
+   "ic95_evento": [
+    0.19,
+    0.81
+   ],
+   "lista_eventos": [
+    {
+     "ano": 1997,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.93,
+      1.21,
+      1.67,
+      1.25
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2002,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.95,
+      0.9
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2008,
+     "regioes": [
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      1.0
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.81,
+      0.95
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2015,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009"
+     ],
+     "frac_ruim": 1.0,
+     "rel": [
+      0.65,
+      0.52,
+      0.4
+     ],
+     "acerto": true
+    },
+    {
+     "ano": 2023,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006",
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.75,
+     "rel": [
+      0.96,
+      0.54,
+      0.78,
+      0.58
+     ],
+     "acerto": true
+    }
+   ],
+   "permutacao": {
+    "precisao_obs": 0.438,
+    "acerto_evento_obs": 0.5,
+    "p_precisao": 0.0262,
+    "p_evento": 0.0692,
+    "n": 10000
+   },
+   "criterios": {
+    "C0": true,
+    "C1": true,
+    "C2": true,
+    "C3": false,
+    "veredito": "parcial"
+   },
+   "eventos_novos": [
+    {
+     "ano": 2002,
+     "regioes": [
+      "Joaçaba 42004",
+      "Canoinhas 42006"
+     ],
+     "frac_ruim": 0.0,
+     "rel": [
+      0.95,
+      0.9
+     ],
+     "acerto": false
+    },
+    {
+     "ano": 2009,
+     "regioes": [
+      "Curitibanos 42009",
+      "Campos de Lages 42010"
+     ],
+     "frac_ruim": 0.5,
+     "rel": [
+      0.81,
+      0.95
+     ],
+     "acerto": true
+    }
+   ],
+   "acerto_eventos_novos": "1/2",
+   "por_regiao": {
+    "Campos de Lages 42010": {
+     "anos": 36,
+     "ruins": 8,
+     "alertas": [
+      [
+       1997,
+       423.9,
+       1.2484
+      ],
+      [
+       2008,
+       411.0,
+       1.0028
+      ],
+      [
+       2009,
+       368.0,
+       0.9484
+      ],
+      [
+       2023,
+       724.1,
+       0.5769
+      ]
+     ]
+    },
+    "Canoinhas 42006": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       573.5,
+       1.2101
+      ],
+      [
+       2002,
+       376.5,
+       0.8981
+      ],
+      [
+       2015,
+       371.6,
+       0.5185
+      ],
+      [
+       2023,
+       616.3,
+       0.539
+      ]
+     ]
+    },
+    "Curitibanos 42009": {
+     "anos": 36,
+     "ruins": 7,
+     "alertas": [
+      [
+       1997,
+       543.5,
+       1.6733
+      ],
+      [
+       2009,
+       463.2,
+       0.8068
+      ],
+      [
+       2015,
+       497.8,
+       0.404
+      ],
+      [
+       2023,
+       746.1,
+       0.7806
+      ]
+     ]
+    },
+    "Joaçaba 42004": {
+     "anos": 36,
+     "ruins": 4,
+     "alertas": [
+      [
+       1997,
+       566.0,
+       0.9256
+      ],
+      [
+       2002,
+       414.8,
+       0.949
+      ],
+      [
+       2015,
+       496.5,
+       0.6533
+      ],
+      [
+       2023,
+       697.7,
+       0.9612
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "dependencia_com_amostra": {
+  "milho Araranguá 42020": {
+   "rel_x_ref": 0.36,
+   "ind_x_ref": 0.49
+  },
+  "milho Campos de Lages 42010": {
+   "rel_x_ref": 0.46,
+   "ind_x_ref": 0.6
+  },
+  "milho Canoinhas 42006": {
+   "rel_x_ref": 0.71,
+   "ind_x_ref": 0.41
+  },
+  "milho Criciúma 42019": {
+   "rel_x_ref": 0.07,
+   "ind_x_ref": 0.42
+  },
+  "milho Curitibanos 42009": {
+   "rel_x_ref": 0.54,
+   "ind_x_ref": 0.78
+  },
+  "milho Joaçaba 42004": {
+   "rel_x_ref": 0.82,
+   "ind_x_ref": 0.53
+  },
+  "milho Tubarão 42018": {
+   "rel_x_ref": 0.43,
+   "ind_x_ref": 0.27
+  },
+  "milho Xanxerê 42003": {
+   "rel_x_ref": 0.72,
+   "ind_x_ref": 0.92
+  },
+  "cebola Campos de Lages 42010": {
+   "rel_x_ref": 0.02,
+   "ind_x_ref": 0.94
+  },
+  "cebola Canoinhas 42006": {
+   "rel_x_ref": 0.29,
+   "ind_x_ref": 0.85
+  },
+  "cebola Criciúma 42019": {
+   "rel_x_ref": -0.14,
+   "ind_x_ref": 0.74
+  },
+  "cebola Curitibanos 42009": {
+   "rel_x_ref": 0.01,
+   "ind_x_ref": 0.92
+  },
+  "cebola Florianópolis 42016": {
+   "rel_x_ref": -0.15,
+   "ind_x_ref": 0.99
+  },
+  "cebola Joaçaba 42004": {
+   "rel_x_ref": 0.45,
+   "ind_x_ref": 0.91
+  },
+  "cebola São Bento do Sul 42007": {
+   "rel_x_ref": -0.22,
+   "ind_x_ref": 0.82
+  },
+  "cebola Tubarão 42018": {
+   "rel_x_ref": 0.16,
+   "ind_x_ref": 0.85
+  },
+  "cebola Xanxerê 42003": {
+   "rel_x_ref": 0.07,
+   "ind_x_ref": 0.65
+  }
+ },
+ "limiares_neutros": {
+  "milho abelardo_luz": {
+   "ind": 0.823,
+   "chuva": 176.75
+  },
+  "milho fraiburgo": {
+   "ind": 0.91,
+   "chuva": 189.6
+  },
+  "milho itaiopolis": {
+   "ind": 0.932,
+   "chuva": 185.4
+  },
+  "milho campos_novos": {
+   "ind": 0.816,
+   "chuva": 191.85
+  },
+  "milho sao_jose_do_cerrito": {
+   "ind": 0.891,
+   "chuva": 190.5
+  },
+  "milho treze_de_maio": {
+   "ind": 0.82,
+   "chuva": 168.35
+  },
+  "milho icara": {
+   "ind": 0.769,
+   "chuva": 150.9
+  },
+  "milho turvo": {
+   "ind": 0.866,
+   "chuva": 171.4
+  },
+  "cebola ipuacu": {
+   "ind": 469.66,
+   "chuva": 743.4
+  },
+  "cebola lebon_regis": {
+   "ind": 399.0,
+   "chuva": 644.85
+  },
+  "cebola irineopolis": {
+   "ind": 374.75,
+   "chuva": 605.9
+  },
+  "cebola campo_alegre": {
+   "ind": 450.74,
+   "chuva": 682.22
+  },
+  "cebola curitibanos": {
+   "ind": 432.7,
+   "chuva": 691.55
+  },
+  "cebola bom_retiro": {
+   "ind": 346.05,
+   "chuva": 582.4
+  },
+  "cebola sao_pedro_de_alcantara": {
+   "ind": 313.46,
+   "chuva": 571.18
+  },
+  "cebola pedras_grandes": {
+   "ind": 298.6,
+   "chuva": 550.9
+  },
+  "cebola icara": {
+   "ind": 294.34,
+   "chuva": 542.38
+  }
+ }
+}

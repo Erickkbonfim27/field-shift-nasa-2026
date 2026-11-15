@@ -1,0 +1,2073 @@
+{
+ "municipio": "Quixadá (CE)",
+ "lat": -4.97,
+ "lon": -39.02,
+ "periodo": "2001-2025",
+ "solo_padrao": "medio",
+ "fonte": "NASA POWER diário (PRECTOTCORR, T2M, RH2M, WS2M, ALLSKY_SFC_SW_DWN)",
+ "limiar_colhe": 0.6,
+ "estrategias": [
+  {
+   "id": "A",
+   "nome": "Milho na 1ª chuva (o de sempre)",
+   "cultura": "milho",
+   "solo": "medio",
+   "desc": "Planta milho assim que a chuva firma.",
+   "colhe_em_10": 6.4,
+   "anos_total": 25,
+   "y_mediano": 0.88,
+   "pior_fase": "maturação",
+   "cond_cedo": [
+    8.0,
+    10
+   ],
+   "cond_tarde": [
+    5.7,
+    14
+   ],
+   "anos": [
+    {
+     "ano": 2001,
+     "plantio": "2001-03-09",
+     "classe": "perda",
+     "y": 0.391,
+     "isna": [
+      1.0,
+      1.0,
+      0.72,
+      0.34
+     ],
+     "agua_plantio": 73.0,
+     "cad": 125.0
+    },
+    {
+     "ano": 2002,
+     "plantio": "2002-01-06",
+     "classe": "boa",
+     "y": 0.848,
+     "isna": [
+      0.99,
+      1.0,
+      0.9,
+      1.0
+     ],
+     "agua_plantio": 19.6,
+     "cad": 125.0
+    },
+    {
+     "ano": 2003,
+     "plantio": "2003-01-20",
+     "classe": "boa",
+     "y": 0.966,
+     "isna": [
+      0.91,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 19.6,
+     "cad": 125.0
+    },
+    {
+     "ano": 2004,
+     "plantio": "2004-01-14",
+     "classe": "boa",
+     "y": 0.871,
+     "isna": [
+      0.97,
+      1.0,
+      1.0,
+      0.76
+     ],
+     "agua_plantio": 22.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2005,
+     "plantio": "2005-01-24",
+     "classe": "total",
+     "y": 0.286,
+     "isna": [
+      1.0,
+      0.83,
+      0.62,
+      0.44
+     ],
+     "agua_plantio": 35.8,
+     "cad": 125.0
+    },
+    {
+     "ano": 2006,
+     "plantio": "2006-02-18",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 75.1,
+     "cad": 125.0
+    },
+    {
+     "ano": 2007,
+     "plantio": "2007-02-03",
+     "classe": "boa",
+     "y": 0.997,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 54.3,
+     "cad": 125.0
+    },
+    {
+     "ano": 2008,
+     "plantio": "2008-03-04",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 124.0,
+     "cad": 125.0
+    },
+    {
+     "ano": 2009,
+     "plantio": "2009-01-21",
+     "classe": "boa",
+     "y": 0.97,
+     "isna": [
+      0.92,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 17.3,
+     "cad": 125.0
+    },
+    {
+     "ano": 2010,
+     "plantio": "2010-03-21",
+     "classe": "perda",
+     "y": 0.524,
+     "isna": [
+      1.0,
+      1.0,
+      0.82,
+      0.44
+     ],
+     "agua_plantio": 66.1,
+     "cad": 125.0
+    },
+    {
+     "ano": 2011,
+     "plantio": "2011-01-09",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 117.1,
+     "cad": 125.0
+    },
+    {
+     "ano": 2012,
+     "plantio": "2012-02-15",
+     "classe": "total",
+     "y": 0.097,
+     "isna": [
+      1.0,
+      1.0,
+      0.45,
+      0.1
+     ],
+     "agua_plantio": 31.8,
+     "cad": 125.0
+    },
+    {
+     "ano": 2013,
+     "plantio": "2013-04-19",
+     "classe": "boa",
+     "y": 0.838,
+     "isna": [
+      1.0,
+      1.0,
+      0.96,
+      0.79
+     ],
+     "agua_plantio": 95.5,
+     "cad": 125.0
+    },
+    {
+     "ano": 2014,
+     "plantio": "2014-03-20",
+     "classe": "perda",
+     "y": 0.516,
+     "isna": [
+      1.0,
+      1.0,
+      0.87,
+      0.27
+     ],
+     "agua_plantio": 124.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2015,
+     "plantio": "2015-03-22",
+     "classe": "total",
+     "y": 0.0,
+     "isna": [
+      1.0,
+      1.0,
+      0.3,
+      0.12
+     ],
+     "agua_plantio": 124.4,
+     "cad": 125.0
+    },
+    {
+     "ano": 2016,
+     "plantio": "2016-01-21",
+     "classe": "total",
+     "y": 0.233,
+     "isna": [
+      1.0,
+      0.84,
+      0.51,
+      0.85
+     ],
+     "agua_plantio": 52.9,
+     "cad": 125.0
+    },
+    {
+     "ano": 2017,
+     "plantio": "2017-02-11",
+     "classe": "boa",
+     "y": 0.876,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      0.76
+     ],
+     "agua_plantio": 49.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2018,
+     "plantio": "2018-01-27",
+     "classe": "boa",
+     "y": 0.929,
+     "isna": [
+      0.94,
+      1.0,
+      0.97,
+      1.0
+     ],
+     "agua_plantio": 46.9,
+     "cad": 125.0
+    },
+    {
+     "ano": 2019,
+     "plantio": "2019-01-09",
+     "classe": "boa",
+     "y": 0.982,
+     "isna": [
+      0.95,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 33.9,
+     "cad": 125.0
+    },
+    {
+     "ano": 2020,
+     "plantio": "2020-02-17",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 103.3,
+     "cad": 125.0
+    },
+    {
+     "ano": 2021,
+     "plantio": "2021-03-18",
+     "classe": "perda",
+     "y": 0.575,
+     "isna": [
+      1.0,
+      1.0,
+      0.91,
+      0.34
+     ],
+     "agua_plantio": 124.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2022,
+     "plantio": "2022-03-06",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 121.3,
+     "cad": 125.0
+    },
+    {
+     "ano": 2023,
+     "plantio": "2023-01-19",
+     "classe": "boa",
+     "y": 0.995,
+     "isna": [
+      0.99,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 28.6,
+     "cad": 125.0
+    },
+    {
+     "ano": 2024,
+     "plantio": "2024-02-19",
+     "classe": "boa",
+     "y": 0.998,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 124.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2025,
+     "plantio": null,
+     "y": 0.0,
+     "classe": "sem_plantio",
+     "isna": null,
+     "agua_plantio": null
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "nome": "Milho esperando a chuva firmar mais (11/mar)",
+   "cultura": "milho",
+   "solo": "medio",
+   "desc": "Mesmo milho, plantio na janela de menor risco do ZARC para caupi.",
+   "colhe_em_10": 6.4,
+   "anos_total": 25,
+   "y_mediano": 0.76,
+   "pior_fase": "maturação",
+   "cond_cedo": null,
+   "cond_tarde": [
+    6.4,
+    25
+   ],
+   "anos": [
+    {
+     "ano": 2001,
+     "plantio": "2001-03-11",
+     "classe": "perda",
+     "y": 0.353,
+     "isna": [
+      1.0,
+      1.0,
+      0.68,
+      0.36
+     ],
+     "agua_plantio": 89.0,
+     "cad": 125.0
+    },
+    {
+     "ano": 2002,
+     "plantio": "2002-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 124.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2003,
+     "plantio": "2003-03-11",
+     "classe": "boa",
+     "y": 0.811,
+     "isna": [
+      1.0,
+      1.0,
+      0.94,
+      0.79
+     ],
+     "agua_plantio": 124.3,
+     "cad": 125.0
+    },
+    {
+     "ano": 2004,
+     "plantio": "2004-03-11",
+     "classe": "parcial",
+     "y": 0.627,
+     "isna": [
+      1.0,
+      1.0,
+      0.87,
+      0.56
+     ],
+     "agua_plantio": 124.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2005,
+     "plantio": "2005-03-11",
+     "classe": "boa",
+     "y": 0.819,
+     "isna": [
+      1.0,
+      1.0,
+      0.88,
+      1.0
+     ],
+     "agua_plantio": 111.9,
+     "cad": 125.0
+    },
+    {
+     "ano": 2006,
+     "plantio": "2006-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 123.5,
+     "cad": 125.0
+    },
+    {
+     "ano": 2007,
+     "plantio": "2007-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 124.3,
+     "cad": 125.0
+    },
+    {
+     "ano": 2008,
+     "plantio": "2008-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 124.1,
+     "cad": 125.0
+    },
+    {
+     "ano": 2009,
+     "plantio": "2009-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 124.0,
+     "cad": 125.0
+    },
+    {
+     "ano": 2010,
+     "plantio": "2010-03-11",
+     "classe": "perda",
+     "y": 0.591,
+     "isna": [
+      0.88,
+      1.0,
+      0.83,
+      0.68
+     ],
+     "agua_plantio": 55.9,
+     "cad": 125.0
+    },
+    {
+     "ano": 2011,
+     "plantio": "2011-03-11",
+     "classe": "boa",
+     "y": 0.937,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      0.87
+     ],
+     "agua_plantio": 124.4,
+     "cad": 125.0
+    },
+    {
+     "ano": 2012,
+     "plantio": "2012-03-11",
+     "classe": "total",
+     "y": 0.0,
+     "isna": [
+      1.0,
+      0.98,
+      0.25,
+      0.13
+     ],
+     "agua_plantio": 124.3,
+     "cad": 125.0
+    },
+    {
+     "ano": 2013,
+     "plantio": "2013-03-11",
+     "classe": "boa",
+     "y": 0.836,
+     "isna": [
+      0.89,
+      0.91,
+      1.0,
+      0.82
+     ],
+     "agua_plantio": 51.6,
+     "cad": 125.0
+    },
+    {
+     "ano": 2014,
+     "plantio": "2014-03-11",
+     "classe": "perda",
+     "y": 0.574,
+     "isna": [
+      1.0,
+      1.0,
+      0.87,
+      0.43
+     ],
+     "agua_plantio": 79.9,
+     "cad": 125.0
+    },
+    {
+     "ano": 2015,
+     "plantio": "2015-03-11",
+     "classe": "total",
+     "y": 0.091,
+     "isna": [
+      1.0,
+      1.0,
+      0.44,
+      0.17
+     ],
+     "agua_plantio": 124.4,
+     "cad": 125.0
+    },
+    {
+     "ano": 2016,
+     "plantio": "2016-03-11",
+     "classe": "total",
+     "y": 0.201,
+     "isna": [
+      1.0,
+      1.0,
+      0.56,
+      0.18
+     ],
+     "agua_plantio": 118.3,
+     "cad": 125.0
+    },
+    {
+     "ano": 2017,
+     "plantio": "2017-03-11",
+     "classe": "perda",
+     "y": 0.342,
+     "isna": [
+      1.0,
+      1.0,
+      0.67,
+      0.35
+     ],
+     "agua_plantio": 124.3,
+     "cad": 125.0
+    },
+    {
+     "ano": 2018,
+     "plantio": "2018-03-11",
+     "classe": "boa",
+     "y": 0.781,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      0.57
+     ],
+     "agua_plantio": 124.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2019,
+     "plantio": "2019-03-11",
+     "classe": "parcial",
+     "y": 0.68,
+     "isna": [
+      1.0,
+      1.0,
+      0.93,
+      0.51
+     ],
+     "agua_plantio": 124.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2020,
+     "plantio": "2020-03-11",
+     "classe": "boa",
+     "y": 0.926,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      0.85
+     ],
+     "agua_plantio": 124.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2021,
+     "plantio": "2021-03-11",
+     "classe": "boa",
+     "y": 0.756,
+     "isna": [
+      1.0,
+      1.0,
+      0.99,
+      0.53
+     ],
+     "agua_plantio": 123.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2022,
+     "plantio": "2022-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 124.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2023,
+     "plantio": "2023-03-11",
+     "classe": "perda",
+     "y": 0.408,
+     "isna": [
+      1.0,
+      1.0,
+      0.75,
+      0.3
+     ],
+     "agua_plantio": 119.5,
+     "cad": 125.0
+    },
+    {
+     "ano": 2024,
+     "plantio": "2024-03-11",
+     "classe": "boa",
+     "y": 0.751,
+     "isna": [
+      1.0,
+      1.0,
+      0.94,
+      0.65
+     ],
+     "agua_plantio": 124.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2025,
+     "plantio": "2025-03-11",
+     "classe": "total",
+     "y": 0.092,
+     "isna": [
+      1.0,
+      1.0,
+      0.42,
+      0.41
+     ],
+     "agua_plantio": 124.4,
+     "cad": 125.0
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "nome": "Caupi (ciclo curto) na 1ª chuva",
+   "cultura": "caupi",
+   "solo": "medio",
+   "desc": "Troca a cultura por uma de 70 dias.",
+   "colhe_em_10": 7.6,
+   "anos_total": 25,
+   "y_mediano": 0.98,
+   "pior_fase": "floração/enchimento",
+   "cond_cedo": [
+    7.0,
+    10
+   ],
+   "cond_tarde": [
+    8.6,
+    14
+   ],
+   "anos": [
+    {
+     "ano": 2001,
+     "plantio": "2001-03-09",
+     "classe": "boa",
+     "y": 0.898,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      0.86
+     ],
+     "agua_plantio": 60.5,
+     "cad": 75.0
+    },
+    {
+     "ano": 2002,
+     "plantio": "2002-01-06",
+     "classe": "perda",
+     "y": 0.557,
+     "isna": [
+      1.0,
+      1.0,
+      0.68,
+      0.81
+     ],
+     "agua_plantio": 18.2,
+     "cad": 75.0
+    },
+    {
+     "ano": 2003,
+     "plantio": "2003-01-20",
+     "classe": "boa",
+     "y": 0.994,
+     "isna": [
+      0.97,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 18.0,
+     "cad": 75.0
+    },
+    {
+     "ano": 2004,
+     "plantio": "2004-01-14",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 20.1,
+     "cad": 75.0
+    },
+    {
+     "ano": 2005,
+     "plantio": "2005-01-24",
+     "classe": "total",
+     "y": 0.266,
+     "isna": [
+      1.0,
+      1.0,
+      0.38,
+      0.78
+     ],
+     "agua_plantio": 33.5,
+     "cad": 75.0
+    },
+    {
+     "ano": 2006,
+     "plantio": "2006-02-18",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 62.5,
+     "cad": 75.0
+    },
+    {
+     "ano": 2007,
+     "plantio": "2007-02-03",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 44.6,
+     "cad": 75.0
+    },
+    {
+     "ano": 2008,
+     "plantio": "2008-03-04",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 74.0,
+     "cad": 75.0
+    },
+    {
+     "ano": 2009,
+     "plantio": "2009-01-21",
+     "classe": "boa",
+     "y": 0.981,
+     "isna": [
+      1.0,
+      0.98,
+      0.99,
+      1.0
+     ],
+     "agua_plantio": 15.7,
+     "cad": 75.0
+    },
+    {
+     "ano": 2010,
+     "plantio": "2010-03-21",
+     "classe": "parcial",
+     "y": 0.652,
+     "isna": [
+      1.0,
+      1.0,
+      0.97,
+      0.57
+     ],
+     "agua_plantio": 54.3,
+     "cad": 75.0
+    },
+    {
+     "ano": 2011,
+     "plantio": "2011-01-09",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 71.1,
+     "cad": 75.0
+    },
+    {
+     "ano": 2012,
+     "plantio": "2012-02-15",
+     "classe": "total",
+     "y": 0.258,
+     "isna": [
+      1.0,
+      1.0,
+      0.57,
+      0.31
+     ],
+     "agua_plantio": 23.5,
+     "cad": 75.0
+    },
+    {
+     "ano": 2013,
+     "plantio": "2013-04-19",
+     "classe": "parcial",
+     "y": 0.685,
+     "isna": [
+      1.0,
+      1.0,
+      0.89,
+      0.71
+     ],
+     "agua_plantio": 74.3,
+     "cad": 75.0
+    },
+    {
+     "ano": 2014,
+     "plantio": "2014-03-20",
+     "classe": "parcial",
+     "y": 0.693,
+     "isna": [
+      1.0,
+      1.0,
+      0.84,
+      0.78
+     ],
+     "agua_plantio": 74.2,
+     "cad": 75.0
+    },
+    {
+     "ano": 2015,
+     "plantio": "2015-03-22",
+     "classe": "total",
+     "y": 0.17,
+     "isna": [
+      1.0,
+      1.0,
+      0.58,
+      0.09
+     ],
+     "agua_plantio": 74.4,
+     "cad": 75.0
+    },
+    {
+     "ano": 2016,
+     "plantio": "2016-01-21",
+     "classe": "total",
+     "y": 0.161,
+     "isna": [
+      1.0,
+      0.89,
+      0.35,
+      0.43
+     ],
+     "agua_plantio": 47.7,
+     "cad": 75.0
+    },
+    {
+     "ano": 2017,
+     "plantio": "2017-02-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 39.0,
+     "cad": 75.0
+    },
+    {
+     "ano": 2018,
+     "plantio": "2018-01-27",
+     "classe": "parcial",
+     "y": 0.69,
+     "isna": [
+      1.0,
+      1.0,
+      0.83,
+      0.8
+     ],
+     "agua_plantio": 40.5,
+     "cad": 75.0
+    },
+    {
+     "ano": 2019,
+     "plantio": "2019-01-09",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 26.3,
+     "cad": 75.0
+    },
+    {
+     "ano": 2020,
+     "plantio": "2020-02-17",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 74.3,
+     "cad": 75.0
+    },
+    {
+     "ano": 2021,
+     "plantio": "2021-03-18",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 74.2,
+     "cad": 75.0
+    },
+    {
+     "ano": 2022,
+     "plantio": "2022-03-06",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 71.3,
+     "cad": 75.0
+    },
+    {
+     "ano": 2023,
+     "plantio": "2023-01-19",
+     "classe": "boa",
+     "y": 0.934,
+     "isna": [
+      1.0,
+      0.99,
+      0.94,
+      1.0
+     ],
+     "agua_plantio": 24.7,
+     "cad": 75.0
+    },
+    {
+     "ano": 2024,
+     "plantio": "2024-02-19",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 74.2,
+     "cad": 75.0
+    },
+    {
+     "ano": 2025,
+     "plantio": null,
+     "y": 0.0,
+     "classe": "sem_plantio",
+     "isna": null,
+     "agua_plantio": null
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "nome": "Sorgo na 1ª chuva",
+   "cultura": "sorgo",
+   "solo": "medio",
+   "desc": "Cultura mais tolerante à seca.",
+   "colhe_em_10": 8.8,
+   "anos_total": 25,
+   "y_mediano": 0.98,
+   "pior_fase": "maturação",
+   "cond_cedo": [
+    10.0,
+    10
+   ],
+   "cond_tarde": [
+    8.6,
+    14
+   ],
+   "anos": [
+    {
+     "ano": 2001,
+     "plantio": "2001-03-09",
+     "classe": "parcial",
+     "y": 0.66,
+     "isna": [
+      1.0,
+      1.0,
+      0.81,
+      0.42
+     ],
+     "agua_plantio": 73.0,
+     "cad": 125.0
+    },
+    {
+     "ano": 2002,
+     "plantio": "2002-01-06",
+     "classe": "boa",
+     "y": 0.978,
+     "isna": [
+      0.99,
+      1.0,
+      0.96,
+      1.0
+     ],
+     "agua_plantio": 19.6,
+     "cad": 125.0
+    },
+    {
+     "ano": 2003,
+     "plantio": "2003-01-20",
+     "classe": "boa",
+     "y": 0.983,
+     "isna": [
+      0.91,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 19.6,
+     "cad": 125.0
+    },
+    {
+     "ano": 2004,
+     "plantio": "2004-01-14",
+     "classe": "boa",
+     "y": 0.961,
+     "isna": [
+      0.97,
+      1.0,
+      1.0,
+      0.92
+     ],
+     "agua_plantio": 22.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2005,
+     "plantio": "2005-01-24",
+     "classe": "parcial",
+     "y": 0.64,
+     "isna": [
+      1.0,
+      0.88,
+      0.7,
+      0.52
+     ],
+     "agua_plantio": 35.8,
+     "cad": 125.0
+    },
+    {
+     "ano": 2006,
+     "plantio": "2006-02-18",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 75.1,
+     "cad": 125.0
+    },
+    {
+     "ano": 2007,
+     "plantio": "2007-02-03",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 54.3,
+     "cad": 125.0
+    },
+    {
+     "ano": 2008,
+     "plantio": "2008-03-04",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 124.0,
+     "cad": 125.0
+    },
+    {
+     "ano": 2009,
+     "plantio": "2009-01-21",
+     "classe": "boa",
+     "y": 0.985,
+     "isna": [
+      0.92,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 17.3,
+     "cad": 125.0
+    },
+    {
+     "ano": 2010,
+     "plantio": "2010-03-21",
+     "classe": "boa",
+     "y": 0.764,
+     "isna": [
+      1.0,
+      1.0,
+      0.91,
+      0.56
+     ],
+     "agua_plantio": 66.1,
+     "cad": 125.0
+    },
+    {
+     "ano": 2011,
+     "plantio": "2011-01-09",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 117.1,
+     "cad": 125.0
+    },
+    {
+     "ano": 2012,
+     "plantio": "2012-02-15",
+     "classe": "perda",
+     "y": 0.461,
+     "isna": [
+      1.0,
+      1.0,
+      0.56,
+      0.13
+     ],
+     "agua_plantio": 31.8,
+     "cad": 125.0
+    },
+    {
+     "ano": 2013,
+     "plantio": "2013-04-19",
+     "classe": "boa",
+     "y": 0.985,
+     "isna": [
+      1.0,
+      1.0,
+      0.99,
+      0.98
+     ],
+     "agua_plantio": 95.5,
+     "cad": 125.0
+    },
+    {
+     "ano": 2014,
+     "plantio": "2014-03-20",
+     "classe": "boa",
+     "y": 0.724,
+     "isna": [
+      1.0,
+      1.0,
+      0.97,
+      0.41
+     ],
+     "agua_plantio": 124.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2015,
+     "plantio": "2015-03-22",
+     "classe": "perda",
+     "y": 0.405,
+     "isna": [
+      1.0,
+      1.0,
+      0.38,
+      0.15
+     ],
+     "agua_plantio": 124.4,
+     "cad": 125.0
+    },
+    {
+     "ano": 2016,
+     "plantio": "2016-01-21",
+     "classe": "boa",
+     "y": 0.733,
+     "isna": [
+      1.0,
+      0.89,
+      0.58,
+      0.94
+     ],
+     "agua_plantio": 52.9,
+     "cad": 125.0
+    },
+    {
+     "ano": 2017,
+     "plantio": "2017-02-11",
+     "classe": "boa",
+     "y": 0.955,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      0.9
+     ],
+     "agua_plantio": 49.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2018,
+     "plantio": "2018-01-27",
+     "classe": "boa",
+     "y": 0.988,
+     "isna": [
+      0.94,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 46.9,
+     "cad": 125.0
+    },
+    {
+     "ano": 2019,
+     "plantio": "2019-01-09",
+     "classe": "boa",
+     "y": 0.991,
+     "isna": [
+      0.95,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 33.9,
+     "cad": 125.0
+    },
+    {
+     "ano": 2020,
+     "plantio": "2020-02-17",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 103.3,
+     "cad": 125.0
+    },
+    {
+     "ano": 2021,
+     "plantio": "2021-03-18",
+     "classe": "boa",
+     "y": 0.722,
+     "isna": [
+      1.0,
+      1.0,
+      0.95,
+      0.43
+     ],
+     "agua_plantio": 124.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2022,
+     "plantio": "2022-03-06",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 121.3,
+     "cad": 125.0
+    },
+    {
+     "ano": 2023,
+     "plantio": "2023-01-19",
+     "classe": "boa",
+     "y": 0.998,
+     "isna": [
+      0.99,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 28.6,
+     "cad": 125.0
+    },
+    {
+     "ano": 2024,
+     "plantio": "2024-02-19",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 124.2,
+     "cad": 125.0
+    },
+    {
+     "ano": 2025,
+     "plantio": null,
+     "y": 0.0,
+     "classe": "sem_plantio",
+     "isna": null,
+     "agua_plantio": null
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "nome": "Caupi esperando até 11/mar",
+   "cultura": "caupi",
+   "solo": "medio",
+   "desc": "Ciclo curto plantado na janela de menor risco do ZARC.",
+   "colhe_em_10": 8.0,
+   "anos_total": 25,
+   "y_mediano": 0.95,
+   "pior_fase": "maturação",
+   "cond_cedo": null,
+   "cond_tarde": [
+    8.0,
+    25
+   ],
+   "anos": [
+    {
+     "ano": 2001,
+     "plantio": "2001-03-11",
+     "classe": "boa",
+     "y": 0.818,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      0.76
+     ],
+     "agua_plantio": 74.2,
+     "cad": 75.0
+    },
+    {
+     "ano": 2002,
+     "plantio": "2002-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 74.2,
+     "cad": 75.0
+    },
+    {
+     "ano": 2003,
+     "plantio": "2003-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 74.3,
+     "cad": 75.0
+    },
+    {
+     "ano": 2004,
+     "plantio": "2004-03-11",
+     "classe": "parcial",
+     "y": 0.689,
+     "isna": [
+      1.0,
+      1.0,
+      0.89,
+      0.71
+     ],
+     "agua_plantio": 74.2,
+     "cad": 75.0
+    },
+    {
+     "ano": 2005,
+     "plantio": "2005-03-11",
+     "classe": "perda",
+     "y": 0.406,
+     "isna": [
+      1.0,
+      1.0,
+      0.59,
+      0.66
+     ],
+     "agua_plantio": 61.9,
+     "cad": 75.0
+    },
+    {
+     "ano": 2006,
+     "plantio": "2006-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 73.5,
+     "cad": 75.0
+    },
+    {
+     "ano": 2007,
+     "plantio": "2007-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 74.3,
+     "cad": 75.0
+    },
+    {
+     "ano": 2008,
+     "plantio": "2008-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 74.1,
+     "cad": 75.0
+    },
+    {
+     "ano": 2009,
+     "plantio": "2009-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 74.0,
+     "cad": 75.0
+    },
+    {
+     "ano": 2010,
+     "plantio": "2010-03-11",
+     "classe": "boa",
+     "y": 0.946,
+     "isna": [
+      0.9,
+      1.0,
+      1.0,
+      0.95
+     ],
+     "agua_plantio": 46.1,
+     "cad": 75.0
+    },
+    {
+     "ano": 2011,
+     "plantio": "2011-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 74.4,
+     "cad": 75.0
+    },
+    {
+     "ano": 2012,
+     "plantio": "2012-03-11",
+     "classe": "total",
+     "y": 0.094,
+     "isna": [
+      1.0,
+      1.0,
+      0.38,
+      0.06
+     ],
+     "agua_plantio": 74.3,
+     "cad": 75.0
+    },
+    {
+     "ano": 2013,
+     "plantio": "2013-03-11",
+     "classe": "parcial",
+     "y": 0.621,
+     "isna": [
+      0.96,
+      0.8,
+      0.68,
+      1.0
+     ],
+     "agua_plantio": 45.0,
+     "cad": 75.0
+    },
+    {
+     "ano": 2014,
+     "plantio": "2014-03-11",
+     "classe": "boa",
+     "y": 0.76,
+     "isna": [
+      1.0,
+      1.0,
+      0.89,
+      0.82
+     ],
+     "agua_plantio": 71.7,
+     "cad": 75.0
+    },
+    {
+     "ano": 2015,
+     "plantio": "2015-03-11",
+     "classe": "perda",
+     "y": 0.348,
+     "isna": [
+      1.0,
+      1.0,
+      0.85,
+      0.22
+     ],
+     "agua_plantio": 74.4,
+     "cad": 75.0
+    },
+    {
+     "ano": 2016,
+     "plantio": "2016-03-11",
+     "classe": "perda",
+     "y": 0.586,
+     "isna": [
+      1.0,
+      1.0,
+      0.92,
+      0.53
+     ],
+     "agua_plantio": 68.3,
+     "cad": 75.0
+    },
+    {
+     "ano": 2017,
+     "plantio": "2017-03-11",
+     "classe": "parcial",
+     "y": 0.689,
+     "isna": [
+      1.0,
+      1.0,
+      0.9,
+      0.69
+     ],
+     "agua_plantio": 74.3,
+     "cad": 75.0
+    },
+    {
+     "ano": 2018,
+     "plantio": "2018-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 74.2,
+     "cad": 75.0
+    },
+    {
+     "ano": 2019,
+     "plantio": "2019-03-11",
+     "classe": "boa",
+     "y": 0.738,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      0.65
+     ],
+     "agua_plantio": 74.2,
+     "cad": 75.0
+    },
+    {
+     "ano": 2020,
+     "plantio": "2020-03-11",
+     "classe": "boa",
+     "y": 0.982,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      0.98
+     ],
+     "agua_plantio": 74.2,
+     "cad": 75.0
+    },
+    {
+     "ano": 2021,
+     "plantio": "2021-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 73.2,
+     "cad": 75.0
+    },
+    {
+     "ano": 2022,
+     "plantio": "2022-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 74.2,
+     "cad": 75.0
+    },
+    {
+     "ano": 2023,
+     "plantio": "2023-03-11",
+     "classe": "boa",
+     "y": 0.774,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      0.7
+     ],
+     "agua_plantio": 69.5,
+     "cad": 75.0
+    },
+    {
+     "ano": 2024,
+     "plantio": "2024-03-11",
+     "classe": "boa",
+     "y": 1.0,
+     "isna": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "agua_plantio": 74.2,
+     "cad": 75.0
+    },
+    {
+     "ano": 2025,
+     "plantio": "2025-03-11",
+     "classe": "total",
+     "y": 0.226,
+     "isna": [
+      1.0,
+      1.0,
+      0.66,
+      0.15
+     ],
+     "agua_plantio": 74.4,
+     "cad": 75.0
+    }
+   ]
+  }
+ ],
+ "janelas_caupi": [
+  {
+   "mes": 1,
+   "dia": 1,
+   "colhe_em_10": 2.0,
+   "dec": 1
+  },
+  {
+   "mes": 1,
+   "dia": 11,
+   "colhe_em_10": 5.2,
+   "dec": 2
+  },
+  {
+   "mes": 1,
+   "dia": 21,
+   "colhe_em_10": 6.0,
+   "dec": 3
+  },
+  {
+   "mes": 2,
+   "dia": 1,
+   "colhe_em_10": 7.6,
+   "dec": 4
+  },
+  {
+   "mes": 2,
+   "dia": 11,
+   "colhe_em_10": 8.0,
+   "dec": 5
+  },
+  {
+   "mes": 2,
+   "dia": 21,
+   "colhe_em_10": 8.4,
+   "dec": 6
+  },
+  {
+   "mes": 3,
+   "dia": 1,
+   "colhe_em_10": 8.4,
+   "dec": 7
+  },
+  {
+   "mes": 3,
+   "dia": 11,
+   "colhe_em_10": 8.0,
+   "dec": 8
+  },
+  {
+   "mes": 3,
+   "dia": 21,
+   "colhe_em_10": 6.8,
+   "dec": 9
+  },
+  {
+   "mes": 4,
+   "dia": 1,
+   "colhe_em_10": 6.0,
+   "dec": 10
+  },
+  {
+   "mes": 4,
+   "dia": 11,
+   "colhe_em_10": 4.4,
+   "dec": 11
+  },
+  {
+   "mes": 4,
+   "dia": 21,
+   "colhe_em_10": 4.8,
+   "dec": 12
+  },
+  {
+   "mes": 5,
+   "dia": 1,
+   "colhe_em_10": 2.8,
+   "dec": 13
+  },
+  {
+   "mes": 5,
+   "dia": 11,
+   "colhe_em_10": 1.6,
+   "dec": 14
+  },
+  {
+   "mes": 5,
+   "dia": 21,
+   "colhe_em_10": 1.6,
+   "dec": 15
+  },
+  {
+   "mes": 6,
+   "dia": 1,
+   "colhe_em_10": 0.4,
+   "dec": 16
+  },
+  {
+   "mes": 6,
+   "dia": 11,
+   "colhe_em_10": 0.0,
+   "dec": 17
+  },
+  {
+   "mes": 6,
+   "dia": 21,
+   "colhe_em_10": 0.0,
+   "dec": 18
+  }
+ ],
+ "janelas_milho": [
+  {
+   "mes": 1,
+   "dia": 1,
+   "colhe_em_10": 3.6,
+   "dec": 1
+  },
+  {
+   "mes": 1,
+   "dia": 11,
+   "colhe_em_10": 6.0,
+   "dec": 2
+  },
+  {
+   "mes": 1,
+   "dia": 21,
+   "colhe_em_10": 6.4,
+   "dec": 3
+  },
+  {
+   "mes": 2,
+   "dia": 1,
+   "colhe_em_10": 6.8,
+   "dec": 4
+  },
+  {
+   "mes": 2,
+   "dia": 11,
+   "colhe_em_10": 8.0,
+   "dec": 5
+  },
+  {
+   "mes": 2,
+   "dia": 21,
+   "colhe_em_10": 7.6,
+   "dec": 6
+  },
+  {
+   "mes": 3,
+   "dia": 1,
+   "colhe_em_10": 6.8,
+   "dec": 7
+  },
+  {
+   "mes": 3,
+   "dia": 11,
+   "colhe_em_10": 6.4,
+   "dec": 8
+  },
+  {
+   "mes": 3,
+   "dia": 21,
+   "colhe_em_10": 4.8,
+   "dec": 9
+  },
+  {
+   "mes": 4,
+   "dia": 1,
+   "colhe_em_10": 4.4,
+   "dec": 10
+  },
+  {
+   "mes": 4,
+   "dia": 11,
+   "colhe_em_10": 4.0,
+   "dec": 11
+  },
+  {
+   "mes": 4,
+   "dia": 21,
+   "colhe_em_10": 1.6,
+   "dec": 12
+  },
+  {
+   "mes": 5,
+   "dia": 1,
+   "colhe_em_10": 1.2,
+   "dec": 13
+  },
+  {
+   "mes": 5,
+   "dia": 11,
+   "colhe_em_10": 0.4,
+   "dec": 14
+  },
+  {
+   "mes": 5,
+   "dia": 21,
+   "colhe_em_10": 0.0,
+   "dec": 15
+  },
+  {
+   "mes": 6,
+   "dia": 1,
+   "colhe_em_10": 0.0,
+   "dec": 16
+  },
+  {
+   "mes": 6,
+   "dia": 11,
+   "colhe_em_10": 0.0,
+   "dec": 17
+  },
+  {
+   "mes": 6,
+   "dia": 21,
+   "colhe_em_10": 0.0,
+   "dec": 18
+  }
+ ],
+ "zarc_caupi_medio": {
+  "3": 40,
+  "4": 40,
+  "5": 40,
+  "6": 40,
+  "7": 30,
+  "8": 20,
+  "9": 20,
+  "10": 30
+ },
+ "et0_media": 6.47
+}

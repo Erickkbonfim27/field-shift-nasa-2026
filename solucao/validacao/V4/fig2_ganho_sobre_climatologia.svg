@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-label="Ganho sobre a média dos anos (SS, leave-one-out)">
+<style>
+svg{--bg:#fcfcfb;--t1:#0b0b0b;--t2:#52514e;--grid:#e4e3df;--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--band:#eef3fb}
+@media (prefers-color-scheme: dark){svg{--bg:#1a1a19;--t1:#f0efec;--t2:#c3c2b7;--grid:#3a3a37;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--band:#22303f}}
+text{font-family:system-ui,-apple-system,Segoe UI,sans-serif;fill:var(--t1)}
+.t2{fill:var(--t2)} .tit{font-size:15px;font-weight:600} .sm{font-size:11px}
+.grid{stroke:var(--grid);stroke-width:1} .axis{stroke:var(--t2);stroke-width:1}
+rect.mk:hover,circle.mk:hover{opacity:.75}
+</style>
+<rect width="900" height="470" fill="var(--bg)"/>
+<text x="60" y="26" class="tit">Ganho sobre a média dos anos (SS, leave-one-out)</text>
+<text x="60" y="46" class="t2 sm">SS > 0: erra menos que a climatologia. O flag de ano extremo sozinho ganha; somar módulos num ajuste estatístico perde.</text>
+<rect x="60" y="56" width="10" height="10" rx="2" fill="var(--s1)"/><text x="74" y="65" class="sm">só água por fase</text>
+<rect x="207.2" y="56" width="10" height="10" rx="2" fill="var(--s2)"/><text x="221.2" y="65" class="sm">só flag de extremo</text>
+<rect x="368.79999999999995" y="56" width="10" height="10" rx="2" fill="var(--s3)"/><text x="382.79999999999995" y="65" class="sm">água + flag</text>
+<rect x="479.99999999999994" y="56" width="10" height="10" rx="2" fill="var(--s4)"/><text x="493.99999999999994" y="65" class="sm">motor completo (6 variáveis)</text>
+<line x1="60" x2="880" y1="378.0" y2="378.0" class="grid"/>
+<text x="54" y="382.0" text-anchor="end" class="t2 sm">-0.3</text>
+<line x1="60" x2="880" y1="328.0" y2="328.0" class="grid"/>
+<text x="54" y="332.0" text-anchor="end" class="t2 sm">-0.2</text>
+<line x1="60" x2="880" y1="278.0" y2="278.0" class="grid"/>
+<text x="54" y="282.0" text-anchor="end" class="t2 sm">-0.1</text>
+<line x1="60" x2="880" y1="228.0" y2="228.0" class="grid"/>
+<text x="54" y="232.0" text-anchor="end" class="t2 sm">0</text>
+<line x1="60" x2="880" y1="178.0" y2="178.0" class="grid"/>
+<text x="54" y="182.0" text-anchor="end" class="t2 sm">+0.1</text>
+<line x1="60" x2="880" y1="128.0" y2="128.0" class="grid"/>
+<text x="54" y="132.0" text-anchor="end" class="t2 sm">+0.2</text>
+<line x1="60" x2="880" y1="78.0" y2="78.0" class="grid"/>
+<text x="54" y="82.0" text-anchor="end" class="t2 sm">+0.3</text>
+<line x1="60" x2="880" y1="228.0" y2="228.0" class="axis"/>
+<text x="16" y="228.0" transform="rotate(-90 16 228.0)" text-anchor="middle" class="t2 sm">SS = 1 − EQM / EQM da climatologia</text>
+<rect class="mk" x="114.5" y="228.0" width="22.0" height="47.0" rx="2" fill="var(--s1)"><title>Milho SMO|município · só água por fase: -0.09</title></rect>
+<rect class="mk" x="138.5" y="187.5" width="22.0" height="40.5" rx="2" fill="var(--s2)"><title>Milho SMO|município · só flag de extremo: +0.08</title></rect>
+<rect class="mk" x="162.5" y="228.0" width="22.0" height="28.0" rx="2" fill="var(--s3)"><title>Milho SMO|município · água + flag: -0.06</title></rect>
+<rect class="mk" x="186.5" y="228.0" width="22.0" height="37.5" rx="2" fill="var(--s4)"><title>Milho SMO|município · motor completo (6 variáveis): -0.07</title></rect>
+<text x="162.5" y="396" text-anchor="middle" class="sm ">Milho SMO</text>
+<text x="162.5" y="410" text-anchor="middle" class="sm t2">município</text>
+<rect class="mk" x="319.5" y="222.5" width="22.0" height="5.5" rx="2" fill="var(--s1)"><title>Milho SMO|microrregião · só água por fase: +0.01</title></rect>
+<rect class="mk" x="343.5" y="183.5" width="22.0" height="44.5" rx="2" fill="var(--s2)"><title>Milho SMO|microrregião · só flag de extremo: +0.09</title></rect>
+<rect class="mk" x="367.5" y="228.0" width="22.0" height="24.5" rx="2" fill="var(--s3)"><title>Milho SMO|microrregião · água + flag: -0.05</title></rect>
+<rect class="mk" x="391.5" y="228.0" width="22.0" height="37.5" rx="2" fill="var(--s4)"><title>Milho SMO|microrregião · motor completo (6 variáveis): -0.07</title></rect>
+<text x="367.5" y="396" text-anchor="middle" class="sm ">Milho SMO</text>
+<text x="367.5" y="410" text-anchor="middle" class="sm t2">microrregião</text>
+<rect class="mk" x="524.5" y="228.0" width="22.0" height="110.5" rx="2" fill="var(--s1)"><title>Cebola Itu|município · só água por fase: -0.22</title></rect>
+<rect class="mk" x="548.5" y="165.5" width="22.0" height="62.5" rx="2" fill="var(--s2)"><title>Cebola Itu|município · só flag de extremo: +0.12</title></rect>
+<rect class="mk" x="572.5" y="228.0" width="22.0" height="9.0" rx="2" fill="var(--s3)"><title>Cebola Itu|município · água + flag: -0.02</title></rect>
+<rect class="mk" x="596.5" y="201.0" width="22.0" height="27.0" rx="2" fill="var(--s4)"><title>Cebola Itu|município · motor completo (6 variáveis): +0.05</title></rect>
+<text x="572.5" y="396" text-anchor="middle" class="sm ">Cebola Itu</text>
+<text x="572.5" y="410" text-anchor="middle" class="sm t2">município</text>
+<rect class="mk" x="729.5" y="228.0" width="22.0" height="8.0" rx="2" fill="var(--s1)"><title>Cebola Itu|microrregião · só água por fase: -0.02</title></rect>
+<rect class="mk" x="753.5" y="118.5" width="22.0" height="109.5" rx="2" fill="var(--s2)"><title>Cebola Itu|microrregião · só flag de extremo: +0.22</title></rect>
+<rect class="mk" x="777.5" y="119.5" width="22.0" height="108.5" rx="2" fill="var(--s3)"><title>Cebola Itu|microrregião · água + flag: +0.22</title></rect>
+<rect class="mk" x="801.5" y="140.5" width="22.0" height="87.5" rx="2" fill="var(--s4)"><title>Cebola Itu|microrregião · motor completo (6 variáveis): +0.17</title></rect>
+<text x="777.5" y="396" text-anchor="middle" class="sm ">Cebola Itu</text>
+<text x="777.5" y="410" text-anchor="middle" class="sm t2">microrregião</text>
+</svg>

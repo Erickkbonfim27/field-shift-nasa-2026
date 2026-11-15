@@ -1,0 +1,25 @@
+== Última data com chance >= 80% de boa cobertura ==
+I-MIL g_cob x0.8: 29/01 | g_cob x1.0: 29/01 | g_cob x1.25: 29/01
+I-MUC g_cob x0.8: 29/01 | g_cob x1.0: 14/01 | g_cob x1.25: 25/12
+I-AVE g_cob x0.8: 30/04 | g_cob x1.0: 20/04 | g_cob x1.25: 10/04
+S-AVE g_cob x0.8: 30/05 | g_cob x1.0: 30/05 | g_cob x1.25: 15/05
+I-AVE prazo (7, 10) última data >=80%: 20/04 | P(15/04)= 0.93
+I-AVE prazo (7, 31) última data >=80%: 05/05 | P(15/04)= 0.98
+I-AVE prazo (6, 20) última data >=80%: 10/04 | P(15/04)= 0.38
+
+== Checagem sem modelo: % de anos com veranico >= 10 dias nos 20 dias após semear ==
+  Ituporanga semeadura 15/12: 0% dos anos
+  Ituporanga semeadura 15/01: 0% dos anos
+  Ituporanga semeadura 15/03: 5% dos anos
+  Ituporanga semeadura 15/04: 22% dos anos
+  Ituporanga semeadura 15/05: 29% dos anos
+  S.M.Oeste semeadura 15/12: 0% dos anos
+  S.M.Oeste semeadura 15/01: 2% dos anos
+  S.M.Oeste semeadura 15/03: 12% dos anos
+  S.M.Oeste semeadura 15/04: 12% dos anos
+  S.M.Oeste semeadura 15/05: 24% dos anos
+
+== Critério de morte mais duro (só solo superficial seco por 4 dias) ==
+I-MIL P mínimo na janela: 0.98 | P habitual: 1.0
+I-AVE P mínimo na janela: 0.0 | P habitual: 0.83
+S-AVE P mínimo na janela: 0.69 | P habitual: 1.0

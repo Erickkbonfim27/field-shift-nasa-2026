@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Field Shift · WhatsApp e auditoria</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body data-vista="zap">
+<header class="topo">
+  <a class="marca" href="escolher.html">Field Shift<small>Rotação com menos risco, com dados da NASA</small></a>
+  <div class="seletores">
+    <label>Local
+      <select id="selLocal" aria-label="Local"></select>
+    </label>
+    <label>Pergunta do agricultor
+      <select id="selPerg" aria-label="Pergunta do agricultor"></select>
+    </label>
+    <button type="button" id="btnTema" data-act="tema" aria-label="Trocar entre tema claro e escuro">Tema</button>
+  </div>
+</header>
+
+<div id="aviso" role="status"></div>
+
+<div class="vistas" role="group" aria-label="O que mostrar">
+  <button type="button" data-act="vista" data-v="zap" aria-pressed="true">WhatsApp do agricultor</button>
+  <button type="button" data-act="vista" data-v="aud" aria-pressed="false">Auditoria do técnico</button>
+</div>
+
+<main class="grade" id="grade">
+  <section id="zap" class="fone" aria-label="Simulação do WhatsApp do agricultor (personagens fictícios)">
+    <div class="fone-cab">
+      <span class="avatar" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-9"/><path d="M12 12c0-4 2.5-6.500 7-7 0 4.500-2.500 7-7 7z"/><path d="M12 15c0-3-2-5-6-5.500 0 3.500 2 5.500 6 5.500z"/></svg>
+      </span>
+      <div><b>Assistente da roça</b><small>simulação · personagens fictícios</small></div>
+    </div>
+    <div class="chat" id="chat"><p class="peq">Carregando…</p></div>
+  </section>
+
+  <section id="aud" class="aud" aria-label="Painel de auditoria do técnico">
+    <div class="rotulo">Auditoria · para o técnico ou extensionista</div>
+    <div id="audCtx"></div>
+    <div class="abas" role="group" aria-label="Seções da auditoria" id="abas"></div>
+    <div id="audCorpo"></div>
+  </section>
+</main>
+
+<script src="comum.js"></script>
+<script src="graficos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abordagem A · Conversa</title>
+<link rel="stylesheet" href="comum.css">
+<style>
+  .grade { display: grid; grid-template-columns: 380px 1fr; gap: 20px; padding: 16px; max-width: 1200px; margin: 0 auto; align-items: start; }
+  .fone { background: var(--zap-fundo); border: 1px solid var(--linha); border-radius: 28px; padding: 0 0 14px; overflow: hidden; position: sticky; top: 12px; }
+  .fone header { background: var(--destaque); color: #fff; padding: 12px 16px; font-weight: 600; display: flex; gap: 10px; align-items: center; }
+  .fone header small { font-weight: 400; opacity: .85; display: block; }
+  .chat { padding: 12px; display: flex; flex-direction: column; gap: 10px; }
+  .bolha { max-width: 88%; padding: 8px 10px; border-radius: 10px; background: var(--cartao); box-shadow: 0 1px 1px rgba(0,0,0,.08); font-size: 15px; }
+  .bolha.eu { align-self: flex-end; background: var(--zap); }
+  .audio { display: flex; align-items: center; gap: 8px; }
+  .audio .play { width: 30px; height: 30px; border-radius: 50%; background: var(--destaque); color: #fff; display: grid; place-items: center; font-size: 12px; flex: none; }
+  .audio .onda { flex: 1; height: 22px; background: repeating-linear-gradient(90deg, var(--cinza) 0 2px, transparent 2px 5px); opacity: .6; mask: linear-gradient(transparent 0, #000 25%, #000 75%, transparent 100%); }
+  .transcricao { font-size: 12.5px; color: var(--texto2); margin-top: 4px; font-style: italic; }
+  .cartaozap { padding: 0; overflow: hidden; width: 100%; max-width: 100%; }
+  .cartaozap .cab { background: var(--destaque); color: #fff; padding: 8px 12px; font-weight: 700; font-size: 14px; }
+  .linha { display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; align-items: center; width: 100%; text-align: left; border: 0; border-bottom: 1px solid var(--linha); border-radius: 0; background: transparent; padding: 8px 12px; min-height: 56px; }
+  .linha.sel { background: color-mix(in srgb, var(--destaque) 12%, transparent); }
+  .linha b { font-size: 14px; } .linha .n { font-size: 20px; font-weight: 800; justify-self: end; }
+  .linha .sacos { grid-column: 1 / -1; }
+  .cartaozap .rod { padding: 8px 12px; font-size: 12px; color: var(--texto2); }
+  .auditoria .abas { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+  .rastro span.num { background: color-mix(in srgb, var(--medio) 30%, transparent); border-radius: 4px; padding: 0 3px; font-weight: 700; }
+  .kpis { display: flex; gap: 10px; flex-wrap: wrap; margin: 8px 0 12px; }
+  .kpi { border: 1px solid var(--linha); border-radius: 10px; padding: 8px 12px; min-width: 120px; }
+  .kpi b { font-size: 20px; display: block; }
+  @media (max-width: 900px) { .grade { grid-template-columns: 1fr; } .fone { position: static; } }
+</style>
+</head>
+<body>
+<div class="topo">
+  <h1>Abordagem A · Conversa primeiro</h1>
+  <nav><a href="a.html" aria-current="page">A · Conversa</a><a href="b.html">B · Calendário</a></nav>
+  <span class="selo" id="selo">carregando…</span>
+</div>
+<div class="grade">
+  <section class="fone" aria-label="Simulação do WhatsApp do agricultor">
+    <header><span style="font-size:22px">🌱</span><div>Assistente da roça<small>simulação, personagem fictícia</small></div></header>
+    <div class="chat" id="chat"></div>
+  </section>
+  <section class="auditoria cartao" aria-label="Painel de auditoria do intermediário">
+    <div class="rotulo">Auditoria · para o técnico ou sindicato</div>
+    <h2 id="audTitulo">…</h2>
+    <div class="abas" role="tablist" id="abas"></div>
+    <div id="audCorpo"></div>
+  </section>
+</div>
+<script src="comum.js"></script>
+<script>
+let D, sel = "A", aba = "porque";
+const ABAS = [["porque", "Por que esta resposta"], ["anos", "25 anos"], ["valida", "Validação"], ["limites", "O que não sabemos"]];
+
+carregar().then((d) => { D = d; document.getElementById("selo").textContent = `${d.municipio} · ${d.periodo} · solo ${d.solo_padrao === "medio" ? "médio" : d.solo_padrao}`; desenhar(); })
+  .catch((e) => { document.body.innerHTML = `<p style="padding:20px">Erro: ${e.message}. Abra por um servidor local (python3 -m http.server).</p>`; });
+
+function desenhar() {
+  const m = mensagem(D);
+  const seg = Math.round(m.palavras / 2.6);
+  document.getElementById("chat").innerHTML = `
+    <div class="bolha eu"><div class="audio"><span class="play">▶</span><span class="onda"></span><span class="peq">0:07</span></div>
+      <div class="transcricao">“Choveu bem ontem. Eu planto o milho agora ou espero mais?”</div></div>
+    <div class="bolha eu">📍 Localização enviada<br><span class="peq">Quixadá, CE</span></div>
+    <div class="bolha"><div class="audio"><span class="play">▶</span><span class="onda"></span><span class="peq">0:${String(seg).padStart(2, "0")}</span></div>
+      <div class="transcricao">${m.texto}</div></div>
+    <div class="bolha cartaozap">
+      <div class="cab">Chance de colher bem · em 10 anos</div>
+      ${m.ordenadas.map((e) => `<button class="linha ${e.id === sel ? "sel" : ""}" data-id="${e.id}" aria-pressed="${e.id === sel}">
+          <b>${e.nome}</b><span class="n">${Math.round(e.colhe_em_10)}</span>${sacos(e.colhe_em_10, 22)}</button>`).join("")}
+      <div class="rod">Toque numa opção para o técnico ver por quê. Chance, não garantia.</div>
+    </div>`;
+  document.querySelectorAll(".linha").forEach((b) => b.onclick = () => { sel = b.dataset.id; desenhar(); });
+  document.getElementById("abas").innerHTML = ABAS.map(([k, t]) => `<button role="tab" aria-pressed="${k === aba}" data-k="${k}">${t}</button>`).join("");
+  document.querySelectorAll("#abas button").forEach((b) => b.onclick = () => { aba = b.dataset.k; desenhar(); });
+  const e = D.estrategias.find((x) => x.id === sel);
+  document.getElementById("audTitulo").textContent = `${e.id}. ${e.nome}`;
+  document.getElementById("audCorpo").innerHTML = corpo(e, m, seg);
+}
+
+function corpo(e, m, seg) {
+  if (aba === "porque") {
+    const ruins = e.anos.filter((a) => a.y < D.limiar_colhe).map((a) => a.ano);
+    return `
+    <div class="kpis">
+      <div class="kpi"><b>${e.colhe_em_10.toFixed(1)} / 10</b><span class="peq">anos com colheita ≥ ${Math.round(D.limiar_colhe * 100)}%</span></div>
+      <div class="kpi"><b>${Math.round(e.y_mediano * 100)}%</b><span class="peq">rendimento do ano típico</span></div>
+      <div class="kpi"><b>${e.pior_fase ?? "—"}</b><span class="peq">fase que mais derruba</span></div>
+    </div>
+    ${graficoAnos(e)}
+    <p class="peq">Cada barra é um ano de plantio. Anos abaixo da linha de 60% contam como perda: <b>${ruins.join(", ") || "nenhum"}</b>.</p>
+    ${e.cond_cedo && e.cond_tarde ? `<p class="peq">Se a chuva firmou até 31/jan: <b>${e.cond_cedo[0]}</b> em 10 (${e.cond_cedo[1]} anos). Depois: <b>${e.cond_tarde[0]}</b> em 10 (${e.cond_tarde[1]} anos). Amostra pequena, só indício.</p>` : ""}
+    <h3>Rastro da mensagem (nada foi inventado pelo modelo de linguagem)</h3>
+    <p class="rastro">${m.texto.replace(/\b(\d+)\b/g, '<span class="num">$1</span>')}</p>
+    <p class="peq">Cada número destacado vem da tabela “25 anos”. O texto é um modelo fixo; o assistente só transcreve o áudio e lê esta mensagem (${m.palavras} palavras, ≈${seg} s).</p>
+    <h3>Parâmetros</h3>${painelParametros(e, D)}`;
+  }
+  if (aba === "anos") return `<div style="max-height:480px;overflow:auto">${tabelaAnos(e)}</div>`;
+  if (aba === "valida") {
+    const c = compararZarc(D); const ok = c.filter((x) => x.consistente).length;
+    const sec = validacaoSecas(D);
+    return `<h3>1. Contra o ZARC (caupi, solo médio, Quixadá)</h3>
+      <p class="peq">Barra = risco que calculamos. Traço preto = nível do ZARC (“até X%”); “fora” = não recomendado. Verde = consistente.</p>
+      ${graficoZarc(D)}
+      <p><b>${ok} de ${c.length}</b> decêndios consistentes. Os que discordam: ${c.filter((x) => !x.consistente).map((x) => `${x.dia}/${mesNome(x.mes)}`).join(", ") || "nenhum"}.</p>
+      <h3>2. Contra anos de seca conhecidos no Ceará</h3>
+      <table class="tab"><thead><tr><th>Estratégia</th><th>Rend. nos anos de seca*</th><th>Demais anos</th></tr></thead><tbody>${sec.map((s) => `<tr><td>${s.id}. ${s.nome}</td><td>${Math.round(s.seca * 100)}%</td><td>${Math.round(s.outros * 100)}%</td></tr>`).join("")}</tbody></table>
+      <p class="peq">*2001, 2010, 2012–2017 e 2019. Lista de anos de seca feita de memória, a conferir com a Funceme.</p>
+      <p class="aviso">Falta ainda: NDVI do Sentinel-2/Landsat no talhão, Garantia-Safra pago e IBGE PAM.</p>`;
+  }
+  return `<ul>
+    <li><b>Chuva em grade grossa</b> (~50 km, NASA POWER). O IMERG (10 km) e o SMAP ainda não entraram.</li>
+    <li><b>Solo vem da resposta do agricultor</b>, não de medição. Só o solo médio foi calculado neste protótipo.</li>
+    <li><b>Kc e Ky genéricos</b> (FAO). A curva real no Semiárido não foi calibrada.</li>
+    <li><b>Rotação e solo no ano seguinte:</b> não calculados.</li>
+    <li><b>Fora do modelo:</b> praga, semente, mão de obra, preço. O sorgo só vale se houver comprador.</li>
+    <li><b>2025:</b> a reanálise indica que a chuva não firmou. Conferir com pluviômetro.</li>
+    <li><b>Sem teste com agricultor.</b> Esta tela foi avaliada só por critérios de legibilidade.</li></ul>`;
+}
+</script>
+</body>
+</html>

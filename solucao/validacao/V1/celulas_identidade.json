@@ -1,0 +1,176 @@
+{
+ "abelardo_luz": {
+  "coord": [
+   -26.562,
+   -52.256
+  ],
+  "mais_parecido": "ipuacu",
+  "frac_dias_iguais": 1.0,
+  "iguais_a": [
+   "ipuacu",
+   "quilombo"
+  ]
+ },
+ "bom_retiro": {
+  "coord": [
+   -27.785,
+   -49.563
+  ],
+  "mais_parecido": "pedras_grandes",
+  "frac_dias_iguais": 0.091,
+  "iguais_a": []
+ },
+ "campo_alegre": {
+  "coord": [
+   -26.121,
+   -49.218
+  ],
+  "mais_parecido": "itaiopolis",
+  "frac_dias_iguais": 0.056,
+  "iguais_a": []
+ },
+ "campos_novos": {
+  "coord": [
+   -27.413,
+   -51.245
+  ],
+  "mais_parecido": "concordia",
+  "frac_dias_iguais": 0.142,
+  "iguais_a": []
+ },
+ "curitibanos": {
+  "coord": [
+   -27.293,
+   -50.617
+  ],
+  "mais_parecido": "sao_jose_do_cerrito",
+  "frac_dias_iguais": 1.0,
+  "iguais_a": [
+   "sao_jose_do_cerrito"
+  ]
+ },
+ "fraiburgo": {
+  "coord": [
+   -27.038,
+   -50.872
+  ],
+  "mais_parecido": "lebon_regis",
+  "frac_dias_iguais": 1.0,
+  "iguais_a": [
+   "lebon_regis"
+  ]
+ },
+ "icara": {
+  "coord": [
+   -28.752,
+   -49.277
+  ],
+  "mais_parecido": "turvo",
+  "frac_dias_iguais": 0.107,
+  "iguais_a": []
+ },
+ "ipuacu": {
+  "coord": [
+   -26.679,
+   -52.476
+  ],
+  "mais_parecido": "abelardo_luz",
+  "frac_dias_iguais": 1.0,
+  "iguais_a": [
+   "abelardo_luz",
+   "quilombo"
+  ]
+ },
+ "irineopolis": {
+  "coord": [
+   -26.357,
+   -50.761
+  ],
+  "mais_parecido": "fraiburgo",
+  "frac_dias_iguais": 0.131,
+  "iguais_a": []
+ },
+ "itaiopolis": {
+  "coord": [
+   -26.472,
+   -49.891
+  ],
+  "mais_parecido": "irineopolis",
+  "frac_dias_iguais": 0.119,
+  "iguais_a": []
+ },
+ "lebon_regis": {
+  "coord": [
+   -26.858,
+   -50.703
+  ],
+  "mais_parecido": "fraiburgo",
+  "frac_dias_iguais": 1.0,
+  "iguais_a": [
+   "fraiburgo"
+  ]
+ },
+ "pedras_grandes": {
+  "coord": [
+   -28.479,
+   -49.205
+  ],
+  "mais_parecido": "treze_de_maio",
+  "frac_dias_iguais": 1.0,
+  "iguais_a": [
+   "treze_de_maio"
+  ]
+ },
+ "quilombo": {
+  "coord": [
+   -26.729,
+   -52.718
+  ],
+  "mais_parecido": "abelardo_luz",
+  "frac_dias_iguais": 1.0,
+  "iguais_a": [
+   "abelardo_luz",
+   "ipuacu"
+  ]
+ },
+ "sao_jose_do_cerrito": {
+  "coord": [
+   -27.598,
+   -50.65
+  ],
+  "mais_parecido": "curitibanos",
+  "frac_dias_iguais": 1.0,
+  "iguais_a": [
+   "curitibanos"
+  ]
+ },
+ "sao_pedro_de_alcantara": {
+  "coord": [
+   -27.592,
+   -48.837
+  ],
+  "mais_parecido": "ituporanga",
+  "frac_dias_iguais": 0.114,
+  "iguais_a": []
+ },
+ "treze_de_maio": {
+  "coord": [
+   -28.566,
+   -49.154
+  ],
+  "mais_parecido": "pedras_grandes",
+  "frac_dias_iguais": 1.0,
+  "iguais_a": [
+   "pedras_grandes"
+  ]
+ },
+ "turvo": {
+  "coord": [
+   -28.903,
+   -49.703
+  ],
+  "mais_parecido": "icara",
+  "frac_dias_iguais": 0.107,
+  "iguais_a": []
+ }
+}

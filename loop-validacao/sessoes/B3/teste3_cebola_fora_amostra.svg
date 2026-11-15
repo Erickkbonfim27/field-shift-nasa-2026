@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" font-family="sans-serif" font-size="12">
+<rect width="100%" height="100%" fill="white"/>
+<text x="380.0" y="24" text-anchor="middle" font-size="15" font-weight="bold">Fora da amostra (cebola): regra fixa nas microrregiões vizinhas</text>
+<line x1="60" y1="420" x2="700" y2="420" stroke="#333"/>
+<line x1="60" y1="60" x2="60" y2="420" stroke="#333"/>
+<text x="380.0" y="462" text-anchor="middle">Excedente hídrico de 1/set a 30/nov, mm (NASA POWER)</text>
+<text x="16" y="240.0" text-anchor="middle" transform="rotate(-90 16 240.0)">Rendimento / mediana dos vizinhos (IBGE PAM)</text>
+<text x="54" y="424.0" text-anchor="end">0.40</text>
+<text x="60.0" y="436" text-anchor="middle">-27.46</text>
+<text x="54" y="352.0" text-anchor="end">0.62</text>
+<text x="188.0" y="436" text-anchor="middle">116.81</text>
+<text x="54" y="280.0" text-anchor="end">0.84</text>
+<text x="316.0" y="436" text-anchor="middle">261.07</text>
+<text x="54" y="208.0" text-anchor="end">1.05</text>
+<text x="444.0" y="436" text-anchor="middle">405.34</text>
+<text x="54" y="135.99999999999994" text-anchor="end">1.27</text>
+<text x="572.0" y="436" text-anchor="middle">549.61</text>
+<text x="54" y="64.0" text-anchor="end">1.49</text>
+<text x="700.0" y="436" text-anchor="middle">693.88</text>
+<line x1="60" y1="271.5092402464066" x2="700" y2="271.5092402464066" stroke="#c33" stroke-dasharray="5,4"/>
+<text x="700" y="266.5092402464066" text-anchor="end" fill="#c33">ano ruim (≤ 85% da mediana)</text>
+<line x1="403.77112485905286" y1="60" x2="403.77112485905286" y2="420" stroke="#36c" stroke-dasharray="5,4"/>
+<text x="407.77112485905286" y="72" fill="#36c">limiar do alerta</text>
+<circle cx="324.9" cy="258.7" r="4" fill="#555"/>
+<text x="329.9" y="253.7" font-size="10" fill="#555">1990 Rio</text>
+<circle cx="259.7" cy="225.8" r="4" fill="#555"/>
+<text x="264.7" y="220.8" font-size="10" fill="#555">1991 Rio</text>
+<circle cx="153.2" cy="207.1" r="4" fill="#555"/>
+<text x="158.2" y="202.1" font-size="10" fill="#555">1992 Rio</text>
+<circle cx="298.6" cy="206.5" r="4" fill="#555"/>
+<text x="303.6" y="201.5" font-size="10" fill="#555">1993 Rio</text>
+<circle cx="177.1" cy="240.3" r="4" fill="#555"/>
+<text x="182.1" y="235.3" font-size="10" fill="#555">1994 Rio</text>
+<circle cx="227.8" cy="208.0" r="4" fill="#555"/>
+<text x="232.8" y="203.0" font-size="10" fill="#555">1995 Rio</text>
+<circle cx="246.0" cy="265.0" r="4" fill="#555"/>
+<text x="251.0" y="260.0" font-size="10" fill="#555">1996 Rio</text>
+<circle cx="504.5" cy="221.5" r="4" fill="#555"/>
+<text x="509.5" y="216.5" font-size="10" fill="#555">1997 Rio</text>
+<circle cx="391.6" cy="271.7" r="4" fill="#c33"/>
+<text x="396.6" y="266.7" font-size="10" fill="#c33">1998 Rio</text>
+<circle cx="258.5" cy="178.8" r="4" fill="#555"/>
+<text x="263.5" y="173.8" font-size="10" fill="#555">1999 Rio</text>
+<circle cx="312.1" cy="142.6" r="4" fill="#555"/>
+<text x="317.1" y="137.6" font-size="10" fill="#555">2000 Rio</text>
+<circle cx="339.7" cy="151.5" r="4" fill="#555"/>
+<text x="344.7" y="146.5" font-size="10" fill="#555">2001 Rio</text>
+<circle cx="342.0" cy="254.6" r="4" fill="#555"/>
+<text x="347.0" y="249.6" font-size="10" fill="#555">2002 Rio</text>
+<circle cx="142.4" cy="300.7" r="4" fill="#c33"/>
+<text x="147.4" y="295.7" font-size="10" fill="#c33">2003 Rio</text>
+<circle cx="266.8" cy="148.4" r="4" fill="#555"/>
+<text x="271.8" y="143.4" font-size="10" fill="#555">2004 Rio</text>
+<circle cx="374.1" cy="246.0" r="4" fill="#555"/>
+<text x="379.1" y="241.0" font-size="10" fill="#555">2005 Rio</text>
+<circle cx="203.8" cy="182.5" r="4" fill="#555"/>
+<text x="208.8" y="177.5" font-size="10" fill="#555">2006 Rio</text>
+<circle cx="260.4" cy="236.0" r="4" fill="#555"/>
+<text x="265.4" y="231.0" font-size="10" fill="#555">2007 Rio</text>
+<circle cx="572.2" cy="255.9" r="4" fill="#555"/>
+<text x="577.2" y="250.9" font-size="10" fill="#555">2008 Rio</text>
+<circle cx="393.4" cy="242.5" r="4" fill="#555"/>
+<text x="398.4" y="237.5" font-size="10" fill="#555">2009 Rio</text>
+<circle cx="181.1" cy="116.9" r="4" fill="#555"/>
+<text x="186.1" y="111.9" font-size="10" fill="#555">2010 Rio</text>
+<circle cx="251.3" cy="205.8" r="4" fill="#555"/>
+<text x="256.3" y="200.8" font-size="10" fill="#555">2011 Rio</text>
+<circle cx="124.6" cy="286.4" r="4" fill="#c33"/>
+<text x="129.6" y="281.4" font-size="10" fill="#c33">2012 Rio</text>
+<circle cx="239.7" cy="165.9" r="4" fill="#555"/>
+<text x="244.7" y="160.9" font-size="10" fill="#555">2013 Rio</text>
+<circle cx="211.9" cy="186.7" r="4" fill="#555"/>
+<text x="216.9" y="181.7" font-size="10" fill="#555">2014 Rio</text>
+<circle cx="472.5" cy="367.6" r="4" fill="#c33"/>
+<text x="477.5" y="362.6" font-size="10" fill="#c33">2015 Rio</text>
+<circle cx="193.8" cy="216.3" r="4" fill="#555"/>
+<text x="198.8" y="211.3" font-size="10" fill="#555">2016 Rio</text>
+<circle cx="159.6" cy="234.6" r="4" fill="#555"/>
+<text x="164.6" y="229.6" font-size="10" fill="#555">2017 Rio</text>
+<circle cx="266.9" cy="182.4" r="4" fill="#555"/>
+<text x="271.9" y="177.4" font-size="10" fill="#555">2018 Rio</text>
+<circle cx="195.3" cy="300.0" r="4" fill="#c33"/>
+<text x="200.3" y="295.0" font-size="10" fill="#c33">2019 Rio</text>
+<circle cx="89.1" cy="237.9" r="4" fill="#555"/>
+<text x="94.1" y="232.9" font-size="10" fill="#555">2020 Rio</text>
+<circle cx="242.6" cy="185.3" r="4" fill="#555"/>
+<text x="247.6" y="180.3" font-size="10" fill="#555">2021 Rio</text>
+<circle cx="331.0" cy="185.5" r="4" fill="#555"/>
+<text x="336.0" y="180.5" font-size="10" fill="#555">2022 Rio</text>
+<circle cx="609.2" cy="296.0" r="4" fill="#c33"/>
+<text x="614.2" y="291.0" font-size="10" fill="#c33">2023 Rio</text>
+<circle cx="172.3" cy="239.6" r="4" fill="#555"/>
+<text x="177.3" y="234.6" font-size="10" fill="#555">2024 Rio</text>
+<circle cx="116.3" cy="168.3" r="4" fill="#555"/>
+<text x="121.3" y="163.3" font-size="10" fill="#555">2025 Rio</text>
+<circle cx="332.0" cy="201.2" r="4" fill="#555"/>
+<text x="337.0" y="196.2" font-size="10" fill="#555">1990 Tab</text>
+<circle cx="242.8" cy="236.3" r="4" fill="#555"/>
+<text x="247.8" y="231.3" font-size="10" fill="#555">1991 Tab</text>
+<circle cx="142.8" cy="224.1" r="4" fill="#555"/>
+<text x="147.8" y="219.1" font-size="10" fill="#555">1992 Tab</text>
+<circle cx="257.2" cy="218.3" r="4" fill="#555"/>
+<text x="262.2" y="213.3" font-size="10" fill="#555">1993 Tab</text>
+<circle cx="161.4" cy="167.0" r="4" fill="#555"/>
+<text x="166.4" y="162.0" font-size="10" fill="#555">1994 Tab</text>
+<circle cx="223.1" cy="231.0" r="4" fill="#555"/>
+<text x="228.1" y="226.0" font-size="10" fill="#555">1995 Tab</text>
+<circle cx="239.5" cy="305.2" r="4" fill="#c33"/>
+<text x="244.5" y="300.2" font-size="10" fill="#c33">1996 Tab</text>
+<circle cx="480.7" cy="268.8" r="4" fill="#555"/>
+<text x="485.7" y="263.8" font-size="10" fill="#555">1997 Tab</text>
+<circle cx="334.8" cy="267.4" r="4" fill="#555"/>
+<text x="339.8" y="262.4" font-size="10" fill="#555">1998 Tab</text>
+<circle cx="230.3" cy="150.6" r="4" fill="#555"/>
+<text x="235.3" y="145.6" font-size="10" fill="#555">1999 Tab</text>
+<circle cx="330.1" cy="165.4" r="4" fill="#555"/>
+<text x="335.1" y="160.4" font-size="10" fill="#555">2000 Tab</text>
+<circle cx="363.6" cy="246.9" r="4" fill="#555"/>
+<text x="368.6" y="241.9" font-size="10" fill="#555">2001 Tab</text>
+<circle cx="335.2" cy="268.3" r="4" fill="#555"/>
+<text x="340.2" y="263.3" font-size="10" fill="#555">2002 Tab</text>
+<circle cx="159.7" cy="250.6" r="4" fill="#555"/>
+<text x="164.7" y="245.6" font-size="10" fill="#555">2003 Tab</text>
+<circle cx="277.4" cy="198.8" r="4" fill="#555"/>
+<text x="282.4" y="193.8" font-size="10" fill="#555">2004 Tab</text>
+<circle cx="389.9" cy="207.3" r="4" fill="#555"/>
+<text x="394.9" y="202.3" font-size="10" fill="#555">2005 Tab</text>
+<circle cx="212.9" cy="194.3" r="4" fill="#555"/>
+<text x="217.9" y="189.3" font-size="10" fill="#555">2006 Tab</text>
+<circle cx="258.5" cy="203.7" r="4" fill="#555"/>
+<text x="263.5" y="198.7" font-size="10" fill="#555">2007 Tab</text>
+<circle cx="534.0" cy="274.8" r="4" fill="#c33"/>
+<text x="539.0" y="269.8" font-size="10" fill="#c33">2008 Tab</text>
+<circle cx="396.6" cy="138.6" r="4" fill="#555"/>
+<text x="401.6" y="133.6" font-size="10" fill="#555">2009 Tab</text>
+<circle cx="187.8" cy="130.7" r="4" fill="#555"/>
+<text x="192.8" y="125.7" font-size="10" fill="#555">2010 Tab</text>
+<circle cx="238.4" cy="312.6" r="4" fill="#c33"/>
+<text x="243.4" y="307.6" font-size="10" fill="#c33">2011 Tab</text>
+<circle cx="161.2" cy="317.8" r="4" fill="#c33"/>
+<text x="166.2" y="312.8" font-size="10" fill="#c33">2012 Tab</text>
+<circle cx="252.7" cy="68.0" r="4" fill="#555"/>
+<text x="257.7" y="63.0" font-size="10" fill="#555">2013 Tab</text>
+<circle cx="230.1" cy="60.0" r="4" fill="#555"/>
+<text x="235.1" y="55.0" font-size="10" fill="#555">2014 Tab</text>
+<circle cx="412.1" cy="299.1" r="4" fill="#c33"/>
+<text x="417.1" y="294.1" font-size="10" fill="#c33">2015 Tab</text>
+<circle cx="218.6" cy="316.6" r="4" fill="#c33"/>
+<text x="223.6" y="311.6" font-size="10" fill="#c33">2016 Tab</text>
+<circle cx="173.6" cy="260.4" r="4" fill="#555"/>
+<text x="178.6" y="255.4" font-size="10" fill="#555">2017 Tab</text>
+<circle cx="243.1" cy="189.0" r="4" fill="#555"/>
+<text x="248.1" y="184.0" font-size="10" fill="#555">2018 Tab</text>
+<circle cx="198.8" cy="206.5" r="4" fill="#555"/>
+<text x="203.8" y="201.5" font-size="10" fill="#555">2019 Tab</text>
+<circle cx="107.1" cy="224.8" r="4" fill="#555"/>
+<text x="112.1" y="219.8" font-size="10" fill="#555">2020 Tab</text>
+<circle cx="265.1" cy="226.9" r="4" fill="#555"/>
+<text x="270.1" y="221.9" font-size="10" fill="#555">2021 Tab</text>
+<circle cx="308.8" cy="230.1" r="4" fill="#555"/>
+<text x="313.8" y="225.1" font-size="10" fill="#555">2022 Tab</text>
+<circle cx="670.9" cy="254.9" r="4" fill="#555"/>
+<text x="675.9" y="249.9" font-size="10" fill="#555">2023 Tab</text>
+<circle cx="200.7" cy="137.4" r="4" fill="#555"/>
+<text x="205.7" y="132.4" font-size="10" fill="#555">2024 Tab</text>
+<circle cx="147.9" cy="131.3" r="4" fill="#555"/>
+<text x="152.9" y="126.3" font-size="10" fill="#555">2025 Tab</text>
+</svg>

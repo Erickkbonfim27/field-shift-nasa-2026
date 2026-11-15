@@ -1,0 +1,2588 @@
+{
+  "versao_contrato": "2.1.0",
+  "gerado_em": "2026-11-14T22:24:36-03:00",
+  "modo": "replay",
+  "data_referencia": "2022-01-25",
+  "safra": "2021/22",
+  "motor": {
+    "versao": "0.2.0",
+    "commit": null
+  },
+  "local": {
+    "id": "L-sao-miguel-do-oeste",
+    "municipio": "São Miguel do Oeste",
+    "uf": "SC",
+    "codigo_ibge": "4217204",
+    "lat": -26.725,
+    "lon": -53.518,
+    "ponto_power": {
+      "lat": -26.725,
+      "lon": -53.518,
+      "alt_grade_m": 533.01,
+      "resolucao_km": 50,
+      "mesma_celula_que": [
+        "Dionísio Cerqueira"
+      ]
+    },
+    "dentro_da_area_testada": true
+  },
+  "talhao": {
+    "id": "T-encosta-de-cima",
+    "nome": "Encosta de cima",
+    "area_ha": null,
+    "solo_declarado": "raso_ou_pedregoso",
+    "cad_mm": {
+      "valor": 39.0,
+      "fonte": "pergunta+gaez",
+      "nota": "65 mm/m (classe areia do GAEZ, aplicada ao solo raso: o GAEZ não mede profundidade e isso não foi testado) x 0,6 m (raiz do ZARC) = 39,0 mm. A V3 validou com 42 mm; o motor reproduz a V3 com 42 mm nos testes.",
+      "rastro": [
+        "R-PROD-SOLO",
+        "R-GAEZ-CAD",
+        "R-CALC-CAD"
+      ]
+    },
+    "srtm": {
+      "declive_pct": 9.6,
+      "tpi_m": 4.9,
+      "marca_confirme": true,
+      "nivel_evidencia": "N1",
+      "rastro": [
+        "R-SRTM-T"
+      ]
+    },
+    "ciclo_gdd": {
+      "valor": 1250,
+      "fonte": "padrao"
+    },
+    "colheita_verao": "2022-01-20",
+    "fotos_registro": []
+  },
+  "produtor": {
+    "id_pseudonimo": "P-3fa9c210",
+    "prioridade": "silagem_garantida",
+    "atividade": "leite_milho"
+  },
+  "regiao": {
+    "id": "sc_extremo_oeste",
+    "nome": "Extremo Oeste de SC (leite e milho)",
+    "papel": "principal",
+    "modulos_ativos": [
+      "agua_isna",
+      "geada_janela_safra",
+      "geada_limite_2a_safra",
+      "ano_extremo_seco",
+      "mistura_talhao",
+      "sorgo_2a_safra"
+    ]
+  },
+  "modulos": [
+    {
+      "id": "agua_isna",
+      "nome": "Água por fase (ISNA, FAO-56/FAO-33)",
+      "ativo": true,
+      "nivel_evidencia": "N1",
+      "papel": "insumo",
+      "motivo": "Em SC não explica o rendimento do ano (rho 0,28, igual à chuva bruta). Só alimenta o alerta de ano seco e a mistura por talhão.",
+      "validacao": [
+        {
+          "ref": "B1-0",
+          "caminho": "loop-validacao/fichas/B1-0-controle.md",
+          "resultado": "rho 0,28 contra a PAM do milho de SMO; chuva dez-fev 0,23"
+        },
+        {
+          "ref": "V4",
+          "caminho": "solucao/validacao/V4/relatorio.md",
+          "resultado": "nenhum critério M1-M6 passou no milho"
+        }
+      ],
+      "nao_ve": [
+        "quebras de 1991, 2002, 2005 e 2021 no milho de SMO",
+        "doença, praga, manejo"
+      ]
+    },
+    {
+      "id": "geada_janela_safra",
+      "nome": "Geada no milho de verão (tira agosto da janela)",
+      "ativo": true,
+      "nivel_evidencia": "N2",
+      "papel": "guarda",
+      "motivo": "Sem ele, a água sozinha manda plantar em agosto. Geada em 6,3 de 10 anos com plantio em 1/ago (motor). É N2 e não N3: teste em um ponto só, sem amostra nova; o limiar de 2 °C vem do ZARC; a forma bate com o ZARC, a magnitude não.",
+      "validacao": [
+        {
+          "ref": "V4",
+          "caminho": "solucao/validacao/V4/relatorio.md",
+          "resultado": "critério D1 pré-registrado passou em SMO: 6,3 e 4,6 falhas em 10 em 1 e 11/ago. Um ponto, sem amostra nova; veredito geral da V4: parcial"
+        },
+        {
+          "ref": "V6",
+          "caminho": "solucao/validacao/V6/relatorio.md",
+          "resultado": "1º decêndio com risco <= 20%: ZARC 21/08, nosso 01/09 (10 dias). Magnitude discorda: 63% de geada contra 40% do ZARC em 1/ago; o POWER parece exagerar. Calibrar o limiar não foi feito"
+        }
+      ],
+      "nao_ve": [
+        "geada de baixada dentro da célula de 50 km",
+        "a magnitude: o POWER parece exagerar a geada contra o ZARC"
+      ]
+    },
+    {
+      "id": "geada_limite_2a_safra",
+      "nome": "Data-limite de geada para o 2º milho de silagem",
+      "ativo": true,
+      "nivel_evidencia": "N2",
+      "papel": "principal",
+      "motivo": "Passa em SMO, mas a data muda 29 dias entre SMO e Concórdia e 22 dias com o ciclo (V2). Calculado por ponto e mostrado com faixa.",
+      "validacao": [
+        {
+          "ref": "B1-1",
+          "caminho": "loop-validacao/fichas/B1-1-geada-milho-safrinha.md",
+          "resultado": "degrau de 67 pontos entre 1/jan e 21/fev"
+        },
+        {
+          "ref": "V2",
+          "caminho": "solucao/validacao/V2/relatorio.md",
+          "resultado": "parcial: 2 de 2 eventos com estação marcados; falha a estabilidade no espaço"
+        },
+        {
+          "ref": "V6",
+          "caminho": "solucao/validacao/V6/relatorio.md",
+          "resultado": "último milho no ZARC 21/01 contra 01/02 da B1 (11 dias, dentro de 20)"
+        }
+      ],
+      "nao_ve": [
+        "falta de água do 2º milho",
+        "perda de silagem (só a chance de geada)"
+      ]
+    },
+    {
+      "id": "ano_extremo_seco",
+      "nome": "Alerta de ano seco (10% mais secos da própria célula)",
+      "ativo": true,
+      "nivel_evidencia": "N2",
+      "papel": "alerta",
+      "motivo": "A regra fixa ISNA < 0,75 caiu na V1. A regra relativa passou em parte: 13 de 29 alertas em ano ruim contra taxa-base 16,1%, mas só 4 de 9 eventos (C1 e C3 falham). Vira alerta com a ressalva de que pega pouco.",
+      "validacao": [
+        {
+          "ref": "V1",
+          "caminho": "solucao/validacao/V1/relatorio.md",
+          "resultado": "regra do motor (percentil só do passado, passo 6): 13 de 29 alertas em ano ruim; 4 de 9 eventos (2/6 novos); recall 48%; p = 0,0782; C1 e C3 falham. Com anos futuros no percentil (passo 4): 14 de 32, 4 de 11, recall 36%"
+        },
+        {
+          "ref": "V1-passo6",
+          "caminho": "solucao/validacao/V1/v1_passo6_so_passado.py",
+          "resultado": "mínimo de 15 anos passados escolhido antes de rodar; resultado_so_passado.json"
+        }
+      ],
+      "nao_ve": [
+        "cerca de 52% dos anos ruins",
+        "quebra por geada, doença ou manejo"
+      ]
+    },
+    {
+      "id": "mistura_talhao",
+      "nome": "Metade da silagem em sorgo no talhão raso",
+      "ativo": true,
+      "nivel_evidencia": "N2",
+      "papel": "principal",
+      "motivo": "Ativo porque o produtor declarou o talhão raso (CAD 39,0 mm). Sobrevive em 67,4% da grade de parâmetros (corte da V3: 70%). Desligado em solo fundo.",
+      "validacao": [
+        {
+          "ref": "A4-3",
+          "caminho": "loop-validacao/fichas/A4-3-sorgo-seguro-silagem.md",
+          "resultado": "P10 +14% no raso de 87,5 mm (a mistura rende menos em 15 de 41 safras)"
+        },
+        {
+          "ref": "V3",
+          "caminho": "solucao/validacao/V3/relatorio.md",
+          "resultado": "raso de 42 mm: P10 +39,6% (IC95 +30,7 a +57,1); média +7,3%; ganho em 35 de 41 safras, perda em 2. O motor reproduz esses números com CAD 42 e usa 39 mm"
+        },
+        {
+          "ref": "V6",
+          "caminho": "solucao/validacao/V6/relatorio.md",
+          "resultado": "ZARC concorda só em solo de pouca água (AD2-AD3)"
+        }
+      ],
+      "nao_ve": [
+        "valor real da silagem de sorgo na dieta",
+        "custo e rebrota do sorgo",
+        "rendimento observado de sorgo (não há PAM em SMO)"
+      ]
+    },
+    {
+      "id": "sorgo_2a_safra",
+      "nome": "Sorgo forrageiro depois do milho, quando a janela do 2º milho fecha",
+      "ativo": true,
+      "nivel_evidencia": "N1",
+      "papel": "em_teste",
+      "motivo": "Sugerido pela V6. Geada e água do sorgo de 2ª safra ainda não foram calculadas.",
+      "validacao": [
+        {
+          "ref": "V6",
+          "caminho": "solucao/validacao/V6/relatorio.md",
+          "resultado": "ZARC 2026/27 indica sorgo forrageiro 2ª safra até 01/03 (grupo I) em SMO; não testado por nós"
+        }
+      ],
+      "nao_ve": [
+        "tudo: módulo sem cálculo próprio"
+      ]
+    },
+    {
+      "id": "enso_tipo_risco",
+      "nome": "El Niño troca o tipo de risco",
+      "ativo": false,
+      "nivel_evidencia": "N1",
+      "papel": "em_teste",
+      "motivo": "A A2-4 usou o ONI da NOAA, fora da aba Resources. Volta quando o Niño 3,4 vier da TSM do ERA5.",
+      "validacao": [
+        {
+          "ref": "A2-4",
+          "caminho": "loop-validacao/fichas/A2-4-el-nino-tipo-de-risco.md",
+          "resultado": "passou os 3 critérios com folga pequena (BSS 0,060 contra 0,05)"
+        }
+      ],
+      "nao_ve": [
+        "La Niña (sem sinal)"
+      ]
+    }
+  ],
+  "estrategias": [
+    {
+      "id": "E1",
+      "nome_curto": "O de sempre",
+      "nome_falado": "milho para silagem no verão e pasto de inverno depois",
+      "e_atual": true,
+      "nivel_evidencia": "N2",
+      "como_mostrar": "com_faixa",
+      "ordem": 3,
+      "sequencia": [
+        {
+          "cultura": "milho_silagem",
+          "estacao": "verao",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": "21/09",
+            "ate": "21/10"
+          },
+          "manejo": null
+        },
+        {
+          "cultura": "pastagem_inverno",
+          "estacao": "inverno",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": null,
+            "ate": null
+          },
+          "manejo": "aveia ou azevém; sem módulo próprio"
+        }
+      ],
+      "modulos": [
+        "geada_janela_safra",
+        "ano_extremo_seco",
+        "agua_isna"
+      ],
+      "indicadores": [
+        {
+          "id": "I-E1-P10",
+          "tipo": "p10_relativo",
+          "rotulo": "Silagem no pior ano em 10, relativa ao potencial (só água, 100% milho)",
+          "valor": 0.231,
+          "unidade": "fracao",
+          "ic95": null,
+          "faixa_parametros": null,
+          "n_anos": 41,
+          "periodo": "1984-2024",
+          "nivel_evidencia": "N1",
+          "modulo_id": "mistura_talhao",
+          "rastro": [
+            "R-CALC-MISTURA"
+          ]
+        },
+        {
+          "id": "I-E1-MEDIA",
+          "tipo": "media_relativa",
+          "rotulo": "Silagem média relativa ao potencial (só água, 100% milho)",
+          "valor": 0.546,
+          "unidade": "fracao",
+          "ic95": null,
+          "faixa_parametros": null,
+          "n_anos": 41,
+          "periodo": "1984-2024",
+          "nivel_evidencia": "N1",
+          "modulo_id": "mistura_talhao",
+          "rastro": [
+            "R-CALC-MISTURA"
+          ]
+        },
+        {
+          "id": "I-E1-CASOS60",
+          "tipo": "casos_abaixo_60_em_10",
+          "rotulo": "Casos com silagem abaixo de 60% do potencial (116 de 205)",
+          "valor": 5.7,
+          "unidade": "anos_em_10",
+          "ic95": null,
+          "faixa_parametros": null,
+          "n_anos": 41,
+          "periodo": "1984-2024",
+          "nivel_evidencia": "N1",
+          "modulo_id": "mistura_talhao",
+          "rastro": [
+            "R-CALC-MISTURA"
+          ]
+        },
+        {
+          "id": "I-E1-GEADA-AGO",
+          "tipo": "geada_em_10",
+          "rotulo": "Geada nas fases I a III com plantio em 1/ago",
+          "valor": 6.3,
+          "unidade": "anos_em_10",
+          "ic95": [
+            4.8,
+            7.6
+          ],
+          "faixa_parametros": null,
+          "n_anos": 41,
+          "periodo": "1984-2024",
+          "nivel_evidencia": "N2",
+          "modulo_id": "geada_janela_safra",
+          "rastro": [
+            "R-CALC-GEADA-SAFRA"
+          ]
+        }
+      ],
+      "risco_por_decendio": {
+        "cultura_alvo": "milho_silagem",
+        "evento": "geada nas fases I a III (T2M_MIN < 2 °C), critério do ZARC SC; água não incluída nesta tabela",
+        "modulo_id": "geada_janela_safra",
+        "rastro": [
+          "R-CALC-GEADA-SAFRA"
+        ],
+        "linhas": [
+          {
+            "decendio": "01/08",
+            "em10": 6.3,
+            "ic95": [
+              4.8,
+              7.6
+            ],
+            "k": 26,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 6.3,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 40,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "11/08",
+            "em10": 4.6,
+            "ic95": [
+              3.2,
+              6.1
+            ],
+            "k": 19,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 4.6,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 40,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "21/08",
+            "em10": 3.2,
+            "ic95": [
+              2.0,
+              4.7
+            ],
+            "k": 13,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 3.2,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 20,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "01/09",
+            "em10": 1.7,
+            "ic95": [
+              0.9,
+              3.1
+            ],
+            "k": 7,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 1.7,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 20,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "11/09",
+            "em10": 0.5,
+            "ic95": [
+              0.1,
+              1.6
+            ],
+            "k": 2,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.5,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "21/09",
+            "em10": 0.0,
+            "ic95": [
+              0.0,
+              0.9
+            ],
+            "k": 0,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "01/10",
+            "em10": 0.0,
+            "ic95": [
+              0.0,
+              0.9
+            ],
+            "k": 0,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "11/10",
+            "em10": 0.0,
+            "ic95": [
+              0.0,
+              0.9
+            ],
+            "k": 0,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "21/10",
+            "em10": 0.0,
+            "ic95": [
+              0.0,
+              0.9
+            ],
+            "k": 0,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "01/11",
+            "em10": 0.0,
+            "ic95": [
+              0.0,
+              0.9
+            ],
+            "k": 0,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "11/11",
+            "em10": 0.0,
+            "ic95": [
+              0.0,
+              0.9
+            ],
+            "k": 0,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "21/11",
+            "em10": 0.0,
+            "ic95": [
+              0.0,
+              0.9
+            ],
+            "k": 0,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "01/12",
+            "em10": 0.0,
+            "ic95": [
+              0.0,
+              0.9
+            ],
+            "k": 0,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "11/12",
+            "em10": 0.0,
+            "ic95": [
+              0.0,
+              0.9
+            ],
+            "k": 0,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "21/12",
+            "em10": 0.0,
+            "ic95": [
+              0.0,
+              0.9
+            ],
+            "k": 0,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          }
+        ]
+      },
+      "premissas": [
+        "milho de 130 dias, fases 25/35/40/30 para a geada",
+        "pastagem de inverno tolerante à geada (A1-1)"
+      ],
+      "quebra_se": [],
+      "nao_calculado": [
+        "risco da pastagem de inverno",
+        "falta de água por decêndio neste solo de 39,0 mm"
+      ],
+      "solo_texto": null
+    },
+    {
+      "id": "E2",
+      "nome_curto": "Segundo milho",
+      "nome_falado": "milho de verão e um segundo milho para silagem, plantado até o começo de fevereiro",
+      "e_atual": false,
+      "nivel_evidencia": "N2",
+      "como_mostrar": "com_faixa",
+      "ordem": 2,
+      "sequencia": [
+        {
+          "cultura": "milho_silagem",
+          "estacao": "verao",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": "21/09",
+            "ate": "21/10"
+          },
+          "manejo": null
+        },
+        {
+          "cultura": "milho_silagem",
+          "estacao": "segunda_safra",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": "21/01",
+            "ate": "01/02"
+          },
+          "manejo": "colheita do verão em 20 de janeiro"
+        }
+      ],
+      "modulos": [
+        "geada_limite_2a_safra"
+      ],
+      "indicadores": [
+        {
+          "id": "I-E2-LIMITE",
+          "tipo": "data_limite",
+          "rotulo": "Último dia com geada antes da silagem em até 2 de 10 anos (3 °C). Faixa por limiar: 30/01 (4 °C) a 07/02 (2 °C); por ciclo: 25/01 (1.400 °C·dia) a 16/02 (1.100)",
+          "valor": "05/02",
+          "unidade": "dia_mes",
+          "ic95": null,
+          "faixa_parametros": null,
+          "n_anos": 45,
+          "periodo": "1981-2025",
+          "nivel_evidencia": "N2",
+          "modulo_id": "geada_limite_2a_safra",
+          "rastro": [
+            "R-CALC-LIMITE-2M"
+          ]
+        },
+        {
+          "id": "I-E2-RISCO-LIMITE",
+          "tipo": "geada_em_10",
+          "rotulo": "Geada antes do ponto de silagem com plantio no dia-limite (5 de fevereiro): média móvel de 5 dias da curva diária; IC de Wilson tratando a média como k/45",
+          "valor": 1.9,
+          "unidade": "anos_em_10",
+          "ic95": [
+            1.0,
+            3.2
+          ],
+          "faixa_parametros": null,
+          "n_anos": 45,
+          "periodo": "1981-2025",
+          "nivel_evidencia": "N2",
+          "modulo_id": "geada_limite_2a_safra",
+          "rastro": [
+            "R-CALC-LIMITE-2M"
+          ]
+        },
+        {
+          "id": "I-E2-GEADA-0102",
+          "tipo": "geada_em_10",
+          "rotulo": "Geada antes do ponto de silagem, plantio em 1º de fevereiro",
+          "valor": 1.1,
+          "unidade": "anos_em_10",
+          "ic95": [
+            0.5,
+            2.3
+          ],
+          "faixa_parametros": null,
+          "n_anos": 45,
+          "periodo": "1981-2025",
+          "nivel_evidencia": "N2",
+          "modulo_id": "geada_limite_2a_safra",
+          "rastro": [
+            "R-CALC-GEADA-2M"
+          ]
+        },
+        {
+          "id": "I-E2-GEADA-1102",
+          "tipo": "geada_em_10",
+          "rotulo": "Geada antes do ponto de silagem, plantio em 11 de fevereiro",
+          "valor": 4.4,
+          "unidade": "anos_em_10",
+          "ic95": [
+            3.1,
+            5.9
+          ],
+          "faixa_parametros": null,
+          "n_anos": 45,
+          "periodo": "1981-2025",
+          "nivel_evidencia": "N2",
+          "modulo_id": "geada_limite_2a_safra",
+          "rastro": [
+            "R-CALC-GEADA-2M"
+          ]
+        }
+      ],
+      "risco_por_decendio": {
+        "cultura_alvo": "milho_silagem (2ª safra)",
+        "evento": "geada (T2M_MIN <= 3 °C) entre o plantio e o ponto de silagem (1.250 °C·dia, base 10 °C, teto 30 °C)",
+        "modulo_id": "geada_limite_2a_safra",
+        "rastro": [
+          "R-CALC-GEADA-2M"
+        ],
+        "linhas": [
+          {
+            "decendio": "01/01",
+            "em10": 0.0,
+            "ic95": [
+              0.0,
+              0.8
+            ],
+            "k": 0,
+            "n": 45,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "11/01",
+            "em10": 0.0,
+            "ic95": [
+              0.0,
+              0.8
+            ],
+            "k": 0,
+            "n": 45,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "21/01",
+            "em10": 0.2,
+            "ic95": [
+              0.0,
+              1.2
+            ],
+            "k": 1,
+            "n": 45,
+            "componentes": {
+              "agua": null,
+              "geada": 0.2,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "01/02",
+            "em10": 1.1,
+            "ic95": [
+              0.5,
+              2.3
+            ],
+            "k": 5,
+            "n": 45,
+            "componentes": {
+              "agua": null,
+              "geada": 1.1,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "11/02",
+            "em10": 4.4,
+            "ic95": [
+              3.1,
+              5.9
+            ],
+            "k": 20,
+            "n": 45,
+            "componentes": {
+              "agua": null,
+              "geada": 4.4,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "21/02",
+            "em10": 6.7,
+            "ic95": [
+              5.2,
+              7.9
+            ],
+            "k": 30,
+            "n": 45,
+            "componentes": {
+              "agua": null,
+              "geada": 6.7,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "01/03",
+            "em10": 8.9,
+            "ic95": [
+              7.7,
+              9.5
+            ],
+            "k": 40,
+            "n": 45,
+            "componentes": {
+              "agua": null,
+              "geada": 8.9,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "11/03",
+            "em10": 9.6,
+            "ic95": [
+              8.5,
+              9.9
+            ],
+            "k": 43,
+            "n": 45,
+            "componentes": {
+              "agua": null,
+              "geada": 9.6,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "21/03",
+            "em10": 9.6,
+            "ic95": [
+              8.5,
+              9.9
+            ],
+            "k": 43,
+            "n": 45,
+            "componentes": {
+              "agua": null,
+              "geada": 9.6,
+              "ano_extremo": null
+            },
+            "zarc": {
+              "risco_pct": null,
+              "indicado": false,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          }
+        ]
+      },
+      "premissas": [
+        "geada = T2M_MIN <= 3 °C no ar a 2 m (a relva fica 3 a 5 °C mais fria)",
+        "ponto de silagem em 1.250 °C·dia, híbrido precoce"
+      ],
+      "quebra_se": [
+        "a cultivar tiver ciclo longo: com 1.400 °C·dia o limite vai para 25/01",
+        "o talhão estiver em baixada mais fria que a célula do POWER"
+      ],
+      "nao_calculado": [
+        "falta de água do 2º milho",
+        "perda de silagem: o número é chance de geada, não de perda"
+      ],
+      "solo_texto": null
+    },
+    {
+      "id": "E3",
+      "nome_curto": "Metade em sorgo",
+      "nome_falado": "no talhão raso, metade da silagem em milho e metade em sorgo, e pasto de inverno depois",
+      "e_atual": false,
+      "nivel_evidencia": "N2",
+      "como_mostrar": "com_faixa",
+      "ordem": 1,
+      "sequencia": [
+        {
+          "cultura": "milho_silagem",
+          "estacao": "verao",
+          "fracao_area": 0.5,
+          "plantio": {
+            "de": "11/09",
+            "ate": "21/10"
+          },
+          "manejo": null
+        },
+        {
+          "cultura": "sorgo_silagem",
+          "estacao": "verao",
+          "fracao_area": 0.5,
+          "plantio": {
+            "de": "11/09",
+            "ate": "21/10"
+          },
+          "manejo": "mesma data do milho"
+        },
+        {
+          "cultura": "pastagem_inverno",
+          "estacao": "inverno",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": null,
+            "ate": null
+          },
+          "manejo": "aveia ou azevém; sem módulo próprio"
+        }
+      ],
+      "modulos": [
+        "mistura_talhao",
+        "agua_isna"
+      ],
+      "indicadores": [
+        {
+          "id": "I-E3-GANHO-P10",
+          "tipo": "ganho_p10_pct",
+          "rotulo": "Ganho no pior ano em 10 contra 100% milho, cenário central (FAO-33, R 0,88)",
+          "valor": 46.9,
+          "unidade": "pct",
+          "ic95": [
+            31.1,
+            60.8
+          ],
+          "faixa_parametros": [
+            -7.4,
+            76.3
+          ],
+          "n_anos": 41,
+          "periodo": "1984-2024",
+          "nivel_evidencia": "N2",
+          "modulo_id": "mistura_talhao",
+          "rastro": [
+            "R-CALC-MISTURA"
+          ]
+        },
+        {
+          "id": "I-E3-GANHO-P10-GRADE",
+          "tipo": "ganho_p10_pct",
+          "rotulo": "Ganho no pior ano em 10, mediana da grade de 270 combinações de parâmetros",
+          "valor": 15.4,
+          "unidade": "pct",
+          "ic95": null,
+          "faixa_parametros": [
+            -7.4,
+            76.3
+          ],
+          "n_anos": 41,
+          "periodo": "1984-2024",
+          "nivel_evidencia": "N2",
+          "modulo_id": "mistura_talhao",
+          "rastro": [
+            "R-CALC-MISTURA-GRADE"
+          ]
+        },
+        {
+          "id": "I-E3-VAR-MEDIA",
+          "tipo": "var_media_pct",
+          "rotulo": "Variação da silagem média contra 100% milho",
+          "valor": 8.0,
+          "unidade": "pct",
+          "ic95": [
+            5.4,
+            11.3
+          ],
+          "faixa_parametros": [
+            -9.5,
+            20.6
+          ],
+          "n_anos": 41,
+          "periodo": "1984-2024",
+          "nivel_evidencia": "N2",
+          "modulo_id": "mistura_talhao",
+          "rastro": [
+            "R-CALC-MISTURA",
+            "R-CALC-MISTURA-GRADE"
+          ]
+        },
+        {
+          "id": "I-E3-SOBREVIVE",
+          "tipo": "sobrevivencia_grade_pct",
+          "rotulo": "Combinações da grade em que a afirmação sobrevive (corte pré-registrado: 70%)",
+          "valor": 67.4,
+          "unidade": "pct",
+          "ic95": null,
+          "faixa_parametros": null,
+          "n_anos": 41,
+          "periodo": "1984-2024",
+          "nivel_evidencia": "N2",
+          "modulo_id": "mistura_talhao",
+          "rastro": [
+            "R-CALC-MISTURA-GRADE"
+          ]
+        }
+      ],
+      "risco_por_decendio": {
+        "cultura_alvo": "silagem total do talhão (50% milho + 50% sorgo)",
+        "evento": "sem em10: a tabela mostra o pior ano em 10 por data de plantio (metricas_extra)",
+        "modulo_id": "mistura_talhao",
+        "rastro": [
+          "R-CALC-MISTURA-DATA"
+        ],
+        "linhas": [
+          {
+            "decendio": "11/09",
+            "em10": null,
+            "ic95": null,
+            "k": null,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "metricas_extra": {
+              "p10_base": 0.255,
+              "p10_mistura": 0.353,
+              "ganho_p10_pct": 38.2,
+              "var_media_pct": 5.3
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "21/09",
+            "em10": null,
+            "ic95": null,
+            "k": null,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "metricas_extra": {
+              "p10_base": 0.18,
+              "p10_mistura": 0.305,
+              "ganho_p10_pct": 69.7,
+              "var_media_pct": 7.8
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "01/10",
+            "em10": null,
+            "ic95": null,
+            "k": null,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "metricas_extra": {
+              "p10_base": 0.22,
+              "p10_mistura": 0.299,
+              "ganho_p10_pct": 35.5,
+              "var_media_pct": 7.9
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "11/10",
+            "em10": null,
+            "ic95": null,
+            "k": null,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "metricas_extra": {
+              "p10_base": 0.228,
+              "p10_mistura": 0.359,
+              "ganho_p10_pct": 57.4,
+              "var_media_pct": 9.2
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          },
+          {
+            "decendio": "21/10",
+            "em10": null,
+            "ic95": null,
+            "k": null,
+            "n": 41,
+            "componentes": {
+              "agua": null,
+              "geada": 0.0,
+              "ano_extremo": null
+            },
+            "metricas_extra": {
+              "p10_base": 0.249,
+              "p10_mistura": 0.355,
+              "ganho_p10_pct": 42.5,
+              "var_media_pct": 10.2
+            },
+            "zarc": {
+              "risco_pct": 30,
+              "indicado": true,
+              "rastro": [
+                "R-ZARC"
+              ]
+            }
+          }
+        ]
+      },
+      "premissas": [
+        "silagem de sorgo vale 88% da de milho (R = 0,88; literatura externa: Embrapa e Demarchi)",
+        "Ky e Kc da FAO para grão aplicados à silagem",
+        "CAD do talhão 39,0 mm = 65 mm/m (classe areia do GAEZ, aplicada ao raso sem teste) x 0,6 m de raiz (ZARC)"
+      ],
+      "quebra_se": [
+        "Ky do sorgo for 1,64 vez o da FAO ou mais (V3, CAD 42 mm)",
+        "milho e sorgo responderem igual à seca (Ky = 1 nos dois)",
+        "R abaixo de 0,77: aí a média cai (V3, CAD 42 mm)"
+      ],
+      "nao_calculado": [
+        "custo e rebrota do sorgo",
+        "rendimento observado de sorgo em SMO"
+      ],
+      "solo_texto": null
+    },
+    {
+      "id": "E4",
+      "nome_curto": "Sorgo depois do milho",
+      "nome_falado": "milho de verão e sorgo forrageiro na segunda safra",
+      "e_atual": false,
+      "nivel_evidencia": "N1",
+      "como_mostrar": "so_nome_em_teste",
+      "ordem": 4,
+      "sequencia": [
+        {
+          "cultura": "milho_silagem",
+          "estacao": "verao",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": "21/09",
+            "ate": "21/10"
+          },
+          "manejo": null
+        },
+        {
+          "cultura": "sorgo_forrageiro",
+          "estacao": "segunda_safra",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": null,
+            "ate": null
+          },
+          "manejo": "sem data calculada"
+        }
+      ],
+      "modulos": [
+        "sorgo_2a_safra"
+      ],
+      "indicadores": [],
+      "risco_por_decendio": null,
+      "premissas": [],
+      "quebra_se": [],
+      "nao_calculado": [
+        "geada do sorgo de 2ª safra",
+        "água do sorgo de 2ª safra"
+      ],
+      "solo_texto": null
+    }
+  ],
+  "alertas": [
+    {
+      "id": "A-SECO-2122",
+      "modulo_id": "ano_extremo_seco",
+      "estado": "ativo",
+      "nivel_evidencia": "N2",
+      "janela": {
+        "de": "2021-09-20",
+        "ate": "2022-01-10"
+      },
+      "indice": {
+        "nome": "ISNA do milho de 20/set a 10/01 (solo médio 125 mm, regra da B3-1)",
+        "valor": 0.618,
+        "unidade": "fracao"
+      },
+      "percentil_local": {
+        "valor": 0.0,
+        "limiar": 10,
+        "n_anos_passados": 32,
+        "periodo_passado": "1990-2021"
+      },
+      "frase_probabilidade": {
+        "anos_assim_ruins_em_10": 4.5,
+        "ano_qualquer_ruim_em_10": 1.6,
+        "definicao_ruim": "rendimento da PAM <= 85% da mediana móvel (quebra de 15% ou mais), por microrregião; percentil só do passado; só auditoria",
+        "eventos_testados": 9,
+        "rastro": [
+          "R-CALC-ALERTA-VALID",
+          "R-PAM-SC"
+        ]
+      },
+      "recall_pct": 48,
+      "silencio_nao_e_seguranca": true,
+      "rastro": [
+        "R-CALC-ISNA-SECO",
+        "R-CALC-PERCENTIL"
+      ]
+    }
+  ],
+  "cartoes": [
+    {
+      "id": "C-01",
+      "template_id": "T05_ANO_SECO_ATIVO",
+      "destino": "whatsapp",
+      "ordem": 1,
+      "alerta_ids": [
+        "A-SECO-2122"
+      ],
+      "variaveis": {
+        "inicio": {
+          "texto": "20 de setembro",
+          "ponteiro": "/alertas/0/janela/de"
+        },
+        "fim": {
+          "texto": "10 de janeiro",
+          "ponteiro": "/alertas/0/janela/ate"
+        },
+        "n_anos": {
+          "texto": "32",
+          "ponteiro": "/alertas/0/percentil_local/n_anos_passados"
+        },
+        "km": {
+          "texto": "50",
+          "ponteiro": "/local/ponto_power/resolucao_km"
+        }
+      },
+      "texto": "Sim, este ano está seco. De 20 de setembro a 10 de janeiro, a água para o milho ficou entre os 10% piores dos últimos 32 anos aqui. Não é certeza, e o aviso não pega todos os anos ruins. Vale conferir o estoque de silagem e falar com o técnico da assistência técnica. Dados de satélite, área de 50 km.",
+      "palavras": 61,
+      "imagem": {
+        "tipo": "nenhuma"
+      },
+      "audio": {
+        "roteiro": "Sim, este ano está seco. De vinte de setembro a dez de janeiro, a água para o milho ficou entre os dez por cento piores dos últimos trinta e dois anos aqui. Não é certeza, e o aviso não pega todos os anos ruins. Vale conferir o estoque de silagem e falar com o técnico da assistência técnica. Dados de satélite, área de cinquenta quilômetros.",
+        "duracao_max_s": 30
+      }
+    },
+    {
+      "id": "C-02",
+      "template_id": "T02_GEADA_JANELA_SAFRA",
+      "destino": "whatsapp",
+      "ordem": 2,
+      "estrategia_ids": [
+        "E1"
+      ],
+      "variaveis": {
+        "r_ago": {
+          "texto": "6",
+          "ponteiro": "/estrategias/0/risco_por_decendio/linhas/0/em10"
+        },
+        "lo": {
+          "texto": "5",
+          "ponteiro": "/estrategias/0/risco_por_decendio/linhas/0/ic95/0"
+        },
+        "hi": {
+          "texto": "8",
+          "ponteiro": "/estrategias/0/risco_por_decendio/linhas/0/ic95/1"
+        },
+        "data_segura": {
+          "texto": "21 de setembro",
+          "ponteiro": "/estrategias/0/risco_por_decendio/linhas/5/decendio"
+        },
+        "r_seguro": {
+          "texto": "quase nunca",
+          "ponteiro": "/estrategias/0/risco_por_decendio/linhas/5/em10"
+        }
+      },
+      "texto": "Milho de verão: aqui, não plante em agosto. Plantando em 1º de agosto, a geada pegou a lavoura nova em cerca de 6 de cada 10 anos (entre 5 e 8). A partir de 21 de setembro, quase nunca. Do fim de setembro a dezembro, para o clima, a data quase não muda o risco.",
+      "palavras": 55,
+      "imagem": {
+        "tipo": "janela_decendios",
+        "legenda": "Anos em 10 com geada nas fases I a III, por decêndio de plantio"
+      },
+      "audio": {
+        "roteiro": "Milho de verão: aqui, não plante em agosto. Plantando em primeiro de agosto, a geada pegou a lavoura nova em cerca de seis de cada dez anos (entre cinco e oito). A partir de vinte e um de setembro, quase nunca. Do fim de setembro a dezembro, para o clima, a data quase não muda o risco.",
+        "duracao_max_s": 25
+      }
+    },
+    {
+      "id": "C-03",
+      "template_id": "T03_TANTO_FAZ_DATA",
+      "destino": "whatsapp",
+      "ordem": 3,
+      "estrategia_ids": [
+        "E1"
+      ],
+      "variaveis": {
+        "de": {
+          "texto": "21 de setembro",
+          "ponteiro": "/estrategias/0/risco_por_decendio/linhas/5/decendio"
+        },
+        "ate": {
+          "texto": "21 de dezembro",
+          "ponteiro": "/estrategias/0/risco_por_decendio/linhas/14/decendio"
+        }
+      },
+      "texto": "Entre 21 de setembro e 21 de dezembro, para o clima, a data de plantio quase não muda o risco: a diferença é menor que 1 ano em 10. Escolha pela mão de obra e pela máquina.",
+      "palavras": 37,
+      "imagem": {
+        "tipo": "nenhuma"
+      },
+      "audio": {
+        "roteiro": "Entre vinte e um de setembro e vinte e um de dezembro, para o clima, a data de plantio quase não muda o risco: a diferença é menor que um ano em dez. Escolha pela mão de obra e pela máquina.",
+        "duracao_max_s": 20
+      }
+    },
+    {
+      "id": "C-04",
+      "template_id": "T01_COMPARA_ESTRATEGIAS",
+      "destino": "whatsapp",
+      "ordem": 4,
+      "estrategia_ids": [
+        "E3",
+        "E2",
+        "E1",
+        "E4"
+      ],
+      "alerta_ids": [
+        "A-SECO-2122"
+      ],
+      "variaveis": {
+        "talhao": {
+          "texto": "Encosta de cima",
+          "ponteiro": "/talhao/nome"
+        },
+        "nome_1": {
+          "texto": "Metade em sorgo",
+          "ponteiro": "/estrategias/2/nome_curto"
+        },
+        "s_1": {
+          "texto": "7",
+          "ponteiro": "/estrategias/2/indicadores/3/valor"
+        },
+        "nome_2": {
+          "texto": "Segundo milho",
+          "ponteiro": "/estrategias/1/nome_curto"
+        },
+        "limite_2": {
+          "texto": "5 de fevereiro",
+          "ponteiro": "/estrategias/1/indicadores/0/valor"
+        },
+        "r_2": {
+          "texto": "2",
+          "ponteiro": "/estrategias/1/indicadores/1/valor"
+        },
+        "lo_2": {
+          "texto": "1",
+          "ponteiro": "/estrategias/1/indicadores/1/ic95/0"
+        },
+        "hi_2": {
+          "texto": "3",
+          "ponteiro": "/estrategias/1/indicadores/1/ic95/1"
+        },
+        "nome_3": {
+          "texto": "O de sempre",
+          "ponteiro": "/estrategias/0/nome_curto"
+        },
+        "falado_3": {
+          "texto": "milho para silagem no verão e pasto de inverno depois",
+          "ponteiro": "/estrategias/0/nome_falado"
+        },
+        "nome_4": {
+          "texto": "Sorgo depois do milho",
+          "ponteiro": "/estrategias/3/nome_curto"
+        }
+      },
+      "texto": "Quatro caminhos para a Encosta de cima. Metade em sorgo: ajudou em 7 de cada 10 cenários testados. Segundo milho: plantando até 5 de fevereiro, a geada chega antes do corte em cerca de 2 de cada 10 anos (entre 1 e 3); não calculamos a falta de água. O de sempre: milho para silagem no verão e pasto de inverno depois, sem número. Em teste: sorgo depois do milho.",
+      "palavras": 70,
+      "imagem": {
+        "tipo": "10_sacos",
+        "linhas": [
+          {
+            "rotulo": "2º milho até 5/fev",
+            "cheios": 8,
+            "rasgados": 2,
+            "selo": "com_ressalva"
+          },
+          {
+            "rotulo": "Sorgo depois do milho",
+            "cheios": null,
+            "rasgados": null,
+            "selo": "em_teste"
+          }
+        ],
+        "legenda": "Saco rasgado = ano com geada antes do corte da silagem (45 anos)"
+      },
+      "audio": {
+        "roteiro": "Quatro caminhos para a Encosta de cima. Metade em sorgo: ajudou em sete de cada dez cenários testados. Segundo milho: plantando até cinco de fevereiro, a geada chega antes do corte em cerca de dois de cada dez anos (entre um e três); não calculamos a falta de água. O de sempre: milho para silagem no verão e pasto de inverno depois, sem número. Em teste: sorgo depois do milho.",
+        "duracao_max_s": 30
+      }
+    },
+    {
+      "id": "C-05",
+      "template_id": "T07_MISTURA_TALHAO_RASO",
+      "destino": "whatsapp",
+      "ordem": 5,
+      "estrategia_ids": [
+        "E3",
+        "E1"
+      ],
+      "variaveis": {
+        "talhao": {
+          "texto": "Encosta de cima",
+          "ponteiro": "/talhao/nome"
+        },
+        "s": {
+          "texto": "7",
+          "ponteiro": "/estrategias/2/indicadores/3/valor"
+        }
+      },
+      "texto": "Na Encosta de cima, que você disse ser rasa: plantar metade da silagem com sorgo pode ajudar no ano ruim, desses que vêm 1 vez a cada 10. A conta não é firme: a mistura ajudou em 7 de cada 10 cenários que testamos. Em ano bom, ela pode render um pouco menos. Fale com o técnico antes de decidir.",
+      "palavras": 60,
+      "imagem": {
+        "tipo": "nenhuma"
+      },
+      "audio": {
+        "roteiro": "Na Encosta de cima, que você disse ser rasa: plantar metade da silagem com sorgo pode ajudar no ano ruim, desses que vêm uma vez a cada dez. A conta não é firme: a mistura ajudou em sete de cada dez cenários que testamos. Em ano bom, ela pode render um pouco menos. Fale com o técnico antes de decidir.",
+        "duracao_max_s": 25
+      }
+    },
+    {
+      "id": "C-06",
+      "template_id": "T04_GEADA_LIMITE_2A_SAFRA",
+      "destino": "whatsapp",
+      "ordem": 6,
+      "estrategia_ids": [
+        "E2"
+      ],
+      "variaveis": {
+        "limite": {
+          "texto": "5 de fevereiro",
+          "ponteiro": "/estrategias/1/indicadores/0/valor"
+        },
+        "r_lim": {
+          "texto": "2",
+          "ponteiro": "/estrategias/1/indicadores/1/valor"
+        },
+        "lo": {
+          "texto": "1",
+          "ponteiro": "/estrategias/1/indicadores/1/ic95/0"
+        },
+        "hi": {
+          "texto": "3",
+          "ponteiro": "/estrategias/1/indicadores/1/ic95/1"
+        },
+        "data_tarde": {
+          "texto": "11 de fevereiro",
+          "ponteiro": "/estrategias/1/risco_por_decendio/linhas/4/decendio"
+        },
+        "r_tarde": {
+          "texto": "4",
+          "ponteiro": "/estrategias/1/risco_por_decendio/linhas/4/em10"
+        },
+        "lo_t": {
+          "texto": "3",
+          "ponteiro": "/estrategias/1/risco_por_decendio/linhas/4/ic95/0"
+        },
+        "hi_t": {
+          "texto": "6",
+          "ponteiro": "/estrategias/1/risco_por_decendio/linhas/4/ic95/1"
+        },
+        "km": {
+          "texto": "50",
+          "ponteiro": "/local/ponto_power/resolucao_km"
+        }
+      },
+      "texto": "Segundo milho (aveia não calculada): plante até 5 de fevereiro. Nesse dia, a geada chega antes do corte da silagem em cerca de 2 de cada 10 anos (entre 1 e 3). Em 11 de fevereiro, em cerca de 4 de cada 10 anos (entre 3 e 6). Semente de ciclo longo (que demora mais): plante antes. Não calculamos a falta de água. Dados de satélite, área de 50 km.",
+      "palavras": 70,
+      "imagem": {
+        "tipo": "10_sacos",
+        "linhas": [
+          {
+            "rotulo": "Plantio até 5/fev",
+            "cheios": 8,
+            "rasgados": 2,
+            "selo": "com_ressalva"
+          },
+          {
+            "rotulo": "Plantio em 11/fev",
+            "cheios": 6,
+            "rasgados": 4,
+            "selo": "com_ressalva"
+          }
+        ],
+        "legenda": "Saco rasgado = ano com geada antes do corte da silagem (45 anos)"
+      },
+      "audio": {
+        "roteiro": "Segundo milho (aveia não calculada): plante até cinco de fevereiro. Nesse dia, a geada chega antes do corte da silagem em cerca de dois de cada dez anos (entre um e três). Em onze de fevereiro, em cerca de quatro de cada dez anos (entre três e seis). Semente de ciclo longo (que demora mais): plante antes. Não calculamos a falta de água. Dados de satélite, área de cinquenta quilômetros.",
+        "duracao_max_s": 30
+      }
+    }
+  ],
+  "rastro": [
+    {
+      "id": "R-POWER-SMO",
+      "tipo": "dado",
+      "descricao": "Série diária do NASA POWER no ponto de SMO, comunidade AG.",
+      "fonte": {
+        "nome": "NASA_POWER",
+        "categoria": "resources",
+        "variavel": "PRECTOTCORR, T2M, T2M_MAX, T2M_MIN, RH2M, WS2M, ALLSKY_SFC_SW_DWN",
+        "url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&longitude=-53.518&latitude=-26.725",
+        "periodo": "1981-2025",
+        "resolucao": "~50 km",
+        "arquivo": "loop-validacao/dados/power_sao_miguel_do_oeste.json"
+      }
+    },
+    {
+      "id": "R-POWER-DIONISIO-CERQUEIRA",
+      "tipo": "dado",
+      "descricao": "Série diária do NASA POWER em Dionísio Cerqueira, só para conferir se a célula é a mesma de SMO.",
+      "fonte": {
+        "nome": "NASA_POWER",
+        "categoria": "resources",
+        "variavel": "T2M_MIN",
+        "url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&longitude=-53.64&latitude=-26.26",
+        "periodo": "1981-2025",
+        "resolucao": "~50 km",
+        "arquivo": "solucao/validacao/V2/dados/power_dionisio_cerqueira.json"
+      }
+    },
+    {
+      "id": "R-POWER-CHAPECO",
+      "tipo": "dado",
+      "descricao": "Série diária do NASA POWER em Chapecó, só para conferir se a célula é a mesma de SMO.",
+      "fonte": {
+        "nome": "NASA_POWER",
+        "categoria": "resources",
+        "variavel": "T2M_MIN",
+        "url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&longitude=-52.62&latitude=-27.1",
+        "periodo": "1981-2025",
+        "resolucao": "~50 km",
+        "arquivo": "solucao/validacao/V2/dados/power_chapeco.json"
+      }
+    },
+    {
+      "id": "R-POWER-CONCORDIA",
+      "tipo": "dado",
+      "descricao": "Série diária do NASA POWER em Concórdia, só para conferir se a célula é a mesma de SMO.",
+      "fonte": {
+        "nome": "NASA_POWER",
+        "categoria": "resources",
+        "variavel": "T2M_MIN",
+        "url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&longitude=-52.027&latitude=-27.234",
+        "periodo": "1981-2025",
+        "resolucao": "~50 km",
+        "arquivo": "solucao/validacao/V2/dados/power_concordia.json"
+      }
+    },
+    {
+      "id": "R-CALC-CELULA",
+      "tipo": "calculo",
+      "descricao": "Dias com T2M_MIN diferente entre SMO e vizinhos. Dionísio Cerqueira: 0 de 16436 dias diferentes; Chapecó: 16363 de 16436 dias diferentes; Concórdia: 16423 de 16436 dias diferentes.",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "1981-2025",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/power.py",
+        "funcao": "mesma_celula"
+      },
+      "parametros": {
+        "variavel": "T2M_MIN",
+        "tolerancia_c": 0.005
+      },
+      "entradas": [
+        "R-POWER-SMO",
+        "R-POWER-DIONISIO-CERQUEIRA",
+        "R-POWER-CHAPECO",
+        "R-POWER-CONCORDIA"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/sao-miguel-do-oeste.json",
+        "chave": "mesma_celula"
+      }
+    },
+    {
+      "id": "R-PROD-SOLO",
+      "tipo": "pergunta",
+      "descricao": "Resposta do produtor no WhatsApp (T15): talhão 'raso_ou_pedregoso'.",
+      "fonte": {
+        "nome": "produtor",
+        "categoria": "produtor",
+        "variavel": "solo_declarado",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      }
+    },
+    {
+      "id": "R-PROD-COLHEITA",
+      "tipo": "pergunta",
+      "descricao": "Resposta do produtor: colheita do verão em 2022-01-20.",
+      "fonte": {
+        "nome": "produtor",
+        "categoria": "produtor",
+        "variavel": "colheita_verao",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      }
+    },
+    {
+      "id": "R-PROD-PRIORIDADE",
+      "tipo": "pergunta",
+      "descricao": "Resposta do produtor (T12): prioridade 'silagem_garantida'. Só muda a ordem dos cartões.",
+      "fonte": {
+        "nome": "produtor",
+        "categoria": "produtor",
+        "variavel": "prioridade",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      }
+    },
+    {
+      "id": "R-GAEZ-CAD",
+      "tipo": "parametro",
+      "descricao": "Água disponível por textura do GAEZ v5: areia 65, médio 125, argila 175 mm/m.",
+      "fonte": {
+        "nome": "GAEZ",
+        "categoria": "resources",
+        "variavel": "água disponível por textura",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": "prototipo/modelo/risco.py"
+      }
+    },
+    {
+      "id": "R-PARAM-RAIZ-RASO",
+      "tipo": "parametro",
+      "descricao": "Raiz de 0,6 m para o talhão raso. Valor do ZARC (Portaria 236 do MAPA), tirado nas frentes V3 e V6. Não é da aba Resources.",
+      "fonte": {
+        "nome": "ZARC",
+        "categoria": "literatura_externa",
+        "variavel": "profundidade de raiz do solo raso (m)",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      }
+    },
+    {
+      "id": "R-PARAM-LIMIAR-GEADA",
+      "tipo": "parametro",
+      "descricao": "Geada = temperatura mínima abaixo de 2 °C nas fases I a III do milho: critério do ZARC SC (Portaria 236 do MAPA). O ZARC também usa o POWER na ET0, então a concordância com ele não é independente (V6). Na mistura, o fator 0,3 de perda por geada vem da A4, sem fonte própria.",
+      "fonte": {
+        "nome": "ZARC",
+        "categoria": "literatura_externa",
+        "variavel": "limiar de T2M_MIN (°C)",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      }
+    },
+    {
+      "id": "R-PARAM-R-SORGO",
+      "tipo": "parametro",
+      "descricao": "R = 0,88: a silagem do sorgo vale 88% da de milho. Vem da Embrapa Gado de Leite e de Demarchi (V3, seção 2,1). Não é da aba Resources. Se R cair abaixo de 0,77, a média da mistura cai.",
+      "fonte": {
+        "nome": "Embrapa",
+        "categoria": "literatura_externa",
+        "variavel": "R (silagem do sorgo / silagem do milho)",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      }
+    },
+    {
+      "id": "R-CALC-CAD",
+      "tipo": "calculo",
+      "descricao": "CAD = 65 mm/m (GAEZ, classe areia aplicada ao raso) x 0,6 m de raiz (ZARC) = 39,0 mm.",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/locais/sao_miguel_do_oeste.py",
+        "funcao": "avaliar"
+      },
+      "parametros": {
+        "mm_por_m": 65,
+        "raiz_m": 0.6
+      },
+      "entradas": [
+        "R-PROD-SOLO",
+        "R-GAEZ-CAD",
+        "R-PARAM-RAIZ-RASO"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/sao-miguel-do-oeste.json",
+        "chave": "cad"
+      }
+    },
+    {
+      "id": "R-FAO56",
+      "tipo": "parametro",
+      "descricao": "Kc por fase, fator p e ET0 Penman-Monteith (FAO-56), coeficientes fixos.",
+      "fonte": {
+        "nome": "FAO-56",
+        "categoria": "metodo_publicado",
+        "variavel": "Kc, p, ET0",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      }
+    },
+    {
+      "id": "R-FAO33",
+      "tipo": "parametro",
+      "descricao": "Ky por fase ou estágio (FAO-33), coeficientes fixos.",
+      "fonte": {
+        "nome": "FAO-33",
+        "categoria": "metodo_publicado",
+        "variavel": "Ky",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      }
+    },
+    {
+      "id": "R-CALC-GEADA-SAFRA",
+      "tipo": "calculo",
+      "descricao": "Geada (T2M_MIN < 2 °C) nas fases I a III do milho de verão, por decêndio de plantio, 41 safras. Reproduz V4 D1.",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": "em10",
+        "url": null,
+        "periodo": "1984-2024",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/geada.py",
+        "funcao": "tabela_janela_safra"
+      },
+      "parametros": {
+        "limiar_c": 2.0,
+        "fases_dias": [
+          25,
+          35,
+          40,
+          30
+        ],
+        "anos_plantio": "1984-2024"
+      },
+      "entradas": [
+        "R-POWER-SMO",
+        "R-PARAM-LIMIAR-GEADA"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/sao-miguel-do-oeste.json",
+        "chave": "geada_janela_safra.linhas"
+      }
+    },
+    {
+      "id": "R-CALC-GEADA-2M",
+      "tipo": "calculo",
+      "descricao": "Chance de geada antes do ponto de silagem do 2º milho, por decêndio de plantio, 45 anos, IC de Wilson. Reproduz V2.",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": "em10",
+        "url": null,
+        "periodo": "1981-2025",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/geada.py",
+        "funcao": "curva_2m"
+      },
+      "parametros": {
+        "limiar_c": 3.0,
+        "gdd_alvo": 1250,
+        "base_c": 10,
+        "teto_c": 30
+      },
+      "entradas": [
+        "R-POWER-SMO"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/sao-miguel-do-oeste.json",
+        "chave": "geada_2a_safra.linhas"
+      }
+    },
+    {
+      "id": "R-CALC-LIMITE-2M",
+      "tipo": "calculo",
+      "descricao": "Último dia de plantio com risco <= 2 em 10 (média móvel de 5 dias), por limiar (2, 3, 4 °C) e por ciclo (1.100, 1.250, 1.400 °C·dia).",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": "limite",
+        "url": null,
+        "periodo": "1981-2025",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/geada.py",
+        "funcao": "limites_2m"
+      },
+      "parametros": {
+        "corte_em10": 2,
+        "limiar_c": 3.0,
+        "gdd_alvo": 1250,
+        "media_movel_dias": 5
+      },
+      "entradas": [
+        "R-POWER-SMO"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/sao-miguel-do-oeste.json",
+        "chave": "limite_2a_safra"
+      }
+    },
+    {
+      "id": "R-CALC-ISNA-SECO",
+      "tipo": "calculo",
+      "descricao": "ISNA do milho de 20/set até 10/01 por safra (solo médio 125 mm, fases 25/40/45/30, p 0,5; balde da B3). Safra 2021/22 = 0,618.",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": "isna",
+        "url": null,
+        "periodo": "1981-2025",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/balanco.py",
+        "funcao": "isna_milho_b31"
+      },
+      "parametros": {
+        "plantio": "20/09",
+        "decisao": "10/01",
+        "cad_mm": 125.0,
+        "p_depl": 0.5,
+        "kc": [
+          0.3,
+          1.2,
+          0.6
+        ],
+        "et0": {
+          "alt_m": 533.01,
+          "piso_mm": 0.5
+        }
+      },
+      "entradas": [
+        "R-POWER-SMO",
+        "R-FAO56"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/sao-miguel-do-oeste.json",
+        "chave": "alerta_seco.indice e alerta_seco.serie_passada"
+      }
+    },
+    {
+      "id": "R-CALC-PERCENTIL",
+      "tipo": "calculo",
+      "descricao": "Posição do ISNA 2021/22 entre 32 anos passados da célula (1990-2021). Mínimo passado: 0,6771 em 2009.",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": "percentil_local",
+        "url": null,
+        "periodo": "1990-2021",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/ano_extremo.py",
+        "funcao": "percentil_passado"
+      },
+      "parametros": {
+        "limiar_percentil": 10,
+        "so_anos_passados": true,
+        "ano_inicio": 1990
+      },
+      "entradas": [
+        "R-CALC-ISNA-SECO"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/sao-miguel-do-oeste.json",
+        "chave": "alerta_seco.percentil"
+      }
+    },
+    {
+      "id": "R-POWER-V1",
+      "tipo": "dado",
+      "descricao": "NASA POWER diário de 8 células novas de SC usadas na validação do alerta (V1).",
+      "fonte": {
+        "nome": "NASA_POWER",
+        "categoria": "resources",
+        "variavel": "PRECTOTCORR, T2M, T2M_MAX, T2M_MIN, RH2M, WS2M, ALLSKY_SFC_SW_DWN",
+        "url": null,
+        "periodo": "1984-2025",
+        "resolucao": "~50 km",
+        "arquivo": "solucao/validacao/V1/power"
+      }
+    },
+    {
+      "id": "R-CALC-ALERTA-VALID",
+      "tipo": "calculo",
+      "descricao": "Validação da regra '10% mais secos da célula', percentil só do passado, em 8 células novas: 13 de 29 alertas em ano ruim contra taxa-base 0,161; 4 de 9 eventos (2/6 novos); recall 0,481. Só auditoria.",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "1990-2025",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/validacao/V1/v1_passo6_so_passado.py",
+        "funcao": null
+      },
+      "parametros": {
+        "corte_ano_ruim": 0.85,
+        "limiar_percentil": 10,
+        "min_anos_passados": 15,
+        "so_auditoria": true,
+        "lido_por": "solucao/motor/ano_extremo.py validacao_v1",
+        "perde_em_10": 5.2
+      },
+      "entradas": [
+        "R-POWER-V1",
+        "R-PAM-SC"
+      ],
+      "resultado": {
+        "arquivo": "solucao/validacao/V1/resultado_so_passado.json",
+        "chave": "so_anos_com_historico"
+      }
+    },
+    {
+      "id": "R-SRTM-T",
+      "tipo": "dado",
+      "descricao": "Declive e TPI (90 m) do SRTM de 30 m no ponto do perfil P7 da UDESC (Neossolo Litólico, topo). Regra 'confirme': declive >= 15% ou TPI >= 2 m (limiar escolhido depois de ver os perfis).",
+      "fonte": {
+        "nome": "SRTM",
+        "categoria": "resources",
+        "variavel": "elevação 1 arco-segundo",
+        "url": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/S27/S27W054.hgt.gz",
+        "periodo": null,
+        "resolucao": "30 m",
+        "arquivo": "solucao/validacao/V3/res_06_srtm.json"
+      }
+    },
+    {
+      "id": "R-CALC-MISTURA",
+      "tipo": "calculo",
+      "descricao": "Silagem do talhão com 0% e 50% de sorgo, CAD 39,0 mm, Ky FAO-33, R 0,88; bootstrap por safra (2000 sorteios, semente 20261114). Cópia de V3/modelo_v3.py.",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "1984-2024",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/mistura.py",
+        "funcao": "central"
+      },
+      "parametros": {
+        "cad_mm": 39.0,
+        "fracao_sorgo": 0.5,
+        "R": 0.88,
+        "cenario": "FAO33",
+        "et0": {
+          "alt_m": 533.0,
+          "piso_mm": 0.3
+        }
+      },
+      "entradas": [
+        "R-POWER-SMO",
+        "R-FAO56",
+        "R-FAO33",
+        "R-CALC-CAD",
+        "R-PARAM-R-SORGO",
+        "R-PARAM-LIMIAR-GEADA"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/sao-miguel-do-oeste.json",
+        "chave": "mistura.central"
+      }
+    },
+    {
+      "id": "R-CALC-MISTURA-GRADE",
+      "tipo": "calculo",
+      "descricao": "Grade pré-definida da V3 (270 combinações: cenário, Ky e Kc do sorgo, deslocamento, R), CAD 39,0 mm.",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "1984-2024",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/mistura.py",
+        "funcao": "grade"
+      },
+      "parametros": {
+        "cad_mm": 39.0,
+        "grade": {
+          "kym": [
+            0.5,
+            0.75,
+            1.0,
+            1.5,
+            2.0
+          ],
+          "R": [
+            0.75,
+            0.88,
+            1.0
+          ],
+          "scen": [
+            "A4",
+            "FAO33",
+            "BIOMASSA"
+          ],
+          "desl": [
+            0,
+            30
+          ],
+          "kcm": [
+            0.85,
+            1.0,
+            1.15
+          ]
+        },
+        "regra_ok": "ganho P10 > 0 e média >= -3%"
+      },
+      "entradas": [
+        "R-POWER-SMO",
+        "R-FAO56",
+        "R-FAO33",
+        "R-CALC-CAD",
+        "R-PARAM-R-SORGO",
+        "R-PARAM-LIMIAR-GEADA"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/sao-miguel-do-oeste.json",
+        "chave": "mistura.grade"
+      }
+    },
+    {
+      "id": "R-CALC-MISTURA-DATA",
+      "tipo": "calculo",
+      "descricao": "Pior ano em 10 por data de plantio, CAD 39,0 mm, FAO-33, R 0,88. Cópia de V3/v3_03_extras.py (por_data).",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "1984-2024",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/mistura.py",
+        "funcao": "por_data"
+      },
+      "parametros": {
+        "cad_mm": 39.0,
+        "fracao_sorgo": 0.5
+      },
+      "entradas": [
+        "R-POWER-SMO",
+        "R-FAO56",
+        "R-FAO33",
+        "R-CALC-CAD",
+        "R-PARAM-R-SORGO",
+        "R-PARAM-LIMIAR-GEADA"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/sao-miguel-do-oeste.json",
+        "chave": "mistura.por_data"
+      }
+    },
+    {
+      "id": "R-ZARC",
+      "tipo": "conferencia",
+      "descricao": "ZARC 2026/27, SMO, sequeiro: milho 1ª safra grupo I AD3 (41,4 mm, a classe mais perto do CAD 39,0 mm); sorgo forrageiro 1ª safra. Não há milho 2ª safra no ZARC de SC.",
+      "fonte": {
+        "nome": "ZARC",
+        "categoria": "externo_conferencia",
+        "variavel": "risco por decêndio",
+        "url": "https://dados.agricultura.gov.br",
+        "periodo": "safra 2026/27",
+        "resolucao": "município",
+        "arquivo": "solucao/validacao/V6/zarc_gabarito_sc.json"
+      }
+    },
+    {
+      "id": "R-PAM-SC",
+      "tipo": "conferencia",
+      "descricao": "IBGE PAM, rendimento do milho por microrregião de SC, relativo à mediana móvel (t-3 a t+3).",
+      "fonte": {
+        "nome": "IBGE_PAM",
+        "categoria": "externo_conferencia",
+        "variavel": "rendimento (kg/ha)",
+        "url": "https://apisidra.ibge.gov.br/values/t/1612/n9/42001/v/112/p/all/c81/2711",
+        "periodo": "1990-2025",
+        "resolucao": "microrregião",
+        "arquivo": "solucao/validacao/V1/tabela_original.json"
+      }
+    },
+    {
+      "id": "R-EPAGRI-2022",
+      "tipo": "conferencia",
+      "descricao": "Epagri/Cepa, jan/2022: perda média estimada de 43% no milho de SC, com o Oeste como região mais atingida (citado na ficha A1-1).",
+      "fonte": {
+        "nome": "Epagri",
+        "categoria": "externo_conferencia",
+        "variavel": null,
+        "url": null,
+        "periodo": "2022",
+        "resolucao": "estado",
+        "arquivo": "loop-validacao/fichas/A1-1-mapa-plantio-extremo-oeste.md"
+      }
+    }
+  ],
+  "conferencias": [
+    {
+      "id": "K-ZARC-E1",
+      "contra": "ZARC_2026_27",
+      "o_que": "Milho de verão: 1º decêndio de baixo risco",
+      "resultado": "bate",
+      "detalhe": "ZARC AD3: 1º decêndio com 20% em 21/08; motor, em 01/09 (1 decêndio(s) de diferença; critério A3: até 1). A forma bate, a magnitude não: em 01/08 e 11/08 o ZARC dá 40% e 40%; o motor, 6,3 e 4,6 em 10. O POWER parece exagerar a geada (V6).",
+      "rastro": [
+        "R-ZARC",
+        "R-CALC-GEADA-SAFRA"
+      ]
+    },
+    {
+      "id": "K-ZARC-E2",
+      "contra": "ZARC_2026_27",
+      "o_que": "Último plantio do 2º milho",
+      "resultado": "bate",
+      "detalhe": "Último decêndio de milho no ZARC: 21/01. Limite do motor: 05/02 (15 dias depois; critério A3 da spec: até 20 dias).",
+      "rastro": [
+        "R-ZARC",
+        "R-CALC-LIMITE-2M"
+      ]
+    },
+    {
+      "id": "K-ZARC-E3",
+      "contra": "ZARC_2026_27",
+      "o_que": "Sorgo mais seguro que milho em solo de pouca água",
+      "resultado": "bate",
+      "detalhe": "De 11/09 a 21/10: sorgo forrageiro com risco menor que o milho AD3 em 5 de 5 decêndios (sorgo [20]%, milho [30]%). Em AD5-AD6 o ZARC põe os dois iguais (V6).",
+      "rastro": [
+        "R-ZARC",
+        "R-CALC-MISTURA"
+      ]
+    },
+    {
+      "id": "K-PAM-A",
+      "contra": "IBGE_PAM",
+      "o_que": "A safra 2021/22 foi de quebra?",
+      "resultado": "bate",
+      "detalhe": "Microrregião 42001 em 2022: rendimento a 0,658 da mediana (quebra de 15% ou mais). Alerta: ativo. Esta safra já estava na amostra da B3: não conta como teste novo.",
+      "rastro": [
+        "R-PAM-SC"
+      ]
+    },
+    {
+      "id": "K-EPAGRI-A",
+      "contra": "Epagri",
+      "o_que": "A estiagem de 2021/22 no Oeste",
+      "resultado": "bate",
+      "detalhe": "Perda média estimada de 43% no milho de SC, com o Oeste como região mais atingida.",
+      "rastro": [
+        "R-EPAGRI-2022"
+      ]
+    }
+  ],
+  "limites": [
+    {
+      "id": "X-REPLAY",
+      "texto": "Modo replay: as tabelas de geada e a mistura usam anos até 2024 ou 2025, depois da data de referência. Só o percentil do alerta usa apenas anos passados.",
+      "gravidade": "media",
+      "afeta": [
+        "E1",
+        "E2",
+        "E3",
+        "A-SECO-2122"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-GRADE",
+      "texto": "Chuva e temperatura vêm de uma grade de ~50 km. Dionísio Cerqueira cai na mesma célula.",
+      "gravidade": "alta",
+      "afeta": [
+        "E1",
+        "E2",
+        "E3",
+        "A-SECO-2122"
+      ],
+      "mostrar_ao_agricultor": true,
+      "trecho": "Dados de satélite, área de 50 km."
+    },
+    {
+      "id": "X-AGUA-2M",
+      "texto": "A falta de água do 2º milho não foi calculada.",
+      "gravidade": "alta",
+      "afeta": [
+        "E2"
+      ],
+      "mostrar_ao_agricultor": true,
+      "trecho": "Não calculamos a falta de água"
+    },
+    {
+      "id": "X-GEADA-PERDA",
+      "texto": "O risco de geada é a chance de o evento ocorrer, não de perder a silagem.",
+      "gravidade": "media",
+      "afeta": [
+        "E1",
+        "E2"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-GEADA-ESPACO",
+      "texto": "A data-limite do 2º milho muda 29 dias entre SMO e Concórdia (grade a 884 m) e 22 dias com o ciclo (V2). Vale só para esta célula.",
+      "gravidade": "alta",
+      "afeta": [
+        "E2"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-GEADA-MAGNITUDE",
+      "texto": "A geada do POWER (< 2 °C) dá 6,3 em 10 em 1/ago; o risco total do ZARC é 4 em 10. A forma bate, a magnitude não: o POWER parece exagerar (V6). Não foi calibrado.",
+      "gravidade": "media",
+      "afeta": [
+        "E1"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-RECALL",
+      "texto": "O alerta perde cerca de 52% dos anos ruins (percentil só do passado, V1 passo 6). Silêncio não quer dizer ano seguro.",
+      "gravidade": "alta",
+      "afeta": [
+        "A-SECO-2122"
+      ],
+      "mostrar_ao_agricultor": true,
+      "trecho": "o aviso não pega todos os anos ruins"
+    },
+    {
+      "id": "X-ALERTA-VALIDACAO",
+      "texto": "A regra do alerta falha C1 (4 de 9 eventos, abaixo de 50%) e C3 (rendimento relativo médio 0,884, acima de 0,85) da V1. Eventos novos: 2/6. A frase de probabilidade usa o IBGE PAM e fica só na auditoria.",
+      "gravidade": "alta",
+      "afeta": [
+        "A-SECO-2122"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-PARAM-EXTERNO",
+      "texto": "Três valores do cálculo vêm de literatura fora da aba Resources: R = 0,88 (Embrapa; Demarchi), raiz de 0,6 m do solo raso e limiar de geada de 2 °C (os dois do ZARC). Exceção à regra de dados: o time decide se aceita.",
+      "gravidade": "alta",
+      "afeta": [
+        "E1",
+        "E3"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-USUARIO",
+      "texto": "Mensagens e cartões não foram testados com produtores nem técnicos.",
+      "gravidade": "media",
+      "afeta": [
+        "C-01",
+        "C-02",
+        "C-03",
+        "C-04",
+        "C-05",
+        "C-06"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-KY-SORGO",
+      "texto": "Ky do sorgo não calibrado. Na V3 (CAD 42 mm) o ganho some se o Ky real for 1,64 vez o da FAO ou se milho e sorgo responderem igual à seca.",
+      "gravidade": "alta",
+      "afeta": [
+        "E3"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-NIVEL",
+      "texto": "O nível absoluto de silagem simulado não foi confirmado: no CAD de 42 mm, o milho simulado tem Spearman 0,10 com a PAM de SMO (V3).",
+      "gravidade": "media",
+      "afeta": [
+        "E1",
+        "E3"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-CAD",
+      "texto": "CAD de 39,0 mm. A V3 validou com 42 mm. Com 39,0 mm o motor dá central de 46,9% (IC 31,1 a 60,8), contra 39,6% da V3: sobe cerca de 7 pontos. Ganho em 35 de 41 safras; perda em 2.",
+      "gravidade": "media",
+      "afeta": [
+        "E1",
+        "E3"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-GAEZ-RASO",
+      "texto": "O 65 mm/m é a classe areia do GAEZ aplicada ao talhão raso. O GAEZ não mede profundidade e isso não foi testado (V3).",
+      "gravidade": "media",
+      "afeta": [
+        "E3"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-GRADE-CORTE",
+      "texto": "A mistura sobrevive em 67,4% da grade de parâmetros, abaixo do corte de 70% pré-registrado na V3. Por isso fica N2 e com faixa.",
+      "gravidade": "media",
+      "afeta": [
+        "E3"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-SRTM",
+      "texto": "O SRTM só pede para confirmar o solo raso. Ele não mede profundidade.",
+      "gravidade": "media",
+      "afeta": [
+        "E3"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-BOOT",
+      "texto": "O IC95 do bootstrap usa o gerador da biblioteca padrão (semente 20261114); a V3 usou numpy, então o IC difere um pouco. O valor central é igual.",
+      "gravidade": "baixa",
+      "afeta": [
+        "E3"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    }
+  ],
+  "nao_sei": {
+    "ativo": false,
+    "motivos": [],
+    "encaminhar_para": "tecnico_ater"
+  }
+}

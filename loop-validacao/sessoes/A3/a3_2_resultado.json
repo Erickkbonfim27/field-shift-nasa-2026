@@ -1,0 +1,60 @@
+{
+ "GWETTOP_anual": {
+  "2019": 0.712,
+  "2020": 0.565,
+  "2021": 0.684,
+  "2022": 0.696,
+  "2023": 0.722,
+  "2024": 0.774
+ },
+ "S1_ICC": 0.39,
+ "S1_ICC_so_dias_descobertos": 0.47,
+ "corr_ano_a_ano_dias_descobertos": [
+  0.51,
+  0.66,
+  0.7,
+  0.7,
+  0.69
+ ],
+ "S2_mediana_nota_mata": 79.2,
+ "S2_mediana_nota_lavoura": 70.6,
+ "S3_frac_lavoura_ate_60_dias": 0.7,
+ "dias_descobertos_lavoura_p10_p50_p90": [
+  12,
+  35,
+  101
+ ],
+ "hist_dias_descobertos_lavoura": [
+  579,
+  454,
+  313,
+  276,
+  351,
+  223,
+  76,
+  30
+ ],
+ "S4_spearman_nota_vs_so_declive": 0.18,
+ "S4_spearman_nota_vs_dias_descobertos": 0.65,
+ "parcela_variancia_nota_lavoura_por_termo": {
+  "descoberto": 239.3,
+  "declive": 46.7,
+  "umidade_POWER": 20.8
+ },
+ "nota_media_lavoura_por_ano": {
+  "2019": 68.7,
+  "2020": 60.9,
+  "2021": 69.2,
+  "2022": 72.6,
+  "2023": 71.1,
+  "2024": 66.9
+ },
+ "dias_descobertos_medios_lavoura_por_ano": {
+  "2019": 49,
+  "2020": 41,
+  "2021": 43,
+  "2022": 36,
+  "2023": 46,
+  "2024": 71
+ }
+}

@@ -1,0 +1,889 @@
+{
+  "versao_contrato": "2.1.0",
+  "gerado_em": "2026-11-14T23:33:54-03:00",
+  "modo": "replay",
+  "data_referencia": "2024-09-02",
+  "safra": "2024/25",
+  "motor": {
+    "versao": "0.2.0",
+    "commit": null
+  },
+  "local": {
+    "id": "L-ituporanga",
+    "municipio": "Ituporanga",
+    "uf": "SC",
+    "codigo_ibge": "4208500",
+    "lat": -27.414,
+    "lon": -49.601,
+    "ponto_power": {
+      "lat": -27.414,
+      "lon": -49.601,
+      "alt_grade_m": 677.03,
+      "resolucao_km": 50,
+      "mesma_celula_que": [
+        "Alfredo Wagner"
+      ]
+    },
+    "dentro_da_area_testada": true
+  },
+  "talhao": {
+    "id": "T-encosta-da-cebola",
+    "nome": "Encosta da cebola",
+    "area_ha": 0.25,
+    "solo_declarado": "medio",
+    "cad_mm": {
+      "valor": 37.5,
+      "fonte": "pergunta+gaez",
+      "nota": "Raiz da cebola 0,3 m (B3-2). O CAD só entra no histórico de excedente.",
+      "rastro": [
+        "R-PROD-SOLO",
+        "R-GAEZ-CAD",
+        "R-CALC-CAD"
+      ]
+    },
+    "srtm": null,
+    "ciclo_gdd": {
+      "valor": 1250,
+      "fonte": "padrao"
+    },
+    "colheita_verao": null,
+    "fotos_registro": []
+  },
+  "produtor": {
+    "id_pseudonimo": "P-7c1d0e42",
+    "prioridade": "solo",
+    "atividade": "cebola"
+  },
+  "regiao": {
+    "id": "sc_alto_vale",
+    "nome": "Alto Vale do Itajaí, SC (cebola)",
+    "papel": "principal",
+    "modulos_ativos": [
+      "exposicao_solo",
+      "ano_extremo_excesso",
+      "agua_isna"
+    ]
+  },
+  "modulos": [
+    {
+      "id": "exposicao_solo",
+      "nome": "Solo descoberto em mês de chuva forte",
+      "ativo": true,
+      "nivel_evidencia": "N2",
+      "papel": "descritivo",
+      "motivo": "Fato medido: solo descoberto pelo Sentinel-2 e chuva erosiva pelo POWER. O benefício (solo salvo) não é calculado (N1).",
+      "validacao": [
+        {
+          "ref": "A3-1",
+          "caminho": "loop-validacao/fichas/A3-1-alerta-erosao.md",
+          "resultado": "erosividade do POWER: Spearman 0,85 com o pluviômetro (Back et al. 2023); 64% dos talhões-ano com pico fora de out-fev; p90/p10 = 9"
+        }
+      ],
+      "nao_ve": [
+        "perda de solo em t/ha",
+        "terraço, curva de nível e palha que o NDVI não separa",
+        "meses sem cena limpa"
+      ]
+    },
+    {
+      "id": "ano_extremo_excesso",
+      "nome": "Primaveras de chuva extrema na cebola (só histórico)",
+      "ativo": true,
+      "nivel_evidencia": "N1",
+      "papel": "descritivo",
+      "motivo": "O limiar de 360 mm da B3-3 era o P90 da amostra. Fora do Alto Vale: 22% contra 12,7%, p = 0,39 (V1). Fica só como histórico, na auditoria.",
+      "validacao": [
+        {
+          "ref": "V1",
+          "caminho": "solucao/validacao/V1/relatorio.md",
+          "resultado": "cebola: regra fixa caiu nos ataques A1, A2 e A3; fora do Alto Vale 11 de 49 = 22%, p = 0,39"
+        }
+      ],
+      "nao_ve": [
+        "míldio e doença",
+        "chuva na colheita",
+        "preço"
+      ]
+    },
+    {
+      "id": "agua_isna",
+      "nome": "Água por fase (ISNA, FAO-56/FAO-33)",
+      "ativo": true,
+      "nivel_evidencia": "N1",
+      "papel": "insumo",
+      "motivo": "Só calcula o excedente de chuva da primavera para o histórico. Sem sinal na cebola de Ituporanga (B1-0).",
+      "validacao": [
+        {
+          "ref": "B1-0",
+          "caminho": "loop-validacao/fichas/B1-0-controle.md",
+          "resultado": "sem sinal na cebola de Ituporanga"
+        }
+      ],
+      "nao_ve": [
+        "irrigação",
+        "manejo"
+      ]
+    },
+    {
+      "id": "preco_cebola",
+      "nome": "Regra de venda pela chuva da primavera",
+      "ativo": false,
+      "nivel_evidencia": "N1",
+      "papel": "em_teste",
+      "motivo": "Pré-registro falhou (B4-1: rho -0,11). O preço é fonte externa. Só auditoria, marcado 'mercado'.",
+      "validacao": [
+        {
+          "ref": "B4-1",
+          "caminho": "loop-validacao/fichas/B4-1-quebra-cebola-sinal-preco.md",
+          "resultado": "pré-registro falhou: rho -0,11; preço IBGE -4%"
+        },
+        {
+          "ref": "B4-3",
+          "caminho": "loop-validacao/fichas/B4-3-guardar-cebola-fugir-pico.md",
+          "resultado": "passou em parte: |rho| 0,397; alta >= 15% em 75% das safras, com preço da Epagri"
+        }
+      ],
+      "nao_ve": [
+        "custo de armazenar",
+        "perda no galpão"
+      ]
+    },
+    {
+      "id": "data_transplante_cebola",
+      "nome": "Data de transplante da cebola",
+      "ativo": false,
+      "nivel_evidencia": "N0",
+      "papel": "em_teste",
+      "motivo": "Fora (N0): o motor prefere setembro e o ZARC não dá 20% em nenhuma linha a partir de 11/set (V4, critério D2 falhou).",
+      "validacao": [
+        {
+          "ref": "V4",
+          "caminho": "solucao/validacao/V4/relatorio.md",
+          "resultado": "D2 falhou: contradiz o ZARC"
+        }
+      ],
+      "nao_ve": [
+        "tudo: módulo desligado"
+      ]
+    }
+  ],
+  "estrategias": [
+    {
+      "id": "E1",
+      "nome_curto": "O de sempre",
+      "nome_falado": "preparo convencional no inverno, transplante em julho e agosto e venda na colheita",
+      "e_atual": true,
+      "nivel_evidencia": "N2",
+      "como_mostrar": "com_faixa",
+      "ordem": 2,
+      "sequencia": [
+        {
+          "cultura": "cebola",
+          "estacao": "inverno",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": "01/07",
+            "ate": "21/08"
+          },
+          "manejo": "preparo convencional (aração, grade, enxada rotativa)"
+        },
+        {
+          "cultura": "pousio",
+          "estacao": "verao",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": null,
+            "ate": null
+          },
+          "manejo": null
+        }
+      ],
+      "modulos": [
+        "exposicao_solo",
+        "ano_extremo_excesso",
+        "agua_isna"
+      ],
+      "indicadores": [
+        {
+          "id": "I-E1-DESCOBERTO",
+          "tipo": "fracao_dias_descoberto",
+          "rotulo": "Fração dos dias de julho de 2024 com solo descoberto (NDVI < 0,30) no talhão (bloco de 50 m 24-70)",
+          "valor": 0.97,
+          "unidade": "fracao",
+          "ic95": null,
+          "faixa_parametros": null,
+          "n_anos": 1,
+          "periodo": "2024-2024",
+          "nivel_evidencia": "N2",
+          "modulo_id": "exposicao_solo",
+          "rastro": [
+            "R-CALC-EXPOSICAO"
+          ]
+        },
+        {
+          "id": "I-E1-DESCOBERTO-RECORTE",
+          "tipo": "fracao_dias_descoberto",
+          "rotulo": "Mesma fração, média dos 2302 blocos de lavoura do recorte de 5 x 5 km",
+          "valor": 0.65,
+          "unidade": "fracao",
+          "ic95": null,
+          "faixa_parametros": null,
+          "n_anos": 1,
+          "periodo": "2024-2024",
+          "nivel_evidencia": "N2",
+          "modulo_id": "exposicao_solo",
+          "rastro": [
+            "R-CALC-EXPOSICAO"
+          ]
+        },
+        {
+          "id": "I-E1-PRIMAVERAS",
+          "tipo": "anos_ruins_em_10",
+          "rotulo": "Primaveras com excedente set-nov >= P90 (353,5 mm) dos anos passados, em 10 anos. Hipótese de ano ruim, não quebra medida: 1997, 2008, 2015 e 2023",
+          "valor": 1.0,
+          "unidade": "anos_em_10",
+          "ic95": null,
+          "faixa_parametros": null,
+          "n_anos": 40,
+          "periodo": "1984-2023",
+          "nivel_evidencia": "N1",
+          "modulo_id": "ano_extremo_excesso",
+          "rastro": [
+            "R-CALC-EXCESSO-HIST"
+          ]
+        }
+      ],
+      "risco_por_decendio": null,
+      "premissas": [
+        "talhão = bloco de 50 x 50 m com >= 60% de pixels de lavoura anual (A3-1)",
+        "descoberto = NDVI < 0,30, interpolado dia a dia"
+      ],
+      "quebra_se": [
+        "a palha seca tiver NDVI baixo e for contada como solo descoberto",
+        "o mês tiver poucas cenas sem nuvem"
+      ],
+      "nao_calculado": [
+        "perda de solo",
+        "rendimento da cebola"
+      ],
+      "solo_texto": null
+    },
+    {
+      "id": "E2",
+      "nome_curto": "Milho e cebola na palha",
+      "nome_falado": "milho no verão e cebola em plantio direto sobre a palha",
+      "e_atual": false,
+      "nivel_evidencia": "N1",
+      "como_mostrar": "so_nome_em_teste",
+      "ordem": 1,
+      "sequencia": [
+        {
+          "cultura": "milho_palha",
+          "estacao": "verao",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": null,
+            "ate": null
+          },
+          "manejo": "palha deixada no talhão"
+        },
+        {
+          "cultura": "cebola",
+          "estacao": "inverno",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": "01/07",
+            "ate": "21/08"
+          },
+          "manejo": "plantio direto sobre a palha"
+        }
+      ],
+      "modulos": [
+        "exposicao_solo"
+      ],
+      "indicadores": [],
+      "risco_por_decendio": null,
+      "premissas": [],
+      "quebra_se": [],
+      "nao_calculado": [
+        "solo salvo pela palha",
+        "rendimento da cebola no plantio direto",
+        "o motor não distingue o risco climático desta estratégia do atual"
+      ],
+      "solo_texto": {
+        "texto": "A palha cobre o solo no inverno, justo quando o talhão hoje fica descoberto. Quanto solo isso salva e o efeito no rendimento não foram medidos.",
+        "fonte": "A3-1 (loop-validacao/fichas/A3-1-alerta-erosao.md); dissertação UDESC citada na A3-1 (só mecanismo)",
+        "a_validar": true
+      }
+    },
+    {
+      "id": "E3",
+      "nome_curto": "Guardar parte para março e abril",
+      "nome_falado": "o de sempre, guardando parte da cebola para vender em março e abril",
+      "e_atual": false,
+      "nivel_evidencia": "N1",
+      "como_mostrar": "so_nome_em_teste",
+      "ordem": 3,
+      "sequencia": [
+        {
+          "cultura": "cebola",
+          "estacao": "inverno",
+          "fracao_area": 1.0,
+          "plantio": {
+            "de": "01/07",
+            "ate": "21/08"
+          },
+          "manejo": "venda escalonada (mercado)"
+        }
+      ],
+      "modulos": [
+        "preco_cebola"
+      ],
+      "indicadores": [],
+      "risco_por_decendio": null,
+      "premissas": [],
+      "quebra_se": [],
+      "nao_calculado": [
+        "preço: só existe com fonte externa (Epagri), fora da regra de dados",
+        "custo e perda no armazenamento"
+      ],
+      "solo_texto": null
+    }
+  ],
+  "alertas": [],
+  "cartoes": [
+    {
+      "id": "C-01",
+      "template_id": "T10_SOLO_EXPOSTO",
+      "destino": "whatsapp",
+      "ordem": 1,
+      "estrategia_ids": [
+        "E1"
+      ],
+      "variaveis": {
+        "talhao": {
+          "texto": "Encosta da cebola",
+          "ponteiro": "/talhao/nome"
+        },
+        "pct": {
+          "texto": "97",
+          "ponteiro": "/estrategias/0/indicadores/0/valor"
+        },
+        "meses": {
+          "texto": "julho",
+          "ponteiro": "/estrategias/0/indicadores/0/rotulo"
+        },
+        "km": {
+          "texto": "50",
+          "ponteiro": "/local/ponto_power/resolucao_km"
+        }
+      },
+      "texto": "No último inverno, o solo do talhão Encosta da cebola ficou descoberto em 97% dos dias de julho, quando a chuva já é forte. Palha ou cobertura nessa época protege o solo. Quanto solo isso salva, ainda não medimos. A chuva é medida numa área de 50 km.",
+      "palavras": 48,
+      "imagem": {
+        "tipo": "nenhuma"
+      },
+      "audio": {
+        "roteiro": "No último inverno, o solo do talhão Encosta da cebola ficou descoberto em noventa e sete por cento dos dias de julho, quando a chuva já é forte. Palha ou cobertura nessa época protege o solo. Quanto solo isso salva, ainda não medimos. A chuva é medida numa área de cinquenta quilômetros.",
+        "duracao_max_s": 25
+      }
+    },
+    {
+      "id": "C-02",
+      "template_id": "T01_COMPARA_ESTRATEGIAS",
+      "destino": "whatsapp",
+      "ordem": 2,
+      "estrategia_ids": [
+        "E2",
+        "E1",
+        "E3"
+      ],
+      "variaveis": {
+        "talhao": {
+          "texto": "Encosta da cebola",
+          "ponteiro": "/talhao/nome"
+        },
+        "nome_1": {
+          "texto": "Milho e cebola na palha",
+          "ponteiro": "/estrategias/1/nome_curto"
+        },
+        "nome_2": {
+          "texto": "O de sempre",
+          "ponteiro": "/estrategias/0/nome_curto"
+        },
+        "pct_2": {
+          "texto": "97",
+          "ponteiro": "/estrategias/0/indicadores/0/valor"
+        },
+        "meses_2": {
+          "texto": "julho",
+          "ponteiro": "/estrategias/0/indicadores/0/rotulo"
+        },
+        "nome_3": {
+          "texto": "Guardar parte para março e abril",
+          "ponteiro": "/estrategias/2/nome_curto"
+        }
+      },
+      "texto": "Três caminhos para a Encosta da cebola. O de sempre: no último inverno, o solo ficou descoberto em 97% dos dias de julho. Em teste: milho e cebola na palha e guardar parte para março e abril. Fale com o técnico da assistência técnica do seu município antes de decidir.",
+      "palavras": 50,
+      "imagem": {
+        "tipo": "nenhuma"
+      },
+      "audio": {
+        "roteiro": "Três caminhos para a Encosta da cebola. O de sempre: no último inverno, o solo ficou descoberto em noventa e sete por cento dos dias de julho. Em teste: milho e cebola na palha e guardar parte para março e abril. Fale com o técnico da assistência técnica do seu município antes de decidir.",
+        "duracao_max_s": 25
+      }
+    },
+    {
+      "id": "C-03",
+      "template_id": "T09_CEBOLA_HISTORICO",
+      "destino": "auditoria",
+      "ordem": 3,
+      "estrategia_ids": [
+        "E1"
+      ],
+      "variaveis": {
+        "municipio": {
+          "texto": "Ituporanga",
+          "ponteiro": "/local/municipio"
+        },
+        "n": {
+          "texto": "40",
+          "ponteiro": "/estrategias/0/indicadores/2/n_anos"
+        },
+        "anos": {
+          "texto": "1997, 2008, 2015 e 2023",
+          "ponteiro": "/estrategias/0/indicadores/2/rotulo"
+        }
+      },
+      "texto": "Cebola em Ituporanga. Nos últimos 40 anos, as primaveras com mais chuva aqui foram 1997, 2008, 2015 e 2023. Chuva demais na formação do bulbo prejudica a cebola. Isso é o histórico do lugar, calculado com dados de satélite. Não é previsão para este ano.",
+      "palavras": 45,
+      "imagem": {
+        "tipo": "nenhuma"
+      },
+      "audio": {
+        "roteiro": "Cebola em Ituporanga. Nos últimos quarenta anos, as primaveras com mais chuva aqui foram mil novecentos e noventa e sete, dois mil e oito, dois mil e quinze e dois mil e vinte e três. Chuva demais na formação do bulbo prejudica a cebola. Isso é o histórico do lugar, calculado com dados de satélite. Não é previsão para este ano.",
+        "duracao_max_s": 30
+      }
+    }
+  ],
+  "rastro": [
+    {
+      "id": "R-POWER-ITU",
+      "tipo": "dado",
+      "descricao": "Série diária do NASA POWER no ponto de Ituporanga, comunidade AG.",
+      "fonte": {
+        "nome": "NASA_POWER",
+        "categoria": "resources",
+        "variavel": "PRECTOTCORR, T2M, T2M_MAX, T2M_MIN, RH2M, WS2M, ALLSKY_SFC_SW_DWN",
+        "url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&longitude=-49.601&latitude=-27.414",
+        "periodo": "1981-2025",
+        "resolucao": "~50 km",
+        "arquivo": "loop-validacao/dados/power_ituporanga.json"
+      }
+    },
+    {
+      "id": "R-POWER-RIO-DO-SUL",
+      "tipo": "dado",
+      "descricao": "Série diária do NASA POWER em Rio do Sul, só para conferir se a célula é a mesma.",
+      "fonte": {
+        "nome": "NASA_POWER",
+        "categoria": "resources",
+        "variavel": "T2M_MIN",
+        "url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&longitude=-49.64&latitude=-27.21",
+        "periodo": "1984-2025",
+        "resolucao": "~50 km",
+        "arquivo": "loop-validacao/sessoes/B3/power_extra/power_rio_do_sul.json"
+      }
+    },
+    {
+      "id": "R-POWER-ALFREDO-WAGNER",
+      "tipo": "dado",
+      "descricao": "Série diária do NASA POWER em Alfredo Wagner, só para conferir se a célula é a mesma.",
+      "fonte": {
+        "nome": "NASA_POWER",
+        "categoria": "resources",
+        "variavel": "T2M_MIN",
+        "url": "https://power.larc.nasa.gov/api/temporal/daily/point?community=AG&longitude=-49.33&latitude=-27.7",
+        "periodo": "1984-2025",
+        "resolucao": "~50 km",
+        "arquivo": "loop-validacao/sessoes/B3/power_extra/power_alfredo_wagner.json"
+      }
+    },
+    {
+      "id": "R-CALC-CELULA",
+      "tipo": "calculo",
+      "descricao": "Dias com T2M_MIN diferente entre Ituporanga e vizinhos. Rio do Sul: 15327 de 15341 dias diferentes; Alfredo Wagner: 0 de 15341 dias diferentes.",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "1981-2025",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/power.py",
+        "funcao": "mesma_celula"
+      },
+      "parametros": {
+        "variavel": "T2M_MIN",
+        "tolerancia_c": 0.005
+      },
+      "entradas": [
+        "R-POWER-ITU",
+        "R-POWER-RIO-DO-SUL",
+        "R-POWER-ALFREDO-WAGNER"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/ituporanga.json",
+        "chave": "mesma_celula"
+      }
+    },
+    {
+      "id": "R-S2-BLOCOS",
+      "tipo": "dado",
+      "descricao": "Sentinel-2 L2A (B04, B08, SCL), 259 datas de 2019 a 2024, 10 m, recorte de 5 x 5 km; fração de dias com NDVI < 0,30 por bloco de 50 m e mês (A3-1).",
+      "fonte": {
+        "nome": "Sentinel-2",
+        "categoria": "resources",
+        "variavel": "NDVI (B04, B08), máscara SCL",
+        "url": "https://earth-search.aws.element84.com/v1",
+        "periodo": "2019-2024",
+        "resolucao": "10 m (bloco de 50 m)",
+        "arquivo": "loop-validacao/sessoes/A3/a3_1_blocos.npz"
+      }
+    },
+    {
+      "id": "R-SRTM-ITU",
+      "tipo": "dado",
+      "descricao": "Declive do SRTM 1 arco-segundo (tile S28W050) por bloco de 50 m, usado no fator S da exposição da A3-1 (escolha do bloco mediano).",
+      "fonte": {
+        "nome": "SRTM",
+        "categoria": "resources",
+        "variavel": "elevação 1 arco-segundo",
+        "url": null,
+        "periodo": null,
+        "resolucao": "30 m",
+        "arquivo": "loop-validacao/sessoes/A3/a3_1_blocos.npz"
+      }
+    },
+    {
+      "id": "R-PROD-SOLO",
+      "tipo": "pergunta",
+      "descricao": "Resposta do produtor no WhatsApp (T15): talhão 'medio'.",
+      "fonte": {
+        "nome": "produtor",
+        "categoria": "produtor",
+        "variavel": "solo_declarado",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      }
+    },
+    {
+      "id": "R-PROD-PRIORIDADE",
+      "tipo": "pergunta",
+      "descricao": "Resposta do produtor (T12): prioridade 'solo'. Só muda a ordem.",
+      "fonte": {
+        "nome": "produtor",
+        "categoria": "produtor",
+        "variavel": "prioridade",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      }
+    },
+    {
+      "id": "R-GAEZ-CAD",
+      "tipo": "parametro",
+      "descricao": "Água disponível por textura do GAEZ v5: areia 65, médio 125, argila 175 mm/m.",
+      "fonte": {
+        "nome": "GAEZ",
+        "categoria": "resources",
+        "variavel": "água disponível por textura",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": "prototipo/modelo/risco.py"
+      }
+    },
+    {
+      "id": "R-CALC-CAD",
+      "tipo": "calculo",
+      "descricao": "CAD = 125 mm/m (GAEZ) x 0,3 m de raiz da cebola = 37,5 mm.",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/locais/ituporanga.py",
+        "funcao": "avaliar"
+      },
+      "parametros": {
+        "mm_por_m": 125,
+        "raiz_m": 0.3
+      },
+      "entradas": [
+        "R-PROD-SOLO",
+        "R-GAEZ-CAD"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/ituporanga.json",
+        "chave": "cad"
+      }
+    },
+    {
+      "id": "R-FAO56",
+      "tipo": "parametro",
+      "descricao": "Kc por fase, fator p e ET0 Penman-Monteith (FAO-56), coeficientes fixos.",
+      "fonte": {
+        "nome": "FAO-56",
+        "categoria": "metodo_publicado",
+        "variavel": "Kc, p, ET0",
+        "url": null,
+        "periodo": null,
+        "resolucao": null,
+        "arquivo": null
+      }
+    },
+    {
+      "id": "R-CALC-FOURNIER",
+      "tipo": "calculo",
+      "descricao": "Índice de Fournier mensal do POWER (p_mês² / P_ano). Igual ao R salvo pela A3-1 (diferença máxima 4.3e-14).",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "1981-2025",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/exposicao.py",
+        "funcao": "fournier"
+      },
+      "parametros": {
+        "formula": "p_mes^2 / P_ano"
+      },
+      "entradas": [
+        "R-POWER-ITU"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/ituporanga.json",
+        "chave": "exposicao_solo.R_mes"
+      }
+    },
+    {
+      "id": "R-CALC-EXPOSICAO",
+      "tipo": "calculo",
+      "descricao": "Bloco de lavoura com exposição anual mediana (24-70, declive 47,4%). Mês do inverno de 2024 com maior R x descoberto: julho (R 15,5 contra mediana 9,88 dos meses passados).",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "2019-2024",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/exposicao.py",
+        "funcao": "avaliar"
+      },
+      "parametros": {
+        "limiar_ndvi": 0.3,
+        "meses_inverno": [
+          6,
+          7,
+          8
+        ],
+        "regra_bloco": "exposição anual mediana",
+        "regra_chuva_forte": "R do mês > mediana de R de todos os meses dos anos anteriores"
+      },
+      "entradas": [
+        "R-S2-BLOCOS",
+        "R-SRTM-ITU",
+        "R-CALC-FOURNIER"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/ituporanga.json",
+        "chave": "exposicao_solo"
+      }
+    },
+    {
+      "id": "R-CALC-EXCESSO-HIST",
+      "tipo": "calculo",
+      "descricao": "Excedente hídrico de 1/set a 30/nov, cebola transplantada em 1/ago, raiz 0,3 m, solo médio (B3-2), 1984-2023. P90 dos anos passados = 353,5 mm.",
+      "fonte": {
+        "nome": "motor",
+        "categoria": "motor",
+        "variavel": null,
+        "url": null,
+        "periodo": "1984-2023",
+        "resolucao": null,
+        "arquivo": null
+      },
+      "script": {
+        "caminho": "solucao/motor/ano_extremo.py",
+        "funcao": "historico_excesso"
+      },
+      "parametros": {
+        "percentil": 90,
+        "transplante": "01/08",
+        "janela": "01/09-30/11",
+        "cad_mm": 37.5,
+        "p_depl": 0.3
+      },
+      "entradas": [
+        "R-POWER-ITU",
+        "R-FAO56"
+      ],
+      "resultado": {
+        "arquivo": "solucao/saida/calculos/ituporanga.json",
+        "chave": "historico_excesso"
+      }
+    },
+    {
+      "id": "R-PAM-ITU",
+      "tipo": "conferencia",
+      "descricao": "IBGE PAM, rendimento da cebola na microrregião 42014 (Ituporanga), relativo à mediana móvel (t-3 a t+3).",
+      "fonte": {
+        "nome": "IBGE_PAM",
+        "categoria": "externo_conferencia",
+        "variavel": "rendimento (kg/ha)",
+        "url": null,
+        "periodo": "1990-2025",
+        "resolucao": "microrregião",
+        "arquivo": "solucao/validacao/V1/tabela_original.json"
+      }
+    }
+  ],
+  "conferencias": [
+    {
+      "id": "K-PAM-EXCESSO",
+      "contra": "IBGE_PAM",
+      "o_que": "As primaveras de chuva extrema tiveram quebra da cebola?",
+      "resultado": "bate_em_parte",
+      "detalhe": "Das 4 primaveras extremas com PAM, 3 tiveram rendimento <= 85% da mediana móvel (2008, 2015 e 2023). Microrregião 42014.",
+      "rastro": [
+        "R-PAM-ITU",
+        "R-CALC-EXCESSO-HIST"
+      ]
+    }
+  ],
+  "limites": [
+    {
+      "id": "X-TRES-ROTACOES",
+      "texto": "Ituporanga não fecha 3 rotações com número: só o de sempre tem número (o solo descoberto). As outras duas estão em teste.",
+      "gravidade": "alta",
+      "afeta": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-TALHAO-DEMO",
+      "texto": "Talhão de demonstração: bloco de 50 m (24, 70) do recorte da A3-1, o de exposição anual mediana entre 2302 blocos de lavoura. Não é o talhão de um produtor real.",
+      "gravidade": "alta",
+      "afeta": [
+        "E1",
+        "C-01",
+        "C-02",
+        "C-03"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-SOLO-PERDA",
+      "texto": "Quanto solo a palha ou a cobertura salvam não foi calculado.",
+      "gravidade": "alta",
+      "afeta": [
+        "E1",
+        "E2"
+      ],
+      "mostrar_ao_agricultor": true,
+      "trecho": "Quanto solo isso salva, ainda não medimos."
+    },
+    {
+      "id": "X-NUVEM",
+      "texto": "Em 15% dos meses de 2019 a 2024 o recorte não teve cena com 50% limpa (A3-1, critério C2). O NDVI desses meses foi interpolado.",
+      "gravidade": "media",
+      "afeta": [
+        "E1"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-GRADE",
+      "texto": "Chuva vem de uma grade de ~50 km. Alfredo Wagner cai na mesma célula. O satélite tem 10 m.",
+      "gravidade": "alta",
+      "afeta": [
+        "E1"
+      ],
+      "mostrar_ao_agricultor": true,
+      "trecho": "A chuva é medida numa área de 50 km."
+    },
+    {
+      "id": "X-EXCESSO-N1",
+      "texto": "O histórico de primaveras chuvosas é N1: o alerta de excesso não passou fora do Alto Vale (V1). Fica na auditoria.",
+      "gravidade": "media",
+      "afeta": [
+        "E1"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-MERCADO",
+      "texto": "Guardar para vender em março e abril depende de preço, que só existe em fonte externa (Epagri). Fica fora do WhatsApp.",
+      "gravidade": "media",
+      "afeta": [
+        "E3"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-REPLAY",
+      "texto": "Modo replay da safra 2024/25: o histórico usa só anos antes de 2024 e o satélite só o inverno de 2024.",
+      "gravidade": "baixa",
+      "afeta": [
+        "E1"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    },
+    {
+      "id": "X-USUARIO",
+      "texto": "Mensagens e cartões não foram testados com produtores nem técnicos.",
+      "gravidade": "media",
+      "afeta": [
+        "C-01",
+        "C-02",
+        "C-03"
+      ],
+      "mostrar_ao_agricultor": false,
+      "trecho": null
+    }
+  ],
+  "nao_sei": {
+    "ativo": false,
+    "motivos": [],
+    "encaminhar_para": "tecnico_ater"
+  }
+}
