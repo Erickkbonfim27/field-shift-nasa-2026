@@ -33,7 +33,7 @@ __pycache__/
 *.pyc
 
 # ---- cópias do NASA POWER baixadas pelas validações (re-baixáveis; o motor não usa) ----
-solucao/validacao/V1/power/
+solucao/validacao/V1/power/*.json
 solucao/validacao/V5/dados/
 loop-validacao/sessoes/A2/dados_novos/
 loop-validacao/sessoes/B2/dados/

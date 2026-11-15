@@ -28,6 +28,9 @@ def b64_i16(arr):
 
 
 # ---------- células do POWER ----------
+_arquivos = sorted((BRUTO / "power").glob("p_*.json"))
+if not _arquivos or not all('"RH2M"' in f.read_text(encoding="utf-8")[:4000] or '"RH2M"' in f.read_text(encoding="utf-8") for f in _arquivos[:1]):
+    sys.exit("Faltam as séries do NASA POWER em harvesty/dados/bruto/power/. Rode antes: bash harvesty/scripts/build.sh --baixar")
 celulas = []
 for f in sorted((BRUTO / "power").glob("p_*.json")):
     j = json.load(open(f))
